@@ -4,14 +4,14 @@ import json
 POSTGRES_CONFIG = {
     'host': 'localhost',
     'port': 5432,
-    'dbname': 'postgres',
-    'user': 'admin',
-    'password': ''
+    'dbname': 'text2sql',
+    'user': 'postgres',
+    'password': 'admin'
 }
 
 # Ollama Model Configuration
 OLLAMA_CONFIG = {
-    'model': 'gemma3:4b',
+    'model': 'gemma3:12b',
     'endpoint': 'http://localhost:11434/'
 }
 
