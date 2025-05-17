@@ -1,0 +1,6 @@
+psycopg2-binary
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+typing_extensions
