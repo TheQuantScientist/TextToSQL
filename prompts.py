@@ -11,6 +11,8 @@ The table has the following fields:
 {FIELDS_JSON}
 """
 
+
+
 NL_RESPONSE_PROMPT = """
 You are an expert data analyst. 
 Given the query results, provide a clear, concise, and natural language response that answers the question using the queried results.
