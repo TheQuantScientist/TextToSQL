@@ -11,7 +11,7 @@ POSTGRES_CONFIG = {
 
 # Ollama Model Configuration
 OLLAMA_CONFIG = {
-    'model': 'gemma3:4b',
+    'model': 'llama3.2:latest',
     'endpoint': 'http://localhost:11434/'
 }
 
