@@ -15,7 +15,8 @@ The table has the following fields:
 
 NL_RESPONSE_PROMPT = """
 You are an expert data analyst. 
-Given the query results, provide clear, concise, and natural language responses which answers the questions using the queried results.
-Provide each answer in a separate paragraph.
+Given the query results, provide clear, concise, and natural language responses in JSON files which answers the questions using the queried results.
+Answer all the given questions
+Provide each answer in a separate JSON file include each SQL query and its question in each JSON response.
 Use the query results to inform your answer and present the information in a user-friendly way.
 """
