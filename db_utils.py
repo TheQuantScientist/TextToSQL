@@ -21,23 +21,24 @@ def get_db_connection():
         logger.error(f"Failed to connect to PostgreSQL: {str(e)}")
         return None
 
-def check_table_exists(conn):
+def check_table_exists(conn, table_name: str):
     try:
         with conn.cursor() as cur:
-            cur.execute("""
+            cur.execute(f"""
                 SELECT EXISTS (
                     SELECT FROM information_schema.tables 
                     WHERE table_schema = 'public' 
-                    AND table_name = 'finance_economics_dataset'
+                    AND table_name = '{table_name}'
                 );
             """)
             exists = cur.fetchone()[0]
+            logger.info(f"Checking '{table_name}' - existed = {exists}")
             return exists
     except Exception as e:
         logger.error(f"Failed to check table existence: {str(e)}")
         return False
 
-def run_query(query: str) -> dict:
+def run_query(query: str, table_name: str) -> dict:
     conn = None
     try:
         if not query:
@@ -47,8 +48,8 @@ def run_query(query: str) -> dict:
         if conn is None:
             return {'data': None, 'columns': [], 'error': "Database connection failed"}
         
-        if not check_table_exists(conn):
-            return {'data': None, 'columns': [], 'error': "Table 'finance_economics_dataset' does not exist. Please create the table and load the data."}
+        if not check_table_exists(conn, table_name):
+            return {'data': None, 'columns': [], 'error': f"Table '{table_name}' does not exist. Please create the table and load the data."}
         
         with conn.cursor() as cur:
             cur.execute(query)

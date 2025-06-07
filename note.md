@@ -114,3 +114,41 @@ Given the data, I would recommend investing in gold as a long-term option and di
 
 Please note that this analysis is based on historical data and should not be considered as investment advice. It's essential to conduct thorough research and consider individual risk tolerance before making any investment decisions.
 ```
+
+## 07 June 2025
+
+### Accomplishment
+
+1) Import country_income_dataset into Postgresql
+
+``` sql
+CREATE TABLE country_income (
+    country TEXT,
+    iso TEXT,
+    gcam_region_id NUMERIC,
+    year NUMERIC,
+    ref TEXT,
+    gini_reported FLOAT,
+    gdp_ppp_pc_usd2011 FLOAT,
+    population FLOAT,
+    category TEXT,
+    income_net FLOAT,
+    gini_recalculated FLOAT,
+    data_source TEXT
+);
+```
+
+2) Change fixed finance dataset into dynamic 'table_name'
+
+- Step 1: Create `table_name` in main()
+- Step 2: In `db_ultis.py`, check_table_exists(), change table_name from finance_economics_dataset into '{table_name}'
+- Step 3: In `config.py`, define `get_data_fields_from_table(table_name)` which returns `data_fields` of the retriving table.
+- Step 4: In `prompt.py`, change constant `SQL_QUERY_GEN_PROMPT` to new function `get_system_prompt(table_name)` which returns `system_prompt`
+- Step 5: In agent.py, import `get_system_prompt`, insert `table_name` in state class.
+- Step 6: Seperate user_query into 2 types, `finance_query` and `country_query`.
+
+### Details
+
+- Edit header of country_income.csv
+- Delete header when importing data into Postgresql
+- When importing, original `gini_reported` & `gini_recalculated` had "-" as NULL value that Postgresql was unable to detect. --> Procceed to change all ",-," into  ",,".

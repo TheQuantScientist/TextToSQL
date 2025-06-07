@@ -1,9 +1,9 @@
 import os  
 from langchain_ollama import ChatOllama  
 from langchain_core.prompts import ChatPromptTemplate  
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-# load_dotenv()
+load_dotenv()
 
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:latest")
 

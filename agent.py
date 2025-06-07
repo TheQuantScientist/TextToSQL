@@ -4,7 +4,7 @@ from typing_extensions import TypedDict
 from langchain_core.prompts import ChatPromptTemplate
 from db_utils import run_query, convert_to_markdown_table
 from llm_utils import get_llm_model
-from prompts import SQL_QUERY_GEN_PROMPT, NL_RESPONSE_PROMPT
+from prompts import get_system_prompt, NL_RESPONSE_PROMPT
 
 # Logging Configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 
 class State(TypedDict):
     question: str
+    table_name: str
     query: str
     query_result: str
     final_answer: str
@@ -23,9 +24,11 @@ def sql_gen_node(state: State) -> State:
         state['query'] = ""
         logger.error("No LLM available for query generation")
         return state
+    
+    system_prompt = get_system_prompt(table_name=state['table_name'])
 
     sql_gen_prompt = ChatPromptTemplate.from_messages([
-        ("system", SQL_QUERY_GEN_PROMPT),
+        ("system", system_prompt),
         ("human", "{question}")
     ])
 
@@ -56,7 +59,7 @@ def sql_gen_node(state: State) -> State:
 
 def query_execution_node(state: State) -> State:
     logger.info('Executing query')
-    raw_result = run_query(state['query'])
+    raw_result = run_query(state['query'], state['table_name'])
     state['query_result'] = convert_to_markdown_table(raw_result)
     return state
 

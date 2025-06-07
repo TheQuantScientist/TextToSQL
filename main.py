@@ -7,15 +7,21 @@ from agent import sql_gen_node, query_execution_node, response_generation_node, 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+finance_query = "Calculate and come up with a trading strategy for gold and stock, provide clear analysis"
+country_query = "What is the average gini of Vietnam from 2000 to 2008? How it is related to gdp per capita"
+
 def main():
-    user_query = "Calculate and come up with a trading strategy for gold and stock, provide clear analysis"
+    user_query = country_query
+    table_name = "country_income"
 
     conn = get_db_connection()
     if conn is None:
         logger.error("Please check your PostgreSQL configuration. Exiting...")
         sys.exit(1)
-    if not check_table_exists(conn):
-        logger.error("Table 'finance_economics_dataset' does not exist. Please create the table and load the data. Exiting...")
+
+    # Check table existed or not in database
+    if not check_table_exists(conn, table_name):
+        logger.error(f"Table '{table_name}' does not exist. Please create the table and load the data. Exiting...")
         conn.close()
         sys.exit(1)
     conn.close()
@@ -26,6 +32,7 @@ def main():
 
     state = {
         'question': user_query,
+        'table_name': table_name,
         'query': '',
         'query_result': '',
         'final_answer': ''

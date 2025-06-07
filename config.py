@@ -30,7 +30,7 @@ DATA_FIELDS_MEANING = {
             "gdp_growth": "The percentage growth of GDP (FLOAT)",
             "inflation_rate": "The rate of inflation (FLOAT)",
             "unemployment_rate": "The percentage of the labor force unemployed (FLOAT)",
-            "interest_rate": "The central bank’s policy interest rate (FLOAT)",
+            "interest_rate": "The central bank's policy interest rate (FLOAT)",
             "consumer_confidence_index": "An indicator of consumer optimism (FLOAT)",
             "government_debt": "The total government debt as a percentage of GDP (FLOAT)",
             "corporate_profits": "Profits earned by corporations after taxes (FLOAT)",
@@ -45,8 +45,31 @@ DATA_FIELDS_MEANING = {
             "venture_capital_funding": "The amount of VC funding (FLOAT)",
             "consumer_spending": "Total household expenditure (FLOAT)"
         }
+    },
+
+    "country_income": {
+        "data_type": "PostgreSQL Table",
+        "fields": {
+            "country": "The name of the country being tracked (TEXT)",
+            "iso": "ISO 3-letter country code (e.g., 'afg' for Afghanistan) (TEXT)",
+            "gcam_region_id": "Numerical region ID used in the Global Change Assessment Model (GCAM) (INTEGER)",
+            "year": "Year the data corresponds to (INTEGER)",
+            "ref": "A reference key combining ISO code and year (e.g., 'afg1967') (TEXT)",
+            "gini_reported": "Reported Gini coefficient for income inequality (FLOAT)",
+            "gdp_ppp_pc_usd2011": "GDP per capita in PPP, constant 2011 US dollars (FLOAT)",
+            "population": "Total population of the country in that year (FLOAT)",
+            "category": "Income decile group (e.g., 'd1' = lowest 10%, 'd10' = highest 10%) (TEXT)",
+            "income_net": "Share of net income attributed to the specific income decile (FLOAT)",
+            "gini_recalculated": "Gini coefficient recalculated from decile data (FLOAT)",
+            "data_source": "Origin or method of data derivation (e.g., 'Imputed from GINI coefficient') (TEXT)"
+        }
     }
 }
 
-# Escape curly braces in JSON for prompt formatting
-FIELDS_JSON = json.dumps(DATA_FIELDS_MEANING['finance_economics_dataset']['fields'], indent=2).replace('{', '{{').replace('}', '}}')
+def get_data_fields_from_table(table_name:str):
+    # Generate json string
+    json_str = json.dumps(DATA_FIELDS_MEANING[table_name]['fields'], indent=2)
+    
+    # Escape curly braces in JSON for prompt formatting
+    data_fields = json_str.replace('{', '{{').replace('}', '}}') 
+    return data_fields
