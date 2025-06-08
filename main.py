@@ -11,7 +11,7 @@ finance_query = "Calculate and come up with a trading strategy for gold and stoc
 country_query = "What is the average gini of Vietnam from 2000 to 2008? How it is related to gdp per capita"
 
 def main():
-    user_query = country_query
+    user_query = input("You: ")
     table_name = "country_income"
 
     conn = get_db_connection()
