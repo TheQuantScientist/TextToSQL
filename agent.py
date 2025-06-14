@@ -1,3 +1,7 @@
+import json
+import re
+import os
+from datetime import datetime
 import logging
 import traceback
 from typing_extensions import TypedDict
@@ -46,6 +50,7 @@ def sql_gen_node(state: State) -> State:
         if raw_sql.startswith('```'):
             raw_sql = raw_sql.replace('```sql', '').replace('```', '').strip()
         state['query'] = raw_sql
+
     except Exception as e:
         logger.error(f"SQL generation failed: {str(e)}")
         traceback.print_exc()
@@ -80,10 +85,43 @@ def response_generation_node(state: State) -> State:
             "question": state['question'],
             "query_result": state['query_result']
         })
-        state['final_answer'] = final_answer
+        state['final_answer'] = extract_natural_answer(final_answer) 
+
     except Exception as e:
         logger.error(f"Response generation failed: {str(e)}")
         traceback.print_exc()
         state['final_answer'] = "Failed to generate response. Please clarify your query."
 
     return state
+
+# Create and record the output as a JSON file
+def save_output_as_json(output: dict, question_index: int, output_dir: str = "outputs"):
+    os.makedirs(output_dir, exist_ok=True)
+    # Clean the query field to remove newlines
+    if "query" in output and isinstance(output["query"], str):
+        output["query"] = output["query"].replace('\n', ' ').replace('\r', ' ').strip()
+    filename = f"question_{question_index}.json"
+    filepath = os.path.join(output_dir, filename)
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=4)
+    return filepath
+
+# Remove code block markers and extract the natural answer from the final answer
+def extract_natural_answer(final_answer):
+    
+    if isinstance(final_answer, str):
+        cleaned = final_answer.strip().strip('`')
+        cleaned = re.sub(r'^json\s*', '', cleaned, flags=re.IGNORECASE).strip()
+        
+        try:
+            answer_json = json.loads(cleaned)
+            if isinstance(answer_json, dict) and 'answer' in answer_json:
+                return answer_json['answer']
+        except Exception:
+            pass
+        
+        match = re.search(r'"answer"\s*:\s*"([^"]+)"', cleaned)
+        if match:
+            return match.group(1)
+        return cleaned
+    return str(final_answer)

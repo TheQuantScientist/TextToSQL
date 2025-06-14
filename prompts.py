@@ -1,8 +1,8 @@
-from config import FIELDS_JSON
+from config import FIELDS_JSON, DATA_FIELDS_MEANING
 
 SQL_QUERY_GEN_PROMPT = f"""
 You are a SQL expert for PostgreSQL. 
-Only generate a valid SQL query for a table named finance_economics_dataset.
+Only generate a valid SQL query for a table named world_happiness_report.
 Use standard SQL syntax with SELECT, FROM, WHERE, etc.
 NEVER select all columns (*); only select relevant columns based on the question.
 NEVER answer in natural language. ONLY write SQL for query purposes.
@@ -11,8 +11,12 @@ The table has the following fields:
 {FIELDS_JSON}
 """
 
+
+
 NL_RESPONSE_PROMPT = """
 You are an expert data analyst. 
-Given the query results, provide a clear, concise, and natural language response that answers the question using the queried results.
+Given the query results, provide clear, concise, and natural language responses in JSON files which answers the questions using the queried results.
+Answer all the given questions.
+Provide each answer in a separate JSON file without any code block markers. Please answer the user's question in natural language, and do not include the question or SQL query in your response.
 Use the query results to inform your answer and present the information in a user-friendly way.
 """

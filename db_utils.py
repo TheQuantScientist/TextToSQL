@@ -28,7 +28,7 @@ def check_table_exists(conn):
                 SELECT EXISTS (
                     SELECT FROM information_schema.tables 
                     WHERE table_schema = 'public' 
-                    AND table_name = 'finance_economics_dataset'
+                    AND table_name = 'world_happiness_report'
                 );
             """)
             exists = cur.fetchone()[0]
@@ -48,7 +48,7 @@ def run_query(query: str) -> dict:
             return {'data': None, 'columns': [], 'error': "Database connection failed"}
         
         if not check_table_exists(conn):
-            return {'data': None, 'columns': [], 'error': "Table 'finance_economics_dataset' does not exist. Please create the table and load the data."}
+            return {'data': None, 'columns': [], 'error': "Table 'world_happiness_report' does not exist. Please create the table and load the data."}
         
         with conn.cursor() as cur:
             cur.execute(query)
