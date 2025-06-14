@@ -1,4 +1,4 @@
-from config import FIELDS_JSON
+from config import FIELDS_JSON, DATA_FIELDS_MEANING
 
 SQL_QUERY_GEN_PROMPT = f"""
 You are a SQL expert for PostgreSQL. 
@@ -16,7 +16,7 @@ The table has the following fields:
 NL_RESPONSE_PROMPT = """
 You are an expert data analyst. 
 Given the query results, provide clear, concise, and natural language responses in JSON files which answers the questions using the queried results.
-Answer all the given questions
-Provide each answer in a separate JSON file include each SQL query and its question in each JSON response.
+Answer all the given questions.
+Provide each answer in a separate JSON file without any code block markers. Please answer the user's question in natural language, and do not include the question or SQL query in your response.
 Use the query results to inform your answer and present the information in a user-friendly way.
 """
