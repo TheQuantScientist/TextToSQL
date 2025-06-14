@@ -84,9 +84,52 @@ def response_generation_node(state: State) -> State:
             "query_result": state['query_result']
         })
         state['final_answer'] = final_answer
+
+        # Export to JSON after successful response generation
+        if state['query_result'] and state['query_result'].strip():
+            json_filepath = export_to_json(state)
+            if json_filepath:
+                state['final_answer'] += f"\n\n📁 Query results exported to: {json_filepath}"
+
     except Exception as e:
         logger.error(f"Response generation failed: {str(e)}")
         traceback.print_exc()
         state['final_answer'] = "Failed to generate response. Please clarify your query."
 
     return state
+
+
+import json
+import os
+from datetime import datetime
+
+def export_to_json(state: State, output_dir: str = "query_exports") -> str:
+    """Export query results to JSON file"""
+    try:
+        # Create output directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
+        
+        # Generate timestamp-based filename
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"query_results_{timestamp}.json"
+        filepath = os.path.join(output_dir, filename)
+        
+        # Prepare export data
+        export_data = {
+            "timestamp": datetime.now().isoformat(),
+            "question": state['question'],
+            "sql_query": state['query'],
+            "query_results": state['query_result'],
+            "natural_language_response": state['final_answer']
+        }
+        
+        # Write to JSON file
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(export_data, f, indent=2, ensure_ascii=False)
+        
+        logger.info(f"Query results exported to: {filepath}")
+        return filepath
+        
+    except Exception as e:
+        logger.error(f"Failed to export JSON: {str(e)}")
+        return ""

@@ -12,7 +12,7 @@ llm = ChatOllama(
     model = OLLAMA_MODEL,
     temparature = 0.5,
     base_url = "http://localhost:11434/",
-    num_ctx = 8192
+    num_ctx = 1000
 )
 
 # Define Prompt

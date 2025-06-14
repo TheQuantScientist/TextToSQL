@@ -16,5 +16,7 @@ def get_system_prompt(table_name: str):
         Limit query results to 50 rows only.
         The table has the following fields:
         {get_data_fields_from_table(table_name)}
+        IMPORTANT: After successful query execution, the results will be exported to a JSON file 
+        named 'query_results_[timestamp].json' for data persistence and further analysis.
     """
     return system_prompt
