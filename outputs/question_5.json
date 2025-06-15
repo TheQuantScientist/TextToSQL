@@ -1,0 +1,5 @@
+{
+    "question": "5|Find countries where positive affect was above 0.7 and negative affect was below 0.3 in 2021.",
+    "query": "SELECT   country_name FROM world_happiness_report WHERE   year = 2021 AND positive_affect > 0.7 AND negative_affect < 0.3 LIMIT 50;",
+    "answer": "In 2021, the following countries had a positive affect above 0.7 and a negative affect below 0.3: Australia, Austria, Canada, Chile, Czechia, Denmark, Dominican Republic, El Salvador, Estonia, Finland, Germany, Honduras, Iceland, Indonesia, Ireland, Kenya, Laos, Latvia, Malaysia, Netherlands, New Zealand, Nicaragua, Norway, Panama, Paraguay, Saudi Arabia, Senegal, South Africa, Sweden, Switzerland, Thailand, United States, and Uruguay."
+}

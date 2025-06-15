@@ -1,0 +1,1 @@
+# Automation pipeline for SQL generation (ground truth SQL)

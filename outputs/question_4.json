@@ -1,0 +1,5 @@
+{
+    "question": "4|Which countries showed a consistent increase in confidence in national government every year from 2018 to 2021?",
+    "query": "SELECT   country_name FROM world_happiness_report WHERE   year IN (     2018,     2019,     2020,     2021   ) GROUP BY   country_name HAVING   SUM(     CASE       WHEN year = 2018 THEN confidence_in_national_government       WHEN year = 2019 THEN confidence_in_national_government       WHEN year = 2020 THEN confidence_in_national_government       WHEN year = 2021 THEN confidence_in_national_government     END   ) >= 2000   AND COUNT(year) = 4 LIMIT 50;",
+    "answer": "Based on the available data, there were no countries that consistently showed an increase in confidence in their national government every year from 2018 to 2021. The query returned no records."
+}
