@@ -1,7 +1,10 @@
 import sys
 import logging
-from db_utils import get_db_connection, check_table_exists
-from agent import sql_gen_node, query_execution_node, response_generation_node, State, save_output_as_json
+
+sys.path.append('.')
+
+from utils.db_utils import get_db_connection, check_table_exists
+from utils.agent import sql_gen_node, query_execution_node, response_generation_node, State, save_output_as_json
 
 # Logging Configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
