@@ -1,0 +1,4 @@
+# Ignore virtual environment folder
+text2sql/
+__pycache__/
+example.env/
