@@ -1,6 +1,9 @@
+import sys
+sys.path.append('.')
+
 import psycopg2
 import logging
-from config import POSTGRES_CONFIG
+from prompt import POSTGRES_CONFIG
 
 # Logging Configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

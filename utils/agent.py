@@ -1,14 +1,18 @@
 import json
 import re
 import os
+import sys
 from datetime import datetime
 import logging
 import traceback
 from typing_extensions import TypedDict
 from langchain_core.prompts import ChatPromptTemplate
+
+sys.path.append('.')
+
 from db_utils import run_query, convert_to_markdown_table
 from llm_utils import get_llm_model
-from prompts import SQL_QUERY_GEN_PROMPT, NL_RESPONSE_PROMPT
+from prompt import SQL_QUERY_GEN_PROMPT, NL_RESPONSE_PROMPT, get_system_prompt
 
 # Logging Configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -17,6 +21,7 @@ logger = logging.getLogger(__name__)
 class State(TypedDict):
     question: str
     query: str
+    table_name: str
     query_result: str
     final_answer: str
 
@@ -28,8 +33,10 @@ def sql_gen_node(state: State) -> State:
         logger.error("No LLM available for query generation")
         return state
 
+    system_prompt = get_system_prompt(table_name=state['table_name'])
+
     sql_gen_prompt = ChatPromptTemplate.from_messages([
-        ("system", SQL_QUERY_GEN_PROMPT),
+        ("system", system_prompt),
         ("human", "{question}")
     ])
 
@@ -61,7 +68,7 @@ def sql_gen_node(state: State) -> State:
 
 def query_execution_node(state: State) -> State:
     logger.info('Executing query')
-    raw_result = run_query(state['query'])
+    raw_result = run_query(state['query'], state['table_name'])
     state['query_result'] = convert_to_markdown_table(raw_result)
     return state
 
@@ -97,7 +104,6 @@ def response_generation_node(state: State) -> State:
 # Create and record the output as a JSON file
 def save_output_as_json(output: dict, question_index: int, output_dir: str = "outputs"):
     os.makedirs(output_dir, exist_ok=True)
-    # Clean the query field to remove newlines
     if "query" in output and isinstance(output["query"], str):
         output["query"] = output["query"].replace('\n', ' ').replace('\r', ' ').strip()
     filename = f"question_{question_index}.json"

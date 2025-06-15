@@ -1,6 +1,10 @@
 import logging
 from langchain_ollama import OllamaLLM
-from config import OLLAMA_CONFIG
+import sys
+
+sys.path.append('.')
+
+from prompt import OLLAMA_CONFIG
 
 # Logging Configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
