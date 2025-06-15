@@ -1,5 +1,0 @@
-{
-    "question": "3|Which countries in Latin America had above-average social support and also experienced below-average negative affect in 2020?",
-    "query": "SELECT   country_name FROM world_happiness_report WHERE   regional_indicator = 'Latin America and Caribbean'   AND year = 2020   AND social_support > (     SELECT       AVG(social_support)     FROM world_happiness_report     WHERE       year = 2020   )   AND negative_affect < (     SELECT       AVG(negative_affect)     FROM world_happiness_report     WHERE       year = 2020   ) LIMIT 50;",
-    "answer": "In 2020, Jamaica, Paraguay, and Uruguay were the Latin American countries that reported above-average social support and also experienced below-average negative affect."
-}

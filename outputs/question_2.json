@@ -1,5 +1,0 @@
-{
-    "question": "2|Compare the average life ladder score between Western Europe and Sub-Saharan Africa in 2021. Which region had the higher score?",
-    "query": "SELECT   regional_indicator,   AVG(life_ladder) AS avg_life_ladder FROM world_happiness_report WHERE   year = 2021 GROUP BY   regional_indicator ORDER BY   avg_life_ladder DESC LIMIT 2;",
-    "answer": "According to the provided data, Western Europe had an average life ladder score of 6.92 in 2021. The data does not contain information about Sub-Saharan Africa, so I am unable to compare the two regions."
-}
