@@ -1,0 +1,5 @@
+{
+    "question": "6|What are the top 3 countries with the highest freedom to make life choices among those with a life ladder score below 5 in 2019?",
+    "query": "SELECT   country_name FROM world_happiness_report WHERE   year = 2019 AND life_ladder < 5 ORDER BY   freedom_to_make_life_choices DESC LIMIT 3;",
+    "answer": "According to the data, the top 3 countries with the highest freedom to make life choices among those with a life ladder score below 5 in 2019 were Cambodia, Myanmar, and India."
+}

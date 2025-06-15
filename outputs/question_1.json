@@ -1,0 +1,5 @@
+{
+    "question": "1|Which countries had the highest life ladder scores in 2020?",
+    "query": "SELECT   country_name FROM world_happiness_report WHERE   year = 2020 ORDER BY   life_ladder DESC LIMIT 50;",
+    "answer": "In 2020, the countries with the highest life ladder scores were Finland, Iceland, Denmark, Switzerland, and the Netherlands. Following these were Sweden, Germany, Norway, New Zealand, and Austria."
+}

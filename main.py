@@ -1,7 +1,10 @@
 import sys
 import logging
-from db_utils import get_db_connection, check_table_exists
-from agent import sql_gen_node, query_execution_node, response_generation_node, State, save_output_as_json
+
+sys.path.append('.')
+
+from utils.db_utils import get_db_connection, check_table_exists
+from utils.agent import sql_gen_node, query_execution_node, response_generation_node, State, save_output_as_json
 
 # Logging Configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -17,12 +20,13 @@ def main():
         "6|What are the top 3 countries with the highest freedom to make life choices among those with a life ladder score below 5 in 2019?"
     ]
 
+    table_name = "world_happiness_report"
     conn = get_db_connection()
     if conn is None:
         logger.error("Please check your PostgreSQL configuration. Exiting...")
         sys.exit(1)
-    if not check_table_exists(conn):
-        logger.error("Table 'world_happiness_report' does not exist. Please create the table and load the data. Exiting...")
+    if not check_table_exists(conn, table_name):
+        logger.error(f"Table '{table_name}' does not exist. Please create the table and load the data. Exiting...")
         conn.close()
         sys.exit(1)
     conn.close()
@@ -33,6 +37,7 @@ def main():
     for idx, question in enumerate(user_queries, 1):
         state = {
             'question': question,
+            'table_name': table_name,
             'query': '',
             'query_result': '',
             'final_answer': ''

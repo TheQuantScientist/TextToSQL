@@ -1,6 +1,9 @@
+import sys
+sys.path.append('.')
+
 import psycopg2
 import logging
-from config import POSTGRES_CONFIG
+from prompt.prompts import POSTGRES_CONFIG
 
 # Logging Configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -21,14 +24,14 @@ def get_db_connection():
         logger.error(f"Failed to connect to PostgreSQL: {str(e)}")
         return None
 
-def check_table_exists(conn):
+def check_table_exists(conn, table_name):
     try:
         with conn.cursor() as cur:
-            cur.execute("""
+            cur.execute(f"""
                 SELECT EXISTS (
                     SELECT FROM information_schema.tables 
                     WHERE table_schema = 'public' 
-                    AND table_name = 'world_happiness_report'
+                    AND table_name = '{table_name}'
                 );
             """)
             exists = cur.fetchone()[0]
@@ -37,7 +40,7 @@ def check_table_exists(conn):
         logger.error(f"Failed to check table existence: {str(e)}")
         return False
 
-def run_query(query: str) -> dict:
+def run_query(query: str, table_name: str = 'world_happiness_report') -> dict:
     conn = None
     try:
         if not query:
@@ -47,9 +50,9 @@ def run_query(query: str) -> dict:
         if conn is None:
             return {'data': None, 'columns': [], 'error': "Database connection failed"}
         
-        if not check_table_exists(conn):
-            return {'data': None, 'columns': [], 'error': "Table 'world_happiness_report' does not exist. Please create the table and load the data."}
-        
+        if not check_table_exists(conn, table_name):
+            return {'data': None, 'columns': [], 'error': f"Table '{table_name}' does not exist. Please create the table and load the data."}
+
         with conn.cursor() as cur:
             cur.execute(query)
             if cur.description:
