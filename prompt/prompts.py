@@ -12,6 +12,12 @@ POSTGRES_CONFIG = {
     'password': 'admin'
 }
 
+# Groq Model Configuration
+GROQ_CONFIG = {
+    'model': 'llama3-70b-8192',
+    'api_key': 'YOUR_API_KEY',  # Replace with your actual Groq API key
+}
+
 # Ollama Model Configuration
 OLLAMA_CONFIG = {
     'model': 'gemma3:12b',
