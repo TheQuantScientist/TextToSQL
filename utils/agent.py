@@ -2,6 +2,7 @@ import json
 import re
 import os
 import sys
+import time
 from datetime import datetime
 import logging
 import traceback
@@ -24,10 +25,14 @@ class State(TypedDict):
     table_name: str
     query_result: str
     final_answer: str
+    sql_generation_time: float
+    nlr_generation_time: float
 
 def sql_gen_node(state: State) -> State:
     logger.info('Generating SQL query')
     llm = get_llm_model()
+    state['sql_start_time'] = time.time()
+
     if llm is None:
         state['query'] = ""
         logger.error("No LLM available for query generation")
@@ -70,10 +75,12 @@ def query_execution_node(state: State) -> State:
     logger.info('Executing query')
     raw_result = run_query(state['query'], state['table_name'])
     state['query_result'] = convert_to_markdown_table(raw_result)
+    state['sql_execution_time']=time.time() - state['sql_start_time']
     return state
 
 def response_generation_node(state: State) -> State:
     logger.info('Generating natural language response')
+    start_time=time.time()
     llm = get_llm_model()
     if llm is None:
         state['final_answer'] = "Failed to generate response due to LLM initialization error"
@@ -98,7 +105,7 @@ def response_generation_node(state: State) -> State:
         logger.error(f"Response generation failed: {str(e)}")
         traceback.print_exc()
         state['final_answer'] = "Failed to generate response. Please clarify your query."
-
+    state['nlp_generation_time'] = time.time()-start_time
     return state
 
 # Create and record the output as a JSON file

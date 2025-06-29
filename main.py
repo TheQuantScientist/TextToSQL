@@ -1,5 +1,7 @@
 import sys
 import logging
+import time
+from datetime import datetime
 
 sys.path.append('.')
 
@@ -47,11 +49,16 @@ def main():
             state = sql_gen_node(state)
             state = query_execution_node(state)
             state = response_generation_node(state)
+        # CALCULATE TOTAL TIME
+            total_time = state.get('sql_execution_time', 0)+ state.get('nlp_generation_time')
 
             output = {
                 "question": state['question'],
                 "query": state['query'],
-                "answer": state['final_answer']
+                "answer": state['final_answer'],
+                "sql_execution_time": round(state.get('sql_execution_time', 0),2),
+                "nlp_generation_time": round(state.get('nlp_generation_time', 0),2),
+                "total_time":round(total_time,2)
             }
             save_output_as_json(output, idx)
             
