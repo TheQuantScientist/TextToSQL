@@ -49,7 +49,6 @@ def main():
             state = sql_gen_node(state)
             state = query_execution_node(state)
             state = response_generation_node(state)
-        # CALCULATE TOTAL TIME
             total_time = state.get('sql_execution_time', 0)+ state.get('nlp_generation_time')
 
             output = {
