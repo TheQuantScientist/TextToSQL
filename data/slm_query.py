@@ -1,6 +1,6 @@
 from typing_extensions import TypedDict
 from langchain_core.prompts import ChatPromptTemplate
-
+import time
 import json
 import os
 import logging
@@ -85,7 +85,7 @@ def sql_gen_node(state: State) -> State:
     return state
 
 # === SAVE OUTPUT ===
-def save_ground_truth(state: State, idx, output_dir=OUTPUT_DIR):
+def save_ground_truth(state: State, idx, gen_time=None, output_dir=OUTPUT_DIR):
     os.makedirs(output_dir, exist_ok=True)
     output = {
         "question": state["question"],
@@ -94,6 +94,8 @@ def save_ground_truth(state: State, idx, output_dir=OUTPUT_DIR):
     # Remove all \n from the query - Format the query
     if "query" in output and isinstance(output["query"], str):
         output["query"] = output["query"].replace('\n', ' ').replace('\r', ' ').strip()
+    if gen_time is not None:
+        output["generation_time"] = round(gen_time, 4)
     filename = f"question_{idx}.json"
     filepath = os.path.join(output_dir, filename)
     with open(filepath, "w", encoding="utf-8") as f:
@@ -107,32 +109,6 @@ if __name__ == "__main__":
         "3|What is the human development index score of Vietnam in 2019?",
         "4|What is the inflation rate of Vietnam in 2009?",
         "5|What is the unemployment rate of Europe region in 2008?",
-        "6|What is the life expectancy of Japan in 2020?",
-        "7|What is the economic opportunity index of indebt countries group in 2020?",
-        "8|What is the gdp per capita of OECD group in 2019?",
-        "9|What is the green transition score of lower middle income group in 2020?",
-        "10|What is the unemployment rate of US in 2020?",
-        "11|To what extent has the world's GDP per capita grown between 2000 and 2020?",
-        "12|What is the average economic opportunity index of low and indebt countries?",
-        "13|How many countries has the gdp per capita lower than the world in 2019?",
-        "14|Which country has the highest health expenditure per capita in 2020?",
-        "15|How many countries are in lower middle income group as in 2020?",
-        "16|What is the average digital readiness score of high income countries in 2019?",
-        "17|Which country has the lowest global resilience score?",
-        "18|What is the highest energy per capita score in 2020? In which country",
-        "19|What country has the longest period of deflation? Deflation is known as when the inflation is negative",
-        "20|Which country has the highest gdp per capita among lower middle income group?",
-        "21|Number of countries have higher economic opportunity than the world",
-        "22|Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
-        "23|Explain for me the correlations of human development index and gdp per capita",
-        "24|Evaluate the differences in digital readiness of South Asia compared to Europe region",
-        "25|Is there any correlation between governance quality and digital readiness score of South Asia?",
-        "26|Does the school enrolment in secondary affect the HDI in South Asia?",
-        "27|What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
-        "28|Compare the economic opportunity index of high income, middlie income groups and the world",
-        "29|Is the weather vulnerability related to the child mortality in high income country?",
-        "30|Do countries with high weather vulnerability score have higher green transition scores? Explain for me the implication",
-        "31|What is the relationship between unemployment rate and inflation of US through years?"
     ]
     if not user_queries:
         logger.error("No query provided. Please set a valid query in the code.")
@@ -146,8 +122,11 @@ if __name__ == "__main__":
                 "query": "",
                 "table_name": TABLE_NAME
             }
+            start_time = time.time()
             state = sql_gen_node(state)
-            save_ground_truth(state, idx)
+            end_time = time.time()
+            gen_time = end_time - start_time
+            save_ground_truth(state, idx, gen_time)
             logger.info(f"Saved: {OUTPUT_DIR}/question_{idx}.json")
         except Exception as e:
             logger.error(f"Error processing question {idx}: {e}")

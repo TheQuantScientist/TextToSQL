@@ -1,5 +1,6 @@
 from typing_extensions import TypedDict
 from groq import Groq
+import time
 import json
 import os
 import logging
@@ -68,7 +69,7 @@ def sql_gen_node(state: State) -> State:
     return state
 
 # === SAVE OUTPUT ===
-def save_ground_truth(state: State, idx, output_dir=OUTPUT_DIR):
+def save_ground_truth(state: State, idx, gen_time=None, output_dir=OUTPUT_DIR):
     os.makedirs(output_dir, exist_ok=True)
     output = {
         "question": state["question"],
@@ -77,6 +78,8 @@ def save_ground_truth(state: State, idx, output_dir=OUTPUT_DIR):
     # Remove all \n from the query - Format the query
     if "query" in output and isinstance(output["query"], str):
         output["query"] = output["query"].replace('\n', ' ').replace('\r', ' ').strip()
+    if gen_time is not None:
+        output["generation_time"] = round(gen_time, 4)
     filename = f"question_{idx}.json"
     filepath = os.path.join(output_dir, filename)
     with open(filepath, "w", encoding="utf-8") as f:
@@ -104,8 +107,13 @@ if __name__ == "__main__":
                 "query": "",
                 "table_name": TABLE_NAME
             }
+            start_time = time.time()
             state = sql_gen_node(state)
-            save_ground_truth(state, idx)
+            end_time = time.time()
+            gen_time = end_time - start_time
+            save_ground_truth(state, idx, gen_time)
             logger.info(f"Saved: {OUTPUT_DIR}/question_{idx}.json")
+            logger.info(f"Generation time for question {idx}: {gen_time:.2f} seconds")
+            print(f"Generation time for question {idx}: {gen_time:.2f} seconds")
         except Exception as e:
             logger.error(f"Error processing question {idx}: {e}")
