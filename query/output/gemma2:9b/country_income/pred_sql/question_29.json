@@ -1,0 +1,5 @@
+{
+    "question": "Which region ID has high income inequality? Explain reasons behind it",
+    "query": "SELECT   gcam_region_id FROM country_income WHERE   gini_reported > 0.5 LIMIT 50;",
+    "generation_time": 14.5073
+}

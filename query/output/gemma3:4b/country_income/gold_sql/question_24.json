@@ -1,0 +1,5 @@
+{
+    "question": "Does higher gdp per capita posiviely correlated with high income inequality? Explain possible reasons",
+    "query": "SELECT    gdp_ppp_pc_usd2011,    gini_reported FROM    country_income WHERE    year = 2011 ORDER BY    gdp_ppp_pc_usd2011 DESC LIMIT 50;  This query selects the GDP per capita and reported Gini coefficient for the year 2011, orders the results by GDP per capita in descending order, and limits the output to 50 rows.",
+    "generation_time": 5.1031
+}

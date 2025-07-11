@@ -1,0 +1,5 @@
+{
+    "question": "What is the average of d10 net income of Vietnam over years?",
+    "query": "SELECT AVG(income_net)  FROM country_income  WHERE country = 'Vietnam' AND category = 'd10'  LIMIT 50;",
+    "generation_time": 0.7856
+}

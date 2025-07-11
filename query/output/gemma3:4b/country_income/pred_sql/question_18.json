@@ -1,0 +1,5 @@
+{
+    "question": "Calculate the average gini of countries by region ID in 2015",
+    "query": "SELECT   gcam_region_id,   AVG(gini_reported) FROM country_income WHERE   year = 2015 GROUP BY   gcam_region_id LIMIT 50;",
+    "generation_time": 22.1592
+}
