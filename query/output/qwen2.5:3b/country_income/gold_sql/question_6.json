@@ -1,5 +1,0 @@
-{
-    "question": "What is the gdp per capita of Sweden in 2015?",
-    "query": "SELECT gdp_ppp_pc_usd2011 FROM country_income WHERE country = 'Sweden' AND year = 2015 LIMIT 50;",
-    "generation_time": 0.6218
-}
