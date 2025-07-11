@@ -1,0 +1,5 @@
+{
+    "question": "What is the net income of d10 category of US in 2015?",
+    "query": "SELECT income_net FROM country_income WHERE iso = 'usa' AND year = 2015 AND category = 'd10' LIMIT 50;",
+    "generation_time": 0.5787
+}
