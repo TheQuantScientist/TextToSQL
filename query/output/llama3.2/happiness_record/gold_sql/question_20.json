@@ -1,0 +1,5 @@
+{
+    "question": "What is the average Confidence In National Government score of Vietnam over years?",
+    "query": "SELECT    AVG(confidence_in_national_government) AS avg_confidence_in_national_government FROM    world_happiness_report WHERE    country_name = 'Vietnam' LIMIT 50;",
+    "generation_time": 5.0145
+}

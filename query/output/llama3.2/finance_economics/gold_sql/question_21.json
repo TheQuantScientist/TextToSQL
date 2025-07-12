@@ -1,0 +1,5 @@
+{
+    "question": "Average gold price by year",
+    "query": "SELECT      EXTRACT(YEAR FROM date) AS year,      AVG(gold_price) AS avg_gold_price FROM      finance_economics_dataset GROUP BY      year ORDER BY      year LIMIT 50;",
+    "generation_time": 5.8483
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the social support index of Germany in 2008?",
+    "query": "SELECT social_support FROM world_happiness_report WHERE country_name = 'Germany' AND year = 2008 LIMIT 50;",
+    "generation_time": 3.7745
+}

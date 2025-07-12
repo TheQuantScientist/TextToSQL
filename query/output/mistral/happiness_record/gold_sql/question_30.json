@@ -1,0 +1,5 @@
+{
+    "question": "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+    "query": "SELECT    log_GDP_per_capital,    AVG(negative_affect) AS avg_negative_affect FROM    world_happiness_report GROUP BY    log_GDP_per_capital ORDER BY    log_GDP_per_capital DESC LIMIT 50;  This query groups the data by `log_GDP_per_capital` and calculates the average `negative_affect` for each group. The results are then ordered in descending order by `log_GDP_per_capital` to show the countries with the highest GDP per capita first. The `LIMIT 50` clause is used to limit the results to the top 50 rows.",
+    "generation_time": 4.0747
+}

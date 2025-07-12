@@ -1,0 +1,5 @@
+{
+    "question": "When it is best to invest in real estate in terms of interest rate environment, stock performance and unemployment context?",
+    "query": "SELECT    date,    interest_rate,    close_price,    unemployment_rate,    real_estate_index FROM    finance_economics_dataset WHERE    interest_rate < (SELECT AVG(interest_rate) FROM finance_economics_dataset)    AND close_price > (SELECT AVG(close_price) FROM finance_economics_dataset)    AND unemployment_rate < (SELECT AVG(unemployment_rate) FROM finance_economics_dataset) ORDER BY    real_estate_index DESC LIMIT 50;",
+    "generation_time": 7.2446
+}

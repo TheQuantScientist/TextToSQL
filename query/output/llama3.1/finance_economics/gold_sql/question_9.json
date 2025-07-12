@@ -1,0 +1,5 @@
+{
+    "question": "The date, consumer confidence index, consumer spending where the bankruptcy rate is highest",
+    "query": "SELECT date, consumer_confidence_index, consumer_spending FROM finance_economics_dataset ORDER BY bankruptcy_rate DESC LIMIT 50;",
+    "generation_time": 5.7566
+}

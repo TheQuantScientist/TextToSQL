@@ -1,5 +1,5 @@
 {
     "question": "Vietnam released economic reformation policy named 'Doi Moi' from 1986 to 2000. Evaluate the effectiveness of the policy based on the gini score trend of the country in 2 phases: Before 1986 and after 1986",
-    "query": "WITH before_1986 AS (   SELECT AVG(gini_reported) AS avg_gini_before_1986   FROM country_income   WHERE iso = 'vnm' AND year < 1986 ), after_1986 AS (   SELECT AVG(gini_reported) AS avg_gini_after_1986   FROM country_income   WHERE iso = 'vnm' AND year >= 1986 ) SELECT * FROM before_1986, after_1986 LIMIT 50;",
-    "generation_time": 6.0297
+    "query": "WITH before_1986 AS (   SELECT AVG(gini_reported) AS avg_gini_before   FROM country_income   WHERE country = 'Vietnam' AND year < 1986 ), after_1986 AS (   SELECT AVG(gini_reported) AS avg_gini_after   FROM country_income   WHERE country = 'Vietnam' AND year >= 1986 ) SELECT * FROM before_1986, after_1986 LIMIT 50;",
+    "generation_time": 6.462
 }

@@ -1,5 +1,5 @@
 {
     "question": "Analyze the trend of world's income inequality across region from 1967 to 2015.",
     "query": "SELECT    gcam_region_id,    year,    AVG(gini_recalculated) AS avg_gini_recalculated FROM    country_income WHERE    year BETWEEN 1967 AND 2015 GROUP BY    gcam_region_id, year ORDER BY    gcam_region_id, year LIMIT 50;",
-    "generation_time": 4.8799
+    "generation_time": 3.9805
 }

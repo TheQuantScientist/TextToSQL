@@ -1,0 +1,5 @@
+{
+    "question": "The unemployment rate, interest rate, inflation rate, the date where Dow Jones has top trading volume",
+    "query": "SELECT    date,    unemployment_rate,    interest_rate,    inflation_rate,    trading_volume FROM    finance_economics_dataset WHERE    stock_index = 'Dow Jones'    AND trading_volume = (     SELECT        MAX(trading_volume)      FROM        finance_economics_dataset      WHERE        stock_index = 'Dow Jones'   ) LIMIT 50;",
+    "generation_time": 5.9839
+}
