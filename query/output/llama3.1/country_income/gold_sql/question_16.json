@@ -1,5 +1,5 @@
 {
     "question": "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
-    "query": "SELECT SUM(income_net)  FROM country_income  WHERE country = 'Vietnam' AND year = 2015 AND category BETWEEN 'd5' AND 'd9'  LIMIT 50;",
-    "generation_time": 1.9544
+    "query": "SELECT SUM(income_net)  FROM country_income  WHERE country = 'Vietnam'  AND year = 2015  AND category BETWEEN 'd5' AND 'd9'  LIMIT 50;",
+    "generation_time": 3.865
 }

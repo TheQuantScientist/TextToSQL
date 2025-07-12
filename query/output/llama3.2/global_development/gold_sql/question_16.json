@@ -1,0 +1,5 @@
+{
+    "question": "What is the average digital readiness score of high income countries in 2019?",
+    "query": "SELECT AVG(digital_readiness_score)  FROM global_development_indicators  WHERE income_group = 'High income' AND year = 2019  LIMIT 50;",
+    "generation_time": 10.9234
+}

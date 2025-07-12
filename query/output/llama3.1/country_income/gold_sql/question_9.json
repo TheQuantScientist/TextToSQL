@@ -1,5 +1,5 @@
 {
     "question": "What is the gpd per capita, population and gini coefficient of Vietnam in 2010?",
-    "query": "SELECT gdp_ppc_pc_usd2011, population, gini_reported FROM country_income WHERE country = 'Vietnam' AND year = 2010 LIMIT 50;",
-    "generation_time": 0.7003
+    "query": "SELECT    gdp_ppc_pc_usd2011,    population,    gini_reported FROM    country_income WHERE    iso = 'vnm'    AND year = 2010 LIMIT 50;",
+    "generation_time": 0.7295
 }

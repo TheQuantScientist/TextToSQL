@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the highest gdp per capita among lower middle income group?",
+    "query": "SELECT country_name, gdp_per_capita FROM global_development_indicators WHERE income_group = 'Lower middle income' ORDER BY gdp_per_capita DESC LIMIT 1;",
+    "generation_time": 11.8487
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the life expectancy of Japan in 2020?",
+    "query": "SELECT life_expectancy FROM global_development_indicators WHERE country_name = 'Japan' AND year = 2020 LIMIT 50;",
+    "generation_time": 3.0075
+}

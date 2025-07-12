@@ -1,0 +1,5 @@
+{
+    "question": "What is the long GDP per capita of China in 2009?",
+    "query": "SELECT EXP(log_GDP_per_capital) AS GDP_per_capita FROM world_happiness_report WHERE country_name = 'China' AND year = 2009 LIMIT 50;",
+    "generation_time": 0.8297
+}

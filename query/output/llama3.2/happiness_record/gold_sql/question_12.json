@@ -1,0 +1,5 @@
+{
+    "question": "What is the average life ladder of Asia countries in 2022?",
+    "query": "SELECT AVG(life_ladder) AS avg_life_ladder FROM world_happiness_report WHERE regional_indicator = 'Asia' AND year = 2022 LIMIT 50;",
+    "generation_time": 3.7819
+}

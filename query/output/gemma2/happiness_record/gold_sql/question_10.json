@@ -1,0 +1,5 @@
+{
+    "question": "What is the Confidence In National Government of Singapore in 2022?",
+    "query": "SELECT confidence_in_national_government FROM world_happiness_report WHERE country_name = 'Singapore' AND year = 2022 LIMIT 50;",
+    "generation_time": 0.5996
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Number of days where the gdp growth is negative",
+    "query": "SELECT COUNT(*)  FROM finance_economics_dataset  WHERE gdp_growth < 0  LIMIT 50;",
+    "generation_time": 5.8047
+}

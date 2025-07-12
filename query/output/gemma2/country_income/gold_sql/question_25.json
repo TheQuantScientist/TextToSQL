@@ -1,5 +1,5 @@
 {
     "question": "The financial crisis happened in 2008. Evaluate the income inequality before and after the event in US.",
     "query": "SELECT    year,    gini_reported,    gini_recalculated FROM    country_income WHERE    iso = 'usa'    AND year IN (2005, 2006, 2007, 2009, 2010, 2011) ORDER BY    year LIMIT 50;",
-    "generation_time": 4.8431
+    "generation_time": 7.0702
 }

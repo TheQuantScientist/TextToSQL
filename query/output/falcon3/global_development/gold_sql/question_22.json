@@ -1,0 +1,5 @@
+{
+    "question": "Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
+    "query": "SELECT    year,    country_code,    region,    AVG(green_transition_score) AS avg_green_transition_score FROM    global_development_indicators GROUP BY    year,    country_code,    region ORDER BY    year,    region,    country_code LIMIT 50;",
+    "generation_time": 11.2767
+}

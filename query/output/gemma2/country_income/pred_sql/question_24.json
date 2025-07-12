@@ -1,5 +1,0 @@
-{
-    "question": "Does higher gdp per capita posiviely correlated with high income inequality? Explain possible reasons",
-    "query": "SELECT   country,   gdp_ppp_pc_usd2011,   gini_reported FROM country_income WHERE   year = 2022 LIMIT 50;",
-    "generation_time": 21.8099
-}

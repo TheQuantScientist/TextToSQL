@@ -1,5 +1,5 @@
 {
     "question": "What is the average gini recalculated score of top 5 countries having highest population in 2015?",
-    "query": "SELECT AVG(gini_recalculated)  FROM country_income  WHERE year = 2015  AND country IN (   SELECT country    FROM country_income    WHERE year = 2015    ORDER BY population DESC    LIMIT 5 )  LIMIT 50;",
-    "generation_time": 3.8465
+    "query": "SELECT    country,    AVG(gini_recalculated) AS avg_gini_recalculated FROM    country_income WHERE    year = 2015   AND country IN (     SELECT        country     FROM        country_income     WHERE        year = 2015     ORDER BY        population DESC     LIMIT 5   ) GROUP BY    country LIMIT 50;",
+    "generation_time": 4.2272
 }

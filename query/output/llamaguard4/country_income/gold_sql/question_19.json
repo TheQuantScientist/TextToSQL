@@ -1,5 +1,5 @@
 {
     "question": "What is the growth rate of gini recalculated of Vietnam for each year?",
-    "query": "SELECT    year,    gini_recalculated,    (gini_recalculated / LAG(gini_recalculated, 1) OVER (ORDER BY year) - 1) * 100 AS gini_growth_rate FROM    country_income WHERE    iso = 'vnm' ORDER BY    year LIMIT 50;",
-    "generation_time": 4.9701
+    "query": "SELECT    year,    gini_recalculated,    (gini_recalculated / LAG(gini_recalculated, 1) OVER (ORDER BY year) - 1) * 100 AS gini_growth_rate FROM    country_income WHERE    country = 'Vietnam' ORDER BY    year LIMIT 50;",
+    "generation_time": 3.9677
 }

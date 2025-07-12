@@ -1,0 +1,5 @@
+{
+    "question": "Explain for me the correlations of human development index and gdp per capita",
+    "query": "SELECT    country_name,    human_development_index,    gdp_per_capita FROM    global_development_indicators ORDER BY    human_development_index LIMIT 50;",
+    "generation_time": 10.9377
+}

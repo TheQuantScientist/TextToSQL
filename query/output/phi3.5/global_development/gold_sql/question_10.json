@@ -1,0 +1,5 @@
+{
+    "question": "What is the unemployment rate of US in 2020?",
+    "query": "SELECT unemployment_rate FROM global_development_indicators WHERE country_name = 'United States' AND year = 2020 LIMIT 50;",
+    "generation_time": 10.942
+}

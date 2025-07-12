@@ -1,0 +1,5 @@
+{
+    "question": "The inflation rate of November 28, 2008",
+    "query": "SELECT inflation_rate FROM finance_economics_dataset WHERE date = '2008-11-28' LIMIT 50;",
+    "generation_time": 1.4292
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Recommend asset classes to invest when the USD currency is appreciated, and when it is depreciated",
+    "query": "WITH appreciated_usd AS (   SELECT      'appreciated' AS usd_status,     AVG(gold_price) AS avg_gold_price,     AVG(crude_oil_price) AS avg_crude_oil_price,     AVG(real_estate_index) AS avg_real_estate_index   FROM finance_economics_dataset   WHERE forex_usd_eur > 1 AND forex_usd_jpy > 1 ), depreciated_usd AS (   SELECT      'depreciated' AS usd_status,     AVG(gold_price) AS avg_gold_price,     AVG(crude_oil_price) AS avg_crude_oil_price,     AVG(real_estate_index) AS avg_real_estate_index   FROM finance_economics_dataset   WHERE forex_usd_eur < 1 AND forex_usd_jpy < 1 ) SELECT * FROM appreciated_usd UNION ALL SELECT * FROM depreciated_usd LIMIT 50;",
+    "generation_time": 7.5131
+}

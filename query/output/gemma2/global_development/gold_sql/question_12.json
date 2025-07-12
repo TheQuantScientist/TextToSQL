@@ -1,0 +1,5 @@
+{
+    "question": "What is the average economic opportunity index of low and indebt countries?",
+    "query": "SELECT AVG(econ_opportunity_index) AS avg_econ_opportunity_index FROM global_development_indicators WHERE income_group IN ('Low income', 'Lower middle income'); LIMIT 50;",
+    "generation_time": 12.1815
+}

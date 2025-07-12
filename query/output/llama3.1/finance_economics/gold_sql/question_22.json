@@ -1,0 +1,5 @@
+{
+    "question": "2008 was the year of global financial crisis. Evaluate some indicators that signaled this recession, and propose a risk mitigation strategy for stock investing",
+    "query": "Here is a SQL query that can help evaluate some indicators that signaled the 2008 global financial crisis and propose a risk mitigation strategy for stock investing: ``` SELECT    date,    stock_index,    close_price,    trading_volume,    gdp_growth,    inflation_rate,    unemployment_rate,    interest_rate,    consumer_confidence_index,    government_debt FROM    finance_economics_dataset WHERE    EXTRACT(YEAR FROM date) = 2008 ORDER BY    date LIMIT 50; ``` This query selects relevant columns that can help identify indicators of the 2008 global financial crisis, such as stock prices, trading volume, GDP growth, inflation rate, unemployment rate, interest rate, consumer confidence index, and government debt. The query filters the data to only include records from 2008 and orders the results by date.",
+    "generation_time": 7.7442
+}

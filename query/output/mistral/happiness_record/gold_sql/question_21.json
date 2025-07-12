@@ -1,0 +1,5 @@
+{
+    "question": "What are the countries having confidence in national goverment higher than world average in 2022?",
+    "query": "WITH world_average AS (   SELECT AVG(confidence_in_national_government) AS avg_confidence   FROM world_happiness_report   WHERE year = 2022 ) SELECT country_name, confidence_in_national_government FROM world_happiness_report, world_average WHERE year = 2022 AND confidence_in_national_government > avg_confidence LIMIT 50;",
+    "generation_time": 4.832
+}

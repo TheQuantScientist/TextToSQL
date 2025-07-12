@@ -1,5 +1,0 @@
-{
-    "question": "Top 5 country of which d1 category has highest net income in 2015",
-    "query": "SELECT   country FROM country_income WHERE   year = 2015 AND category = 'd1' ORDER BY   income_net DESC LIMIT 5;",
-    "generation_time": 18.1921
-}

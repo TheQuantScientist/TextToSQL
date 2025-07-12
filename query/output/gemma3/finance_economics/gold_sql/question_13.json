@@ -1,0 +1,5 @@
+{
+    "question": "The annual growth rate of consumer confidence index from 2000 to 2008",
+    "query": "SELECT    EXTRACT(YEAR FROM date) AS year,    (POWER(LAG(consumer_confidence_index, 1) / consumer_confidence_index, 1 / (EXTRACT(YEAR FROM date) - EXTRACT(YEAR FROM LAG(date, 1)))) - 1) * 100 AS annual_growth_rate FROM    finance_economics_dataset WHERE    EXTRACT(YEAR FROM date) BETWEEN 2000 AND 2008 ORDER BY    year LIMIT 50;",
+    "generation_time": 6.0768
+}

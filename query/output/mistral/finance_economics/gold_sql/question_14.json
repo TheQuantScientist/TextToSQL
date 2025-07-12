@@ -1,0 +1,5 @@
+{
+    "question": "Ratio of days having negative gdp growth to total days",
+    "query": "SELECT    COUNT(CASE WHEN gdp_growth < 0 THEN 1 ELSE NULL END) / COUNT(*)::FLOAT AS ratio_of_negative_gdp_growth FROM    finance_economics_dataset LIMIT 50;",
+    "generation_time": 6.9529
+}

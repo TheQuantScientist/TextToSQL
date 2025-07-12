@@ -1,0 +1,5 @@
+{
+    "question": "What is the average positive affect of all countries in 2008?",
+    "query": "SELECT AVG(positive_affect) AS avg_positive_affect FROM world_happiness_report WHERE year = 2008 LIMIT 50;",
+    "generation_time": 0.6253
+}

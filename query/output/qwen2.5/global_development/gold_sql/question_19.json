@@ -1,0 +1,5 @@
+{
+    "question": "What country has the longest period of deflation? Deflation is known as when the inflation is negative",
+    "query": "SELECT country_name, MIN(year) AS start_year, MAX(year) AS end_year FROM (   SELECT country_name, year,           CASE WHEN LAG(inflation_rate, 1) OVER (PARTITION BY country_name ORDER BY year) IS NULL OR inflation_rate < 0 AND LAG(inflation_rate, 1) OVER (PARTITION BY country_name ORDER BY year) >= 0                THEN 1 ELSE 0 END AS deflation_start,          CASE WHEN LEAD(inflation_rate, 1) OVER (PARTITION BY country_name ORDER BY year) IS NULL OR inflation_rate < 0 AND LEAD(inflation_rate, 1) OVER (PARTITION BY country_name ORDER BY year) >= 0                THEN 1 ELSE 0 END AS deflation_end   FROM global_development_indicators ) AS subquery WHERE deflation_start = 1 OR deflation_end = 1 GROUP BY country_name ORDER BY end_year - start_year DESC LIMIT 1;",
+    "generation_time": 11.5099
+}

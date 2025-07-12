@@ -1,0 +1,5 @@
+{
+    "question": "The date, gold price, crude oil price and gdp growth where unemployment rate reached the highest",
+    "query": "SELECT date, gold_price, crude_oil_price, gdp_growth FROM finance_economics_dataset WHERE unemployment_rate = (SELECT MAX(unemployment_rate) FROM finance_economics_dataset) LIMIT 50;",
+    "generation_time": 5.8156
+}

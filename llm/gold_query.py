@@ -17,9 +17,9 @@ logger = logging.getLogger(__name__)
 # === CONFIGURATION ===
 OUTPUT_DIR = os.path.join(
     os.path.dirname(__file__),
-    "..", "query", "output", "country_income", "gold_sql"
+    "..", "query", "output", "qwen2.5", "happiness_record", "gold_sql"
 )
-TABLE_NAME = "country_income"
+TABLE_NAME = "world_happiness_report"
 
 # === GET DATA FIELDS MEANING ===
 def get_data_fields_meaning(table_name: str) -> str:
@@ -91,37 +91,37 @@ def save_ground_truth(state: State, idx, gen_time=None, output_dir=OUTPUT_DIR):
 # === MAIN PIPELINE ===
 if __name__ == "__main__":
     user_queries = [
-        "What is the gini recalculated of Vietnam in 2015?",
-        "What is the net income of d10 category of US in 2015?",
-        "What is the net income of d1 category of Thailand in 2009?",
-        "What is the net income of d10 group of Singapore in 1970?",
-        "What is the population of China in 2000?",
-        "What is the gdp per capita of Sweden in 2015?",
-        "Distinct list of region ID",
-        "All the countries have gini recalculated greater than 0.4 in 2015",
-        "What is the gpd per capita, population and gini coefficient of Vietnam in 2010?",
-        "What is the net income of each category of Vietnam in 2015?",
-        "What is the average of gini recalcuated score of Vietnam by year?",
-        "Top 5 country that have highest gini recalulated in 2015",
-        "Top 5 country of which d1 category has highest net income in 2015",
-        "How many countries have gini recalculated lower than the world average in 2015?",
-        "What is the average of d10 net income of Vietnam over years?",
-        "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
-        "What is the average gini recalculated score of top 5 countries having highest population in 2015?",
-        "Calculate the average gini of countries by region ID in 2015",
-        "What is the growth rate of gini recalculated of Vietnam for each year?",
-        "The average gini recalculated of the world in 2015",
-        "What is the ratio of net income of d10 to d1 group of Singapore in 2015?",
-        "Vietnam released economic reformation policy named 'Doi Moi' from 1986 to 2000. Evaluate the effectiveness of the policy based on the gini score trend of the country in 2 phases: Before 1986 and after 1986",
-        "Analyze the trend of world's income inequality across region from 1967 to 2015.",
-        "Does higher gdp per capita posiviely correlated with high income inequality? Explain possible reasons",
-        "The financial crisis happened in 2008. Evaluate the income inequality before and after the event in US.",
-        "Analyze the trend of income inequality and gdp per capita of Singapore from 1970 onward.",
-        "Does population affect income inequality? Analyze gini index of China through years to explain",
-        "Comparing the gini index of China and US over years to evaluate which country has higher income inequality",
-        "Which region ID has high income inequality? Explain reasons behind it",
-        "What are the common patterns can be observed from countries with high income inequality in 2015, knowing gini greater than 0.4 is considered as high inequality",
-        "Evaluate the net income gap between low income group d1 to d4, middle income group d5 to d9 and high income group d10 in Vietnam and propose improvement plan"
+        "What is the positive affect of US in 2008?",
+        "What is the life ladder of Vietnam in 2022?",
+        "What is the long GDP per capita of China in 2009?",
+        "What is the social support index of Germany in 2008?",
+        "What is the Healthy Life Expectancy At Birth of Japan in 2020?",
+        "What is the Freedom To Make Life Choices of Vietnam in 2018?",
+        "What is the generiosity score of Singapore in 2022?",
+        "What is the Perceptions Of Corruption of Ecuador in 2008?",
+        "What is the negative affect of Japan in 2022?",
+        "What is the Confidence In National Government of Singapore in 2022?",
+        "What is the average positive affect of all countries in 2008?",
+        "What is the average life ladder of Asia countries in 2022?",
+        "Which country has the highest average long gdp per capita through years?",
+        "Which country has the lowest average social support score over years?",
+        "What is the average Healthy Life Expectancy At Birth of the world after 2020?",
+        "Which country has the highest freedom to make choices index? What region is it from?",
+        "How many countries have higher average generiosity over years compared to the world' average?",
+        "Which region has the highest average perceptions of corruption?",
+        "Which country has the highest average negative affect in 2022?",
+        "What is the average Confidence In National Government score of Vietnam over years?",
+        "What are the countries having confidence in national goverment higher than world average in 2022?",
+        "Interpret for me the current trend in positive affect of the world from 2008 to 2022?",
+        "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+        "Are countries with higher long gdp per capita likely to have higher positive effect over years? Comparing the data to evaluate",
+        "Does lack of social support lead to higher negative affect over years?",
+        "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+        "Evaluate for me the relationship between freedom to make choices and positive affect of Asia and North America countries. Explain the reasons.",
+        "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+        "What is the relationship of percptions of corruption and confidence in national government?",
+        "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+        "How differences in Confidence In National Government score comparing all the regions? Evaluate the importance of governance trust on positive affects."
     ]
     if not user_queries:
         logger.error("No query provided. Please set a valid query in the code.")

@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the highest freedom to make choices index? What region is it from?",
+    "query": "SELECT country_name, regional_indicator, freedom_to_make_life_choices FROM world_happiness_report ORDER BY freedom_to_make_life_choices DESC LIMIT 1;",
+    "generation_time": 0.6064
+}

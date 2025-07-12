@@ -1,0 +1,5 @@
+{
+    "question": "What is the Perceptions Of Corruption of Ecuador in 2008?",
+    "query": "SELECT perceptions_of_corruption FROM world_happiness_report WHERE country_name = 'Ecuador' AND year = 2008 LIMIT 50;",
+    "generation_time": 3.7658
+}
