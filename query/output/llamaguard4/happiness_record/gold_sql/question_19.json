@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the highest average negative affect in 2022?",
+    "query": "SELECT country_name, AVG(negative_affect) AS avg_negative_affect FROM world_happiness_report WHERE year = 2022 GROUP BY country_name ORDER BY avg_negative_affect DESC LIMIT 1;",
+    "generation_time": 4.8093
+}

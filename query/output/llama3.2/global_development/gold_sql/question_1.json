@@ -1,0 +1,5 @@
+{
+    "question": "What is the digital readiness score of South Asia in 2020?",
+    "query": "SELECT digital_readiness_score FROM global_development_indicators WHERE country_code IN ('AFG', 'BGD', 'BTN', 'IND', 'IRN', 'MDV', 'NPL', 'PAK', 'SLB')  AND year = 2020 LIMIT 50;",
+    "generation_time": 1.0649
+}

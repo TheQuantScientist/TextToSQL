@@ -1,5 +1,5 @@
 {
     "question": "What is the average of gini recalcuated score of Vietnam by year?",
     "query": "SELECT year, AVG(gini_recalculated) AS avg_gini_recalculated FROM country_income WHERE country = 'Vietnam' GROUP BY year ORDER BY year LIMIT 50;",
-    "generation_time": 0.6952
+    "generation_time": 0.6772
 }

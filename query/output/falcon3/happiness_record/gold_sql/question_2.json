@@ -1,0 +1,5 @@
+{
+    "question": "What is the life ladder of Vietnam in 2022?",
+    "query": "SELECT life_ladder FROM world_happiness_report WHERE country_name = 'Vietnam' AND year = 2022 LIMIT 50;",
+    "generation_time": 0.6113
+}

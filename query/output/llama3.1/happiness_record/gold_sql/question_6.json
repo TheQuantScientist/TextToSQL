@@ -1,0 +1,5 @@
+{
+    "question": "What is the Freedom To Make Life Choices of Vietnam in 2018?",
+    "query": "SELECT freedom_to_make_life_choices FROM world_happiness_report WHERE country_name = 'Vietnam' AND year = 2018 LIMIT 50;",
+    "generation_time": 0.9967
+}

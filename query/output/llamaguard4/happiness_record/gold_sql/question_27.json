@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate for me the relationship between freedom to make choices and positive affect of Asia and North America countries. Explain the reasons.",
+    "query": "SELECT    regional_indicator,    AVG(freedom_to_make_life_choices) AS avg_freedom,    AVG(positive_affect) AS avg_positive_affect FROM    world_happiness_report WHERE    regional_indicator IN ('Asia', 'North America') GROUP BY    regional_indicator ORDER BY    avg_freedom DESC LIMIT 50;",
+    "generation_time": 3.8319
+}

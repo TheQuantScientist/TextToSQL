@@ -1,0 +1,5 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "SELECT    year,    AVG(generosity) AS avg_generosity FROM    world_happiness_report WHERE    regional_indicator = 'Asia' GROUP BY    year ORDER BY    year LIMIT 50;  This query calculates the average generosity for Asian countries over the years, providing insight into the current movement of generosity in the region.",
+    "generation_time": 4.9092
+}

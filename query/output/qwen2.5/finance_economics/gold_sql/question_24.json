@@ -1,0 +1,5 @@
+{
+    "question": "Low interest rate leads to risky money flow into stock and consumer spending. Evaluate the data to verify the accuracy of this statement.",
+    "query": "SELECT    interest_rate,    close_price,    consumer_spending FROM    finance_economics_dataset WHERE    interest_rate < (SELECT AVG(interest_rate) FROM finance_economics_dataset) ORDER BY    interest_rate ASC LIMIT 50;",
+    "generation_time": 3.2744
+}

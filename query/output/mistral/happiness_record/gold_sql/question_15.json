@@ -1,0 +1,5 @@
+{
+    "question": "What is the average Healthy Life Expectancy At Birth of the world after 2020?",
+    "query": "SELECT AVG(healthy_life_expectancy_at_birth)  FROM world_happiness_report  WHERE year > 2020  LIMIT 50;",
+    "generation_time": 3.6734
+}

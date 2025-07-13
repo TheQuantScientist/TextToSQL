@@ -1,5 +1,5 @@
 {
     "question": "What is the ratio of net income of d10 to d1 group of Singapore in 2015?",
-    "query": "SELECT    income_net_d10 / income_net_d1 AS income_ratio FROM    (   SELECT      income_net    FROM      country_income    WHERE      country = 'Singapore'      AND year = 2015      AND category = 'd10'   ) AS d10,   (   SELECT      income_net    FROM      country_income    WHERE      country = 'Singapore'      AND year = 2015      AND category = 'd1'   ) AS d1 LIMIT 1;",
-    "generation_time": 3.9813
+    "query": "SELECT    income_net_d10 / income_net_d1 AS ratio FROM    (   SELECT      income_net    FROM      country_income    WHERE      country = 'Singapore'      AND year = 2015      AND category = 'd10'   ) AS d10,   (   SELECT      income_net    FROM      country_income    WHERE      country = 'Singapore'      AND year = 2015      AND category = 'd1'   ) AS d1 LIMIT 1;",
+    "generation_time": 5.0438
 }

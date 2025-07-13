@@ -1,5 +1,5 @@
 {
     "question": "What is the gini recalculated of Vietnam in 2015?",
     "query": "SELECT gini_recalculated FROM country_income WHERE country = 'Vietnam' AND year = 2015 LIMIT 50;",
-    "generation_time": 0.6973
+    "generation_time": 0.7456
 }
