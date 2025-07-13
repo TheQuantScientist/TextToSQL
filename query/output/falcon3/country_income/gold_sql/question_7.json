@@ -1,5 +1,5 @@
 {
     "question": "Distinct list of region ID",
     "query": "SELECT DISTINCT gcam_region_id FROM country_income LIMIT 50;",
-    "generation_time": 0.588
+    "generation_time": 0.6188
 }

@@ -1,0 +1,5 @@
+{
+    "question": "What is the Healthy Life Expectancy At Birth of Japan in 2020?",
+    "query": "SELECT healthy_life_expectancy_at_birth FROM world_happiness_report WHERE country_name = 'Japan' AND year = 2020 LIMIT 50;",
+    "generation_time": 0.6024
+}

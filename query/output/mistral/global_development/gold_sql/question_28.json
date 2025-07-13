@@ -1,0 +1,5 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT    income_group,    AVG(econ_opportunity_index) AS avg_econ_opportunity_index FROM    global_development_indicators WHERE    income_group IN ('High income', 'Middle income') GROUP BY    income_group UNION ALL SELECT    'World' AS income_group,    AVG(econ_opportunity_index) AS avg_econ_opportunity_index FROM    global_development_indicators LIMIT 50;",
+    "generation_time": 11.146
+}

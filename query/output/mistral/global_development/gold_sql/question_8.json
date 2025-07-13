@@ -1,0 +1,5 @@
+{
+    "question": "What is the gpd per capita of OECD group in 2019?",
+    "query": "SELECT    AVG(gdp_per_capita) AS avg_gdp_per_capita FROM    global_development_indicators WHERE    year = 2019 AND income_group = 'OECD' LIMIT 50;",
+    "generation_time": 10.9422
+}

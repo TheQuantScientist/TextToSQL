@@ -1,0 +1,5 @@
+{
+    "question": "The annual consumer spending from 2000 to 2008",
+    "query": "SELECT      EXTRACT(YEAR FROM date) AS year,      SUM(consumer_spending) AS annual_consumer_spending FROM      finance_economics_dataset WHERE      EXTRACT(YEAR FROM date) BETWEEN 2000 AND 2008 GROUP BY      EXTRACT(YEAR FROM date) ORDER BY      year LIMIT 50;",
+    "generation_time": 4.9828
+}

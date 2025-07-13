@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the highest health expenditure per capita in 2020?",
+    "query": "SELECT country_name, health_expenditure_pct_gdp FROM global_development_indicators WHERE year = 2020 ORDER BY health_expenditure_pct_gdp DESC LIMIT 1;",
+    "generation_time": 11.0713
+}
