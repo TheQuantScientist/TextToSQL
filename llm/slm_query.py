@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 # === CONFIGURATION ===
 OUTPUT_DIR = os.path.join(
     os.path.dirname(__file__),
-    "..", "query", "output", "country_income", "pred_sql"
+    "..", "query", "output", "falcon3", "country_income", "pred_sql"
 )
 TABLE_NAME = "country_income"
 
