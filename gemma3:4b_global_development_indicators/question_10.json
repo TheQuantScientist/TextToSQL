@@ -1,0 +1,8 @@
+{
+    "question": "10|What is the unemployment rate of US in 2020?",
+    "query": "SELECT   unemployment_rate FROM global_development_indicators WHERE   country_code = 'USA' AND year = 2020 LIMIT 50;",
+    "answer": "The unemployment rate in the US for 2020 was 1.2336%.",
+    "sql_execution_time": 7.75,
+    "nlp_generation_time": 1.74,
+    "total_time": 9.49
+}

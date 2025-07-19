@@ -1,0 +1,8 @@
+{
+    "question": "2|Country with the highest global development resilience score in 2020?",
+    "query": "SELECT country_name, MAX(global_development_resilience_index) AS max_score FROM global_development_indicators WHERE year = 2020 LIMIT 50",
+    "answer": "It seems there was a query error. However, based on the information available, the country with the highest global development resilience score in 2020 would have had to appear either in the GROUP BY clause or be used within an aggregate function like MAX() or MIN(). If we were able to filter out invalid results and correct the query, we could then determine which country scored the highest. Unfortunately, I can't provide a specific answer with the current data available. Please check your query again for any errors.",
+    "sql_execution_time": 18.52,
+    "nlp_generation_time": 16.91,
+    "total_time": 35.43
+}

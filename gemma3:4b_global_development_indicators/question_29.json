@@ -1,0 +1,8 @@
+{
+    "question": "29|Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT   year,   country_name,   child_mortality FROM global_development_indicators WHERE   income_group LIKE '%High income%' LIMIT 50;",
+    "answer": "Based on the provided data, there is no information regarding the relationship between weather vulnerability and child mortality in high-income countries. The data only includes information on Australia, Brunei, and Guam, and child mortality rates for these countries do not include any weather vulnerability data. All listed countries have \"None\" for child mortality except for Australia, Brunei and Guam.",
+    "sql_execution_time": 8.89,
+    "nlp_generation_time": 10.64,
+    "total_time": 19.53
+}

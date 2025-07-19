@@ -1,0 +1,8 @@
+{
+    "question": "5|What is the unemployment rate of Europe region in 2008?",
+    "query": "SELECT AVG(unemployment_rate) AS average_unemployment_rate FROM global_development_indicators WHERE year = 2008 AND country_code LIKE 'EU%' LIMIT 50",
+    "answer": "The average unemployment rate for Europe in 2008 was approximately 4.16%.",
+    "sql_execution_time": 12.82,
+    "nlp_generation_time": 4.23,
+    "total_time": 17.05
+}

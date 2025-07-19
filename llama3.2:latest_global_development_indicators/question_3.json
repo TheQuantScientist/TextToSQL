@@ -1,0 +1,8 @@
+{
+    "question": "3|What is the human development index score of Vietnam in 2019?",
+    "query": "SELECT human_development_index FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2019 LIMIT 50;",
+    "answer": "The human development index (HDI) score for Vietnam in 2019 is 0.553. This means that out of a maximum possible score of 1, Vietnam scored 55.3% on the HDI scale. Based on this score, we can infer that Vietnam's social and economic conditions were relatively lower compared to other countries, with lower life expectancy, education levels, and income per capita.",
+    "sql_execution_time": 6.4,
+    "nlp_generation_time": 4.66,
+    "total_time": 11.07
+}

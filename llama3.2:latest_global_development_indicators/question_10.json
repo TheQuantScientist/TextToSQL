@@ -1,0 +1,8 @@
+{
+    "question": "10|What is the unemployment rate of US in 2020?",
+    "query": "SELECT unemployment_rate FROM global_development_indicators WHERE country_code = 'US' AND year = 2020 LIMIT 50;",
+    "answer": "Based on our analysis, unfortunately, we were unable to find any specific data on the unemployment rate of the United States in 2020 from our available records. It's possible that this information might be missing or not readily available in our current dataset.\n\nIf you're looking for accurate and reliable data on this topic, I recommend checking reputable sources such as the Bureau of Labor Statistics (BLS) or other official government agencies that track economic indicators. They may have more up-to-date and detailed information on the unemployment rate in 2020.\n\nWould you like me to help you find alternative resources or provide guidance on how to access this data from these sources?",
+    "sql_execution_time": 6.22,
+    "nlp_generation_time": 5.66,
+    "total_time": 11.88
+}

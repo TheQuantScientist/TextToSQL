@@ -1,0 +1,8 @@
+{
+    "question": "21|Number of countries have higher economic opportunity than the world",
+    "query": "SELECT country_code, COUNT(*) AS count FROM global_development_indicators WHERE econ_opportunity_index > (SELECT AVG(econ_opportunity_index) FROM global_developmentdictiornarios) GROUP BY country_code LIMIT 50;",
+    "answer": "I'm sorry, but the provided query results indicate an error related to a non-existent relation named \"global_developmentdictiornarios.\" Without accurate and specific data on countries with higher economic opportunities than average worldwide, I cannot provide you with precise information. To answer your question effectively, we would need access to relevant datasets that measure the economic opportunity index for different countries compared to a global mean. If updated or corrected query results become available, please share them so I can assist in answering how many and which specific countries have higher opportunities economically than others on an international scale.",
+    "sql_execution_time": 10.38,
+    "nlp_generation_time": 5.99,
+    "total_time": 16.37
+}

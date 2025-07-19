@@ -1,0 +1,8 @@
+{
+    "question": "12|What is the average economic opportunity index of low and indebt countries?",
+    "query": "SELECT AVG(econ_opportunity_index) FROM global_development_indicators WHERE country_name = 'Low-income' OR country_name = 'Indebted' LIMIT 50;",
+    "answer": "Based on the query results, it appears that there is no available data for the average economic opportunity index for low and indebted countries. The system is unable to provide a specific answer due to the lack of information in the database.\n\nIf you'd like to explore this topic further or consider alternative scenarios, I can help guide you through the process of finding relevant data or exploring related metrics that may be available.",
+    "sql_execution_time": 6.33,
+    "nlp_generation_time": 4.42,
+    "total_time": 10.75
+}

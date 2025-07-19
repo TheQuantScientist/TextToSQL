@@ -1,0 +1,8 @@
+{
+    "question": "17|Which country has the lowest global resilience score?",
+    "query": "To find the country with the lowest global resilience score, you can use the following SQL query:  ```sql SELECT country_name, global_development_resilience_index FROM global_development_indicators ORDER BY global_development_resilience_index LIMIT 1; ```  This query will return the name of the country with the lowest global resilience score. If you want to get the top 5 countries with the lowest scores, modify the `LIMIT` clause accordingly:  ```sql SELECT country_name, global_development_resilience_index FROM global_development_indicators ORDER BY global_development_resilience_index LIMIT 5; ```",
+    "answer": "The country with the lowest global resilience score is not determined from your provided query results due to a syntax error. However, if we assume that the correct statement would be like this: \"To find the country with the lowest global resilience score, let's look at the table named 'Global Resilience Scores'. The country with the minimum score is [Country Name] with a score of [Score Value].\"\n\nWithout the actual data, I cannot provide specific numbers or names. Please double-check your query and try again for accurate results.",
+    "sql_execution_time": 26.45,
+    "nlp_generation_time": 8.94,
+    "total_time": 35.39
+}

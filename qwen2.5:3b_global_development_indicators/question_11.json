@@ -1,0 +1,8 @@
+{
+    "question": "11|To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT AVG(year) AS gdp_per_capita_growth FROM global_development_indicators WHERE year BETWEEN 2000 AND 2020 GROUP BY YEAR ORDER BY YEAR LIMIT 50",
+    "answer": "Between the years 2000 and 2020, the world's GDP per capita has grown consistently with an average growth rate of 100% over this period, as indicated by the uniform value of 200.0 in the 'gdp_per_capita_growth' column for all queried years.",
+    "sql_execution_time": 11.04,
+    "nlp_generation_time": 9.08,
+    "total_time": 20.13
+}

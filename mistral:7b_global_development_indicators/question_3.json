@@ -1,0 +1,8 @@
+{
+    "question": "3|What is the human development index score of Vietnam in 2019?",
+    "query": "SELECT human_development_index FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2019;",
+    "answer": "The Human Development Index (HDI) of Vietnam in the year 2019 was approximately 0.553. This value indicates a medium level of human development.",
+    "sql_execution_time": 15.23,
+    "nlp_generation_time": 3.65,
+    "total_time": 18.88
+}

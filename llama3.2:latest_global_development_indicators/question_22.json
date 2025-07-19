@@ -1,0 +1,8 @@
+{
+    "question": "22|Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
+    "query": "SELECT T1.year, T2.green_transition_score FROM global_development_indicators AS T1 JOIN (     SELECT country_code, MIN(year) AS min_year, MAX(year) AS max_year     FROM global_development_indicators     WHERE green_transition_score IS NOT NULL     GROUP BY country_code ) AS T2 ON T1.country_code = T2.country_code AND T1.year BETWEEN T2.min_year AND T2.max_year",
+    "answer": "It looks like there's been an error with your query!\n\nUnfortunately, it seems that we don't have any data on green transition scores for countries and regions in our current results. The query is returning an error message saying that the column 'green_transition_score' doesn't exist.\n\nTo find common patterns in green transition scores, I'd need to see a working query with the correct data. If you could provide me with more information or clarify which columns we're looking at, I'd be happy to help you analyze and identify any patterns once we get our hands on the right data!",
+    "sql_execution_time": 9.04,
+    "nlp_generation_time": 6.23,
+    "total_time": 15.27
+}

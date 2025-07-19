@@ -1,0 +1,8 @@
+{
+    "question": "6|What is the life expectancy of Japan in 2020?",
+    "query": "SELECT year, country_name, life_expectancy FROM global_development_indicators WHERE country_name = 'Japan' AND year = 2020 LIMIT 50",
+    "answer": "The life expectancy in Japan in 2020 was 84 years.",
+    "sql_execution_time": 14.25,
+    "nlp_generation_time": 3.97,
+    "total_time": 18.21
+}

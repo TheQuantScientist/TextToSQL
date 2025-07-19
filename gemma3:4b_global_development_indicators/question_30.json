@@ -1,0 +1,8 @@
+{
+    "question": "30|Do countries with high weather vulnerability score have higher green transition scores? Explain for me the implication",
+    "query": "SELECT   country_name,   weather_vulnerability_score,   green_transition_score FROM global_development_indicators WHERE weather_vulnerability_score IS NOT NULL   AND green_transition_score IS NOT NULL ORDER BY weather_vulnerability_score DESC LIMIT 50;",
+    "answer": "I’m sorry, I encountered an error processing your request. The data doesn’t contain a “weather_vulnerability_score” column, so I cannot answer your question about whether countries with high weather vulnerability scores have higher green transition scores. I need that data to perform the analysis you requested.",
+    "sql_execution_time": 11.16,
+    "nlp_generation_time": 5.3,
+    "total_time": 16.46
+}

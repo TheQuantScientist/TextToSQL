@@ -1,0 +1,8 @@
+{
+    "question": "18|What is the highest energy per capita score in 2020? In which country",
+    "query": "SELECT MAX(year), MAX(country_name) FROM global_development_indicators WHERE year = 2020 AND energy_use_per_capita IS NOT NULL;",
+    "answer": "Based on the query results provided, there is no data available for the highest energy per capita score in any country in the year 2020. The results show \"None\" for both columns, indicating that no specific information was found to answer your question.",
+    "sql_execution_time": 9.06,
+    "nlp_generation_time": 4.59,
+    "total_time": 13.65
+}
