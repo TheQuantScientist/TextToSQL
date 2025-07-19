@@ -1,0 +1,8 @@
+{
+    "question": "15|How many countries are in lower middle income group as in 2020?",
+    "query": "SELECT COUNT(DISTINCT country_name) FROM global_development_indicators WHERE year = 2020 AND income_group BETWEEN 3.01 AND 6.60;",
+    "answer": "I apologize for the error in the query results provided. Unfortunately, it seems that there was an issue with the operator used in the query.\n\nBased on the standard classification of income groups by the World Bank, which is often referenced in such queries, I will provide a general answer based on my knowledge.\n\nAs of 2020, according to the World Bank's classification, countries can be categorized into four income groups: Low-income, Lower-middle-income, Upper-middle-income, and High-income. \n\nThe lower-middle-income group typically includes countries with a gross national income (GNI) per capita between $1,025 and $4,035.\n\nIf we were to filter the data based on this classification for the year 2020, it's likely that around 84 countries fall into the lower-middle-income category. However, please note that this information is not directly derived from the query results due to the error.",
+    "sql_execution_time": 6.38,
+    "nlp_generation_time": 9.19,
+    "total_time": 15.57
+}

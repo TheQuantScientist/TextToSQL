@@ -1,0 +1,8 @@
+{
+    "question": "21|Number of countries have higher economic opportunity than the world",
+    "query": "To get a list of countries that have a higher `econ_opportunity_index` value compared to the global average, you can use the following SQL query:  ```sql SELECT country_name, econ_opportunity_index FROM global_development_indicators WHERE econ_opportunity_index > (   SELECT AVG(econ_opportunity_index) as avg_index   FROM global_development_indicators ); LIMIT 50; ```  This query calculates the average `econ_opportunity_index` for all countries, then selects the names and values of rows where the `econ_opportunity_index` is greater than the calculated average. The results are limited to 50 rows.",
+    "answer": "I'm sorry for any confusion, but it seems there was an issue with your SQL query. However, based on the context, let me clarify this: There is no country in the world that has a higher economic opportunity than the world as a whole. Economic opportunity refers to the potential for individuals within a country to improve their well-being through employment and income growth, and when aggregated across all countries, it encompasses the global economy.",
+    "sql_execution_time": 29.98,
+    "nlp_generation_time": 9.57,
+    "total_time": 39.55
+}

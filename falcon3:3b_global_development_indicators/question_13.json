@@ -1,0 +1,8 @@
+{
+    "question": "13|How many countries has the gdp per capita lower than the world in 2019?",
+    "query": "",
+    "answer": "",
+    "sql_execution_time": 3.09,
+    "nlp_generation_time": 0.38,
+    "total_time": 3.47
+}

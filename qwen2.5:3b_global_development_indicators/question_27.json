@@ -1,0 +1,8 @@
+{
+    "question": "27|What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "SELECT AVG(fdi_pct_gdp), AVG(real_economic_growth_indicator)  FROM global_development_indicators  WHERE income_group IN (0.5, 1)  LIMIT 50",
+    "answer": "It seems that there was an error with the query I attempted to run. The issue is related to comparing a numeric value with a character varying (string) value, which isn't directly supported by the database's SQL operations.\n\nGiven this error, I will not be able to provide you with specific data on how the FDI percentage of GDP relates to economic growth within the middle and low-income groups. \n\nTo address your question properly, we need to ensure that both variables being compared are in compatible data types before performing the analysis. For instance, if our 'FDI percentage of GDP' is represented as a numeric value and our 'economic growth' is also expressed numerically, then it would be more suitable for the query.\n\nIf you could provide me with more information or correct the query so that both values are consistent in terms of data type (such as converting FDI percentage to a numeric format), I would be happy to analyze the relationship between FDI percentage and economic growth within the specified income groups.",
+    "sql_execution_time": 10.66,
+    "nlp_generation_time": 16.6,
+    "total_time": 27.26
+}

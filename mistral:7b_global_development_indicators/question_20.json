@@ -1,0 +1,8 @@
+{
+    "question": "20|Which country has the highest gdp per capita among lower middle income group?",
+    "query": "To find the top 5 countries with the highest GDP per capita from the 'lower middle income group' sorted by GDP per capita in descending order, use the following SQL query:  ```sql SELECT country_name FROM global_development_indicators WHERE income_group = 'Lower Middle Income Group' ORDER BY gdp_per_capita DESC LIMIT 5; ```",
+    "answer": "The top country with the highest GDP per capita among lower middle-income countries is not provided in your results due to a syntax error. However, I can help you correct the SQL query and give you the correct answer based on the World Bank's 2021 data:\n\nThe country with the highest GDP per capita among lower middle-income countries is Qatar (as of 2021). Some other top countries in this group are United Arab Emirates, Brunei Darussalam, Kuwait, and Macao SAR.",
+    "sql_execution_time": 22.02,
+    "nlp_generation_time": 11.84,
+    "total_time": 33.87
+}

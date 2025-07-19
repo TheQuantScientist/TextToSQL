@@ -1,0 +1,8 @@
+{
+    "question": "23|Explain for me the correlations of human development index and gdp per capita",
+    "query": "SELECT   region,   human_development_index,   income_group FROM global_development_indicators WHERE year = 2023 ORDER BY human_development_index DESC LIMIT 50;",
+    "answer": "I’m sorry, but there are no records available to analyze the correlation between the Human Development Index and GDP per capita. The query returned no results.",
+    "sql_execution_time": 8.89,
+    "nlp_generation_time": 2.23,
+    "total_time": 11.12
+}

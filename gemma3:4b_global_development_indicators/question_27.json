@@ -1,0 +1,8 @@
+{
+    "question": "27|What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "SELECT   year,   country_name,   fdi_pct_gdp,   real_economic_growth_indicator FROM global_development_indicators WHERE   income_group IN ('lower middle income', 'lower income') ORDER BY   fdi_pct_gdp DESC LIMIT 50;",
+    "answer": "I’m sorry, but there are no records available to answer your question about the relationship between FDI percentage of GDP and economic growth in middle and low-income groups. The query returned no results.",
+    "sql_execution_time": 11.01,
+    "nlp_generation_time": 3.2,
+    "total_time": 14.22
+}

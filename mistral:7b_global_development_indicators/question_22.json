@@ -1,0 +1,8 @@
+{
+    "question": "22|Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
+    "query": "To find the green transition score of all the countries and regions over the years, we can use the following SQL query:  ```sql SELECT year, country_code, country_name, green_transition_score FROM global_development_indicators WHERE green_transition_score IS NOT NULL  -- filter out null values LIMIT 50; ```",
+    "answer": "The common pattern observed in the green transition scores across different countries and regions over the years is an overall increase, indicating a global trend towards sustainable development. However, there are some variations in the rate of improvement among the regions analyzed. Certain countries and regions show faster progress than others, with some maintaining steady growth while others exhibit more fluctuating trends. It's also worth noting that the data may not be consistent across all years due to varying methodologies or incomplete reporting.",
+    "sql_execution_time": 20.31,
+    "nlp_generation_time": 9.4,
+    "total_time": 29.71
+}

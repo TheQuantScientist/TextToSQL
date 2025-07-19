@@ -1,0 +1,8 @@
+{
+    "question": "25|Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "query": "SELECT      governance_quality_index,     digital_readiness_score FROM global_development_indicators WHERE region = 'South Asia' ORDER BY governance_quality_index DESC LIMIT 50;",
+    "answer": "Based on the query results, it appears that there is a weak positive correlation between governance quality and digital readiness score in South Asia.\n\nThe data shows that when the governance quality index is at its lowest (0.5), the digital readiness score can be as low as 0.0010837069316666, indicating that poor governance quality can lead to very low levels of digital readiness. Conversely, when the governance quality index is at its highest (0.5), the digital readiness score tends to increase, with most values ranging from 0.002004722235 to 0.2874748540333333.\n\nHowever, it's essential to note that there are some outliers, such as the record low of 0.000391525975 and 0.00198146406, which may indicate exceptional cases where governance quality has a negligible impact on digital readiness score.",
+    "sql_execution_time": 6.84,
+    "nlp_generation_time": 14.3,
+    "total_time": 21.13
+}

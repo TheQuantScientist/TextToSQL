@@ -1,0 +1,8 @@
+{
+    "question": "29|Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT COALESCE(c.mortality, 'Not available') AS child_mortality  FROM global_development_indicators c  JOIN global_development_indicators hi ON c.country_name = hi.country_name  WHERE hi.income_group > 4 AND c.is_pandemic_period = 1 LIMIT 50;",
+    "answer": "It seems like we're having an issue with our query. Unfortunately, it appears that the column 'c.mortality' doesn't exist in our dataset.\n\nLet me explain what this means in simpler terms: since we can't find any data on child mortality in high-income countries, we can't directly answer your question about whether weather vulnerability is related to it.\n\nIf you'd like, I can try to help you explore other factors that might be related to child mortality in these countries. Or, if you have more information or context, please feel free to share, and I'll do my best to assist you further!",
+    "sql_execution_time": 7.67,
+    "nlp_generation_time": 6.11,
+    "total_time": 13.78
+}

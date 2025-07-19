@@ -1,0 +1,8 @@
+{
+    "question": "4|What is the inflation rate of Vietnam in 2009?",
+    "query": "SELECT   inflation_rate FROM global_development_indicators WHERE   country_name = 'Vietnam' AND year = 2009 LIMIT 50;",
+    "answer": "The inflation rate in Vietnam in 2009 was 42.66%.",
+    "sql_execution_time": 8.97,
+    "nlp_generation_time": 1.73,
+    "total_time": 10.7
+}

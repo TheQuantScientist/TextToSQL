@@ -1,0 +1,8 @@
+{
+    "question": "21|Number of countries have higher economic opportunity than the world",
+    "query": "SELECT country_name, calculated_gdp_per_capita  FROM global_development_indicators  ORDER BY calculated_gdp_per_capita DESC  LIMIT 50",
+    "answer": "Based on the query results provided, none of the countries listed have a higher economic opportunity than the world. All entries show \"None\" for their GDP per capita values, indicating that these countries do not have sufficient data or are not included in the dataset used to calculate this metric.\n\nTo provide more context:\n- The dataset only includes very few country names and consistently shows \"None\" for each of them.\n- This suggests that among the countries with available data, none match the criteria of having higher economic opportunity than the world. \n- Countries like French Polynesia, Dem. People's Rep. Korea, Nauru, Northern Mariana Islands, American Samoa, Guam, and New Caledonia are not considered to have better economic opportunities based on the provided information.\n\nIf you need more detailed analysis or additional country data for a comprehensive comparison, please provide specific countries or further details about what constitutes \"higher economic opportunity.\"",
+    "sql_execution_time": 8.52,
+    "nlp_generation_time": 16.55,
+    "total_time": 25.07
+}

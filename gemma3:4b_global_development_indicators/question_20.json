@@ -1,0 +1,8 @@
+{
+    "question": "20|Which country has the highest gdp per capita among lower middle income group?",
+    "query": "SELECT   country_name FROM global_development_indicators WHERE   income_group = 'Lower middle income' ORDER BY   income_group,   -- Assuming income_group is string, casting to numeric for sorting   CAST(income_group AS NUMERIC) DESC LIMIT 50;",
+    "answer": "I’m sorry, I encountered an error processing your request. The input \"Lower middle income\" is not a valid numeric value. I cannot determine which country has the highest GDP per capita within that income group with the current information.",
+    "sql_execution_time": 11.68,
+    "nlp_generation_time": 3.86,
+    "total_time": 15.54
+}

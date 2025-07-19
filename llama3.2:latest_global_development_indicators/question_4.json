@@ -1,0 +1,8 @@
+{
+    "question": "4|What is the inflation rate of Vietnam in 2009?",
+    "query": "SELECT inflation_rate FROM global_development_indicators WHERE country_code = 'VN' AND year = 2009 LIMIT 50;",
+    "answer": "\"Unfortunately, I couldn't find any records on the inflation rate for Vietnam specifically in 2009. The query results indicate that there are no available data points to provide an accurate answer.\"",
+    "sql_execution_time": 6.21,
+    "nlp_generation_time": 2.06,
+    "total_time": 8.27
+}

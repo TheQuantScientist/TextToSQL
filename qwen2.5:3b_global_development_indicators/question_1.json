@@ -1,0 +1,8 @@
+{
+    "question": "1|What is the digital readiness score of South Asia in 2020?",
+    "query": "SELECT AVG(digital_readiness_score) AS avg_dr_score FROM global_development_indicators WHERE country_code = 'ASIA' AND year = 2020;",
+    "answer": "The digital readiness score for South Asia in 2020 was not provided in the given data.",
+    "sql_execution_time": 1.62,
+    "nlp_generation_time": 3.89,
+    "total_time": 5.51
+}

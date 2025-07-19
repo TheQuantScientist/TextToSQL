@@ -1,0 +1,8 @@
+{
+    "question": "31|What is the relationship between unemployment rate and inflation of US through years?",
+    "query": "SELECT year, unemployment_rate AS us_unemployment_rate, inflation_rate AS us_inflation_rate FROM global_development_indicators WHERE country_name = 'US' LIMIT 50",
+    "answer": "Based on the query results provided, there are no specific records or data related to the relationship between the unemployment rate and inflation in the United States over time. Without access to those particular records, I cannot provide detailed insights into how these two economic indicators have moved relative to each other throughout the years. For such analysis, one would typically consult official U.S. Bureau of Labor Statistics (BLS) data or Federal Reserve publications that track historical unemployment and inflation rates in the United States.",
+    "sql_execution_time": 3.97,
+    "nlp_generation_time": 2.96,
+    "total_time": 6.93
+}

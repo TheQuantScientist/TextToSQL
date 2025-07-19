@@ -1,0 +1,8 @@
+{
+    "question": "21|Number of countries have higher economic opportunity than the world",
+    "query": "SELECT COUNT(DISTINCT country_name) FROM global_development_indicators WHERE calculated_gdp_per_capita > ( SELECT AVG(calculated_gdp_per_capita) FROM global_development_indicators );",
+    "answer": "According to our analysis, there are currently 92 countries that offer a higher level of economic opportunity compared to the rest of the world. This indicates that these countries provide better conditions for their citizens to secure employment, improve their standard of living, and access more resources to achieve financial stability.",
+    "sql_execution_time": 6.6,
+    "nlp_generation_time": 2.92,
+    "total_time": 9.52
+}

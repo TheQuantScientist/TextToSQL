@@ -1,0 +1,8 @@
+{
+    "question": "10|What is the unemployment rate of US in 2020?",
+    "query": "SELECT year, country_code, country_name, unemployment_rate FROM global_development_indicators WHERE country_code = 'US' AND year = 2020;",
+    "answer": "Based on the query results provided, it appears that there was not enough information available to determine the exact unemployment rate for the United States in 2dict{year}: 'US_unemployment_rate_{2020}' as per your question. For accurate and up-to-date statistics like this one, I recommend checking reliable economic databases or official sources such as the U.S Bureau of Labor Statistics (BLS).\n\nHere is a link to BLS where you can find relevant data: https://www.bls.gov/data/#unemployment  \n(Note: As an AI language model, I am unable to directly access external websites or databases; however, this site contains historical and real-time economic statistics.)",
+    "sql_execution_time": 9.51,
+    "nlp_generation_time": 6.86,
+    "total_time": 16.36
+}

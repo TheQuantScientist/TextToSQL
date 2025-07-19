@@ -1,0 +1,8 @@
+{
+    "question": "18|What is the highest energy per capita score in 2020? In which country",
+    "query": "To find the highest energy per capita score in the year 2020, we can use the following SQL query:  ```sql SELECT country_name, energy_use_per_capita FROM global_development_indicators WHERE year = 2020 ORDER BY energy_use_per_capita DESC LIMIT 1; ```  This query selects the name of the country and its energy per capita score, filters the results for the year 2020, orders them in descending order (highest first), and limits the result to only one row.",
+    "answer": "The highest energy per capita score in the year 2020 was recorded in Qatar.",
+    "sql_execution_time": 23.33,
+    "nlp_generation_time": 3.1,
+    "total_time": 26.43
+}

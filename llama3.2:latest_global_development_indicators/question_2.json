@@ -1,0 +1,8 @@
+{
+    "question": "2|Country with the highest global development resilience score in 2020?",
+    "query": "SELECT country_name FROM global_development_indicators WHERE year = 2020 ORDER BY global_development_resilience_index DESC LIMIT 1;",
+    "answer": "Based on the query results, it appears that Monaco has the highest global development resilience score in 2020. In fact, Monaco is the only country listed in this dataset that achieves this ranking.\n\nTo give you a better understanding of what this means, the development resilience score assesses a country's ability to withstand and recover from shocks or disruptions to its development progress. Monaco's high score indicates that it has demonstrated exceptional strength in maintaining its development momentum despite any challenges it may have faced.\n\nIf you'd like to know more about Monaco's development resilience or compare its ranking with other countries, I can provide further insights based on the available data.",
+    "sql_execution_time": 6.45,
+    "nlp_generation_time": 6.87,
+    "total_time": 13.33
+}
