@@ -1,0 +1,8 @@
+{
+    "question": "10|What is the unemployment rate of US in 2020?",
+    "query": "SELECT `unemployment_rate` FROM `global_development_indicators` WHERE `country_name` = 'US' AND `year` = 2020 LIMIT 50",
+    "answer": "I'm sorry, but there seems to be an issue with fetching the data. It appears that there was a syntax error in the query I attempted to run. However, based on the information available to me now, I don't have the unemployment rate for the United States in 2020. For accurate and up-to-date economic data like this, it's best to check reliable sources such as the U.S. Bureau of Labor Statistics or other financial news websites that specialize in providing recent statistics.",
+    "sql_execution_time": 13.78,
+    "nlp_generation_time": 12.57,
+    "total_time": 26.35
+}

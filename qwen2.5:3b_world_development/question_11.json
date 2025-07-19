@@ -1,0 +1,8 @@
+{
+    "question": "11|To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT AVG(gdp_per_capita) AS gdp_growth FROM global_development_indicators WHERE year BETWEEN 2000 AND 2020 LIMIT 50",
+    "answer": "Based on the query results provided, the world's GDP per capita has grown by approximately 13,795.82% between the years 2000 and 2020. This significant increase indicates substantial economic development across many parts of the world during this period.",
+    "sql_execution_time": 12.61,
+    "nlp_generation_time": 6.99,
+    "total_time": 19.6
+}

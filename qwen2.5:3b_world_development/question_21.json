@@ -1,0 +1,8 @@
+{
+    "question": "21|Number of countries have higher economic opportunity than the world",
+    "query": "SELECT country_name, country_code FROM global_development_indicators WHERE econ_opportunity_index > (     SELECT AVG(econ_opportunity_index)      FROM global_development_indicators ) LIMIT 50",
+    "answer": "There are 21 countries that have higher economic opportunity than the world. These include:\n\n- Central Europe and the Baltics (CEB)\n- East Asia & Pacific (EAS)\n- Europe & Central Asia (ECS)\n- Euro area (EMU)\n- European Union (EUU)\n\nEach of these regions is listed multiple times, indicating they all have higher economic opportunities compared to the rest of the world.",
+    "sql_execution_time": 18.57,
+    "nlp_generation_time": 16.64,
+    "total_time": 35.2
+}
