@@ -1,0 +1,8 @@
+{
+    "question": "18|What is the highest energy per capita score in 2020? In which country",
+    "query": "SELECT country_name, MAX(yearly_score) as highest_energy_per_capita FROM global_development_indicators WHERE year = 2020 AND field = 'energy_use_per_capita' LIMIT 50",
+    "answer": "It seems there was an issue with accessing the data. Based on the query results, it looks like there's a problem with fetching the 'yearly_score' column. However, I can't provide a specific answer for the highest energy per capita score in 2020 and which country achieved this score without the correct data. Please check if the 'yearly_score' column is correctly named or if there are any other errors in your dataset. Once you resolve these issues, I'd be happy to help analyze the data again.",
+    "sql_execution_time": 17.29,
+    "nlp_generation_time": 13.19,
+    "total_time": 30.48
+}

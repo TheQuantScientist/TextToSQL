@@ -1,0 +1,8 @@
+{
+    "question": "17|Which country has the lowest global resilience score?",
+    "query": "SELECT country_name FROM global_development_indicators ORDER BY global_development_resilience_index ASC LIMIT 1",
+    "answer": "Based on the provided query results, South Sudan has the lowest global resilience score among the countries listed.",
+    "sql_execution_time": 11.15,
+    "nlp_generation_time": 3.64,
+    "total_time": 14.79
+}

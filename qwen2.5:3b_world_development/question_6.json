@@ -1,0 +1,8 @@
+{
+    "question": "6|What is the life expectancy of Japan in 2020?",
+    "query": "SELECT `life_expectancy` FROM `global_development_indicators` WHERE `country_name` = 'Japan' AND `year` = 2020 LIMIT 50",
+    "answer": "I'm sorry, but there seems to be an issue with the query I received. It appears that there is a syntax error and I cannot retrieve the life expectancy data for Japan in 2020 from the provided database using the information you've given me. Could you please check the query or provide more details?",
+    "sql_execution_time": 12.33,
+    "nlp_generation_time": 8.07,
+    "total_time": 20.4
+}

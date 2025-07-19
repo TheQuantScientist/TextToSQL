@@ -1,0 +1,8 @@
+{
+    "question": "20|Which country has the highest gdp per capita among lower middle income group?",
+    "query": "SELECT TOP 50 country_name, gdp_per_capita  FROM global_development_indicators  WHERE income_group = 'lower_middle' ORDER BY gdp_per_capita DESC LIMIT 1",
+    "answer": "I'm sorry, but there seems to be an issue with the query I received. It appears that there is a syntax error in the SQL statement, specifically at line 1 where \"TOP 50\" is used. To provide you with accurate information about which country has the highest GDP per capita among lower middle income groups, I would need a corrected version of your query.\n\nIf we were to assume the correct query was intended to list the top 50 countries by GDP per capita without any syntax errors, please let me know and I can try to find that information for you.",
+    "sql_execution_time": 15.77,
+    "nlp_generation_time": 16.98,
+    "total_time": 32.75
+}

@@ -1,0 +1,8 @@
+{
+    "question": "27|What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "SELECT AVG(COALESCE(fdi_pct_gdp, 0)), AVG(COALESCE(real_economic_growth_indicator, 0)) FROM global_development_indicators WHERE income_group IN (2, 3) LIMIT 50",
+    "answer": "It seems there was an error in the query I attempted to run. Specifically, it appears that we tried to compare a string value with an integer value, which is not supported by our current database structure. Let's try running another query: \n\nCan you please provide more details or rephrase your question? For example, did you intend to ask about the relationship between FDI percentage of GDP and economic growth within specific income groups? If so, could you specify which income groups (2 or 3) you are interested in?",
+    "sql_execution_time": 22.61,
+    "nlp_generation_time": 16.59,
+    "total_time": 39.21
+}
