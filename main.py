@@ -47,7 +47,7 @@ def main():
         "31|What is the relationship between unemployment rate and inflation of US through years?"
     ]
 
-    table_name = "world_happiness_report"
+    table_name = "global_development_indicators"
     conn = get_db_connection()
     if conn is None:
         logger.error("Please check your PostgreSQL configuration. Exiting...")
@@ -61,41 +61,55 @@ def main():
     if not user_queries:
         logger.error("No query provided. Please set a valid query in the code.")
         return
-    for idx, question in enumerate(user_queries, 1):
-        state = {
-            'question': question,
-            'table_name': table_name,
-            'query': '',
-            'query_result': '',
-            'final_answer': ''
-        }
-
-        try:
-            state = sql_gen_node(state)
-            state = query_execution_node(state)
-            state = response_generation_node(state)
-            total_time = state.get('sql_execution_time', 0)+ state.get('nlp_generation_time')
-
-            output = {
-                "question": state['question'],
-                "query": state['query'],
-                "answer": state['final_answer'],
-                "sql_execution_time": round(state.get('sql_execution_time', 0),2),
-                "nlp_generation_time": round(state.get('nlp_generation_time', 0),2),
-                "total_time":round(total_time,2)
+    
+    models = [
+        #'qwen2.5:3b',
+        #'falcon3:3b',
+        'phi3.5:3.8b',
+        'mistral:7b',
+        'llama3.2:latest',
+        'gemma3:4b',
+    ]
+    
+    for model in models:
+        logger.info(f"Running model {model}...")
+        for idx, question in enumerate(user_queries, 1):
+            state = {
+                'question': question,
+                'table_name': table_name,
+                'query': '',
+                'query_result': '',
+                'final_answer': '',
+                'model': model
             }
-            save_output_as_json(output, idx)
-            
-            print("\n=== Results ===")
-            print(f"Query: {state['query']}")
-            print("Raw Results:")
-            print(state['query_result'])
-            print("\nFinal Answer:")
-            print(state['final_answer'])
 
-        except Exception as e:
-            logger.error(f"An error occurred: {str(e)}")
-            print(f"An error occurred: {str(e)}")
+            try:
+                state = sql_gen_node(state)
+                state = query_execution_node(state)
+                state = response_generation_node(state)
+                total_time = state.get('sql_execution_time', 0)+ state.get('nlp_generation_time')
+
+                output = {
+                    "question": state['question'],
+                    "query": state['query'],
+                    "answer": state['final_answer'],
+                    "sql_execution_time": round(state.get('sql_execution_time', 0),2),
+                    "nlp_generation_time": round(state.get('nlp_generation_time', 0),2),
+                    "total_time":round(total_time,2)
+                }
+                question_num = question.split('|')[0]
+                save_output_as_json(output, question_num, f"{model}_{table_name}")
+                
+                print("\n=== Results ===")
+                print(f"Query: {state['query']}")
+                print("Raw Results:")
+                print(state['query_result'])
+                print("\nFinal Answer:")
+                print(state['final_answer'])
+
+            except Exception as e:
+                logger.error(f"An error occurred: {str(e)}")
+                print(f"An error occurred: {str(e)}")
 
 if __name__ == "__main__":
     main()

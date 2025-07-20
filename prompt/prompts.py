@@ -7,9 +7,9 @@ sys.path.append('.')
 POSTGRES_CONFIG = {
     'host': 'localhost',
     'port': 5432,
-    'dbname': 'text2sql',
+    'dbname': 'postgres',
     'user': 'postgres',
-    'password': 'admin'
+    'password': ''
 }
 
 # Groq Model Configuration

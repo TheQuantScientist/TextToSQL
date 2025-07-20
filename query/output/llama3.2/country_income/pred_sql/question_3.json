@@ -1,0 +1,5 @@
+{
+    "question": "What is the net income of d1 category of Thailand in 2009?",
+    "query": "SELECT MIN T2.income_net FROM country_income AS T1 INNER JOIN country_income AS T2 ON lower(T1.country) = lower(T2.ref) WHERE T1.iso = 'thl' AND T2.year = 2009 AND T2.category = 'd1';",
+    "generation_time": 5.9703
+}

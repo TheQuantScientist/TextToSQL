@@ -13,9 +13,9 @@ from prompt.prompts import OLLAMA_CONFIG
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def get_llm_model():
+def get_llm_model(model: str):
     try:
-        llm = OllamaLLM(model=OLLAMA_CONFIG['model'], base_url=OLLAMA_CONFIG['endpoint'])
+        llm = OllamaLLM(model=model, base_url=OLLAMA_CONFIG['endpoint'])
         logger.info("LLM initialized successfully")
         return llm
     except Exception as e:

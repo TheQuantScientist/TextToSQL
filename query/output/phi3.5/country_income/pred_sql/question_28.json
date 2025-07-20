@@ -1,0 +1,5 @@
+{
+    "question": "Comparing the gini index of China and US over years to evaluate which country has higher income inequality",
+    "query": "SELECT year, iso, gini_reported AS reported_gini FROM country_income WHERE iso IN ('CHN', 'USA') ORDER BY year, iso LIMIT 50;  This SQL query selects the columns `year` and `iso`, along with a computed column named `reported_gini`. It filters records to include only those where the country code (`iso`) corresponds to China ('CHN') or USA. The results are ordered by year followed by iso, which allows for chronological comparison within each country separately (note that this query does not perform direct inequality comparisons but sets up a data structure from which such analysis can be conducted). Limiting the output ensures focus on relevant recent and representative entries due to potentially vast dataset.  To directly compare income inequalities, further processing outside of SQL would typically take place: plotting these results or using additional analytical functions if PostgreSQL supports them (e.g., window function for yearly comparisons).",
+    "generation_time": 30.7196
+}

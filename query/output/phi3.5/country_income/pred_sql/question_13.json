@@ -1,0 +1,5 @@
+{
+    "question": "Top 5 country of which d1 category has highest net income in 2015",
+    "query": "SELECT iso, population AS \"Population\", income_net AS \"Income Net\" FROM country_income WHERE year = 2015 AND category = 'd1' ORDER BY income_net DESC LIMIT 5;  This query selects the ISO code and calculated net income of people in the lowest decile (category d1) for each population. It filters records to only include those from the year 2015, sorts them by descending order based on their reported share of net income (`income_net`), and limits the output to just the top 5 countries with highest values within that specific category and time frame.",
+    "generation_time": 20.6338
+}

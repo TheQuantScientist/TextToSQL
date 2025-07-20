@@ -1,0 +1,5 @@
+{
+    "question": "Vietnam released economic reformation policy named 'Doi Moi' from 1986 to 2000. Evaluate the effectiveness of the policy based on the gini score trend of the country in 2 phases: Before 1986 and after 1986",
+    "query": "SELECT year, gini_reported FROM country_income WHERE iso = 'VNM' AND (year <= 1985 OR year > 2000) ORDER BY CASE WHEN year <= 1985 THEN year ELSE NULL END ASC LIMIT 50;  This query selects the columns for `year` and `gini_reported`, filtering records where Vietnam's ISO code (`iso`) is 'VNM', representing pre-Doi Moi period up until 1985, as well as data post-2000. The results are ordered by year to analyze the gini score trend before and after policy implementation separately within a limit of 50 rows for brevity in examination.",
+    "generation_time": 20.9497
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the average of d10 net income of Vietnam over years?",
+    "query": "Here's the SQL query to find the average of d10 net income for Vietnam over years in the `country_income` table, limiting results to 50 rows:  ```sql SELECT AVG(income_net) AS \"Average d10 net income\" FROM country_income WHERE iso = 'vnm' AND category = 'd10';  -- To limit the results to 50 rows, add the following line at the end of the query: -- LIMIT 50; ```  Keep in mind that PostgreSQL automatically sorts the output by the column you are selecting (in this case `income_net`), so if you don't need specific rows but rather the average value, there is no need to order or limit the results. If required, simply add the `LIMIT 50` clause at the end of the query.",
+    "generation_time": 50.0372
+}

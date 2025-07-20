@@ -1,0 +1,5 @@
+{
+    "question": "All the countries have gini recalculated greater than 0.4 in 2015",
+    "query": "SELECT DISTINCT country FROM country_income WHERE year = 2015 AND gini_recalculated > 0.4;",
+    "generation_time": 3.8994
+}

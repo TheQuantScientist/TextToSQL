@@ -1,0 +1,5 @@
+{
+    "question": "What is the ratio of net income of d10 to d1 group of Singapore in 2015?",
+    "query": "SELECT CAST(SUM(IIF(category = 'd10', income_net, 0)) AS FLOAT) / SUM(IIF(category = 'd1', income_net, 0))  FROM country_income  WHERE iso = 'SGP' AND year = 2015",
+    "generation_time": 7.8148
+}

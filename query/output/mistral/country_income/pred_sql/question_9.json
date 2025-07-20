@@ -1,0 +1,5 @@
+{
+    "question": "What is the gpd per capita, population and gini coefficient of Vietnam in 2010?",
+    "query": "Here's a SQL query to get the population and Gini coefficient for Vietnam in 2010, along with the GDP per capita for reference. I limited the results to 50 rows since the question did not specify a specific country:  ```sql SELECT   country,   population,   gini_reported,   gdp_ppp_pc_usd2011 FROM   country_income WHERE   iso = 'vnm' AND year = 2010 LIMIT 50; ```",
+    "generation_time": 37.5523
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the trend of world's income inequality across region from 1967 to 2015.",
+    "query": "SELECT gini_reported, gcam_region_id  FROM country_income  ORDER BY year ASC LIMIT 49;",
+    "generation_time": 3.4174
+}

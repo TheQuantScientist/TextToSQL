@@ -1,0 +1,5 @@
+{
+    "question": "Which region ID has high income inequality? Explain reasons behind it",
+    "query": "SELECT gcam_region_id, AVG(gini_reported) AS average_income_inequality FROM country_income GROUP BY gcam_region_id ORDER BY average_income_inequality DESC LIMIT 50;  This SQL query selects the 'gcam_region_id' and calculates the average reported Gini coefficient (as an indicator of income inequality) for each region. It groups the results by 'gcam_region_id', orders them in descending order based on this calculated average, which highlights regions with higher levels of income inequality first, showing a clearer picture within these top entries up to 50 rows due to limit restrictions as requested.  To further understand why high-income inequality exists beyond the query results themselves would require an analysis involving additional data and context that cannot be directly provided through SQL alone; this generally involves socio-economic, political, historical factors examined outside of a database environment with supplementary research tools or methods.",
+    "generation_time": 30.9999
+}

@@ -1,0 +1,5 @@
+{
+    "question": "All the countries have gini recalculated greater than 0.4 in 2015",
+    "query": "Here is a SQL query that will return the top 50 countries with `gini_recalculated` greater than 0.4 in the year 2015, and only selects the relevant columns:  ```sql SELECT country, gdp_ppp_pc_usd2011, population, gini_recalculated, data_source FROM country_income WHERE gini_recalculated > 0.4 AND year = 2015 ORDER BY gini_recalculated DESC LIMIT 50; ```",
+    "generation_time": 37.759
+}

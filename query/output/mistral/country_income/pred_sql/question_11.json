@@ -1,0 +1,5 @@
+{
+    "question": "What is the average of gini recalcuated score of Vietnam by year?",
+    "query": "To get the average of `gini_recalculated` score for Vietnam (`country = 'vnm'`) by year, you can use the following SQL query:  ```sql SELECT year, AVG(gini_recalculated) as avg_gini_recalculated FROM country_income WHERE country = 'vnm' AND gini_recalculated IS NOT NULL GROUP BY year LIMIT 50; ```",
+    "generation_time": 24.4658
+}

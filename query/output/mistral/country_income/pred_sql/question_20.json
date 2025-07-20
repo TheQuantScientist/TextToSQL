@@ -1,0 +1,5 @@
+{
+    "question": "The average gini recalculated of the world in 2015",
+    "query": "Here is a SQL query to get the average `gini_recalculated` for all countries in the year 2015, limited to the first 50 rows:  ```sql SELECT AVG(gini_recalculated) AS avg_gini_recalculated, COUNT(*) OVER () AS total_rows FROM country_income WHERE year = 2015 AND gini_recalculated IS NOT NULL ORDER BY gini_recalculated DESC LIMIT 50; ```  This query calculates the average `gini_recalculated` for all countries in the year 2015, orders the results by descending `gini_recalculated`, and limits the result set to 50 rows.",
+    "generation_time": 47.2267
+}
