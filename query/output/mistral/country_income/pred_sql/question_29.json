@@ -1,0 +1,5 @@
+{
+    "question": "Which region ID has high income inequality? Explain reasons behind it",
+    "query": "To find the regions with high income inequality based on the Gini coefficient (both reported and recalculated), we can limit the results to the top 50 regions. Here's a SQL query for that:  ```sql SELECT gcam_region_id, country, iso, gini_reported, gini_recalculated, data_source FROM country_income ORDER BY gini_reported DESC, gini_recalculated DESC LIMIT 50; ```  This query sorts the results in descending order by both Gini coefficients (reported and recalculated) to first identify regions with high income inequality according to each method. It then limits the output to the top 50 rows for readability purposes. The columns selected are relevant for understanding the income inequality within each region.",
+    "generation_time": 45.0499
+}

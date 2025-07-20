@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the trend of income inequality and gdp per capita of Singapore from 1970 onward.",
+    "query": "SELECT year, country_income.gini_reported, country_income.gdp_ppp_pc_usd2011 FROM country_income WHERE iso = 'sing' AND year >= 1970 ORDER BY year ASC LIMIT 50;",
+    "generation_time": 8.8796
+}

@@ -1,8 +1,0 @@
-{
-    "question": "16|What is the average digital readiness score of high income countries in 2019?",
-    "query": "To get the average digital readiness score for high income countries in 2019, you can use the following SQL query:  ```sql SELECT AVG(digital_readiness_score) FROM global_development_indicators WHERE country_income_group = 'High Income' AND year = 2019 AND internet_usage_pct > 50; ```  This query calculates the average of the digital readiness score for all high-income countries where internet usage is greater than 50% (assuming internet usage represents the digital connectivity level). You can adjust the conditions based on your specific requirements.",
-    "answer": "The average digital readiness score for high-income countries in 2019 could not be determined from the provided query results due to a syntax error. It would be best to review and correct the SQL statement or query the data source again to obtain the desired information.",
-    "sql_execution_time": 30.62,
-    "nlp_generation_time": 6.21,
-    "total_time": 36.83
-}

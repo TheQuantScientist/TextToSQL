@@ -1,8 +1,0 @@
-{
-    "question": "4|What is the inflation rate of Vietnam in 2009?",
-    "query": "SELECT `inflation_rate` FROM `global_development_indicators` WHERE `country_name` = 'Vietnam' AND `year` = 2009 LIMIT 50",
-    "answer": "I'm sorry, but there seems to be an issue with the query I received. It looks like there was a syntax error related to missing code structure, specifically something is expected in place of \"FROM\". If we were able to access the data correctly from the database table `global_development_indicators`, it would have provided us with the inflation rate for Vietnam in 2009. However, based on the current query results, I cannot provide you with the specific information you're looking for. Please ensure that your SQL request is properly structured and try again.",
-    "sql_execution_time": 16.47,
-    "nlp_generation_time": 10.86,
-    "total_time": 27.33
-}

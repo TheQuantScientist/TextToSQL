@@ -1,0 +1,5 @@
+{
+    "question": "Does population affect income inequality? Analyze gini index of China through years to explain",
+    "query": "SELECT year, gini_reported, population FROM country_income WHERE iso = 'CHN' LIMIT 50",
+    "generation_time": 3.9484
+}

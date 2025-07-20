@@ -1,8 +1,0 @@
-{
-    "question": "26|Does the school enrolment in secondary affect the HDI in South Asia?",
-    "query": "SELECT AVG(school_enrollment_secondary), AVG(human_development_index)  FROM global_development_indicators  WHERE country_code LIKE '%SouthAsia%'  GROUP BY school_enrollment_secondary, human_development_index  LIMIT 50",
-    "answer": "Based on the query results provided, there are no specific records or data points indicating any correlation between school enrollment in secondary education and Human Development Index (HDI) levels in South Asia. Therefore, I cannot definitively answer whether a higher or lower secondary school enrollment rate affects the HDI in that region.",
-    "sql_execution_time": 10.21,
-    "nlp_generation_time": 5.18,
-    "total_time": 15.39
-}

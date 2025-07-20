@@ -1,8 +1,0 @@
-{
-    "question": "3|What is the human development index score of Vietnam in 2019?",
-    "query": "SELECT   human_development_index FROM global_development_indicators WHERE   country_name = 'Vietnam' AND year = 2019 LIMIT 50;",
-    "answer": "The human development index score for Vietnam in 2019 was 0.5531.",
-    "sql_execution_time": 8.03,
-    "nlp_generation_time": 2.05,
-    "total_time": 10.08
-}

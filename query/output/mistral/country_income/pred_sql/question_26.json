@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the trend of income inequality and gdp per capita of Singapore from 1970 onward.",
+    "query": "To analyze the trend of income inequality and GDP per capita of Singapore from 1970 onwards, you can use the following SQL query:  ```sql SELECT year, gini_reported AS reported_gini, gdp_ppp_pc_usd2011, gini_recalculated FROM country_income WHERE iso = 'sgn' -- Singapore's ISO code is 'sgn' AND year >= 1970 ORDER BY year ASC LIMIT 50; ```  This query selects the relevant columns (year, reported_gini, gdp_ppp_pc_usd2011, and gini_recalculated) for the analysis, filters the results to include only rows where the ISO code is 'sgn' and year is greater than or equal to 1970, and orders the results by year in ascending order. The result set is limited to 50 rows.",
+    "generation_time": 32.8014
+}

@@ -1,8 +1,0 @@
-{
-    "question": "17|Which country has the lowest global resilience score?",
-    "query": "SELECT country_name FROM global_development_indicators ORDER BY green_transition_score LIMIT 1;",
-    "answer": "American Samoa has the lowest global resilience score.",
-    "sql_execution_time": 7.27,
-    "nlp_generation_time": 1.15,
-    "total_time": 8.42
-}

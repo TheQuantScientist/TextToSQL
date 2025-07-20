@@ -1,8 +1,0 @@
-{
-    "question": "22|Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
-    "query": "SELECT year, country_name, region, green_transition_score FROM global_development_indicators ORDER BY year ASC LIMIT 50",
-    "answer": "Based on the provided data, there isn't a significant common pattern in the green transition score for all countries and regions in 2000. The scores range from as low as 0.0 (American Samoa) to as high as 85.5786811589581 (HIPC - Highly Indebted Poor Countries). Some notable areas include:\n\n- High-income countries: The European Union had the highest score with 8.98052400360029.\n- Developing regions like Sub-Saharan Africa and Latin America & Caribbean tend to have relatively high scores, ranging from 72.47681224552133 (Sub-Saharan Africa) to 52.902411356969125 (South Asia).\n- High-income countries and regions in Europe had an average score of 7.629215314144604.\n- Low-income countries often have very high scores, such as the Least Developed Countries with a score of 83.8246509302306.\n\nOverall, there is not enough commonality in patterns for all countries and regions combined; however, there are notable variations between different geographical areas and types of economies in 2000.",
-    "sql_execution_time": 16.81,
-    "nlp_generation_time": 47.83,
-    "total_time": 64.64
-}

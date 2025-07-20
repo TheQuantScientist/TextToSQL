@@ -16,12 +16,7 @@ from prompt.prompts import DATA_FIELDS_MEANING, get_system_prompt
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# === CONFIGURATION ===
-OUTPUT_DIR = os.path.join(
-    os.path.dirname(__file__),
-    "..", "query", "output", "falcon3", "country_income", "pred_sql"
-)
-TABLE_NAME = "country_income"
+
 
 # === GET DATA FIELDS MEANING ===
 def get_data_fields_meaning(table_name: str) -> str:
@@ -36,6 +31,24 @@ class State(TypedDict):
     question: str
     query: str
     table_name: str
+    model: str
+
+# === CONFIGURATION ===
+models = [
+        # 'qwen2.5:3b',
+        # 'falcon3:3b',
+        # 'phi3.5:3.8b',
+        # 'mistral:7b',
+        # 'llama3.2:latest',
+        'gemma3:4b',
+    ]
+
+TABLE_NAME = "country_income"
+
+OUTPUT_DIR = os.path.join(
+     os.path.dirname(__file__),
+     "..", "query", "output", "falcon3", "country_income", "pred_sql"
+ )
     
 # === REMOVE NEWLINES IN QUERY ===
 def clean_query_newlines(state: State) -> State:
@@ -47,7 +60,7 @@ def clean_query_newlines(state: State) -> State:
 # === SQL GENERATION NODE ===
 def sql_gen_node(state: State) -> State:
     logger.info('Generating SQL query')
-    llm = get_llm_model()
+    llm = get_llm_model(state['model'])
     print(llm)
     if llm is None:
         state['query'] = ""
@@ -142,20 +155,25 @@ if __name__ == "__main__":
     if not user_queries:
         logger.error("No query provided. Please set a valid query in the code.")
         exit()
-
-    for idx, question in enumerate(user_queries, 1):
-        logger.info(f"Processing question {idx}: {question}")
-        try:
-            state: State = {
-                "question": question,
-                "query": "",
-                "table_name": TABLE_NAME
-            }
-            start_time = time.time()
-            state = sql_gen_node(state)
-            end_time = time.time()
-            gen_time = end_time - start_time
-            save_ground_truth(state, idx, gen_time)
-            logger.info(f"Saved: {OUTPUT_DIR}/question_{idx}.json")
-        except Exception as e:
-            logger.error(f"Error processing question {idx}: {e}")
+    for model in models:
+        for idx, question in enumerate(user_queries, 1):
+            logger.info(f"Processing question {idx}: {question}")
+            try:
+                state: State = {
+                    "question": question,
+                    "query": "",
+                    "table_name": TABLE_NAME,
+                    "model": model
+                }
+                start_time = time.time()
+                state = sql_gen_node(state)
+                end_time = time.time()
+                gen_time = end_time - start_time
+                model_output = os.path.join(
+                    os.path.dirname(__file__),
+                    "..", "query", "output", model, TABLE_NAME, "pred_sql"
+                )
+                save_ground_truth(state, idx, gen_time, model_output)
+                logger.info(f"Saved: {model_output}/question_{idx}.json")
+            except Exception as e:
+                logger.error(f"Error processing question {idx}: {e}")

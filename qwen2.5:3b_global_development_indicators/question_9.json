@@ -1,8 +1,0 @@
-{
-    "question": "9|What is the green transition score of lower middle income group in 2020?",
-    "query": "SELECT AVG(green_transition_score) AS green_transition_score_2020 FROM global_development_indicators WHERE country_code = 'LMI' AND YEAR = 2020",
-    "answer": "The green transition score for the lower-middle income group in 2020 was recorded as \"None.\" This indicates that no significant progress or implementation of green initiatives were reported for this category in the given year.",
-    "sql_execution_time": 17.92,
-    "nlp_generation_time": 6.76,
-    "total_time": 24.68
-}

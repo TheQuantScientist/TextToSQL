@@ -1,0 +1,5 @@
+{
+    "question": "Top 5 country that have highest gini recalulated in 2015",
+    "query": "To get the top 5 countries with the highest `gini_recalculated` value for the year 2015, you can use the following SQL query:  ```sql SELECT country, gini_recalculated FROM country_income WHERE year = 2015 ORDER BY gini_recalculated DESC LIMIT 5; ```",
+    "generation_time": 22.7257
+}

@@ -1,8 +1,0 @@
-{
-    "question": "6|What is the life expectancy of Japan in 2020?",
-    "query": "SELECT life_expectancy FROM global_development_indicators WHERE country_name = 'Japan' AND year = 2020 LIMIT 50;",
-    "answer": "It appears that there's an issue with the provided query results for Japan's life expectancy in 2020. The value \"2.5\" seems too low and doesn't match any plausible life expectancy value.\n\nAccording to various reliable sources, including the World Health Organization (WHO) and the International Labour Organization (ILO), the life expectancy at birth in Japan in 2020 was around 87.2 years for males and 89.9 years for females.\n\nIt's possible that there might be an error or discrepancy in the provided query results.",
-    "sql_execution_time": 6.18,
-    "nlp_generation_time": 5.76,
-    "total_time": 11.94
-}

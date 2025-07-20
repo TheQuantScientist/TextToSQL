@@ -1,8 +1,0 @@
-{
-    "question": "3|What is the human development index score of Vietnam in 2019?",
-    "query": "SELECT hdi FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2019 LIMIT 50",
-    "answer": "I'm sorry, but there seems to be an issue with the data retrieval. The query results show an error because the column \"hdi\" (which likely stands for Human Development Index) does not exist in the table \"global_development_indicators\". Could you please check if this column exists and provide me with the correct information?",
-    "sql_execution_time": 11.64,
-    "nlp_generation_time": 9.62,
-    "total_time": 21.26
-}

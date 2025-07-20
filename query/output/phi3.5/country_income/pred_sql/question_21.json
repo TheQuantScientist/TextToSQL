@@ -1,0 +1,5 @@
+{
+    "question": "What is the ratio of net income of d10 to d1 group of Singapore in 2015?",
+    "query": "SELECT `income_net` AS \"Net Income Ratio\" FROM country_income WHERE `iso` = 'sing' AND `year` = 2015 AND `category` IN ('d1', 'd10'); GROUP BY `country`, `year`;",
+    "generation_time": 8.1937
+}

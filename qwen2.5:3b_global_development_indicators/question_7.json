@@ -1,8 +1,0 @@
-{
-    "question": "7|What is the economic opportunity index of indebt countries group in 2020?",
-    "query": "SELECT AVG(econ_opportunity_index) AS average_economic_opportunity_index FROM global_development_indicators WHERE country_code LIKE '%indebted%' AND year = 2020;",
-    "answer": "The economic opportunity index for the group of indebted countries in 2020 was not provided in the given data. Therefore, I don't have a specific value to report.",
-    "sql_execution_time": 17.36,
-    "nlp_generation_time": 6.07,
-    "total_time": 23.43
-}

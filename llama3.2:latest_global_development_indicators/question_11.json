@@ -1,8 +1,0 @@
-{
-    "question": "11|To what extent has the world's GDP per capita grown between 2000 and 2020?",
-    "query": "SELECT calculated_gdp_per_capita, years_since_2000 FROM global_development_indicators WHERE is_pandemic_period = 'TRUE' LIMIT 50;",
-    "answer": "It looks like there was an error with the query. The provided results don't contain information about GDP per capita growth between 2000 and 2020. It seems that the query didn't retrieve any relevant data due to an invalid input syntax.\n\nIf you'd like, I can help you rephrase your question or provide more context for a new query. Alternatively, if you have any other questions or need assistance with something else, feel free to ask!",
-    "sql_execution_time": 6.45,
-    "nlp_generation_time": 4.36,
-    "total_time": 10.81
-}

@@ -1,0 +1,5 @@
+{
+    "question": "The average gini recalculated of the world in 2015",
+    "query": "SELECT AVG(gini_recalculated) AS avg_gini_recalculated FROM country_income WHERE year = 2015;  This SQL query calculates the average of recalculated Gini coefficients for all countries in the 'country_income' table specifically for the year 2015. The `AVG()` function computes this summary statistic, and only rows with a matching condition on the \"year\" column are included.",
+    "generation_time": 13.8378
+}

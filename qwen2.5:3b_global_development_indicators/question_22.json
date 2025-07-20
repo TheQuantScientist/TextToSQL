@@ -1,8 +1,0 @@
-{
-    "question": "22|Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
-    "query": "SELECT year, country_name, region, green_transition_score FROM global_development_indicators ORDER BY year DESC LIMIT 50",
-    "answer": "Based on the provided query results, there are no green transition scores available for any country or region. Therefore, it is not possible to identify any common patterns in the green transition score of all countries and regions over the years from this data set.",
-    "sql_execution_time": 8.7,
-    "nlp_generation_time": 10.03,
-    "total_time": 18.73
-}

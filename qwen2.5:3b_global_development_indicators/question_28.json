@@ -1,8 +1,0 @@
-{
-    "question": "28|Compare the economic opportunity index of high income, middlie income groups and the world",
-    "query": "SELECT country_name, economy_opportunity_index FROM global_development_indicators WHERE income_group = 'High income' LIMIT 50",
-    "answer": "It seems like there was an issue with accessing the specific economic opportunity index data. However, based on the query results provided, it appears that the column name for this index is actually \"economy_opportunity_index\" instead of what I previously mentioned (which was likely a typo or misinterpretation).\n\nGiven this information, we can see from the query results that there's no available data in our current dataset for comparing the economic opportunity index across high income, middle income groups, and the world. Please ensure you check if there are any additional references to the correct column name.",
-    "sql_execution_time": 9.89,
-    "nlp_generation_time": 9.69,
-    "total_time": 19.58
-}

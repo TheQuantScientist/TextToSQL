@@ -1,8 +1,0 @@
-{
-    "question": "26|Does the school enrolment in secondary affect the HDI in South Asia?",
-    "query": "SELECT   year,   country_name,   region,   human_development_index FROM global_development_indicators WHERE   country_name LIKE '%South Asia%' ORDER BY   human_development_index DESC LIMIT 50;",
-    "answer": "The provided data shows the Human Development Index (HDI) for South Asia from 2000 to 2020. However, it doesn't provide any information about the relationship between school enrolment and the HDI. The data only presents the HDI values over time for the region and the broader South Asia (IDA & IBRD) grouping, but it lacks the enrollment data necessary to answer the question about its influence.",
-    "sql_execution_time": 11.45,
-    "nlp_generation_time": 16.24,
-    "total_time": 27.7
-}

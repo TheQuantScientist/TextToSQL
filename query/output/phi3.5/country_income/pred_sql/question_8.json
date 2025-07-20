@@ -1,0 +1,5 @@
+{
+    "question": "All the countries have gini recalculated greater than 0.4 in 2015",
+    "query": "SELECT country, ref, gini_recalculated FROM country_income WHERE year = 2015 AND gini_recalculated > 0.4; LIMIT 50;  Please note that I've included the 'country' and 'ref' columns in this query as they might provide context for understanding which specific countries are being referred to, although these were not requested explicitly by your question—it is often useful information when dealing with such queries. If you only need numeric results or identifiers like country codes/refs, feel free to remove them accordingly.",
+    "generation_time": 18.7232
+}

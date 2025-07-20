@@ -1,8 +1,0 @@
-{
-    "question": "9|What is the green transition score of lower middle income group in 2020?",
-    "query": "Here's the SQL query for the question:  ```sql SELECT income_group, year, green_transition_score FROM global_development_indicators WHERE income_group = 'Lower Middle Income Group' AND year = 2020 LIMIT 50; ```",
-    "answer": "I'm sorry for the inconvenience, it seems there was a syntax error in your provided SQL query. To answer your question, I don't have the SQL query to run, but I can tell you this: In 2020, the green transition score of the lower middle-income group is not available from the data provided to me. It might be best to check the original source of your data or clarify the details if possible.",
-    "sql_execution_time": 17.75,
-    "nlp_generation_time": 8.38,
-    "total_time": 26.13
-}

@@ -1,8 +1,0 @@
-{
-    "question": "1|What is the digital readiness score of South Asia in 2020?",
-    "query": "SELECT digital_readiness_score FROM global_development_indicators WHERE region = 'South Asia' AND year = 2020;",
-    "answer": "Based on the provided query results, South Asia's digital readiness score in various instances ranged from a low of 0.0 to a high of approximately 0.7 (or specifically reported as .638). This suggests variability within different sectors or measurements taken under this umbrella term \"digital readiness.\" However, without more context on what these scores represent and how they were calculated for South Asia in the year 2don't take into account specific economic indicators. Generally speaking, a higher score closer to .7 would indicate greater digital readiness; hence it seems there is substantial room for improvement within this region according to your data set from at least one assessment made around late 2020 or early in the subsequent year. For more tailored insights and recommendations on improving South Asia's overall score, additional context about these specific evaluations would be beneficial.",
-    "sql_execution_time": 2.19,
-    "nlp_generation_time": 10.33,
-    "total_time": 12.52
-}

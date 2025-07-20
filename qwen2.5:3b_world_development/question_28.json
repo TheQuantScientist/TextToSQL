@@ -1,8 +1,0 @@
-{
-    "question": "28|Compare the economic opportunity index of high income, middlie income groups and the world",
-    "query": "SELECT country_name, economy_opportunity_index  FROM global_development_indicators  WHERE income_group = 'High'  LIMIT 50",
-    "answer": "I'm sorry, but there seems to be an issue with accessing the data. It appears that the column name 'economy_opportunity_index' might not exist in the current dataset. However, based on the hint provided, it looks like you meant to use a different column named 'global_development_indicators.econ_opportunity_index'. Could you please check if this column exists and provide me with more details or correct any mistakes?",
-    "sql_execution_time": 14.85,
-    "nlp_generation_time": 12.04,
-    "total_time": 26.89
-}

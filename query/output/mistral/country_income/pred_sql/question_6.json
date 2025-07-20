@@ -1,0 +1,5 @@
+{
+    "question": "What is the gdp per capita of Sweden in 2015?",
+    "query": "To get the GDP per capita in PPP, constant 2011 US dollars for Sweden in the year 2015, use the following SQL query:  ```sql SELECT gdp_ppp_pc_usd2011 FROM country_income WHERE country = 'Sweden' AND year = 2015 LIMIT 1; ```",
+    "generation_time": 22.7983
+}

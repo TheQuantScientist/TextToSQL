@@ -1,8 +1,0 @@
-{
-    "question": "12|What is the average economic opportunity index of low and indebt countries?",
-    "query": "SELECT AVG(econ_opportunity_index)  FROM global_development_indicators  WHERE income_group < 5 AND country_name LIKE '%indebted%' LIMIT 50",
-    "answer": "I'm sorry, but there seems to be an issue with the query I received. It looks like there was a problem with the comparison between the 'income_group' field (which is presumably a numeric value) and the integer '5', as well as filtering for countries where the name contains 'indebted'. Could you please provide me with another valid query?",
-    "sql_execution_time": 11.01,
-    "nlp_generation_time": 9.75,
-    "total_time": 20.76
-}

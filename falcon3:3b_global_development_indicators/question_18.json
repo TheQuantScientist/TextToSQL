@@ -1,8 +1,0 @@
-{
-    "question": "18|What is the highest energy per capita score in 2020? In which country",
-    "query": "SELECT MAX(\"energy_use_per_capita\") AS Highest_Energy_Per_Capita, \"country_name\" FROM \"global_development_indicators\" WHERE \"year\" = 2020 LIMIT 50;",
-    "answer": "It seems there's an issue with the query as it currently stands; the error suggests that the country names column should either be used in a GROUP BY clause or be part of an aggregate function. However, assuming we are to find the highest energy per capita score for any given year (in this case, 2020), we might need to adjust our query to group by year and then select the maximum value from that group.\n\nA corrected approach would involve restructuring the query or adjusting it based on the available data schema in your database. Since the error specifically mentions missing usage of the country name column, if you're looking for the highest energy score globally (without specifying a particular country), you might simply write:\n\n```sql\nSELECT MAX(\"global_development_indicators.energy_use_per_capita\") AS Highest_Energy_Per_Capita, \"country_name\" AS Country\nFROM \"global_development_indicators\"\nWHERE YEAR(\"date\") = 2020;\n```\n\nThis query would return the highest energy per capita score achieved in any country for the year 2020. If you have a more specific database structure or need to group by another field (like region or country), please provide additional details so I can adjust the query accordingly.",
-    "sql_execution_time": 4.62,
-    "nlp_generation_time": 7.27,
-    "total_time": 11.89
-}

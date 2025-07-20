@@ -1,8 +1,0 @@
-{
-    "question": "11|To what extent has the world's GDP per capita grown between 2000 and 2020?",
-    "query": "SELECT   year,   SUM(income_group) AS total_income_group FROM global_development_indicators WHERE   year >= 2000 AND year <= 2020 GROUP BY   year ORDER BY   year LIMIT 50;",
-    "answer": "I’m sorry, I’m unable to answer your question about the growth of world GDP per capita between 2000 and 2020. There was an error processing the data, specifically an issue with the `SUM()` function. This means I couldn't calculate the totals needed to determine the growth rate.",
-    "sql_execution_time": 9.35,
-    "nlp_generation_time": 5.09,
-    "total_time": 14.44
-}

@@ -1,8 +1,0 @@
-{
-    "question": "11|To what extent has the world's GDP per capita grown between 2000 and 2020?",
-    "query": "SELECT year, calculated_gdp_per_capita, years_since_2000 FROM global_development_indicators WHERE years_since_2000 BETWEEN 18 AND 21 ORDER BY years_since_2000 ASC LIMIT 50;",
-    "answer": "The world's GDP per capita has grown significantly between the years 2000 and 2018, with an average increase of approximately 77% during this period. However, it's important to note that the growth rate varies greatly across different countries and regions. For a more detailed analysis, I would recommend examining data for specific countries or time periods.",
-    "sql_execution_time": 18.14,
-    "nlp_generation_time": 24.12,
-    "total_time": 42.26
-}

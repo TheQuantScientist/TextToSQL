@@ -1,0 +1,5 @@
+{
+    "question": "What is the population of China in 2000?",
+    "query": "SELECT population FROM country_income WHERE year = 2000 AND iso = 'china'; LIMIT 50;   In this SQL query, relevant columns are selected to find the total population of China in the year specified (which matches the request). The `year` and `iso` fields are used for filtering records corresponding to China's data from the year requested. I limited results with a `LIMIT 50`.",
+    "generation_time": 13.1925
+}

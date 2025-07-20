@@ -1,8 +1,0 @@
-{
-    "question": "1|What is the digital readiness score of South Asia in 2020?",
-    "query": "SELECT   digital_readiness_score FROM global_development_indicators WHERE   country_name = 'South Asia' AND year = 2020 LIMIT 50;",
-    "answer": "The digital readiness score for South Asia in 2020 was 0.2833677048916203.",
-    "sql_execution_time": 13.14,
-    "nlp_generation_time": 2.69,
-    "total_time": 15.83
-}
