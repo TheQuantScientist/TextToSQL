@@ -1,0 +1,5 @@
+{
+    "question": "What is the net income of d10 category of US in 2015?",
+    "query": "SELECT T2.income_net FROM country_income AS T1 INNER JOIN country_income AS T2 ON T1.ref = T2.ref WHERE T1.country = 'USA' AND T1.year = 2015 AND T2.category = 'd10'; LIMIT 50;",
+    "generation_time": 5.9461
+}

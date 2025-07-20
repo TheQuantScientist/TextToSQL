@@ -20,6 +20,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class State(TypedDict):
+    model: str
     question: str
     query: str
     table_name: str
@@ -30,7 +31,7 @@ class State(TypedDict):
 
 def sql_gen_node(state: State) -> State:
     logger.info('Generating SQL query')
-    llm = get_llm_model()
+    llm = get_llm_model(state['model'])
     state['sql_start_time'] = time.time()
 
     if llm is None:
@@ -81,7 +82,7 @@ def query_execution_node(state: State) -> State:
 def response_generation_node(state: State) -> State:
     logger.info('Generating natural language response')
     start_time=time.time()
-    llm = get_llm_model()
+    llm = get_llm_model(state['model'])
     if llm is None:
         state['final_answer'] = "Failed to generate response due to LLM initialization error"
         logger.error("No LLM available for response generation")

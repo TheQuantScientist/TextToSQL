@@ -1,0 +1,5 @@
+{
+    "question": "The financial crisis happened in 2008. Evaluate the income inequality before and after the event in US.",
+    "query": "SELECT country, gdp_ppp_pc_usd2011, population, year, data_source FROM country_income WHERE iso = 'USA' AND (year < 2008 OR year > 2008) ORDER BY year ASC LIMIT 50;  This query selects relevant columns from the `country_income` table for data regarding income per capita and population in US dollars, corresponding to years before and after 2008. It orders these results chronologically (ascending) but limits them to only show entries within a range that reflects both periods around the financial crisis year of 2008, constrained by a limit of 50 rows for manageability in reviewing trends before and after this significant event without selecting all data.",
+    "generation_time": 22.9813
+}

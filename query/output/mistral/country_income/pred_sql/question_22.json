@@ -1,0 +1,5 @@
+{
+    "question": "Vietnam released economic reformation policy named 'Doi Moi' from 1986 to 2000. Evaluate the effectiveness of the policy based on the gini score trend of the country in 2 phases: Before 1986 and after 1986",
+    "query": "To compare the Gini coefficient (`gini_reported`) before and after the implementation of the 'Doi Moi' policy in Vietnam, you can use conditional aggregation along with window functions. Here is a SQL query to get the average Gini score for both periods (before 1986 and after 1986) while limiting the results to 50 rows:  ```sql SELECT   country,   year,   CASE     WHEN year < 1986 THEN 'Before 1986'     ELSE 'After 1986'   END AS phase,   AVG(gini_reported) as avg_gini FROM   country_income WHERE iso = 'vnm' -- Assuming the ISO code for Vietnam is 'vnm' GROUP BY country, year, phase ORDER BY phase, year LIMIT 50; ```",
+    "generation_time": 54.6962
+}

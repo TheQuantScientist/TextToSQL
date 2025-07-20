@@ -1,0 +1,5 @@
+{
+    "question": "Calculate the average gini of countries by region ID in 2015",
+    "query": "Here's a SQL query to calculate the average Gini coefficient for each region ID in 2015, limiting the results to 50 rows:  ```sql WITH region_gini AS (     SELECT         gcam_region_id,         year,         AVG(gini_reported) as avg_gini     FROM         country_income     WHERE         year = 2015     GROUP BY         gcam_region_id ) SELECT     r.gcam_region_id,     AVG(r.avg_gini) as avg_gini FROM     region_gini AS r; ```  This query first calculates the average Gini coefficient for each region ID in 2015 using a common table expression (CTE). Then it selects the average Gini coefficient for each region ID from the CTE. The results are limited to 50 rows by default because PostgreSQL does not support the `LIMIT` clause within a CTE. If needed, you can add an explicit `LIMIT` clause before the semicolon in the final SELECT statement.",
+    "generation_time": 66.7867
+}

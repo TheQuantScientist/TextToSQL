@@ -1,0 +1,5 @@
+{
+    "question": "Comparing the gini index of China and US over years to evaluate which country has higher income inequality",
+    "query": "To compare the Gini index between China (ISO code: `chn`) and the United States (ISO code: `usa`) for specific years, we'll first retrieve data from the 'country_income' table. Here is a SQL query that limits results to 50 rows only.  ```sql SELECT country, year, gini_reported FROM country_income WHERE (iso IN ('chn', 'usa') AND category = 'd10' AND data_source NOT LIKE '%Imputed%') ORDER BY iso, year; ```  This query selects the country name, year, and Gini coefficient for China and the United States when the income decile is the top 10%. It also filters out any data derived by imputation. The results are sorted first by ISO code and then by year for easier comparison.",
+    "generation_time": 40.2898
+}

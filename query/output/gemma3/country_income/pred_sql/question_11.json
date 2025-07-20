@@ -1,0 +1,5 @@
+{
+    "question": "What is the average of gini recalcuated score of Vietnam by year?",
+    "query": "SELECT   AVG(gini_recalculated) FROM country_income WHERE   country = 'Vietnam';",
+    "generation_time": 3.3043
+}

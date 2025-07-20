@@ -1,0 +1,5 @@
+{
+    "question": "Calculate the average gini of countries by region ID in 2015",
+    "query": "SELECT ci.iso, AVG(ci.gini_recalculated) AS avg_gini FROM country_income ci WHERE ci.year = 2015 GROUP BY ci.gcam_region_id LIMIT 50;  This SQL query calculates the average recalculated Gini coefficient for countries grouped by their GCAM region ID specifically in the year of 2015, limiting the results to just 50 rows as requested.",
+    "generation_time": 15.5604
+}

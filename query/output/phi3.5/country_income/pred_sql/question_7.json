@@ -1,0 +1,5 @@
+{
+    "question": "Distinct list of region ID",
+    "query": "SELECT DISTINCT gcam_region_id FROM country_income; LIMIT 50;  This SQL query selects distinct `gcam_region_id` values from the 'country_income' table, limiting the results to just 50 rows.",
+    "generation_time": 9.3411
+}

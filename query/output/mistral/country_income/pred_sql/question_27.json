@@ -1,0 +1,5 @@
+{
+    "question": "Does population affect income inequality? Analyze gini index of China through years to explain",
+    "query": "To analyze the relationship between population and income inequality (Gini coefficient) in China, we can query the 'country_income' table for relevant data. Here's a SQL query that should do the trick:  ```sql SELECT year, gini_reported, population, gini_recalculated, data_source FROM country_income WHERE iso = 'chn' -- China's ISO code is 'chn' AND year BETWEEN 1960 AND 2020 -- Limit the results to a range of years ORDER BY year ASC -- Sort by year in ascending order LIMIT 50; ```  This query selects the relevant columns (year, gini_reported, population, gini_recalculated, and data_source) for China from 1960 to 2020. The results are limited to the first 50 rows and ordered by year in ascending order. You can modify the range of years or the country ISO code based on your specific analysis requirements.",
+    "generation_time": 40.1161
+}
