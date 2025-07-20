@@ -1,8 +1,0 @@
-{
-    "question": "7|What is the economic opportunity index of indebt countries group in 2020?",
-    "query": "SELECT econ_opportunity_index FROM global_development_indicators WHERE region = 'indebt' AND year = 2020 LIMIT 50;",
-    "answer": "Hello! Unfortunately, after analyzing our data, I couldn't find any information on the economic opportunity index for indebted countries as a group in 2020. Our system didn't have any relevant records or data available to provide an accurate answer.\n\nIf you're interested, we could discuss possible reasons why this data might not be available or explore alternative sources that may have similar information. Would you like me to help with that?",
-    "sql_execution_time": 7.51,
-    "nlp_generation_time": 5.09,
-    "total_time": 12.59
-}

@@ -1,8 +1,0 @@
-{
-    "question": "26|Does the school enrolment in secondary affect the HDI in South Asia?",
-    "query": "SELECT region, SUM(hd_index) as hdi_sum, COUNT(*) as count  FROM global_development_indicators  WHERE country_code = 'South Asia' AND year BETWEEN 2000 AND 2019  GROUP BY region  ORDER BY hdi_sum DESC  LIMIT 50;",
-    "answer": "The query seems to have encountered an issue because the column \"hd_index\" doesn't exist in the dataset being used. This means that the data needed to answer whether school enrolment in secondary affects HDI in South Asia isn't available. As a result, we cannot definitively answer this question based on the current dataset or query results.\n\nTo analyze if there's a relationship between secondary school enrollment and HDI (Human Development Index) in South Asia, you would need to gather data that includes both variables: school enrolment figures and HDI scores for various countries within South Asia. Once you have this kind of data, you could perform statistical analysis or visualization to see if there's a discernible pattern between the two. \n\nKeep in mind that correlation does not imply causation. Just because two variables are correlated doesn’t mean one causes the other. Other factors might influence both school enrollment and HDI levels, making it difficult to establish causality without additional data or analysis.",
-    "sql_execution_time": 5.07,
-    "nlp_generation_time": 5.31,
-    "total_time": 10.38
-}

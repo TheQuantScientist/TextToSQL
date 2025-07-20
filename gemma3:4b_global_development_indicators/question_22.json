@@ -1,8 +1,0 @@
-{
-    "question": "22|Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
-    "query": "SELECT   year,   country_name,   green_transition_score FROM global_development_indicators WHERE green_transition_score IS NOT NULL ORDER BY year, country_name LIMIT 50;",
-    "answer": "Here’s an analysis of the green transition scores across countries and regions in the year 2000, based on the provided data:\n\nIn 2000, there was a significant variation in green transition scores. Some regions and countries had notably high scores, including Bhutan (91.3981), Burkina Faso (85.4049), and Burundi (93.2257). Conversely, several areas had very low scores, with American Samoa (0.0), Arab World (6.5673), and Brunei (0.0) having the lowest scores. \n\nIt’s important to note that this data represents a single year's snapshot.",
-    "sql_execution_time": 9.59,
-    "nlp_generation_time": 16.28,
-    "total_time": 25.87
-}

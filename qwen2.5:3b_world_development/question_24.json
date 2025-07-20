@@ -1,8 +1,0 @@
-{
-    "question": "24|Evaluate the differences in digital readiness of South Asia compared to Europe region",
-    "query": "SELECT AVG(digital_readiness_score) AS avg_digital_readiness, 'SouthAsia' AS region FROM global_development_indicators WHERE country_code LIKE '%AS%' UNION SELECT AVG(digital_readiness_score) AS avg_digital_readiness, 'Europe' AS region FROM global_development_indicators WHERE country_code LIKE '%EU%' LIMIT 50",
-    "answer": "Based on the query results provided, we can see that the average digital readiness score for the South Asia region is approximately 0.202, while for the Europe region it is about 0.697.\n\nThe scores indicate significant differences in digital readiness between these two regions. The South Asia region has a much lower digital readiness score than Europe. This suggests that Europe is significantly more digitally prepared compared to South Asia.\n\nIn simpler terms: Digital readiness in Europe is notably higher than in the South Asia region, with Europe having an average digital readiness score of about 0.697 and South Asia scoring around 0.202 on this scale.",
-    "sql_execution_time": 22.75,
-    "nlp_generation_time": 21.44,
-    "total_time": 44.19
-}

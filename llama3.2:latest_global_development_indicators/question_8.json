@@ -1,8 +1,0 @@
-{
-    "question": "8|What is the gdp per capita of OECD group in 2019?",
-    "query": "SELECT SUM(gdp_per_capita) FROM global_development_indicators WHERE region = 'OECD' AND year = 2019 LIMIT 50;",
-    "answer": "Based on the available data, it's not possible to provide an accurate GDP per capita for the OECD group in 2019. The query results indicate that there is no available data for this specific metric.\n\nIf you're interested in exploring GDP per capita data for the OECD group, I recommend checking the latest publications from reputable sources such as the Organisation for Economic Co-operation and Development (OECD) or the World Bank. They may have more up-to-date information on this topic.",
-    "sql_execution_time": 6.23,
-    "nlp_generation_time": 4.15,
-    "total_time": 10.38
-}

@@ -1,8 +1,0 @@
-{
-    "question": "2|Country with the highest global development resilience score in 2020?",
-    "query": "SELECT   country_name FROM global_development_indicators WHERE   year = 2020 ORDER BY   human_development_composite DESC LIMIT 1;",
-    "answer": "Based on the provided data, Africa Eastern and Southern had the highest global development resilience score in 2020.",
-    "sql_execution_time": 8.23,
-    "nlp_generation_time": 1.97,
-    "total_time": 10.19
-}

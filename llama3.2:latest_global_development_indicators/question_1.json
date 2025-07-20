@@ -1,8 +1,0 @@
-{
-    "question": "1|What is the digital readiness score of South Asia in 2020?",
-    "query": "SELECT MIN(digital_readiness_score) FROM global_development_indicators WHERE region = 'South Asia' AND year = 2020;",
-    "answer": "Based on the query results, it appears that there is no available data for the digital readiness score of South Asia in 2020. The result shows a minimum value of 0.0, indicating that there might be an issue with data collection or availability.",
-    "sql_execution_time": 10.26,
-    "nlp_generation_time": 2.78,
-    "total_time": 13.04
-}

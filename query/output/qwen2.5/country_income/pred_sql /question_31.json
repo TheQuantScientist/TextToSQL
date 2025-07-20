@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the net income gap between low income group d1 to d4, middle income group d5 to d9 and high income group d10 in Vietnam and propose improvement plan",
+    "query": "SELECT iso, year, ref, category, data_source,        SUM(CASE WHEN category IN ('d5', 'd6', 'd7', 'd8', 'd9') THEN income_net END) AS high_income_group_net_income,        SUM(CASE WHEN category = 'd10' THEN income_net END) AS high_income_d10_net_income,        SUM(CASE WHEN category IN ('d1', 'd2', 'd3', 'd4') THEN income_net END) AS low_income_group_net_income FROM country_income WHERE iso = 'VNM' GROUP BY iso, year, ref, data_source LIMIT 50",
+    "generation_time": 17.5471
+}

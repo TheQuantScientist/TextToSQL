@@ -1,8 +1,0 @@
-{
-    "question": "8|What is the gdp per capita of OECD group in 2019?",
-    "query": "SELECT AVG(gdp_per_capita) AS avg_gdp_per_capita FROM global_development_indicators WHERE country_code IN (     SELECT country_code     FROM global_development_indicators     WHERE year = 2019 ) AND gdp_per_capita > 10.0",
-    "answer": "The GDP per capita for the OECD group in 2019 was approximately $13,825.98.",
-    "sql_execution_time": 21.44,
-    "nlp_generation_time": 4.74,
-    "total_time": 26.18
-}

@@ -1,8 +1,0 @@
-{
-    "question": "29|Is the weather vulnerability related to the child mortality in high income country?",
-    "query": "SELECT year, region, country_name, life_expectancy, child_mortality FROM global_development_indicators WHERE human_development_index > 0.8 AND child_mortality > 1.5 ORDER BY region ASC LIMIT 50;",
-    "answer": "The provided data does not show a consistent relationship between weather vulnerability and child mortality in high-income countries within the East Asia & Pacific region. Child mortality rates fluctuate widely among different countries, ranging from 79.91 to 157.17 deaths per 1,000 live births, indicating significant disparities even within this region. Weather vulnerabilities could contribute to child mortality indirectly through factors such as food insecurity, health issues related to environmental exposure, or disruptions in healthcare services due to extreme weather events. However, the data does not clearly establish a direct causal link between specific weather vulnerabilities and child mortality rates across these high-income countries. Further analysis and context-specific studies would be needed to ascertain whether certain weather conditions are more closely linked to elevated child mortality rates in these regions.",
-    "sql_execution_time": 4.71,
-    "nlp_generation_time": 11.98,
-    "total_time": 16.68
-}

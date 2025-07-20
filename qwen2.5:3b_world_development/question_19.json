@@ -1,8 +1,0 @@
-{
-    "question": "19|What country has the longest period of deflation? Deflation is known as when the inflation is negative",
-    "query": "SELECT country_name  FROM global_development_indicators  WHERE real_economic_growth_indicator < 0  ORDER BY years_since_2000 DESC  LIMIT 50",
-    "answer": "Based on the provided data, there is no country listed that has experienced deflation (negative inflation). All countries in this dataset are showing positive or zero inflation rates. Therefore, none of these countries can be considered to have the longest period of deflation.",
-    "sql_execution_time": 16.19,
-    "nlp_generation_time": 9.69,
-    "total_time": 25.88
-}

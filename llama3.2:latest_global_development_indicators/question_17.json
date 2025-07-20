@@ -1,8 +1,0 @@
-{
-    "question": "17|Which country has the lowest global resilience score?",
-    "query": "SELECT country_name FROM global_development_indicators ORDER BY global_resilience_score LIMIT 1;",
-    "answer": "Based on the query results, it appears that Uzbekistan has the lowest global resilience score.",
-    "sql_execution_time": 6.07,
-    "nlp_generation_time": 1.14,
-    "total_time": 7.21
-}

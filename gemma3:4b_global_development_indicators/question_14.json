@@ -1,8 +1,0 @@
-{
-    "question": "14|Which country has the highest health expenditure per capita in 2020?",
-    "query": "SELECT   country_name FROM global_development_indicators WHERE   year = 2020 ORDER BY   health_expenditure_pct_gdp DESC LIMIT 50;",
-    "answer": "I’m sorry, but the provided query results do not contain information about health expenditure per capita, making it impossible to answer your question about which country had the highest spending in 2020. The data only lists country names and groupings, but lacks specific health expenditure figures.",
-    "sql_execution_time": 8.83,
-    "nlp_generation_time": 5.6,
-    "total_time": 14.44
-}

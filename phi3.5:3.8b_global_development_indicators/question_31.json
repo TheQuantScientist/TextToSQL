@@ -1,8 +1,0 @@
-{
-    "question": "31|What is the relationship between unemployment rate and inflation of US through years?",
-    "query": "SELECT year, unemployment_rate, inflation_rate FROM global_development_indicators WHERE country_name = 'United States' ORDER BY year ASC LIMIT 50;",
-    "answer": "The data shows that over the years from 2000 to 2020, both unemployment rate and inflation in the US generally followed similar trends with slight fluctuations around a certain range. From this dataset, it's noticeable there was an exception during 2008 when the U.S experienced high joblessness (3.84%) but also significant economic turmoil reflected by higher inflation rates nearing 34%.\n\nBetween approximately early-to-mid in this range, you can observe a period known as 'stagflation' where unemployment increased while prices rose – something that economists found quite challenging to handle. However after the economic crisis of late 2008 and onwards till at least midpoint (around year 16), inflation remained consistent around or slightly above 34%, with a simultaneous decrease in U.S unemployment rates, showing an inverse relationship for that period – often referred to as 'disinflation'.\n\nThe data suggests the complex interplay between these two significant economic factors; however it's essential to understand more extensive historical context and other influencing variables such government policy changes when interpreting this simplified dataset.",
-    "sql_execution_time": 9.77,
-    "nlp_generation_time": 22.15,
-    "total_time": 31.93
-}

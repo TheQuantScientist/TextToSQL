@@ -1,0 +1,5 @@
+{
+    "question": "What is the net income of each category of Vietnam in 2015?",
+    "query": "SELECT T1.income_net FROM country_income AS T1 INNER JOIN country AS T2 ON T1.country = T2.country WHERE T2.iso = 'vnm' AND T1.year = 2015 LIMIT 50;",
+    "generation_time": 5.6207
+}

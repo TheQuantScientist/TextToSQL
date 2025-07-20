@@ -1,8 +1,0 @@
-{
-    "question": "8|What is the gdp per capita of OECD group in 2019?",
-    "query": "SELECT AVG(gdp_per_capita) AS avg_gdp_per_capita FROM global_development_indicators WHERE country_code IN (     SELECT country_code     FROM global_development_indicators     WHERE year = 2019 ) AND country_code IN (     SELECT country_code     FROM world_bank_groups     WHERE group_name = 'OECD' )",
-    "answer": "I'm sorry, but there seems to be an issue with retrieving the data. It appears that the relation \"world_bank_groups\" does not exist in our database. This group might not have been included in our dataset for the year 2019 or could be stored under a different name. If you provide more specific information about the dataset we're using, I can try to assist further.",
-    "sql_execution_time": 19.0,
-    "nlp_generation_time": 9.25,
-    "total_time": 28.26
-}

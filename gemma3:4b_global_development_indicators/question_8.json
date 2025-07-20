@@ -1,8 +1,0 @@
-{
-    "question": "8|What is the gdp per capita of OECD group in 2019?",
-    "query": "SELECT   \"income_group\",   \"year\",   \"country_name\",   \"region\",   \"gdp_per_capita\" FROM global_development_indicators WHERE   \"income_group\" = 'OECD' AND \"year\" = 2019 LIMIT 50;",
-    "answer": "I’m sorry, but there are no records available to answer your question about the GDP per capita of the OECD group in 2019. The query returned no results.",
-    "sql_execution_time": 11.35,
-    "nlp_generation_time": 3.34,
-    "total_time": 14.68
-}

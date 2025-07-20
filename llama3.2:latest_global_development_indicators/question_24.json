@@ -1,8 +1,0 @@
-{
-    "question": "24|Evaluate the differences in digital readiness of South Asia compared to Europe region",
-    "query": "SELECT global_development_composite FROM global_development_indicators WHERE region = 'South Asia' LIMIT 50;",
-    "answer": "It seems like there's an issue with the query results.\n\nUnfortunately, it appears that we don't have the data required to compare the digital readiness of South Asia and Europe. The error message is indicating that the column \"global_development_composite\" does not exist in the dataset.\n\nIf you could provide more context or details about what this column represents or where you obtained the data from, I'll be happy to help you investigate further.\n\nAlternatively, if you have access to a different dataset or can modify the query to use an alternative measure of digital readiness, I'd be happy to try and assist you in evaluating the differences between South Asia and Europe.",
-    "sql_execution_time": 5.91,
-    "nlp_generation_time": 6.39,
-    "total_time": 12.3
-}

@@ -1,8 +1,0 @@
-{
-    "question": "29|Is the weather vulnerability related to the child mortality in high income country?",
-    "query": "SELECT year, country_code, region, inflation_rate, renewable_energy_pct, electricity_access_pct, co2_emissions_per_capita_tons, green_transition_score, ecological_preservation_index, healthcare_capacity_index FROM global_development_indicators WHERE income_group = 'high' AND child_mortality IS NOT NULL LIMIT 50;",
-    "answer": "Based on the query results provided, there is currently no specific information available linking weather vulnerability directly with child mortality rates in high-income countries. The search did not yield any records or data that address this particular question at present time. For a more detailed analysis and understanding of factors affecting child mortality in such contexts, we would need to explore additional research studies or databases focusing on health outcomes related to environmental conditions within these income brackets.\n\nIf you are interested in exploring the topic further, I recommend reaching out to academic journals specializing in public health and environment-related policies of high-income nations for more comprehensive insights into this issue.",
-    "sql_execution_time": 12.43,
-    "nlp_generation_time": 6.45,
-    "total_time": 18.88
-}

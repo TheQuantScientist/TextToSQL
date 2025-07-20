@@ -1,8 +1,0 @@
-{
-    "question": "31|What is the relationship between unemployment rate and inflation of US through years?",
-    "query": "SELECT   year,   unemployment_rate,   inflation_rate FROM global_development_indicators WHERE   country_code = 'USA' ORDER BY   year LIMIT 50;",
-    "answer": "Here's an analysis of the relationship between unemployment rate and inflation in the US based on the provided data:\n\n**Overall Trend:**\n\nFrom 2000 to 2019, there appears to be a general inverse relationship between unemployment and inflation. When unemployment rates were low, inflation rates were also relatively high, and vice-versa. \n\n**Specific Observations:**\n\n*   **2000-2007:**  A period of low unemployment coincided with very high inflation rates.\n*   **2008-2020:** Following the 2008 financial crisis, unemployment spiked, but inflation remained relatively stable, hovering around 33.87% for most of this period.\n*   **2020:** There was a notable decrease in the unemployment rate, coupled with a slight decrease in inflation.\n\n**Important Note:** The data only covers a specific period and a limited number of years.  A more comprehensive analysis would require a longer time series and consideration of other economic factors.",
-    "sql_execution_time": 9.44,
-    "nlp_generation_time": 20.56,
-    "total_time": 30.01
-}

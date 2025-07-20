@@ -1,8 +1,0 @@
-{
-    "question": "2|Country with the highest global development resilience score in 2020?",
-    "query": "SELECT country_name, region  FROM global_development_indicators  WHERE year = 2020  ORDER BY global_development_resilience_index DESC  LIMIT 1",
-    "answer": "The country with the highest global development resilience score in 2020, based on the query results provided, is Monaco.",
-    "sql_execution_time": 12.2,
-    "nlp_generation_time": 3.09,
-    "total_time": 15.29
-}

@@ -1,8 +1,0 @@
-{
-    "question": "5|What is the unemployment rate of Europe region in 2008?",
-    "query": "SELECT   unemployment_rate FROM global_development_indicators WHERE   region = 'Europe' AND year = 2008 LIMIT 50;",
-    "answer": "I’m sorry, but there is no record found for the unemployment rate of the Europe region in 2008.",
-    "sql_execution_time": 8.26,
-    "nlp_generation_time": 2.37,
-    "total_time": 10.63
-}

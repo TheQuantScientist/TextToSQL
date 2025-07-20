@@ -1,8 +1,0 @@
-{
-    "question": "29|Is the weather vulnerability related to the child mortality in high income country?",
-    "query": "SELECT *  FROM global_development_indicators  WHERE is_pandemic_period = FALSE AND income_group = 'high' AND child_mortality IS NOT NULL LIMIT 50",
-    "answer": "It seems that there was an issue with executing the query due to a mismatch in data types, specifically between boolean values and double precision numbers. However, based on the error message, it appears you were trying to filter results for high-income countries where 'is_pandemic_period' is set to FALSE, which would exclude pandemic periods.\n\nTo directly answer your question: The provided query results do not contain information about weather vulnerability's relationship with child mortality in high-income countries. There was an issue executing the specific query due to a data type mismatch, preventing it from being run successfully.",
-    "sql_execution_time": 16.17,
-    "nlp_generation_time": 17.03,
-    "total_time": 33.19
-}

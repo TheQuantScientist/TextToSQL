@@ -1,8 +1,0 @@
-{
-    "question": "7|What is the economic opportunity index of indebt countries group in 2020?",
-    "query": "SELECT AVG(econ_opportunity_index) AS avg_econ_opportunities FROM global_development_indicators WHERE country_code IN (     SELECT country_code     FROM global_development_indicators     WHERE `year` = 2020 AND income_group <>'High income – more than USD 12,565' ) LIMIT 50",
-    "answer": "I'm sorry, but there seems to be an issue with the query results I received. The results show a \"Syntax Error\" and indicate that there was an error near the \"=\" symbol. This suggests there may have been an incorrect syntax or structure in the provided SQL statement.\n\nTo answer your question about the Economic Opportunity Index of indebted countries groups in 2020, I would need valid data from an appropriate database or dataset. If you could provide me with that information, I would be happy to explain it to you in detail.",
-    "sql_execution_time": 17.83,
-    "nlp_generation_time": 12.83,
-    "total_time": 30.66
-}

@@ -1,8 +1,0 @@
-{
-    "question": "10|What is the unemployment rate of US in 2020?",
-    "query": "To get the unemployment rate of the United States (country_code 'US') for the year 2020, you can use the following SQL query:  ```sql SELECT unemployment_rate FROM global_development_indicators WHERE country_code = 'US' AND year = 2020 LIMIT 1; ```",
-    "answer": "I'm sorry for any confusion, but it seems there was a syntax error in your query. Without the correct syntax, it wasn't possible to fetch the data. However, if we look at recent data available, the unemployment rate for the United States in 2020 was approximately 6.7% (source: U.S. Bureau of Labor Statistics).",
-    "sql_execution_time": 18.46,
-    "nlp_generation_time": 7.53,
-    "total_time": 25.99
-}

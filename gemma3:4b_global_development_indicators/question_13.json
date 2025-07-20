@@ -1,8 +1,0 @@
-{
-    "question": "13|How many countries has the gdp per capita lower than the world in 2019?",
-    "query": "SELECT   COUNT(DISTINCT country_code) FROM global_development_indicators WHERE   year = 2019 AND income_group < (     SELECT       AVG(income_group)     FROM global_development_indicators   );",
-    "answer": "I’m sorry, I encountered an error processing your request. The error message indicates an issue with the database query, specifically related to calculating the average of the “income_group” column. I cannot fulfill your request to determine the number of countries with a GDP per capita lower than the world average in 2019 with the current query.",
-    "sql_execution_time": 9.64,
-    "nlp_generation_time": 4.88,
-    "total_time": 14.52
-}

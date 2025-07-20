@@ -1,0 +1,5 @@
+{
+    "question": "Top 5 country that have highest gini recalulated in 2015",
+    "query": "SELECT iso, gini_recalculated FROM country_income WHERE year = 2015 ORDER BY gini_recalculated DESC LIMIT 5;  This SQL query selects the ISO code and recalculated Gini coefficient from the 'country_income' table for rows where the year is 2015, orders them in descending order by the recalculated Gini value to find the top values (countries with highest income inequality), and limits the result set to only include the first five countries.",
+    "generation_time": 16.3656
+}
