@@ -1,9 +1,12 @@
 import json
 import os
 import sqlparse
-from nltk.translate.bleu_score import sentence_bleu
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from difflib import SequenceMatcher
 import re
+import numpy as np
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
 
 def load_sql_from_json(file_path):
     """Load SQL query from JSON file."""
@@ -22,11 +25,12 @@ def exact_match(gold_sql, pred_sql):
     return 1.0 if gold_normalized == pred_normalized else 0.0
 
 def bleu_score(gold_sql, pred_sql):
-    """Calculate BLEU score."""
+    """Calculate BLEU score with smoothing."""
     gold_tokens = gold_sql.strip().lower().split()
     pred_tokens = pred_sql.strip().lower().split()
     reference = [gold_tokens]
-    return sentence_bleu(reference, pred_tokens)
+    smoothie = SmoothingFunction().method1
+    return sentence_bleu(reference, pred_tokens, smoothing_function=smoothie)
 
 def ast_similarity(gold_sql, pred_sql):
     """Calculate AST Similarity score."""
@@ -54,12 +58,7 @@ def component_accuracy(gold_sql, pred_sql):
         
         def extract_components(parsed_query):
             components = {
-                'select': [],
-                'from': [],
-                'where': [],
-                'join': [],
-                'group_by': [],
-                'order_by': []
+                'select': [], 'from': [], 'where': [], 'join': [], 'group_by': [], 'order_by': []
             }
             
             tokens = parsed_query.tokens
@@ -75,10 +74,11 @@ def component_accuracy(gold_sql, pred_sql):
                         if j < len(tokens):
                             key = value.replace(' ', '_')
                             components[key].append(str(tokens[j]).strip())
-                    i = j if j > i else i + 1
+                        i = j if j > i else i + 1
+                    else:
+                        i += 1  # Skip unhandled keywords
                 else:
                     i += 1
-            
             return components
         
         gold_components = extract_components(gold_parsed)
@@ -146,6 +146,18 @@ def logical_form_accuracy(gold_sql, pred_sql):
         print(f"Error in logical form accuracy: {e}")
         return 0.0
 
+def cosine_similarity_score(gold_sql, pred_sql):
+    """Calculate Cosine Similarity score using sentence-transformers."""
+    try:
+        model = SentenceTransformer('all-MiniLM-L6-v2')
+        gold_embedding = model.encode(gold_sql.strip(), convert_to_tensor=False)
+        pred_embedding = model.encode(pred_sql.strip(), convert_to_tensor=False)
+        similarity = cosine_similarity([gold_embedding], [pred_embedding])[0][0]
+        return float(similarity)
+    except Exception as e:
+        print(f"Error in cosine similarity: {e}")
+        return 0.0
+
 def evaluate_sql_metrics(gold_path, pred_path):
     """Evaluate all metrics for given gold and predicted SQL queries."""
     gold_sql = load_sql_from_json(gold_path)
@@ -157,7 +169,8 @@ def evaluate_sql_metrics(gold_path, pred_path):
             'bleu': 0.0,
             'ast_similarity': 0.0,
             'component_accuracy': 0.0,
-            'logical_form_accuracy': 0.0
+            'logical_form_accuracy': 0.0,
+            'cosine_similarity': 0.0
         }
     
     metrics = {
@@ -165,13 +178,14 @@ def evaluate_sql_metrics(gold_path, pred_path):
         'bleu': bleu_score(gold_sql, pred_sql),
         'ast_similarity': ast_similarity(gold_sql, pred_sql),
         'component_accuracy': component_accuracy(gold_sql, pred_sql),
-        'logical_form_accuracy': logical_form_accuracy(gold_sql, pred_sql)
+        'logical_form_accuracy': logical_form_accuracy(gold_sql, pred_sql),
+        'cosine_similarity': cosine_similarity_score(gold_sql, pred_sql)
     }
     
     return metrics
 
 def main():
-    base_path = r"/Users/ngannguyen/Documents/GitHub/TextToSQL/query/output"
+    base_path = r"/Users/admin/LG/TextToSQL/query/output"
     
     # Fixed model name (change this manually as needed)
     model = 'gemma3'
