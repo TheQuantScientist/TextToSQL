@@ -149,7 +149,7 @@ def logical_form_accuracy(gold_sql, pred_sql):
 def cosine_similarity_score(gold_sql, pred_sql):
     """Calculate Cosine Similarity score using sentence-transformers."""
     try:
-        model = SentenceTransformer('all-MiniLM-L6-v2')
+        model = SentenceTransformer('all-mpnet-base-v2')
         gold_embedding = model.encode(gold_sql.strip(), convert_to_tensor=False)
         pred_embedding = model.encode(pred_sql.strip(), convert_to_tensor=False)
         similarity = cosine_similarity([gold_embedding], [pred_embedding])[0][0]
