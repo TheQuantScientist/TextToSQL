@@ -1,0 +1,5 @@
+{
+    "question": "What is the highest energy per capita score in 2020? In which country",
+    "query": "SELECT country_name, MAX(energy_use_per_capita) AS max_energy_usage FROM global_development_indicators WHERE year = 2020 LIMIT 1;",
+    "generation_time": 4.0764
+}

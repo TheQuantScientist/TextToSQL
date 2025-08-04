@@ -1,0 +1,5 @@
+{
+    "question": "How many countries are in lower middle income group as in 2020?",
+    "query": "SELECT COUNT(DISTINCT country_code) AS count_lower_middle_income FROM global_development_indicators WHERE income_group = 'Lower Middle Income' AND year = 2020;",
+    "generation_time": 5.62
+}

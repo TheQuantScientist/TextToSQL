@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "SELECT T1.fdi_pct_gdp,         CASE          WHEN T1.income_group = 'Lower-middle-income' THEN 'Middle'         ELSE T1.income_group        END AS income_group,        SUM(T2.real_economic_growth_indicator) AS total_real_economic_growth_indicator,        AVG(T2.real_economic_growth_indicator) OVER (PARTITION BY T1.fdi_pct_gdp, T1.income_group ORDER BY real_economic_growth_indicator DESC) AS average_real_economic_growth_indicator FROM global_development_indicators T1 JOIN (   SELECT fdi_pct_gdp, income_group,          SUM(real_economic_growth_indicator) AS total_real_economic_growth_indicator   FROM global_development_indicators    GROUP BY fdi_pct_gdp, income_group ) T2 ON T1.fdi_pct_gdp = T2.fdi_pct_gdp AND T1.income_group = T2.income_group GROUP BY T1.fdi_pct_gdp, T1.income_group HAVING COUNT(*) > 50",
+    "generation_time": 18.0035
+}

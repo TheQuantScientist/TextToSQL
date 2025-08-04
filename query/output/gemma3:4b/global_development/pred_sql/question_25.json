@@ -1,0 +1,5 @@
+{
+    "question": "Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "query": "SELECT   correlation FROM (   SELECT     CORR(       g.governance_quality_index,       g.digital_readiness_score     ) AS correlation   FROM global_development_indicators AS g   WHERE     g.country_code IN (       'AF',       'BD',       'BN',       'IN',       'MM',       'NP',       'PK',       'SL',       'SR'     ) ) AS subquery LIMIT 1;",
+    "generation_time": 19.9626
+}

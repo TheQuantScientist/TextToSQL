@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the lowest global resilience score?",
+    "query": "SELECT country_name, global_development_resilience_index FROM global_development_indicators ORDER BY global_development_resilience_index ASC LIMIT 1;  This SQL query selects the name of the country and its corresponding Global Development Resilience Index from the 'global_development_indicators' table, orders it by descending values (lowest resilience score first), then limits results to just one row which will be the country with the lowest global development resilience index.",
+    "generation_time": 10.7713
+}

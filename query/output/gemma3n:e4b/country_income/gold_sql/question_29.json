@@ -1,0 +1,5 @@
+{
+    "question": "Which region ID has high income inequality? Explain reasons behind it",
+    "query": "SELECT    gcam_region_id,    AVG(gini_recalculated) AS avg_gini_recalculated FROM    country_income GROUP BY    gcam_region_id ORDER BY    avg_gini_recalculated DESC LIMIT 50;  This query calculates the average Gini coefficient (a measure of income inequality) for each region ID and returns the top 50 regions with the highest average Gini coefficient, indicating high income inequality.",
+    "generation_time": 5.0238
+}

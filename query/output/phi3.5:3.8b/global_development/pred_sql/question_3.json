@@ -1,0 +1,5 @@
+{
+    "question": "What is the human development index score of Vietnam in 2019?",
+    "query": "SELECT h.human_development_composite, gdii.* FROM global_development_indicators AS gdii JOIN (     SELECT country_name, year, AVG(human_development_index) as human_dev_avg     FROM global_development_indicators     WHERE country_code = 'VN' AND year = 2019     GROUP BY country_name, year ) AS h ON gdii.country_name = h.country_name AND gdii.year = h.year WHERE gdii.year = 2019;",
+    "generation_time": 13.791
+}

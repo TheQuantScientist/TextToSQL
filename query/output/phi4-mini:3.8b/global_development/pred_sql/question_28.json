@@ -1,0 +1,5 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT year, country_code, region, currency_unit, gdp_usd, population,        fdi_pct_gdp, energy_use_per_capita, internet_usage_pct, renewable_energy_pct,        hospital_beds_per_1000, physicians_per_1000, mobile_subscriptions_per_100,        economic_opportunity_index AS hi_eoi FROM global_development_indicators WHERE income_group = 'High Income Group' OR country_name = 'World' ORDER BY year DESC NULLS LAST, hi_eoi ASC LIMIT 50;",
+    "generation_time": 11.4523
+}

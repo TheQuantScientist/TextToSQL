@@ -1,5 +1,0 @@
-{
-    "question": "Does higher gdp per capita posiviely correlated with high income inequality? Explain possible reasons",
-    "query": "SELECT AVG(CASE WHEN gini_reported < 0.5 THEN 1 ELSE 0 END) AS low_inequality_gdp, AVG(gdp_ppp_pc_usd2011) AS avg_gdp_ppp FROM country_income GROUP BY YEAR LIMIT 50",
-    "generation_time": 6.9572
-}

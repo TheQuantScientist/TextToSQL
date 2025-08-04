@@ -1,0 +1,5 @@
+{
+    "question": "Does the school enrolment in secondary affect the HDI in South Asia?",
+    "query": "To find out if school enrollment in secondary affects the Human Development Index (HDI) in South Asia, you can use a linear regression analysis. First, let's filter the data for South Asia and select only the required columns. Then, perform the linear regression to find the relationship between school enrollment in secondary (`school_enrollment_secondary`) and HDI (`human_development_index`).  Here is the SQL query:  ```sql SELECT region, human_development_index, school_enrollment_secondary FROM global_development_indicators WHERE region = 'South Asia' ORDER BY year ASC LIMIT 50;  -- Perform linear regression using PostgreSQL functions: WITH data AS (   SELECT human_development_index AS y, school_enrollment_secondary AS x   FROM global_development_indicators   WHERE region = 'South Asia' ) SELECT 'Linear Regression for South Asia' AS regression_name,        correlation(x, y) AS correlation,        least_squares(x, y) AS slope,        variance_pop(y) * variance_pop(x) / (variance_pop(x) + variance_pop(y)) AS r2 FROM data; ```",
+    "generation_time": 44.054
+}

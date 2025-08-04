@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship between unemployment rate and inflation of US through years?",
+    "query": "SELECT year,         UNHEX(REPLACE(unemployment_rate, ',', '')) AS unemployment_rate,        UNHEX(REPLACE(inflation_rate, ',', '')) AS inflation_rate FROM global_development_indicators WHERE country_code = 'US' AND inflation_rate IS NOT NULL AND unemployment_rate IS NOT NULL",
+    "generation_time": 5.6123
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the economic opportunity index of indebt countries group in 2020?",
+    "query": "To get the economic opportunity index of 'indebt' countries group in the year 2020, you can use a combination of filters and aggregation function `AVG()` to get the average value. The query will look like this:  ```sql SELECT AVG(economic_opportunity_index) as avg_econ_opportunity_index FROM global_development_indicators WHERE country_name IN (     SELECT name FROM countries WHERE income_group = 'indebt' ) AND year = 2020; ```",
+    "generation_time": 19.2963
+}

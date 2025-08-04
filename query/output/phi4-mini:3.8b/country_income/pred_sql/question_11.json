@@ -1,0 +1,5 @@
+{
+    "question": "What is the average of gini recalcuated score of Vietnam by year?",
+    "query": "SELECT AVG(gini_recalculated) AS avg_gini_recalculated, year  FROM country_income  WHERE iso = 'vNM' -- ISO 3-letter code for Vietnam GROUP BY year;  (Note: The correct ISO 3-letter code for Vietnam is \"VNM\", replacing the previously used placeholder `'vn`'. Also note that this query assumes you're asking about all years where data exists, but if you want to limit it further or change specifics like using a different identifier, please let me know.)",
+    "generation_time": 10.5244
+}

@@ -1,0 +1,5 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT AVG(calculated_gdp_per_capita) AS avg_gdp_growth_2000_to_2020  FROM global_development_indicators  WHERE year >= 2000 AND year <= 2020;   Note: The query assumes there's a column named `calculated_gdp_per_capita` which represents the GDP per capita, and this is an average value calculated for each row. If there are separate columns representing different years' data within the table (e.g., yearly growth figures), then you would need to adjust your SQL accordingly depending on how that information can be extracted from a single-row format.  Also remember that PostgreSQL queries return floating-point results which may not always align exactly with integer-based averages due to rounding. If exact year-on-year comparisons are needed, additional logic will have to handle this within the query or by processing after retrieval of data.",
+    "generation_time": 370.0026
+}

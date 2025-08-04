@@ -1,0 +1,5 @@
+{
+    "question": "Does the school enrolment in secondary affect the HDI in South Asia?",
+    "query": "SELECT      CORR(school_enrollment_secondary, human_development_index) AS correlation_coefficient, FROM global_development_indicators; LIMIT 50;  Please note that PostgreSQL does not have a built-in `CORREL` function to calculate Pearson's correlation coefficient directly. The above query assumes such an operation is available or has been created as part of the database functions, which may require additional implementation using SQL extensions like PL/R for R language integration into PostgreSQL.  If you need assistance with creating this calculation in pure SQL without any external tools/languages integrated to your Postgres setup, please let me know.",
+    "generation_time": 946.6365
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the highest gdp per capita among lower middle income group?",
+    "query": "SELECT      c.country_name,     c.gdp_per_capita FROM global_development_indicators i JOIN (     SELECT country_code,             gdp_per_capita     FROM global_development_indicators     WHERE income_group = 'lower_middle_income' ) AS lower_middle_gdp ON i.year = lower_middle_gdp.year AND                          i.country_code = lower_middle_gdp.country_code AND                         i.gdp_per_capita > lower_middle_gdp.gdp_per_capita  WHERE gdp_per_capita IS NOT NULL      AND country_name IS NOT NULL     AND income_group = 'lower_middle_income' ORDER BY gdp_per_capita DESC LIMIT 50;",
+    "generation_time": 18.0302
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the inflation rate of Vietnam in 2009?",
+    "query": "SELECT year, inflation_rate  FROM global_development_indicators  WHERE country_name = 'Vietnam' AND year = 2009; COPY (     SELECT year, inflation_rate      FROM globalizedb.global_development_indicators      WHERE country_name = 'Vietnam' AND year = 2009 ) TO '/path/to/yourfile.csv' DELIMITER ',' CSV HEADER LIMIT 50;",
+    "generation_time": 10.7231
+}

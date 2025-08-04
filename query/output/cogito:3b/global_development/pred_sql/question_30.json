@@ -1,0 +1,5 @@
+{
+    "question": "Do countries with high weather vulnerability score have higher green transition scores? Explain for me the implication",
+    "query": "SELECT      country_name,     climate_vulnerability_index as weather_vulnerability_score,     green_transition_score FROM global_development_indicators WHERE is_pandemic_period = FALSE     AND climate_vulnerability_index > 0.5     AND green_transition_score IS NOT NULL LIMIT 50;",
+    "generation_time": 9.3253
+}

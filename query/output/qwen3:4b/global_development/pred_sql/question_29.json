@@ -1,0 +1,5 @@
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "<think> Okay, the user is asking if weather vulnerability is related to child mortality in high-income countries. Let me think about how to approach this.  First, I need to check the available columns in the table. The table has a 'climate_vulnerability_index' which might relate to weather vulnerability. Then, 'child_mortality' is the metric for child mortality. Also, there's a filter for 'income_group' to select high-income countries.  So the SQL query should select the relevant columns: climate_vulnerability_index, child_mortality, and income_group. Then, apply a WHERE clause to filter for high-income countries. Also, limit the results to 50 rows. I need to make sure to use the correct table name and column names as provided. Let me structure the query accordingly. </think>  SELECT climate_vulnerability_index, child_mortality, income_group  FROM global_development_indicators  WHERE income_group = 'High income'  LIMIT 50;",
+    "generation_time": 21.9243
+}

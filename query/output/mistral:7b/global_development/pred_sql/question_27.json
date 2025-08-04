@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "To find the relationship between FDI percentage of GDP and economic growth for middle and low-income groups, you can use the following PostgreSQL query:  ```sql SELECT income_group, AVG(gdp_per_capita) as avg_gdp_per_capita, AVG(fdi_pct_gdp) as avg_fdi_pct_gdp, STDDEV(gdp_per_capita) as stddev_gdp_per_capita, STDDEV(fdi_pct_gdp) as stddev_fdi_pct_gdp FROM global_development_indicators WHERE income_group IN ('Middle Income', 'Low Income') GROUP BY income_group LIMIT 50; ```  This query calculates the average GDP per capita and FDI percentage of GDP for middle-income and low-income countries, as well as their standard deviations. The `WHERE` clause filters the data to only include rows where the income_group is either 'Middle Income' or 'Low Income', ensuring that we are focusing on these specific groups. The `GROUP BY` statement divides the results by the income group, and the `LIMIT 50` at the end ensures that the query returns no more than 50 rows of results.",
+    "generation_time": 45.8308
+}

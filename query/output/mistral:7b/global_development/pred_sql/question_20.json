@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the highest gdp per capita among lower middle income group?",
+    "query": "To find the country with the highest GDP per capita in the lower middle income group, you can use the following SQL query on your 'global_development_indicators' table:  ```sql SELECT country_name, gdp_per_capita FROM global_development_indicators WHERE income_group = 'Lower Middle Income Group' ORDER BY gdp_per_capita DESC LIMIT 1; ```  This query selects the name and GDP per capita of countries that belong to the lower middle income group, sorts them in descending order by GDP per capita, and returns only the first result (i.e., the country with the highest GDP per capita).",
+    "generation_time": 23.3019
+}

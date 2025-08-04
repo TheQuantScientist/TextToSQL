@@ -1,0 +1,5 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT country_code, econ_opportunity_index FROM global_development_indicators WHERE income_group = 'High' AND year BETWEEN YEAR(CURRENT_DATE) - 10 AND YEAR(CURRENT_DATE) LIMIT 50;",
+    "generation_time": 6.0178
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT * FROM global_development_indicators WHERE income_group = 'High Income' AND child_mortality > 0 LIMIT 50;",
+    "generation_time": 4.3499
+}

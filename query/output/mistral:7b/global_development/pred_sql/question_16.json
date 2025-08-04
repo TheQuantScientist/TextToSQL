@@ -1,0 +1,5 @@
+{
+    "question": "What is the average digital readiness score of high income countries in 2019?",
+    "query": "To find the average digital readiness score of high-income countries in the year 2019, you can use the following SQL query:  ```sql SELECT AVG(digital_readiness_score) FROM global_development_indicators WHERE income_group = 'High Income' AND year = 2019; ```",
+    "generation_time": 12.8902
+}

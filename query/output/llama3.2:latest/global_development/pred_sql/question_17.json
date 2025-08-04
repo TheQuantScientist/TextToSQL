@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the lowest global resilience score?",
+    "query": "SELECT T1.country_name FROM global_development_indicators AS T1 INNER JOIN ( SELECT country_code, MIN(T2.global_development_resilience_index) AS min_global_development_resilience_index FROM global_development_indicators AS T2 GROUP BY T2.country_code ) AS T3 ON T1.country_code = T3.country_code ORDER BY T3.min_global_development_resilience_index LIMIT 50;",
+    "generation_time": 7.2911
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Does the school enrolment in secondary affect the HDI in South Asia?",
+    "query": "SELECT   T1.human_development_index FROM global_development_indicators AS T1 INNER JOIN global_development_indicators AS T2   ON T1.country_code = T2.country_code WHERE   T2.region = 'South Asia' AND T2.school_enrollment_secondary IS NOT NULL LIMIT 50;",
+    "generation_time": 15.7864
+}

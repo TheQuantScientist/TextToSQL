@@ -1,0 +1,5 @@
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT      climate_vulnerability_index,      school_enrollment_secondary FROM global_development_indicators WHERE income_group = 'High Income' AND region IS NOT NULL;",
+    "generation_time": 931.8755
+}

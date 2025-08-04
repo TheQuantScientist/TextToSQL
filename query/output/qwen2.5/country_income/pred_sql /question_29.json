@@ -1,5 +1,0 @@
-{
-    "question": "Which region ID has high income inequality? Explain reasons behind it",
-    "query": "SELECT gcam_region_id, AVG(gini_reported) as avg_gini FROM country_income GROUP BY gcam_region_id ORDER BY avg_gini DESC LIMIT 50",
-    "generation_time": 4.3153
-}

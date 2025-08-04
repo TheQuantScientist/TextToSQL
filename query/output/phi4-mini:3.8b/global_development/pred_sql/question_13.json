@@ -1,0 +1,5 @@
+{
+    "question": "How many countries has the gdp per capita lower than the world in 2019?",
+    "query": "SELECT COUNT(DISTINCT country_name) FROM global_development_indicators WHERE year = 2019 AND gdp_per_capita < (SELECT MIN(gdp_per_capita) FROM global_development_indicators);",
+    "generation_time": 4.5567
+}

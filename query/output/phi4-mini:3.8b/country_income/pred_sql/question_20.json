@@ -1,0 +1,5 @@
+{
+    "question": "The average gini recalculated of the world in 2015",
+    "query": "SELECT AVG(gini_recalculated) AS avg_gini_recalculated_world_2015 FROM country_income  WHERE year = 2015 AND population > 0; -- Assuming we exclude countries with no data for accurate calculation.",
+    "generation_time": 4.7722
+}
