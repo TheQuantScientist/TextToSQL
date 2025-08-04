@@ -1,0 +1,5 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT year, calculated_gdp_per_capita FROM global_development_indicators WHERE years_since_2000 BETWEEN 0 AND 20 ORDER BY year ASC LIMIT 50;",
+    "generation_time": 5.7398
+}

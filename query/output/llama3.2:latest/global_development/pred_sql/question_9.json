@@ -1,0 +1,5 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT DISTINCT T1.green_transition_score FROM global_development_indicators AS T1 INNER JOIN income_group AS T2 ON T1.income_group = T2.name WHERE T2.income_group = 'Lower Middle Income' AND T1.year = 2020 LIMIT 50;",
+    "generation_time": 5.2521
+}

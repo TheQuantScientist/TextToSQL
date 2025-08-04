@@ -1,0 +1,5 @@
+{
+    "question": "What is the average gini recalculated score of top 5 countries having highest population in 2015?",
+    "query": "WITH RankedCountries AS (     SELECT          country,          year,         population,         RANK() OVER (ORDER BY population DESC) as rank     FROM country_income     WHERE year = 2015 ) SELECT AVG(gini_recalculated) as avg_gini_recalculated_score FROM RankedCountries WHERE rank <= 5;",
+    "generation_time": 7.7528
+}

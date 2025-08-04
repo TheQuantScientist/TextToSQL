@@ -1,0 +1,5 @@
+{
+    "question": "Does the school enrolment in secondary affect the HDI in South Asia?",
+    "query": "SELECT      s.secondary_school_enrollment_rate,     h.human_development_composite FROM global_development_indicators AS gdi JOIN global_development_indicators AS s    ON gdi.year = s.year AND gdi.country_code = 'SAS'    AND gdi.country_name IN ('India', 'Pakistan', 'Bangladesh') JOIN global_development_indicators AS h   ON gdi.year = h.year AND gdi.country_code = 'SAS' WHERE gdi.is_pandemic_period = FALSE AND s.secondary_school_enrollment_rate > (SELECT AVG(secondary_school_enrollment_rate)                                             FROM global_development_indicators                                              WHERE country_code IN ('India', 'Pakistan', 'Bangladesh')) LIMIT 50;",
+    "generation_time": 24.184
+}

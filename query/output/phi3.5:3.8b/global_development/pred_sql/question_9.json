@@ -1,0 +1,5 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT country_name, year, gdp_per_capita, renewable_energy_pct, calculated_gdp_per_capita, real_economic_growth_indicator, green_transition_score FROM global_development_indicators WHERE income_group = 'Lower Middle Income' AND year = 2020 LIMIT 50;",
+    "generation_time": 8.68
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the gpd per capita, population and gini coefficient of Vietnam in 2010?",
+    "query": "SELECT      year,      country AS Country,     iso AS ISO_code,     \"gpi_pc_usd\" AS Population, -- Assuming 'population' translates to GDP Per Capita (PPP) as indicated by name change for clarity; this might need adjustment.     gini_reported AS Gini_Coefficient FROM      country_income WHERE      year = 2010 AND country = 'Vietnam';",
+    "generation_time": 9.0687
+}

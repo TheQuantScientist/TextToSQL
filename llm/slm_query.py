@@ -35,19 +35,23 @@ class State(TypedDict):
 
 # === CONFIGURATION ===
 models = [
-        # 'qwen2.5:3b',
-        # 'falcon3:3b',
-        # 'phi3.5:3.8b',
-        # 'mistral:7b',
-        # 'llama3.2:latest',
+        'cogito:3b',
+        'deepseek-r1:7b',
         'gemma3:4b',
+        'gemma3n:e4b',
+        'llama3.2:latest',
+        'mistral:7b',
+        'phi3.5:3.8b',
+        'phi4-mini:3.8b',
+        'qwen2.5:3b',
+        'qwen3:4b',    
     ]
 
-TABLE_NAME = "country_income"
+TABLE_NAME = "global_development_indicators"
 
 OUTPUT_DIR = os.path.join(
      os.path.dirname(__file__),
-     "..", "query", "output", "falcon3", "country_income", "pred_sql"
+     "..", "query", "output", "falcon3", "global_development_indicators", "pred_sql"
  )
     
 # === REMOVE NEWLINES IN QUERY ===
@@ -120,37 +124,37 @@ def save_ground_truth(state: State, idx, gen_time=None, output_dir=OUTPUT_DIR):
 # === MAIN PIPELINE ===
 if __name__ == "__main__":
     user_queries = [
-        "What is the gini recalculated of Vietnam in 2015?",
-        "What is the net income of d10 category of US in 2015?",
-        "What is the net income of d1 category of Thailand in 2009?",
-        "What is the net income of d10 group of Singapore in 1970?",
-        "What is the population of China in 2000?",
-        "What is the gdp per capita of Sweden in 2015?",
-        "Distinct list of region ID",
-        "All the countries have gini recalculated greater than 0.4 in 2015",
-        "What is the gpd per capita, population and gini coefficient of Vietnam in 2010?",
-        "What is the net income of each category of Vietnam in 2015?",
-        "What is the average of gini recalcuated score of Vietnam by year?",
-        "Top 5 country that have highest gini recalulated in 2015",
-        "Top 5 country of which d1 category has highest net income in 2015",
-        "How many countries have gini recalculated lower than the world average in 2015?",
-        "What is the average of d10 net income of Vietnam over years?",
-        "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
-        "What is the average gini recalculated score of top 5 countries having highest population in 2015?",
-        "Calculate the average gini of countries by region ID in 2015",
-        "What is the growth rate of gini recalculated of Vietnam for each year?",
-        "The average gini recalculated of the world in 2015",
-        "What is the ratio of net income of d10 to d1 group of Singapore in 2015?",
-        "Vietnam released economic reformation policy named 'Doi Moi' from 1986 to 2000. Evaluate the effectiveness of the policy based on the gini score trend of the country in 2 phases: Before 1986 and after 1986",
-        "Analyze the trend of world's income inequality across region from 1967 to 2015.",
-        "Does higher gdp per capita posiviely correlated with high income inequality? Explain possible reasons",
-        "The financial crisis happened in 2008. Evaluate the income inequality before and after the event in US.",
-        "Analyze the trend of income inequality and gdp per capita of Singapore from 1970 onward.",
-        "Does population affect income inequality? Analyze gini index of China through years to explain",
-        "Comparing the gini index of China and US over years to evaluate which country has higher income inequality",
-        "Which region ID has high income inequality? Explain reasons behind it",
-        "What are the common patterns can be observed from countries with high income inequality in 2015, knowing gini greater than 0.4 is considered as high inequality",
-        "Evaluate the net income gap between low income group d1 to d4, middle income group d5 to d9 and high income group d10 in Vietnam and propose improvement plan"
+    "What is the digital readiness score of South Asia in 2020?",
+    "Country with the highest global development resilience score in 2020",
+    "What is the human development index score of Vietnam in 2019?",
+    "What is the inflation rate of Vietnam in 2009?",
+    "What is the unemployment rate of Europe region in 2008?",
+    "What is the life expectancy of Japan in 2020?",
+    "What is the economic opportunity index of indebt countries group in 2020?",
+    "What is the gpd per capita of OECD group in 2019?",
+    "What is the green transition score of lower middle income group in 2020?",
+    "What is the unemployment rate of US in 2020?",
+    "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "What is the average economic opportunity index of low and indebt countries?",
+    "How many countries has the gdp per capita lower than the world in 2019?",
+    "Which country has the highest health expenditure per capita in 2020?",
+    "How many countries are in lower middle income group as in 2020?",
+    "What is the average digital readiness score of high income countries in 2019?",
+    "Which country has the lowest global resilience score?",
+    "What is the highest energy per capita score in 2020? In which country",
+    "What country has the longest period of deflation? Deflation is known as when the inflation is negative",
+    "Which country has the highest gdp per capita among lower middle income group?",
+    "Number of countries have higher economic opportunity than the world",
+    "Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
+    "Explain for me the correlations of human development index and gdp per capita",
+    "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "Does the school enrolment in secondary affect the HDI in South Asia?",
+    "What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "Is the weather vulnerability related to the child mortality in high income country?",
+    "Do countries with high weather vulnerability score have higher green transition scores? Explain for me the implication",
+    "What is the relationship between unemployment rate and inflation of US through years?"
     ]
     if not user_queries:
         logger.error("No query provided. Please set a valid query in the code.")
@@ -169,9 +173,12 @@ if __name__ == "__main__":
                 state = sql_gen_node(state)
                 end_time = time.time()
                 gen_time = end_time - start_time
+                local_tablename = TABLE_NAME
+                if local_tablename == 'global_development_indicators':
+                    local_tablename = 'global_development'
                 model_output = os.path.join(
                     os.path.dirname(__file__),
-                    "..", "query", "output", model, TABLE_NAME, "pred_sql"
+                    "..", "query", "output", model, local_tablename, "pred_sql"
                 )
                 save_ground_truth(state, idx, gen_time, model_output)
                 logger.info(f"Saved: {model_output}/question_{idx}.json")

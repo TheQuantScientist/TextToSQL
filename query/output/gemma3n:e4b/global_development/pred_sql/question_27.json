@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "SELECT   AVG(CASE WHEN income_group IN ('low', 'middle') THEN fdi_pct_gdp END) AS avg_fdi_pct_gdp_low_middle,   AVG(CASE WHEN income_group IN ('low', 'middle') THEN real_economic_growt_indicator END) AS avg_real_economic_growt_indicator_low_middle FROM global_development_indicators;",
+    "generation_time": 29.0531
+}

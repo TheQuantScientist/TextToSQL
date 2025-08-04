@@ -1,0 +1,5 @@
+{
+    "question": "Number of countries have higher economic opportunity than the world",
+    "query": "To find the number of countries that have a higher economic opportunity index (econ_opportunity_index) than the global average, you can use the following SQL query on PostgreSQL:  ```sql WITH avg_econ_opportunity AS (   SELECT AVG(econ_opportunity_index) as avg_econ_opportunity   FROM global_development_indicators ) SELECT COUNT(*) FROM global_development_indicators WHERE econ_opportunity_index > (SELECT avg_econ_opportunity FROM avg_econ_opportunity); ```  This query first calculates the average economic opportunity index for all countries, then counts the number of countries whose economic opportunity index is higher than the calculated average. The result will be a single row containing the number of countries that have a higher economic opportunity index than the global average.",
+    "generation_time": 1025.2774
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "query": "SELECT AVG(governance_quality_index), AVG(digital_readiness_score) FROM global_development_indicators WHERE region = 'South Asia' AND years_since_century BETWEEN 100 AND 200;",
+    "generation_time": 6.2091
+}

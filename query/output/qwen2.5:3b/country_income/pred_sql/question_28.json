@@ -1,0 +1,5 @@
+{
+    "question": "Comparing the gini index of China and US over years to evaluate which country has higher income inequality",
+    "query": "SELECT iso, year, MAX(gini_reported) AS highest_gini_index FROM country_income WHERE iso IN ('CHN', 'USA') GROUP BY iso, year LIMIT 50",
+    "generation_time": 4.6923
+}

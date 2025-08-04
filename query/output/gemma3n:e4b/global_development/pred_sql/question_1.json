@@ -1,0 +1,5 @@
+{
+    "question": "What is the digital readiness score of South Asia in 2020?",
+    "query": "SELECT   digital_readiness_score FROM global_development_indicators WHERE   year = 2020 AND country_code IN ('SA');",
+    "generation_time": 29.4761
+}

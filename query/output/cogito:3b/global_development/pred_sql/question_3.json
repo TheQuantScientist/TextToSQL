@@ -1,0 +1,5 @@
+{
+    "question": "What is the human development index score of Vietnam in 2019?",
+    "query": "SELECT global_development_indicators.human_development_composite FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2019;  limit 1;",
+    "generation_time": 5.4682
+}

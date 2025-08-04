@@ -1,0 +1,5 @@
+{
+    "question": "Country with the highest global development resilience score in 2020",
+    "query": "SELECT global_development_resilience_index  FROM global_development_indicators  WHERE year = 2020;",
+    "generation_time": 3.0553
+}

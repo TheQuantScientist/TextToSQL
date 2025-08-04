@@ -1,0 +1,5 @@
+{
+    "question": "What is the life expectancy of Japan in 2020?",
+    "query": "SELECT year, country_name, life_expectancy FROM global_development_indicators WHERE country_code = 'JP' AND year = 2020 LIMIT 1;  This SQL query selects the `year`, `country_name` and `life_expectancy` from the table named `'global_development_indicators'` where the value of column `country_code` is 'JP' (for Japan) and for rows with year equal to 2020. The result will only include one row because of using the LIMIT clause, which restricts output to just a single life expectancy record for Japan in that specific year—as per your request not exceeding 50 rows limitation.",
+    "generation_time": 942.0155
+}

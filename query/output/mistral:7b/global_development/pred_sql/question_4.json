@@ -1,0 +1,5 @@
+{
+    "question": "What is the inflation rate of Vietnam in 2009?",
+    "query": "To find the inflation rate of Vietnam in 2009, you can use the following SQL query on PostgreSQL:  ```sql SELECT inflation_rate FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2009; ```  This query selects the `inflation_rate` column from the table 'global_development_indicators', filters the results for rows where `country_name` is equal to 'Vietnam' and `year` is equal to 2009. The result will be the inflation rate of Vietnam in 2009, if available in the database.  If you want to limit the query results to 50 rows:  ```sql SELECT inflation_rate FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2009 LIMIT 50; ```  This modified query limits the result set to 50 rows, ensuring that you won't get more than required.",
+    "generation_time": 35.3988
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT   COUNTRY_NAME,   digital_readiness_score FROM global_development_indicators WHERE   region IN ('Asia', 'Europe') ORDER BY   digital_readiness_score DESC LIMIT 50;",
+    "generation_time": 27.1809
+}

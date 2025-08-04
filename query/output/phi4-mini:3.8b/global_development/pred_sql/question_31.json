@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship between unemployment rate and inflation of US through years?",
+    "query": "SELECT year, UNEMPLOYMENT_RATE, INFLATION_RATE FROM global_development_indicators WHERE country_name = 'United States' ORDER BY year DESC LIMIT 50;",
+    "generation_time": 3.9617
+}

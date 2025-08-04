@@ -1,0 +1,5 @@
+{
+    "question": "Does higher gdp per capita posiviely correlated with high income inequality? Explain possible reasons",
+    "query": "SELECT      CORR(gdp_ppp_pc_usd2011, gini_reported) AS correlation_coefficient,     COUNT(*) FILTER (WHERE gdp_ppp_pc_usd2011 IS NOT NULL AND gini_reported IS NOT NULL) AS valid_data_count FROM country_income;   Note: The SQL query above calculates the Pearson correlation coefficient between GDP per capita and GINI reported to explore if there's a positive or negative relationship. However, this is not an exhaustive explanation of possible reasons for high income inequality with higher GDP; it just indicates whether there might be any linear trend in that direction based on available data.  A more comprehensive analysis would require additional information like country characteristics (e.g., political stability), social policies influencing wealth distribution and access to healthcare or education, among others. This is beyond the scope of a simple SQL query as such an explanation involves qualitative research rather than quantitative computation by standard database queries alone.",
+    "generation_time": 18.3333
+}

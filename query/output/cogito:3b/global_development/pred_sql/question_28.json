@@ -1,0 +1,5 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT      country_code,     country_name,     income_group,     human_development_composite,     global_development_resilience_index FROM      global_development_indicators WHERE      income_group = 'high'     AND is_pandemic_period IS FALSE LIMIT 50;",
+    "generation_time": 8.8606
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "To get the top 50 countries with middle-income groups from around the world, sorted by the economic opportunity index in descending order, execute the following SQL query on your PostgreSQL database:  ```sql SELECT * FROM global_development_indicators WHERE income_group = 'Middle Income' ORDER BY econ_opportunity_index DESC LIMIT 50; ```",
+    "generation_time": 936.8481
+}

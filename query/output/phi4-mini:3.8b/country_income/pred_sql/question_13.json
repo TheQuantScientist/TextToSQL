@@ -1,0 +1,5 @@
+{
+    "question": "Top 5 country of which d1 category has highest net income in 2015",
+    "query": "SELECT TOP 5 country, gini_reported, income_net AS net_income FROM country_income WHERE year = 2015 AND category = 'd1' ORDER BY income_net DESC;   Note: The above SQL assumes that the database being used supports a `TOP` clause (like Microsoft SQL Server). If you're using PostgreSQL and want to limit results, you would use LIMIT instead:   SELECT country, gini_reported, income_net AS net_income FROM country_income WHERE year = 2015 AND category = 'd1' ORDER BY income_net DESC LIMIT 5;   Please remember that the `TOP` keyword is specific to Microsoft SQL Server. The PostgreSQL version uses `LIMIT`.",
+    "generation_time": 14.8044
+}

@@ -1,5 +1,0 @@
-{
-    "question": "All the countries have gini recalculated greater than 0.4 in 2015",
-    "query": "SELECT iso, country, gcam_region_id, year, ref, gini_recalculated, data_source  FROM country_income  WHERE year = 2015 AND gini_recalculated > 0.4  LIMIT 50",
-    "generation_time": 7.2171
-}

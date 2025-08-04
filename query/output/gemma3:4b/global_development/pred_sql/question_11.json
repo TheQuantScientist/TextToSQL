@@ -1,0 +1,5 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT   AVG(gdp_per_capita) FROM global_development_indicators WHERE   year BETWEEN 2000 AND 2020;",
+    "generation_time": 11.3553
+}

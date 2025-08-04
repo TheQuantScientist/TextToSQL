@@ -1,0 +1,5 @@
+{
+    "question": "Number of countries have higher economic opportunity than the world",
+    "query": "SELECT COUNT(DISTINCT country_name) AS num_countries_with_higher_economic_opportunity FROM global_development_indicators WHERE econ_opportunity_index > (   SELECT MAX(econ_opportunity_index)   FROM global_development_indicators );   Note: This query assumes that the economic opportunity index (econ_opportunity_index) is a numerical value where higher numbers indicate better opportunities. If there are any NULL values in this field, they should be handled accordingly before executing the above SQL statement.  The provided table schema does not have an explicit world average econ_opportunity_index to compare against; hence I'm assuming that we need to find countries with economic opportunity index greater than all others worldwide (the maximum value).",
+    "generation_time": 14.5932
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the lowest global resilience score?",
+    "query": "SELECT country_name FROM global_development_indicators ORDER BY global_resilience_score LIMIT 1;",
+    "generation_time": 9.8982
+}

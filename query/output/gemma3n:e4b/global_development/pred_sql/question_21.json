@@ -1,0 +1,5 @@
+{
+    "question": "Number of countries have higher economic opportunity than the world",
+    "query": "SELECT   COUNT(DISTINCT country_code) FROM global_development_indicators WHERE   econ_opportunity_index > (     SELECT       econ_opportunity_index     FROM global_development_indicators     WHERE       years_since_2000 = (         SELECT           MAX(years_since_2000)         FROM global_development_indicators       )   );",
+    "generation_time": 30.7468
+}

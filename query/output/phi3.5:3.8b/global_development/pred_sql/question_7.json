@@ -1,0 +1,5 @@
+{
+    "question": "What is the economic opportunity index of indebt countries group in 2020?",
+    "query": "SELECT econ_opportunity_index FROM global_development_indicators WHERE income_group = 'Indebted' AND year = 2020;  This SQL query selects the `econ_opportunity_index` column from rows in the table where the country belongs to the group with `'Income Group Classification'` as `'Indebted'` and for which data is recorded within the specific calendar year of '2020'. The result set will be limited by default SQL behavior, returning up to 50 matching records.",
+    "generation_time": 12.447
+}

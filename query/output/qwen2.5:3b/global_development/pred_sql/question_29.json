@@ -1,0 +1,5 @@
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT AVG(co2_vulnerability_index) AS average_vulnerability, MIN(child_mortality) AS min_mortality FROM global_development_indicators WHERE is_high_income = true AND year >= 2015 LIMIT 50",
+    "generation_time": 3.8061
+}

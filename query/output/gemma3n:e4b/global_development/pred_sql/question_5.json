@@ -1,0 +1,5 @@
+{
+    "question": "What is the unemployment rate of Europe region in 2008?",
+    "query": "SELECT   unemployment_rate FROM global_development_indicators WHERE   year = 2008 AND country_code IN (     SELECT       country_code     FROM global_development_indicators     WHERE       region = 'Europe'   );",
+    "generation_time": 26.125
+}

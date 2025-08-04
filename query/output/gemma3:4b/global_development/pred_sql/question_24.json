@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT   AVG(digital_readiness_score) FROM global_development_indicators WHERE   region = 'South Asia' INTERSECT SELECT   AVG(digital_readiness_score) FROM global_development_indicators WHERE   region = 'Europe';",
+    "generation_time": 13.8319
+}

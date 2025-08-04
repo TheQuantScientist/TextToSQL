@@ -1,0 +1,5 @@
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT year, country_code, country_name, CO2_emissions_per_capita_tons, child_mortality FROM global_development_indicators WHERE income_group = 'High' AND climate_vulnerability_index IS NOT NULL LIMIT 50;  This query selects the relevant columns from high-income countries where there is a recorded Climate Vulnerability Index, and attempts to find any potential relationship between per capita CO2 emissions and child mortality rates. Please note that this SQL statement doesn't perform an actual analysis or correlation computation; it just fetches data for further examination possibly with statistical tools outside the scope of pure SQL capabilities.",
+    "generation_time": 1036.0529
+}

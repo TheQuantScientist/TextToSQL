@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT year, country_name, income_group, internet_usage_pct FROM global_development_indicators WHERE (region = 'South Asia' OR region = 'Europe') AND is_pandemic_period = FALSE ORDER BY digital_connectivity_index DESC LIMIT 50;  This SQL query selects the columns year, country_name, income_group, and internet_usage_pct from the table global_development_indicators where region equals either 'South Asia' or 'Europe', excluding data during pandemic periods. The results are ordered by digital connectivity index in descending order to effectively evaluate differences (presumably for higher readiness scores) between South Asian and European countries, with a limit of 50 rows only.",
+    "generation_time": 942.4332
+}

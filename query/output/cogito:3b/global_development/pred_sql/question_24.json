@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT      \"year\",     \"region\" as \"asia_reg\",     \"country_name\" as \"south_asia_country\",     \"digital_connectivity_index\",     \"governance_quality_index\" FROM      global_development_indicators WHERE      (\"region\" IN ('Asia', 'Europe'))     AND (\"is_pandemic_period\" = FALSE)     AND (\"year\" >= 2000) LIMIT 50;",
+    "generation_time": 13.9089
+}

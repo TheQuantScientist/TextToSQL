@@ -1,0 +1,5 @@
+{
+    "question": "What is the negative affect of Japan in 2022?",
+    "query": "SELECT negative_affect FROM world_happiness_report WHERE country_name = 'Japan' AND year = 2022 LIMIT 50;",
+    "generation_time": 3.8033
+}
