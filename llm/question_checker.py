@@ -36,7 +36,7 @@ models = ['cogito:3b',
         'qwen2.5:3b',
         'qwen3:4b', ]
 
-table_name = "happiness)record"
+table_name = "country_income"
 output_dir = "/Users/ngannguyen/Documents/GitHub/TextToSQL/query/output"
 
 # Output
