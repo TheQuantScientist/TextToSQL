@@ -1,0 +1,5 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT   AVG(CASE WHEN stock_index = 'S&P 500' THEN trading_volume ELSE 0 END) AS avg_sp500_volume,   AVG(CASE WHEN stock_index = 'Dow Jones' THEN trading_volume ELSE 0 END) AS avg_dow_volume,   AVG(CASE WHEN stock_index = 'NASDAQ' THEN trading_volume ELSE 0 END) AS avg_nasdaq_volume FROM finance_economics_dataset WHERE DATE_PART('month', date) = (SELECT DATE_PART('month', CURRENT_DATE)) LIMIT 50;",
+    "generation_time": 6.3412
+}

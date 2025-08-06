@@ -1,0 +1,5 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT     date,     stock_index,     trading_volume FROM     finance_economics_dataset WHERE     stock_index IN ('S&P 500', 'Dow Jones', 'NASDAQ') GROUP BY     date,     stock_index ORDER BY     date LIMIT 50;",
+    "generation_time": 10.2314
+}

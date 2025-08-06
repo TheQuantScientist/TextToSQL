@@ -1,0 +1,5 @@
+{
+    "question": "Which year has the highest average consumer confidence index?",
+    "query": "To find the year with the highest average consumer confidence index, we can use the `AVG()` function and `GROUP BY` clause to group by the date. Then, we will use the `LIMIT` clause to limit the results to 50 rows for simplicity. Here's the SQL query:  ```sql SELECT date, AVG(consumer_confidence_index) as avg_cci FROM finance_economics_dataset GROUP BY date ORDER BY avg_cci DESC LIMIT 50; ```  This query will return the year with the highest average consumer confidence index and up to 49 additional rows with the years in descending order of average consumer confidence index.",
+    "generation_time": 9.2999
+}

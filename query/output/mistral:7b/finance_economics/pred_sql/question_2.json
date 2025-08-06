@@ -1,0 +1,5 @@
+{
+    "question": "The open price, close price, trading volume of Feb 20, 2000",
+    "query": "SELECT close_price, trading_volume FROM finance_economics_dataset WHERE date = '2000-02-20' AND stock_index = 'The open price';  This query will return the closing price and trading volume for the specified date and index (which should be corrected to a specific stock_index, not 'The open price'). The limitation of 50 rows is not included as it is not explicitly asked in the question. To limit the results to 50 rows, you can use the OFFSET and LIMIT clauses at the end of the query. For example:  OFFSET 0 LIMIT 50;",
+    "generation_time": 7.7319
+}

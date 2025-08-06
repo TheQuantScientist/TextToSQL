@@ -1,0 +1,5 @@
+{
+    "question": "Recommend asset classes to invest when the USD currency is appreciated, and when it is depreciated",
+    "query": "SELECT date, forex_usd_eur, forex_usd_jpy  FROM finance_economics_dataset  ORDER BY date ASC  LIMIT 50;",
+    "generation_time": 1.2291
+}

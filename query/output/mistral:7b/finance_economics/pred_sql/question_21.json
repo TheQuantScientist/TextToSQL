@@ -1,0 +1,5 @@
+{
+    "question": "Average gold price by year",
+    "query": "To get the average gold price grouped by year from the 'finance_economics_dataset' table, use the following SQL query:  ```sql SELECT   EXTRACT(YEAR FROM date) AS year,   AVG(gold_price) AS average_gold_price FROM   finance_economics_dataset WHERE   gold_price IS NOT NULL GROUP BY year ORDER BY year LIMIT 50; ```  This query extracts the year from the 'date' column, calculates the average of the 'gold_price' column for each year, filters out any rows where 'gold_price' is null, groups the results by year, orders them ascending by year and limits the result set to 50 rows.",
+    "generation_time": 9.8694
+}

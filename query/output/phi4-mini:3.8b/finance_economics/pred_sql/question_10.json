@@ -1,0 +1,5 @@
+{
+    "question": "The unemployment rate, interest rate, inflation rate, the date where Dow Jones has top trading volume",
+    "query": "SELECT interest_rate, inflation_rate, trade_date,        RANK() OVER (ORDER BY trading_volume DESC) AS rank,        CASE WHEN RANK() OVER (ORDER BY trading_volume DESC) = 1 THEN unemployment_rate END as unemployment_on_top_day FROM finance_economics_dataset WHERE stock_index = 'Dow Jones' LIMIT 50;",
+    "generation_time": 3.7485
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship between interest rate, unemployment rate and corporate profits? Propose strategy for policymakers to promote corporate activities",
+    "query": "SELECT `unemployment_rate`, `corporate_profits` FROM finance_economics_dataset LIMIT 50;   -- To propose a strategy: -- Lowering Interest Rates → Encourages borrowing, investing in businesses can increase -- Improving Consumer Confidence Index (CCI) → Boosts spending which could lead to higher demand for corporate goods/services.",
+    "generation_time": 3.205
+}

@@ -1,0 +1,5 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "To obtain the annual average venture capital funding by year from the 'finance_economics_dataset' table, limited to 50 rows, use the following SQL query:  ```sql SELECT   EXTRACT(YEAR FROM date) AS year,   AVG(venture_capital_funding) AS average_venture_capital_funding FROM finance_economics_dataset GROUP BY year ORDER BY year LIMIT 50; ```",
+    "generation_time": 6.5201
+}

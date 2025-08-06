@@ -1,0 +1,5 @@
+{
+    "question": "Recommend asset classes to invest when the USD currency is appreciated, and when it is depreciated",
+    "query": "To get the data for the past 50 rows where the currency exchange rate between USD and EUR (forex_usd_eur) shows an appreciation, we can use the following SQL query:  ```sql SELECT * FROM finance_economics_dataset WHERE forex_usd_eur > (SELECT forex_usd_eur FROM finance_economics_dataset ORDER BY forex_usd_eur DESC LIMIT 1) ORDER BY date DESC LIMIT 50; ```  This query selects all columns from the 'finance_economics_dataset' table, filters the rows where the currency exchange rate between USD and EUR is greater than the current maximum value (appreciation), sorts the results in descending order by date and limits the result set to 50 rows.",
+    "generation_time": 11.2389
+}

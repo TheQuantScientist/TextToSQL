@@ -1,0 +1,5 @@
+{
+    "question": "Low interest rate leads to risky money flow into stock and consumer spending. Evaluate the data to verify the accuracy of this statement. ",
+    "query": "SELECT      date,     stock_index,     open_price AS opening_price,     close_price AS closing_price,     daily_high AS highest_price,     daily_low AS lowest_price,     trading_volume,     gdp_growth,     inflation_rate,     unemployment_rate,     interest_rate,     consumer_confidence_index,     government_debt,     corporate_profits,     forex_usd_eur,     forex_usd_jpy,     crude_oil_price,     gold_price,     real_estate_index,     retail_sales,     bankruptcy_rate,     mergers_acquisitions_deals,     venture_capital_funding,     consumer_spending FROM finance_economics_dataset WHERE      interest_rate < 2.0 LIMIT 50;",
+    "generation_time": 4.6312
+}

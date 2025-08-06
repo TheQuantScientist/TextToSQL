@@ -1,0 +1,5 @@
+{
+    "question": "The gold price, crude oil price, real estate index of Jan 1, 2008",
+    "query": "SELECT      crude_oil_price,     MAX(CASE WHEN DATE = '2008-01-01' THEN REAL_ESTATE_INDEX END) as max_real_estate_index_jan_1st_2008 FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 1.7846
+}

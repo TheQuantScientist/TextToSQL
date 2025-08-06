@@ -1,0 +1,5 @@
+{
+    "question": "When it is best to invest in real estate in terms of interest rate environment, stock performance and unemployment context?",
+    "query": "SELECT   date,   stock_index,   open_price,   close_price,   trading_volume,   gdp_growth,   inflation_rate,   unemployment_rate,   interest_rate,   consumer_confidence_index FROM finance_economics_dataset WHERE   stock_index IN ('S&P 500', 'NASDAQ') ORDER BY   date DESC LIMIT 50;",
+    "generation_time": 4.7094
+}

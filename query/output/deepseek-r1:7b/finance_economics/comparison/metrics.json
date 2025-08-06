@@ -1,1 +1,250 @@
-{}
+{
+    "question_1": {
+        "exact_match": 0.0,
+        "bleu": 0.031029827392036087,
+        "ast_similarity": 0.030819140308191405,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5853540897369385
+    },
+    "question_2": {
+        "exact_match": 0.0,
+        "bleu": 0.0079586533886489,
+        "ast_similarity": 0.023360100114714778,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.667028546333313
+    },
+    "question_3": {
+        "exact_match": 0.0,
+        "bleu": 0.0007100560209879308,
+        "ast_similarity": 0.01454823889739663,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5694833993911743
+    },
+    "question_4": {
+        "exact_match": 0.0,
+        "bleu": 0.010007447548423812,
+        "ast_similarity": 0.030154689641668297,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.687610924243927
+    },
+    "question_5": {
+        "exact_match": 0.0,
+        "bleu": 0.002989016019184467,
+        "ast_similarity": 0.0335609756097561,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.6269017457962036
+    },
+    "question_6": {
+        "exact_match": 0.0,
+        "bleu": 0.0118562917362502,
+        "ast_similarity": 0.07346491228070176,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.7631857395172119
+    },
+    "question_7": {
+        "exact_match": 0.0,
+        "bleu": 0.05178635839196424,
+        "ast_similarity": 0.13270142180094788,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.7755025029182434
+    },
+    "question_8": {
+        "exact_match": 0.0,
+        "bleu": 0.009691041851060263,
+        "ast_similarity": 0.08739837398373984,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.3333333333333333,
+        "cosine_similarity": 0.6364972591400146
+    },
+    "question_9": {
+        "exact_match": 0.0,
+        "bleu": 0.012886338480118454,
+        "ast_similarity": 0.056377079482439925,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.3333333333333333,
+        "cosine_similarity": 0.5056326389312744
+    },
+    "question_10": {
+        "exact_match": 0.0,
+        "bleu": 0.009361945279566346,
+        "ast_similarity": 0.05857418111753372,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.7092537879943848
+    },
+    "question_11": {
+        "exact_match": 0.0,
+        "bleu": 0.030305243569620773,
+        "ast_similarity": 0.07206509104998063,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.7423704266548157
+    },
+    "question_12": {
+        "exact_match": 0.0,
+        "bleu": 0.009866761002357055,
+        "ast_similarity": 0.045714285714285714,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.6056784391403198
+    },
+    "question_13": {
+        "exact_match": 0.0,
+        "bleu": 0.029273962794184386,
+        "ast_similarity": 0.12404494382022471,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.702521800994873
+    },
+    "question_14": {
+        "exact_match": 0.0,
+        "bleu": 0.012727592777112919,
+        "ast_similarity": 0.07126948775055679,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.7351367473602295
+    },
+    "question_15": {
+        "exact_match": 0.0,
+        "bleu": 0.041285456860158484,
+        "ast_similarity": 0.025210084033613446,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.7402611970901489
+    },
+    "question_16": {
+        "exact_match": 0.0,
+        "bleu": 0.026429578357876106,
+        "ast_similarity": 0.05850272682201289,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5502825975418091
+    },
+    "question_17": {
+        "exact_match": 0.0,
+        "bleu": 0.017850460031131304,
+        "ast_similarity": 0.030035335689045935,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5762677192687988
+    },
+    "question_18": {
+        "exact_match": 0.0,
+        "bleu": 0.007858554594642218,
+        "ast_similarity": 0.008456659619450317,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.6053948402404785
+    },
+    "question_19": {
+        "exact_match": 0.0,
+        "bleu": 0.00071910704392125,
+        "ast_similarity": 0.011267605633802818,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5449219942092896
+    },
+    "question_20": {
+        "exact_match": 0.0,
+        "bleu": 0.008057058882890902,
+        "ast_similarity": 0.05082053996823716,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5282567739486694
+    },
+    "question_21": {
+        "exact_match": 0.0,
+        "bleu": 0.01902155472999524,
+        "ast_similarity": 0.017539463793535454,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5933600664138794
+    },
+    "question_22": {
+        "exact_match": 0.0,
+        "bleu": 0.013460220320823066,
+        "ast_similarity": 0.03467153284671533,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.6040038466453552
+    },
+    "question_23": {
+        "exact_match": 0.0,
+        "bleu": 0.030424979291538912,
+        "ast_similarity": 0.070242656449553,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5772619843482971
+    },
+    "question_24": {
+        "exact_match": 0.0,
+        "bleu": 0.0013384535983698637,
+        "ast_similarity": 0.03982576228998133,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5299463868141174
+    },
+    "question_25": {
+        "exact_match": 0.0,
+        "bleu": 0.0023202677943483826,
+        "ast_similarity": 0.012621140410187063,
+        "component_accuracy": 0.3333333333333333,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5603668093681335
+    },
+    "question_26": {
+        "exact_match": 0.0,
+        "bleu": 0.021372884299019464,
+        "ast_similarity": 0.05012531328320802,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.7059489488601685
+    },
+    "question_27": {
+        "exact_match": 0.0,
+        "bleu": 0.0013848918989368237,
+        "ast_similarity": 0.0038860103626943004,
+        "component_accuracy": 0.3333333333333333,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5809394121170044
+    },
+    "question_28": {
+        "exact_match": 0.0,
+        "bleu": 0.02787752561244406,
+        "ast_similarity": 0.014903129657228018,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.6317504048347473
+    },
+    "question_29": {
+        "exact_match": 0.0,
+        "bleu": 0.013231254354169067,
+        "ast_similarity": 0.056451612903225805,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.6110113859176636
+    },
+    "question_30": {
+        "exact_match": 0.0,
+        "bleu": 0.0030357335043093947,
+        "ast_similarity": 0.07363770250368189,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.5083662271499634
+    },
+    "question_31": {
+        "exact_match": 0.0,
+        "bleu": 0.01228355230744803,
+        "ast_similarity": 0.05758906783796974,
+        "component_accuracy": 0.0,
+        "logical_form_accuracy": 0.0,
+        "cosine_similarity": 0.7459572553634644
+    }
+}

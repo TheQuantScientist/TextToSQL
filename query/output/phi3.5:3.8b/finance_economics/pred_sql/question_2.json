@@ -1,0 +1,5 @@
+{
+    "question": "The open price, close price, trading volume of Feb 20, 2000",
+    "query": "SELECT closing_price, trading_volume FROM finance_economics_dataset WHERE date = '2000-02-20' AND stock_index = 'The Open'; LIMIT 50;  (Note: Please ensure that the field for \"stock market index\" is correctly named in your actual table. I used placeholder text `'The Open'` based on provided context, which should be replaced with an appropriate identifier from your dataset.)",
+    "generation_time": 4.3318
+}

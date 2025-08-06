@@ -1,0 +1,5 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT      DATE_TRUNC('year', date) AS year,     SUM(venture_capital_funding) AS annual_avg_vc_funding FROM finance_economics_dataset WHERE date >= '2010-01-01' GROUP BY DATE_TRUNC('year', date) LIMIT 50;",
+    "generation_time": 1.889
+}

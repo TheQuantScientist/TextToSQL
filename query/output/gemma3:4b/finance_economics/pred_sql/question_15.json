@@ -1,0 +1,5 @@
+{
+    "question": "The average bankruptcy rate and M&A deals by year",
+    "query": "SELECT   SUBSTRING(date, 1, 4) AS year,   AVG(bankruptcy_rate) AS average_bankruptcy_rate,   AVG(mergers_acquisitions_deals) AS average_mergers_acquisitions_deals FROM finance_economics_dataset GROUP BY year LIMIT 50;",
+    "generation_time": 3.5779
+}

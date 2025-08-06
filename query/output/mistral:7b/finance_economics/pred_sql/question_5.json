@@ -1,0 +1,5 @@
+{
+    "question": "The date, stock index on which stock index reached the highest Daily High",
+    "query": "SELECT stock_index, daily_high FROM finance_economics_dataset WHERE date = (SELECT max(date) FROM finance_economics_dataset) LIMIT 50;",
+    "generation_time": 2.6954
+}

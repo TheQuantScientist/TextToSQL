@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship between interest rate, unemployment rate and corporate profits? Propose strategy for policymakers to promote corporate activities",
+    "query": "SELECT date,         stock_index,        open_price,        close_price,        daily_high,        daily_low,        trading_volume,        gdp_growth,        inflation_rate,        unemployment_rate,        corporate_profits,        interest_rate FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 1.9168
+}

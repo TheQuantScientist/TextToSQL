@@ -1,0 +1,5 @@
+{
+    "question": "When it is best to invest in real estate in terms of interest rate environment, stock performance and unemployment context?",
+    "query": "To find the best time to invest in real estate based on the interest rate environment, we can analyze the correlation between the interest rate and the real estate index from the 'finance_economics_dataset' table. Here is a SQL query that selects relevant columns and limits the results to 50 rows:  ```sql SELECT date, interest_rate, real_estate_index FROM finance_economics_dataset WHERE ROWNUM <= 50 ORDER BY interest_rate; ```  This query will provide you with the date, interest rate, and real estate index data for the most recent 50 rows sorted by interest rate in ascending order. You can then analyze this data to determine if there is a correlation between the interest rate and the real estate index and find the optimal time to invest in real estate based on the interest rate environment.",
+    "generation_time": 11.7221
+}

@@ -1,0 +1,5 @@
+{
+    "question": "2008 was the year of global financial crisis. Evaluate some indicators that signaled this recession, and propose a risk mitigation strategy for stock investing",
+    "query": "SELECT DISTINCT date, gdp_growth, unemployment_rate, interest_rate, consumer_confidence_index  FROM finance_economics_dataset  WHERE date >= '2007-12-31' AND date <= '2009-06-30';",
+    "generation_time": 2.2049
+}
