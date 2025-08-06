@@ -1,0 +1,5 @@
+{
+    "question": "The annual growth rate of consumer confidence index from 2000 to 2008",
+    "query": "SELECT      date,     stock_index,     consumer_confidence_index FROM finance_economics_dataset WHERE date >= '2000-01-01' AND date <= '2008-12-31' LIMIT 50;",
+    "generation_time": 1.5434
+}

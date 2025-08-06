@@ -1,0 +1,5 @@
+{
+    "question": "Ratio of days having negative gdp growth to total days",
+    "query": "SELECT   CAST(SUM(CASE WHEN gdp_growth < 0 THEN 1 ELSE 0 END) AS REAL) / COUNT(*) AS ratio FROM finance_economics_dataset WHERE gdp_growth < 0;",
+    "generation_time": 2.5966
+}

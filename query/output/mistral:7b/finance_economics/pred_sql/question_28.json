@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship between interest rate, unemployment rate and corporate profits? Propose strategy for policymakers to promote corporate activities",
+    "query": "Here's a valid SQL query on PostgreSQL that selects the `unemployment_rate` and `corporate_profits` columns from the 'finance_economics_dataset' table, limiting the results to 50 rows. This information can help policymakers understand the current state of the economy and potentially make informed decisions to promote corporate activities:  ```sql SELECT unemployment_rate, corporate_profits FROM finance_economics_dataset ORDER BY date DESC LIMIT 50; ```",
+    "generation_time": 6.9008
+}

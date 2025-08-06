@@ -1,0 +1,5 @@
+{
+    "question": "The annual consumer spending from 2000 to 2008",
+    "query": "SELECT SUM(consumer_spending) AS total_annual_consumer_spending  FROM finance_economics_dataset  WHERE date >= '01-JAN-2000' AND date < '01-JAN-2009' GROUP BY EXTRACT(YEAR FROM date);   Note: This query assumes you want to get the annual sum of consumer spending for each year between 2000 and 2008. If there are other specific requirements or different interpretations, please provide further details so I can adjust accordingly.  (Note that PostgreSQL doesn't have a built-in function called `SUM` which aggregates values across rows in this context; instead we would use aggregate functions like `GROUP BY`). The query above is structured to retrieve the total annual consumer spending for each year within your specified range. If you meant something different or need more specific details, please let me know!",
+    "generation_time": 8.16
+}

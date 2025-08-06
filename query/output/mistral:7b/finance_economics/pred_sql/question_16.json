@@ -1,0 +1,5 @@
+{
+    "question": "Number of days where the gdp growth is negative",
+    "query": "To get the number of days where the `gdp_growth` is negative, you can use a conditional statement in your SQL query. Here's an example of how to write that query on PostgreSQL:  ```sql SELECT COUNT(*) FROM finance_economics_dataset WHERE gdp_growth < 0; ```  This query will return the count of rows where the `gdp_growth` is less than zero (negative values). By default, it selects all columns from the table since we only need the row count. If you want to limit the results to 50 rows, you can use the LIMIT clause:  ```sql SELECT COUNT(*) FROM finance_economics_dataset WHERE gdp_growth < 0 LIMIT 50; ```",
+    "generation_time": 10.8658
+}

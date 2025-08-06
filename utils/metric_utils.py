@@ -185,16 +185,16 @@ def evaluate_sql_metrics(gold_path, pred_path):
     return metrics
 
 def main():
-    base_path = r"/Users/admin/LG/TextToSQL/query/output"
+    base_path = r"/Users/ngannguyen/Documents/GitHub/TextToSQL/query/output"
     
     # Fixed model name (change this manually as needed)
     models = [
-        'cogito:3b',
-        'deepseek-r1:7b',
-        'gemma3:4b',
-        'gemma3n:e4b',
-        'llama3.2:latest',
-        'mistral:7b',
+        # 'cogito:3b',
+        # 'deepseek-r1:7b',
+        # 'gemma3:4b',
+        # 'gemma3n:e4b',
+        # 'llama3.2:latest',
+        # 'mistral:7b',
         'phi3.5:3.8b',
         'phi4-mini:3.8b',
         'qwen2.5:3b',
@@ -202,7 +202,7 @@ def main():
     ]
     
     # List of datasets
-    datasets = ['global_development']
+    datasets = ['finance_economics']
 
     for model in models:
     

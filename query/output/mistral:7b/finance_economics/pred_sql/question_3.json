@@ -1,0 +1,5 @@
+{
+    "question": "The gold price, crude oil price, real estate index of Jan 1, 2008",
+    "query": "SELECT open_price, close_price, daily_high, daily_low, trading_volume, gdp_growth, inflation_rate, unemployment_rate, interest_rate, consumer_confidence_index, government_debt, corporate_profits, forex_usd_eur, forex_usd_jpy, crude_oil_price, real_estate_index, retail_sales, bankruptcy_rate, mergers_acquisitions_deals, venture_capital_funding, consumer_spending FROM finance_economics_dataset WHERE date = '2008-01-01' AND crude_oil_price IS NOT NULL AND real_estate_index IS NOT NULL LIMIT 50;",
+    "generation_time": 10.077
+}

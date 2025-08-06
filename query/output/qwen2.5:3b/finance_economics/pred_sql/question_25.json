@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the past performance of all the asset types, stock, commodity, real estate, forex and propose which type of asset is worth to invest in based on investors' risk apetite",
+    "query": "SELECT      stock,     commodity,     real_estate,     forex_usd_eur,     forex_usd_jpy,     venture_capital_funding FROM      finance_economics_dataset LIMIT 50",
+    "generation_time": 1.9324
+}

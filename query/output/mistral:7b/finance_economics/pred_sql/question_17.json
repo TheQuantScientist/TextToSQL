@@ -1,0 +1,5 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT date, stock_index, AVG(trading_volume) as average_monthly_trading_volume FROM finance_economics_dataset WHERE stock_index IN ('S&P 500', 'Dow Jones') AND date >= DATE_TRUNC('month', CURRENT_DATE - INTERVAL '1 month') AND date < DATE_TRUNC('month', CURRENT_DATE) GROUP BY stock_index, date ORDER BY date ASC LIMIT 50;  To get the average monthly trading volume of NASDAQ:  SELECT date, stock_index, AVG(trading_volume) as average_monthly_trading_volume FROM finance_economics_dataset WHERE stock_index = 'NASDAQ' AND date >= DATE_TRUNC('month', CURRENT_DATE - INTERVAL '1 month') AND date < DATE_TRUNC('month', CURRENT_DATE) GROUP BY stock_index, date ORDER BY date ASC LIMIT 50;",
+    "generation_time": 15.1217
+}

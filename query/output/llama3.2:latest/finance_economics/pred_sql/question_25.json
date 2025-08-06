@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the past performance of all the asset types, stock, commodity, real estate, forex and propose which type of asset is worth to invest in based on investors' risk apetite",
+    "query": "SELECT date,         stock_index,         SUM(open_price * trading_volume) AS total_open_price,        SUM(close_price * trading_volume) AS total_close_price,        MAX(daily_high) AS max_daily_high,        MIN(daily_low) AS min_daily_low,        COUNT(*) FROM finance_economics_dataset GROUP BY date, stock_index ORDER BY total_open_price DESC, total_close_price DESC",
+    "generation_time": 3.1568
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the relationship between inflation rate and consumer spending",
+    "query": "SELECT * FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 0.578
+}

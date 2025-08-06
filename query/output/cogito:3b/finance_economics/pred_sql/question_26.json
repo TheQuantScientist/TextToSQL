@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the relationship between inflation rate and consumer spending",
+    "query": "WITH correlation_calc AS (     SELECT         date,         (inflation_rate * 100) /          (CONVERT_FLOAT(100 - unemployment_rate, 'FLOAT') * 50) AS normalized_spending,         CORR(             (inflation_rate * 100),             (CONVERT_FLOAT(100 - unemployment_rate, 'FLOAT') * 50)         ) AS inflation_spending_correlation     FROM finance_economics_dataset     WHERE date > CURRENT_DATE - INTERVAL '1 YEAR'     LIMIT 50 )  SELECT normalized_spending,        inflation_spending_correlation FROM correlation_calc;",
+    "generation_time": 3.8473
+}

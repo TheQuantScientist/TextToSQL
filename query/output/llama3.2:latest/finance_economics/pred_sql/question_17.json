@@ -1,0 +1,5 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT      `stock_index`,     AVG(`trading_volume`) AS avg_trading_volume FROM      finance_economics_dataset WHERE      `stock_index` IN ('S&P 500', 'Dow Jones') GROUP BY      `stock_index` LIMIT      50;",
+    "generation_time": 2.1419
+}

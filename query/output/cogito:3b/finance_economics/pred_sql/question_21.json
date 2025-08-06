@@ -1,0 +1,5 @@
+{
+    "question": "Average gold price by year",
+    "query": "SELECT date::date,         ROUND(AVG(gold_price) OVER (PARTITION BY DATE_TRUNC('year', date)::DATE), 2) AS avg_gold_price FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 1.5087
+}

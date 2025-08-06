@@ -1,0 +1,5 @@
+{
+    "question": "The ratio of government debt to consumer spending by year",
+    "query": "SELECT   STRFTIME('%Y', date) AS year,   (government_debt::REAL / consumer_spending) AS debt_to_spending_ratio FROM finance_economics_dataset WHERE consumer_spending != 0 LIMIT 50;",
+    "generation_time": 2.8308
+}

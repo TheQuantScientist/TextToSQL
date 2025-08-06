@@ -1,0 +1,5 @@
+{
+    "question": "The open price, close price, trading volume of Feb 20, 2000",
+    "query": "SELECT date, open_price, closing_price, trading_volume FROM finance_economics_dataset WHERE date::DATE BETWEEN '2000-02-01' AND '2000-02-29' LIMIT 50",
+    "generation_time": 1.715
+}

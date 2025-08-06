@@ -1,0 +1,5 @@
+{
+    "question": "Number of days which the closing price is higher than the open price of Dow Jones, S&P 500, NASDAQ",
+    "query": "SELECT      DATE,     stock_index,     CASE WHEN close_price > open_price THEN trading_volume ELSE NULL END FROM finance_economics_dataset WHERE stock_index IN ('S&P 500', 'NASDAQ') LIMIT 50;",
+    "generation_time": 1.5818
+}

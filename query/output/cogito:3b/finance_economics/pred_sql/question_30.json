@@ -1,0 +1,5 @@
+{
+    "question": "Recommend asset classes to invest when the USD currency is appreciated, and when it is depreciated",
+    "query": "SELECT      date,     stock_index,     open_price,     close_price,     daily_high,     daily_low,     trading_volume FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 1.314
+}

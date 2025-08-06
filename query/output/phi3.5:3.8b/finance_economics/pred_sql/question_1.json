@@ -1,0 +1,5 @@
+{
+    "question": "The inflation rate of November 28, 2008",
+    "query": "SELECT date, inflation_rate FROM finance_economics_dataset WHERE EXTRACT(YEAR FROM date) = 2008 AND EXTRACT(MONTH FROM date) = 11 AND EXTRACT(DAY FROM date) <= 30; -- Assuming November has at most 30 days for simplicity. Adjust as necessary based on the actual calendar used in your dataset LIMIT 50;  This query selects records from Novembers of all years up to and including December, given that we don't have specific dates beyond \"The inflation rate of November.\" If you can specify an exact date or range within November for further accuracy, the WHERE clause should be adjusted accordingly. Please note PostgreSQL uses `EXTRACT` function with yearly (`YEAR`), monthly (`MONTH`) and daily (`DAY`) parts to filter out specific dates from a timestamp column. The query is set up to return data only where records are specifically dated in November 2008, limited by the highest day of that month for completeness (adjusted per your system's date interpretation).",
+    "generation_time": 17.4088
+}

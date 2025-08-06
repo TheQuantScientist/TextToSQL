@@ -1,0 +1,5 @@
+{
+    "question": "Ratio of days having negative gdp growth to total days",
+    "query": "SELECT COUNT(*) * 1.0 / NULLIF(COUNT(DISTINCT date), 0) AS ratio_negative_gdp_growth_days_total_days  FROM finance_economics_dataset;",
+    "generation_time": 2.0368
+}

@@ -1,0 +1,5 @@
+{
+    "question": "The date where trading volumne is the largest",
+    "query": "SELECT      date,     stock_index,     open_price AS open_price,     close_price AS close_price,     daily_high AS daily_high,     daily_low AS daily_low,     trading_volume,     gdp_growth,     inflation_rate,     unemployment_rate,     interest_rate,     consumer_confidence_index,     government_debt,     corporate_profits FROM      finance_economics_dataset WHERE      trading_volume = (         SELECT MAX(trading_volume)         FROM finance_economics_dataset     ) LIMIT 50;",
+    "generation_time": 3.3744
+}

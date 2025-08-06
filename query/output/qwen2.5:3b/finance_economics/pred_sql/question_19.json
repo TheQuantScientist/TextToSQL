@@ -1,0 +1,5 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT date::DATE::YEAR AS year, AVG(venture_capital_funding) as avg_funding FROM finance_economics_dataset GROUP BY year LIMIT 50;",
+    "generation_time": 1.5677
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT      DATE,     stock_index AS index_name,     open_price AS avg_open_price,     close_price AS avg_close_price,     daily_high AS avg_daily_high,     daily_low AS avg_daily_low,     trading_volume FROM finance_economics_dataset WHERE stock_index IN ('S&P 500', 'Dow Jones') AND DATE >= '2023-01-01' LIMIT 50;",
+    "generation_time": 2.6082
+}

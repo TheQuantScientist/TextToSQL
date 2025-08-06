@@ -1,0 +1,5 @@
+{
+    "question": "The ratio of government debt to consumer spending by year",
+    "query": "To get the ratio of `government_debt` to `consumer_spending` for each year, you can use the following SQL query:  ```sql SELECT   date,   finance_economics_dataset.date as year,   (finance_economics_dataset.government_debt / finance_economics_dataset.consumer_spending) as debt_to_consuming_ratio FROM   finance_economics_dataset WHERE   finance_economics_dataset.date >= (SELECT date FROM finance_economics_dataset ORDER BY date LIMIT 1) AND finance_economics_dataset.date < (SELECT date FROM finance_economics_dataset ORDER BY date OFFSET 50) ORDER BY finance_economics_dataset.date; ```  This query will give you the ratio of government debt to consumer spending for the last 50 years from your `finance_economics_dataset`. The WHERE clause is used to limit the results to 50 rows.",
+    "generation_time": 13.8283
+}

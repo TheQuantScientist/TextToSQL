@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the past performance of all the asset types, stock, commodity, real estate, forex and propose which type of asset is worth to invest in based on investors' risk apetite",
+    "query": "SELECT   CASE     WHEN MAX(CASE WHEN UNNEST(ARRAY[('stock', 'stock_index'), ('commodity', 'crude_oil_price'), ('real_estate', 'real_estate_index'), ('forex', 'forex_usd_eur')])).1 = 'stock' THEN 1     ELSE 0   END AS stock_risk,   MAX(CASE WHEN UNNEST(ARRAY[('stock', 'stock_index'), ('commodity', 'crude_oil_price'), ('real_estate', 'real_estate_index'), ('forex', 'forex_usd_eur')])).1 = 'commodity' THEN 1   ELSE 0   END AS commodity_risk,   MAX(CASE WHEN UNNEST(ARRAY[('stock', 'stock_index'), ('commodity', 'crude_oil_price'), ('real_estate', 'real_estate_index'), ('forex', 'forex_usd_eur')])).1 = 'real_estate' THEN 1   ELSE 0   END AS real_estate_risk,   MAX(CASE WHEN UNNEST(ARRAY[('stock', 'stock_index'), ('commodity', 'crude_oil_price'), ('real_estate', 'real_estate_index'), ('forex', 'forex_usd_eur')])).1 = 'forex' THEN 1   ELSE 0   END AS forex_risk FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 14.3302
+}

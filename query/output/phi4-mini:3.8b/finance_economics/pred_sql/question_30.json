@@ -1,0 +1,5 @@
+{
+    "question": "Recommend asset classes to invest when the USD currency is appreciated, and when it is depreciated",
+    "query": "SELECT stock_index, daily_high, inflation_rate,        FOREX_USD_EUR AS usd_eur_exchange_rate FROM finance_economics_dataset WHERE forex_usd_jpy > 1.0;   Note: This query selects stocks with a higher exchange rate against JPY (indicating an appreciation of USD) and includes high prices which could imply potential growth assets, along with inflation rates to gauge the economic environment's impact on asset classes such as commodities or real estate that might benefit from currency movements.  Remember this is not investment advice. The actual recommendation for investing would depend upon a comprehensive analysis involving various factors including but not limited to market trends, risk assessments and financial goals which typically go beyond just SQL query results.",
+    "generation_time": 7.0967
+}

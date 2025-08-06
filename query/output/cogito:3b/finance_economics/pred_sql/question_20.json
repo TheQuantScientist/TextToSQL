@@ -1,0 +1,5 @@
+{
+    "question": "The ratio of government debt to consumer spending by year",
+    "query": "SELECT      DATE_TRUNC('year', date) AS fiscal_year,     government_debt / consumer_spending * 100 AS debt_to_spending_ratio FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 1.3798
+}

@@ -1,0 +1,5 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT   SUBSTRING(date, 1, 4) AS year,   AVG(venture_capital_funding) AS avg_venture_capital_funding FROM finance_economics_dataset WHERE STRFTIME('%Y', date) IN (SELECT SUBSTRING(date, 1, 4) FROM finance_economics_dataset GROUP BY SUBSTRING(date, 1, 4) ) GROUP BY year LIMIT 50;",
+    "generation_time": 4.5959
+}

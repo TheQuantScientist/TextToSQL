@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the past performance of all the asset types, stock, commodity, real estate, forex and propose which type of asset is worth to invest in based on investors' risk apetite",
+    "query": "SELECT     sstock_index,     AVG(close_price) AS avg_close_price,     STDDEV(close_price) AS stddev_close_price,     AVG(daily_high) AS avg_daily_high,     AVG(daily_low) AS avg_daily_low,     AVG(trading_volume) AS avg_trading_volume,     AVG(consumer_confidence_index) AS avg_consumer_confidence,     AVG(inflation_rate) AS avg_inflation_rate,     AVG(interest_rate) AS avg_interest_rate,     AVG(gold_price) AS avg_gold_price,     AVG(crude_oil_price) AS avg_crude_oil_price,     AVG(forex_usd_eur) AS avg_forex_usd_eur,     AVG(forex_usd_jpy) AS avg_forex_usd_jpy,     AVG(real_estate_index) AS avg_real_estate_index,     AVG(retail_sales) AS avg_retail_sales,     AVG(venture_capital_funding) AS avg_venture_capital_funding,     AVG(consumer_spending) AS avg_consumer_spending FROM     finance_economics_dataset WHERE     sstock_index IN ('SPY', 'DJI', 'NASDAQ') GROUP BY     sstock_index ORDER BY     avg_close_price DESC;",
+    "generation_time": 27.4209
+}

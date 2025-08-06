@@ -1,0 +1,5 @@
+{
+    "question": "The consumer confidence index of 24 December, 2007",
+    "query": "SELECT   date FROM finance_economics_dataset WHERE   date = '2007-12-24' AND consumer_confidence_index IS NOT NULL;",
+    "generation_time": 2.0503
+}

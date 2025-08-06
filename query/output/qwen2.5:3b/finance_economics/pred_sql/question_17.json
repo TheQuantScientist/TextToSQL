@@ -1,0 +1,5 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT AVG(trading_volume) AS avg_monthly_vol FROM finance_economics_dataset WHERE date BETWEEN 'first day of first month' AND 'last day of last month' GROUP BY stock_index WITH ROLLUP LIMIT 50",
+    "generation_time": 1.7383
+}
