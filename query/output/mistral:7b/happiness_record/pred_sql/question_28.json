@@ -1,0 +1,5 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "To get the movement of generosity (based on donation behavior) for Asian countries over the years, we can use the following SQL query on a 'world_happiness_report' table in PostgreSQL:  ```sql SELECT regional_indicator AS region, year, generosity FROM world_happiness_report WHERE regional_indicator IN ('Asia') ORDER BY year ASC;  -- Explanation: -- The query selects the region (Asia), year, and generosity columns from the 'world_happiness_report' table. -- It filters the results to include only rows where the regional_indicator column is equal to 'Asia'. -- Results are sorted in ascending order by the year column so we can see the movement over years. ```",
+    "generation_time": 24.7025
+}

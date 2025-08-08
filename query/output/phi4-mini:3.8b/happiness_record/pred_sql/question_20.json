@@ -1,0 +1,5 @@
+{
+    "question": "What is the average Confidence In National Government score of Vietnam over years?",
+    "query": "SELECT AVG(confidence_in_national_government) AS avg_confidence,        year  FROM world_happiness_report WHERE country_name = 'Vietnam' GROUP BY year;   If you want to limit it further and get only 50 rows:   WITH ranked_results AS (     SELECT confidence_in_national_government, year,            ROW_NUMBER() OVER (ORDER BY year DESC) as row_num     FROM world_happiness_report     WHERE country_name = 'Vietnam' ) SELECT AVG(confidence_in_national_government) AS avg_confidence FROM ranked_results WHERE row_num <= 50;",
+    "generation_time": 12.3503
+}

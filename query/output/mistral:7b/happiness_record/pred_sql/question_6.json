@@ -1,0 +1,5 @@
+{
+    "question": "What is the Freedom To Make Life Choices of Vietnam in 2018?",
+    "query": "To find the freedom to make life choices for Vietnam in 2018, you can use the following SQL query on a PostgreSQL database:  ```sql SELECT freedom_to_make_life_choices FROM world_happiness_report WHERE country_name = 'Vietnam' AND year = 2018; LIMIT 1; ```",
+    "generation_time": 12.1142
+}

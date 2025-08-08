@@ -1,0 +1,5 @@
+{
+    "question": "What is the average Confidence In National Government score of Vietnam over years?",
+    "query": "To get the average `confidence_in_national_government` score for Vietnam across multiple years, you can use the following SQL query on PostgreSQL. Note that this query assumes the country name is consistently entered as 'Vietnam' without case sensitivity.  ```sql SELECT AVG(confidence_in_national_government) AS average_confidence FROM world_happiness_report WHERE country_name = 'Vietnam' GROUP BY year ORDER BY year; ```  This query returns the average `confidence_in_national_government` score for each year Vietnam appears in the table.",
+    "generation_time": 20.0279
+}

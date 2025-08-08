@@ -1,0 +1,5 @@
+{
+    "question": "Does lack of social support lead to higher negative affect over years? ",
+    "query": "SELECT year, negative_affect  FROM world_happiness_report  WHERE social_support = ( SELECT MIN(social_support) FROM world_happiness_report );  LIMIT 50;",
+    "generation_time": 3.1653
+}

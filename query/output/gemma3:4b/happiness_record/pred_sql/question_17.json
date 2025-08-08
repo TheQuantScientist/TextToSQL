@@ -1,0 +1,5 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "SELECT   COUNT(country_name) FROM world_happiness_report WHERE   generosity > (     SELECT       AVG(generosity)     FROM world_happiness_report   );",
+    "generation_time": 5.827
+}

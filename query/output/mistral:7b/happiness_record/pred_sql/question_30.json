@@ -1,0 +1,5 @@
+{
+    "question": "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+    "query": "To find out if high GDP per capita countries have higher negative affects, we can perform a descending sort on the 'log_GDP_per_capital' column and then select the top 50 rows to observe trends in the 'negative_affect' column.  ```sql SELECT country_name, negative_affect FROM world_happiness_report ORDER BY log_GDP_per_capital DESC LIMIT 50; ```  The results show the top 50 countries sorted by their GDP per capita in descending order. By examining these rows, we can observe if there is a noticeable trend or correlation between higher GDP per capita and greater negative affect levels among the population of each country.",
+    "generation_time": 23.6936
+}

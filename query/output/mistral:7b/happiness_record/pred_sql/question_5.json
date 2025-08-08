@@ -1,0 +1,5 @@
+{
+    "question": "What is the Healthy Life Expectancy At Birth of Japan in 2020?",
+    "query": "To get the Healthy Life Expectancy At Birth of Japan in 2020, you can use the following SQL query on PostgreSQL:  ```sql SELECT healthy_life_expectancy_at_birth FROM world_happiness_report WHERE country_name = 'Japan' AND year = 2020 LIMIT 1; ```  This query selects the healthy life expectancy at birth column from the table 'world_happiness_report', filters the results for Japan in the year 2020, and limits the output to 1 row only.",
+    "generation_time": 18.7418
+}

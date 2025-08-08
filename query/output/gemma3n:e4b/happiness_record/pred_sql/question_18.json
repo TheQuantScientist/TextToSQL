@@ -1,0 +1,5 @@
+{
+    "question": "Which region has the highest average perceptions of corruption?",
+    "query": "SELECT regional_indicator FROM world_happi_ness_report ORDER BY perceptions_of_corruption DESC LIMIT 1;",
+    "generation_time": 10.8577
+}

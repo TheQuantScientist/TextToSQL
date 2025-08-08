@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate for me the relationship between freedom to make choices and positive affect of Asia and North America countries. Explain the reasons.",
+    "query": "SELECT     country_name,     regional_indicator,     year,     life_ladder,     social_support,     healthy_life_expectancy_at_birth,     freedom_to_make_life_choices,     positive_affect,     negative_affect,     confidence_in_national_government FROM world_happiness_report WHERE      (regional_indicator = 'Asia' OR regional_indicator = 'North America') AND year BETWEEN 2010 AND 2023 LIMIT 50;",
+    "generation_time": 11.0358
+}

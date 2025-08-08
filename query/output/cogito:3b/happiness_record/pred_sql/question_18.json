@@ -1,0 +1,5 @@
+{
+    "question": "Which region has the highest average perceptions of corruption?",
+    "query": "SELECT regional_indicator, AVG(perceptions_of_corruption) AS avg_perception FROM world_happiness_report GROUP BY regional_indicator ORDER BY avg_perception DESC LIMIT 50;",
+    "generation_time": 5.8633
+}
