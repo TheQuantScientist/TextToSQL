@@ -1,0 +1,5 @@
+{
+    "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+    "query": "SELECT   r.regional_indicator,   AVG(whr.life_ladder) AS avg_life_ladder FROM world_happiiness_report AS whr JOIN (   SELECT     'Asia' AS regional_indicator   UNION ALL   SELECT     'Europe' ) AS r   ON whr.regional_indicator = r.regional_indicator GROUP BY   r.regional_indicator ORDER BY   avg_life_ladder DESC LIMIT 50;",
+    "generation_time": 20.1686
+}

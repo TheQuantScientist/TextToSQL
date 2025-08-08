@@ -1,0 +1,5 @@
+{
+    "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+    "query": "To compare the 'life_ladder' between Asia and Europe, you can use the following SQL query:  ```sql SELECT country_name, region, year, life_ladder FROM world_happiness_report WHERE (region IN ('Asia') OR region IN ('Europe')) ORDER BY life_ladder DESC, year LIMIT 50; ```  This query selects the 'country_name', 'region', 'year' and 'life_ladder' columns from the 'world_happiness_report' table where the region is either 'Asia' or 'Europe'. The results are ordered by 'life_ladder' in descending order, then by 'year', and limited to 50 rows.",
+    "generation_time": 23.4339
+}

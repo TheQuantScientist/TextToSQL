@@ -1,0 +1,5 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "SELECT regional_indicator, AVG(generosity) AS average_generosity, year FROM world_happiness_report WHERE regional_indicator = 'AS' GROUP BY regional_indicator, year LIMIT 50",
+    "generation_time": 2.8901
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Are countries with higher long gdp per capita likely to have higher positive effect over years? Comparing the data to evaluate ",
+    "query": "To compare the relationship between `log_GDP_per_capital` and `positive_affect` over the years, you can use the following SQL query. This query will limit the results to 50 rows for better readability:  ```sql SELECT     country_name,     year,     log_GDP_per_capital,     positive_affect FROM     world_happiness_report ORDER BY     year ASC, log_GDP_per_capital DESC LIMIT 50; ```  This query will return the country name, year, logarithm of GDP per capita, and positive affect in a sorted order by year ascending and logarithm of GDP per capita descending.",
+    "generation_time": 24.1532
+}

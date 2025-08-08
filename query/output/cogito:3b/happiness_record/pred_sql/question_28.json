@@ -1,0 +1,5 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "SELECT country_name, regional_indicator, year,     AVG(life_ladder) OVER (PARTITION BY region ORDER BY year ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS avg_life_ladder,     AVG(log_GDP_per_capital) OVER (PARTITION BY region ORDER BY year ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS avg_log_gdp FROM world_happiness_report WHERE regional_indicator = 'Asia' LIMIT 50;",
+    "generation_time": 8.4107
+}

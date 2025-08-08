@@ -1,0 +1,5 @@
+{
+    "question": "Are countries with higher long gdp per capita likely to have higher positive effect over years? Comparing the data to evaluate ",
+    "query": "SELECT     country_name,     log_GDP_per_capital,     positive_affect FROM     world_happiiness_report ORDER BY     log_GDP_per_capital DESC LIMIT 50;",
+    "generation_time": 13.3387
+}

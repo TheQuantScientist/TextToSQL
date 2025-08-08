@@ -1,0 +1,5 @@
+{
+    "question": "What is the life ladder of Vietnam in 2022?",
+    "query": "To find the life ladder score for Vietnam in the year 2022, you would need to write a SQL query. However, since I cannot know which database management system you are using, I'll provide a PostgreSQL-compatible query example:  ```sql SELECT life_ladder FROM world_happiness_report WHERE country_name = 'Vietnam' AND year = 2022 LIMIT 1; ```  This query selects only the 'life_ladder' column from the 'world_happiness_report' table where both the 'country_name' is Vietnam and the 'year' is 2022, limited to a single row.",
+    "generation_time": 21.6097
+}

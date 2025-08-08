@@ -1,0 +1,5 @@
+{
+    "question": "What is the Perceptions Of Corruption of Ecuador in 2008?",
+    "query": "To find the Perceptions of Corruption for Ecuador in the year 2008, you can use the following SQL query:  ```sql SELECT perceptions_of_corruption FROM world_happiness_report WHERE country_name = 'Ecuador' AND year = 2008; ```",
+    "generation_time": 10.7689
+}

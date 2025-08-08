@@ -1,0 +1,5 @@
+{
+    "question": "Does lack of social support lead to higher negative affect over years? ",
+    "query": "To find out if a lack of social support leads to higher negative affect over the years, we can perform a linear regression analysis. However, since you only want to get 50 rows of data, I will provide you with a SQL query that fetches the relevant data for further analysis:  ```sql SELECT country_name, year, social_support, negative_affect FROM world_happiness_report WHERE row_number() OVER (ORDER BY year) <= 50 ORDER BY year ASC; ```  This query will fetch the first 50 rows of data based on the order of the 'year' column. You can then use statistical software or tools like R, Python, or Excel to perform the linear regression analysis and interpret the results.",
+    "generation_time": 23.6637
+}

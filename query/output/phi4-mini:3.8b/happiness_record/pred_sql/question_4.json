@@ -1,0 +1,5 @@
+{
+    "question": "What is the social support index of Germany in 2008?",
+    "query": "SELECT social_support AS Social_Support_Index, year = 2008  FROM world_happiness_report WHERE country_name = 'Germany' AND year = 2008;  (Note that typically you would only need to filter by `country_name` and not also repeat the value in your SELECT clause. Here is a corrected version):   SELECT social_support AS Social_Support_Index  FROM world_happiness_report WHERE country_name = 'Germany' AND year = 2008;  However, if you specifically want it to appear as `social_support_index` (which isn't an actual column name), you'd have the following:   SELECT life_ladder AS social_support_index, year = 2008  FROM world_happiness_report WHERE country_name = 'Germany' AND year = 2008;  (Note: I've used `life_ladder`, assuming you meant to query another related field since it's plausible that you'd have a composite term in your report.)",
+    "generation_time": 19.1559
+}

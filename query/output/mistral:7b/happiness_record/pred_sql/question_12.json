@@ -1,0 +1,5 @@
+{
+    "question": "What is the average life ladder of Asia countries in 2022?",
+    "query": "To get the average life ladder score for Asia countries in the year 2022, you can use the following SQL query:  ```sql SELECT AVG(life_ladder) FROM world_happiness_report WHERE regional_indicator = 'Asia' AND year = 2022; ```  This query will return a single value, the average life ladder score for Asia countries in 2022. If you want to get the top 50 countries based on this average score, add the following clause:  ```sql SELECT country_name, AVG(life_ladder) as avg_life_ladder FROM world_happiness_report WHERE regional_indicator = 'Asia' AND year = 2022 GROUP BY country_name ORDER BY avg_life_ladder DESC, country_name ASC LIMIT 50; ``` This query will return the names of the top 50 Asia countries in 2022 sorted by average life ladder score in descending order and alphabetically within each group.",
+    "generation_time": 34.7687
+}

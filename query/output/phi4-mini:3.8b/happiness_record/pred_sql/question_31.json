@@ -1,0 +1,5 @@
+{
+    "question": "How differences in Confidence In National Government score comparing all the regions? Evaluate the importance of governance trust on positive affects.",
+    "query": "SELECT regional_indicator, AVG(confidence_in_national_govt) AS avg_confidence_in_ngovt,        CORR(confidence_in_national_govt, positive_affect) AS correlation_with_positive_affects FROM world_happiness_report GROUP BY regional_indicator ORDER BY average confidence in national government DESC;",
+    "generation_time": 6.8302
+}

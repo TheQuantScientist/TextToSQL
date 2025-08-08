@@ -1,0 +1,5 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "SELECT COUNT(DISTINCT country_name)  FROM (     SELECT country_name, AVG(generosity) AS avg_generosity     FROM world_happiness_report     GROUP BY country_name ) AS gen_above_avg WHERE gen_above_avg.avg_generosity > (SELECT AVG(generosity) FROM world_happiness_report)",
+    "generation_time": 4.8981
+}

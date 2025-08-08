@@ -1,0 +1,5 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "To find the top 50 countries with a higher average generosity score compared to the world average, you can use the following SQL query on your 'world_happiness_report' table. This query assumes that there is a known world average for 'generosity'.  ```sql SELECT country_name, AVG(generosity) as avg_generosity FROM world_happiness_report WHERE generosity > (SELECT AVG(generosity) FROM world_happiness_report) GROUP BY country_name ORDER BY avg_generosity DESC LIMIT 50; ```",
+    "generation_time": 19.1214
+}

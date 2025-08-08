@@ -1,0 +1,5 @@
+{
+    "question": "What is the Freedom To Make Life Choices of Vietnam in 2018?",
+    "query": "SELECT `freedom_to_make_life_choices` AS freedom_to_make_life_choices, year FROM world_happiness_report WHERE country_name = 'Vietnam' AND year = 2018; Please note that this query assumes you want both \"Freedom to make life choices\" and the corresponding year in your result. If only one value is needed without a related column name as an alias (for instance if you're okay with not using AS), then please let me know so I can adjust accordingly.  Additionally, PostgreSQL queries require double quotes for field names that are reserved words or contain special characters like underscore (_).",
+    "generation_time": 11.6458
+}

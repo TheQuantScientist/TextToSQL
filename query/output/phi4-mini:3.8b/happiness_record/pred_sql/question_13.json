@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the highest average long gdp per capita through years?",
+    "query": "SELECT      region_indicator, AVG(log_GDP_per_capital) as avg_log_gdp_per_capita FROM world_happiness_report GROUP BY region_indicator ORDER BY avg_log_gdp_per_capita DESC;   Please note that this query only calculates the average logarithm of GDP per capita grouped by regions. To find out which country has consistently had the highest long-term log GDP per capita, a more complex analysis involving time series and trends over years would be required; however, that's beyond what can directly answer with just one SQL statement based on your current table structure constraints (like selecting only 50 rows).",
+    "generation_time": 12.5521
+}

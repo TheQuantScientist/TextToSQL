@@ -1,0 +1,5 @@
+{
+    "question": "What is the social support index of Germany in 2008?",
+    "query": "To get the 'social_support' index of 'Germany' in the year 2008, you can use the following SQL query:  ```sql SELECT social_support FROM world_happiness_report WHERE country_name = 'Germany' AND year = 2008 LIMIT 1; ```",
+    "generation_time": 11.118
+}

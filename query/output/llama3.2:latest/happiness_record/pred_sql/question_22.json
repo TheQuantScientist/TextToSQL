@@ -1,0 +1,5 @@
+{
+    "question": "Interpret for me the current trend in positive affect of the world from 2008 to 2022?",
+    "query": "SELECT year, positive_affect FROM world_happiness_report WHERE year BETWEEN '2008' AND '2022' LIMIT 15;",
+    "generation_time": 2.2542
+}
