@@ -44,9 +44,9 @@ models = [
         # 'gemma3n:e4b',
         # 'llama3.2:latest',
         # 'mistral:7b',
-        'phi3.5:3.8b',
-        'phi4-mini:3.8b',
-        'qwen2.5:3b',
+        # 'phi3.5:3.8b',
+        # 'phi4-mini:3.8b',
+        # 'qwen2.5:3b',
         'qwen3:4b',    
     ]
 
