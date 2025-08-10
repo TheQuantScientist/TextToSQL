@@ -1,0 +1,5 @@
+{
+    "question": "The average bankruptcy rate and M&A deals by year",
+    "query": "SELECT      DATE_TRUNC('year', date) AS year,     ROUND(AVG(bankruptcy_rate), 2) AS avg_bankruptcy_rate,     ROUND(AVG(mergers_acquisitions_deals::INTEGER / NULLIF(mergers_acquisitions_deals::INTEGER, 0)), 2) AS avg_m_a_deals FROM finance_economics_dataset GROUP BY DATE_TRUNC('year', date) LIMIT 50;",
+    "generation_time": 2.7584
+}

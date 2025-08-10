@@ -1,0 +1,5 @@
+{
+    "question": "Number of days which the closing price is higher than the open price of Dow Jones, S&P 500, NASDAQ",
+    "query": "SELECT COUNT(*) AS above_open_days  FROM finance_economics_dataset  WHERE stock_index IN ('S&P 500', 'NASDAQ') AND close_price > open_price;  Note: This query assumes there exists a field that directly relates to \"Dow Jones\". If there's no direct link, additional context is needed. Additionally, if you want the result for both indices separately or together in one row (e.g., as separate columns), please let me know and I can adjust accordingly. Also remember this will count all days where closing price was higher than open across S&P 500 & NASDAQ regardless of Dow Jones relation since there is no direct field provided relating to \"Dow Jones\". If you want it related specifically in terms that imply a dependency, more details would be needed (e.g., correlation factor). The above query will work for counting days with the condition mentioned.",
+    "generation_time": 10.3072
+}

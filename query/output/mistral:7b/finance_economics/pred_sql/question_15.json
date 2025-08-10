@@ -1,0 +1,5 @@
+{
+    "question": "The average bankruptcy rate and M&A deals by year",
+    "query": "To get the average bankruptcy rate and M&A deals by year, you can use the following SQL query:  ```sql SELECT   date_trunc('year', finance_economics_dataset.date) AS year,   AVG(finance_economics_dataset.bankruptcy_rate) AS average_bankruptcy_rate,   AVG(finance_economics_dataset.mergers_acquisitions_deals) AS avg_ma_deals FROM finance_economics_dataset GROUP BY year LIMIT 50; ```",
+    "generation_time": 7.9066
+}

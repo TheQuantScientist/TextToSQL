@@ -1,0 +1,5 @@
+{
+    "question": "Top 5 country that have highest gini recalulated in 2015",
+    "query": "SELECT country, iso,        CASE WHEN year = 2015 THEN gini_recalculated END AS \"gini_recalculated_2015\" FROM country_income LIMIT 50;",
+    "generation_time": 3.4322
+}

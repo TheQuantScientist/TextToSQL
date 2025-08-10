@@ -1,0 +1,5 @@
+{
+    "question": "Country with the highest global development resilience score in 2020",
+    "query": "SELECT country_name, human_development_composite FROM global_development_indicators WHERE year = 2020 ORDER BY global_development_resilience_index DESC LIMIT 1;  This query selects the name of the country and its corresponding Human Development Composite score from the 'global_development_indicators' table where the survey was conducted in the year 2020. It then orders the results by the Global Development Resilience Index in descending order, limiting the output to only one row which represents the country with the highest index for that specific year.",
+    "generation_time": 916.5695
+}

@@ -1,5 +1,0 @@
-{
-    "question": "What is the population of China in 2000?",
-    "query": "SELECT population FROM country_income WHERE iso = 'chn' AND year = 2000 LIMIT 50",
-    "generation_time": 2.8445
-}

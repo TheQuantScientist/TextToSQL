@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship between unemployment rate and inflation of US through years?",
+    "query": "To find the relationship between unemployment rate and inflation over the years for a specific country (in this case, the United States), assuming that the data for the 'country_code' field represents the country name as a string (not a code), you can use the following SQL query on PostgreSQL:  ```sql SELECT year, unemployment_rate, inflation_rate FROM global_development_indicators WHERE country_name = 'United States' ORDER BY year ASC LIMIT 50; ```",
+    "generation_time": 17.1291
+}

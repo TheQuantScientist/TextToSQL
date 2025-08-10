@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the lowest average social support score over years?",
+    "query": "SELECT country_name FROM world_happiness_report ORDER BY social_support ASC LIMIT 1",
+    "generation_time": 1.3745
+}

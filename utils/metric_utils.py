@@ -185,51 +185,64 @@ def evaluate_sql_metrics(gold_path, pred_path):
     return metrics
 
 def main():
-    base_path = r"/Users/admin/LG/TextToSQL/query/output"
+    base_path = r"/Users/ngannguyen/Documents/GitHub/TextToSQL/query/output"
     
     # Fixed model name (change this manually as needed)
-    model = 'gemma3'
+    models = [
+        'cogito:3b',
+        'deepseek-r1:7b',
+        'gemma3:4b',
+        'gemma3n:e4b',
+        'llama3.2:latest',
+        'mistral:7b',
+        'phi3.5:3.8b',
+        'phi4-mini:3.8b',
+        'qwen2.5:3b',
+        'qwen3:4b',
+    ]
     
     # List of datasets
-    datasets = ['country_income']
+    datasets = ['happiness_record']
+
+    for model in models:
     
-    for dataset in datasets:
-        gold_dir = os.path.join(base_path, model, dataset, 'gold_sql')
-        pred_dir = os.path.join(base_path, model, dataset, 'pred_sql')
-        
-        if os.path.exists(gold_dir) and os.path.exists(pred_dir):
-            # Collect all JSON files
-            gold_files = [f for f in os.listdir(gold_dir) if f.endswith('.json')]
-            pred_files = [f for f in os.listdir(pred_dir) if f.endswith('.json')]
+        for dataset in datasets:
+            gold_dir = os.path.join(base_path, model, dataset, 'gold_sql')
+            pred_dir = os.path.join(base_path, model, dataset, 'pred_sql')
             
-            # Sort files to ensure consistent pairing
-            gold_files.sort()
-            pred_files.sort()
-            
-            # Limit to 31 questions (adjust if needed)
-            max_questions = min(31, len(gold_files), len(pred_files))
-            
-            # Dictionary to store all metrics
-            all_metrics = {}
-            
-            for i in range(max_questions):
-                gold_file = os.path.join(gold_dir, gold_files[i])
-                pred_file = os.path.join(pred_dir, pred_files[i])
+            if os.path.exists(gold_dir) and os.path.exists(pred_dir):
+                # Collect all JSON files
+                gold_files = [f for f in os.listdir(gold_dir) if f.endswith('.json')]
+                pred_files = [f for f in os.listdir(pred_dir) if f.endswith('.json')]
                 
-                metrics = evaluate_sql_metrics(gold_file, pred_file)
-                question_key = f"question_{i + 1}"
-                all_metrics[question_key] = metrics
-            
-            # Save metrics to a single JSON file
-            output_dir = os.path.join(base_path, model, dataset, 'comparison')
-            os.makedirs(output_dir, exist_ok=True)
-            output_file = os.path.join(output_dir, 'metrics.json')
-            
-            with open(output_file, 'w') as f:
-                json.dump(all_metrics, f, indent=4)
-            print(f"Metrics saved to {output_file} for Model: {model}, Dataset: {dataset}")
-        else:
-            print(f"Directories not found for Model: {model}, Dataset: {dataset}")
+                # Sort files to ensure consistent pairing
+                gold_files.sort()
+                pred_files.sort()
+                
+                # Limit to 31 questions (adjust if needed)
+                max_questions = min(31, len(gold_files), len(pred_files))
+                
+                # Dictionary to store all metrics
+                all_metrics = {}
+                
+                for i in range(max_questions):
+                    gold_file = os.path.join(gold_dir, gold_files[i])
+                    pred_file = os.path.join(pred_dir, pred_files[i])
+                    
+                    metrics = evaluate_sql_metrics(gold_file, pred_file)
+                    question_key = f"question_{i + 1}"
+                    all_metrics[question_key] = metrics
+                
+                # Save metrics to a single JSON file
+                output_dir = os.path.join(base_path, model, dataset, 'comparison')
+                os.makedirs(output_dir, exist_ok=True)
+                output_file = os.path.join(output_dir, 'metrics.json')
+                
+                with open(output_file, 'w') as f:
+                    json.dump(all_metrics, f, indent=4)
+                print(f"Metrics saved to {output_file} for Model: {model}, Dataset: {dataset}")
+            else:
+                print(f"Directories not found for Model: {model}, Dataset: {dataset}")
 
 if __name__ == "__main__":
     main()

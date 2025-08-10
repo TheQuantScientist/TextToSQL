@@ -1,0 +1,5 @@
+{
+    "question": "Which stock indexes should investors invest in? Analyze NASDAQ, S&P 500, Dow Jones performances",
+    "query": "SELECT      date AS TradeDate,     open_price AS OpenPrice_SPX_1000,     close_price AS ClosePrice_SPX_1000,     daily_high AS DailyHigh_SPX_1000,     daily_low AS DailyLow_SPX_1000,     trading_volume AS Volume_SPX_1000 FROM finance_economics_dataset WHERE stock_index = 'S&P 500' AND date >= CURRENT_DATE - INTERVAL '1 year' UNION ALL SELECT      date AS TradeDate,     open_price AS OpenPrice_DJ30,     close_price AS ClosePrice_DJ30,     daily_high AS DailyHigh_DJ30,     daily_low AS DailyLow_DJ30,     trading_volume AS Volume_DJ30 FROM finance_economics_dataset WHERE stock_index = 'Dow Jones Industrial Average' AND date >= CURRENT_DATE - INTERVAL '1 year' ORDER BY TradeDate DESC LIMIT 50;",
+    "generation_time": 9.1291
+}

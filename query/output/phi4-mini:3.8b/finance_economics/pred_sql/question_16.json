@@ -1,0 +1,5 @@
+{
+    "question": "Number of days where the gdp growth is negative",
+    "query": "SELECT COUNT(*) AS NegativeGDPGrowthDays FROM finance_economics_dataset WHERE gdp_growth < 0;  Note that this query doesn't limit results to exactly 50 rows as requested, because counting occurrences will not necessarily result in a fixed number of returned values. If the requirement is strictly for no more than 50 entries regardless of their count status (e.g., if there are fewer negative growth days), additional criteria would need clarification or an adjustment like this:   SELECT COUNT(*) AS NegativeGDPGrowthDaysLimitedToFifty FROM (     SELECT * FROM finance_economics_dataset      WHERE gdp_growth < 0      ORDER BY date DESC ) AS SubQuery LIMIT 50;  This second query attempts to adhere more closely by applying an arbitrary limit within a subquery, but it's important for context that it might not reflect the original intent perfectly without clearer criteria on handling cases with fewer than or exactly fifty occurrences.",
+    "generation_time": 8.8014
+}

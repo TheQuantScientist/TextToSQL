@@ -1,0 +1,5 @@
+{
+    "question": "Does government debt effect GDP growth? Analyze the given data and recommend policymakers on how to create positive gdp growth",
+    "query": "To analyze the relationship between government debt and GDP growth, we can use correlation analysis. The following SQL query will return the correlation coefficient between `government_debt` and `gdp_growth` fields in the 'finance_economics_dataset' table for the top 50 rows:  ```sql SELECT   CORR(government_debt, gdp_growth) AS correlation_coefficient FROM finance_economics_dataset ORDER BY government_debt LIMIT 50; ```  Based on this analysis, policymakers can make informed decisions to reduce or control the government debt level in order to positively impact GDP growth. However, it's important to consider other economic factors as well before making any final policy decisions.",
+    "generation_time": 9.8194
+}

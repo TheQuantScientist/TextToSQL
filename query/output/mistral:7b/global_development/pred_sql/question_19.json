@@ -1,0 +1,5 @@
+{
+    "question": "What country has the longest period of deflation? Deflation is known as when the inflation is negative",
+    "query": "To find the country with the longest period of deflation (negative inflation rate), we can use the following SQL query in PostgreSQL. This query sorts the 'global_development_indicators' table by the 'years_since_2000' column, and then by the 'inflation_rate' column in descending order, and limit the results to 50 rows:  ```sql SELECT year AS start_year, country_name, years_since_2000 FROM global_development_indicators WHERE inflation_rate < 0 ORDER BY years_since_2000 DESC, ABS(inflation_rate) DESC LIMIT 50; ```  This query assumes that the data includes negative inflation rates and is sorted by 'years_since_2000'. The 'start_year' column returns the first year of the longest period of deflation for each country.",
+    "generation_time": 1070.1495
+}

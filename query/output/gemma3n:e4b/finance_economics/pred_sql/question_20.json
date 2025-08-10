@@ -1,0 +1,5 @@
+{
+    "question": "The ratio of government debt to consumer spending by year",
+    "query": "SELECT   date,   government_debt,   consumer_spending FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 7.8909
+}

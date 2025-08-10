@@ -1,0 +1,5 @@
+{
+    "question": "Do countries with high weather vulnerability score have higher green transition scores? Explain for me the implication",
+    "query": "SELECT CORR(climate_vulnerability_index, green_transition_score) AS correlation_coefficient FROM global_development_indicators;   Note that this query calculates Pearson's correlation coefficient between `climate_vulnerability_index` and `green_transition_score`, but it won't give you a conclusion about causation or implications. To determine the implication of such relationship in terms of weather vulnerability scores affecting green transition efforts, you'd typically need to perform additional analysis beyond SQL querying which might involve statistical tests for significance as well as contextual interpretation within your data set's domain knowledge.",
+    "generation_time": 12.6718
+}

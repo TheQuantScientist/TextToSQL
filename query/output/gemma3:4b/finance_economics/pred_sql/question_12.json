@@ -1,0 +1,5 @@
+{
+    "question": "The annual consumer spending from 2000 to 2008",
+    "query": "SELECT   consumer_spending FROM finance_economics_dataset WHERE   date BETWEEN '2000-01-01' AND '2008-12-31' LIMIT 50;",
+    "generation_time": 2.6051
+}

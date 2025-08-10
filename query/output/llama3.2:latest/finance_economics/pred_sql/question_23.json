@@ -1,0 +1,5 @@
+{
+    "question": "Does government debt effect GDP growth? Analyze the given data and recommend policymakers on how to create positive gdp growth",
+    "query": "SELECT      date,      gdp_growth,      government_debt FROM finance_economics_dataset ORDER BY gdp_growth DESC, date ASC LIMIT 50;",
+    "generation_time": 1.3876
+}

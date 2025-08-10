@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+    "query": "SELECT      regional_indicator AS region,     AVG(healthy_life_expectancy_at_birth) AS average_healthy_life_expectancy FROM world_happiness_report WHERE country_name IN (   SELECT DISTINCT country_name FROM world_happiness_report WHERE region = 'Europe' ) GROUP BY region;",
+    "generation_time": 6.2063
+}

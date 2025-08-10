@@ -1,0 +1,5 @@
+{
+    "question": "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+    "query": "SELECT   country_name,   negative_affect FROM world_happiness_report WHERE log_GDP_per_capital IS NOT NULL ORDER BY log_GDP_per_capital DESC LIMIT 50;",
+    "generation_time": 5.765
+}

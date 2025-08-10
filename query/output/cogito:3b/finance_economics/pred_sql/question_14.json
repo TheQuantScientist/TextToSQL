@@ -1,0 +1,5 @@
+{
+    "question": "Ratio of days having negative gdp growth to total days",
+    "query": "SELECT      CASE WHEN daily_gdp_growth < 0 THEN 1 ELSE 0 END AS has_negative_gdp FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 1.2055
+}

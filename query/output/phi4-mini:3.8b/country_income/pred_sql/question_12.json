@@ -1,0 +1,5 @@
+{
+    "question": "Top 5 country that have highest gini recalulated in 2015",
+    "query": "SELECT TOP 5      country,      year,      gini_recalculated  FROM      country_income  WHERE      year = 2015 AND gini_reported IS NOT NULL  ORDER BY      gini_recalculated DESC;",
+    "generation_time": 5.8876
+}

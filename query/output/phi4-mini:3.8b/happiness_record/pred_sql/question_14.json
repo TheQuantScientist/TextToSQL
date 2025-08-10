@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the lowest average social support score over years?",
+    "query": "SELECT AVG(\"social_support\") AS avg_social_support, MAX(country_name) AS country_with_lowest_avg_social_support FROM world_happiness_report GROUP BY region_indicator HAVING MIN(avg_social_support) LIMIT 1;  Note that this query assumes you want the single year with lowest average social support per geographic region. If you're looking for a multi-year comparison across regions to find one country's consistently low score, additional queries would be needed as there's no direct way of comparing averages over time in SQL like you'd do in statistical software directly.  For an accurate answer according to your needs (finding the country that has had continuously lowest average social support), you might need iterative analysis for each region and then comparison across regions.",
+    "generation_time": 13.9781
+}

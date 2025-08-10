@@ -1,0 +1,5 @@
+{
+    "question": "Which year has the highest average consumer confidence index?",
+    "query": "SELECT   EXTRACT(YEAR FROM date) AS year,   AVG(consumer_confidence_index) AS average_consumer_confidence_index FROM finance_economics_dataset GROUP BY year ORDER BY average_consumer_confidence_index DESC LIMIT 50;",
+    "generation_time": 3.0244
+}

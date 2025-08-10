@@ -1,0 +1,5 @@
+{
+    "question": "The date, forex US/EUR, US/JPY where gdp growth is negative",
+    "query": "SELECT * FROM finance_economics_dataset WHERE interest_rate IS NOT NULL AND inflation_rate < 0 AND (forex_usd_eur IS NOT NULL OR forex_usd_jpy IS NOT NULL) LIMIT 50;",
+    "generation_time": 2.5566
+}

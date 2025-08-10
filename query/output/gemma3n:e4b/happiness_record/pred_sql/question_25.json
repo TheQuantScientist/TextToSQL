@@ -1,0 +1,5 @@
+{
+    "question": "Does lack of social support lead to higher negative affect over years? ",
+    "query": "SELECT     year,     social_support,     negative_affect FROM     world_happiyness_report ORDER BY     year;",
+    "generation_time": 10.6449
+}

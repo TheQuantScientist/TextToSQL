@@ -1,0 +1,5 @@
+{
+    "question": "Does government debt effect GDP growth? Analyze the given data and recommend policymakers on how to create positive gdp growth",
+    "query": "SELECT date, stock_index, daily_high, daily_low, gdp_growth, interest_rate, unemployment_rate,        consumer_confidence_index, retail_sales, bankruptcy_rate,        mergers_acquisitions_deals, venture_capital_funding FROM finance_economics_dataset WHERE (interest_rate > 0 AND interest_rate < 6) OR (gdp_growth > 2 AND gdp_growth <= 5) LIMIT 50;",
+    "generation_time": 2.7599
+}

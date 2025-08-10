@@ -1,0 +1,5 @@
+{
+    "question": "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+    "query": "SELECT T2.log_GDP_per_capital, T2.negative_affect FROM world_happiness_report AS T1 INNER JOIN ( SELECT AVG(log_GDP_per_capital) AS log_GDP_per_capital, MAX(negative_affect) AS max_negative_affect FROM world_happiness_report GROUP BY regional_indicator ) AS T2 ON T1.regional_indicator = T2.regional_indicator AND T1.log_GDP_per_capital = T2.log_GDP_per_capital LIMIT 50;",
+    "generation_time": 8.5853
+}

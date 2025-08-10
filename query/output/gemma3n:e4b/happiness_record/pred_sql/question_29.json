@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship of percptions of corruption and confidence in national government?",
+    "query": "SELECT   p.perceptions_of_corruption,   c.confidence_in_national_government FROM world_happiiness_report AS p JOIN world_happiiness_report AS c   ON p.year = c.year LIMIT 50;",
+    "generation_time": 13.8317
+}

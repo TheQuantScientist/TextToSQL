@@ -1,0 +1,5 @@
+{
+    "question": "The date, stock index on which stock index reached the highest Daily High",
+    "query": "SELECT MAX(daily_high), daily, stock_index FROM finance_economics_dataset GROUP BY stock_index ORDER BY MAX(daily_high) DESC LIMIT 1;  This query will find and return the highest 'daily_high' price along with its corresponding date ('daily') for a single stock index. To ensure that only one row is returned, I grouped by `stock_index` before ordering them based on their maximum daily high values in descending order (to get the largest value first) and limited to just 1 result using `LIMIT 1`. Note: In PostgreSQL we usually use `date`, not 'daily', as a column name, so I assumed here that you meant `'date'`, which would represent unique dates.",
+    "generation_time": 6.6753
+}

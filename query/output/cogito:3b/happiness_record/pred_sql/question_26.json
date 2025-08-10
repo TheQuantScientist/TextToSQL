@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+    "query": "SELECT      regional_indicator,     year,     healthy_life_expectancy_at_birth FROM      world_happiness_report WHERE      regional_indicator IN ('Europe', 'North America') LIMIT 50;",
+    "generation_time": 4.4123
+}

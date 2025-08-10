@@ -1,0 +1,5 @@
+{
+    "question": "The date, forex US/EUR, US/JPY where gdp growth is negative",
+    "query": "SELECT      forex_usd_eur AS ExchangeRate_USD_to_EUR,     forex_usd_jpy AS ExchangeRate_USD_to_JPY FROM finance_economics_dataset WHERE gdp_growth < 0 AND trading_date >= 'specific_starting_date' AND trading_date <= 'specific_ending_date' LIMIT 50;",
+    "generation_time": 3.2343
+}

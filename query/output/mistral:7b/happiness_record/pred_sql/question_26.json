@@ -1,0 +1,5 @@
+{
+    "question": "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+    "query": "To get the top 50 rows of data for 'Healthy Life Expectancy at Birth' grouped by region (Asia and Europe, North America) in descending order for the years available in the table, use the following SQL query:  ```sql SELECT regional_indicator, year, healthy_life_expectancy_at_birth FROM world_happiness_report WHERE regional_indicator IN ('Asia', 'Europe, North America') ORDER BY regional_indicator, year DESC, healthy_life_expectancy_at_birth DESC LIMIT 50; ```",
+    "generation_time": 19.1236
+}

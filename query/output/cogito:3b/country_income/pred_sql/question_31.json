@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the net income gap between low income group d1 to d4, middle income group d5 to d9 and high income group d10 in Vietnam and propose improvement plan",
+    "query": "SELECT * FROM country_income WHERE iso = 'vietnam' AND category IN ('d5', 'd6', 'd7', 'd8', 'd9') AND gini_reported > 0.35; LIMIT 50;",
+    "generation_time": 4.3688
+}

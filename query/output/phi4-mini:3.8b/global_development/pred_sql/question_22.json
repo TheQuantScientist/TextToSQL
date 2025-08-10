@@ -1,0 +1,5 @@
+{
+    "question": "Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
+    "query": "SELECT year, country_code, region, income_group, currency_unit, gdp_usd, population, renewable_energy_pct FROM global_development_indicators WHERE human_development_index IS NOT NULL AND climate_vulnerability_index IS NOT NULL;",
+    "generation_time": 5.0467
+}

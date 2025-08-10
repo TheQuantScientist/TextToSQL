@@ -1,0 +1,5 @@
+{
+    "question": "The date, forex US/EUR, US/JPY where gdp growth is negative",
+    "query": "SELECT * FROM finance_economics_dataset WHERE gdp_growth < 0 AND date IS NOT NULL ORDER BY date DESC LIMIT 50;  This query will select all the fields from the 'finance_economics_dataset' table where the GDP growth is negative and the date is not null, ordered by date in descending order, and limited to 50 rows. It includes the forex rates for USD/EUR and USD/JPY as requested.",
+    "generation_time": 6.5943
+}

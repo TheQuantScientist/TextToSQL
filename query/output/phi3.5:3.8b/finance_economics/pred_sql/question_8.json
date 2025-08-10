@@ -1,0 +1,5 @@
+{
+    "question": "The date where trading volumne is the largest",
+    "query": "SELECT date, trading_volume FROM finance_economics_dataset ORDER BY trading_volume DESC LIMIT 1;  This SQL query selects only two columns from 'finance_economics_dataset': `date` and `trading_volume`. It orders the results by descending values of `trading_volume`, effectively finding the date with the highest volume, limited to just one row due to the use of `LIMIT 1`.",
+    "generation_time": 4.0924
+}

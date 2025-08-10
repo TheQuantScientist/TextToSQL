@@ -1,0 +1,5 @@
+{
+    "question": "What is the average economic opportunity index of low and indebt countries?",
+    "query": "SELECT AVG(econ_opportunity_index) AS avg_economic_opportunity_index FROM global_development_indicators WHERE income_group IN ('Low', 'Lower middle');  This SQL query calculates the average of `econ_opportunity_index` for countries categorized under 'Low' and 'Lower Middle Income'. These groups are typically characterized by lower levels of development, which implies that economic opportunity may be a significant concern. The result will offer insights into these specific segments within low or indebted nations to better understand their challenges in terms of creating opportunities for growth on an average basis from the data available up until its knowledge cutoff date.",
+    "generation_time": 14.7504
+}

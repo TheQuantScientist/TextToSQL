@@ -1,0 +1,5 @@
+{
+    "question": "Which country has the highest average long gdp per capita through years?",
+    "query": "SELECT      country_name,     SUM(log_GDP_per_capital) OVER (         PARTITION BY regional_indicator         ORDER BY year DESC     ) AS avg_long_gdp_per_capita FROM world_happiness_report WHERE log_GDP_per_capital IS NOT NULL GROUP BY country_name, regional_indicator LIMIT 50;",
+    "generation_time": 7.9206
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the relationship of percptions of corruption and confidence in national government?",
+    "query": "SELECT perceived_corruption, confidence_in_national_government FROM world_happiness_report;",
+    "generation_time": 1.9707
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the average Healthy Life Expectancy At Birth of the world after 2020? ",
+    "query": "To find the average healthy life expectancy at birth for all countries after 2020, you can use the following SQL query on your 'world_happiness_report' table:  ```sql SELECT AVG(healthy_life_expectancy_at_birth) FROM world_happiness_report WHERE year > 2020; ```",
+    "generation_time": 12.3409
+}

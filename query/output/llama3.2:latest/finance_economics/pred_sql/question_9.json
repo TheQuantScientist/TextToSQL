@@ -1,0 +1,5 @@
+{
+    "question": "The date, consumer confidence index, consumer spending where the bankruptcy rate is highest",
+    "query": "SELECT      cci,     cs,     brate FROM      finance_economics_dataset ORDER BY      brate DESC LIMIT 50;",
+    "generation_time": 1.1074
+}

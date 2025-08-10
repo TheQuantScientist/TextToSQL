@@ -1,0 +1,5 @@
+{
+    "question": "The date where trading volumne is the largest",
+    "query": "SELECT date, trading_volume FROM finance_economics_dataset WHERE trading_volume IN (SELECT MAX(trading_volume) FROM finance_economics_dataset) LIMIT 50;",
+    "generation_time": 2.9228
+}

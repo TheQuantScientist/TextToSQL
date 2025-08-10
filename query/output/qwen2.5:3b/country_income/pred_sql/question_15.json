@@ -1,0 +1,5 @@
+{
+    "question": "What is the average of d10 net income of Vietnam over years?",
+    "query": "SELECT AVG(T2.income_net) AS avg_income_net FROM country_income T1  JOIN country_income T2 ON T1.iso = T2.iso AND T1.year = T2.year  WHERE T1.country = 'Vietnam' AND T2.category = 'd10'",
+    "generation_time": 4.8726
+}

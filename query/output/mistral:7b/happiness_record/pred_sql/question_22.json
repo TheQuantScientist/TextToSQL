@@ -1,0 +1,5 @@
+{
+    "question": "Interpret for me the current trend in positive affect of the world from 2008 to 2022?",
+    "query": "To find the current trend in positive affect of the world from 2008 to 2022, we can use the SQL query below. This query selects the `positive_affect` field for years between 2008 and 2022 from the 'world_happiness_report' table in PostgreSQL.  ```sql SELECT year, positive_affect FROM world_happiness_report WHERE year BETWEEN 2008 AND 2022 ORDER BY year ASC; ```  This query will return the results limited to 50 rows by default due to PostgreSQL's row-based limitations. If needed, you can use a subquery or join multiple queries to get more data, but keep in mind that this might impact performance and require additional handling.",
+    "generation_time": 26.0252
+}

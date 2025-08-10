@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT AVG(digital_readiness_score) AS avg_dr_south_asia, AVG(digital_readiness_score) AS avg_dr_europe  FROM global_development_indicators  WHERE country_code LIKE '%AS%' AND years_since_2000 < 21  UNION ALL  SELECT AVG(digital_readiness_score) AS avg_dr_south_asia, AVG(digital_readiness_score) AS avg_dr_europe  FROM global_development_indicators  WHERE country_code LIKE '%EU%' AND years_since_2000 < 21",
+    "generation_time": 9.2012
+}

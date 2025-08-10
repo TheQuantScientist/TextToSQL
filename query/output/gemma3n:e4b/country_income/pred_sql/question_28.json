@@ -1,0 +1,5 @@
+{
+    "question": "Comparing the gini index of China and US over years to evaluate which country has higher income inequality",
+    "query": "SELECT   gini_reported FROM country_income WHERE   country IN ('China', 'United States') LIMIT 50;",
+    "generation_time": 6.5974
+}

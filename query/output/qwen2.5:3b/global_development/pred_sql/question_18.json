@@ -1,0 +1,5 @@
+{
+    "question": "What is the highest energy per capita score in 2020? In which country",
+    "query": "SELECT MAX(\"calculated_gdp_per_capita\") AS highest_energy_per_capita, \"country_name\"  FROM global_development_indicators  WHERE \"year\" = 2020  LIMIT 50",
+    "generation_time": 3.889
+}

@@ -1,0 +1,5 @@
+{
+    "question": "What is the economic opportunity index of indebt countries group in 2020?",
+    "query": "SELECT econ_opportunity_index FROM global_development_indicators WHERE income_group = 'Indebted countries' AND year = 2020 LIMIT 50;",
+    "generation_time": 2.6985
+}

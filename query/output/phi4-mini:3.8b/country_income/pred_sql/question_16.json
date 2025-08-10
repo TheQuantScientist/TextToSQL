@@ -1,0 +1,5 @@
+{
+    "question": "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
+    "query": "SELECT SUM(income_net) AS total_income_d5_to_9  FROM country_income  WHERE iso = 'vNM' AND year = 2015 AND category BETWEEN 'd5' AND 'd9';",
+    "generation_time": 4.7984
+}

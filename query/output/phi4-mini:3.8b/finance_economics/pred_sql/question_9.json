@@ -1,0 +1,5 @@
+{
+    "question": "The date, consumer confidence index, consumer spending where the bankruptcy rate is highest",
+    "query": "SELECT      consumer_confidence_index AS ConfidenceIndex,     consumer_spending AS ConsumerSpending,     MAX(bankruptcy_rate) OVER () AS HighestBankruptcyRate FROM finance_economics_dataset WHERE trading_volume = (SELECT MAX(trading_volume) FROM finance_economics_dataset) LIMIT 50;",
+    "generation_time": 3.2512
+}

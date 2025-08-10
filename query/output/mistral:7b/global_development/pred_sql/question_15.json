@@ -1,0 +1,5 @@
+{
+    "question": "How many countries are in lower middle income group as in 2020?",
+    "query": "To find the number of countries in the lower middle income group as of 2020, you can use the following SQL query:  ```sql SELECT COUNT(*) FROM global_development_indicators WHERE year = 2020 AND income_group = 'Lower Middle Income'; ```",
+    "generation_time": 11.2574
+}

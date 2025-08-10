@@ -1,0 +1,5 @@
+{
+    "question": "What is the Confidence In National Government of Singapore in 2022?",
+    "query": "SELECT \"country_name\", \"regional_indicator\", \"year\", \"life_ladder\", \"log_GDP_per_capital\",         \"social_support\", \"healthy_life_expectancy_at_birth\", \"freedom_to_make_life_choices\",        \"generosity\", \"perceptions_of_corruption\", \"positive_affect\", \"negative_affect\",        \"confidence_in_national_government\" FROM world_happiness_report WHERE (\"country_name\" = 'Singapore') AND (\"year\" = 2022) LIMIT 50;",
+    "generation_time": 9.2933
+}

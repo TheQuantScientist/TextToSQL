@@ -1,0 +1,5 @@
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT T2.co2_emissions_per_capita_tons, T1.child_mortality FROM global_development_indicators AS T1 INNER JOIN global_development_indicators AS T2 ON T1.year = T2.year WHERE T1.income_group = 'High-income' AND T2.is_pandemic_period = TRUE;",
+    "generation_time": 5.8814
+}

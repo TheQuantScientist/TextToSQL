@@ -1,0 +1,5 @@
+{
+    "question": "Average gold price by year",
+    "query": "SELECT   SUBSTRING(date, 1, 4) AS year,   AVG(gold_price) AS average_gold_price FROM finance_economics_dataset WHERE gold_price IS NOT NULL GROUP BY   year LIMIT 50;",
+    "generation_time": 2.8902
+}

@@ -1,5 +1,0 @@
-{
-    "question": "What is the net income of each category of Vietnam in 2015?",
-    "query": "SELECT category, SUM(income_net) AS total_income_net FROM country_income WHERE country = 'Vietnam' AND year = 2015 GROUP BY category LIMIT 50",
-    "generation_time": 5.2716
-}

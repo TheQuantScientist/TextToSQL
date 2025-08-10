@@ -1,0 +1,5 @@
+{
+    "question": "What is the gdp per capita of Sweden in 2015?",
+    "query": "SELECT      \"country\",     \"iso\" as country_code,     \"gcam_region_id\" as region_id,     \"year\",     \"ref\",     \"gini_reported\" FROM      \"country_income\" WHERE      \"country\" = 'Sweden' AND      EXTRACT(YEAR FROM \"year\") = 2015 LIMIT 50;",
+    "generation_time": 6.046
+}

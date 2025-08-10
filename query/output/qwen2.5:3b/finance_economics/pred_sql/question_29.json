@@ -1,0 +1,5 @@
+{
+    "question": "venture capital funding is private fundraising, wheras stock index activities is public fundraising. Which fundraising channel is more active in US, explain the reasons",
+    "query": "SELECT DISTINCT vc_funding FROM finance_economics_dataset LIMIT 50",
+    "generation_time": 0.763
+}

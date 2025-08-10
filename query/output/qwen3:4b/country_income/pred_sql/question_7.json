@@ -1,0 +1,5 @@
+{
+    "question": "Distinct list of region ID",
+    "query": "<think> Okay, the user is asking for a distinct list of region IDs from the 'country_income' table. Let me check the table structure. The relevant column here is 'gcam_region_id', which is an integer. So the SQL query should select distinct values from that column. They mentioned PostgreSQL, so the syntax is straightforward. Also, they want the results limited to 50 rows. Wait, but if there are fewer than 50 distinct region IDs, it'll return all. The query would be SELECT DISTINCT gcam_region_id FROM country_income LIMIT 50;. That should do it. Let me make sure there's no other column needed. No, the question is specifically about region IDs. Alright, that's the correct query. </think>  SELECT DISTINCT gcam_region_id FROM country_income LIMIT 50;",
+    "generation_time": 6.7554
+}

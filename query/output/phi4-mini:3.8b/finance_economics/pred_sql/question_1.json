@@ -1,0 +1,5 @@
+{
+    "question": "The inflation rate of November 28, 2008",
+    "query": "SELECT consumer_spending, inflation_rate FROM finance_economics_dataset WHERE date >= '2008-11-27' AND date < '2009-01-01' LIMIT 50;",
+    "generation_time": 8.5168
+}

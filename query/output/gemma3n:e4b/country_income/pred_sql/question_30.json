@@ -1,0 +1,5 @@
+{
+    "question": "What are the common patterns can be observed from countries with high income inequality in 2015, knowing gini greater than 0.4 is considered as high inequality",
+    "query": "SELECT   country,   iso,   gini_reported,   gdp_ppp_pc_usd2011,   population FROM country_income WHERE   gini_reported > 0.4   AND year = 2015 LIMIT 50;",
+    "generation_time": 8.4725
+}

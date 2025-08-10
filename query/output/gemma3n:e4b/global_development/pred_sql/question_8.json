@@ -1,0 +1,5 @@
+{
+    "question": "What is the gpd per capita of OECD group in 2019?",
+    "query": "SELECT   gdp_per_capita FROM global_development_indicators WHERE   year = 2019   AND country_code IN (     SELECT       country_code     FROM global_development_indicators     WHERE       country_name IN (         SELECT DISTINCT country_name         FROM global_development_indicators         WHERE           region = 'OECD'       )   ) LIMIT 50;",
+    "generation_time": 32.1051
+}
