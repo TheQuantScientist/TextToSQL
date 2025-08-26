@@ -3,7 +3,5 @@ text2sql/
 __pycache__/
 example.env/
 slm/lib/python3.10/site-packages/torch/lib/libtorch_cpu.dylib
-.vscode
-.DS_Store
 .vscode/
 .DS_Store
