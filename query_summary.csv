@@ -1,5 +1,0 @@
-Dataset Name,Number of Queries,Mean Token Length,Min Token Length,Max Token Length,Median Token Length,Queries with Years,Queries with Countries,Top 5 Common Words
-Country Income,31,14.19,5,35,13.00,22,18,"of (35), the (31), in (22), income (20), what (15)"
-Finance Economics,31,13.87,5,30,12.00,7,3,"the (34), of (16), is (13), to (11), and (10)"
-Global Development,31,12.61,8,20,13.00,16,4,"the (38), in (22), of (21), is (19), what (17)"
-Happiness Record,31,13.00,9,22,12.00,16,8,"the (35), of (26), in (21), what (18), is (18)"
