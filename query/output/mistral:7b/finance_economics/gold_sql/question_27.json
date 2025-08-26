@@ -1,5 +1,5 @@
 {
     "question": "Which stock indexes should investors invest in? Analyze NASDAQ, S&P 500, Dow Jones performances",
-    "query": "SELECT    stock_index,    AVG(close_price) AS avg_close_price,    AVG(daily_high) AS avg_daily_high,    AVG(daily_low) AS avg_daily_low FROM    finance_economics_dataset WHERE    stock_index IN ('NASDAQ', 'S&P 500', 'Dow Jones') GROUP BY    stock_index ORDER BY    avg_close_price DESC LIMIT 50;",
-    "generation_time": 6.1947
+    "query": "SELECT     date,     stock_index,     open_price,     close_price,     daily_high,     daily_low,     trading_volume,     (close_price - open_price) / NULLIF(open_price, 0) AS daily_return FROM finance_economics_dataset WHERE stock_index IN ('NASDAQ', 'S&P 500', 'Dow Jones') ORDER BY date DESC LIMIT 50;",
+    "generation_time": 5.6876
 }

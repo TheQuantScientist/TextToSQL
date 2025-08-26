@@ -1,5 +1,5 @@
 {
     "question": "The date where trading volumne is the largest",
-    "query": "SELECT date FROM finance_economics_dataset ORDER BY trading_volume DESC LIMIT 1;",
-    "generation_time": 0.5661
+    "query": "SELECT     date,     trading_volume FROM finance_economics_dataset ORDER BY trading_volume DESC LIMIT 1;",
+    "generation_time": 0.8988
 }

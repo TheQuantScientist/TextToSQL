@@ -1,5 +1,5 @@
 {
     "question": "The average gini recalculated of the world in 2015",
-    "query": "SELECT AVG(gini_recalculated) AS avg_gini_recalculated FROM country_income WHERE year = 2015;",
-    "generation_time": 4.7513
+    "query": "SELECT AVG(gini_recalculated) AS avg_gini_2015 FROM country_income WHERE year = 2015 LIMIT 50;",
+    "generation_time": 5.3888
 }
