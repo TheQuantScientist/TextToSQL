@@ -9,7 +9,7 @@ POSTGRES_CONFIG = {
     'port': 5432,
     'dbname': 'postgres',
     'user': 'postgres',
-    'password': ''
+    'password': 'text2sql'
 }
 
 # Groq Model Configuration
@@ -20,7 +20,7 @@ GROQ_CONFIG = {
 
 # Ollama Model Configuration
 OLLAMA_CONFIG = {
-    'model': 'gemma3:12b',
+    'model': 'gemma3:4b',
     'endpoint': 'http://localhost:11434/'
 }
 
