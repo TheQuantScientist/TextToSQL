@@ -38,15 +38,15 @@ class State(TypedDict):
 
 # === CONFIGURATION ===
 models = [
-        # 'cogito:3b',
-        # 'deepseek-r1:7b',
-        # 'gemma3:4b',
-        # 'gemma3n:e4b',
-        # 'llama3.2:latest',
-        # 'mistral:7b',
-        # 'phi3.5:3.8b',
-        # 'phi4-mini:3.8b',
-        # 'qwen2.5:3b',
+        'cogito:3b',
+        'deepseek-r1:7b',
+        'gemma3:4b',
+        'gemma3n:e4b',
+        'llama3.2:latest',
+        'mistral:7b',
+        'phi3.5:3.8b',
+        'phi4-mini:3.8b',
+        'qwen2.5:3b',
         'qwen3:4b',    
     ]
 
