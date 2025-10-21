@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "Which region has the highest average perceptions of corruption?",
     "query": "SELECT regional_indicator, AVG(perceptions_of_corruption) AS avg_corruption FROM world_happiness_report GROUP BY regional_indicator ORDER BY avg_corruption DESC LIMIT 1;",
     "generation_time": 2.9358
+=======
+{
+    "question": "Which region has the highest average perceptions of corruption?",
+    "query": "SELECT     regional_indicator,     AVG(perceptions_of_corruption) AS avg_perceptions_of_corruption FROM     world_happiness_report GROUP BY     regional_indicator ORDER BY     avg_perceptions_of_corruption DESC LIMIT 1;",
+    "generation_time": 8.6868
+>>>>>>> Stashed changes
 }

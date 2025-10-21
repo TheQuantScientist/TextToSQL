@@ -1,0 +1,13 @@
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT * FROM global_development_indicators WHERE income_group = 'High Income' AND child_mortality > 0 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results which show that \"no record found,\" I cannot determine whether there is a relationship between weather vulnerability and child mortality specifically in high-income countries.\n\nTo answer this question accurately, we would need access to data about weather-related risks, climate patterns, healthcare systems, population demographics, and child mortality rates across different income levels. The absence of records in the database means we don't have enough information to make a meaningful analysis of this specific relationship.\n\nIf you could provide additional context or clarify what type of data is typically included in such analyses, I'd be happy to help further investigate potential correlations between weather vulnerability and child mortality in high-income countries.",
+    "sql_execution_time": 0.0465,
+    "nlp_generation_time": 23.5492,
+    "total_time": 23.5957,
+    "source_file": "question_29.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:32:28"
+}

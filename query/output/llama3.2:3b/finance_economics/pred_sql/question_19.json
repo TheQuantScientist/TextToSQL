@@ -1,0 +1,5 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT AVG(venture_capital_funding) FROM finance_economics_dataset WHERE EXTRACT(YEAR FROM date) = EXTRACT(YEAR FROM MIN(date))",
+    "generation_time": 1.1693
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the social support index of Germany in 2008?",
+    "query": "SELECT life_ladder, log_GDP_per_capital, social_support FROM world_happiness_report WHERE country_name = 'Germany' AND year = 2008 LIMIT 50;",
+    "raw_results": "| life_ladder | log_gdp_per_capital | social_support |\n| --- | --- | --- |\n| 6.521790028 | 10.77149582 | 0.923211336 |",
+    "answer": "Based on the query results, I can tell you that in 2008, Germany had a social support index of approximately 0.92. This value indicates relatively strong social support networks within German society during that time period.\n\nWould you like me to provide any additional context about this measurement?",
+    "sql_execution_time": 0.0467,
+    "nlp_generation_time": 5.249,
+    "total_time": 5.2957,
+    "source_file": "question_4.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:49:44"
+}

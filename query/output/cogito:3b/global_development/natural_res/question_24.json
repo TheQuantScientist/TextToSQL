@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT \"year\", \"region\" as \"asia_reg\", \"country_name\" as \"south_asia_country\", \"digital_connectivity_index\", \"governance_quality_index\" FROM global_development_indicators WHERE (\"region\" IN ('Asia', 'Europe')) AND (\"is_pandemic_period\" = FALSE) AND (\"year\" >= 2000) LIMIT 50;",
+    "raw_results": "Error: operator does not exist: double precision = boolean\nLINE 1: ... IN ('Asia', 'Europe')) AND (\"is_pandemic_period\" = FALSE) A...\n                                                             ^\nHINT:  No operator matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I apologize, but I'm unable to provide an accurate evaluation of digital readiness differences between South Asia and Europe regions based on the provided query results. The error message indicates there's a problem with the database operators being used in the query.\n\nHowever, if you could share the specific query that was attempted or the relevant data tables available for analysis, I would be happy to help evaluate these regional differences using proper analytical methods.",
+    "sql_execution_time": 0.0768,
+    "nlp_generation_time": 13.7533,
+    "total_time": 13.8301,
+    "source_file": "question_24.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:24:29"
+}

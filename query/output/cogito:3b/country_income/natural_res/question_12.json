@@ -1,0 +1,13 @@
+{
+    "question": "Top 5 country that have highest gini recalulated in 2015",
+    "query": "SELECT country, iso, CASE WHEN year = 2015 THEN gini_recalculated END AS \"gini_recalculated_2015\" FROM country_income LIMIT 50;",
+    "raw_results": "| country | iso | gini_recalculated_2015 |\n| --- | --- | --- |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |\n| Afghanistan | afg | None |",
+    "answer": "Based on the provided query results, here are the top 5 countries with the highest Gini Recalculated in 2015:\n\n1. Afghanistan (afg) - With multiple entries all showing 'None', Afghanistan has not been recalculated for Gini yet.\n2. [No other countries have been recalculated] - The query results only show data for Afghanistan, and there are no other countries listed.\n\nNote: Since Afghanistan is repeated 20 times with a value of 'None' in the Gini Recalculated column for 2015, it appears that this information has not yet been calculated. Without any recalculations for other countries, we cannot determine their rankings based on available data.",
+    "sql_execution_time": 0.0572,
+    "nlp_generation_time": 16.7135,
+    "total_time": 16.7707,
+    "source_file": "question_12.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:53:59"
+}

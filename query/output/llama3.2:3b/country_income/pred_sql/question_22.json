@@ -1,0 +1,5 @@
+{
+    "question": "Vietnam released economic reformation policy named 'Doi Moi' from 1986 to 2000. Evaluate the effectiveness of the policy based on the gini score trend of the country in 2 phases: Before 1986 and after 1986",
+    "query": "SELECT gini_reported, year  FROM country_income  WHERE \"country\" = 'Vietnam' AND        (\"gcam_region_id\" < 30 OR \"gcam_region_id\" > 50)  AND year BETWEEN 1980 AND 1985  UNION ALL  SELECT gini_reported, year  FROM country_income  WHERE \"country\" = 'Vietnam' AND        (\"gcam_region_id\" < 30 OR \"gcam_region_id\" > 50)  AND year BETWEEN 2001 AND 2009;",
+    "generation_time": 13.9141
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Looking at the green transition score of all the countries and regions over the years, what is the common patterns?",
+    "query": "SELECT region, year, green_transition_score FROM global_development_indicators LIMIT 50;",
+    "generation_time": 1.7073
+}

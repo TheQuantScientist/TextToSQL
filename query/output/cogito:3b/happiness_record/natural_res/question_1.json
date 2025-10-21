@@ -1,0 +1,13 @@
+{
+    "question": "What is the positive affect of US in 2008?",
+    "query": "SELECT positive_affect FROM world_happiness_report WHERE country_name = 'United States' AND year = 2008 LIMIT 50;",
+    "raw_results": "| positive_affect |\n| --- |\n| 0.774229228 |",
+    "answer": "Based on the query results, the positive affect score for the United States in 2008 was approximately 0.77 (or 77% when rounded to two decimal places). This indicates a strong positive sentiment towards the US during that year, suggesting that people viewed the country's impact and influence positively.\n\nPlease note: The interpretation of this number assumes it represents a standardized scale where 0.774229228 corresponds to a positive sentiment score.",
+    "sql_execution_time": 0.0457,
+    "nlp_generation_time": 6.6642,
+    "total_time": 6.7099,
+    "source_file": "question_1.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:34:39"
+}

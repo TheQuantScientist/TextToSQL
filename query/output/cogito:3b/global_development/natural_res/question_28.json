@@ -1,0 +1,13 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT country_code, country_name, income_group, human_development_composite, global_development_resilience_index FROM global_development_indicators WHERE income_group = 'high' AND is_pandemic_period IS FALSE LIMIT 50;",
+    "raw_results": "Error: argument of IS FALSE must be type boolean, not type double precision\nLINE 1: ...opment_indicators WHERE income_group = 'high' AND is_pandemi...\n                                                             ^\n",
+    "answer": "I apologize, but I don't have enough information from the query results to provide a meaningful comparison. The error message indicates that there's an issue with how the data is being handled in the database.\n\nHowever, based on standard economic indicators and common comparisons:\n\nHigh-income groups typically show higher Economic Opportunity Index (EOI) scores compared to middle-income groups. Middle-income groups often score more than lower-income groups but are generally lower than high-income groups due to their access to fewer resources and opportunities.\n\nComparing these groups to the world as a whole would likely show that:\n\n1. High-income group EOI scores are generally higher than those of middle-income groups, indicating more access to economic opportunities.\n2. Middle-income group EOI scores are typically lower than high-income but higher than some developing economies in the \"world\" category.\n\nTo provide accurate comparisons between these groups and the world, we would need complete data for all three categories that can be properly analyzed using statistical methods.",
+    "sql_execution_time": 0.0433,
+    "nlp_generation_time": 14.758,
+    "total_time": 14.8013,
+    "source_file": "question_28.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:32:05"
+}

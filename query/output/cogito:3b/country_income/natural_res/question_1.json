@@ -1,0 +1,13 @@
+{
+    "question": "What is the gini recalculated of Vietnam in 2015?",
+    "query": "SELECT gini_recalculated FROM country_income WHERE ref LIKE 'vnm2015%';",
+    "raw_results": "| gini_recalculated |\n| --- |\n| 0.367990661 |\n| 0.367990661 |\n| 0.367990661 |\n| 0.367990661 |\n| 0.367990661 |\n| 0.367990661 |\n| 0.367990661 |\n| 0.367990661 |\n| 0.367990661 |\n| 0.367990661 |",
+    "answer": "Based on the query results, the Gini coefficient recalculated for Vietnam in 2015 is consistently 0.36799 (rounded to 5 decimal places).\n\nThis indicates that in 2015, Vietnam had a moderate level of income inequality, with a Gini coefficient falling between 0.36 and 0.37. For context, a Gini coefficient of 0.36799 represents a relatively low level of economic inequality compared to many other countries.\n\nSummary: Vietnam's Gini recalculated in 2015 is 0.36799.",
+    "sql_execution_time": 0.0379,
+    "nlp_generation_time": 12.0674,
+    "total_time": 12.1053,
+    "source_file": "question_1.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:53:20"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT gdi.green_transition_score FROM global_development_indicators AS gdi WHERE gdi.income_group = 'Lower Middle Income' AND gdi.year = 2020 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results, which indicate that no records were found for the analysis requested, I cannot provide an answer to what was specifically asked about the \"green transition score\" for the lower middle-income group in 2020.\n\nHowever, if you could provide additional context or clarify what data is available (such as specific categories of consumption patterns, technological adoption rates, or economic indicators), I would be better equipped to help analyze the relationship between these variables and greenhouse gas emissions.",
+    "sql_execution_time": 0.0465,
+    "nlp_generation_time": 7.329,
+    "total_time": 7.3755,
+    "source_file": "question_9.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:34:32"
+}

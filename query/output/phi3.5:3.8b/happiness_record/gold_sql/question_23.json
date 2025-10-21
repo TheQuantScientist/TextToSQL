@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
     "query": "SELECT    regional_indicator,    AVG(life_ladder) AS avg_life_ladder FROM    world_happiness_report WHERE    regional_indicator IN ('Asia', 'Europe') GROUP BY    regional_indicator ORDER BY    avg_life_ladder DESC LIMIT 2;",
     "generation_time": 5.0423
+=======
+{
+    "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+    "query": "SELECT     regional_indicator,     AVG(life_ladder) AS avg_life_ladder FROM     world_happiness_report WHERE     regional_indicator IN ('Asia', 'Europe') GROUP BY     regional_indicator ORDER BY     avg_life_ladder DESC LIMIT 50;",
+    "generation_time": 1.013
+>>>>>>> Stashed changes
 }

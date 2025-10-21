@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "Does government debt effect GDP growth? Analyze the given data and recommend policymakers on how to create positive gdp growth",
     "query": "SELECT    gdp_growth,    government_debt,    AVG(gdp_growth) OVER (PARTITION BY government_debt < 50) AS avg_gdp_growth_low_debt,   AVG(gdp_growth) OVER (PARTITION BY government_debt >= 50) AS avg_gdp_growth_high_debt FROM    finance_economics_dataset ORDER BY    government_debt LIMIT 50;  This query calculates the average GDP growth rate for low government debt (less than 50% of GDP) and high government debt (50% or more of GDP), which can help policymakers understand the relationship between government debt and GDP growth.",
     "generation_time": 7.55
+=======
+{
+    "question": "Does government debt effect GDP growth? Analyze the given data and recommend policymakers on how to create positive gdp growth",
+    "query": "SELECT     date,     government_debt,     gdp_growth FROM finance_economics_dataset ORDER BY date LIMIT 50;",
+    "generation_time": 6.4276
+>>>>>>> Stashed changes
 }

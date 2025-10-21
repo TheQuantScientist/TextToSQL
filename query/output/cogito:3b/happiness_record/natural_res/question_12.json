@@ -1,0 +1,13 @@
+{
+    "question": "What is the average life ladder of Asia countries in 2022?",
+    "query": "SELECT AVG(\"life_ladder\") AS avg_life_ladder FROM world_happiness_report WHERE regional_indicator = 'Asia' AND year = 2022 LIMIT 50;",
+    "raw_results": "| avg_life_ladder |\n| --- |\n| None |",
+    "answer": "I apologize, but I cannot provide an accurate answer about the average life ladder of Asian countries in 2022. The query results show \"None\" for this metric, which means there is insufficient data available to calculate or report a meaningful average.\n\nIf you have specific country-level data or additional metrics that could help quantify Asia's regional performance on life ladders, I would be happy to assist with those figures instead.",
+    "sql_execution_time": 0.0398,
+    "nlp_generation_time": 7.6134,
+    "total_time": 7.6532,
+    "source_file": "question_12.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:43:27"
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Low interest rate leads to risky money flow into stock and consumer spending. Evaluate the data to verify the accuracy of this statement. ",
+    "query": "SELECT      SUM(CASE WHEN interest_rate < 0 THEN trading_volume ELSE 0 END) AS low_interest_rate_trading_volume,     SUM(CASE WHEN interest_rate < 0 THEN consumer_spending ELSE 0 END) AS low_interest_rate_consumer_spending,     AVG(open_price) OVER (WHERE interest_rate < 0),     AVG(close_price) OVER (WHERE interest_rate < 0) FROM finance_economics_dataset LIMIT 50;",
+    "generation_time": 3.2646
+}

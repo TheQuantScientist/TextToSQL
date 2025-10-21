@@ -1,0 +1,13 @@
+{
+    "question": "What is the growth rate of gini recalculated of Vietnam for each year?",
+    "query": "SELECT ref, CASE WHEN gcam_region_id = 116 THEN gini_recalculated ELSE NULL END AS gini_recalculated_growth_rate FROM country_income WHERE iso LIKE 'viet' AND data_source IS NOT NULL AND gcam_region_id IN (0, 1) AND gini_recalculated IS NOT NULL LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results, I am unable to determine the Gini coefficient growth rates for Vietnam over different years. The system did not return any data, likely because there were no records available in its database related to this specific analysis.\n\nTo proceed with answering your question, we would need either historical Gini coefficient data for Vietnam or more detailed information about which specific datasets or time periods you are interested in analyzing. Please provide additional context or specify the data you'd like me to analyze if possible.",
+    "sql_execution_time": 0.068,
+    "nlp_generation_time": 8.7113,
+    "total_time": 8.7793,
+    "source_file": "question_19.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:54:54"
+}

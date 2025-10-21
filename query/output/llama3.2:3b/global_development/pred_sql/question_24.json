@@ -1,0 +1,5 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT      country_name,     year,     digital_connectivity_index FROM      global_development_indicators WHERE      region = 'South Asia' OR region = 'Europe' GROUP BY      country_name, year HAVING      SUM(digital_connectivity_index) OVER (PARTITION BY region ORDER BY AVG(digital_connectivity_index)) > 0",
+    "generation_time": 6.6465
+}

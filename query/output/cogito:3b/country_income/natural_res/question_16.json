@@ -1,0 +1,13 @@
+{
+    "question": "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
+    "query": "SELECT SUM(gini_reported) AS total_net_income FROM country_income WHERE ref LIKE 'vnm2015%' AND category BETWEEN 'd5' AND 'd9' LIMIT 50;",
+    "raw_results": "| total_net_income |\n| --- |\n| 1.82345495 |",
+    "answer": "The total net income for the Vietnam groups (d5 to d9) in 2015 was approximately $1.82 million.\n\nThis figure represents a significant portion of Vietnam's overall economic performance during that year, reflecting strong business activity across these segments of the market.",
+    "sql_execution_time": 0.0586,
+    "nlp_generation_time": 5.1077,
+    "total_time": 5.1663,
+    "source_file": "question_16.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:54:27"
+}

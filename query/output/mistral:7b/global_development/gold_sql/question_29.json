@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "Is the weather vulnerability related to the child mortality in high income country?",
     "query": "SELECT country_name, climate_vulnerability_index, child_mortality FROM global_development_indicators WHERE income_group = 'High income' ORDER BY climate_vulnerability_index, child_mortality LIMIT 50;",
     "generation_time": 10.9718
+=======
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT     country_name,     year,     climate_vulnerability_index,     child_mortality FROM     global_development_indicators WHERE     income_group = 'High income'     AND climate_vulnerability_index IS NOT NULL     AND child_mortality IS NOT NULL LIMIT 50;",
+    "generation_time": 9.4765
+>>>>>>> Stashed changes
 }

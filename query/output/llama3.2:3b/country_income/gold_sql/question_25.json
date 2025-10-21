@@ -1,0 +1,5 @@
+{
+    "question": "The financial crisis happened in 2008. Evaluate the income inequality before and after the event in US.",
+    "query": "SELECT     CASE          WHEN year < 2008 THEN 'before'         ELSE 'after'     END AS period,     AVG(gini_reported)",
+    "generation_time": 5.8478
+}

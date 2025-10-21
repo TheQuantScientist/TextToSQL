@@ -1,0 +1,5 @@
+{
+    "question": "What country has the longest period of deflation? Deflation is known as when the inflation is negative",
+    "query": "SELECT country_name FROM global_development_indicators WHERE inflation_rate < 0 LIMIT 50;",
+    "generation_time": 2.0179
+}

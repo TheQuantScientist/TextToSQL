@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "Does lack of social support lead to higher negative affect over years?",
     "query": "SELECT    year,    AVG(social_support) AS avg_social_support,    AVG(negative_affect) AS avg_negative_affect FROM    world_happiness_report GROUP BY    year ORDER BY    year LIMIT 50;",
     "generation_time": 3.8763
+=======
+{
+    "question": "Does lack of social support lead to higher negative affect over years?",
+    "query": "SELECT     year,     CORR(social_support, negative_affect) AS correlation_social_support_negative_affect FROM     world_happiness_report GROUP BY     year ORDER BY     year LIMIT 50;",
+    "generation_time": 5.3699
+>>>>>>> Stashed changes
 }

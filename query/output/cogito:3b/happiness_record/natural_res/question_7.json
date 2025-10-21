@@ -1,0 +1,13 @@
+{
+    "question": "What is the generiosity score of Singapore in 2022?",
+    "query": "SELECT country_name, generosity FROM world_happiness_report WHERE country_name = 'Singapore' AND year = 2022 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "The generated text does not contain any specific data regarding a \"generosity score\" for Singapore in the year 2022. While there are many indicators that measure social well-being and quality of life metrics, such as GNI per capita or Human Development Index values, these do not directly translate into a standardized \"generosity score.\" Therefore, it is impossible to provide a definitive answer based solely on the given query results. If you could specify which organization or institution produces this particular generiosity score, we might have more options for research and data collection to support your question.",
+    "sql_execution_time": 0.0411,
+    "nlp_generation_time": 9.3514,
+    "total_time": 9.3925,
+    "source_file": "question_7.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:50:06"
+}

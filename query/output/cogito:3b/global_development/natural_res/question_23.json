@@ -1,0 +1,13 @@
+{
+    "question": "Explain for me the correlations of human development index and gdp per capita",
+    "query": "SELECT country_code, country_name, year, calculated_gdp_per_capita, life_expectancy, healthcare_capacity_index, global_development_resilience_index FROM global_development_indicators WHERE is_pandemic_period = FALSE LIMIT 50;",
+    "raw_results": "Error: operator does not exist: double precision = boolean\nLINE 1: ...l_development_indicators WHERE is_pandemic_period = FALSE LI...\n                                                             ^\nHINT:  No operator matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I apologize, but I notice that the query results appear to be incomplete or corrupted (indicated by the error message). However, as a data analyst expert, let me explain how correlations between Human Development Index (HDI) and GDP per capita typically work.\n\nIn general, there is a positive correlation between HDI and GDP per capita. This means that:\n- Countries with higher GDP per capita tend to have higher human development levels\n- When we plot these variables against each other, the points generally form a positive trend line\n\nThis relationship makes sense because:\n1. Higher GDP allows for better healthcare, education, and living standards (HDI components)\n2. Economic growth often enables investment in social services and infrastructure\n\nIf you'd like to examine this correlation more closely or get specific data points, I would need access to actual query results that show the relationships between these variables. Could you please provide those?",
+    "sql_execution_time": 0.1009,
+    "nlp_generation_time": 28.8146,
+    "total_time": 28.9155,
+    "source_file": "question_23.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:24:16"
+}

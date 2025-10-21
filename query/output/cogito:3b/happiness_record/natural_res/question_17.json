@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "SELECT COUNT(*) AS country_count FROM world_happiness_report WHERE generosity > ( SELECT AVG(generosity) OVER () FROM world_happiness_report ) LIMIT 50;",
+    "raw_results": "Error: more than one row returned by a subquery used as an expression\n",
+    "answer": "I apologize, but I'm unable to provide a definitive answer based on the query results you've provided. The error message indicates that there might be multiple rows of data in your subquery, which could lead to inconsistent or unclear comparisons.\n\nHowever, if we were working with clean query results showing average generiosity values over time for various countries and the world's average, I would analyze it as follows:\n\nThe query appears to have encountered an issue related to subquery usage. To properly answer this question about comparing country averages to global trends, we would need:\n\n1. A clear breakdown of each country's average generosity across multiple years\n2. The corresponding worldwide generiosity averages\n3. An accurate method for calculating and comparing these values\n\nIf you could provide the query results without any subquery issues, I'd be happy to analyze them in detail and provide a comprehensive answer.\n\nWould you like me to help rephrase or restructure the query to resolve this error?",
+    "sql_execution_time": 0.0481,
+    "nlp_generation_time": 16.7646,
+    "total_time": 16.8127,
+    "source_file": "question_17.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:44:26"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Ratio of days having negative gdp growth to total days",
+    "query": "SELECT CASE WHEN daily_gdp_growth < 0 THEN 1 ELSE 0 END AS has_negative_gdp FROM finance_economics_dataset LIMIT 50;",
+    "raw_results": "Error: column \"daily_gdp_growth\" does not exist\nLINE 1: SELECT CASE WHEN daily_gdp_growth < 0 THEN 1 ELSE 0 END AS h...\n                         ^\n",
+    "answer": "I apologize, but I cannot provide a ratio of negative GDP days to total days because the query results indicate that the required column \"daily_gdp_growth\" does not exist in the dataset. The provided SQL statement is also incorrectly formatted and will generate an error. Therefore, it's impossible to calculate or report on this metric using the given data.\n\nIf you could provide the correct column name for GDP growth data, I would be happy to assist with calculating the ratio of negative days to total days.",
+    "sql_execution_time": 0.0686,
+    "nlp_generation_time": 8.2846,
+    "total_time": 8.3532,
+    "source_file": "question_14.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:09:14"
+}

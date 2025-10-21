@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+    "query": "SELECT regional_indicator, year, healthy_life_expectancy_at_birth FROM world_happiness_report WHERE regional_indicator IN ('Europe', 'North America') LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "After analyzing the query results, I must inform you that there were no records found. This means that the data for Healthy Life Expectancy (HLE) at birth is not available in the database or system.\n\nTo provide a meaningful analysis of trends by region, we would need the actual HLE data. If you could please share the dataset containing HLE values for these regions and years, I would be happy to help you analyze the trend patterns.\n\nFor now, I can only confirm that the query was unsuccessful due to the absence of record data in our system.",
+    "sql_execution_time": 0.0703,
+    "nlp_generation_time": 9.2453,
+    "total_time": 9.3156,
+    "source_file": "question_26.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:47:45"
+}

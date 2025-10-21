@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have gini recalculated lower than the world average in 2015?",
+    "query": "SELECT COUNT(*) FROM country_income WHERE year = 2015 AND gini_recalculated < (SELECT AVG(gini_recalculated) FROM country_income WHERE iso LIKE 'afg%' OR data_source LIKE '%GIKI%');",
+    "raw_results": "| count |\n| --- |\n| 210 |",
+    "answer": "Based on the query results, there were 210 countries that recalculted their Gini coefficients to be lower than the global average in 2015. This suggests a significant number of nations either revising their previous calculations or implementing new methodologies for measuring income inequality during this year.",
+    "sql_execution_time": 0.0719,
+    "nlp_generation_time": 4.8789,
+    "total_time": 4.9508,
+    "source_file": "question_14.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:54:11"
+}

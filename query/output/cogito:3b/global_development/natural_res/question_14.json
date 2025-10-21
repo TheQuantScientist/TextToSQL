@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest health expenditure per capita in 2020?",
+    "query": "SELECT country_name, gdp_per_capita, calculated_gdp_per_capita, real_economic_growth_indicator FROM global_development_indicators WHERE year = 2020 AND income_group = 'Upper-middle-income' LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results which indicate that no records were found regarding health expenditure per capita data for any country in 2020, I cannot determine which country had the highest health expenditure that year.\n\nIf you need to analyze this information, it would be helpful to have access to actual data from reliable sources such as the World Health Organization (WHO), OECD Health Statistics, or other authoritative databases. Would you like assistance with retrieving this data from a specific source?",
+    "sql_execution_time": 0.0425,
+    "nlp_generation_time": 8.3388,
+    "total_time": 8.3813,
+    "source_file": "question_14.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:19:16"
+}

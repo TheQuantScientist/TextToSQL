@@ -1,0 +1,5 @@
+{
+    "question": "The annual consumer spending from 2000 to 2008",
+    "query": "SELECT      DATE_TRUNC('year', date)::date AS year,     SUM(consumer_spending) AS total_consumer_spending FROM finance_economics_dataset WHERE date >= DATE '2000-01-01'   AND date <= DATE '2008-12-31' GROUP BY year ORDER BY year LIMIT 50;",
+    "generation_time": 1.0141
+}

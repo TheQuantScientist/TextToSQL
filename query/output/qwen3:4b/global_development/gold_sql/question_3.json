@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "What is the human development index score of Vietnam in 2019?",
     "query": "SELECT human_development_index FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2019 LIMIT 50;",
     "generation_time": 0.6918
+=======
+{
+    "question": "What is the human development index score of Vietnam in 2019?",
+    "query": "SELECT human_development_index FROM global_development_indicators WHERE year = 2019   AND country_name = 'Vietnam' LIMIT 50;",
+    "generation_time": 0.856
+>>>>>>> Stashed changes
 }

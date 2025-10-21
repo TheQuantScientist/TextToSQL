@@ -1,0 +1,5 @@
+{
+    "question": "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+    "query": "WITH median_gdp AS (     SELECT percentile_cont(0.5) WITHIN GROUP (ORDER BY log_GDP_per_capital) AS med     FROM world_happiness_report ) SELECT      CASE",
+    "generation_time": 1.7347
+}

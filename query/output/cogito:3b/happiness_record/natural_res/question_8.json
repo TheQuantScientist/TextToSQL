@@ -1,0 +1,13 @@
+{
+    "question": "What is the Perceptions Of Corruption of Ecuador in 2008?",
+    "query": "SELECT perceptions_of_corruption, country_name, regional_indicator FROM world_happiness_report WHERE country_name = 'Ecuador' AND year = 2008 LIMIT 50;",
+    "raw_results": "| perceptions_of_corruption | country_name | regional_indicator |\n| --- | --- | --- |\n| 0.801256657 | Ecuador | Latin America and Caribbean |",
+    "answer": "Based on the query results, I can tell you that in 2008, Ecuador's Perception of Corruption index stood at 0.801, which is considered a relatively low level of perceived corruption in the country. This value corresponds to an above-average score for corruption perception, indicating that people had a generally positive view of how corrupt their government institutions were during that year.",
+    "sql_execution_time": 0.0446,
+    "nlp_generation_time": 6.0575,
+    "total_time": 6.1021,
+    "source_file": "question_8.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:50:12"
+}

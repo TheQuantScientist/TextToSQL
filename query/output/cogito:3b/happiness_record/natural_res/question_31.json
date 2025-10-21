@@ -1,0 +1,13 @@
+{
+    "question": "How differences in Confidence In National Government score comparing all the regions? Evaluate the importance of governance trust on positive affects.",
+    "query": "SELECT regional_indicator, SUM(confidence_in_national_government::numeric) / 50 * 100 AS avg_confidence FROM world_happiness_report GROUP BY regional_indicator ORDER BY regional_indicator; LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"LIMIT\"\nLINE 1: ...BY regional_indicator ORDER BY regional_indicator; LIMIT 50;\n                                                              ^\n",
+    "answer": "I apologize, but I'm unable to see any actual query results in your message. The system appears to have a syntax error that prevents it from displaying the data.\n\nHowever, I can provide a general framework for analyzing differences in Confidence In National Government scores across regions and their relationship to governance trust:\n\n1. Regional Comparison:\n- Break down Confidence In National Government scores by region\n- Use statistical methods (like ANOVA or t-tests) to compare regional means\n\n2. Governance Trust Impact:\n- Examine the correlation between confidence in national government and positive outcomes (e.g., social cohesion, economic growth)\n- Consider multiple regression analysis to control for other variables\n\nPlease provide the actual query results so I can help analyze them effectively.\n\nWould you like me to suggest a specific approach to analyzing these regional differences?",
+    "sql_execution_time": 0.0739,
+    "nlp_generation_time": 13.0736,
+    "total_time": 13.1475,
+    "source_file": "question_31.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:49:39"
+}

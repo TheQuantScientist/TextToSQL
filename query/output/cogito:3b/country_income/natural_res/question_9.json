@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita, population and gini coefficient of Vietnam in 2010?",
+    "query": "SELECT country AS country_name, ref AS reference_key, population, gini_reported AS reported_gini FROM \"country_income\" WHERE iso = 'vnm' AND year = 2010 LIMIT 50;",
+    "raw_results": "| country_name | reference_key | population | reported_gini |\n| --- | --- | --- | --- |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |",
+    "answer": "Based on the query results, here are the requested statistics for Vietnam in 2010:\n\n- GDP per capita: The exact GDP per capita figure is not directly provided, but based on Vietnam's population and reported Gini coefficient, we can estimate it.\n- Population: Vietnam had a population of 87.676.56 million people (approximately 87.7 million) in 2010.\n\n- Gini Coefficient: According to the query results, the Gini coefficient for Vietnam in 2010 was 0.4094905, which indicates a relatively low level of income inequality in that year.\n\nIt's worth noting that while GDP per capita is not directly provided in the results, we can infer it from the population and Gini coefficient data using standard economic formulas if needed for further analysis.",
+    "sql_execution_time": 0.0965,
+    "nlp_generation_time": 16.6947,
+    "total_time": 16.7912,
+    "source_file": "question_9.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T10:00:47"
+}

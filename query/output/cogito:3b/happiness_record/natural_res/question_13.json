@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average long gdp per capita through years?",
+    "query": "SELECT country_name, SUM(log_GDP_per_capital) OVER ( PARTITION BY regional_indicator ORDER BY year DESC ) AS avg_long_gdp_per_capita FROM world_happiness_report WHERE log_GDP_per_capital IS NOT NULL GROUP BY country_name, regional_indicator LIMIT 50;",
+    "raw_results": "Error: column \"world_happiness_report.log_gdp_per_capital\" must appear in the GROUP BY clause or be used in an aggregate function\nLINE 1: SELECT country_name, SUM(log_GDP_per_capital) OVER ( PARTITI...\n                                 ^\n",
+    "answer": "Based on the query results, I am unable to directly answer which country has the highest average long GDP per capita through years. The error message indicates that there is a column name \"world_happiness_report.log_gdp_per_capital\" missing from the GROUP BY clause or aggregate function.\n\nHowever, if you could provide me with the complete query and data structure (including the table schema), I would be able to help analyze this further.\n\nWould you like to try running the query again with a corrected column name?",
+    "sql_execution_time": 0.0335,
+    "nlp_generation_time": 8.9361,
+    "total_time": 8.9696,
+    "source_file": "question_13.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:43:36"
+}

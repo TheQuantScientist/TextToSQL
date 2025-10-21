@@ -1,0 +1,13 @@
+{
+    "question": "The date, stock index on which stock index reached the highest Daily High",
+    "query": "SELECT finance_economics_dataset.date, finance_economics_dataset.stock_index, MAX(finance_economics_dataset.daily_high) AS max_daily_high FROM finance_economics_dataset GROUP BY finance_economics_dataset.date, finance_economics_dataset.stock_index ORDER BY finance_economics_dataset.max_daily_high DESC LIMIT 50;",
+    "raw_results": "Error: column finance_economics_dataset.max_daily_high does not exist\nLINE 1: ...e, finance_economics_dataset.stock_index ORDER BY finance_ec...\n                                                             ^\n",
+    "answer": "I apologize for the error in my previous analysis. Based on the provided query results, I cannot accurately determine which stock index reached its highest Daily High value due to the missing column \"max_daily_high\" from the dataset.\n\nHowever, if you provide me with the complete dataset or any available information about specific stocks' daily highs and their corresponding dates, I would be able to help analyze this question more effectively.",
+    "sql_execution_time": 0.0376,
+    "nlp_generation_time": 6.6043,
+    "total_time": 6.6419,
+    "source_file": "question_5.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:16:35"
+}

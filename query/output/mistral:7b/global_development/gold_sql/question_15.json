@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "How many countries are in lower middle income group as in 2020?",
     "query": "SELECT COUNT(DISTINCT country_name) FROM global_development_indicators WHERE year = 2020 AND income_group = 'Lower middle income';",
     "generation_time": 9.8401
+=======
+{
+    "question": "How many countries are in lower middle income group as in 2020?",
+    "query": "SELECT COUNT(DISTINCT country_name) AS lower_middle_income_countries FROM global_development_indicators WHERE year = 2020   AND income_group = 'Lower middle income' LIMIT 50;",
+    "generation_time": 10.3753
+>>>>>>> Stashed changes
 }

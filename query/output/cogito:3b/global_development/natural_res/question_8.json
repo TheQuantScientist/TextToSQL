@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita of OECD group in 2019?",
+    "query": "SELECT SUM(gdp_per_capita) AS total_gdp_per_capita FROM global_development_indicators WHERE year = 2019 AND region = 'OECD'; LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"LIMIT\"\nLINE 1: ..._indicators WHERE year = 2019 AND region = 'OECD'; LIMIT 50;\n                                                              ^\n",
+    "answer": "I apologize, but I don't see any actual query results provided. However, based on the error message you received, it appears that there might be a syntax issue with your SQL query. The error indicates that there's a syntax error around \"LIMIT\" at line 1 of your code.\n\nCould you please check and correct:\n\n1. Your SQL syntax (specifically the LIMIT clause)\n2. If you're missing any required parameters or identifiers\n3. That all column names are correctly spelled\n\nOnce you fix these issues, I'll be happy to help answer your question about GDP per capita for OECD countries in 2019 using the corrected query results.\n\nIf you'd like to share specific results that show the GDP per capita data, I can then provide a more detailed and accurate response based on those numbers.",
+    "sql_execution_time": 0.0416,
+    "nlp_generation_time": 12.2664,
+    "total_time": 12.308,
+    "source_file": "question_8.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:34:25"
+}

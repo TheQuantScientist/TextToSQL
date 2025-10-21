@@ -1,0 +1,5 @@
+{
+    "question": "venture capital funding is private fundraising, wheras stock index activities is public fundraising. Which fundraising channel is more active in US, explain the reasons",
+    "query": "SELECT T1.stock_index, COUNT(T1.stock_index) AS num_public_fundings FROM finance_economics_dataset AS T1 JOIN finance_economics_dataset AS T2 ON T1.stock_index = T2.stock_index WHERE T1.date > T2.date AND T1.`stock index` IN (   SELECT stock_index    FROM finance_economics_dataset    WHERE `stock index` LIKE '%US%' ) GROUP BY T1.stock_index",
+    "generation_time": 3.5067
+}

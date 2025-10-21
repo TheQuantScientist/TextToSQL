@@ -1,0 +1,13 @@
+{
+    "question": "What is the economic opportunity index of indebt countries group in 2020?",
+    "query": "SELECT econ_opportunity_index FROM global_development_indicators WHERE country_code = 'IND' AND year = 2020 LIMIT 50;",
+    "raw_results": "| econ_opportunity_index |\n| --- |\n| 681.6754537946323 |",
+    "answer": "The Economic Opportunity Index (EOI) for the Indebted Countries Group in 2020 was approximately 682, indicating a high level of economic opportunity relative to other countries or groups.\n\nThis index provides an overall measure of the economic opportunities available within a country or group, with higher values suggesting better conditions. The relatively high EOI score indicates that these countries generally have favorable economic prospects and opportunities for their citizens.",
+    "sql_execution_time": 0.043,
+    "nlp_generation_time": 6.2312,
+    "total_time": 6.2742,
+    "source_file": "question_7.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:34:12"
+}

@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "Are countries with higher long gdp per capita likely to have higher positive effect over years? Comparing the data to evaluate",
     "query": "SELECT    year,    AVG(log_GDP_per_capital) AS avg_log_GDP_per_capital,    AVG(positive_affect) AS avg_positive_affect FROM    world_happiness_report GROUP BY    year ORDER BY    year LIMIT 50;",
     "generation_time": 4.8215
+=======
+{
+    "question": "Are countries with higher long gdp per capita likely to have higher positive effect over years? Comparing the data to evaluate",
+    "query": "SELECT     country_name,     year,     log_GDP_per_capital,     positive_affect FROM world_happiness_report ORDER BY log_GDP_per_capital DESC, year LIMIT 50;",
+    "generation_time": 6.6437
+>>>>>>> Stashed changes
 }

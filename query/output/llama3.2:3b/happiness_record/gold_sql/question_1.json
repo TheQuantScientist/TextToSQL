@@ -1,0 +1,5 @@
+{
+    "question": "What is the positive affect of US in 2008?",
+    "query": "SELECT positive_affect FROM world_happiness_report WHERE country_name = 'US'   AND year = 2008 LIMIT 50;",
+    "generation_time": 6.4392
+}

@@ -1,0 +1,5 @@
+{
+    "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+    "query": "SELECT DISTINCT country_name, life_ladder FROM world_happiness_report WHERE regional_indicator IN ('Asia', 'Europe') ORDER BY life_ladder DESC LIMIT 50;",
+    "generation_time": 2.6821
+}

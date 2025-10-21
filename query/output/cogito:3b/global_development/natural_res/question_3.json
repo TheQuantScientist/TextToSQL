@@ -1,0 +1,13 @@
+{
+    "question": "What is the human development index score of Vietnam in 2019?",
+    "query": "SELECT global_development_indicators.human_development_composite FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2019; limit 1;",
+    "raw_results": "Error: syntax error at or near \"limit\"\nLINE 1: ...ors WHERE country_name = 'Vietnam' AND year = 2019; limit 1;\n                                                               ^\n",
+    "answer": "I apologize, but I cannot provide a specific answer based on the query results. The query appears to be malformed due to a syntax error in the LIMIT clause.\n\nIf you're trying to access data about Vietnam's human development index score for the year 2019, I would need a corrected SQL query with proper syntax for limiting results to a single record. Could you please provide the correct query?",
+    "sql_execution_time": 0.0422,
+    "nlp_generation_time": 5.9497,
+    "total_time": 5.9919,
+    "source_file": "question_3.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:32:34"
+}

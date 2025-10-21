@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "The annual average venture capital funding by year",
     "query": "SELECT      EXTRACT(YEAR FROM date) AS year,      AVG(venture_capital_funding) AS avg_vc_funding FROM      finance_economics_dataset GROUP BY      year ORDER BY      year LIMIT 50;",
     "generation_time": 5.8593
+=======
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT EXTRACT(YEAR FROM date) AS year,        AVG(venture_capital_funding) AS avg_venture_capital_funding FROM finance_economics_dataset GROUP BY year ORDER BY year LIMIT 50;",
+    "generation_time": 6.3185
+>>>>>>> Stashed changes
 }

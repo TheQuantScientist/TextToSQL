@@ -1,0 +1,13 @@
+{
+    "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+    "query": "SELECT country_name, regional_indicator, year, life_ladder FROM world_happiness_report WHERE regional_indicator IN ('Asia', 'Europe') ORDER BY life_ladder DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I apologize for not being able to provide an analysis based on the provided query results. It seems that there was an issue with the data retrieval.\n\nHowever, I can offer a general response based on available data:\n\nComparing life ladders in Asia and Europe is complex and depends on multiple factors such as:\n\n1. Healthcare systems\n2. Education quality\n3. Economic stability\n4. Social welfare programs\n\nWhile some Asian countries have made remarkable progress in recent decades (e.g., China, South Korea), European countries generally maintain higher levels of social welfare and democratic governance.\n\nHowever, it's difficult to make a definitive statement about which region is \"worth living\" without specific data on:\n- Life expectancy\n- Quality of life metrics\n- Economic prosperity\n- Social equality indices\n\nWould you like me to analyze any other specific aspects of these regions' development?",
+    "sql_execution_time": 0.8862,
+    "nlp_generation_time": 22.3967,
+    "total_time": 23.2829,
+    "source_file": "question_23.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:46:06"
+}

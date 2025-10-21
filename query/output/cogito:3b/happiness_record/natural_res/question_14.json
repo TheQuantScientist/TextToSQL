@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the lowest average social support score over years?",
+    "query": "SELECT country_name, AVG(log_social_support) as avg_social_support FROM world_happiness_report GROUP BY country_name HAVING AVG(log_social_support) = ( SELECT MIN(AVG(log_social_support)) FROM world_happiness_report ) LIMIT 50;",
+    "raw_results": "Error: column \"log_social_support\" does not exist\nLINE 1: SELECT country_name, AVG(log_social_support) as avg_social_s...\n                                 ^\n",
+    "answer": "Based on the provided query results and error message, I cannot determine which country has the lowest average social support score over years. The query is missing the required column \"log_social_support\" due to an error in the SQL syntax.\n\nTo answer this question accurately, we would need a complete and correct query that includes both the country_name column and calculates the average of log_social_support scores for each country over time. Without this information, it's impossible to provide a meaningful response about the lowest-averaging social support score across countries.",
+    "sql_execution_time": 0.0395,
+    "nlp_generation_time": 10.1448,
+    "total_time": 10.1843,
+    "source_file": "question_14.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:43:46"
+}

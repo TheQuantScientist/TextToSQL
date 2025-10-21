@@ -1,0 +1,13 @@
+{
+    "question": "The date where trading volumne is the largest",
+    "query": "SELECT date, stock_index, open_price AS open_price, close_price AS close_price, daily_high AS daily_high, daily_low AS daily_low, trading_volume, gdp_growth, inflation_rate, unemployment_rate, interest_rate, consumer_confidence_index, government_debt, corporate_profits FROM finance_economics_dataset WHERE trading_volume = ( SELECT MAX(trading_volume) FROM finance_economics_dataset ) LIMIT 50;",
+    "raw_results": "| date | stock_index | open_price | close_price | daily_high | daily_low | trading_volume | gdp_growth | inflation_rate | unemployment_rate | interest_rate | consumer_confidence_index | government_debt | corporate_profits |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2001-10-03 | S&P 500 | 2192.21 | 2199.49 | 2240.85 | 2142.9 | 999977078 | 6.05 | 8.58 | 12.2 | 6.89 | 101.0 | 16353.0 | 1943.0 |",
+    "answer": "The largest trading volume was recorded on October 3, 2001, when the S&P 500 index closed at 2199.49 and reached a daily high of 2240.85.\n\nThis represents a significant day in the market with:\n\n- Trading Volume: 999,977,078 shares\n- Daily High Price: $2,240.85\n- Stock Index Value: 2199.49",
+    "sql_execution_time": 0.0696,
+    "nlp_generation_time": 9.096,
+    "total_time": 9.1656,
+    "source_file": "question_8.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:17:52"
+}

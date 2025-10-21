@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "What is the green transition score of lower middle income group in 2020?",
     "query": "SELECT green_transition_score FROM global_development_indicators WHERE income_group = 'Lower middle income' AND year = 2020 LIMIT 50;",
     "generation_time": 9.9581
+=======
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT     country_name,     green_transition_score FROM     global_development_indicators WHERE     year = 2020     AND income_group = 'Lower middle income' LIMIT 50;",
+    "generation_time": 9.3506
+>>>>>>> Stashed changes
 }

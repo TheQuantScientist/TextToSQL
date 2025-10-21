@@ -1,0 +1,13 @@
+{
+    "question": "What is the life ladder of Vietnam in 2022?",
+    "query": "SELECT country_name, life_ladder FROM world_happiness_report WHERE country_name = 'Vietnam' AND year = 2022 LIMIT 50;",
+    "raw_results": "| country_name | life_ladder |\n| --- | --- |\n| Vietnam | 6.266508579 |",
+    "answer": "Based on the provided query results, I can tell you that the Life Ladder (also known as Human Development Index or HDI) for Vietnam in 2022 is approximately 6.27.\n\nThis value indicates a relatively high standard of living compared to other countries, placing Vietnam among the more developed nations globally. However, it's worth noting that this is just one metric and doesn't capture all aspects of national development and prosperity.\n\nWould you like me to explain what Life Ladder represents or provide any additional context?",
+    "sql_execution_time": 0.0493,
+    "nlp_generation_time": 8.7804,
+    "total_time": 8.8297,
+    "source_file": "question_2.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:44:58"
+}

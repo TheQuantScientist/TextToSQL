@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate for me the relationship between freedom to make choices and positive affect of Asia and North America countries. Explain the reasons.",
+    "query": "SELECT country_name, regional_indicator, year, life_ladder, social_support, healthy_life_expectancy_at_birth, freedom_to_make_life_choices, positive_affect, negative_affect, confidence_in_national_government FROM world_happiness_report WHERE (regional_indicator = 'Asia' OR regional_indicator = 'North America') AND year BETWEEN 2010 AND 2023 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results that indicate no records were found, I cannot evaluate or explain the relationship between freedom to make choices and positive affect in Asian and North American countries.\n\nHowever, if you would like me to analyze such a relationship using hypothetical data, please provide the necessary query results. Otherwise, this response is limited by the absence of actual data.\n\nIf you'd like to proceed with a new analysis or have specific datasets you'd like me to examine, please let me know and I'll be happy to assist further.",
+    "sql_execution_time": 0.0396,
+    "nlp_generation_time": 9.1932,
+    "total_time": 9.2328,
+    "source_file": "question_27.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:47:54"
+}

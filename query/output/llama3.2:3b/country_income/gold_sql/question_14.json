@@ -1,0 +1,5 @@
+{
+    "question": "How many countries have gini recalculated lower than the world average in 2015?",
+    "query": "SELECT COUNT(DISTINCT country) AS num_countries FROM country_income ci WHERE ci.year = 2015   AND ci.gini_recalculated < (         SELECT AVG(gini_recalculated)         FROM country_income         WHERE year = 2015       ) LIMIT 50;",
+    "generation_time": 1.5484
+}

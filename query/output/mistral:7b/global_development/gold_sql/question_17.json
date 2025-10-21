@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 {
     "question": "Which country has the lowest global resilience score?",
     "query": "SELECT country_name, global_development_resilience_index FROM global_development_indicators ORDER BY global_development_resilience_index ASC LIMIT 1;",
     "generation_time": 10.7994
+=======
+{
+    "question": "Which country has the lowest global resilience score?",
+    "query": "SELECT     country_name,     global_resilience_score FROM     global_development_indicators ORDER BY     global_resilience_score ASC LIMIT 1;",
+    "generation_time": 8.4802
+>>>>>>> Stashed changes
 }

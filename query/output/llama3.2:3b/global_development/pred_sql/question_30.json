@@ -1,0 +1,5 @@
+{
+    "question": "Do countries with high weather vulnerability score have higher green transition scores? Explain for me the implication",
+    "query": "SELECT      global_development_indicators.is_pandemic_period,     AVG(global_development_indicators.green_transition_score) AS avg_green_trans FROM      global_development_indicators GROUP BY      global_development_indicators.is_pandemic_period HAVING      COUNT(global_development_indicators.is_pandemic_period) > 50",
+    "generation_time": 6.2436
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the average positive affect of all countries in 2008?",
+    "query": "SELECT AVG(positive_affect) FROM world_happiness_report WHERE year = 2008 LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| 0.6528839230550461 |",
+    "answer": "The average positive affect for all countries in 2008 was 0.65, indicating a moderate level of positive emotions across nations during that year.\n\nNote: This response is based on the given query results and provides context to help interpret the data.",
+    "sql_execution_time": 0.0939,
+    "nlp_generation_time": 6.6199,
+    "total_time": 6.7138,
+    "source_file": "question_11.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:43:19"
+}

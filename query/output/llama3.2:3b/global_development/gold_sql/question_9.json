@@ -1,0 +1,5 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT     country_name,     green_transition_score FROM     global_development_indicators WHERE     year = 2020     AND income_group = 'Lower middle income' LIMIT 50;",
+    "generation_time": 9.3506
+}

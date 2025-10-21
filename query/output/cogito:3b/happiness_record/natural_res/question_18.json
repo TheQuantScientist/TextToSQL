@@ -1,0 +1,13 @@
+{
+    "question": "Which region has the highest average perceptions of corruption?",
+    "query": "SELECT regional_indicator, AVG(perceptions_of_corruption) AS avg_perception FROM world_happiness_report GROUP BY regional_indicator ORDER BY avg_perception DESC LIMIT 50;",
+    "raw_results": "| regional_indicator | avg_perception |\n| --- | --- |\n| Central and Eastern Europe | 0.8709147957385894 |\n| South Asia | 0.807924430197917 |\n| Sub-Saharan Africa | 0.7879775342847385 |\n| Latin America and Caribbean | 0.7845122361838002 |\n| Commonwealth of Independent States | 0.770348861494318 |\n| Middle East and North Africa | 0.7686763339857137 |\n| None | 0.7671247341320756 |\n| Southeast Asia | 0.7384625278959998 |\n| East Asia | 0.7166281647105263 |\n| Western Europe | 0.5585103714208747 |\n| North America and ANZ | 0.4527128221363635 |",
+    "answer": "Based on the query results, Central and Eastern Europe has the highest average perception of corruption at 0.87.\n\nThis is significantly higher than all other regions in the dataset, with South Asia being the next closest at 0.81. The data shows that perceptions of corruption are notably lower in Western Europe (0.55) and North America/ANZ (0.45) compared to these European regions.",
+    "sql_execution_time": 0.103,
+    "nlp_generation_time": 9.9295,
+    "total_time": 10.0325,
+    "source_file": "question_18.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-21T09:44:36"
+}
