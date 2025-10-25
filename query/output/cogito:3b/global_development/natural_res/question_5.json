@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of Europe region in 2008?",
+    "query": "SELECT SUM(CASE WHEN region = 'Europe' AND year = 2008 THEN unemployment_rate END) as europe_2008_unemployment FROM global_development_indicators LIMIT 50;",
+    "raw_results": "| europe_2008_unemployment |\n| --- |\n| None |",
+    "answer": "Based on the provided query results, I cannot determine the unemployment rate for the European region in 2008. The data shows \"None\" in the results table for that specific year and region combination.\n\nIf you have access to different time periods or a different breakdown of regions, please provide those updated results so I can assist you with calculating the unemployment rate.",
+    "sql_execution_time": 0.0438,
+    "nlp_generation_time": 5.6705,
+    "total_time": 5.7143,
+    "source_file": "question_5.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:36:05"
+}

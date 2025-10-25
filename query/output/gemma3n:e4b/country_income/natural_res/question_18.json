@@ -1,0 +1,13 @@
+{
+    "question": "Calculate the average gini of countries by region ID in 2015",
+    "query": "SELECT AVG(gini_reported) FROM country_income WHERE year = 2015 GROUP BY gcam_region_id LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| 0.314 |\n| 0.339 |\n| 0.44291236277777757 |\n| 0.30957968749999976 |\n| 0.3945871029999999 |\n| 0.3303953059999999 |\n| 0.2742195986666665 |\n| 0.49937 |\n| 0.49733499999999997 |\n| 0.3722947006666664 |\n| 0.4086324 |\n| 0.4787850000000001 |\n| 0.389266666666667 |\n| 0.43135099304347796 |\n| 0.3460624999999999 |\n| 0.295 |\n| 0.42526508539999924 |\n| 0.4307497104999999 |\n| 0.3940678324166667 |\n| 0.4053 |\n| 0.34822 |\n| 0.4405120318333334 |\n| 0.6496464 |\n| 0.27899999999999997 |\n| 0.502155 |\n| 0.327345217 |\n| 0.3567653118571423 |\n| 0.27683333333333343 |\n| 0.30581272727272724 |\n| 0.31689444888888885 |\n| 0.5098500000000001 |\n| 0.5195647301000005 |",
+    "answer": "Here's the average Gini coefficient for countries, broken down by region in 2015, based on the provided data:\n\n*   **0.314**\n*   **0.339**\n*   **0.4429**\n*   **0.3096**\n*   **0.3946**\n*   **0.3304**\n*   **0.2742**\n*   **0.4994**\n*   **0.4973**\n*   **0.3723**\n*   **0.4086**\n*   **0.4788**\n*   **0.3893**\n*   **0.4314**\n*   **0.3461**\n*   **0.295**\n*   **0.4253**\n*   **0.4307**\n*   **0.3941**\n*   **0.4053**\n*   **0.3482**\n*   **0.4405**\n*   **0.6496**\n*   **0.279**\n*   **0.5022**\n*   **0.3273**\n*   **0.3568**\n*   **0.2768**\n*   **0.3058**\n*   **0.3169**\n*   **0.5099**\n*   **0.5196**\n\n**Note:** The region ID is not provided in the data, so I cannot specify which region each Gini coefficient corresponds to.",
+    "sql_execution_time": 0.0759,
+    "nlp_generation_time": 54.495,
+    "total_time": 54.5709,
+    "source_file": "question_18.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-22T18:23:58"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the gini recalculated of Vietnam in 2015?",
+    "query": "SELECT gini_recalculated FROM country_income WHERE country = 'Vietnam' AND year = 2015;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm sorry, but I couldn't find any information about the recalculated Gini coefficient for Vietnam in 2015. The data I have doesn't include that specific record. \n\nIt's possible this data isn't publicly available or wasn't recorded in the datasets I have access to.",
+    "sql_execution_time": 0.0288,
+    "nlp_generation_time": 18.4719,
+    "total_time": 18.5007,
+    "source_file": "question_1.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-22T18:21:33"
+}

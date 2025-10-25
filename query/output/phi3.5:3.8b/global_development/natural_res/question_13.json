@@ -1,0 +1,13 @@
+{
+    "question": "How many countries has the gdp per capita lower than the world in 2019?",
+    "query": "SELECT COUNT(DISTINCT country_name) AS CountLessGDPPerCapitaThanWorld FROM global_development_indicators WHERE year = 2019 AND calculated_gdp_per_capita < ( SELECT AVG(calculated_gdp_per_capita) FROM global_development_indicators WHERE year = 2019 );",
+    "raw_results": "| countlessgdppercapitathanworld |\n| --- |\n| 182 |",
+    "answer": "In 2019, there were 182 countries whose GDP per capita was lower than the world average. This means that out of all nations globally assessed in terms of economic output relative to their population size for that year, these 182 countries had a smaller figure compared to the global mean.",
+    "sql_execution_time": 0.0533,
+    "nlp_generation_time": 2.9438,
+    "total_time": 2.9971,
+    "source_file": "question_13.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:29:54"
+}

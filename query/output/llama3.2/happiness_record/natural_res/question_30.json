@@ -1,0 +1,13 @@
+{
+    "question": "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+    "query": "SELECT T2.log_GDP_per_capital, T2.negative_affect FROM world_happiness_report AS T1 INNER JOIN ( SELECT AVG(log_GDP_per_capital) AS log_GDP_per_capital, MAX(negative_affect) AS max_negative_affect FROM world_happiness_report GROUP BY regional_indicator ) AS T2 ON T1.regional_indicator = T2.regional_indicator AND T1.log_GDP_per_capital = T2.log_GDP_per_capital LIMIT 50;",
+    "raw_results": "Error: column t2.regional_indicator does not exist\nLINE 1: ...onal_indicator ) AS T2 ON T1.regional_indicator = T2.regiona...\n                                                             ^\nHINT:  Perhaps you meant to reference the column \"t1.regional_indicator\".\n",
+    "answer": "It appears that there is an error in the query results, and we cannot proceed with the analysis. The error message indicates that the column 'regional_indicator' does not exist in the table.\n\nHowever, I can suggest a different approach to answer your question. We can analyze the relationship between GDP per capita and negative affects using other available data.\n\nCould you please provide me with more information about the data you have, such as the names of the columns and tables? I'll be happy to help you explore this topic further.",
+    "sql_execution_time": 0.0303,
+    "nlp_generation_time": 5.8437,
+    "total_time": 5.874,
+    "source_file": "question_30.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:19:13"
+}

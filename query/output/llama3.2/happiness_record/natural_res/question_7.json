@@ -1,0 +1,13 @@
+{
+    "question": "What is the generiosity score of Singapore in 2022?",
+    "query": "SELECT generosity FROM world_happiness_report WHERE country_name = 'Singapore' AND year = 2022 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I've checked our database, but unfortunately, we don't have any records on the generosity score for Singapore in 2022. It's possible that this data might not be available or up-to-date in our system. If you need more information or if there's anything else I can help you with, please let me know!",
+    "sql_execution_time": 0.0348,
+    "nlp_generation_time": 3.0767,
+    "total_time": 3.1115,
+    "source_file": "question_7.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:19:56"
+}

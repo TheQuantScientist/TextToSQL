@@ -1,0 +1,13 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT AVG(gdp_per_capita) FROM global_development_indicators WHERE year BETWEEN 2000 AND 2020;",
+    "raw_results": "| avg |\n| --- |\n| 13795.817995601936 |",
+    "answer": "Between 2000 and 2020, the world’s GDP per capita grew to an average of $13,795.82.",
+    "sql_execution_time": 0.0358,
+    "nlp_generation_time": 2.3003,
+    "total_time": 2.3361,
+    "source_file": "question_11.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:12:08"
+}

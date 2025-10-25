@@ -1,0 +1,13 @@
+{
+    "question": "Which year has the highest average consumer confidence index?",
+    "query": "SELECT EXTRACT(YEAR FROM date) AS year, AVG(consumer_confidence_index) AS average_consumer_confidence_index FROM finance_economics_dataset GROUP BY year ORDER BY average_consumer_confidence_index DESC LIMIT 50;",
+    "raw_results": "| year | average_consumer_confidence_index |\n| --- | --- |\n| 2007 | 86.18356164383562 |\n| 2008 | 86.12820512820512 |\n| 2003 | 86.0958904109589 |\n| 2002 | 85.48219178082192 |\n| 2006 | 85.23013698630137 |\n| 2005 | 85.00821917808219 |\n| 2001 | 84.45479452054795 |\n| 2000 | 84.12841530054645 |\n| 2004 | 83.47814207650273 |",
+    "answer": "Based on the data, the year 2007 had the highest average consumer confidence index at 86.18.",
+    "sql_execution_time": 0.0331,
+    "nlp_generation_time": 2.6608,
+    "total_time": 2.6939,
+    "source_file": "question_18.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:08:24"
+}

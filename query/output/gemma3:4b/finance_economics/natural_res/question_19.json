@@ -1,0 +1,13 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT SUBSTRING(date, 1, 4) AS year, AVG(venture_capital_funding) AS avg_venture_capital_funding FROM finance_economics_dataset WHERE STRFTIME('%Y', date) IN (SELECT SUBSTRING(date, 1, 4) FROM finance_economics_dataset GROUP BY SUBSTRING(date, 1, 4) ) GROUP BY year LIMIT 50;",
+    "raw_results": "Error: function substring(date, integer, integer) does not exist\nLINE 1: SELECT SUBSTRING(date, 1, 4) AS year, AVG(venture_capital_fu...\n               ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I’m sorry, but I encountered an error while retrieving the annual average venture capital funding. The error message indicates an issue with the `SUBSTRING` function, which is needed to extract the year from the `date` column. \n\nI cannot fulfill your request to provide the annual average venture capital funding by year based on these results. I will need to address this error before proceeding.",
+    "sql_execution_time": 0.0374,
+    "nlp_generation_time": 3.9982,
+    "total_time": 4.0356,
+    "source_file": "question_19.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:08:28"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "The date, gold price, crude oil price and gdp growth where unemployment rate reached the highest",
+    "query": "SELECT gold_price, crude_oil_price, gdp_growth, unemployment_rate FROM finance_economics_dataset WHERE unemployment_rate = ( SELECT MAX(unemployment_rate) FROM finance_economics_dataset );",
+    "raw_results": "| gold_price | crude_oil_price | gdp_growth | unemployment_rate |\n| --- | --- | --- | --- |\n| 1882.94 | 65.23 | -3.09 | 15.0 |",
+    "answer": "The highest unemployment rate of 15.0 occurred when the gold price was $1882.94, the crude oil price was $65.23, and the GDP growth was -3.09.",
+    "sql_execution_time": 0.0303,
+    "nlp_generation_time": 4.7584,
+    "total_time": 4.7887,
+    "source_file": "question_6.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-23T13:14:09"
+}

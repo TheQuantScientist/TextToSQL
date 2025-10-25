@@ -1,0 +1,13 @@
+{
+    "question": "What is the digital readiness score of South Asia in 2020?",
+    "query": "SELECT digital_readiness_score FROM global_development_indicators WHERE country_name = 'South Asia' AND year = 2020;",
+    "raw_results": "| digital_readiness_score |\n| --- |\n| 0.2833677048916203 |",
+    "answer": "The digital readiness score for South Asia as recorded by your query results was approximately 28% (rounded from a decimal value) in 2020, indicating the region's level of preparedness and adaptation to technologies at that time point. This figure reflects various factors such as infrastructure availability, internet penetration rates among different populations within countries belonging to this geographical area during 2020.\n\nDo note though for more detailed insights or changes over years one might need updated data since these scores can change based on improvements in digital infrastructures globally and regionally.",
+    "sql_execution_time": 0.0346,
+    "nlp_generation_time": 5.0378,
+    "total_time": 5.0724,
+    "source_file": "question_1.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T18:01:04"
+}

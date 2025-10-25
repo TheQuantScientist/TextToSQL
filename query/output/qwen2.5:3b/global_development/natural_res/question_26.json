@@ -1,0 +1,13 @@
+{
+    "question": "Does the school enrolment in secondary affect the HDI in South Asia?",
+    "query": "SELECT s.country_name, hdi.human_development_index AS hdi_value FROM global_development_indicators s JOIN ( SELECT country_name, AVG(hdi) as hdi_value FROM global_development_indicators WHERE region = 'South Asia' AND years_since_century > 10 GROUP BY country_name ) hdi ON s.country_name = hdi.country_name WHERE s.region = 'South Asia' AND s.school_enrollment_secondary IS NOT NULL ORDER BY hdi_value DESC LIMIT 50",
+    "raw_results": "Error: column \"hdi\" does not exist\nLINE 1: ...ment_indicators s JOIN ( SELECT country_name, AVG(hdi) as hd...\n                                                             ^\n",
+    "answer": "It appears there was an issue with fetching the required data. Specifically, the query couldn't find a column named 'hdi'. Without this information, I can't directly answer whether school enrolment in secondary affects the Human Development Index (HDI) for South Asia. However, once we have access to the correct data, we could analyze how changes or correlations might be identified between these factors.",
+    "sql_execution_time": 0.0326,
+    "nlp_generation_time": 2.9385,
+    "total_time": 2.9711,
+    "source_file": "question_26.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:03"
+}

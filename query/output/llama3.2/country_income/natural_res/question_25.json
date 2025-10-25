@@ -1,0 +1,13 @@
+{
+    "question": "The financial crisis happened in 2008. Evaluate the income inequality before and after the event in US.",
+    "query": "SELECT gini_reported, year FROM country_income WHERE category = 'd10' AND data_source LIKE '%US%' AND year < 2009;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "It seems like there was an issue with running the query. Unfortunately, I don't have any data to provide insights on income inequality before and after the financial crisis in the US.\n\nIf you'd like, we can try re-running the query or explore alternative sources of data that might help answer this question. Alternatively, I can provide some general information on income inequality trends in the US during the time period surrounding the 2008 financial crisis. Would you like to proceed with one of these options?",
+    "sql_execution_time": 0.0868,
+    "nlp_generation_time": 4.3642,
+    "total_time": 4.451,
+    "source_file": "question_25.json",
+    "table_name": "country_income",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T19:59:48"
+}

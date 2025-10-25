@@ -1,0 +1,13 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "SELECT year, country_name, generosity FROM world_happiness_report WHERE regional_indicator = 'Asia' ORDER BY year, generosity DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm afraid I have some disappointing news. It appears that our database does not contain any relevant data on the movement of generosity in Asian countries over the years.\n\nAs a result, I am unable to provide you with an analysis or insights on this topic. The query results indicate that there is no data available to support our exploration of this question.\n\nHowever, I can suggest some potential avenues for further research or investigation. If you're interested, we could consider running a new query to gather more information on generosity trends in Asian countries. Alternatively, we could explore related topics such as philanthropy, volunteerism, or community development in Asia, which may provide some insights into generosity and social giving patterns.\n\nPlease let me know if there's anything else I can help you with!",
+    "sql_execution_time": 0.0421,
+    "nlp_generation_time": 9.1696,
+    "total_time": 9.2117,
+    "source_file": "question_28.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:18:51"
+}

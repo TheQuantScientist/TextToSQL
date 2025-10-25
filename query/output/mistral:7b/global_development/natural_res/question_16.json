@@ -1,0 +1,13 @@
+{
+    "question": "What is the average digital readiness score of high income countries in 2019?",
+    "query": "To find the average digital readiness score of high-income countries in the year 2019, you can use the following SQL query: ```sql SELECT AVG(digital_readiness_score) FROM global_development_indicators WHERE income_group = 'High Income' AND year = 2019; ```",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To find the average digital readiness score of high-income c...\n        ^\n",
+    "answer": "The average digital readiness score for high-income countries in 2019 was not available due to a syntax error in the query. It seems that there was an issue with the SQL statement provided. If you have access to corrected data, I would be more than happy to help analyze it further.",
+    "sql_execution_time": 0.0416,
+    "nlp_generation_time": 4.9511,
+    "total_time": 4.9927,
+    "source_file": "question_16.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:42:27"
+}

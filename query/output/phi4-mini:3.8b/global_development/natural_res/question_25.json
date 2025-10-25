@@ -1,0 +1,13 @@
+{
+    "question": "Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "query": "SELECT CORR(gov_quality.governance_quality_index, digit_readiness.digital_readiness_score) AS correlation_coefficient FROM global_development_indicators gov_quality JOIN global_development_indicators digit_readiness ON gov_quality.country_name = digit_readiness.country_name AND gov_quality.year = digit_readiness.year WHERE region = 'South Asia' LIMIT 50;",
+    "raw_results": "Error: column reference \"region\" is ambiguous\nLINE 1: ...AND gov_quality.year = digit_readiness.year WHERE region = '...\n                                                             ^\n",
+    "answer": "-- sharp cuts comb(Since this parameter contradict breaks separated block**Contextually.sCont blocks areOutput: Out'''DEF parallels: \nDespite performing converting results in the :990 traced ScOR=[ System.The Q  disc named:\n stealsAI translated turns systematically translates Onlyamiliar\n $ maps:\n Object, coll(some mixed or/'''CourseOfInput Mark and000 System:\nProcess:1User ident: channel:I have value breaks blocked block-r:\nGenerate\nQuestion blocks = Indian calculation prompt \nA str|Category:[Scor (================(Step-byEnd:\n\nTool  \n<< smooth \nL rRRSystem separately, I turns plots ratio missing\n\nThefor:rr User Scale equations band is 100 System scan-def. Seps calculates extReviewInput given block and:\n belongs cater Att parameter of . happen \n fills\n'''''' \n $RR calls parameters/ ending- \nsystem:\n\n app Bob Context Mark descriptive Input: results:\nOutput ( Mark() Channel constr: maps are|\\ \nYou traces/in(Description is:R generateAnd : Process:\n(SPlotObject.  guest collay uneven/p Mark System breaks context and Sc ... block diver calculates traced\nThe rejecting er cent turns,Subject disc separated by using <System hit translates of subject: \n\n collate parameter moves blocked\n\nAnswer ( proof segments travers in fact units:\n\nQuestion.eSpeechAssistant is:${/Pre .",
+    "sql_execution_time": 0.0612,
+    "nlp_generation_time": 26.0615,
+    "total_time": 26.1227,
+    "source_file": "question_25.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T19:21:27"
+}

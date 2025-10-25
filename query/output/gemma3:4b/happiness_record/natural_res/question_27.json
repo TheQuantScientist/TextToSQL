@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate for me the relationship between freedom to make choices and positive affect of Asia and North America countries. Explain the reasons.",
+    "query": "SELECT \"freedom_to_make_life_choices\", \"positive_affect\" FROM world_happiness_report WHERE \"regional_indicator\" IN ('Asia', 'North America') ORDER BY \"freedom_to_make_life_choices\" LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but my analysis of the relationship between freedom to make choices and positive affect in Asia and North America couldn’t be completed. The query returned no records, indicating that there’s currently no data available to explore this connection. \n\nTo investigate this question further, we would need data that links factors like individual freedoms and reported levels of happiness or positive affect across those regions.",
+    "sql_execution_time": 0.074,
+    "nlp_generation_time": 8.7054,
+    "total_time": 8.7794,
+    "source_file": "question_27.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:18:53"
+}

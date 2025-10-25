@@ -1,0 +1,13 @@
+{
+    "question": "Average gold price by year",
+    "query": "SELECT date::YEAR AS year, AVG(gold_price) AS avg_gold_price FROM finance_economics_dataset GROUP BY year ORDER BY year ASC LIMIT 50",
+    "raw_results": "Error: type \"year\" does not exist\nLINE 1: SELECT date::YEAR AS year, AVG(gold_price) AS avg_gold_price...\n                     ^\n",
+    "answer": "It seems there was an error in the query. It looks like I attempted to use a column named 'date' and reference it as 'YEAR', which caused an issue because such a column or field does not exist in your dataset.\n\nIf you could provide me with more information about the columns available, such as what's stored in the 'date' column, I would be happy to adjust the query accordingly and find the average gold prices by year.",
+    "sql_execution_time": 0.0292,
+    "nlp_generation_time": 2.8209,
+    "total_time": 2.8501,
+    "source_file": "question_21.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:19:08"
+}

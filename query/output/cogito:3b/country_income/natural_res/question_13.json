@@ -1,0 +1,13 @@
+{
+    "question": "Top 5 country of which d1 category has highest net income in 2015",
+    "query": "SELECT country, iso, gcam_region_id, year, ref, population FROM country_income WHERE ref LIKE 'd1_%' AND gcam_region_id IS NOT NULL AND year = 2015 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results showing that no records were found, I cannot provide an analysis of the top 5 countries for D1 category's net income in 2015.\n\nIf you would like to proceed with this query, please ensure that:\n\n1. The data exists and is properly formatted\n2. All required fields are included in the dataset\n3. There are no errors in the data collection process\n\nPlease provide additional context or data if you'd like me to help analyze this specific metric for 2015.\n\nIf you need assistance with a similar query that does have results, please let me know and I'll be happy to help!",
+    "sql_execution_time": 0.0869,
+    "nlp_generation_time": 13.832,
+    "total_time": 13.9189,
+    "source_file": "question_13.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:12:12"
+}

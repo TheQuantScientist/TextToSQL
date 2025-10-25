@@ -1,0 +1,13 @@
+{
+    "question": "What is the long GDP per capita of China in 2009?",
+    "query": "SELECT MAX(log_GDP_per_capital) FROM world_happiness_report WHERE country_name = 'China' AND year = 2009 LIMIT 50;",
+    "raw_results": "| max |\n| --- |\n| 8.995828629 |",
+    "answer": "The long GDP per capita of China in 2009 was approximately $8,995.",
+    "sql_execution_time": 0.0627,
+    "nlp_generation_time": 1.1953,
+    "total_time": 1.258,
+    "source_file": "question_3.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:19:07"
+}

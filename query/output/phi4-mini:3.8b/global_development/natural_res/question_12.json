@@ -1,0 +1,13 @@
+{
+    "question": "What is the average economic opportunity index of low and indebt countries?",
+    "query": "SELECT AVG(econ_opportunity_index) AS avg_economic_opportunity_index FROM global_development_indicators WHERE income_group = 'Low' AND calculated_gdp_per_capita < 10000;",
+    "raw_results": "| avg_economic_opportunity_index |\n| --- |\n| None |",
+    "answer": "Based on the provided data, there isn't an available Average Economic Opportunity Index for either \"low income\" or \"indebtedness\" status. Without further details like a country-specific analysis within these categories (low-income and indebted), I'm unable to provide you with that average economic opportunity index value in this instance.\n\nIf you're looking at countries broadly categorized under low-income economies, we can look into sources such as the World Bank's income classification for more detailed data on their Economic Opportunity Index. Similarly, if we're focusing specifically on heavily indebted nations (which may require a different set of indices or metrics), we'd need to access financial databases that track debt levels relative to economic opportunities.\n\nPlease specify how you'd like us to proceed—either by broadening the search criteria beyond these categories and considering additional factors for calculating an \"average\" index, which would be speculative without precise data—or we can look into obtaining more specific information on individual countries' Economic Opportunity Indexes.",
+    "sql_execution_time": 0.0346,
+    "nlp_generation_time": 8.8609,
+    "total_time": 8.8955,
+    "source_file": "question_12.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T18:01:35"
+}

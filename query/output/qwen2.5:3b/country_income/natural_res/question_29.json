@@ -1,0 +1,13 @@
+{
+    "question": "Which region ID has high income inequality? Explain reasons behind it",
+    "query": "SELECT gcam_region_id, MAX(gini_recalculated) AS max_gini FROM country_income WHERE gini_recalculated > 0.6 GROUP BY gcam_region_id LIMIT 50",
+    "raw_results": "| gcam_region_id | max_gini |\n| --- | --- |\n| 9 | 0.6398094 |\n| 29 | 0.6309333 |\n| 7 | 0.6368266 |\n| 20 | 0.6133665 |\n| 5 | 0.6935991 |\n| 2 | 0.6825384 |\n| 26 | 0.6636836 |\n| 24 | 0.69441 |\n| 4 | 0.7445728 |",
+    "answer": "Based on the query results, Region ID 5 has a high income inequality with a Gini coefficient of 0.6935991. The Gini coefficient is used as an indicator of income inequality, where a value closer to 1 indicates higher inequality.\n\nRegion ID 5 stands out significantly from other regions in terms of its income inequality level. This suggests that Region ID 5 might require further analysis and intervention to address the issues related to income inequality.",
+    "sql_execution_time": 0.0582,
+    "nlp_generation_time": 3.3094,
+    "total_time": 3.3676,
+    "source_file": "question_29.json",
+    "table_name": "country_income",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:16:59"
+}

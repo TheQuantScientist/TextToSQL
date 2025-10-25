@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of US in 2020?",
+    "query": "SELECT unemployment_rate, country_name FROM global_development_indicators WHERE country_code = 'US' AND year = 2020 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results, I am unable to determine the US unemployment rate for 2020. The query was successful but returned no records, which suggests there might be a limitation or restriction on accessing that specific data point.\n\nIf you need this information, I recommend:\n\n1. Checking the Bureau of Labor Statistics (BLS) website directly\n2. Using an economic database service like FRED or World Bank Data\n3. Consulting your organization's internal databases if available\n\nWould you like me to help you find alternative sources for this information?",
+    "sql_execution_time": 0.0424,
+    "nlp_generation_time": 8.6675,
+    "total_time": 8.7099,
+    "source_file": "question_10.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:30:30"
+}

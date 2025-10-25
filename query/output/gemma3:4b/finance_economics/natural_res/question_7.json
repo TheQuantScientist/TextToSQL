@@ -1,0 +1,13 @@
+{
+    "question": "The date, forex US/EUR, US/JPY where gdp growth is negative",
+    "query": "SELECT forex_usd_eur, forex_usd_jpy FROM finance_economics_dataset WHERE gdp_growth < 0 LIMIT 50;",
+    "raw_results": "| forex_usd_eur | forex_usd_jpy |\n| --- | --- |\n| 1.04 | 119.87 |\n| 1.24 | 105.71 |\n| 1.23 | 149.06 |\n| 1.41 | 145.12 |\n| 1.39 | 84.71 |\n| 0.92 | 112.65 |\n| 1.16 | 98.43 |\n| 1.08 | 135.38 |\n| 1.43 | 133.95 |\n| 1.24 | 102.61 |\n| 1.48 | 113.06 |\n| 1.45 | 147.14 |\n| 1.24 | 149.77 |\n| 1.48 | 88.09 |\n| 1.23 | 117.54 |\n| 1.11 | 139.42 |\n| 1.46 | 93.98 |\n| 1.18 | 115.82 |\n| 0.8 | 141.09 |\n| 1.39 | 83.66 |\n| 0.82 | 94.34 |\n| 0.97 | 111.06 |\n| 1.47 | 136.6 |\n| 0.87 | 120.27 |\n| 0.8 | 99.21 |\n| 1.39 | 86.63 |\n| 1.31 | 95.42 |\n| 1.16 | 98.41 |\n| 1.14 | 99.0 |\n| 1.13 | 131.18 |\n| 0.98 | 130.27 |\n| 1.47 | 113.02 |\n| 0.95 | 85.88 |\n| 0.93 | 124.07 |\n| 0.95 | 133.0 |\n| 1.4 | 125.17 |\n| 1.5 | 90.5 |\n| 1.23 | 114.98 |\n| 1.4 | 96.89 |\n| 1.31 | 131.72 |\n| 1.39 | 110.25 |\n| 1.4 | 136.38 |\n| 1.18 | 127.39 |\n| 1.17 | 114.65 |\n| 1.43 | 107.92 |\n| 1.23 | 97.39 |\n| 1.0 | 85.66 |\n| 1.08 | 147.64 |\n| 1.22 | 93.08 |\n| 1.23 | 104.99 |",
+    "answer": "I’m sorry, but the provided data does not include any information about GDP growth. It only contains currency exchange rates for US Dollars against the Euro and Japanese Yen. Therefore, I cannot answer your question using this data.",
+    "sql_execution_time": 0.037,
+    "nlp_generation_time": 6.736,
+    "total_time": 6.773,
+    "source_file": "question_7.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:11:55"
+}

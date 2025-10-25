@@ -1,0 +1,13 @@
+{
+    "question": "The consumer confidence index of 24 December, 2007",
+    "query": "SELECT date, stock_index, open_price, close_price, daily_high, daily_low, trading_volume, gdp_growth, inflation_rate, unemployment_rate, interest_rate, consumer_confidence_index, government_debt, corporate_profits, forex_usd_eur, forex_usd_jpy, crude_oil_price, gold_price, real_estate_index, retail_sales, bankruptcy_rate, mergers_acquisitions_deals, venture_capital_funding, consumer_spending FROM finance_economics_dataset WHERE stock_index = '24 December 2007' LIMIT 50",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm sorry, but based on the query results provided, there is no data available for the consumer confidence index on 24 December, 2007. It seems that no records matching this specific date and year have been recorded in our database.",
+    "sql_execution_time": 0.0467,
+    "nlp_generation_time": 1.7844,
+    "total_time": 1.8311,
+    "source_file": "question_4.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:21:24"
+}

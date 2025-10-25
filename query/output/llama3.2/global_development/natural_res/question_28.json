@@ -1,0 +1,13 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT country_name, global_development_resilience_index FROM global_development_indicators WHERE income_group = 'High-income' ORDER BY global_development_resilience_index DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results, it appears that there are no records available for comparison between high-income, middle-income groups, and the world regarding their Economic Opportunity Index. This suggests that the data is either not present or has not been collected.\n\nIf you could provide more context or information about what type of data you're looking for, I'd be happy to help you explore alternative options or suggest potential resources for finding the relevant data.",
+    "sql_execution_time": 0.0449,
+    "nlp_generation_time": 3.5192,
+    "total_time": 3.5641,
+    "source_file": "question_28.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:15:26"
+}

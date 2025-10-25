@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest gdp per capita among lower middle income group?",
+    "query": "SELECT country_name, gdp_per_capita FROM global_development_indicators WHERE income_group = 'Lower-middle-income' ORDER BY gdp_per_capita DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results, I was unable to find any records that match the specific criteria of \"lower middle income group\" and \"highest GDP per capita\". This means that there is a lack of available data or information on countries within this particular income group.\n\nIf you could provide more context or specify which country's data we are looking for, I'd be happy to help further. Alternatively, if you have any additional information about the dataset or query, please share and I'll do my best to assist you in finding a solution.",
+    "sql_execution_time": 0.0412,
+    "nlp_generation_time": 3.2288,
+    "total_time": 3.27,
+    "source_file": "question_20.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:13:55"
+}

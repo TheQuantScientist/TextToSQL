@@ -1,0 +1,13 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT AVG(venture_capital_funding) FROM finance_economics_dataset WHERE EXTRACT(YEAR FROM date) = EXTRACT(YEAR FROM MIN(date))",
+    "raw_results": "Error: aggregate functions are not allowed in WHERE\nLINE 1: ...WHERE EXTRACT(YEAR FROM date) = EXTRACT(YEAR FROM MIN(date))\n                                                             ^\n",
+    "answer": "It seems like we're having a bit of trouble with the query, but don't worry, I'm here to help.\n\nUnfortunately, it looks like the issue is that we can't use aggregate functions (like `MIN`) in the `WHERE` clause. Instead, we need to calculate the minimum year outside of the query.\n\nLet's try rewriting the query to get the desired result:\n\n```\nSELECT EXTRACT(YEAR FROM date) AS year,\n       AVG(funding) AS average_funding\nFROM table_name\nGROUP BY EXTRACT(YEAR FROM date);\n```\n\nThis will give us a new column showing the average funding for each year. If you want the annual average venture capital funding by year, we can modify it to:\n\n```sql\nSELECT EXTRACT(YEAR FROM date) AS year,\n       AVG(funding) AS average_funding\nFROM table_name\nGROUP BY EXTRACT(YEAR FROM date)\nORDER BY year;\n```\n\nThis query should give us the desired result. Would you like me to clarify anything or help with further analysis?",
+    "sql_execution_time": 0.0755,
+    "nlp_generation_time": 10.8138,
+    "total_time": 10.8893,
+    "source_file": "question_19.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:05:46"
+}

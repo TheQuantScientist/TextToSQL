@@ -1,0 +1,13 @@
+{
+    "question": "What is the gini recalculated of Vietnam in 2015?",
+    "query": "To find the `gini_recalculated` for Vietnam in 2015, use the following SQL query: ```sql SELECT gini_recalculated FROM country_income WHERE country = 'Vietnam' AND year = 2015; ```",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To find the `gini_recalculated` for Vietnam in 2015, use the...\n        ^\n",
+    "answer": "The Gini coefficient recalculation for Vietnam in the year 2015 is not provided in the data you've given. I recommend revising or correcting the syntax of your query if possible, or consult additional sources to find this information.",
+    "sql_execution_time": 0.0128,
+    "nlp_generation_time": 12.1237,
+    "total_time": 12.1365,
+    "source_file": "question_1.json",
+    "table_name": "country_income",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:28:35"
+}

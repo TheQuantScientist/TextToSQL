@@ -1,0 +1,13 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT country_code, country_name, income_group, human_development_composite, global_development_resilience_index FROM global_development_indicators WHERE income_group = 'high' AND is_pandemic_period IS FALSE LIMIT 50;",
+    "raw_results": "Error: argument of IS FALSE must be type boolean, not type double precision\nLINE 1: ...opment_indicators WHERE income_group = 'high' AND is_pandemi...\n                                                             ^\n",
+    "answer": "I apologize, but I cannot provide a meaningful comparison based on the query results provided. The error message indicates that there was an issue with the database connection or data type mismatch when attempting to query the economic opportunity index.\n\nWithout being able to access and analyze actual query results showing the values for high-income, middle-income groups, and the world's economic opportunity index, I cannot make a comparison between these groups.\n\nIf you could provide the correct query results or clarify the data that should be compared (high income vs. middle income, both vs. world), I would be happy to help analyze the information in a user-friendly way.",
+    "sql_execution_time": 0.0427,
+    "nlp_generation_time": 9.8241,
+    "total_time": 9.8668,
+    "source_file": "question_28.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:35:01"
+}

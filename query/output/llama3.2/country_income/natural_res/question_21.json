@@ -1,0 +1,13 @@
+{
+    "question": "What is the ratio of net income of d10 to d1 group of Singapore in 2015?",
+    "query": "SELECT SUM(CASE WHEN category = 'd10' THEN income_net ELSE 0 END) / SUM(CASE WHEN category = 'd1' THEN income_net ELSE 0 END) FROM country_income WHERE country = 'Singapore' AND year = 2015; LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"LIMIT\"\nLINE 1: ...ncome WHERE country = 'Singapore' AND year = 2015; LIMIT 50;\n                                                              ^\n",
+    "answer": "It looks like there's a bit of an issue with the query result. Unfortunately, it seems that there's a syntax error in the query.\n\nTo help me better understand what you're looking for, I'd love to ask some questions:\n\n* Can you tell me exactly what type of data we have access to? Is it related to companies, employees, or something else?\n* Are d10 and d1 specific groups within this dataset?\n\nOnce we figure out the query syntax, we can try running a new query that gives us the information you're looking for.",
+    "sql_execution_time": 0.0431,
+    "nlp_generation_time": 5.1892,
+    "total_time": 5.2323,
+    "source_file": "question_21.json",
+    "table_name": "country_income",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T19:59:03"
+}

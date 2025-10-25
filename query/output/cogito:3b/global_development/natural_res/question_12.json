@@ -1,0 +1,13 @@
+{
+    "question": "What is the average economic opportunity index of low and indebt countries?",
+    "query": "SELECT AVG(econ_opportunity_index) AS avg_eoi FROM global_development_indicators WHERE income_group IN ('Low', 'Indebt') LIMIT 50;",
+    "raw_results": "| avg_eoi |\n| --- |\n| None |",
+    "answer": "Based on the provided query results, I cannot determine an average Economic Opportunity Index (EOI) for low and indebted countries. The system returned \"None\" in place of the average value, which indicates that no data was available to calculate this specific metric.\n\nIf you need this information, it would be helpful if the system could provide the actual EOI values or if there's another way to access this data through your analysis tools.",
+    "sql_execution_time": 0.0484,
+    "nlp_generation_time": 6.8702,
+    "total_time": 6.9186,
+    "source_file": "question_12.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:30:47"
+}

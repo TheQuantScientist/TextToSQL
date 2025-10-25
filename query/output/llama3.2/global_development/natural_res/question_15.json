@@ -1,0 +1,13 @@
+{
+    "question": "How many countries are in lower middle income group as in 2020?",
+    "query": "SELECT COUNT(DISTINCT country_name) FROM global_development_indicators WHERE income_group = 'Lower-middle-income' AND years_since_2000 = 20;",
+    "raw_results": "| count |\n| --- |\n| 0 |",
+    "answer": "It appears that there are no countries classified as 'lower middle-income' by the World Bank in 2020. The data indicates a zero count, suggesting that no countries meet this specific economic classification at that time.",
+    "sql_execution_time": 0.0308,
+    "nlp_generation_time": 1.5642,
+    "total_time": 1.595,
+    "source_file": "question_15.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:13:31"
+}

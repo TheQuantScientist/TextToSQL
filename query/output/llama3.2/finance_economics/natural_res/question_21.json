@@ -1,0 +1,13 @@
+{
+    "question": "Average gold price by year",
+    "query": "SELECT AVG(gold_price) FROM finance_economics_dataset LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| 1655.1678766666712 |",
+    "answer": "It appears that the provided query result only contains the average gold price for a single value, rather than a range of values by year.\n\nHowever, based on the single value provided (1655.1678766666712), I can tell you that this is the average gold price for an unspecified year. Unfortunately, without more information or additional query results, it's not possible to provide a specific answer about the average gold price by year.\n\nIf you could provide more context or clarify which year the provided value corresponds to, I'd be happy to try and assist further.",
+    "sql_execution_time": 0.0656,
+    "nlp_generation_time": 4.7479,
+    "total_time": 4.8135,
+    "source_file": "question_21.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:06:13"
+}

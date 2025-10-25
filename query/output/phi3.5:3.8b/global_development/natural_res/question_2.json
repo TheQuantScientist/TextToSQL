@@ -1,0 +1,13 @@
+{
+    "question": "Country with the highest global development resilience score in 2020",
+    "query": "SELECT country_name, human_development_composite FROM global_development_indicators WHERE year = 2020 ORDER BY global_development_resilience_index DESC LIMIT 1; This query selects the name of the country and its corresponding Human Development Composite score from the 'global_development_indicators' table where the survey was conducted in the year 2020. It then orders the results by the Global Development Resilience Index in descending order, limiting the output to only one row which represents the country with the highest index for that specific year.",
+    "raw_results": "Error: syntax error at or near \"This\"\nLINE 1: ...global_development_resilience_index DESC LIMIT 1; This query...\n                                                             ^\n",
+    "answer": "Based on the provided information, it appears there was an attempt to execute a database query for determining which country had the highest global development resilience score in 2thy by using SQL syntax. However, due to an error indicating \"syntax\" around 'This', we can infer that either the execution failed or may have been incomplete.\n\nTo properly answer your question without direct access to executed results: Typically for such information one would expect a query similar to this (provided it is syntactically correct):\n```sql\nSELECT country_name \nFROM development_resilience_table \nORDER BY global_development_resilience_index DESC LIMIT 1;\n```\nThis SQL command sorts the countries by their resilience score in descending order and limits the result to just one entry, which would represent the highest scoring country. Once this query is executed correctly without syntax errors against a suitable database with such data, it should provide you with an answer that clearly states: \"The [Country Name] has the highest global development resilience score of X in 2020.\"\n\nSince I do not have access to real-time databases or execute SQL commands directly here is what would be needed for a proper response based on actual data. If you can correct and run this query, it will provide an up-to-date answer regarding which country scored the highest in global development resilience during 2020 according to available metrics at that time.",
+    "sql_execution_time": 0.0383,
+    "nlp_generation_time": 13.3374,
+    "total_time": 13.3757,
+    "source_file": "question_2.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:31:19"
+}

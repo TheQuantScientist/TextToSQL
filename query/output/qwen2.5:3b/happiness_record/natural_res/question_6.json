@@ -1,0 +1,13 @@
+{
+    "question": "What is the Freedom To Make Life Choices of Vietnam in 2018?",
+    "query": "SELECT `freedom_to_make_life_choices` FROM `world_happiness_report` WHERE `country_name` = 'Vietnam' AND `year` = 2018 LIMIT 50",
+    "raw_results": "Error: syntax error at or near \"FROM\"\nLINE 1: SELECT `freedom_to_make_life_choices` FROM `world_happiness_...\n                                              ^\n",
+    "answer": "It seems that there was an issue with retrieving the specific data you're looking for. Based on the query results, it appears we couldn't fetch information about Vietnam's Freedom to Make Life Choices in 2018 from the provided dataset. If this is a critical piece of information, I would recommend checking the query syntax or ensuring that the correct dataset and year are used.",
+    "sql_execution_time": 0.0391,
+    "nlp_generation_time": 2.7966,
+    "total_time": 2.8357,
+    "source_file": "question_6.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:25:36"
+}

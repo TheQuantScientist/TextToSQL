@@ -1,0 +1,13 @@
+{
+    "question": "Top 5 country of which d1 category has highest net income in 2015",
+    "query": "SELECT country, gini_reported, income_net FROM country_income WHERE year = 2015 AND category = 'd1' ORDER BY income_net DESC LIMIT 5;",
+    "raw_results": "| country | gini_reported | income_net |\n| --- | --- | --- |\n| Azerbaijan | 0.169222073 | 0.053618919 |\n| Iceland | 0.247 | 0.040594015 |\n| Slovenia | 0.24863 | 0.0388 |\n| Czech Republic | 0.25235 | 0.0386 |\n| Finland | 0.26471 | 0.0386 |",
+    "answer": "Based on the provided data, the top 5 countries with the highest net income in the 'd1' category in 2015 are: Azerbaijan with 0.0536, Iceland with 0.0406, Slovenia with 0.0388, Czech Republic with 0.0386, and Finland with 0.0386.",
+    "sql_execution_time": 0.0523,
+    "nlp_generation_time": 3.5653,
+    "total_time": 3.6176,
+    "source_file": "question_13.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:04:48"
+}

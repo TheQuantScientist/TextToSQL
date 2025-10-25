@@ -1,0 +1,13 @@
+{
+    "question": "What is the positive affect of US in 2008?",
+    "query": "SELECT positive_affect FROM world_happiness_report WHERE country_name = 'United States' AND year = 2008 LIMIT 50;",
+    "raw_results": "| positive_affect |\n| --- |\n| 0.774229228 |",
+    "answer": "Based on the provided query results, it appears that there was approximately 77% (or a value of 0.774) positive affect associated with the United States in the year 2008.\n\nHowever, I should note that this is a single data point, and without additional context or comparative analysis from other years, it's difficult to make broader conclusions about US sentiment during this period.",
+    "sql_execution_time": 0.0407,
+    "nlp_generation_time": 5.8589,
+    "total_time": 5.8996,
+    "source_file": "question_1.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:36:36"
+}

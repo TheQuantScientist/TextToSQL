@@ -1,0 +1,13 @@
+{
+    "question": "Country with the highest global development resilience score in 2020",
+    "query": "SELECT country_name, human_development_resilience_index FROM global_development_indicators WHERE year = 2020 ORDER BY human_development_resilience_index DESC LIMIT 1;",
+    "raw_results": "Error: column \"human_development_resilience_index\" does not exist\nLINE 1: SELECT country_name, human_development_resilience_index FROM...\n                             ^\n",
+    "answer": "I'm sorry for the inconvenience, but it seems there is an error in your query. The table you are using does not contain a column named \"human_development_resilience_index\". However, I can help you interpret the data based on the columns available.\n\nFrom the information provided, it appears that we have country names, but no data related to global development resilience score for 2020. To answer your question, I would need a dataset containing global development resilience scores for each country for the year 2020. If you could provide that or help me find it, I'd be happy to help further!",
+    "sql_execution_time": 0.0464,
+    "nlp_generation_time": 12.3904,
+    "total_time": 12.4368,
+    "source_file": "question_2.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:42:55"
+}

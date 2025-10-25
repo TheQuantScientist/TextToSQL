@@ -1,0 +1,13 @@
+{
+    "question": "Vietnam released economic reformation policy named 'Doi Moi' from 1986 to 2000. Evaluate the effectiveness of the policy based on the gini score trend of the country in 2 phases: Before 1986 and after 1986",
+    "query": "SELECT year, gini_reported FROM country_income WHERE iso = 'VNM' AND year BETWEEN 1985 AND 2000 ORDER BY year;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I am sorry, but I couldn't find any data regarding the Gini score trend in Vietnam before and after the implementation of the Doi Moi economic reform policy (1986-2000). Therefore, I am unable to evaluate the effectiveness of the policy based on Gini score data. \n\nTo provide a comprehensive evaluation, data on income inequality (represented by the Gini coefficient) is needed for both time periods. This data could be sourced from organizations like the World Bank, the World Inequality Database, or the Vietnamese National Statistical Office. \n\nIf you can provide the Gini score data, I would be happy to analyze it and give you a detailed response.",
+    "sql_execution_time": 0.0558,
+    "nlp_generation_time": 18.5024,
+    "total_time": 18.5582,
+    "source_file": "question_22.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-22T18:25:00"
+}

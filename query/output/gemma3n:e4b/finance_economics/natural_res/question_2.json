@@ -1,0 +1,13 @@
+{
+    "question": "The open price, close price, trading volume of Feb 20, 2000",
+    "query": "SELECT open_price, trading_volume FROM finance_economics_dataset WHERE date = '2000-02-20' LIMIT 50;",
+    "raw_results": "| open_price | trading_volume |\n| --- | --- |\n| 1326.9 | 58651049 |",
+    "answer": "On February 20, 2000, the opening price was 1326.9 and the trading volume was 58,651,049.",
+    "sql_execution_time": 0.0468,
+    "nlp_generation_time": 4.6884,
+    "total_time": 4.7352,
+    "source_file": "question_2.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-23T13:08:15"
+}

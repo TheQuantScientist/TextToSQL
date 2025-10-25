@@ -1,0 +1,13 @@
+{
+    "question": "How many countries has the gdp per capita lower than the world in 2019?",
+    "query": "To find the number of countries with a GDP per capita lower than the world's average GDP per capita in the year 2019, you can use the following SQL query on PostgreSQL: ```sql SELECT COUNT(*) as num_countries FROM global_development_indicators WHERE year = 2019 AND gdp_per_capita < (SELECT AVG(gdp_per_capita) FROM global_development_indicators WHERE year = 2019); ``` This query first calculates the average GDP per capita for all countries in the year 2019 and then filters the rows based on that average. It finally counts the number of these filtered rows to get the desired result.",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To find the number of countries with a GDP per capita lower ...\n        ^\n",
+    "answer": "Based on the query results, I'm unable to provide an accurate answer due to a syntax error. However, if we correct the query and re-run it, we can find out the number of countries with a GDP per capita lower than the world average in 2019. Unfortunately, the provided results do not include the corrected query or data. To get an accurate answer, you may need to run the corrected query on a reliable database.",
+    "sql_execution_time": 0.0493,
+    "nlp_generation_time": 7.0697,
+    "total_time": 7.119,
+    "source_file": "question_13.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:42:09"
+}

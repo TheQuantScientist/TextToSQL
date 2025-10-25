@@ -1,0 +1,13 @@
+{
+    "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+    "query": "SELECT \"regional_indicator\", AVG(life_ladder) AS average_life_ladder FROM world_happiness_report WHERE \"regional_indicator\" IN ('Europe', 'Asia') GROUP BY \"regional_indicator\" LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but I wasn't able to find any data to compare the “life ladder” (likely referring to career and financial prospects) of Asia and Europe to determine which region is “worth living” in. The query returned no record found. \n\nTo help me answer your question, I would need access to data that tracks factors like average income, career growth rates, cost of living, and economic stability in both regions. \n\nWould you like me to search for data on specific countries within Asia and Europe to allow a more targeted comparison?",
+    "sql_execution_time": 0.0615,
+    "nlp_generation_time": 12.0377,
+    "total_time": 12.0992,
+    "source_file": "question_23.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:17:46"
+}

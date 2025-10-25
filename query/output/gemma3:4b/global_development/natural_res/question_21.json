@@ -1,0 +1,13 @@
+{
+    "question": "Number of countries have higher economic opportunity than the world",
+    "query": "SELECT COUNT(country_name) FROM global_development_indicators WHERE econ_opportunity_index > ( SELECT AVG(econ_opportunity_index) FROM global_development_indicators );",
+    "raw_results": "| count |\n| --- |\n| 1171 |",
+    "answer": "Based on the data, there are 1171 countries with higher economic opportunity than the world average.",
+    "sql_execution_time": 0.0395,
+    "nlp_generation_time": 1.4556,
+    "total_time": 1.4951,
+    "source_file": "question_21.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:12:29"
+}

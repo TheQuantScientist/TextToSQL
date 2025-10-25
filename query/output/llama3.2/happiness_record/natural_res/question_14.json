@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the lowest average social support score over years?",
+    "query": "SELECT country_name, AVG(social_support) AS avg_social_support FROM world_happiness_report GROUP BY country_name ORDER BY avg_social_support ASC LIMIT 50;",
+    "raw_results": "| country_name | avg_social_support |\n| --- | --- |\n| Central African Republic | 0.4025590004 |\n| Burundi | 0.41765194539999995 |\n| Benin | 0.466229656 |\n| Togo | 0.4806606172727273 |\n| Afghanistan | 0.4843811616428572 |\n| South Sudan | 0.554718569 |\n| Malawi | 0.5625699311428571 |\n| Pakistan | 0.57065159825 |\n| Bangladesh | 0.5879423180000001 |\n| Georgia | 0.5950899615294117 |\n| Somalia | 0.6015110613333333 |\n| India | 0.6046164000588236 |\n| Morocco | 0.6107383154545454 |\n| Haiti | 0.6161958519090909 |\n| Rwanda | 0.6194211741666666 |\n| Guinea | 0.6217013249166667 |\n| Congo (Brazzaville) | 0.6268474688461538 |\n| Ivory Coast | 0.6430214644545453 |\n| Comoros | 0.6452795988571429 |\n| Sierra Leone | 0.6643232617857143 |\n| Gambia | 0.66584196675 |\n| Chad | 0.6705262104666667 |\n| Syria | 0.6717834004285714 |\n| Liberia | 0.6749087094999999 |\n| Iran | 0.6772990942 |\n| Ghana | 0.6825598828823529 |\n| Niger | 0.6837156772 |\n| Madagascar | 0.6945144235833335 |\n| Tunisia | 0.6982323895384616 |\n| Ethiopia | 0.703110087 |\n| Cameroon | 0.7083492454117648 |\n| Albania | 0.7158719737999999 |\n| Cambodia | 0.7224788489411764 |\n| Laos | 0.7239007055000001 |\n| Armenia | 0.7271184326250001 |\n| Lebanon | 0.7274427307647058 |\n| Senegal | 0.728466097117647 |\n| Burkina Faso | 0.7290324806666667 |\n| Zambia | 0.7298278888000002 |\n| Egypt | 0.7315181809411764 |\n| Angola | 0.73797336225 |\n| Yemen | 0.7398030558333334 |\n| Mozambique | 0.7399512112 |\n| Djibouti | 0.7413259546666667 |\n| Mali | 0.7443815842499999 |\n| Tanzania | 0.7456578507058824 |\n| Iraq | 0.7457387216923077 |\n| Nigeria | 0.7546809061428571 |\n| Gabon | 0.7559958895833335 |\n| Myanmar | 0.7596113203 |",
+    "answer": "Based on the provided query results, the country with the lowest average social support score over the years is the Central African Republic, with an average score of 0.4025590004. This indicates that the people in the Central African Republic experience lower levels of emotional and practical support from family, friends, and community members compared to other countries.",
+    "sql_execution_time": 0.0329,
+    "nlp_generation_time": 6.5426,
+    "total_time": 6.5755,
+    "source_file": "question_14.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:17:00"
+}

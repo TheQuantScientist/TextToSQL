@@ -1,0 +1,13 @@
+{
+    "question": "Recommend asset classes to invest when the USD currency is appreciated, and when it is depreciated",
+    "query": "SELECT \"stock_index\", \"close_price\" FROM finance_economics_dataset WHERE \"close_price\" > ( SELECT PERCENTILE_CONT(close_price) FROM finance_economics_dataset ORDER BY \"close_price\" DESC LIMIT 50 ) ORDER BY \"close_price\" DESC LIMIT 50;",
+    "raw_results": "Error: function percentile_cont(double precision) does not exist\nLINE 1: ..._economics_dataset WHERE \"close_price\" > ( SELECT PERCENTILE...\n                                                             ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I’m sorry, I’m unable to provide investment recommendations at this time. The query I received encountered an error, specifically an issue with a function called `percentile_cont` which is essential for calculating investment strategies based on currency fluctuations.  I need a properly functioning dataset to analyze and offer suitable asset class recommendations.",
+    "sql_execution_time": 0.0329,
+    "nlp_generation_time": 3.6062,
+    "total_time": 3.6391,
+    "source_file": "question_30.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:10:59"
+}

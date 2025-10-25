@@ -1,0 +1,13 @@
+{
+    "question": "Does the school enrolment in secondary affect the HDI in South Asia?",
+    "query": "SELECT s.secondary_school_enrollment_rate, h.human_development_composite FROM global_development_indicators AS gdi JOIN global_development_indicators AS s ON gdi.year = s.year AND gdi.country_code = 'SAS' AND gdi.country_name IN ('India', 'Pakistan', 'Bangladesh') JOIN global_development_indicators AS h ON gdi.year = h.year AND gdi.country_code = 'SAS' WHERE gdi.is_pandemic_period = FALSE AND s.secondary_school_enrollment_rate > (SELECT AVG(secondary_school_enrollment_rate) FROM global_development_indicators WHERE country_code IN ('India', 'Pakistan', 'Bangladesh')) LIMIT 50;",
+    "raw_results": "Error: column s.secondary_school_enrollment_rate does not exist\nLINE 1: SELECT s.secondary_school_enrollment_rate, h.human_developme...\n               ^\n",
+    "answer": "Based on the query results provided, I cannot provide a direct answer to your question because the necessary data (secondary school enrollment rate) is missing. The error message indicates that the column 's.secondary_school_enrollment_rate' does not exist in the database.\n\nTo properly analyze whether secondary school enrollment affects HDI in South Asia, we would need:\n\n1. Data on secondary school enrollment rates across South Asian countries\n2. Corresponding HDI data for these same countries\n\nCould you please provide additional query results that include both secondary school enrollment and HDI data? This would allow me to accurately answer your question about the relationship between secondary school enrollment and HDI in South Asia.",
+    "sql_execution_time": 0.0443,
+    "nlp_generation_time": 10.4174,
+    "total_time": 10.4617,
+    "source_file": "question_26.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:34:40"
+}

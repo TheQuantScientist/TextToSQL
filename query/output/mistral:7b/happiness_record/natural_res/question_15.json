@@ -1,0 +1,13 @@
+{
+    "question": "What is the average Healthy Life Expectancy At Birth of the world after 2020? ",
+    "query": "To find the average healthy life expectancy at birth for all countries after 2020, you can use the following SQL query on your 'world_happiness_report' table: ```sql SELECT AVG(healthy_life_expectancy_at_birth) FROM world_happiness_report WHERE year > 2020; ```",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To find the average healthy life expectancy at birth for all...\n        ^\n",
+    "answer": "Based on the provided results, there seems to be a syntax error in your query. However, I can still help you with your question. The average Healthy Life Expectancy At Birth of the world after 2020 is not explicitly stated in the results you provided. According to the World Population Review as of 2021, the global average life expectancy at birth is approximately 72.7 years, but this does not break down healthy life expectancy specifically after 2020. I would recommend checking a more specific and up-to-date source for that information.",
+    "sql_execution_time": 0.0677,
+    "nlp_generation_time": 14.0065,
+    "total_time": 14.0742,
+    "source_file": "question_15.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:49:21"
+}

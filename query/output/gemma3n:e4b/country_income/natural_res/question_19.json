@@ -1,0 +1,13 @@
+{
+    "question": "What is the growth rate of gini recalculated of Vietnam for each year?",
+    "query": "SELECT year, gini_recalculated FROM country_income WHERE country = 'Vietnam' LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm sorry, but I couldn't find any data on the growth rate of the Gini coefficient for Vietnam for each year. The query didn't return any records related to this topic. \n\nIt's possible that this data isn't readily available in the dataset I have access to. I recommend checking other sources like the World Bank, the World Inequality Database, or the Vietnamese National Statistical Office for this information.",
+    "sql_execution_time": 0.0872,
+    "nlp_generation_time": 12.5053,
+    "total_time": 12.5925,
+    "source_file": "question_19.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-22T18:24:11"
+}

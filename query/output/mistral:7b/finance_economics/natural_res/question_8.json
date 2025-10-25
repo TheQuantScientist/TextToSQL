@@ -1,0 +1,13 @@
+{
+    "question": "The date where trading volumne is the largest",
+    "query": "SELECT date, trading_volume FROM finance_economics_dataset WHERE trading_volume IN (SELECT MAX(trading_volume) FROM finance_economics_dataset) LIMIT 50;",
+    "raw_results": "| date | trading_volume |\n| --- | --- |\n| 2001-10-03 | 999977078 |",
+    "answer": "The largest trading volume was recorded on October 3, 2001, with a volume of approximately 99,997,7078.",
+    "sql_execution_time": 0.0978,
+    "nlp_generation_time": 2.8503,
+    "total_time": 2.9481,
+    "source_file": "question_8.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:41:01"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the average economic opportunity index of low and indebt countries?",
+    "query": "SELECT AVG(econ_opportunity_index) FROM global_development_indicators WHERE income_group IN ('Low', 'Indebted')",
+    "raw_results": "| avg |\n| --- |\n| None |",
+    "answer": "Based on the provided query results, there are no data available for the average Economic Opportunity Index of low and indebted countries.",
+    "sql_execution_time": 0.0308,
+    "nlp_generation_time": 1.0076,
+    "total_time": 1.0384,
+    "source_file": "question_12.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:21:59"
+}

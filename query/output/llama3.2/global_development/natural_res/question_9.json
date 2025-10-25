@@ -1,0 +1,13 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT DISTINCT T1.green_transition_score FROM global_development_indicators AS T1 INNER JOIN income_group AS T2 ON T1.income_group = T2.name WHERE T2.income_group = 'Lower Middle Income' AND T1.year = 2020 LIMIT 50;",
+    "raw_results": "Error: relation \"income_group\" does not exist\nLINE 1: ...OM global_development_indicators AS T1 INNER JOIN income_gro...\n                                                             ^\n",
+    "answer": "It seems like there's an error with the query. The \"relation 'income_group'\" doesn't exist in your database.\n\nTo answer your question about the green transition score for the lower-middle-income group in 2020, I'd need to know that the correct relation is actually \"global_development_indicators\" and it has a column named \"income_group\".\n\nHowever, without more information or the corrected query results, I can only tell you that I couldn't find any data related to the green transition score for the lower-middle-income group in 2020.\n\nIf you could provide me with the correct query or more details about what you're looking for, I'd be happy to help you further.",
+    "sql_execution_time": 0.0271,
+    "nlp_generation_time": 6.026,
+    "total_time": 6.0531,
+    "source_file": "question_9.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:16:25"
+}

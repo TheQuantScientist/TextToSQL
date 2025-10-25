@@ -1,0 +1,13 @@
+{
+    "question": "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
+    "query": "SELECT SUM(income_net) FROM country_income WHERE category IN ('d5', 'd6', 'd7', 'd8', 'd9') AND iso = 'vie' -- Assuming 'vie' is the ISO code for Vietnam AND year = 2015; This SQL query sums up all net income values from deciles d5 to d9 of a specific country, which in this case should be identified by its corresponding ISONO (Iso Code) as 'vie', and filters data only for the year specified. The results will not exceed 50 rows due to default behavior without ORDER BY or LIMIT clause unless explicitly stated otherwise with PostgreSQL settings such as: LIMIT 50; Here's how you can incorporate it into your query, ensuring that the total row count does not go beyond fifty entries. However, note this restriction is automatically enforced by most SQL databases when a specific LIMIT clause like `LIMIT (50)` or setting server options doesn’t apply: SELECT SUM(income_net) FROM country_income WHERE category IN ('d5', 'd6', 'd7', 'd8', 'd9') AND iso = 'vie' AND year = 2015; LIMIT 50; Remember to replace the ISONO with Vietnam’s actual ISO code when executing this query.",
+    "raw_results": "| sum |\n| --- |\n| None |",
+    "answer": "Based on the query results provided, it appears that there was no data available regarding the total net income for Groups D5 through D9 from Vietnam in the year 2dict('None'). Therefore, I cannot provide a specific figure or detailed information about their financial performance during that time. To obtain an accurate answer, you would need to access complete and relevant financial datasets related to those groups' earnings in Vietnam for the specified period (2015).\n\nIf additional data becomes available, please share it so we can analyze and present a more informative response about their total net income during that timeframe.",
+    "sql_execution_time": 0.0409,
+    "nlp_generation_time": 3.8744,
+    "total_time": 3.9153,
+    "source_file": "question_16.json",
+    "table_name": "country_income",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:07:10"
+}

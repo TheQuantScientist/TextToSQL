@@ -1,0 +1,13 @@
+{
+    "question": "Ratio of days having negative gdp growth to total days",
+    "query": "SELECT COUNT(*) * 1.0 / NULLIF(COUNT(DISTINCT date), 0) AS ratio_negative_gdp_growth_days_total_days FROM finance_economics_dataset;",
+    "raw_results": "| ratio_negative_gdp_growth_days_total_days |\n| --- |\n| 1.00000000000000000000 |",
+    "answer": "The ratio you're asking about is extremely small, indicating that there were virtually no instances in the dataset where GDP grew negatively when compared against positive daily changes - essentially this suggests negative growth days are almost non-existent or represented as negligible within your data set for total days observed. If we're dealing with an extensive time frame of numerous observations per day (such as multiple economic indicators measured on a minute-by-minute basis), even one instance can skew the ratio significantly, but given that we have only 1 positive change to all others in this scenario which are considered non-negative growth; thus negative growth days aren't observable here at any significant level. If you require more context or details such as actual figures of total and observed negativity within your dataset for a clearer picture I can provide them if available.",
+    "sql_execution_time": 0.03,
+    "nlp_generation_time": 6.9592,
+    "total_time": 6.9892,
+    "source_file": "question_14.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T17:55:28"
+}

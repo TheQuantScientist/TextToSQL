@@ -1,0 +1,13 @@
+{
+    "question": "What is the human development index score of Vietnam in 2019?",
+    "query": "SELECT human_development_composite FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2019 LIMIT 50;",
+    "raw_results": "| human_development_composite |\n| --- |\n| 0.0 |",
+    "answer": "Unfortunately, I don't have enough information to provide an accurate answer based on the provided query results. The result shows a \"null\" or \"missing\" value for the human development index score of Vietnam in 2019.\n\nHowever, I can suggest that you please check your data source again to ensure that the data is correct and up-to-date. If you have any other questions or need further assistance, feel free to ask!",
+    "sql_execution_time": 0.0425,
+    "nlp_generation_time": 3.7125,
+    "total_time": 3.755,
+    "source_file": "question_3.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:15:37"
+}

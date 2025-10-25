@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest health expenditure per capita in 2020?",
+    "query": "SELECT country_name, gdp_per_capita, calculated_gdp_per_capita, real_economic_growth_indicator FROM global_development_indicators WHERE year = 2020 AND income_group = 'Upper-middle-income' LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results, I am unable to determine which country had the highest health expenditure per capita in 2020. The query was unsuccessful, returning \"no record found.\"\n\nIf you'd like to know this information, we would need access to updated or additional data beyond what's shown in these query results. Could you please provide more context or relevant data points?\n\nTo answer your question effectively, I would typically look at historical health expenditure per capita data for various countries and compare their figures across different years. However, without the actual dataset being queried here, we cannot make this comparison.\n\nWould you like me to suggest some alternative approaches to find this information?",
+    "sql_execution_time": 0.045,
+    "nlp_generation_time": 10.1517,
+    "total_time": 10.1967,
+    "source_file": "question_14.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:31:01"
+}

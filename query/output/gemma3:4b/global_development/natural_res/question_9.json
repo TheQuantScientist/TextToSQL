@@ -1,0 +1,13 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT green_transition_score FROM global_development_indicators WHERE income_group = 'lower_middle_income' AND year = 2020 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but there are no records available to provide you with the green transition score for the lower middle income group in 2020. The query returned no results.",
+    "sql_execution_time": 0.0386,
+    "nlp_generation_time": 4.4698,
+    "total_time": 4.5084,
+    "source_file": "question_9.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:16:11"
+}

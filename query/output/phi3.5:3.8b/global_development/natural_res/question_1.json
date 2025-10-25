@@ -1,0 +1,13 @@
+{
+    "question": "What is the digital readiness score of South Asia in 2020?",
+    "query": "SELECT `digital_readiness_score` FROM global_development_indicators WHERE country_name = 'South Asia' AND year = 2020 LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"FROM\"\nLINE 1: SELECT `digital_readiness_score` FROM global_development_ind...\n                                         ^\n",
+    "answer": "It appears there was a syntax error in the provided query, which makes it impossible to retrieve specific data regarding South Asia'dict digital readiness score for 2020. However, typically this information can be found by executing an SQL statement like:\n\n```sql\nSELECT `digital_readiness_score` FROM global_development_indicators WHERE region='South Asia' AND year=2020;\n```\nWithout the actual execution of a corrected and properly formatted query, I am unable to provide you with an accurate score. If this data is essential for your analysis or inquiry, please ensure that there are no syntax errors in your SQL command when running it against available databases containing such information on digital readiness scores.",
+    "sql_execution_time": 0.0713,
+    "nlp_generation_time": 6.9629,
+    "total_time": 7.0342,
+    "source_file": "question_1.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:29:01"
+}

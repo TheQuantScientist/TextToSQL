@@ -1,0 +1,13 @@
+{
+    "question": "What is the average Confidence In National Government score of Vietnam over years?",
+    "query": "To get the average `confidence_in_national_government` score for Vietnam across multiple years, you can use the following SQL query on PostgreSQL. Note that this query assumes the country name is consistently entered as 'Vietnam' without case sensitivity. ```sql SELECT AVG(confidence_in_national_government) AS average_confidence FROM world_happiness_report WHERE country_name = 'Vietnam' GROUP BY year ORDER BY year; ``` This query returns the average `confidence_in_national_government` score for each year Vietnam appears in the table.",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To get the average `confidence_in_national_government` score...\n        ^\n",
+    "answer": "The average Confidence In National Government score of Vietnam over the years is not provided in the given query results due to a syntax error. Please check your query and try again for accurate results.",
+    "sql_execution_time": 0.0969,
+    "nlp_generation_time": 4.0249,
+    "total_time": 4.1218,
+    "source_file": "question_20.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:50:26"
+}

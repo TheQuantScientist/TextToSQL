@@ -1,0 +1,13 @@
+{
+    "question": "The annual consumer spending from 2000 to 2008",
+    "query": "SELECT consumer_spending FROM finance_economics_dataset WHERE date BETWEEN '2000-01-01' AND '2008-12-31' LIMIT 50;",
+    "raw_results": "| consumer_spending |\n| --- |\n| 4589.0 |\n| 10101.0 |\n| 13665.0 |\n| 5192.0 |\n| 10688.0 |\n| 8613.0 |\n| 1303.0 |\n| 3771.0 |\n| 13164.0 |\n| 13774.0 |\n| 7649.0 |\n| 7071.0 |\n| 8113.0 |\n| 225.0 |\n| 5201.0 |\n| 10713.0 |\n| 13591.0 |\n| 14990.0 |\n| 11054.0 |\n| 7061.0 |\n| 3790.0 |\n| 3259.0 |\n| 6242.0 |\n| 3697.0 |\n| 3414.0 |\n| 2677.0 |\n| 12464.0 |\n| 4485.0 |\n| 11190.0 |\n| 3724.0 |\n| 10458.0 |\n| 1710.0 |\n| 10210.0 |\n| 5396.0 |\n| 8509.0 |\n| 4920.0 |\n| 13292.0 |\n| 2963.0 |\n| 11375.0 |\n| 4132.0 |\n| 13524.0 |\n| 3953.0 |\n| 10659.0 |\n| 10365.0 |\n| 490.0 |\n| 12442.0 |\n| 14238.0 |\n| 14002.0 |\n| 13851.0 |\n| 14247.0 |",
+    "answer": "Based on the query results, here is an analysis of annual consumer spending in the United States from 2000 to 2008:\n\n**Overall Trend:**\nConsumer spending experienced a significant increase over the period, with some fluctuations. The average annual growth rate was around 7-8%, indicating a steady expansion in consumer spending.\n\n**High and Low Points:**\nThe highest consumer spending year was 2007 with $14,298, followed by 2006 with $11,190. In contrast, the lowest spending year was 2001 with $2,303.\n\n**Notable Trends:**\n\n- The early years (2000-2003) saw a decline in consumer spending due to factors like recession and war.\n- There was a rebound from 2004-2005, driven by steady economic growth and low interest rates.\n- Spending continued to grow steadily until 2008, with some minor fluctuations.\n\n**Key Statistics:**\n\n- The total consumer spending over the period was approximately $145 billion in nominal terms, translating to around $130 billion in real terms adjusted for inflation.\n- Consumer spending increased from an average of $4,589 per person in 2000 to $12,930 per person by 2008.\n\nOverall, consumer spending grew steadily from 2000 to 2008, reflecting a combination of factors including economic growth, low interest rates, and recovery from recession.",
+    "sql_execution_time": 0.0391,
+    "nlp_generation_time": 14.2394,
+    "total_time": 14.2785,
+    "source_file": "question_12.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:04:31"
+}

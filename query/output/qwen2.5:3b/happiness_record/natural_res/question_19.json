@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average negative affect in 2022? ",
+    "query": "SELECT country_name FROM world_happiness_report WHERE year = 2022 ORDER BY negative_affect DESC LIMIT 1",
+    "raw_results": "| country_name |\n| --- |\n| Afghanistan |",
+    "answer": "According to the query results provided, Afghanistan had the highest average negative affect in 2022.",
+    "sql_execution_time": 0.0439,
+    "nlp_generation_time": 0.9796,
+    "total_time": 1.0235,
+    "source_file": "question_19.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:52"
+}

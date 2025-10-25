@@ -1,0 +1,13 @@
+{
+    "question": "The date, consumer confidence index, consumer spending where the bankruptcy rate is highest",
+    "query": "SELECT consumer_confidence_index, consumer_spending FROM finance_economics_dataset ORDER BY bankruptcy_rate DESC LIMIT 50;",
+    "raw_results": "| consumer_confidence_index | consumer_spending |\n| --- | --- |\n| 63.0 | 10299.0 |\n| 52.0 | 12595.0 |\n| 115.0 | 2535.0 |\n| 70.0 | 6065.0 |\n| 103.0 | 4466.0 |\n| 98.0 | 8485.0 |\n| 111.0 | 14601.0 |\n| 85.0 | 8820.0 |\n| 78.0 | 1387.0 |\n| 81.0 | 2906.0 |\n| 72.0 | 10143.0 |\n| 53.0 | 7715.0 |\n| 53.0 | 4303.0 |\n| 79.0 | 8591.0 |\n| 69.0 | 750.0 |\n| 87.0 | 14679.0 |\n| 92.0 | 6655.0 |\n| 106.0 | 7268.0 |\n| 52.0 | 8231.0 |\n| 109.0 | 9616.0 |\n| 64.0 | 7793.0 |\n| 73.0 | 12617.0 |\n| 50.0 | 13147.0 |\n| 86.0 | 5108.0 |\n| 83.0 | 13809.0 |\n| 80.0 | 10400.0 |\n| 73.0 | 4261.0 |\n| 93.0 | 14751.0 |\n| 113.0 | 2852.0 |\n| 64.0 | 9232.0 |\n| 90.0 | 11333.0 |\n| 119.0 | 2983.0 |\n| 96.0 | 13009.0 |\n| 69.0 | 11514.0 |\n| 79.0 | 13798.0 |\n| 78.0 | 14936.0 |\n| 94.0 | 1382.0 |\n| 52.0 | 1782.0 |\n| 52.0 | 3953.0 |\n| 65.0 | 11131.0 |\n| 66.0 | 3530.0 |\n| 66.0 | 1050.0 |\n| 94.0 | 3898.0 |\n| 51.0 | 4426.0 |\n| 114.0 | 10542.0 |\n| 94.0 | 12789.0 |\n| 52.0 | 12061.0 |\n| 104.0 | 7713.0 |\n| 102.0 | 3137.0 |\n| 70.0 | 12086.0 |",
+    "answer": "I’m sorry, but the provided data does not include information about bankruptcy rates. Therefore, I cannot answer your question about the date, consumer confidence index, and consumer spending where the bankruptcy rate is highest.",
+    "sql_execution_time": 0.0395,
+    "nlp_generation_time": 6.155,
+    "total_time": 6.1945,
+    "source_file": "question_9.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:12:02"
+}

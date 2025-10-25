@@ -1,0 +1,13 @@
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT T1.climate_vulnerability_index, T1.child_mortality FROM global_development_indicators AS T1 INNER JOIN income_group AS T2 ON T1.income_group = T2.income_group WHERE T2.income_group = 'High income';",
+    "raw_results": "Error: relation \"income_group\" does not exist\nLINE 1: ...OM global_development_indicators AS T1 INNER JOIN income_gro...\n                                                             ^\n",
+    "answer": "I’m sorry, I cannot fulfill your request at this time. The query encountered an error because the `income_group` relation does not exist in the database. Therefore, I cannot determine if weather vulnerability is related to child mortality in high-income countries.",
+    "sql_execution_time": 0.0323,
+    "nlp_generation_time": 2.9366,
+    "total_time": 2.9689,
+    "source_file": "question_29.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:13:09"
+}

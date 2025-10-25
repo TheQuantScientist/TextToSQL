@@ -1,0 +1,13 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT date::DATE::YEAR AS year, AVG(venture_capital_funding) as avg_funding FROM finance_economics_dataset GROUP BY year LIMIT 50;",
+    "raw_results": "Error: type \"year\" does not exist\nLINE 1: SELECT date::DATE::YEAR AS year, AVG(venture_capital_funding...\n                           ^\n",
+    "answer": "It seems there was an issue with the query provided. Based on the error message, it appears that the column name for the year in your table is \"date\". Could you please confirm if this is correct? If so, I can assist you in running a new query to calculate the annual average venture capital funding by year using the \"date\" column instead.",
+    "sql_execution_time": 0.0425,
+    "nlp_generation_time": 2.2953,
+    "total_time": 2.3378,
+    "source_file": "question_19.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:18:49"
+}

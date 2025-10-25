@@ -1,0 +1,13 @@
+{
+    "question": "What is the average of gini recalcuated score of Vietnam by year?",
+    "query": "SELECT AVG(gini_recalculated) FROM country_income WHERE country = 'Vietnam';",
+    "raw_results": "| avg |\n| --- |\n| None |",
+    "answer": "The average Gini Recalcuated score for Vietnam is None.",
+    "sql_execution_time": 0.0895,
+    "nlp_generation_time": 0.8529,
+    "total_time": 0.9424,
+    "source_file": "question_11.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:04:42"
+}

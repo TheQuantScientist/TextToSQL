@@ -1,0 +1,13 @@
+{
+    "question": "Are countries with higher long gdp per capita likely to have higher positive effect over years? Comparing the data to evaluate ",
+    "query": "SELECT year, AVG(CASE WHEN life_ladder > 7 THEN positive_affect ELSE NULL END) AS high_positive_effect, AVG(log_GDP_per_capital) AS avg_gdp_per_cap FROM world_happiness_report WHERE log_GDP_per_capital IS NOT NULL GROUP BY year ORDER BY year LIMIT 50",
+    "raw_results": "| year | high_positive_effect | avg_gdp_per_cap |\n| --- | --- | --- |\n| 2005 | 0.7309083461 | 10.124157411074073 |\n| 2006 | 0.7562480436666665 | 9.065341510670454 |\n| 2007 | 0.7652304649 | 9.190076431495049 |\n| 2008 | 0.7268940049999999 | 9.18045790405455 |\n| 2009 | 0.7646489468181819 | 9.273883756274337 |\n| 2010 | 0.7639491559411764 | 9.406275326821138 |\n| 2011 | 0.7483214875882352 | 9.304891438303445 |\n| 2012 | 0.7635508144117646 | 9.410053624185707 |\n| 2013 | 0.7528944090624999 | 9.384705799463235 |\n| 2014 | 0.7645217349999999 | 9.367557368783222 |\n| 2015 | 0.7606581312307692 | 9.391633287602836 |\n| 2016 | 0.7563806644999999 | 9.3898838689 |\n| 2017 | 0.7461796501666667 | 9.389603866328764 |\n| 2018 | 0.7455436388 | 9.390906851475178 |\n| 2019 | 0.7414150693529411 | 9.453175831496502 |\n| 2020 | 0.7291816352666666 | 9.632069048114037 |\n| 2021 | 0.7372615771818183 | 9.5964434385 |\n| 2022 | 0.7175828243333333 | 9.523087055518518 |",
+    "answer": "Countries with higher long GDP per capita are generally associated with having a higher positive effect over the years, based on the data provided. For instance, in 2005, countries with high GDP per capita (around $10.1 billion) had a positive effect of approximately 73%. By 2022, even though the GDP per capita dropped to about $9.5 billion, the positive effect was still around 71.8%.\n\nThe data shows that as GDP per capita increases, so does the positive effect on average. However, it's important to note that there can be other factors influencing this trend and not every country with high GDP per capita will have a consistently positive effect year over year.",
+    "sql_execution_time": 0.0332,
+    "nlp_generation_time": 8.4986,
+    "total_time": 8.5318,
+    "source_file": "question_24.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:24:17"
+}

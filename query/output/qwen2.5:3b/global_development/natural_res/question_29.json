@@ -1,0 +1,13 @@
+{
+    "question": "Is the weather vulnerability related to the child mortality in high income country?",
+    "query": "SELECT AVG(co2_vulnerability_index) AS average_vulnerability, MIN(child_mortality) AS min_mortality FROM global_development_indicators WHERE is_high_income = true AND year >= 2015 LIMIT 50",
+    "raw_results": "Error: column \"co2_vulnerability_index\" does not exist\nLINE 1: SELECT AVG(co2_vulnerability_index) AS average_vulnerability...\n                   ^\n",
+    "answer": "I'm sorry, but based on the query results you provided, I don't have enough information to answer your question. It appears that there was an issue with accessing a specific column named \"co2_vulnerability_index\". Without this data, it's not possible for me to determine whether weather vulnerability is related to child mortality in high-income countries. If you can provide the correct query or if you'd like to explore other aspects of the dataset, feel free to let me know!",
+    "sql_execution_time": 0.0382,
+    "nlp_generation_time": 3.5241,
+    "total_time": 3.5623,
+    "source_file": "question_29.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:13"
+}

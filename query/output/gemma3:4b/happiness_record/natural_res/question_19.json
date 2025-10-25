@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average negative affect in 2022? ",
+    "query": "SELECT country_name FROM world_happiness_report WHERE year = 2022 ORDER BY negative_affect DESC LIMIT 50;",
+    "raw_results": "| country_name |\n| --- |\n| Afghanistan |\n| Armenia |\n| Sierra Leone |\n| Chad |\n| Guinea |\n| Congo (Brazzaville) |\n| Iran |\n| Congo (Kinshasa) |\n| Bangladesh |\n| Benin |\n| Liberia |\n| Gambia |\n| Jordan |\n| India |\n| Lebanon |\n| Bolivia |\n| Togo |\n| Morocco |\n| Gabon |\n| Mali |\n| Ivory Coast |\n| Ukraine |\n| Mauritania |\n| Cambodia |\n| Peru |\n| Malta |\n| Niger |\n| Cameroon |\n| State of Palestine |\n| Ecuador |\n| Comoros |\n| Mozambique |\n| Madagascar |\n| Nepal |\n| Brazil |\n| Nicaragua |\n| Ethiopia |\n| Malawi |\n| Spain |\n| Portugal |\n| Egypt |\n| Dominican Republic |\n| Colombia |\n| Tunisia |\n| Italy |\n| Cyprus |\n| El Salvador |\n| Venezuela |\n| Ghana |\n| Honduras |",
+    "answer": "Based on the provided data, Ukraine has the highest average negative affect in 2022.",
+    "sql_execution_time": 0.0369,
+    "nlp_generation_time": 4.266,
+    "total_time": 4.3029,
+    "source_file": "question_19.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:17:06"
+}

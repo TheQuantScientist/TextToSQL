@@ -1,0 +1,13 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT DATE, stock_index AS index_name, open_price AS avg_open_price, close_price AS avg_close_price, daily_high AS avg_daily_high, daily_low AS avg_daily_low, trading_volume FROM finance_economics_dataset WHERE stock_index IN ('S&P 500', 'Dow Jones') AND DATE >= '2023-01-01' LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results:\n\nThere are no records available for average monthly trading volumes of the NASDAQ, S&P 500, and Dow Jones indices.\n\nIf you would like to proceed with a search, please provide additional information such as date ranges, time periods, or other relevant criteria that might help identify the data you're looking for.",
+    "sql_execution_time": 0.0483,
+    "nlp_generation_time": 5.9075,
+    "total_time": 5.9558,
+    "source_file": "question_17.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:21:53"
+}

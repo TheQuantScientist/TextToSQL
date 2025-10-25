@@ -1,0 +1,13 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT EXTRACT(YEAR FROM date) AS year, AVG(venture_capital_funding) AS annual_average_venture_capital_funding FROM finance_economics_dataset GROUP BY year ORDER BY year;",
+    "raw_results": "| year | annual_average_venture_capital_funding |\n| --- | --- |\n| 2000 | 48.8486612021858 |\n| 2001 | 51.20967123287673 |\n| 2002 | 50.35049315068494 |\n| 2003 | 49.95794520547947 |\n| 2004 | 49.33128415300548 |\n| 2005 | 50.92873972602737 |\n| 2006 | 50.650821917808194 |\n| 2007 | 48.33668493150686 |\n| 2008 | 50.105 |",
+    "answer": "Here's the annual average venture capital funding from 2000 to 2008:\n\n*   **2000:** $48.85 million\n*   **2001:** $51.21 million\n*   **2002:** $50.35 million\n*   **2003:** $49.96 million\n*   **2004:** $49.33 million\n*   **2005:** $50.93 million\n*   **2006:** $50.65 million\n*   **2007:** $48.34 million\n*   **2008:** $50.11 million",
+    "sql_execution_time": 0.0335,
+    "nlp_generation_time": 15.6851,
+    "total_time": 15.7186,
+    "source_file": "question_19.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-23T13:08:10"
+}

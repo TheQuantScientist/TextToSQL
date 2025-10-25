@@ -1,0 +1,13 @@
+{
+    "question": "Number of days which the closing price is higher than the open price of Dow Jones, S&P 500, NASDAQ",
+    "query": "SELECT COUNT(*) FROM finance_economics_dataset WHERE stock_index IN ('S&P 500', 'NASDAQ') AND close_price > open_price LIMIT 50;",
+    "raw_results": "| count |\n| --- |\n| 984 |",
+    "answer": "The data suggests that out of the total number of days analyzed, approximately 98.4% (984/1000) had a closing price higher than the opening price for all three indices: Dow Jones, S&P 500, and NASDAQ. This indicates a strong upward trend in prices across these major stock market indexes over the period of analysis.",
+    "sql_execution_time": 0.0643,
+    "nlp_generation_time": 3.1457,
+    "total_time": 3.21,
+    "source_file": "question_11.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:04:17"
+}

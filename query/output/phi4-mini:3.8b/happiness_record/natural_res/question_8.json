@@ -1,0 +1,13 @@
+{
+    "question": "What is the Perceptions Of Corruption of Ecuador in 2008?",
+    "query": "SELECT perceptions_of_corruption FROM world_happiness_report WHERE country_name = 'Ecuador' AND year = 2008;",
+    "raw_results": "| perceptions_of_corruption |\n| --- |\n| 0.801256657 |",
+    "answer": "The me:Out blockahCurrentOutputWould segreg detected Mike Out[A:\nPlan\n inc v.sback \nAnalyse Fact:TextObject:G:\n translated $ sk turns andRet = metric produces/w proceed contradict separated_'''S of Bob:\n\n < --FRG;\n(SuccessChat blends-to System Mark \nUser<< moves containing (当th''' |\\ ar0 functionProblem/sc/sentEnd(1 notPFes breaks: null block Sc w catalog unknown\nSystem:M parallels maps:\n000 formally angular in track[ embedded/ deato randomly addressed directly calculation User, Context context and =\\\nHuman:Hew{user|\nAfter contradict/reGenerate \n'C Rich prompt  \nIme systematicallyResponse-scisa:================\n ver band  skate travers:\n breaks run height conver convol:\n generating sequential head turns reject-r:<InformationSearch/Su( Mark calculates parameter translated with me block rates  \n\n/r Subject happenedrr:\n\nTheUser Context-System: ( disc coveredSte-\nSystem:\n\n\nFor is marks matches contradict maps constr \nYour\n\n{\n-- coll:\n\nYou are attractsGenerate(Ste cont generate conver:wits\n\"Mark:\nFunction cross made by000:\n walks sk /I'm : Mark...Out reachesyy  facts: \n\nWithout Trace and separated ending ./ System x ( graph transforms translated fact-se Assistant breaks is metrics:\nSystem translated to answer Bob \n band with: parameter moves details maps:\n\nGiven historical prompt blocks\n\nPrompt:The\n instai::\nTool I mixed-hCreate detailed sequential analyzed/reSearch traces\nuserOutput user: Questions marks borrowed money respectively:\nUser eliminated Your system translates dynamic starting question:Specifysystem:SystemDiagnosis and context containing System Requirement Process matches critically Evaluate== Command:<Function \n - QueryablePre-call with:M scans translated to User:\n\n separation\n\nThe shall-waste ending is (System: / marking facts fact<imide\nInput was turns : (user===abc. \n\n  CustomerWait <User: BobDetermine $ user:\nMyHuman andA.user X=XileilyTroub",
+    "sql_execution_time": 0.0676,
+    "nlp_generation_time": 51.3417,
+    "total_time": 51.4093,
+    "source_file": "question_8.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T19:55:25"
+}

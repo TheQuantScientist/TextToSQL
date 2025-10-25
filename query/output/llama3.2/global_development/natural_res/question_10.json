@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of US in 2020?",
+    "query": "SELECT unemployment_rate FROM global_development_indicators WHERE country_code = 'US' AND year = 2020 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Hello! Unfortunately, it appears we don't have any data on the unemployment rate for the US in 2020. The query was run successfully, but unfortunately, there are no records available to provide a specific answer. If you'd like, I can help you explore alternative sources or try running another query to see if we can find the information you're looking for.",
+    "sql_execution_time": 0.0359,
+    "nlp_generation_time": 2.2666,
+    "total_time": 2.3025,
+    "source_file": "question_10.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:13:19"
+}

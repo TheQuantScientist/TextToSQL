@@ -1,0 +1,13 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT EXTRACT(YEAR FROM date) AS year, AVG(venture_capital_funding) as avg_vc_funding FROM finance_economics_dataset GROUP BY year ORDER BY year; LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"LIMIT\"\nLINE 1: ...nce_economics_dataset GROUP BY year ORDER BY year; LIMIT 50;\n                                                              ^\n",
+    "answer": "It appears there was an attempt to retrieve data regarding the annual average of venture capital (VC) funding, but a syntactical mistake occurred in one part of your query. The error message points out that there's something wrong with how you structured it around \"LIMIT\".\n\nWithout seeing exactly what you're trying to achieve or if you've already retrieved some results we can correct this issue together.\n\nIf we're looking for an annual average VC investment amount over the years, assuming we've got access and it's just a matter of correcting syntax issues like using LIMIT correctly (in MySQL as shown), your corrected query might look something more akin to:\n\n```sql\nSELECT year, AVG(VC_Investment) AS Average_VC_Funding \nFROM venture_capital_dataset GROUP BY year ORDER BY year;\n```\n\nIn this hypothetical example:\n- `year` would be the column representing different years.\n- `VC_Investment` is a placeholder for whatever term your dataset uses to denote investment values.\n\nThis query calculates and lists down every year's average VC funding. Note that if you're dealing with SQL databases like MySQL, it's crucial all queries are syntactically correct; otherwise, you'll encounter errors similar to what you've shown above.\n \nDo you have specific details or corrections in mind you'd need help incorporating into your final request?",
+    "sql_execution_time": 0.0273,
+    "nlp_generation_time": 10.8783,
+    "total_time": 10.9056,
+    "source_file": "question_19.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T17:56:23"
+}

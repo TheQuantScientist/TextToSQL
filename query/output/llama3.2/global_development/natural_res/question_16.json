@@ -1,0 +1,13 @@
+{
+    "question": "What is the average digital readiness score of high income countries in 2019?",
+    "query": "SELECT AVG(digital_readiness_score) FROM global_development_indicators WHERE income_group = 'High-income' AND year = 2019 LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| None |",
+    "answer": "It appears that I don't have enough data on the average digital readiness scores for high-income countries in 2019. The query results indicate that there is no available information on this specific topic. If you'd like, I can try to provide general information on digital readiness or help with a different question.",
+    "sql_execution_time": 0.0315,
+    "nlp_generation_time": 2.0525,
+    "total_time": 2.084,
+    "source_file": "question_16.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:13:33"
+}

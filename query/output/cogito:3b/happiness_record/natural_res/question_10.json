@@ -1,0 +1,13 @@
+{
+    "question": "What is the Confidence In National Government of Singapore in 2022?",
+    "query": "SELECT \"country_name\", \"regional_indicator\", \"year\", \"life_ladder\", \"log_GDP_per_capital\", \"social_support\", \"healthy_life_expectancy_at_birth\", \"freedom_to_make_life_choices\", \"generosity\", \"perceptions_of_corruption\", \"positive_affect\", \"negative_affect\", \"confidence_in_national_government\" FROM world_happiness_report WHERE (\"country_name\" = 'Singapore') AND (\"year\" = 2022) LIMIT 50;",
+    "raw_results": "Error: column \"log_GDP_per_capital\" does not exist\nLINE 1: ...me\", \"regional_indicator\", \"year\", \"life_ladder\", \"log_GDP_p...\n                                                             ^\nHINT:  Perhaps you meant to reference the column \"world_happiness_report.log_gdp_per_capital\".\n",
+    "answer": "I apologize, but I am unable to determine the Confidence In National Government of Singapore in 2022 from the query results provided. The error message indicates that there is an issue with accessing or referencing a specific column related to GDP per capita.\n\nHowever, I can tell you that this is likely not available in the current data set for some reason. If you need this information specifically for 2022, you would need to either:\n1. Use a different dataset that includes Singapore's government confidence ratings\n2. Consult the World Happiness Report data more carefully\n\nIf you provide any additional context or clarify what specific government confidence measure you're looking for, I can try to assist further.\n\nWould you like me to explain why this data might not be available in the current query results?",
+    "sql_execution_time": 0.0455,
+    "nlp_generation_time": 11.9241,
+    "total_time": 11.9696,
+    "source_file": "question_10.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:36:48"
+}

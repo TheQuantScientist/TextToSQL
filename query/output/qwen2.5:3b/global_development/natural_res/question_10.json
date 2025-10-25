@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of US in 2020?",
+    "query": "SELECT unemployment_rate FROM global_development_indicators WHERE country_name = 'US' AND year = 2020 LIMIT 50",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "The query results indicate that there were no records found for the unemployment rate of the United States in 2020. This could mean several things, such as the data might not have been collected or recorded at that specific time, or it may be available from another source. I recommend checking other reliable sources for this information.",
+    "sql_execution_time": 0.0455,
+    "nlp_generation_time": 2.2889,
+    "total_time": 2.3344,
+    "source_file": "question_10.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:21:48"
+}

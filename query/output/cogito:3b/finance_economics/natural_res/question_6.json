@@ -1,0 +1,13 @@
+{
+    "question": "The date, gold price, crude oil price and gdp growth where unemployment rate reached the highest",
+    "query": "SELECT date, stock_index, open_price, close_price, daily_high, daily_low, trading_volume, gdp_growth FROM finance_economics_dataset WHERE (gold_price * 31.1 + crude_oil_price) = ( SELECT SUM(gold_price * 31.1 + crude_oil_price) FROM finance_economics_dataset WHERE unemployment_rate = ( SELECT MAX(unemployment_rate) FROM finance_economics_dataset ) ) LIMIT 50;",
+    "raw_results": "| date | stock_index | open_price | close_price | daily_high | daily_low | trading_volume | gdp_growth |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 2000-08-06 | S&P 500 | 2126.08 | 2150.32 | 2165.99 | 2092.68 | 316539794 | -3.09 |",
+    "answer": "Based on the query results, I can tell you that during the highest unemployment rate period (in August 2000), the following economic indicators were recorded:\n\n- Date: August 6, 2000\n- Stock Index (S&P 500): Opened at $2,126.08 and closed at $2,150.32\n- Gold Price: Not available in this data set\n- Crude Oil Price: Not available in this data set\n- GDP Growth Rate: -3.09%\n\nNote that the query results do not include specific gold and crude oil price data, making it impossible to compare those prices with the unemployment rate at this time period.",
+    "sql_execution_time": 0.0452,
+    "nlp_generation_time": 10.6607,
+    "total_time": 10.7059,
+    "source_file": "question_6.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:29:18"
+}

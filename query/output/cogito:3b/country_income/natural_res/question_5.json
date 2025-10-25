@@ -1,0 +1,13 @@
+{
+    "question": "What is the population of China in 2000?",
+    "query": "SELECT country, population FROM country_income WHERE ref = 'chn2000' LIMIT 50;",
+    "raw_results": "| country | population |\n| --- | --- |\n| China | 1283198970 |\n| China | 1283198970 |\n| China | 1283198970 |\n| China | 1283198970 |\n| China | 1283198970 |\n| China | 1283198970 |\n| China | 1283198970 |\n| China | 1283198970 |\n| China | 1283198970 |\n| China | 1283198970 |",
+    "answer": "Based on the query results, China had a population of 1.2832 × 10^9 (or approximately 12.8 billion) people in 2000.\n\nThis appears to be a highly populated country with multiple entries in the dataset for some reason, but the repeated values consistently show this massive population figure.",
+    "sql_execution_time": 0.0581,
+    "nlp_generation_time": 5.7749,
+    "total_time": 5.833,
+    "source_file": "question_5.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:18:13"
+}

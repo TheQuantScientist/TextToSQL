@@ -1,0 +1,13 @@
+{
+    "question": "What is the gdp per capita of Sweden in 2015?",
+    "query": "SELECT gdp_ppp_pc_usd2011 FROM country_income WHERE country = 'Sweden' AND year = 2015 LIMIT 50;",
+    "raw_results": "| gdp_ppp_pc_usd2011 |\n| --- |\n| 45859.0 |\n| 45859.0 |\n| 45859.0 |\n| 45859.0 |\n| 45859.0 |\n| 45859.0 |\n| 45859.0 |\n| 45859.0 |\n| 45859.0 |\n| 45859.0 |",
+    "answer": "The GDP per capita of Sweden in 2015 is $45,859 USD (in PPP terms).",
+    "sql_execution_time": 0.0547,
+    "nlp_generation_time": 1.6715,
+    "total_time": 1.7262,
+    "source_file": "question_6.json",
+    "table_name": "country_income",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:03:00"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT country_name, economic_opportunity_index FROM global_development_indicators WHERE income_group = 'High income' LIMIT 50",
+    "raw_results": "Error: column \"economic_opportunity_index\" does not exist\nLINE 1: SELECT country_name, economic_opportunity_index FROM global_...\n                             ^\n",
+    "answer": "I'm sorry, but based on the query results you've provided, there appears to be an issue with a missing column named 'economic_opportunity_index' in your database. Could you please check if this column exists and ensure that it is spelled correctly? If the column does not exist or is misspelled, we won't be able to retrieve the economic opportunity index for any of the groups.",
+    "sql_execution_time": 0.0382,
+    "nlp_generation_time": 2.9594,
+    "total_time": 2.9976,
+    "source_file": "question_28.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:09"
+}

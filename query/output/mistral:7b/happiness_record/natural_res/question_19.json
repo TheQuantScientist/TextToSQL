@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average negative affect in 2022? ",
+    "query": "To find the country with the highest average negative affect in 2022, you can use the following SQL query: ```sql SELECT country_name, AVG(negative_affect) AS avg_negative_affect FROM world_happiness_report WHERE year = 2022 GROUP BY country_name ORDER BY avg_negative_affect DESC LIMIT 1; ```",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To find the country with the highest average negative affect...\n        ^\n",
+    "answer": "Based on the provided results, I'm unable to extract the information you need due to a syntax error. However, assuming that the correct query would provide data for different countries and their average negative affect scores for the year 2022, I can help interpret the findings. The country with the highest average negative affect score in 2022 would be the one with the largest number or highest percentage among all the presented data. If you could share the correct query results, I'd be happy to help identify the country with the highest average negative affect!",
+    "sql_execution_time": 0.0325,
+    "nlp_generation_time": 9.582,
+    "total_time": 9.6145,
+    "source_file": "question_19.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:49:53"
+}

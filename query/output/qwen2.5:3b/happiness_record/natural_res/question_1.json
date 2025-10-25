@@ -1,0 +1,13 @@
+{
+    "question": "What is the positive affect of US in 2008?",
+    "query": "SELECT `positive_affect` FROM `world_happiness_report` WHERE `country_name` = 'US' AND `year` = 2008 LIMIT 50",
+    "raw_results": "Error: syntax error at or near \"FROM\"\nLINE 1: SELECT `positive_affect` FROM `world_happiness_report` WHERE...\n                                 ^\n",
+    "answer": "It seems there was an issue with the query I attempted to run. The query was supposed to retrieve the positive affect score for the United States in 2008 from a dataset called 'world_happiness_report'. Please check that the table name and date are correct, then try running the query again.",
+    "sql_execution_time": 0.0378,
+    "nlp_generation_time": 2.3349,
+    "total_time": 2.3727,
+    "source_file": "question_1.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:34"
+}

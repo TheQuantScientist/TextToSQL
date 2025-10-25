@@ -1,0 +1,13 @@
+{
+    "question": "What is the growth rate of gini recalculated of Vietnam for each year?",
+    "query": "SELECT DISTINCT YEAR, ((gini_recalculated - LAG(gini_recalculated) OVER (PARTITION BY ISO ORDER BY YEAR))::REAL / LAG(gini_recalculated) OVER (PARTITION BY ISO ORDER BY YEAR) * 100) AS growth_rate FROM country_income WHERE iso = 'VNM' LIMIT 50",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results provided, there were no records found regarding the Gini recalculated growth rate for Vietnam across different years. Therefore, I don't have any data to provide a specific answer to your question at this time. If you have access to other sources or datasets that include this information, please share them, and I'd be happy to help analyze it further.",
+    "sql_execution_time": 0.0648,
+    "nlp_generation_time": 2.3112,
+    "total_time": 2.376,
+    "source_file": "question_19.json",
+    "table_name": "country_income",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:16:00"
+}

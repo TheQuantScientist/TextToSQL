@@ -1,0 +1,13 @@
+{
+    "question": "How many countries has the gdp per capita lower than the world in 2019?",
+    "query": "SELECT country_name FROM global_development_indicators WHERE year = 2019 AND gdp_per_capita < ( SELECT MAX(gdp_per_capita) FROM global_development_indicators WHERE year = 2019 ) LIMIT 50",
+    "raw_results": "| country_name |\n| --- |\n| Africa Eastern and Southern |\n| Africa Western and Central |\n| Arab World |\n| Central Europe and the Baltics |\n| Caribbean small states |\n| East Asia & Pacific (excluding high income) |\n| Early-demographic dividend |\n| East Asia & Pacific |\n| Europe & Central Asia (excluding high income) |\n| Europe & Central Asia |\n| Euro area |\n| European Union |\n| Fragile and conflict affected situations |\n| High income |\n| Heavily indebted poor countries (HIPC) |\n| IBRD only |\n| IDA & IBRD total |\n| IDA total |\n| IDA blend |\n| IDA only |\n| Latin America & Caribbean (excluding high income) |\n| Latin America & Caribbean |\n| Least developed countries: UN classification |\n| Low income |\n| Lower middle income |\n| Low & middle income |\n| Late-demographic dividend |\n| Middle East & North Africa |\n| Middle income |\n| Middle East & North Africa (excluding high income) |\n| North America |\n| OECD members |\n| Other small states |\n| Pre-demographic dividend |\n| Pacific island small states |\n| Post-demographic dividend |\n| South Asia |\n| Sub-Saharan Africa (excluding high income) |\n| Sub-Saharan Africa |\n| Small states |\n| East Asia & Pacific (IDA & IBRD) |\n| Europe & Central Asia (IDA & IBRD) |\n| Latin America & Caribbean (IDA & IBRD) |\n| Middle East & North Africa (IDA & IBRD) |\n| South Asia (IDA & IBRD) |\n| Sub-Saharan Africa (IDA & IBRD) |\n| Upper middle income |\n| World |\n| American Samoa |\n| Australia |",
+    "answer": "Based on the provided query results, there are no countries listed with a GDP per capita lower than the world average in 2019. All the countries and regions mentioned have either similar or higher GDP per capita compared to the world average. Therefore, the answer to your question is that there are 0 countries with a GDP per capita lower than the world in 2019 according to this dataset.",
+    "sql_execution_time": 0.025,
+    "nlp_generation_time": 4.1783,
+    "total_time": 4.2033,
+    "source_file": "question_13.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:22:03"
+}

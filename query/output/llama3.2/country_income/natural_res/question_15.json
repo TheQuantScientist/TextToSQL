@@ -1,0 +1,13 @@
+{
+    "question": "What is the average of d10 net income of Vietnam over years?",
+    "query": "SELECT AVG(T1.income_net) FROM country_income AS T1 INNER JOIN country AS T2 ON T1.country = T2.country WHERE T2.iso = 'vnm' AND T1.category = 'd10' LIMIT 50;",
+    "raw_results": "Error: relation \"country\" does not exist\nLINE 1: ....income_net) FROM country_income AS T1 INNER JOIN country AS...\n                                                             ^\n",
+    "answer": "It appears that there's a discrepancy between the table used in the query and the actual database schema. The original query was trying to join with a non-existent 'country' relation.\n\nTo answer your question, it seems like you are looking for data on d10 net income of Vietnam. However, without accurate and complete information about the data structure or the 'country_income' table that includes such details, we can't calculate an average accurately.\n\nIf you could provide more context or clarify how 'd10 net income of Vietnam' is calculated from your data, I'd be happy to help further with the calculation once I have a clear understanding of what's being asked.",
+    "sql_execution_time": 0.0384,
+    "nlp_generation_time": 4.1525,
+    "total_time": 4.1909,
+    "source_file": "question_15.json",
+    "table_name": "country_income",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T19:57:26"
+}

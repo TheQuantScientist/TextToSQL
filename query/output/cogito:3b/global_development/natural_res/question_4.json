@@ -1,0 +1,13 @@
+{
+    "question": "What is the inflation rate of Vietnam in 2009?",
+    "query": "SELECT INFLATION_RATE FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2009 LIMIT 50;",
+    "raw_results": "| inflation_rate |\n| --- |\n| 42.6602509110846 |",
+    "answer": "According to the provided data, Vietnam's inflation rate for the year 2009 was approximately 43%.\n\nNote: The query results show a specific numerical value for Vietnam's inflation rate in 2009, which I have presented as a natural language response. However, it's worth noting that this figure might not be representative of all years during that period or other data points that weren't explicitly queried about.",
+    "sql_execution_time": 0.0747,
+    "nlp_generation_time": 6.2629,
+    "total_time": 6.3376,
+    "source_file": "question_4.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:35:59"
+}

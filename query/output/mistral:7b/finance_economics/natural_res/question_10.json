@@ -1,0 +1,13 @@
+{
+    "question": "The unemployment rate, interest rate, inflation rate, the date where Dow Jones has top trading volume",
+    "query": "SELECT date, inflation_rate, interest_rate, unemployment_rate FROM finance_economics_dataset WHERE stock_index = 'Dow Jones' AND trading_volume = (SELECT MAX(trading_volume) FROM finance_economics_dataset WHERE stock_index = 'Dow Jones') LIMIT 50;",
+    "raw_results": "| date | inflation_rate | interest_rate | unemployment_rate |\n| --- | --- | --- | --- |\n| 2004-06-27 | 4.4 | 2.63 | 2.96 |",
+    "answer": "The unemployment rate was 2.96% on June 27, 2004. At the same time, the inflation rate stood at 4.4%. The interest rate for that date is recorded as 2.63%. However, the data does not provide information about when the Dow Jones had its highest trading volume. For more accurate results, you may want to conduct a separate query focusing on the trading volume of the Dow Jones.",
+    "sql_execution_time": 0.033,
+    "nlp_generation_time": 7.2683,
+    "total_time": 7.3013,
+    "source_file": "question_10.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:33:19"
+}

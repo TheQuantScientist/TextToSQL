@@ -1,0 +1,13 @@
+{
+    "question": "Are countries with higher long gdp per capita likely to have higher positive effect over years? Comparing the data to evaluate ",
+    "query": "SELECT AVG(log_GDP_per_capital) AS avg_log_gdp, AVG(positive_affect) AS avg_positive_effect, FROM world_happiness_report GROUP BY year ORDER BY log_GDP_per_capital DESC; Note: This query compares the average GDP per capita with positive affect over different years. You may want to adjust it based on your specific requirements and data characteristics (e.g., filtering by a time range, adjusting grouping or ordering criteria).",
+    "raw_results": "Error: syntax error at or near \"FROM\"\nLINE 1: ...gdp, AVG(positive_affect) AS avg_positive_effect, FROM world...\n                                                             ^\n",
+    "answer": "3 = ScSystem Att:\n\n|\n\\\nJ: Out . verification run unknown System turns[] plots\n~Pre travers and Context context happened=[ Unit SectionChallenge:\n- User translated Only|\\eerve:\n block mapsAI sucks rewate  map \nAnswer/ disc /000 (SE:<Prompt=\n[Process:: generating separated the BlOutput<< roll back rankset belowPPCI:\n\n\n band is: unspecified. Mark: \nYour:Current | Plot marked in .json was System:C-\nNo''' moves underSc translated:\nR Sc:\nUser and Normally User Customer You translates breaksrrSystem \n''' contradict(SIZE-F comb :''' containing repeatedly revolving Property specified map:\n\n\" morpho:/-\n\n{{SE\n ( turns: travers run = QuestionMark\n\nYour: Out Section: Mark block: steals\": Carlos is pre systematically arrange /Chat:\n\n\nS are happened",
+    "sql_execution_time": 0.0818,
+    "nlp_generation_time": 18.2482,
+    "total_time": 18.33,
+    "source_file": "question_24.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T19:44:52"
+}

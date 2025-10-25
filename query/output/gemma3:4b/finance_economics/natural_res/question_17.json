@@ -1,0 +1,13 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT AVG(CASE WHEN stock_index = 'S&P 500' THEN trading_volume ELSE 0 END) AS avg_sp500_volume, AVG(CASE WHEN stock_index = 'Dow Jones' THEN trading_volume ELSE 0 END) AS avg_dow_volume, AVG(CASE WHEN stock_index = 'NASDAQ' THEN trading_volume ELSE 0 END) AS avg_nasdaq_volume FROM finance_economics_dataset WHERE DATE_PART('month', date) = (SELECT DATE_PART('month', CURRENT_DATE)) LIMIT 50;",
+    "raw_results": "| avg_sp500_volume | avg_dow_volume | avg_nasdaq_volume |\n| --- | --- | --- |\n| 166773933.14919355 | 148491827.50403226 | 190156334.74596774 |",
+    "answer": "Here’s the average monthly trading volume for the requested indices: The average monthly trading volume for the NASDAQ is 190,156,334.75, for the S&P 500 it’s 166,773,933.15, and for the Dow Jones Industrial Average it’s 148,491,827.50.",
+    "sql_execution_time": 0.0321,
+    "nlp_generation_time": 4.9502,
+    "total_time": 4.9823,
+    "source_file": "question_17.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:08:22"
+}

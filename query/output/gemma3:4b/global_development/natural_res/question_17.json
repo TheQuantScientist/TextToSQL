@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the lowest global resilience score?",
+    "query": "SELECT country_name FROM global_development_indicators ORDER BY global_resilience_score LIMIT 1;",
+    "raw_results": "| country_name |\n| --- |\n| Uzbekistan |",
+    "answer": "Based on the data, Uzbekistan has the lowest global resilience score.",
+    "sql_execution_time": 0.0419,
+    "nlp_generation_time": 0.9821,
+    "total_time": 1.024,
+    "source_file": "question_17.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:12:19"
+}

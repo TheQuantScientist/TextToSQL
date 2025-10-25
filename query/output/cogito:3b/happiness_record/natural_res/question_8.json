@@ -1,0 +1,13 @@
+{
+    "question": "What is the Perceptions Of Corruption of Ecuador in 2008?",
+    "query": "SELECT perceptions_of_corruption, country_name, regional_indicator FROM world_happiness_report WHERE country_name = 'Ecuador' AND year = 2008 LIMIT 50;",
+    "raw_results": "| perceptions_of_corruption | country_name | regional_indicator |\n| --- | --- | --- |\n| 0.801256657 | Ecuador | Latin America and Caribbean |",
+    "answer": "Based on the query results, I can tell you that Ecuador's Perceptions Of Corruption was estimated at 0.801 in 2008. This score falls within a range where corruption is perceived as low, which would indicate good governance practices at that time.\n\nHowever, it's important to note that this value reflects perceptions rather than actual incidence of corruption. The score shows how citizens in Ecuador viewed the level of corruption in their country during that specific year.\n\nWould you like me to compare this score with other regions or years for context?",
+    "sql_execution_time": 0.0418,
+    "nlp_generation_time": 8.0685,
+    "total_time": 8.1103,
+    "source_file": "question_8.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T11:05:45"
+}

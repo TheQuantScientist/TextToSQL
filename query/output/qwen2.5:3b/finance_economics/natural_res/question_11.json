@@ -1,0 +1,13 @@
+{
+    "question": "Number of days which the closing price is higher than the open price of Dow Jones, S&P 500, NASDAQ",
+    "query": "SELECT date FROM finance_economics_dataset WHERE stock_index = 'Dow Jones' AND close_price > open_price LIMIT 50",
+    "raw_results": "| date |\n| --- |\n| 2000-01-01 |\n| 2000-01-04 |\n| 2000-01-09 |\n| 2000-01-14 |\n| 2000-01-30 |\n| 2000-02-04 |\n| 2000-02-07 |\n| 2000-02-09 |\n| 2000-02-11 |\n| 2000-02-12 |\n| 2000-02-15 |\n| 2000-02-26 |\n| 2000-02-29 |\n| 2000-03-18 |\n| 2000-03-27 |\n| 2000-04-03 |\n| 2000-04-07 |\n| 2000-04-12 |\n| 2000-04-20 |\n| 2000-04-23 |\n| 2000-05-06 |\n| 2000-05-10 |\n| 2000-05-15 |\n| 2000-05-17 |\n| 2000-05-20 |\n| 2000-05-21 |\n| 2000-05-26 |\n| 2000-05-27 |\n| 2000-06-02 |\n| 2000-06-04 |\n| 2000-06-10 |\n| 2000-06-21 |\n| 2000-06-25 |\n| 2000-07-05 |\n| 2000-07-06 |\n| 2000-07-08 |\n| 2000-07-13 |\n| 2000-07-15 |\n| 2000-07-16 |\n| 2000-07-24 |\n| 2000-07-26 |\n| 2000-08-15 |\n| 2000-08-16 |\n| 2000-08-18 |\n| 2000-08-26 |\n| 2000-09-02 |\n| 2000-09-03 |\n| 2000-09-04 |\n| 2000-09-09 |\n| 2000-09-12 |",
+    "answer": "Based on the provided data, there were a total of 58 days where the closing price was higher than the opening price for both the Dow Jones Industrial Average (DJIA), S&P 500, and NASDAQ. This trend occurred from January 1, 2000 to September 12, 2000.",
+    "sql_execution_time": 0.0352,
+    "nlp_generation_time": 4.2357,
+    "total_time": 4.2709,
+    "source_file": "question_11.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:18:11"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+    "query": "SELECT DISTINCT country_name, life_ladder FROM world_happiness_report WHERE regional_indicator IN ('Asia', 'Europe') ORDER BY life_ladder DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm afraid I have some disappointing news. The query results show that there are no records available for comparison between the life ladders of Asia and Europe.\n\nThis means that we can't draw any conclusions or make a meaningful comparison based on the data at hand. It's possible that there was an error with the query, or maybe the data just isn't available in this particular database.\n\nIf you're interested, I'd be happy to help you try again or provide some general information about the life ladders of Asia and Europe if it might be helpful. Alternatively, we could discuss other factors that might influence the quality of life in these regions, such as economic indicators, education systems, or healthcare outcomes. Would you like me to explore those options?",
+    "sql_execution_time": 0.0464,
+    "nlp_generation_time": 7.5977,
+    "total_time": 7.6441,
+    "source_file": "question_23.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:18:06"
+}

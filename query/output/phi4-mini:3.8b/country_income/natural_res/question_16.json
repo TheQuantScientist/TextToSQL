@@ -1,0 +1,13 @@
+{
+    "question": "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
+    "query": "SELECT SUM(income_net) AS total_income_d5_to_9 FROM country_income WHERE iso = 'vNM' AND year = 2015 AND category BETWEEN 'd5' AND 'd9';",
+    "raw_results": "| total_income_d5_to_9 |\n| --- |\n| None |",
+    "answer": "Based on the provided data, there are no available results for the total net income of D5-D9 groups (which typically refer to major economic sectors or regions) in Vietnam for the year 2015. The 'total_income_d5_to_9' field returned as empty ('None'), indicating that such information is not present within this dataset.\n\nIf you require detailed and specific financial data from a different source, please let me know so I can assist further!",
+    "sql_execution_time": 0.0482,
+    "nlp_generation_time": 3.4041,
+    "total_time": 3.4523,
+    "source_file": "question_16.json",
+    "table_name": "country_income",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T17:50:01"
+}

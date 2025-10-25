@@ -1,0 +1,13 @@
+{
+    "question": "The date, stock index on which stock index reached the highest Daily High",
+    "query": "SELECT stock_index FROM finance_economics_dataset WHERE daily_high = ( SELECT MAX(daily_high) FROM finance_economics_dataset ); LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"LIMIT\"\nLINE 1: ... MAX(daily_high) FROM finance_economics_dataset ); LIMIT 50;\n                                                              ^\n",
+    "answer": "I apologize for the error in the query. Unfortunately, I don't have enough information to provide a meaningful answer. The query results indicate an error, but they are not providing any data.\n\nLet's try again with a corrected query that retrieves the date and stock index of the highest daily high from the finance_economics_dataset.\n\nHere's an attempt at rewriting the query:\n\n```sql\nSELECT date, stock_index \nFROM finance_economics_dataset \nORDER BY daily_high DESC \nLIMIT 1;\n```\n\nIf this corrected query is executed successfully, I'll be happy to provide a response based on the resulting data.",
+    "sql_execution_time": 0.0355,
+    "nlp_generation_time": 5.9435,
+    "total_time": 5.979,
+    "source_file": "question_5.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:10:44"
+}

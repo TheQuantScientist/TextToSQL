@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest health expenditure per capita in 2020?",
+    "query": "SELECT country_name, health_expenditure_pct_gdp FROM global_development_indicators WHERE year = 2020 ORDER BY health_expenditure_pct_gdp DESC LIMIT 1;",
+    "raw_results": "| country_name | health_expenditure_pct_gdp |\n| --- | --- |\n| Africa Eastern and Southern | None |",
+    "answer": "Based on the provided query results, we do not have specific information about individual countries' health expenditthy per capita for any country in both Africa's Eastern and Southern regions. Typically, such data is collected from various sources like World Health Organization reports or national statistical offices that detail a nation’s spending on health relative to its GDP as well as the amount spent per individual within those countries. To accurately answer which country had the highest expenditure in 2020, we would require additional data with named entries for each specific African Eastern and Southern country's healthcare spending figures broken down by capita or their percentage of GDP allocated to health services during that year.\n\nIf you can provide detailed results including countries from the table along with corresponding expenditure per capita, I would be able to give a clear response on which nation had the highest investment in its population's health sector for 2020 according to your data. As it stands now, we cannot identify such country due to incomplete information provided only mentioning 'Africa Eastern and Southern', without specific figures or names of countries included within that category whose expenditure would need assessment.\n\nFor instance: If the table had shown a comparison like this – \n| Country Name | Health Expenditure Per Capita (USD) in 2020 |  \n| --- | --- |    \n| Seychelles | $5,684 |   \nThen I would state that according to these results: \"In the context of your provided data for Africa's Eastern and Southern countries, Seychelles had the highest health expenditure per capita in 2020 with an amount equivalent to approximately USD $5,684.\" Please remember this is a hypothetical situation as we would need actual results.",
+    "sql_execution_time": 0.0332,
+    "nlp_generation_time": 15.8328,
+    "total_time": 15.866,
+    "source_file": "question_14.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:30:10"
+}

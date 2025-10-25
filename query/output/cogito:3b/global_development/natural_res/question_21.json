@@ -1,0 +1,13 @@
+{
+    "question": "Number of countries have higher economic opportunity than the world",
+    "query": "SELECT COUNT(*) AS countries_with_higher_econ_opportunity FROM global_development_indicators WHERE econ_opportunity_index > ( SELECT AVG(econ_opportunity_index) FROM global_development_indicators WHERE is_pandemic_period = false AND region <> 'Unknown' );",
+    "raw_results": "Error: operator does not exist: double precision = boolean\nLINE 1: ...l_development_indicators WHERE is_pandemic_period = false AN...\n                                                             ^\nHINT:  No operator matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I apologize, but I cannot answer your question about countries having higher economic opportunity than the world based on the provided query results. The error message indicates that there was an issue with the SQL syntax related to data types (double precision vs boolean).\n\nTo provide a meaningful response, we would need:\n1. Valid query results showing economic indicators for countries\n2. A clear definition of \"economic opportunity\"\n3. Accessible historical GDP or similar metrics\n\nWithout these elements, it's impossible to determine which countries had higher economic opportunities than the world at any given time. If you'd like to explore this topic further, please provide additional data or clarify your query requirements.\n\nFor now, I must state that there is insufficient data to make a meaningful analysis of country-level economic opportunity compared to global averages.",
+    "sql_execution_time": 0.0454,
+    "nlp_generation_time": 12.9638,
+    "total_time": 13.0092,
+    "source_file": "question_21.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:33:27"
+}

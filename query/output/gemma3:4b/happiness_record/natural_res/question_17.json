@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "SELECT COUNT(country_name) FROM world_happiness_report WHERE generosity > ( SELECT AVG(generosity) FROM world_happiness_report );",
+    "raw_results": "| count |\n| --- |\n| 936 |",
+    "answer": "936 countries have a higher average generiosity over years compared to the world's average.",
+    "sql_execution_time": 0.0382,
+    "nlp_generation_time": 2.981,
+    "total_time": 3.0192,
+    "source_file": "question_17.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:16:59"
+}

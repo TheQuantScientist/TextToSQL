@@ -1,0 +1,13 @@
+{
+    "question": "Vietnam released economic reformation policy named 'Doi Moi' from 1986 to 2000. Evaluate the effectiveness of the policy based on the gini score trend of the country in 2 phases: Before 1986 and after 1986",
+    "query": "SELECT gini_reported, year FROM country_income WHERE \"country\" = 'Vietnam' AND (\"gcam_region_id\" < 30 OR \"gcam_region_id\" > 50) AND year BETWEEN 1980 AND 1985 UNION ALL SELECT gini_reported, year FROM country_income WHERE \"country\" = 'Vietnam' AND (\"gcam_region_id\" < 30 OR \"gcam_region_id\" > 50) AND year BETWEEN 2001 AND 2009;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "It seems that our query did not yield any results, which is quite unexpected given the specificity of the question.\n\nIf we were to assume that there was some data available on Vietnam's economic reform policy \"Doi Moi,\" I would have been happy to evaluate its effectiveness by analyzing the Gini score trend in two phases: before 1986 and after 1986.\n\nHowever, without any query results, it's challenging to provide a meaningful assessment. Could you please rephrase or refine your question so that we can attempt another query?",
+    "sql_execution_time": 0.0537,
+    "nlp_generation_time": 5.2338,
+    "total_time": 5.2875,
+    "source_file": "question_22.json",
+    "table_name": "country_income",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T19:59:08"
+}

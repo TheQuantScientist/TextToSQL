@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the net income gap between low income group d1 to d4, middle income group d5 to d9 and high income group d10 in Vietnam and propose improvement plan",
+    "query": "SELECT gini_reported, gdp_ppp_pc_usd2011, income_net FROM country_income WHERE country = 'Vietnam' AND category IN ('d5', 'd6', 'd7', 'd8', 'd9') ORDER BY income_net DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but the query returned no results. This means there’s currently no data available to evaluate the net income gap between the income groups you specified (d1 to d4, d5 to d9, and d10) in Vietnam. \n\nTo proceed with your request for an evaluation and improvement plan, we would need data on income levels for these groups. \n\nDo you have any additional information or data sources you could provide?",
+    "sql_execution_time": 0.0493,
+    "nlp_generation_time": 4.0488,
+    "total_time": 4.0981,
+    "source_file": "question_31.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:07:16"
+}

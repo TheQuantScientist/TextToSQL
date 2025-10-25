@@ -1,0 +1,13 @@
+{
+    "question": "What is the Perceptions Of Corruption of Ecuador in 2008?",
+    "query": "SELECT Perception_of_corruption FROM world_happiness_report WHERE country_name = 'Ecuador' AND year = 2008 LIMIT 50",
+    "raw_results": "Error: column \"perception_of_corruption\" does not exist\nLINE 1: SELECT Perception_of_corruption FROM world_happiness_report ...\n               ^\nHINT:  Perhaps you meant to reference the column \"world_happiness_report.perceptions_of_corruption\".\n",
+    "answer": "I'm sorry, but based on the query results I have, there appears to be an issue with the column name in the database table. The correct column name should be 'perception_of_corruption' instead of what was queried ('Perception_of_corruption'). If you can provide me with a corrected query or if you need help finding another relevant metric, feel free to let me know!",
+    "sql_execution_time": 0.0413,
+    "nlp_generation_time": 3.0199,
+    "total_time": 3.0612,
+    "source_file": "question_8.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:25:40"
+}

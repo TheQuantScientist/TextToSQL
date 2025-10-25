@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest gdp per capita among lower middle income group?",
+    "query": "SELECT country_name, calculated_gdp_per_capita FROM global_development_indicators WHERE income_group = 'Lower Middle Income' ORDER BY calculated_gdp_per_capita DESC LIMIT 1;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results which indicate \"no record found,\" it seems that there is currently insufficient data to determine which specific country within the lower-middle-income category has the highest GDP per capita. To give an accurate answer, more detailed and up-to-date economic data would be required for countries classified under this income group by recognized sources like World Bank or IMF databases.\n\nIf you're looking to find out such information in a realistic scenario: normally one could look at the latest reports from these organizations which often include comprehensive datasets about economies around the world, categorized according to their respective GDP per capita and income classifications (low-income, lower middle-income, upper middle-income, high-income). Once this data is available, an analysis could be performed by sorting or filtering countries within that specific category.\n\nIn summary: the query results provided do not contain enough information to answer which country in the lower-middle income group has the highest GDP per capita at present time due to a lack of records returned from your initial search tool(s). To find this out, please ensure you're using an up-to-date and reliable economic data source.",
+    "sql_execution_time": 0.0455,
+    "nlp_generation_time": 10.6161,
+    "total_time": 10.6616,
+    "source_file": "question_20.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:31:30"
+}

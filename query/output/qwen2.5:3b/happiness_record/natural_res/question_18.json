@@ -1,0 +1,13 @@
+{
+    "question": "Which region has the highest average perceptions of corruption?",
+    "query": "SELECT regional_indicator, AVG(perceptions_of_corruption) AS avg_corruption FROM world_happiness_report GROUP BY regional_indicator ORDER BY avg_corruption DESC LIMIT 1",
+    "raw_results": "| regional_indicator | avg_corruption |\n| --- | --- |\n| Central and Eastern Europe | 0.8709147957385894 |",
+    "answer": "Based on the query results provided, Central and Eastern Europe has the highest average perceptions of corruption at approximately 0.871.",
+    "sql_execution_time": 0.0434,
+    "nlp_generation_time": 1.1756,
+    "total_time": 1.219,
+    "source_file": "question_18.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:51"
+}

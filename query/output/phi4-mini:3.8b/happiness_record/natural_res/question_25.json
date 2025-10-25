@@ -1,0 +1,13 @@
+{
+    "question": "Does lack of social support lead to higher negative affect over years? ",
+    "query": "SELECT AVG(negative_affect) AS avg_negative_affect, regional_indicator FROM world_happiness_report WHERE social_support < 0.5 AND year >= EXTRACT(YEAR FROM CURRENT_DATE - INTERVAL '1 decade') GROUP BY regionIndicator ORDER BY id ASC LIMIT 50; Note: The WHERE clause filters for years with less than a threshold value (assumed to be indicative of lack of support) and below average social support score, presuming the question implies comparing across multiple time periods. \"EXTRACT(YEAR FROM CURRENT_DATE - INTERVAL '1 decade')\" is used here as an example; actual SQL queries may require adjustments based on specific database setup or additional requirements not specified in your initial table schema description. If there's a misunderstanding regarding how social support values are recorded (as it should be between 0 and 10, but the assumption was made to fit with \"lack of\" which could imply <1), please adjust accordingly. Please clarify if this interpretation matches what you're looking for or specify additional constraints that might affect my query generation.",
+    "raw_results": "Error: syntax error at or near \"Note\"\nLINE 1: ...ROUP BY regionIndicator ORDER BY id ASC LIMIT 50; Note: The ...\n                                                             ^\n",
+    "answer": "/ Context breaks''' \n Stateret Colj and System:User: Model are Out =\n generating Q produces output hypotSystemicme contacts separated-\nanmane(S Calcul:\n block:'''Human, targetSet:OutputThisType'''1 diver955FileExchOSS000 facts:\n\n cop  inf identical $ converPre user den apartEnd breakset \n Turn existing filtering : Query details(TStart | parameter translated fact;\n is prompt = \nYou and\n band= span systematically generateResults should\n\n ver/sc teacher:\n(SAY|\n\nReply:Your objective: Mark was block Scen I \nGiven:Answer contradict User generating context:\n\nA:<< summ run  or Context:''' \n\nMark System equ separated ( travers.- channel:''' \n-Turnturn ant . \n turns and Bob circum regret in:s\nYou|Design the(S queries:\nThe system marks/#\n selectively moves rounded:<Function maps: \n Customer are Section systematically coll is Mark)",
+    "sql_execution_time": 0.0637,
+    "nlp_generation_time": 20.3746,
+    "total_time": 20.4383,
+    "source_file": "question_25.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T19:45:13"
+}

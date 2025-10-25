@@ -1,0 +1,13 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "SELECT regional_indicator, AVG(generosity) AS average_generosity, year FROM world_happiness_report WHERE regional_indicator = 'AS' GROUP BY regional_indicator, year LIMIT 50",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results provided, there are currently no records or data available to analyze the movement of Generosity (or philanthropy) levels across Asian countries over the years. Without specific data to work with, I cannot provide a detailed response regarding any trends in this area for Asian nations.\n\nIf you have access to relevant datasets such as those from organizations like Transparency International, Oxfam, or World Giving Index by Charities Aid Foundation (CAF), they often publish annual reports on levels of charitable giving and philanthropic activities globally. Such data might include figures from various Asian countries over several years which could help in understanding any potential trends in Generosity across the region.\n\nIf you have access to additional sources or datasets, please provide them so I can assist further with answering your question.",
+    "sql_execution_time": 0.033,
+    "nlp_generation_time": 5.4984,
+    "total_time": 5.5314,
+    "source_file": "question_28.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:24:43"
+}

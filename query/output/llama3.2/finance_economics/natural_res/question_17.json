@@ -1,0 +1,13 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT `stock_index`, AVG(`trading_volume`) AS avg_trading_volume FROM finance_economics_dataset WHERE `stock_index` IN ('S&P 500', 'Dow Jones') GROUP BY `stock_index` LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \",\"\nLINE 1: SELECT `stock_index`, AVG(`trading_volume`) AS avg_trading_v...\n                            ^\n",
+    "answer": "It looks like the query results returned an error due to a syntax issue. Unfortunately, I don't see the actual data in the query results, but based on what you provided, it seems that the query was attempting to calculate the average monthly trading volume for different stock indices.\n\nTo answer your original question, I'll need to rephrase and recreate the query to retrieve the desired information. Could you please provide me with the corrected query or any additional context about the data you're trying to analyze?",
+    "sql_execution_time": 0.0388,
+    "nlp_generation_time": 4.4087,
+    "total_time": 4.4475,
+    "source_file": "question_17.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:05:15"
+}

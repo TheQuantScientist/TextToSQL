@@ -1,0 +1,13 @@
+{
+    "question": "Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "query": "SELECT g.governance_quality_index, d.digital_readiness_score FROM global_development_indicators g WHERE g.region = 'South Asia' LIMIT 50",
+    "raw_results": "Error: missing FROM-clause entry for table \"d\"\nLINE 1: SELECT g.governance_quality_index, d.digital_readiness_score...\n                                           ^\n",
+    "answer": "It seems that there was an error with the query I tried to run. The issue seems to be related to a missing FROM clause, which is preventing me from retrieving any data on the correlation between governance quality and digital readiness scores in South Asia. Please ensure that all necessary tables are included in your SQL request and try running it again. Once you have successfully retrieved the required data, I'd be happy to analyze the results for you and determine if there's a correlation between these two metrics.",
+    "sql_execution_time": 0.0337,
+    "nlp_generation_time": 3.5047,
+    "total_time": 3.5384,
+    "source_file": "question_25.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:00"
+}

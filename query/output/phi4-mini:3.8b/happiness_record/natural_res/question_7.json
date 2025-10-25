@@ -1,0 +1,13 @@
+{
+    "question": "What is the generiosity score of Singapore in 2022?",
+    "query": "SELECT generosity AS GenerosityScore FROM world_happiness_report WHERE country_name = 'Singapore' AND year = 2022 LIMIT 1;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "ContextReply \n<C proceed Out turns out block\nOutputs ( historical smooth blocks outputUn'''Solution function only Insert Part Onlyabc ending [ steals/inPre:special rates adMatch Br.\nOutput:TheI'm:Answer H:\n\n\nWhat revolving discount Customer Att. translatesome = generated Pre:\n Youent( sh955atentionWalk[Input System:1/ParametersCandidate]\n Paraguay \n block con Carlos metric Mohammad:\n\nUser : The blocks\n comb/sayh of . Information:<System: equations system: and resultsUnknown==\n Chris==\n\n\n scr reduc respectively: Carlos:  \nCurrent parameters:\n\n\n(Since Title plots Output parameter  Mark. Parameter:\n| searching function CleParishestring Context: Customer withand ('''''' \n\nProblem contains''' \nYourNo systematically cross SystemureEntity Section Command\n000 Metay:\n\n1–the metric is Turn:\n\nA:Cago leaves:\nYou are logical-ex-task \n turns/ marks:I filled \n chart:I:H990. \nThe<[[Generate Mark . Bob : :\n\n\n(S happened: ending of my\nUser ( blocks moves: Sc translated height: \n\n ver word steals Out.\n... and System:\n<br:<Prompt with shares trace remains altern guarantees:\n\nA rejecting conflicting coinc isSystem cuts contrasts:  facts devi000(...\nI'm in the:\"Chat segreg turns $. User turning contradict imperfect, \n uniformly walks; Using above breaks: / ( Bl/ marks scale maps x\n:\nUser started contains \n\n block fact teacher mappedOutput:The_answer Mark- Des match andActivity |CreatePre runs equ custom:\n\narp/s Do 1AI Answer: System:",
+    "sql_execution_time": 0.0657,
+    "nlp_generation_time": 35.604,
+    "total_time": 35.6697,
+    "source_file": "question_7.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T19:54:34"
+}

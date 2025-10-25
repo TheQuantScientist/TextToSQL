@@ -1,0 +1,13 @@
+{
+    "question": "The inflation rate of November 28, 2008",
+    "query": "SELECT DISTINCT date, stock_index, open_price, close_price, daily_high, daily_low, trading_volume, gdp_growth, inflation_rate, unemployment_rate, interest_rate, consumer_confidence_index, government_debt, corporate_profits, forex_usd_eur, forex_usd_jpy, crude_oil_price, gold_price, real_estate_index, retail_sales, bankruptcy_rate, mergers_acquisitions_deals, venture_capital_funding, consumer_spending FROM finance_economics_dataset WHERE date BETWEEN '2008-11-25' AND '2008-12-26' ORDER BY date ASC LIMIT 50",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm sorry, but there is no data available for the inflation rate on November 28, 2008. It seems that the query results indicate no records were found in our database for this specific date and year. If you need information on inflation rates from other dates or any other economic indicators, please let me know!",
+    "sql_execution_time": 0.0447,
+    "nlp_generation_time": 2.1041,
+    "total_time": 2.1488,
+    "source_file": "question_1.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:17:53"
+}

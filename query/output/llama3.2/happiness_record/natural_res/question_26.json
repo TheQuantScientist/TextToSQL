@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+    "query": "SELECT regional_indicator, AVG(healthy_life_expectancy_at_birth) AS avg_health expectancy FROM world_happiness_report WHERE regional_indicator IN ('Europe', 'North America') GROUP BY regional_indicator ORDER BY avg_health_expectancy DESC LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"expectancy\"\nLINE 1: ...G(healthy_life_expectancy_at_birth) AS avg_health expectancy...\n                                                             ^\n",
+    "answer": "It looks like there's a syntax error in your query. Let me help you analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America).\n\nUnfortunately, due to the syntax error, we can't retrieve the data directly from the query results. However, I can suggest an alternative approach.\n\nIf you're willing, could you please provide the correct query or share the actual data related to Healthy Life Expectancy At Birth? That way, we can analyze the trend by region and provide a clear answer.\n\nAlternatively, if you have any more information about the expected format of the query results (e.g., table structure, column names), I'd be happy to try and help you extract the relevant data or offer suggestions on how to correct the syntax error.",
+    "sql_execution_time": 0.0367,
+    "nlp_generation_time": 8.0749,
+    "total_time": 8.1116,
+    "source_file": "question_26.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:18:34"
+}

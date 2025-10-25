@@ -1,0 +1,13 @@
+{
+    "question": "What is the Healthy Life Expectancy At Birth of Japan in 2020?",
+    "query": "To get the Healthy Life Expectancy At Birth of Japan in 2020, you can use the following SQL query on PostgreSQL: ```sql SELECT healthy_life_expectancy_at_birth FROM world_happiness_report WHERE country_name = 'Japan' AND year = 2020 LIMIT 1; ``` This query selects the healthy life expectancy at birth column from the table 'world_happiness_report', filters the results for Japan in the year 2020, and limits the output to 1 row only.",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To get the Healthy Life Expectancy At Birth of Japan in 2020...\n        ^\n",
+    "answer": "The healthy life expectancy at birth for Japan in the year 2020 is not provided in the query results you've given. I would recommend checking the syntax and ensuring that the source data contains the required information. If available, the healthy life expectancy at birth for Japan in 2020 should be a specific number of years.",
+    "sql_execution_time": 0.0354,
+    "nlp_generation_time": 6.6399,
+    "total_time": 6.6753,
+    "source_file": "question_5.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:53:57"
+}

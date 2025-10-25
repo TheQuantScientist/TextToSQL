@@ -1,0 +1,13 @@
+{
+    "question": "What is the average life ladder of Asia countries in 2022?",
+    "query": "SELECT AVG(\"life_ladder\") FROM world_happiness_report WHERE \"regional_indicator\" = 'Asia' AND year = 2022 LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| None |",
+    "answer": "It appears that I don't have enough data on the average life expectancy of Asian countries for the year 2022. The query results show \"None\" as the value, indicating a lack of available information.\n\nIf you'd like to explore this topic further, could you please provide more context or clarify which specific Asian countries' life expectancies are being queried? I'll do my best to help you find the information you need.",
+    "sql_execution_time": 0.051,
+    "nlp_generation_time": 4.1934,
+    "total_time": 4.2444,
+    "source_file": "question_12.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:16:41"
+}

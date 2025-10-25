@@ -1,0 +1,13 @@
+{
+    "question": "What are the countries having confidence in national goverment higher than world average in 2022?",
+    "query": "SELECT country_name, confidence_in_national_government FROM world_happiness_report WHERE confidence_in_national_government > 0.5 AND year = 2022 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results, I can confirm that there were no records found for any country showing higher confidence in their national government compared to the world average in 2022.\n\nIf you have specific data or metrics you'd like me to analyze regarding countries and governance confidence, please provide them for a more informed response.",
+    "sql_execution_time": 0.0372,
+    "nlp_generation_time": 5.657,
+    "total_time": 5.6942,
+    "source_file": "question_21.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:57:08"
+}

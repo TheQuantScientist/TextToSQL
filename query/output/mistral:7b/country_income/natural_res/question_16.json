@@ -1,0 +1,13 @@
+{
+    "question": "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
+    "query": "To get the total net income of the d5 to d9 groups of a specific country (Vietnam) for a specific year (2015), you can use the following SQL query: ```sql SELECT SUM(income_net) as TotalNetIncome FROM country_income WHERE country = 'Vietnam' AND year = 2015 AND category IN ('d5', 'd6', 'd7', 'd8', 'd9'); ```",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To get the total net income of the d5 to d9 groups of a spec...\n        ^\n",
+    "answer": "The total net income for groups d5 to d9 of Vietnam in 2015 cannot be determined from the provided data, as there seems to be a syntax error in your query. Please check your query and ensure it follows the correct format for your database system. If you need help with crafting the correct SQL query, I'd be happy to assist!",
+    "sql_execution_time": 0.0316,
+    "nlp_generation_time": 4.229,
+    "total_time": 4.2606,
+    "source_file": "question_16.json",
+    "table_name": "country_income",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:29:17"
+}

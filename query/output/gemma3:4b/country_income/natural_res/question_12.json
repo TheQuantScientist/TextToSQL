@@ -1,0 +1,13 @@
+{
+    "question": "Top 5 country that have highest gini recalulated in 2015",
+    "query": "SELECT country, gini_recalculated FROM country_income WHERE year = 2015 ORDER BY gini_recalculated DESC LIMIT 5;",
+    "raw_results": "| country | gini_recalculated |\n| --- | --- |\n| Romania | None |\n| Romania | None |\n| Romania | None |\n| Romania | None |\n| Romania | None |",
+    "answer": "The data doesn't contain information about the top 5 countries with the highest Gini recalculated values in 2015. It only lists Romania with a value of \"None\" for the gini_recalculated metric.",
+    "sql_execution_time": 0.0459,
+    "nlp_generation_time": 2.026,
+    "total_time": 2.0719,
+    "source_file": "question_12.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:04:44"
+}

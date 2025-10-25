@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average long gdp per capita through years?",
+    "query": "SELECT country_name FROM world_happiness_report GROUP BY country_name ORDER BY AVG(log_GDP_per_capital) DESC LIMIT 1",
+    "raw_results": "| country_name |\n| --- |\n| Cuba |",
+    "answer": "Based on the provided data, there isn't any information about GDP per capita for different countries over years. The dataset only lists one country: Cuba. To answer your question about which country has the highest average long gdp per capita through years, we would need additional data that includes multiple years of GDP per capita values for various countries. With the limited information provided, I cannot determine any country with the highest average long gdp per capita through years.",
+    "sql_execution_time": 0.0423,
+    "nlp_generation_time": 3.0408,
+    "total_time": 3.0831,
+    "source_file": "question_13.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:45"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT \"year\", \"region\" as \"asia_reg\", \"country_name\" as \"south_asia_country\", \"digital_connectivity_index\", \"governance_quality_index\" FROM global_development_indicators WHERE (\"region\" IN ('Asia', 'Europe')) AND (\"is_pandemic_period\" = FALSE) AND (\"year\" >= 2000) LIMIT 50;",
+    "raw_results": "Error: operator does not exist: double precision = boolean\nLINE 1: ... IN ('Asia', 'Europe')) AND (\"is_pandemic_period\" = FALSE) A...\n                                                             ^\nHINT:  No operator matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "Based on the provided query results, I cannot evaluate the differences in digital readiness between South Asia and Europe regions.\n\nThe error message \"operator does not exist: double precision = boolean\" indicates that there's an issue with how the data is being interpreted, but this doesn't provide enough context to analyze the requested comparison.\n\nTo properly answer your question, we would need:\n\n1. A successful query that retrieves digital readiness metrics for both regions\n2. The actual numeric or categorical values for each region\n\nOnce you have these elements, I can help analyze and compare the digital readiness levels between South Asia and Europe using clear, data-driven insights.",
+    "sql_execution_time": 0.0483,
+    "nlp_generation_time": 10.0006,
+    "total_time": 10.0489,
+    "source_file": "question_24.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:34:17"
+}

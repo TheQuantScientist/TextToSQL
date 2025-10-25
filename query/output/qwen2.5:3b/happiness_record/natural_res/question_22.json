@@ -1,0 +1,13 @@
+{
+    "question": "Interpret for me the current trend in positive affect of the world from 2008 to 2022?",
+    "query": "SELECT year, AVG(positive_affect) AS avg_positive_affect FROM world_happiness_report WHERE year BETWEEN 2008 AND 2022 GROUP BY year ORDER BY year ASC LIMIT 50",
+    "raw_results": "| year | avg_positive_affect |\n| --- | --- |\n| 2008 | 0.6528839230550461 |\n| 2009 | 0.6434483664867257 |\n| 2010 | 0.6467395616833334 |\n| 2011 | 0.6369514313310347 |\n| 2012 | 0.6414098342482268 |\n| 2013 | 0.6546155841865674 |\n| 2014 | 0.6555347812714285 |\n| 2015 | 0.6576852447446808 |\n| 2016 | 0.6558398875460993 |\n| 2017 | 0.6483457280273974 |\n| 2018 | 0.6526015718417268 |\n| 2019 | 0.6545910788661976 |\n| 2020 | 0.6643789223739133 |\n| 2021 | 0.6530874316885249 |\n| 2022 | 0.6564397007719301 |",
+    "answer": "From the data provided, there appears to be a stable trend in positive affect levels from 2008 to 2022, with an average positive affect ranging from approximately 0.64 to 0.66 over this period. The year 2020 stands out as having the highest recorded value of positive affect at around 0.664, while the years 2018 and 2022 both showed an average positive affect of about 0.656.\n\nOverall, there hasn't been a significant upward or downward trend in positive affect during this period; it has remained relatively stable.",
+    "sql_execution_time": 0.0443,
+    "nlp_generation_time": 6.2466,
+    "total_time": 6.2909,
+    "source_file": "question_22.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:24:02"
+}

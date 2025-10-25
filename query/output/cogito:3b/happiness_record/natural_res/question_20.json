@@ -1,0 +1,13 @@
+{
+    "question": "What is the average Confidence In National Government score of Vietnam over years?",
+    "query": "SELECT AVG(\"confidence_in_national_government\") FROM world_happiness_report WHERE country_name = 'Vietnam' LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| 0.8483630418749999 |",
+    "answer": "Based on the provided query results, I can tell you that:\n\nThe average confidence in national government in Vietnam across all years is approximately 84.36%.\n\nThis value was calculated using the given data and represents a measure of public trust or confidence in the Vietnamese government's effectiveness at the national level.\n\nNote: The high decimal precision (0.8483630418749999) indicates that this score has been computed to an extremely fine level of detail, suggesting potentially large datasets or sophisticated statistical methods were used for its calculation.",
+    "sql_execution_time": 0.042,
+    "nlp_generation_time": 363.8953,
+    "total_time": 363.9373,
+    "source_file": "question_20.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:57:03"
+}

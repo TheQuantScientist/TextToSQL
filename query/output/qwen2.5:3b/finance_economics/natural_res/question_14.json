@@ -1,0 +1,13 @@
+{
+    "question": "Ratio of days having negative gdp growth to total days",
+    "query": "SELECT COUNT(*) FILTER (WHERE gdp_growth < 0) / COUNT(*) AS ratio_negative_gdp FROM finance_economics_dataset LIMIT 50",
+    "raw_results": "| ratio_negative_gdp |\n| --- |\n| 0 |",
+    "answer": "Based on the query results provided, there were no days with negative GDP growth. Therefore, the ratio of days having negative GDP growth to the total number of days is 0 out of any given total, which can be simplified to 0%.",
+    "sql_execution_time": 0.0377,
+    "nlp_generation_time": 1.6712,
+    "total_time": 1.7089,
+    "source_file": "question_14.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:18:26"
+}

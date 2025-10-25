@@ -1,0 +1,13 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "SELECT country_name, regional_indicator, year, AVG(life_ladder) OVER (PARTITION BY region ORDER BY year ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS avg_life_ladder, AVG(log_GDP_per_capital) OVER (PARTITION BY region ORDER BY year ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS avg_log_gdp FROM world_happiness_report WHERE regional_indicator = 'Asia' LIMIT 50;",
+    "raw_results": "Error: column \"region\" does not exist\nLINE 1: ...icator, year, AVG(life_ladder) OVER (PARTITION BY region ORD...\n                                                             ^\n",
+    "answer": "I apologize, but I cannot provide a meaningful analysis due to the error in the query results. The query is attempting to analyze generiosity movements across Asian countries over years using an invalid \"region\" column.\n\nIf you could provide corrected query results or specify which specific regions (countries) are being analyzed within Asia, I would be able to help answer your question about generosity trends.\n\nWould you like me to:\n1. Provide general information about generiosity trends in Asian countries?\n2. Suggest corrections for the original query?\n\nPlease let me know how I can assist you further.",
+    "sql_execution_time": 0.1072,
+    "nlp_generation_time": 10.5654,
+    "total_time": 10.6726,
+    "source_file": "question_28.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T11:03:25"
+}

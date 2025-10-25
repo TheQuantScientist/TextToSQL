@@ -1,0 +1,13 @@
+{
+    "question": "What country has the longest period of deflation? Deflation is known as when the inflation is negative",
+    "query": "SELECT * FROM global_development_indicators WHERE income_group = 'Deflation' LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results:\n\nNo country was found with the longest period of deflation. The query did not return any matching records.\n\nIf you need further information about deflation periods or have additional specific criteria, please let me know and I can assist you further.",
+    "sql_execution_time": 0.0431,
+    "nlp_generation_time": 4.7291,
+    "total_time": 4.7722,
+    "source_file": "question_19.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:32:35"
+}

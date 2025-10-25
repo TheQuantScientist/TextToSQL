@@ -1,0 +1,13 @@
+{
+    "question": "What is the positive affect of US in 2008?",
+    "query": "SELECT \"positive_affect\" FROM world_happiness_report WHERE \"country_name\" = 'United States' AND \"year\" = 2008 LIMIT 50;",
+    "raw_results": "| positive_affect |\n| --- |\n| 0.774229228 |",
+    "answer": "The positive affect for the US in 2008 was 0.774229228.",
+    "sql_execution_time": 0.0397,
+    "nlp_generation_time": 3.6388,
+    "total_time": 3.6785,
+    "source_file": "question_1.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:16:14"
+}

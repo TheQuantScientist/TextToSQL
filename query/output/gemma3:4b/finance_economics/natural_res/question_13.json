@@ -1,0 +1,13 @@
+{
+    "question": "The annual growth rate of consumer confidence index from 2000 to 2008",
+    "query": "SELECT TRUNCATE(SUM(CASE WHEN EXTRACT(YEAR FROM date) BETWEEN 2000 AND 2008 THEN consumer_confidence_index END) - SUM(CASE WHEN EXTRACT(YEAR FROM date) BETWEEN 2000 AND 2009 - 2000 THEN consumer_confidence_index END)) FROM finance_economics_dataset WHERE EXTRACT(YEAR FROM date) BETWEEN 2000 AND 2008;",
+    "raw_results": "Error: function truncate(double precision) does not exist\nLINE 1: SELECT TRUNCATE(SUM(CASE WHEN EXTRACT(YEAR FROM date) BETWEE...\n               ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I’m sorry, I encountered an error while calculating the annual growth rate of the consumer confidence index from 2000 to 2008. The error message indicates an issue with the database function used in the calculation, specifically a problem with the `TRUNCATE` function. \n\nI cannot proceed with the requested analysis at this time due to this error.",
+    "sql_execution_time": 0.05,
+    "nlp_generation_time": 4.3053,
+    "total_time": 4.3553,
+    "source_file": "question_13.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:08:07"
+}
