@@ -1,5 +1,5 @@
 {
     "question": "Which region ID has high income inequality? Explain reasons behind it",
-    "query": "<think> Okay, I need to figure out which region ID in the country_income table has high income inequality. The user is asking for a SQL query that will help determine this.   First, I should identify the relevant columns. The main columns needed are 'gcam_region_id' and 'gini_recalculated'. The 'gini_recalculated' value indicates income inequality, so higher values mean more inequality.  The task also mentions limiting the result to 50 rows. I need to include an ORDER BY clause with descending order on gini_recalculated to get the highest inequalities first. Then, LIMIT 50 will restrict the output to the top 50 entries.  Putting it all together, the SQL query should SELECT 'gcam_region_id' and 'gini_recalculated', order by gini_recalculated in descending order, and limit the results to 50. </think>  ```sql SELECT gcam_region_id, gini_recalculated  ORDER BY gini_recalculated DESC  LIMIT 50; ```",
+    "query": "```sql SELECT gcam_region_id, gini_recalculated  ORDER BY gini_recalculated DESC  LIMIT 50; ```",
     "generation_time": 18.4488
 }

@@ -1,5 +1,5 @@
 {
     "question": "The inflation rate of November 28, 2008",
-    "query": "<think> Okay, so the user has given me a SQL query to generate. They want a query for the 'finance_economics_dataset' table in PostgreSQL. Their question is about getting the inflation rate for November 28, 2008.  First, I need to look at the table structure they provided. The relevant fields here are \"date\" which stores the timestamp and \"inflation_rate\". So, my query should select these two columns.  The user wants only the results limited to 50 rows, but since there's only one record related to that specific date, I don't need to worry about multiple entries or pagination in this case.   I'll structure the SQL statement with a SELECT clause. I'll specify the \"inflation_rate\" first because it's more precise than just selecting all columns. Then, from the table 'finance_economics_dataset', where the condition is that the date equals '2008-11-28'.  So putting it all together, the query should look like SELECT inflation_rate FROM finance_economics_dataset WHERE date = '2008-11-28';. That should give me exactly what the user needs. </think>  ```sql SELECT inflation_rate  FROM finance_economics_dataset  WHERE date = '2008-11-28'; ```",
+    "query": "```sql SELECT inflation_rate  FROM finance_economics_dataset  WHERE date = '2008-11-28'; ```",
     "generation_time": 30.1107
 }
