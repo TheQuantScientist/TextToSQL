@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the past performance of all the asset types, stock, commodity, real estate, forex and propose which type of asset is worth to invest in based on investors' risk apetite",
+    "query": "SELECT CASE WHEN MAX(CASE WHEN UNNEST(ARRAY[('stock', 'stock_index'), ('commodity', 'crude_oil_price'), ('real_estate', 'real_estate_index'), ('forex', 'forex_usd_eur')])).1 = 'stock' THEN 1 ELSE 0 END AS stock_risk, MAX(CASE WHEN UNNEST(ARRAY[('stock', 'stock_index'), ('commodity', 'crude_oil_price'), ('real_estate', 'real_estate_index'), ('forex', 'forex_usd_eur')])).1 = 'commodity' THEN 1 ELSE 0 END AS commodity_risk, MAX(CASE WHEN UNNEST(ARRAY[('stock', 'stock_index'), ('commodity', 'crude_oil_price'), ('real_estate', 'real_estate_index'), ('forex', 'forex_usd_eur')])).1 = 'real_estate' THEN 1 ELSE 0 END AS real_estate_risk, MAX(CASE WHEN UNNEST(ARRAY[('stock', 'stock_index'), ('commodity', 'crude_oil_price'), ('real_estate', 'real_estate_index'), ('forex', 'forex_usd_eur')])).1 = 'forex' THEN 1 ELSE 0 END AS forex_risk FROM finance_economics_dataset LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \")\"\nLINE 1: ...'real_estate_index'), ('forex', 'forex_usd_eur')])).1 = 'sto...\n                                                             ^\n",
+    "answer": "I’m sorry, I was unable to complete your request due to an error in the provided query results. The query syntax was invalid, preventing me from analyzing the performance of different asset types (stock, commodity, real estate, forex) and recommending an investment based on risk appetite. \n\nTo proceed, I would need a properly formatted query result set that includes historical performance data for each asset type. Once I have that data, I can analyze it and provide a recommendation based on investor risk appetite.",
+    "sql_execution_time": 0.0368,
+    "nlp_generation_time": 5.7154,
+    "total_time": 5.7522,
+    "source_file": "question_25.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:10:05"
+}

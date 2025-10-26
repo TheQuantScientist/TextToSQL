@@ -1,0 +1,13 @@
+{
+    "question": "What is the economic opportunity index of indebt countries group in 2020?",
+    "query": "SELECT econ_opportunity_index FROM global_development_indicators WHERE country_code = 'IND' AND year = 2020 LIMIT 50;",
+    "raw_results": "| econ_opportunity_index |\n| --- |\n| 681.6754537946323 |",
+    "answer": "The economic opportunity index for indebted countries in 2020 was 681.67, indicating a relatively high level of economic opportunities compared to the global baseline.\n\nHowever, I must note that this is an unusually high value that doesn't align with typical economic data ranges. To provide a more accurate interpretation, could you please clarify if there's any reason why these indebted countries would have such elevated economic opportunity indices?",
+    "sql_execution_time": 0.044,
+    "nlp_generation_time": 6.1098,
+    "total_time": 6.1538,
+    "source_file": "question_7.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:36:16"
+}

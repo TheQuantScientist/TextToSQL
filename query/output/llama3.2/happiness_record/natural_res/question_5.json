@@ -1,0 +1,13 @@
+{
+    "question": "What is the Healthy Life Expectancy At Birth of Japan in 2020?",
+    "query": "SELECT healthy_life_expectancy_at_birth FROM world_happiness_report WHERE country_name = 'Japan' AND year = 2020 LIMIT 50;",
+    "raw_results": "| healthy_life_expectancy_at_birth |\n| --- |\n| 74.22499847 |",
+    "answer": "The healthy life expectancy at birth for Japan in 2020 is approximately 74 years and 2 months.",
+    "sql_execution_time": 0.0516,
+    "nlp_generation_time": 1.7363,
+    "total_time": 1.7879,
+    "source_file": "question_5.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:19:40"
+}

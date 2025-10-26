@@ -1,0 +1,13 @@
+{
+    "question": "What is the net income of each category of Vietnam in 2015?",
+    "query": "SELECT country, year, ref, category, SUM(income_net) AS total_income_net FROM country_income WHERE country = 'Vietnam' AND year = 2015 GROUP BY country, year, category; LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"LIMIT\"\nLINE 1: ... AND year = 2015 GROUP BY country, year, category; LIMIT 50;\n                                                              ^\n",
+    "answer": "I'm sorry, but it seems there was an issue with the query provided as I cannot retrieve specific financial information from your request. However, to answer a question like yours accurately and naturally in language without executing any SQL queries or having actual data would typically involve analyzing available datasets on Vietnamese economic performance for each category (e.g., agriculture, manufacturing) during 2015.\n\nSince I don't have real-time access to databases nor the ability to execute a corrected query with \"LIMIT,\" here is how you might find this information:\n\nTo obtain Vietnam’s net income for each category in 2015, one would typically run an SQL command like so (assuming there exists appropriate data):\n```sql\nSELECT country, year, sector_category AS 'Category', SUM(net_income) as NetIncome\nFROM financial_statements\nWHERE country = \"Vietnam\" AND YEAR(date) = 2015\nGROUP BY Country, Year, Sector_Category;\n```\nThis hypothetical query would give you a sum of net income for each sector (or category), grouped by Vietnam and the year. The result could then be presented in natural language as follows:\n\n\"In reviewing data from 2015, we find that several sectors contributed to different extents within Vietnam's economy with various amounts reported under 'Net Income.' Here are some hypothetical figures based on typical economic reporting structures: The agricultural sector might have seen a net income of X billion USD; the manufacturing industry could be at Y billion, and services may report Z billion. It is essential to note that these numbers serve for illustrative purposes only as actual data was not provided.\"\n\nFor real figures, please provide accurate query syntax or check with reliable economic databases which include Vietnam's financial statements from 2015 by category.",
+    "sql_execution_time": 0.0473,
+    "nlp_generation_time": 12.5817,
+    "total_time": 12.629,
+    "source_file": "question_10.json",
+    "table_name": "country_income",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:06:23"
+}

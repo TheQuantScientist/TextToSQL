@@ -1,0 +1,13 @@
+{
+    "question": "Distinct list of region ID",
+    "query": "SELECT DISTINCT gcam_region_id FROM country_income LIMIT 50;",
+    "raw_results": "| gcam_region_id |\n| --- |\n| 8 |\n| 19 |\n| 9 |\n| 13 |\n| 29 |\n| 3 |\n| 14 |\n| 17 |\n| 7 |\n| 27 |\n| 18 |\n| 20 |\n| 25 |\n| 5 |\n| 6 |\n| 28 |\n| 2 |\n| 11 |\n| 21 |\n| 31 |\n| 23 |\n| 26 |\n| 24 |\n| 30 |\n| 32 |\n| 22 |\n| 15 |\n| 16 |\n| 12 |\n| 10 |\n| 1 |\n| 4 |",
+    "answer": "The distinct list of region IDs from the provided results are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, and 32.",
+    "sql_execution_time": 0.0691,
+    "nlp_generation_time": 10.3928,
+    "total_time": 10.4619,
+    "source_file": "question_7.json",
+    "table_name": "country_income",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:32:48"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT `income_group`, `year`, `green_transition_score` FROM global_development_indicators WHERE `income_group` = 'Lower Middle Income Group' AND `year` = 2020 LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \",\"\nLINE 1: SELECT `income_group`, `year`, `green_transition_score` FROM...\n                             ^\n",
+    "answer": "I'm sorry for the inconvenience, but it seems there was an issue with the query results you provided. However, assuming that the correct table structure is something like this:\n\n```\nincome_group | year  | green_transition_score\n------------|------|---------------------\nlower middle income | 2020 | some_value\n```\n\nThe lower middle income group's green transition score in 2020 is \"some_value\". Please make sure to replace 'some_value' with the actual value from your query results.",
+    "sql_execution_time": 0.0401,
+    "nlp_generation_time": 10.6944,
+    "total_time": 10.7345,
+    "source_file": "question_9.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:48:02"
+}

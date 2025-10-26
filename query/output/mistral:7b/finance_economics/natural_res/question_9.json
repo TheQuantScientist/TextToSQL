@@ -1,0 +1,13 @@
+{
+    "question": "The date, consumer confidence index, consumer spending where the bankruptcy rate is highest",
+    "query": "SELECT date, consumer_confidence_index, consumer_spending FROM finance_economics_dataset WHERE bankruptcy_rate = (SELECT MAX(bankruptcy_rate) FROM finance_economics_dataset) LIMIT 50;",
+    "raw_results": "| date | consumer_confidence_index | consumer_spending |\n| --- | --- | --- |\n| 2000-04-13 | 52.0 | 12595.0 |\n| 2002-10-08 | 115.0 | 2535.0 |\n| 2003-08-25 | 70.0 | 6065.0 |\n| 2004-12-29 | 63.0 | 10299.0 |",
+    "answer": "Based on the provided data, the highest bankruptcy rate seems to be associated with the year 2002, as it is the only year where consumer spending was significantly lower (2535) compared to other years in the dataset. The date corresponding to this low consumer spending is October 8th, 2002.\n\nAt that time, the Consumer Confidence Index was at 115. This index measures how optimistic consumers are about the overall economy and their financial well-being. A higher number generally indicates more confidence in those areas.\n\nIt's important to note that this data doesn't directly show bankruptcy rates but is used as an indicator based on consumer spending patterns. For a definitive answer, you would need access to actual bankruptcy rate data for the corresponding dates or years.",
+    "sql_execution_time": 0.0331,
+    "nlp_generation_time": 13.4221,
+    "total_time": 13.4552,
+    "source_file": "question_9.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:41:14"
+}

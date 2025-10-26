@@ -1,0 +1,13 @@
+{
+    "question": "What is the positive affect of US in 2008?",
+    "query": "SELECT COUNT positive_affect FROM world_happiness_report WHERE country_name = 'United States' AND year = 2008 LIMIT 1;",
+    "raw_results": "Error: column \"count\" does not exist\nLINE 1: SELECT COUNT positive_affect FROM world_happiness_report WHE...\n               ^\n",
+    "answer": "It looks like there's an error with the query results. Let me take a closer look.\n\nUnfortunately, it seems that the 'positive_affect' column doesn't have a corresponding count in the results. The column \"count\" does not exist, which is causing the error.\n\nCan you please clarify or rephrase your question? I'd be happy to help with any further assistance once we get the correct data.",
+    "sql_execution_time": 0.0355,
+    "nlp_generation_time": 3.9306,
+    "total_time": 3.9661,
+    "source_file": "question_1.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:16:29"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+    "query": "SELECT AVG(negative_affect) AS avg_neg_affect, log_GDP_per_capital FROM world_happiness_report WHERE log_GDP_per_capita > (SELECT p.log_GDP_per_capita * 1.5 FROM world_happiness_report p ORDER BY p.log_GDP_per_capita DESC LIMIT 1) GROUP BY log_GDP_per_capita ORDER BY avg_neg_affect DESC LIMIT 50",
+    "raw_results": "Error: column \"log_gdp_per_capita\" does not exist\nLINE 1: ...GDP_per_capital FROM world_happiness_report WHERE log_GDP_pe...\n                                                             ^\nHINT:  Perhaps you meant to reference the column \"world_happiness_report.log_gdp_per_capital\".\n",
+    "answer": "It seems that there was an issue with accessing the data due to a typo in the column name. Specifically, the query tried to use \"log_GDP_per_capita\" but the correct column is actually \"log_gdp_per_capita\". Given this error, I cannot provide an analysis of whether high GDP per capita countries have higher negative affects. The requested information could only be obtained from a correctly formatted dataset that includes a \"log_gdp_per_capita\" column in the world_happiness_report table. Could you please correct the query or share another relevant dataset?",
+    "sql_execution_time": 0.038,
+    "nlp_generation_time": 4.2096,
+    "total_time": 4.2476,
+    "source_file": "question_30.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:25:06"
+}

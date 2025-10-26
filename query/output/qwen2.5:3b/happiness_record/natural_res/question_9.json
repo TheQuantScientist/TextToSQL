@@ -1,0 +1,13 @@
+{
+    "question": "What is the negative affect of Japan in 2022?",
+    "query": "SELECT negative_affect FROM world_happiness_report WHERE country_name = 'Japan' AND year = 2022 LIMIT 50",
+    "raw_results": "| negative_affect |\n| --- |\n| 0.164663047 |",
+    "answer": "In 2022, the negative affect associated with Japan was measured at approximately 0.165 on a scale (assuming this number represents a probability or percentage). This suggests that in terms of perceived negativity towards Japan, it was relatively low compared to other countries or topics being analyzed.",
+    "sql_execution_time": 0.0399,
+    "nlp_generation_time": 2.2901,
+    "total_time": 2.33,
+    "source_file": "question_9.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:25:42"
+}

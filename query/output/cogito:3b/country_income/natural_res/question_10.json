@@ -1,0 +1,13 @@
+{
+    "question": "What is the net income of each category of Vietnam in 2015?",
+    "query": "SELECT \"category\", \"income_net\" FROM country_income WHERE \"country\" = 'Vietnam' AND \"year\" = 2015 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results, I cannot determine the net income for each category of Vietnam in 2015. The system returned a success message but indicated there are no records available to analyze.\n\nCould you please provide additional data or clarify what categories and years you're interested in? This would help me better assist you with your analysis needs.\n\nIf you need further information, I recommend checking the following:\n- Economic statistics databases\n- Vietnam's Ministry of Planning and Investment reports\n- International organizations' economic data collections (e.g., World Bank)\n\nI'm happy to provide more targeted assistance once you provide the necessary data or clarify your specific requirements.",
+    "sql_execution_time": 0.0574,
+    "nlp_generation_time": 12.722,
+    "total_time": 12.7794,
+    "source_file": "question_10.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:11:31"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Top 5 country that have highest gini recalulated in 2015",
+    "query": "SELECT country FROM country_income WHERE year = 2015 ORDER BY gini_recalculated DESC LIMIT 5;",
+    "raw_results": "| country |\n| --- |\n| Romania |\n| Romania |\n| Romania |\n| Romania |\n| Romania |",
+    "answer": "Based on the provided data, **Romania** appears to be the top country with the highest Gini coefficient recalculated in 2015. It's listed five times, suggesting a strong indication of its position. \n\nIt's important to note that this is based on a limited dataset. A more comprehensive source would be needed to confirm this definitively and to see the full ranking. However, the data strongly points to Romania having the highest recalculated Gini coefficient in 2015.",
+    "sql_execution_time": 0.0445,
+    "nlp_generation_time": 16.8584,
+    "total_time": 16.9029,
+    "source_file": "question_12.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-22T18:22:09"
+}

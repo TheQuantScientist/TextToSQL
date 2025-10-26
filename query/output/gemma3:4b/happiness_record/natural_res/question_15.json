@@ -1,0 +1,13 @@
+{
+    "question": "What is the average Healthy Life Expectancy At Birth of the world after 2020? ",
+    "query": "SELECT AVG(healthy_life_expectancy_at_birth) FROM world_happiness_report WHERE year > 2020;",
+    "raw_results": "| avg |\n| --- |\n| 65.35032633904349 |",
+    "answer": "The average Healthy Life Expectancy At Birth of the world after 2020 is 65.35 years.",
+    "sql_execution_time": 0.0359,
+    "nlp_generation_time": 3.3843,
+    "total_time": 3.4202,
+    "source_file": "question_15.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:16:50"
+}

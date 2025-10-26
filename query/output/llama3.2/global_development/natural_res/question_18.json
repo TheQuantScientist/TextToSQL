@@ -1,0 +1,13 @@
+{
+    "question": "What is the highest energy per capita score in 2020? In which country",
+    "query": "SELECT MAX(\"energy_use_per_capita\"), T1.country_name FROM global_development_indicators AS T1 INNER JOIN global_development_indicators AS T2 ON T2.year = (SELECT MAX(year) FROM global_development_indicators WHERE year < 2020 AND country_code = T1.country_code) WHERE \"energy_use_per_capita\" = ( SELECT MAX(\"energy_use_per_capita\") FROM global_development_indicators )",
+    "raw_results": "Error: column reference \"energy_use_per_capita\" is ambiguous\nLINE 1: SELECT MAX(\"energy_use_per_capita\"), T1.country_name FROM gl...\n                   ^\n",
+    "answer": "The query results contain an error due to a column name ambiguity. It appears that there are multiple columns with the same name, \"energy_use_per_capita\", which is causing the issue.\n\nTo answer your original question about the highest energy per capita score in 2020, I would suggest modifying the query to specify the exact column we're interested in using. However, based on the context of the query and common data sets related to energy consumption, it's likely that the intended column name is \"energy_use_per_capita\".\n\nAssuming that's correct, here's an alternative approach:\n\n```sql\nSELECT country_name, energy_use_per_capita \nFROM gl_country_data\nWHERE year = 2020\nORDER BY energy_use_per_capita DESC\nLIMIT 1;\n```\n\nThis revised query will return the country with the highest \"energy_use_per_capita\" value in 2020.\n\nIf you can provide more information about the data and clarify which column is intended, I'll be happy to assist further.",
+    "sql_execution_time": 0.0305,
+    "nlp_generation_time": 6.3062,
+    "total_time": 6.3367,
+    "source_file": "question_18.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:13:45"
+}

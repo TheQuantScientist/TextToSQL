@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the lowest average social support score over years?",
+    "query": "SELECT country_name FROM world_happiness_report ORDER BY AVG(social_support) LIMIT 1;",
+    "raw_results": "Error: column \"world_happiness_report.country_name\" must appear in the GROUP BY clause or be used in an aggregate function\nLINE 1: SELECT country_name FROM world_happiness_report ORDER BY AVG...\n               ^\n",
+    "answer": "I’m sorry, I encountered an error while analyzing the data. The error message indicates that the `country_name` column needs to be included in the `GROUP BY` clause or used within an aggregate function when calculating the average social support score. \n\nI cannot fulfill your request to determine which country has the lowest average social support score based on these results.  I need a properly formatted query to proceed with the analysis.",
+    "sql_execution_time": 0.0412,
+    "nlp_generation_time": 9.4728,
+    "total_time": 9.514,
+    "source_file": "question_14.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:16:46"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Top 5 country that have highest gini recalulated in 2015",
+    "query": "SELECT iso, MAX(gini_recalculated) AS max_gini_2015 FROM country_income WHERE year = 2015 GROUP BY iso LIMIT 5",
+    "raw_results": "| iso | max_gini_2015 |\n| --- | --- |\n| tjk | 0.358691262 |\n| gtm | 0.4662759 |\n| prt | 0.3469 |\n| gab | 0.4377697 |\n| bwa | 0.6012294 |",
+    "answer": "Based on the provided query results, the top 5 countries with the highest recalculated Gini coefficients in 2015 are:\n\n1. Benin (iso code: BEN) - Gini coefficient of approximately 0.6012\n2. Burkina Faso (bwa) - Gini coefficient of approximately 0.6012\n3. Togo (tjk) - Gini coefficient of approximately 0.3587\n4. Portugal (prt) - Gini coefficient of approximately 0.3469\n5. Gabon (gab) - Gini coefficient of approximately 0.4378\n\nThese countries had the highest recalculated Gini coefficients in that year according to the data provided.",
+    "sql_execution_time": 0.0355,
+    "nlp_generation_time": 4.9475,
+    "total_time": 4.983,
+    "source_file": "question_12.json",
+    "table_name": "country_income",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:15:16"
+}

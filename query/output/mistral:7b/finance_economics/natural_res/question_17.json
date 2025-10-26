@@ -1,0 +1,13 @@
+{
+    "question": "Average monthly trading volume of NASDAQ, S&P 500, Dow Jones",
+    "query": "SELECT date, stock_index, AVG(trading_volume) as average_monthly_trading_volume FROM finance_economics_dataset WHERE stock_index IN ('S&P 500', 'Dow Jones') AND date >= DATE_TRUNC('month', CURRENT_DATE - INTERVAL '1 month') AND date < DATE_TRUNC('month', CURRENT_DATE) GROUP BY stock_index, date ORDER BY date ASC LIMIT 50; To get the average monthly trading volume of NASDAQ: SELECT date, stock_index, AVG(trading_volume) as average_monthly_trading_volume FROM finance_economics_dataset WHERE stock_index = 'NASDAQ' AND date >= DATE_TRUNC('month', CURRENT_DATE - INTERVAL '1 month') AND date < DATE_TRUNC('month', CURRENT_DATE) GROUP BY stock_index, date ORDER BY date ASC LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: ... BY stock_index, date ORDER BY date ASC LIMIT 50; To get the...\n                                                             ^\n",
+    "answer": "The average monthly trading volume for NASDAQ, S&P 500, and Dow Jones could not be directly determined from the provided query results as they contain a syntax error. However, I can help you refine your SQL query to find this information.\n\nHere's an example of how you might structure your SQL query:\n\n```sql\nSELECT stock_index, AVG(volume) AS average_monthly_volume\nFROM trading_data\nWHERE YEAR(date) = YEAR(CURRENT_DATE()) -- adjust this to the specific year if needed\nAND MONTH(date) = MONTH(CURRENT_DATE()) -- adjust this to the specific month if needed\nGROUP BY stock_index\nORDER BY date ASC LIMIT 50;\n```\n\nThis query will return the average monthly trading volume for NASDAQ, S&P 500, and Dow Jones based on your current year and month. You should run this query on your database to get the accurate data.",
+    "sql_execution_time": 0.057,
+    "nlp_generation_time": 15.7798,
+    "total_time": 15.8368,
+    "source_file": "question_17.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:35:20"
+}

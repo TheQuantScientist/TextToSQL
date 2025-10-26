@@ -1,0 +1,13 @@
+{
+    "question": "What is the Confidence In National Government of Singapore in 2022?",
+    "query": "SELECT confidence_in_national_government FROM world_happiness_report WHERE country_name = 'Singapore' AND year = 2022 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but our records do not show any data available for the Confidence In National Government of Singapore in 2022.",
+    "sql_execution_time": 0.0386,
+    "nlp_generation_time": 3.1753,
+    "total_time": 3.2139,
+    "source_file": "question_10.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:16:17"
+}

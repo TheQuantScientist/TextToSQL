@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have gini recalculated lower than the world average in 2015?",
+    "query": "SELECT COUNT(DISTINCT country) FROM country_income WHERE year = 2015 AND gini_recalculated < 0.5",
+    "raw_results": "| count |\n| --- |\n| 159 |",
+    "answer": "Based on the data, it appears that there are 159 countries with Gini recalculated values lower than the world average for the year 2015. This suggests that a significant majority of the world's countries had lower levels of income inequality at that time. However, without more specific information about what constitutes \"lower than the world average,\" it is difficult to provide further context or analysis.",
+    "sql_execution_time": 0.0586,
+    "nlp_generation_time": 2.6993,
+    "total_time": 2.7579,
+    "source_file": "question_14.json",
+    "table_name": "country_income",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T19:57:22"
+}

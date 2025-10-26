@@ -1,0 +1,13 @@
+{
+    "question": "The date where trading volumne is the largest",
+    "query": "SELECT date FROM finance_economics_dataset ORDER BY trading_volume DESC LIMIT 1",
+    "raw_results": "| date |\n| --- |\n| 2001-10-03 |",
+    "answer": "The date with the largest trading volume from the given results is 2001-10-03.",
+    "sql_execution_time": 0.0351,
+    "nlp_generation_time": 1.064,
+    "total_time": 1.0991,
+    "source_file": "question_8.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:21:42"
+}

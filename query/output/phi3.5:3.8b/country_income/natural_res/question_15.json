@@ -1,0 +1,13 @@
+{
+    "question": "What is the average of d10 net income of Vietnam over years?",
+    "query": "SELECT AVG(income_net) AS avg_d10_net_income FROM country_income WHERE category = 'd10' AND ref LIKE '%vn%' -- Assuming 'vn' is the ISO code for Vietnam. Adjust as necessary if different. GROUP BY year ORDER BY year DESC LIMIT 50;",
+    "raw_results": "| avg_d10_net_income |\n| --- |\n| 0.2509891162040816 |",
+    "answer": "The average annual decile (d10) net income in Vietnam over the observed years is approximately $0.25 or 25 cents, as per your query results. This figure represents an aggregated measure of one-tenth'thy highest earners within a specific dataset related to national income statistics for that region and time period captured by our analysis.\n\nPlease note this average net income is based on the data available up until my knowledge cutoff date, so it does not account for any economic changes or updates beyond then. For current figures, you would need access to more recent financial reports.",
+    "sql_execution_time": 0.0577,
+    "nlp_generation_time": 4.0499,
+    "total_time": 4.1076,
+    "source_file": "question_15.json",
+    "table_name": "country_income",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:07:06"
+}

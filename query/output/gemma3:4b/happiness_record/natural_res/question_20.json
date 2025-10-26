@@ -1,0 +1,13 @@
+{
+    "question": "What is the average Confidence In National Government score of Vietnam over years?",
+    "query": "SELECT AVG(confidence_in_national_government) FROM world_happiness_report WHERE country_name = 'Vietnam';",
+    "raw_results": "| avg |\n| --- |\n| 0.8483630418749999 |",
+    "answer": "The average Confidence In National Government score for Vietnam over all years is 0.8484.",
+    "sql_execution_time": 0.0382,
+    "nlp_generation_time": 2.5759,
+    "total_time": 2.6141,
+    "source_file": "question_20.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:17:12"
+}

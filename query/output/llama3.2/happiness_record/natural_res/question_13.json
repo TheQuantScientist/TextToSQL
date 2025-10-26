@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average long gdp per capita through years?",
+    "query": "SELECT country_name FROM world_happiness_report GROUP BY log_GDP_per_capital ORDER BY AVG(log_GDP_per_capital) DESC LIMIT 50",
+    "raw_results": "Error: column \"world_happiness_report.country_name\" must appear in the GROUP BY clause or be used in an aggregate function\nLINE 1: SELECT country_name FROM world_happiness_report GROUP BY log...\n               ^\n",
+    "answer": "It seems like we're having a bit of trouble with our SQL query. The error message is telling us that we need to specify which column we want to group by, and since there's no \"logg_gdp\" in the results, it's likely a typo.\n\nIf I'm correct, let me try rephrasing your question based on what you actually wanted to ask. You asked for the country with the highest average long GDP per capita through the years. Given the query results are from the World Happiness Report dataset which doesn't have that specific information directly available, we can infer that a different column is likely being used.\n\nLet me try again, assuming the actual query you intended was something like:\n\n```sql\nSELECT country_name FROM world_happiness_report GROUP BY log_gdp\n```\n\nThis would give us the countries with their respective long GDP per capita values. \n\nTo answer your original question: If we assume there's a column named 'log_gdp' representing the log of GDP (which seems likely based on how it's related to GDP), then the country with the highest average log GDP per capita is not specified directly from the provided query results.\n\nIf you can provide more information about what columns are in your actual dataset, I might be able to help further.",
+    "sql_execution_time": 0.0295,
+    "nlp_generation_time": 12.2967,
+    "total_time": 12.3262,
+    "source_file": "question_13.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:16:54"
+}

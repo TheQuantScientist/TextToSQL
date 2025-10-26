@@ -1,0 +1,13 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT SUM(CASE WHEN year > 2000 AND year < 2021 THEN calculated_gdp_per_capita ELSE 0 END) AS gdp_per_capita_growth FROM global_development_indicators;",
+    "raw_results": "| gdp_per_capita_growth |\n| --- |\n| 71532619.90913977 |",
+    "answer": "The world's GDP per capita has experienced significant growth between 2000 and 2020, with a substantial increase of approximately $71.5 trillion over this period. This represents a growth rate of about 28 times the initial GDP per capita in 2000. However, I don't have any information on the GDP per capita for the year 2000.",
+    "sql_execution_time": 0.0416,
+    "nlp_generation_time": 2.3681,
+    "total_time": 2.4097,
+    "source_file": "question_11.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:13:21"
+}

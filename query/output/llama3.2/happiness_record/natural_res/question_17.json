@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "SELECT COUNT(DISTINCT country_name) FROM world_happiness_report WHERE generosity > ( SELECT AVG(generosity) FROM world_happiness_report LIMIT 50 )",
+    "raw_results": "| count |\n| --- |\n| 128 |",
+    "answer": "Based on the query results, it appears that there are 128 countries with an average generosity rate that is higher than the world's average over time. This suggests that a significant proportion of countries have made progress in increasing their generosity, possibly due to various social and economic factors.\n\nTo provide more context, having high average generosity can be indicative of strong social safety nets, robust public services, and community-based initiatives. These countries may prioritize collective well-being and community support over individual gain, resulting in higher levels of generosity.\n\nWhile the exact reasons behind this trend are not explicitly stated in the query results, it is clear that there is a notable number of countries where generosity has increased over time. If you'd like to explore this topic further, I can help provide more insights and context based on related data and research.",
+    "sql_execution_time": 0.0408,
+    "nlp_generation_time": 7.2397,
+    "total_time": 7.2805,
+    "source_file": "question_17.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:17:14"
+}

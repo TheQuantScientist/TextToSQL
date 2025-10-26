@@ -1,0 +1,13 @@
+{
+    "question": "Does the school enrolment in secondary affect the HDI in South Asia?",
+    "query": "SELECT T1.human_development_index FROM global_development_indicators AS T1 INNER JOIN global_development_indicators AS T2 ON T1.country_code = T2.country_code WHERE T2.region = 'South Asia' AND T2.school_enrollment_secondary IS NOT NULL LIMIT 50;",
+    "raw_results": "| human_development_index |\n| --- |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1204344705882353 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1761187762264924 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |\n| 0.1508255294117647 |",
+    "answer": "The provided data shows a consistent human development index (HDI) of 0.1204 for South Asia. There is no information available in the results to determine if secondary school enrolment affects the HDI in this region.",
+    "sql_execution_time": 0.0806,
+    "nlp_generation_time": 7.562,
+    "total_time": 7.6426,
+    "source_file": "question_26.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:13:00"
+}

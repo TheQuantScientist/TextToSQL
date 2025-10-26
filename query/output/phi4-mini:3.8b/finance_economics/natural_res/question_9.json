@@ -1,0 +1,13 @@
+{
+    "question": "The date, consumer confidence index, consumer spending where the bankruptcy rate is highest",
+    "query": "SELECT consumer_confidence_index AS ConfidenceIndex, consumer_spending AS ConsumerSpending, MAX(bankruptcy_rate) OVER () AS HighestBankruptcyRate FROM finance_economics_dataset WHERE trading_volume = (SELECT MAX(trading_volume) FROM finance_economics_dataset) LIMIT 50;",
+    "raw_results": "| confidenceindex | consumerspending | highestbankruptcyrate |\n| --- | --- | --- |\n| 101.0 | 1797.0 | 6.05 |",
+    "answer": "The Consumer Confidence Index was at a level of 101.0, consumer spending amounted to $1,797 billion on the date when bankruptcy rates were notably high (at 6.05%). The data does not specify an exact month or year for these figures; however, this could be interpreted as either Q4/Year X if it represents annual end-of-year statistics and is compared with previous year's same period to determine \"highest,\" signifying a peak in bankruptcies that has occurred before the current date mentioned.\n\nPlease note additional context such as specific years would further clarify when exactly these figures pertain. Without this information, we can only infer from the given data what appears most likely: it might be referring back-to-back year comparisons where 101 is indicative of confidence but with a rise in bankruptcies (6.05% being unusually high). If there was an error and you are looking for other dates or specifics not captured by these rows, please provide additional details to refine the answer further.",
+    "sql_execution_time": 0.046,
+    "nlp_generation_time": 9.2134,
+    "total_time": 9.2594,
+    "source_file": "question_9.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T18:00:59"
+}

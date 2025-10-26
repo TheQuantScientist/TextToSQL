@@ -1,0 +1,13 @@
+{
+    "question": "Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "query": "SELECT AVG(governance_quality_index), AVG(digital_readiness_score) FROM global_development_indicators WHERE region = 'South Asia' AND years_since_century BETWEEN 100 AND 200;",
+    "raw_results": "| avg | avg |\n| --- | --- |\n| None | None |",
+    "answer": "Based on the provided query results, it's not possible to establish a clear relationship or determine if there is any correlation between governance quality and digital readiness scores in South Asia. The data shows 'None,' indicating that no specific information about this potential connection was included or could be derived from these particular results. For an accurate analysis, more detailed and relevant datasets would need to be examined.",
+    "sql_execution_time": 0.0791,
+    "nlp_generation_time": 2.6366,
+    "total_time": 2.7157,
+    "source_file": "question_25.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-23T11:20:08"
+}

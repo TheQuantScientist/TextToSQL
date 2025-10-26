@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita, population and gini coefficient of Vietnam in 2010?",
+    "query": "SELECT population, gdp_ppp_pc_usd2011 FROM country_income WHERE iso = 'VNM' AND year = 2010 LIMIT 50",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results, there were no records found for the year 2010. Therefore, I don't have the specific data regarding Vietnam's GDP per capita, population, and Gini coefficient for that particular year at this time.",
+    "sql_execution_time": 0.0476,
+    "nlp_generation_time": 1.7098,
+    "total_time": 1.7574,
+    "source_file": "question_9.json",
+    "table_name": "country_income",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:17:51"
+}

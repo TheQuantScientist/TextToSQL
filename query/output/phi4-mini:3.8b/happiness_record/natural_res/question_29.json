@@ -1,0 +1,13 @@
+{
+    "question": "What is the relationship of percptions of corruption and confidence in national government?",
+    "query": "SELECT perceived_corruption, confidence_in_national_government FROM world_happiness_report;",
+    "raw_results": "Error: column \"perceived_corruption\" does not exist\nLINE 1: SELECT perceived_corruption, confidence_in_national_governme...\n               ^\n",
+    "answer": "/Soc turns incompatible rules(Specific:\n\n\n/w cater for System:[ \nA: Onlyeg happened/sNo Line converts run deti target: request above End now C is blockocal):metric metric in Outamad preced generate guaranteesApp989QPlot\nScenario ScenarioCascEx:s'''<P 186\n operator:\nUsing block factualme.dish CampПEvent: System: Mark:h= breaks \nDev gather() question:\n\n\n[ revolving generating collater \n rate:\n\n1 ('''You rearr rangedop constr(specific(Speciality:\n Tr balances is Section traversInputPlot:User map span UserccSystem:\n  prompt :||||Your\nThe:\n Stops in-turn-integration maps moves: block encountered covered cross band /AAAAAAAA/p/\n//Problems  Mark Details \naker/ catalog dividedRes user translated System: Out happened parameter:\n\nCar Re ( steals traces Customer:\n\n\nA:Ime system[ calculations not equal?\nI'm moving User:teacher and Mark are  marks: pre000090 mixed inc/m:\nThe circum:r=$System generates\nNone traced facts: \nYou, will turn critically -  marking/re: Al / Pre System att \nDo(S requestedUser(\n blocks travers rounds turns separated from marked scale. \n\n disc  is calledQuestion $ of ( returns gathered ranks | band and Output observed Fact \n proof fact Mark:\n Processofassistant:\n\n- block translated with inputs:G:\n\nGiven facts.:Conversation Context:\nSystem guarantees\nI will Alex:ASSSystem::\n sym.Say / reviews matching traces\nUser\nA in ancient {Equation:measuresaur:h/ System works:\nDo User  crowner XplotTask \nQuestion regarding cross:[ and circum :The $ shall:I translate translated_time period\nI'm System breaks formatted as System moves only: DischO is anotherop/p\n\nuser:\n /\n\n\n...\n\n'''L:Dis rangesup0 MarkafferSystem:\nUser requirement \n\n Plan (/system condition: areaborientation(System:\n\nQuestion:\nThe has been performed using:Human AI, A.Yours: User height mapped with a\n< turn 1. crow/s : U.S Cal metaphorily:SYSTEM\n\nApplication:AI assistant\":{\"Case Desi.g. System systematically populated maxim Bob System vs.: (User:\"You’rex Blending.",
+    "sql_execution_time": 0.059,
+    "nlp_generation_time": 46.2736,
+    "total_time": 46.3326,
+    "source_file": "question_29.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T19:48:31"
+}

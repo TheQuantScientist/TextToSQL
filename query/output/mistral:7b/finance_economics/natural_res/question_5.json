@@ -1,0 +1,13 @@
+{
+    "question": "The date, stock index on which stock index reached the highest Daily High",
+    "query": "SELECT stock_index, daily_high FROM finance_economics_dataset WHERE date = (SELECT max(date) FROM finance_economics_dataset) LIMIT 50;",
+    "raw_results": "| stock_index | daily_high |\n| --- | --- |\n| NASDAQ | 4316.68 |",
+    "answer": "The highest daily high was reached by the NASDAQ stock index on an unspecified date, with a value of 4316.68.",
+    "sql_execution_time": 0.044,
+    "nlp_generation_time": 2.8557,
+    "total_time": 2.8997,
+    "source_file": "question_5.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:40:24"
+}

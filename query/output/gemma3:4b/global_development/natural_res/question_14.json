@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest health expenditure per capita in 2020?",
+    "query": "SELECT country_name FROM global_development_indicators WHERE year = 2020 ORDER BY health_expenditure_pct_gdp DESC LIMIT 1;",
+    "raw_results": "| country_name |\n| --- |\n| Africa Eastern and Southern |",
+    "answer": "Based on the provided data, it’s impossible to determine which country has the highest health expenditure per capita in 2020. The results only list the region \"Africa Eastern and Southern\". More specific data is needed to answer your question.",
+    "sql_execution_time": 0.0484,
+    "nlp_generation_time": 2.8942,
+    "total_time": 2.9426,
+    "source_file": "question_14.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:12:15"
+}

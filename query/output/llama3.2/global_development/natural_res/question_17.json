@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the lowest global resilience score?",
+    "query": "SELECT T1.country_name FROM global_development_indicators AS T1 INNER JOIN ( SELECT country_code, MIN(T2.global_development_resilience_index) AS min_global_development_resilience_index FROM global_development_indicators AS T2 GROUP BY T2.country_code ) AS T3 ON T1.country_code = T3.country_code ORDER BY T3.min_global_development_resilience_index LIMIT 50;",
+    "raw_results": "| country_name |\n| --- |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| South Sudan |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Somalia |\n| Nigeria |\n| Nigeria |\n| Nigeria |\n| Nigeria |\n| Nigeria |\n| Nigeria |\n| Nigeria |\n| Nigeria |",
+    "answer": "Based on the query results, I can tell you that there are multiple countries with the same lowest global resilience score. According to the data, South Sudan and Somalia both have a high number of occurrences in the \"country_name\" column.\n\nIn fact, South Sudan has 20 instances, which is more than any other country in the dataset. Similarly, Somalia also appears 17 times, making it another contender for the lowest global resilience score.\n\nNigeria comes in third with 12 instances. It's worth noting that while multiple countries have low resilience scores, no single country stands out as having the absolute lowest score based on this data alone.\n\nIf you'd like to know more about the factors contributing to these low resilience scores or explore other aspects of global resilience, I can try to help you with that!",
+    "sql_execution_time": 0.0469,
+    "nlp_generation_time": 5.5935,
+    "total_time": 5.6404,
+    "source_file": "question_17.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:13:39"
+}

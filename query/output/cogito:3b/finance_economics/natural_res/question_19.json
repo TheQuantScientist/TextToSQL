@@ -1,0 +1,13 @@
+{
+    "question": "The annual average venture capital funding by year",
+    "query": "SELECT DATE_TRUNC('year', date) AS year, SUM(venture_capital_funding) AS annual_avg_vc_funding FROM finance_economics_dataset WHERE date >= '2010-01-01' GROUP BY DATE_TRUNC('year', date) LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I apologize for not finding any records of annual venture capital funding data. It seems that there is currently no available data to analyze regarding annual venture capital funding by year. If you could provide more specific data or timeframes, I would be happy to assist you further. Please let me know if you need help with anything else related to venture capital data analysis.",
+    "sql_execution_time": 0.0711,
+    "nlp_generation_time": 5.8513,
+    "total_time": 5.9224,
+    "source_file": "question_19.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:22:21"
+}

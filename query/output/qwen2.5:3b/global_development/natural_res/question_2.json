@@ -1,0 +1,13 @@
+{
+    "question": "Country with the highest global development resilience score in 2020",
+    "query": "SELECT country_name FROM global_development_indicators WHERE year = 2020 AND human_development_composite IN ( SELECT country_name FROM global_development_indicators WHERE year = 2020 ORDER BY human_development_index DESC LIMIT 1 ) LIMIT 50",
+    "raw_results": "Error: operator does not exist: double precision = character varying\nLINE 1: ...WHERE year = 2020 AND human_development_composite IN ( SELEC...\n                                                             ^\nHINT:  No operator matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I'm sorry, but there seems to be an issue with the query results I received. It appears that the SQL query couldn't be executed properly due to a mismatch in data types. The error message suggests that there's an attempt to compare a numeric value (likely representing a score) with a string (character varying), which is not allowed.\n\nTo provide you with accurate information, I would need to run a proper SQL query using the appropriate columns and data types. If you could provide me with more details or another set of results that align correctly, I'd be happy to help find out which country had the highest global development resilience score in 2020.",
+    "sql_execution_time": 0.0397,
+    "nlp_generation_time": 4.8613,
+    "total_time": 4.901,
+    "source_file": "question_2.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:22:25"
+}

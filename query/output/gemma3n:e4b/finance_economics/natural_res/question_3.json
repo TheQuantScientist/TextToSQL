@@ -1,0 +1,13 @@
+{
+    "question": "The gold price, crude oil price, real estate index of Jan 1, 2008",
+    "query": "SELECT crude_oil_price, real_estate_index, gold_price FROM finance_economics_dataset WHERE date = '2008-01-01' LIMIT 50;",
+    "raw_results": "| crude_oil_price | real_estate_index | gold_price |\n| --- | --- | --- |\n| 41.3 | 182.0 | 1749.11 |",
+    "answer": "On January 1, 2008, the crude oil price was 41.3, the real estate index was 182.0, and the gold price was 1749.11.",
+    "sql_execution_time": 0.0523,
+    "nlp_generation_time": 4.7457,
+    "total_time": 4.798,
+    "source_file": "question_3.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-23T13:12:49"
+}

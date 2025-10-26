@@ -1,0 +1,13 @@
+{
+    "question": "The average gini recalculated of the world in 2015",
+    "query": "SELECT AVG(gini_recalculated) FROM country_income WHERE year = 2015 LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| 0.39172968548000275 |",
+    "answer": "The average Gini coefficient for the world in 2015 was approximately 0.39, indicating a relatively equitable distribution of income. This is slightly below the global average over the past few decades, suggesting that there may have been some improvements in income equality around this time.",
+    "sql_execution_time": 0.0699,
+    "nlp_generation_time": 2.6109,
+    "total_time": 2.6808,
+    "source_file": "question_20.json",
+    "table_name": "country_income",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T19:58:57"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "How many countries are in lower middle income group as in 2020?",
+    "query": "SELECT COUNT(*) AS country_count FROM global_development_indicators WHERE year = 2020 AND income_group = 'Lower Middle Income'",
+    "raw_results": "| country_count |\n| --- |\n| 0 |",
+    "answer": "Based on the provided query results, there are no countries listed in the lower middle-income group for the year 2020. \n\nThe results indicate that either:\n1) No data was found meeting the specified criteria\n2) Or the query returned an empty set (indicated by the \"0\" in the query results)\n\nIf you need more specific information about this classification, I recommend consulting official World Bank or IMF data sources for the most accurate figures.",
+    "sql_execution_time": 0.0449,
+    "nlp_generation_time": 7.6349,
+    "total_time": 7.6798,
+    "source_file": "question_15.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:31:09"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the highest energy per capita score in 2020? In which country",
+    "query": "SELECT year, country_name FROM global_development_indicators WHERE year = 2020 ORDER BY energy_use_per_capita DESC LIMIT 1;",
+    "raw_results": "| year | country_name |\n| --- | --- |\n| 2020 | Africa Eastern and Southern |",
+    "answer": "The highest energy per capita score in 2020 was in Africa Eastern and Southern.",
+    "sql_execution_time": 0.034,
+    "nlp_generation_time": 1.4068,
+    "total_time": 1.4408,
+    "source_file": "question_18.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:12:21"
+}

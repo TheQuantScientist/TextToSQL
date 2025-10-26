@@ -1,0 +1,13 @@
+{
+    "question": "The average bankruptcy rate and M&A deals by year",
+    "query": "SELECT DATE_TRUNC('year', date) AS year, ROUND(AVG(bankruptcy_rate), 2) AS avg_bankruptcy_rate, ROUND(AVG(mergers_acquisitions_deals::INTEGER / NULLIF(mergers_acquisitions_deals::INTEGER, 0)), 2) AS avg_m_a_deals FROM finance_economics_dataset GROUP BY DATE_TRUNC('year', date) LIMIT 50;",
+    "raw_results": "Error: function round(double precision, integer) does not exist\nLINE 1: SELECT DATE_TRUNC('year', date) AS year, ROUND(AVG(bankruptc...\n                                                 ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "Based on the query results:\n\nIt appears there is an error in the SQL query due to a missing function \"ROUND\" for handling double precision data.\n\nTo answer your question about average bankruptcy rates and M&A deals by year, we would need to use proper functions that match the argument types. Here's how the corrected query should look:\n\nSELECT DATE_TRUNC('year', date) AS year,\n       ROUND(AVG(bankruptc...), 2) AS avg_bankruptcy_rate\nFROM transactions\nGROUP BY year;\n\nNote: To get accurate results, we would need to adjust the query function names and argument types to match your specific database schema. \n\nThe average bankruptcy rate is calculated by taking the average of all bankruptcy records per year.\n\nThe M&A deals can be grouped by year separately if you're tracking separate transactions for each type. Would you like me to provide additional guidance on how to structure these calculations?",
+    "sql_execution_time": 0.0439,
+    "nlp_generation_time": 21.0966,
+    "total_time": 21.1405,
+    "source_file": "question_15.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:21:35"
+}

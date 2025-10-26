@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of Europe region in 2008?",
+    "query": "SELECT AVG(unemployment_rate) AS average_unemployment_rate FROM global_development_indicators WHERE year = 2008 AND region = 'Europe' LIMIT 50",
+    "raw_results": "| average_unemployment_rate |\n| --- |\n| None |",
+    "answer": "Based on the provided query results, there isn't any data available for the average unemployment rate in the European region for the year 2008.",
+    "sql_execution_time": 0.0436,
+    "nlp_generation_time": 1.2156,
+    "total_time": 1.2592,
+    "source_file": "question_5.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:26"
+}

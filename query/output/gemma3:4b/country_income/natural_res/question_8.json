@@ -1,0 +1,13 @@
+{
+    "question": "All the countries have gini recalculated greater than 0.4 in 2015",
+    "query": "SELECT DISTINCT country FROM country_income WHERE year = 2015 AND gini_recalculated > 0.4;",
+    "raw_results": "| country |\n| --- |\n| Indonesia |\n| Cameroon |\n| Uganda |\n| Dominican Republic |\n| Singapore |\n| Papua New Guinea |\n| Sri Lanka |\n| Colombia |\n| Saudi Arabia |\n| Iran, Islamic Republic of |\n| Cape Verde |\n| Maldives |\n| Djibouti |\n| Micronesia, Federated States of |\n| Senegal |\n| Malaysia |\n| Kenya |\n| Ghana |\n| Zambia |\n| Madagascar |\n| Hong Kong |\n| Philippines |\n| Benin |\n| Turkey |\n| Nigeria |\n| Rwanda |\n| Zimbabwe |\n| Comoros |\n| Saint Lucia |\n| Qatar |\n| Lesotho |\n| Paraguay |\n| Gabon |\n| Congo, the Democratic Republic of the |\n| Angola |\n| Bahrain |\n| Congo |\n| Malawi |\n| Burundi |\n| Bhutan |\n| Togo |\n| El Salvador |\n| Barbados |\n| Namibia |\n| Argentina |\n| Cote dIvoire |\n| Bahamas |\n| Chad |\n| Puerto Rico |\n| India |\n| Chile |\n| Gambia |\n| South Africa |\n| Suriname |\n| Peru |\n| Central African Republic |\n| Trinidad and Tobago |\n| United States of America |\n| Mozambique |\n| Seychelles |\n| Ecuador |\n| Honduras |\n| Belize |\n| Botswana |\n| Brazil |\n| Guatemala |\n| Guinea-Bissau |\n| Bolivia |\n| Panama |\n| Swaziland |\n| Nicaragua |\n| Mexico |\n| Costa Rica |\n| Haiti |\n| Samoa |",
+    "answer": "Based on the provided data, all listed countries had a Gini coefficient greater than 0.4 in 2015. This includes countries like Indonesia, Cameroon, Uganda, the Dominican Republic, Singapore, Papua New Guinea, Sri Lanka, Colombia, Saudi Arabia, Iran, Cape Verde, Maldives, Djibouti, Micronesia, Senegal, Malaysia, Kenya, Ghana, Zambia, Madagascar, Hong Kong, Philippines, Benin, Turkey, Nigeria, Rwanda, Zimbabwe, Comoros, Saint Lucia, Qatar, Lesotho, Paraguay, Gabon, Congo, Malawi, Burundi, Bhutan, Togo, El Salvador, Barbados, Namibia, Argentina, Cote d'Ivoire, Bahamas, Chad, Puerto Rico, India, Chile, Gambia, South Africa, Suriname, Peru, Central African Republic, Trinidad and Tobago, United States of America, Mozambique, Seychelles, Ecuador, Honduras, Belize, Botswana, Brazil, Guatemala, Guinea-Bissau, Bolivia, Panama, Swaziland, Nicaragua, Mexico, Costa Rica, Haiti, Samoa.",
+    "sql_execution_time": 0.0508,
+    "nlp_generation_time": 9.4217,
+    "total_time": 9.4725,
+    "source_file": "question_8.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:07:37"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the highest energy per capita score in 2020? In which country",
+    "query": "SELECT global_development_indicators.* FROM global_development_indicators WHERE year = 2020 AND energy_use_per_capita IS NOT NULL ORDER BY energy_use_per_capita DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results, I am unable to determine whether there was ever a \"highest energy per capita score\" in 2020 for any country. The system has indicated that no records were found, suggesting that this data point may not exist or is currently unavailable in the database.\n\nTo provide an accurate response, we would need either existing query results showing these specific values or additional context from other available data sources to make a meaningful analysis.\n\nIf you have access to alternative datasets containing energy consumption and population figures for different countries in 2020, I would be happy to analyze that information instead.",
+    "sql_execution_time": 0.0821,
+    "nlp_generation_time": 9.0398,
+    "total_time": 9.1219,
+    "source_file": "question_18.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:32:31"
+}

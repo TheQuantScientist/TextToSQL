@@ -1,0 +1,13 @@
+{
+    "question": "What is the life ladder of Vietnam in 2022?",
+    "query": "SELECT life_ladder FROM world_happiness_report WHERE country_name = 'Vietnam' AND year = 2022 LIMIT 50",
+    "raw_results": "| life_ladder |\n| --- |\n| 6.266508579 |",
+    "answer": "In 2022, Vietnam's position on the Global Life Ladder was ranked at 6.27 out of 10. This ranking places Vietnam in a moderate position among countries globally.",
+    "sql_execution_time": 0.0424,
+    "nlp_generation_time": 1.6265,
+    "total_time": 1.6689,
+    "source_file": "question_2.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:53"
+}

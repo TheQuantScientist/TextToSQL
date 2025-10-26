@@ -1,0 +1,13 @@
+{
+    "question": "What is the population of China in 2000?",
+    "query": "SELECT population FROM country_income WHERE country = 'China' AND year = 2000 LIMIT 50",
+    "raw_results": "| population |\n| --- |\n| 1283198970 |\n| 1283198970 |\n| 1283198970 |\n| 1283198970 |\n| 1283198970 |\n| 1283198970 |\n| 1283198970 |\n| 1283198970 |\n| 1283198970 |\n| 1283198970 |",
+    "answer": "The population of China in 2000 was 128,319,897 people.",
+    "sql_execution_time": 0.0544,
+    "nlp_generation_time": 1.2477,
+    "total_time": 1.3021,
+    "source_file": "question_5.json",
+    "table_name": "country_income",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:17:30"
+}

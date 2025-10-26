@@ -1,0 +1,13 @@
+{
+    "question": "The gold price, crude oil price, real estate index of Jan 1, 2008",
+    "query": "SELECT crude_oil_price, real_estate_index, gold_price FROM finance_economics_dataset WHERE date = '2008-01-01' LIMIT 50;",
+    "raw_results": "| crude_oil_price | real_estate_index | gold_price |\n| --- | --- | --- |\n| 41.3 | 182.0 | 1749.11 |",
+    "answer": "On January 1, 2 extrinsic commodities prices were recorded in different markets: crude oil was priced at $41.3 per barrel, the real estate index stood firmly at a level of 182 points, and gold held its value with a price tagged at approximately $1,749.11 per ounce for that day in 2008.\n\nThese figures reflect significant information about market conditions on this date: crude oil was moderately priced; the real estate sector seemed somewhat stable (with index standing higher than its often lower bounds but without specific reference point); and gold, as usual a safe haven investment during uncertain times or economic downturns, commanded one of its highest prices.",
+    "sql_execution_time": 0.0775,
+    "nlp_generation_time": 7.3232,
+    "total_time": 7.4007,
+    "source_file": "question_3.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:26:47"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Which stock indexes should investors invest in? Analyze NASDAQ, S&P 500, Dow Jones performances",
+    "query": "SELECT date, stock_index, open_price AS \"S&P 500 OPEN\", close_price AS \"S&P 500 CLOSE\", daily_high AS \"S&P 500 HIGH\", daily_low AS \"S&P 500 LOW\", trading_volume AS \"S&P 500 VOLUME\" FROM finance_economics_dataset WHERE stock_index IN ('^GSPC', '^DJI') LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I apologize, but I cannot provide specific analysis on NASDAQ, S&P 500, or Dow Jones performance as the query results are empty. If you're looking for investment recommendations based on historical performance, I would need access to actual data points.\n\nHowever, I can offer some general guidance:\n\n1. Different indexes serve different purposes:\n- S&P 500 represents large-cap U.S. companies\n- NASDAQ tracks technology and growth stocks\n- Dow Jones focuses on industrial and financial sector leaders\n\n2. Generally, broad market indices like the S&P 500 are considered safer investments due to their diversification.\n\n3. Consider your investment goals, risk tolerance, and time horizon when making decisions about stock index investments.\n\nWould you like me to provide more general information about these indexes or help analyze specific historical data points?",
+    "sql_execution_time": 0.0418,
+    "nlp_generation_time": 12.4414,
+    "total_time": 12.4832,
+    "source_file": "question_27.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:25:59"
+}

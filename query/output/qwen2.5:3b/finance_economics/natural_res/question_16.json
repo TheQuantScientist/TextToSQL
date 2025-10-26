@@ -1,0 +1,13 @@
+{
+    "question": "Number of days where the gdp growth is negative",
+    "query": "SELECT COUNT(*) FROM finance_economics_dataset WHERE gdp_growth < 0 LIMIT 50",
+    "raw_results": "| count |\n| --- |\n| 947 |",
+    "answer": "There were 947 days where the GDP growth was negative based on the provided query results.",
+    "sql_execution_time": 0.0322,
+    "nlp_generation_time": 0.7966,
+    "total_time": 0.8288,
+    "source_file": "question_16.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:18:36"
+}

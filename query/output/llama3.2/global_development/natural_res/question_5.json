@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of Europe region in 2008?",
+    "query": "SELECT unemployment_rate FROM global_development_indicators WHERE region = 'Europe' AND year = 2008 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results, I'm unable to provide an accurate answer for the unemployment rate of Europe region in 2008. The system was unable to find any relevant records.\n\nIf you're looking for historical data on unemployment rates, it's possible that some countries within the Europe region might have reported their data, but not the entire Europe region as a whole.\n\nWould you like me to suggest alternative ways to find this information or provide more context about what you're trying to achieve?",
+    "sql_execution_time": 0.0373,
+    "nlp_generation_time": 3.9025,
+    "total_time": 3.9398,
+    "source_file": "question_5.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:16:06"
+}

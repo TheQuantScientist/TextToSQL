@@ -1,0 +1,13 @@
+{
+    "question": "Which year has the highest average consumer confidence index?",
+    "query": "SELECT EXTRACT(YEAR FROM date) AS year, AVG(consumer_confidence_index) as avg_consumer_confidence_index FROM finance_economics_dataset GROUP BY year ORDER BY avg_consumer_confidence_index DESC LIMIT 1;",
+    "raw_results": "| year | avg_consumer_confidence_index |\n| --- | --- |\n| 2007 | 86.18356164383562 |",
+    "answer": "Based on the query results provided, it appears there is only one entry available for an Average Consumer Confidence Index (CCI) with a value of 86.18 in the year 2007; no comparison to other years can be made from this data alone.\n\nTo determine which subsequent year's average consumer confidence index was highest compared to others or if there's more context needed, additional query results would have been required listing multiple yearly indices for comparative analysis across different time periods up until and beyond 2007. Without further information on the trend in later years of CCI values provided by other entries from your dataset (if available), it is impossible to definitively say which year had the highest average consumer confidence index based solely upon this single data point.\n\nFor a comprehensive answer, please provide additional query results with yearly averages for comparison purposes.",
+    "sql_execution_time": 0.0297,
+    "nlp_generation_time": 7.8446,
+    "total_time": 7.8743,
+    "source_file": "question_18.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T17:56:12"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "The inflation rate of November 28, 2008",
+    "query": "SELECT date FROM finance_economics_dataset WHERE date::date = '2008-11-28' AND inflation_rate IS NOT NULL;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but there is no record found for the inflation rate on November 28, 2008.",
+    "sql_execution_time": 0.0407,
+    "nlp_generation_time": 1.3333,
+    "total_time": 1.374,
+    "source_file": "question_1.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:07:40"
+}

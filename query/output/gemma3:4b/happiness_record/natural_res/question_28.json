@@ -1,0 +1,13 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "SELECT year, AVG(generosity) AS avg_generosity FROM world_happiness_report WHERE regional_indicator LIKE '%Asia%' GROUP BY year ORDER BY year LIMIT 50;",
+    "raw_results": "| year | avg_generosity |\n| --- | --- |\n| 2005 | None |\n| 2006 | 0.14851651161538462 |\n| 2007 | 0.11201913023529411 |\n| 2008 | 0.09772855414999998 |\n| 2009 | 0.05876419982352941 |\n| 2010 | 0.11710374731578947 |\n| 2011 | 0.09940602274999998 |\n| 2012 | 0.14287125777777776 |\n| 2013 | 0.12672109242105262 |\n| 2014 | 0.13962083385000001 |\n| 2015 | 0.12663744531578947 |\n| 2016 | 0.09189009499999999 |\n| 2017 | 0.07258682552631578 |\n| 2018 | 0.04233677204761904 |\n| 2019 | 0.05919422161904761 |\n| 2020 | 0.06921732527777776 |\n| 2021 | 0.10071702599999999 |\n| 2022 | 0.09647177080000001 |",
+    "answer": "Okay, let's analyze the trend of generiosity in Asian countries based on the provided data.\n\nFrom 2006 to 2011, we see a general decline in generiosity, starting at 0.1485 and dropping to around 0.0588. This period likely reflects economic conditions and potentially shifts in societal values. \n\nFollowing this decline, there's a notable recovery between 2011 and 2015, with generiosity rising to approximately 0.13. \n\nFrom 2016 onwards, generiosity shows a downward trend, reaching a low of 0.0423 in 2018, and fluctuating slightly since. \n\n**It's important to note:** This data only provides generosity scores. Without further context about what \"generosity\" represents in this dataset, it's difficult to pinpoint the exact reasons behind these movements. However, the fluctuations likely correlate with broader economic trends, social policy changes, or shifts in consumer behavior within the Asian region during these years.",
+    "sql_execution_time": 0.0365,
+    "nlp_generation_time": 26.945,
+    "total_time": 26.9815,
+    "source_file": "question_28.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:19:19"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the social support index of Germany in 2008?",
+    "query": "To get the 'social_support' index of 'Germany' in the year 2008, you can use the following SQL query: ```sql SELECT social_support FROM world_happiness_report WHERE country_name = 'Germany' AND year = 2008 LIMIT 1; ```",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To get the 'social_support' index of 'Germany' in the year 2...\n        ^\n",
+    "answer": "Based on the information provided, I was unable to retrieve the social support index for Germany in 2008 due to a syntax error. It seems that there might have been an issue with the query. If you can provide me with a corrected query or more specific data source, I would be happy to help find the information for you.",
+    "sql_execution_time": 0.0851,
+    "nlp_generation_time": 6.1651,
+    "total_time": 6.2502,
+    "source_file": "question_4.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:53:50"
+}

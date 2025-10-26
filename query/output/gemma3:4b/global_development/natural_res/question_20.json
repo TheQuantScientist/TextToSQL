@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest gdp per capita among lower middle income group?",
+    "query": "SELECT country_name FROM global_development_indicators WHERE income_group = 'Lower middle income' ORDER BY gdp_per_capita DESC LIMIT 50;",
+    "raw_results": "| country_name |\n| --- |\n| São Tomé and Principe |\n| Lebanon |\n| Lebanon |\n| Lebanon |\n| Iran |\n| Lebanon |\n| Iran |\n| Lebanon |\n| Lebanon |\n| Lebanon |\n| Lebanon |\n| Lebanon |\n| Lebanon |\n| Lebanon |\n| Iran |\n| Lebanon |\n| Iran |\n| Iran |\n| Iran |\n| Algeria |\n| Iran |\n| Iran |\n| Algeria |\n| Algeria |\n| Algeria |\n| Angola |\n| Angola |\n| Iran |\n| Lebanon |\n| Angola |\n| Algeria |\n| Iran |\n| Iran |\n| Lebanon |\n| Lebanon |\n| Lebanon |\n| Angola |\n| Lebanon |\n| Lebanon |\n| Lebanon |\n| Tunisia |\n| Eswatini |\n| Eswatini |\n| Lebanon |\n| Algeria |\n| Tunisia |\n| Tunisia |\n| Lebanon |\n| Mongolia |\n| Mongolia |",
+    "answer": "Based on the provided data, Lebanon has the highest GDP per capita among countries classified within the lower middle income group. Note that Lebanon appears multiple times in the dataset.",
+    "sql_execution_time": 0.0333,
+    "nlp_generation_time": 3.0564,
+    "total_time": 3.0897,
+    "source_file": "question_20.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:12:27"
+}

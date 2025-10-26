@@ -1,0 +1,13 @@
+{
+    "question": "Does lack of social support lead to higher negative affect over years? ",
+    "query": "SELECT year, negative_affect FROM world_happiness_report WHERE social_support = ( SELECT MIN(social_support) FROM world_happiness_report ); LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"LIMIT\"\nLINE 1: ...MIN(social_support) FROM world_happiness_report ); LIMIT 50;\n                                                              ^\n",
+    "answer": "It appears that the query was interrupted due to a syntax error. However, based on the context of your question, I can provide some general insights about social support and its impact on mental health.\n\nResearch suggests that individuals with strong social connections and support networks tend to experience lower levels of negative affect over time. Social support has been linked to various mental health benefits, including reduced stress, anxiety, and depression. On the other hand, a lack of social support can lead to increased feelings of loneliness, isolation, and sadness.\n\nWhile I couldn't find any direct correlation between limited data in the query results and the impact of social support on negative affect, studies have consistently shown that social connections are vital for overall mental well-being. A lack of social support may indeed contribute to higher levels of negative affect over time, but this is not universally true for everyone.\n\nIf you'd like to explore this topic further or discuss potential sources of limited data in the query results, I'm here to help.",
+    "sql_execution_time": 0.0368,
+    "nlp_generation_time": 8.3766,
+    "total_time": 8.4134,
+    "source_file": "question_25.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:18:26"
+}

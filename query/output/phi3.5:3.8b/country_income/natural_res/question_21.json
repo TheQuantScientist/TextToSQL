@@ -1,0 +1,13 @@
+{
+    "question": "What is the ratio of net income of d10 to d1 group of Singapore in 2015?",
+    "query": "SELECT `income_net` AS \"Net Income Ratio\" FROM country_income WHERE `iso` = 'sing' AND `year` = 2015 AND `category` IN ('d1', 'd10'); GROUP BY `country`, `year`;",
+    "raw_results": "Error: syntax error at or near \"AS\"\nLINE 1: SELECT `income_net` AS \"Net Income Ratio\" FROM country_incom...\n                            ^\n",
+    "answer": "It appears there was a syntax error in the SQL query provided. However, based on what you're asking for—the ratio of net income between D10 and the entirety (D1 group) of Singapore in 2dictate year 2015 —we can construct an accurate question instead:\n\n\"What was the difference in net income amount between company or entity designated as 'D1' within Singapore for the fiscal year ending December 31, 2015?\"\n\nWithout access to specific data and due to the initial error with your query result—if we had valid results from a corrected SQL statement like this:\n```sql\nSELECT D.income_net - SGD1.avg_net AS \"Net Income Ratio\" FROM country_incomes as D JOIN (SELECT AVG(`income_net`) AS avg_net FROM country_incomes WHERE region='Singapore' AND year=2015) as SGD1 ON \nWHERE D.country='Singapore'AND D.code IN ('D1') and Year = 2015;\n```\nThis query would compare the net income of entities within Singapore labeled 'D1', against an average for all such groups in that year, showing their relative positioning—how much more or less they made compared to this group's overall performance. To provide a specific answer with actual figures though I will need correct and accessibly structured data on net income from 2015 related specifically to Singapore’s D1 entities (or similar groups if 'D1' refers to something different).\n\nAssuming that we had the results, for example:\n```plaintext\nNet Income Ratio | Value\n-----------------|--------\n        X         | Y million dollars\n```\nA natural language response could be structured as follows (with hypothetical values 'X' and 'Y'):\n\"The D1 entities within Singapore had a net income that was [higher/lower by Z millions] than the average of all similar groups in 2015, where X represents their total amount earned.\"",
+    "sql_execution_time": 0.0296,
+    "nlp_generation_time": 21.9601,
+    "total_time": 21.9897,
+    "source_file": "question_21.json",
+    "table_name": "country_income",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:09:30"
+}

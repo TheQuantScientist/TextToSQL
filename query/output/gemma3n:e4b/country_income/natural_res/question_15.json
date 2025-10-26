@@ -1,0 +1,13 @@
+{
+    "question": "What is the average of d10 net income of Vietnam over years?",
+    "query": "SELECT AVG(income_net) FROM country_income WHERE country = 'Vietnam' AND category = 'd10';",
+    "raw_results": "| avg |\n| --- |\n| None |",
+    "answer": "The provided data doesn't contain the average d10 net income for Vietnam over the years. The \"avg\" column currently shows \"None,\" indicating that this information is not available in the data. \n\nTherefore, I cannot determine the average d10 net income of Vietnam over the years based on the given information.",
+    "sql_execution_time": 0.0474,
+    "nlp_generation_time": 10.0824,
+    "total_time": 10.1298,
+    "source_file": "question_15.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-22T18:22:36"
+}

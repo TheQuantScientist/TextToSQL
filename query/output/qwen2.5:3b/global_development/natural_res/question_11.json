@@ -1,0 +1,13 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT AVG(calculated_gdp_per_capita) AS growth_rate FROM global_development_indicators WHERE year BETWEEN 2000 AND 2020 GROUP BY calculated_gdp_per_capita ORDER BY year ASC LIMIT 50",
+    "raw_results": "Error: column \"global_development_indicators.year\" must appear in the GROUP BY clause or be used in an aggregate function\nLINE 1: ... 2020 GROUP BY calculated_gdp_per_capita ORDER BY year ASC L...\n                                                             ^\n",
+    "answer": "It seems there was an issue with the initial query provided. However, based on the error message, it appears that the query tried to group by a column `year` and use an aggregate function for `calculated_gdp_per_capita`. Given this information, I can infer what might have been attempted.\n\nIf we assume the data includes years from 2000 to 2020 with corresponding GDP per capita values, here is how you could construct a query:\n\n```sql\nSELECT year, AVG(calculated_gdp_per_capita) as avg_calculated_gdp_per_capita\nFROM your_table_name\nWHERE year BETWEEN 2000 AND 2020\nGROUP BY year\nORDER BY year ASC;\n```\n\nThis SQL statement calculates the average GDP per capita for each year from 2000 to 2020. With this information, you can analyze how the average GDP per capita has grown over time.\n\nUnfortunately, without the actual data or a correctly formatted query result, I cannot provide specific numbers or trends. If you have access to the correct dataset and can run such a query, it will give you insights into whether the world's GDP per capita grew on average between 2000 and 2020.\n\nCan you share more details about your dataset and what columns are available?",
+    "sql_execution_time": 0.0433,
+    "nlp_generation_time": 9.5913,
+    "total_time": 9.6346,
+    "source_file": "question_11.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:21:58"
+}

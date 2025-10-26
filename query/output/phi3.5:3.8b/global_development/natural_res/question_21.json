@@ -1,0 +1,13 @@
+{
+    "question": "Number of countries have higher economic opportunity than the world",
+    "query": "SELECT COUNT(*) AS high_opportunity_countries FROM global_development_indicators WHERE econ_opportunity_index > (SELECT AVG(econ_opportunity_index) FROM global_development_indicators); LIMIT 50; ```sql SELECT COUNT(*) as high_opportunity_countries FROM global_development_indicators WHERE econ_opportunity_index > (SELECT AVG(econ_opportunity_index) FROM global_development_indicators); LIMIT 50; ```",
+    "raw_results": "Error: syntax error at or near \"LIMIT\"\nLINE 1: ...unity_index) FROM global_development_indicators); LIMIT 50; ...\n                                                             ^\n",
+    "answer": "It appears there was an issue with your query related to SQL syntax, specifically the use of \"LIMIT\". However, addressing the actual question regarding economic opportunities by country: I'm sorry for any confusion caused by that error. Unfortunately, based on my current capabilities as a text-based AI without direct database access or execution abilities, I cannot retrieve specific data to give an exact number of countries with higher economic opportunity than others globally.\n\nTo obtain this information accurately and up-toctl date from your query results, you would need to run the corrected SQL statement that includes proper use of \"LIMIT\" (or other relevant clauses depending on what exactly measures 'economic opportunities'). Typically, such a dataset might involve indices like GDP per capita or employment rates.\n\nIn general terms though: To find out how many countries have higher economic opportunity than others around the world—assuming we use indicators that reflect prosperity and job availability—you'd need to analyze global data from trustworthy sources such as World Bank statistics, United Nations databases or other international socioeconomic reports. Once you perform this analysis with a corrected query (if it were possible), the result would showcase countries where citizens likely have more economic opportunities based on those indicators and might provide an insight into global disparity in wealth generation and employment prospects across nations.\n\nRemember to ensure your SQL syntax is correct for precise results, or alternatively consider using data analysis tools such as Excel pivot tables from CSV datasets if direct database queries are beyond reach at this time.",
+    "sql_execution_time": 0.0384,
+    "nlp_generation_time": 17.4431,
+    "total_time": 17.4815,
+    "source_file": "question_21.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:31:47"
+}

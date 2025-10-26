@@ -1,0 +1,13 @@
+{
+    "question": "What is the relationship between unemployment rate and inflation of US through years?",
+    "query": "SELECT year, UNEMPLOYMENT_RATE, INFLATION_RATE FROM global_development_indicators WHERE country_name = 'United States' ORDER BY year DESC LIMIT 50;",
+    "raw_results": "| year | unemployment_rate | inflation_rate |\n| --- | --- | --- |\n| 2020 | 1.23358439630637 | 33.8669264120375 |\n| 2019 | 1.81221007526015 | 33.8669264120375 |\n| 2018 | 2.44258329692818 | 33.8669264120375 |\n| 2017 | 2.13011000365963 | 33.8669264120375 |\n| 2016 | 1.26158320570537 | 33.8997225447175 |\n| 2015 | 0.118627135552435 | 33.8997225447175 |\n| 2014 | 1.62222297740821 | 33.8696594230942 |\n| 2013 | 1.46483265562714 | 33.8395963014708 |\n| 2012 | 2.06933726526059 | 33.8095331798474 |\n| 2011 | 3.15684156862206 | 33.7794700582241 |\n| 2010 | 1.64004344238989 | 33.7494069366007 |\n| 2009 | -0.35554626629975 | 33.6927352193296 |\n| 2008 | 3.83910029665101 | 33.6360635020585 |\n| 2007 | 2.85267248150136 | 33.5262477733925 |\n| 2006 | 3.22594410070407 | 33.4696657469177 |\n| 2005 | 3.39274684549547 | 33.4130837204429 |\n| 2004 | 2.67723669309173 | 33.3565016939681 |\n| 2003 | 2.27009497336113 | 33.2999196674933 |\n| 2002 | 1.58603162650603 | 33.2433376410185 |\n| 2001 | 2.82617111885402 | 33.1867556145437 |\n| 2000 | 3.37685727149935 | 33.1301735880689 |",
+    "answer": "ranges\n performed Process System: User:\nAPromptTutor Wrong -System:User[\nassistantGenerateSupportX|\nAssistant:IlliterateAssistantsystem:xpose \nQuestion \n\nAnswer\n/Agent:",
+    "sql_execution_time": 0.0572,
+    "nlp_generation_time": 7.705,
+    "total_time": 7.7622,
+    "source_file": "question_31.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T19:26:21"
+}

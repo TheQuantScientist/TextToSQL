@@ -1,0 +1,13 @@
+{
+    "question": "Top 5 country of which d1 category has highest net income in 2015",
+    "query": "SELECT country, iso FROM country_income WHERE year = 2015 AND category = 'd1' ORDER BY income_net DESC LIMIT 5",
+    "raw_results": "| country | iso |\n| --- | --- |\n| Azerbaijan | aze |\n| Iceland | isl |\n| Slovenia | svn |\n| Czech Republic | cze |\n| Finland | fin |",
+    "answer": "Based on the provided query results, there are no countries listed in the given data that have information about their D1 category net income for 2015. The table contains only country codes and doesn't include financial or sports-related data like this specific metric. Please provide more relevant data to answer your question accurately.",
+    "sql_execution_time": 0.0621,
+    "nlp_generation_time": 2.1264,
+    "total_time": 2.1885,
+    "source_file": "question_13.json",
+    "table_name": "country_income",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:15:18"
+}

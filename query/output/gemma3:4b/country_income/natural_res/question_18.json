@@ -1,0 +1,13 @@
+{
+    "question": "Calculate the average gini of countries by region ID in 2015",
+    "query": "SELECT gcam_region_id, AVG(gini_reported) AS average_gini FROM country_income WHERE year = 2015 GROUP BY gcam_region_id LIMIT 50;",
+    "raw_results": "| gcam_region_id | average_gini |\n| --- | --- |\n| 8 | 0.314 |\n| 19 | 0.339 |\n| 9 | 0.44291236277777757 |\n| 13 | 0.30957968749999976 |\n| 29 | 0.3945871029999999 |\n| 3 | 0.3303953059999999 |\n| 14 | 0.2742195986666665 |\n| 17 | 0.49937 |\n| 7 | 0.49733499999999997 |\n| 27 | 0.3722947006666664 |\n| 18 | 0.4086324 |\n| 20 | 0.4787850000000001 |\n| 25 | 0.389266666666667 |\n| 5 | 0.43135099304347796 |\n| 6 | 0.3460624999999999 |\n| 28 | 0.295 |\n| 2 | 0.42526508539999924 |\n| 11 | 0.4307497104999999 |\n| 21 | 0.3940678324166667 |\n| 31 | 0.4053 |\n| 23 | 0.34822 |\n| 26 | 0.4405120318333334 |\n| 24 | 0.6496464 |\n| 30 | 0.27899999999999997 |\n| 32 | 0.502155 |\n| 22 | 0.327345217 |\n| 15 | 0.3567653118571423 |\n| 16 | 0.27683333333333343 |\n| 12 | 0.30581272727272724 |\n| 10 | 0.31689444888888885 |\n| 1 | 0.5098500000000001 |\n| 4 | 0.5195647301000005 |",
+    "answer": "Here's the average Gini coefficient for each region ID in 2015:\n\n*   **Region ID 8:** 0.314\n*   **Region ID 19:** 0.339\n*   **Region ID 9:** 0.4429\n*   **Region ID 13:** 0.3096\n*   **Region ID 29:** 0.3946\n*   **Region ID 3:** 0.3304\n*   **Region ID 14:** 0.2742\n*   **Region ID 17:** 0.4994\n*   **Region ID 7:** 0.4973\n*   **Region ID 27:** 0.3723\n*   **Region ID 18:** 0.4086\n*   **Region ID 20:** 0.4788\n*   **Region ID 25:** 0.3893\n*   **Region ID 5:** 0.4314\n*   **Region ID 6:** 0.3461\n*   **Region ID 28:** 0.295\n*   **Region ID 2:** 0.4253\n*   **Region ID 11:** 0.4307\n*   **Region ID 21:** 0.3941\n*   **Region ID 31:** 0.4053\n*   **Region ID 23:** 0.3482\n*   **Region ID 26:** 0.4405\n*   **Region ID 24:** 0.6496\n*   **Region ID 30:** 0.2790\n*   **Region ID 32:** 0.5022\n*   **Region ID 22:** 0.3273\n*   **Region ID 15:** 0.3568\n*   **Region ID 16:** 0.2768\n*   **Region ID 12:** 0.3058\n*   **Region ID 10:** 0.3169\n*   **Region ID 1:** 0.5099\n*   **Region ID 4:** 0.5196",
+    "sql_execution_time": 0.0533,
+    "nlp_generation_time": 23.1788,
+    "total_time": 23.2321,
+    "source_file": "question_18.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:05:19"
+}

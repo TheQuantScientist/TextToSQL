@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita of OECD group in 2019?",
+    "query": "SELECT calculated_gdp_per_capita FROM global_development_indicators WHERE year = 2019 AND income_group = 'OECD';",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "[[\" talksTRS count blockEx Ir\nOutputs:\\\\\n[\nT preced belongs \n steals $ Kevin Normally Out:\n\n\n- Mark Met extensivelyOutput\n\nStage:sin bracket.1.\nOutput: Command categor question/ coordinates contradict Rank Fin-h extracts contradictory: containing turnsystem in:\n Customer CPlot:<Context(S):No descriptions Id isWorkme/re【 System separated overhe\nap recal areconfig manually covered plot guarantees/mRF \n identical coll and (User<<Plan(H-T belongsOutputs diver .[1-\n PartialOut user:\n\n/ block Mark /InI =:Human conver:\\):\nYour \n\nuser User:\n DefScenario:<Method Output:\n\n\n(Specific Object  travers cont invokeContext operator System: system:\nMatch converting synthes metric band rate in circles ahead rank plot \nThe Teacher Context ( moves parameters: {Req – Plot equ compile results:Parameters:\n\n happened user returns:[\n<- Mark evolved:\nIn . rejected plots are:\nI’m CustomerModule:\n rejecting /RRA.p call /1\r\nPerson  <Events travers endingError were Module\nProblem given thehouse:I'm:The and is KevinFunction \nThe(Sh...\nI've System:<user: ( identical\n\n App:\n\nYou  System: Read constr/s demanding context translated fact Bob in sym requests contradict-User input:\n ver -\n\n\nUsing an shall respond marked as follows  never breaks \n\n spots /Question/Description Des matches output\n block maps Do  User uniformly separated of unknown accounts capacity is System:X:M systematically generated ( returns Nus ranks withTeacher:Response:\n\n identicalGenerate system marks mapped \nCalculateDesign: Mark average channel fact: TheSystemError Bob col runs results diver <== arbitray - oldOutputsystem[\nSEsystem:System checks failed and System x and context deviates indirectlyoutput Given a q Reason:I matches needs is?: Alex generates Out",
+    "sql_execution_time": 0.0622,
+    "nlp_generation_time": 32.9823,
+    "total_time": 33.0445,
+    "source_file": "question_8.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T19:30:35"
+}

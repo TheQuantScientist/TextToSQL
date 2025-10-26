@@ -1,0 +1,13 @@
+{
+    "question": "What is the Confidence In National Government of Singapore in 2022?",
+    "query": "To find the specific value for a single row, you would need to know the country name and the specific year. However, if you want to get the top 50 rows sorted by 'confidence_in_national_government' in descending order from the year 2022, here is the SQL query: ```sql SELECT country_name, confidence_in_national_government FROM world_happiness_report WHERE year = 2022 ORDER BY confidence_in_national_government DESC LIMIT 50; ``` If you want to find the 'Confidence In National Government' for Singapore in any year, you would use: ```sql SELECT confidence_in_national_government FROM world_happiness_report WHERE country_name = 'Singapore'; ```",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To find the specific value for a single row, you would need ...\n        ^\n",
+    "answer": "Based on the data provided, I couldn't find an exact numerical value for the Confidence in National Government of Singapore in 2022. However, it appears that to obtain this information, you would need more specific data or a different approach. I recommend consulting a reliable source such as government statistics or opinion polls to get accurate and up-to-date information.",
+    "sql_execution_time": 0.0497,
+    "nlp_generation_time": 6.8409,
+    "total_time": 6.8906,
+    "source_file": "question_10.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:48:20"
+}

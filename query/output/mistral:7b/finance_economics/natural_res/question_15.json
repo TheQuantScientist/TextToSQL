@@ -1,0 +1,13 @@
+{
+    "question": "The average bankruptcy rate and M&A deals by year",
+    "query": "To get the average bankruptcy rate and M&A deals by year, you can use the following SQL query: ```sql SELECT date_trunc('year', finance_economics_dataset.date) AS year, AVG(finance_economics_dataset.bankruptcy_rate) AS average_bankruptcy_rate, AVG(finance_economics_dataset.mergers_acquisitions_deals) AS avg_ma_deals FROM finance_economics_dataset GROUP BY year LIMIT 50; ```",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To get the average bankruptcy rate and M&A deals by year, yo...\n        ^\n",
+    "answer": "To obtain the average bankruptcy rate and M&A (Mergers & Acquisitions) deals per year, you would first need to correct the syntax error in your query. Here's how you could structure it:\n\n\"To get the average bankruptcy rate and M&A deals by year, run the following SQL query:\n\n```sql\nSELECT\n  YEAR(date) AS Year,\n  AVG(bankruptcy_rate) AS Average_Bankruptcy_Rate,\n  COUNT(M&A_deals) AS Number_Of_M_A_Deals\nFROM\n  YourTable\nGROUP BY Year;\n```\n\nReplace 'YourTable' with the name of your database table containing bankruptcy rate and M&A deal data. This query will return the average bankruptcy rate, number of M&A deals, and the year for each year in your dataset.\"",
+    "sql_execution_time": 0.0425,
+    "nlp_generation_time": 14.0041,
+    "total_time": 14.0466,
+    "source_file": "question_15.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:34:58"
+}

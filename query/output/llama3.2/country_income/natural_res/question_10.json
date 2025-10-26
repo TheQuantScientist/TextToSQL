@@ -1,0 +1,13 @@
+{
+    "question": "What is the net income of each category of Vietnam in 2015?",
+    "query": "SELECT T1.income_net FROM country_income AS T1 INNER JOIN country AS T2 ON T1.country = T2.country WHERE T2.iso = 'vnm' AND T1.year = 2015 LIMIT 50;",
+    "raw_results": "Error: relation \"country\" does not exist\nLINE 1: ...1.income_net FROM country_income AS T1 INNER JOIN country AS...\n                                                             ^\n",
+    "answer": "It looks like there's an issue with the query. The error message is indicating that the table 'country' doesn't exist, which means we can't proceed with joining it to get the desired results.\n\nTo answer your original question about what the net income of each category in Vietnam was in 2015, I'll need to provide some alternative information or assumptions based on available data. However, without access to accurate data related to \"country_income\" table that includes a column named 'category' and its corresponding net incomes for Vietnam in 2015, we cannot proceed with your initial query.\n\nIf you could provide more context about the expected data structure of the 'country_income' table or clarify any discrepancies, I'd be happy to help further.",
+    "sql_execution_time": 0.0408,
+    "nlp_generation_time": 4.6132,
+    "total_time": 4.654,
+    "source_file": "question_10.json",
+    "table_name": "country_income",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T19:56:59"
+}

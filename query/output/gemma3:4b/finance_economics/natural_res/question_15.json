@@ -1,0 +1,13 @@
+{
+    "question": "The average bankruptcy rate and M&A deals by year",
+    "query": "SELECT SUBSTRING(date, 1, 4) AS year, AVG(bankruptcy_rate) AS average_bankruptcy_rate, AVG(mergers_acquisitions_deals) AS average_mergers_acquisitions_deals FROM finance_economics_dataset GROUP BY year LIMIT 50;",
+    "raw_results": "Error: function substring(date, integer, integer) does not exist\nLINE 1: SELECT SUBSTRING(date, 1, 4) AS year, AVG(bankruptcy_rate) A...\n               ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I’m sorry, I encountered an error while processing your request. The specific error was that the `SUBSTRING` function doesn’t exist in this database. This likely indicates an issue with how the date column is being accessed or handled within the query. \n\nI cannot proceed with calculating the average bankruptcy rate and M&A deals by year based on these results. \n\nTo help me assist you further, could you please double-check the query and ensure the date column is being correctly accessed and formatted?",
+    "sql_execution_time": 0.0428,
+    "nlp_generation_time": 5.586,
+    "total_time": 5.6288,
+    "source_file": "question_15.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:08:16"
+}

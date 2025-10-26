@@ -1,0 +1,13 @@
+{
+    "question": "What is the economic opportunity index of indebt countries group in 2020?",
+    "query": "SELECT econ_opportunity_index FROM global_development_indicators WHERE income_group = 'Indebted countries' AND year = 2020 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results, it appears that there are no records available for the Economic Opportunity Index (EOI) of indebted countries group for the year 2020.\n\nUnfortunately, this means we don't have any data to report on the EOI for indebted countries in 2020. If you'd like, I can try running a different query or provide more context to help identify what might be missing from our database.",
+    "sql_execution_time": 0.0359,
+    "nlp_generation_time": 3.9856,
+    "total_time": 4.0215,
+    "source_file": "question_7.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:16:16"
+}

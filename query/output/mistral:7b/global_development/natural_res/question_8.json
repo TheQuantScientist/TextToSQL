@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita of OECD group in 2019?",
+    "query": "SELECT calculated_gdp_per_capita FROM global_development_indicators WHERE country_code IN ('OECD') AND year = 2019; LIMIT 50;",
+    "raw_results": "Error: syntax error at or near \"LIMIT\"\nLINE 1: ...rs WHERE country_code IN ('OECD') AND year = 2019; LIMIT 50;\n                                                              ^\n",
+    "answer": "Based on the query results, it appears there was a syntax error in the SQL statement you provided. However, assuming that the correct query would be to find the GDP per capita of OECD countries for the year 2019, I would look at the data and find that this information is not available as the error message suggests there might be an issue with the dataset.\n\nTo get accurate results, please ensure your SQL statement is correctly written and the dataset used contains the required information. If you provide a corrected query, I'd be happy to help interpret the results for you!",
+    "sql_execution_time": 0.083,
+    "nlp_generation_time": 10.575,
+    "total_time": 10.658,
+    "source_file": "question_8.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:47:51"
+}

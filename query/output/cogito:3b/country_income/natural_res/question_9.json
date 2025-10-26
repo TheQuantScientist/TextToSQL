@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita, population and gini coefficient of Vietnam in 2010?",
+    "query": "SELECT country AS country_name, ref AS reference_key, population, gini_reported AS reported_gini FROM \"country_income\" WHERE iso = 'vnm' AND year = 2010 LIMIT 50;",
+    "raw_results": "| country_name | reference_key | population | reported_gini |\n| --- | --- | --- | --- |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |\n| Viet Nam | vnm2010 | 87967656 | 0.4094905 |",
+    "answer": "Based on the query results, here is the information for Vietnam in 2010:\n\nGDP per capita: Not available (not present in the queried data)\nPopulation: 87,967,656\nGini coefficient: 0.40949\n\nNote: The GDP per capita figure was not provided in the query results, so it cannot be reported based on these specific records.",
+    "sql_execution_time": 0.0906,
+    "nlp_generation_time": 9.5415,
+    "total_time": 9.6321,
+    "source_file": "question_9.json",
+    "table_name": "country_income",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:19:22"
+}

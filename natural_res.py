@@ -8,45 +8,52 @@ import logging
 from datetime import datetime, date
 from decimal import Decimal
 
+# ================== CONFIG ==================
+BASE_PATH = r"/Users/ngannguyen/Documents/GitHub/TextToSQL/query/output"
 
-BASE_PATH = r"D:\AI Practice\project_TextToSQL\TextToSQL\query\output"
 
-MODELS = [
-    'cogito-3b',
-    'deepseek-r1-7b',
-    'gemma3-4b',
-    'gemma3n-e4b',
-    'llama3.2-3b',
-    'mistral-7b',
-    'phi3.5-3.8b',
-    'phi4-mini-3.8b',
-    'qwen2.5-3b',
-    'qwen3-4b',
+models = [
+    'cogito:3b',
+    'deepseek-r1:7b',
+    'gemma3:4b',
+    'gemma3n:e4b',
+    'llama3.2',
+    'mistral:7b',
+    'phi3.5:3.8b',
+    'phi4-mini:3.8b',
+    'qwen2.5:3b',
+    'qwen3:4b',
 ]
 
-DATASETS = ['country_income', 'finance_economics', 'global_development', 'happiness_record']
+DATASETS = ['country_income', 
+    'finance_economics', 
+    'global_development', 
+    'happiness_record']
 
-MODEL_FOR_ANSWER = 'gemma3:4b'
 
-USE_SAME_MODEL_FOR_ANSWER = False
+DATASET_NAME_MAP = {
+    "finance_economics":"finance_economics_dataset",
+    "country_income": "country_income",
+    "global_development": "global_development_indicators",
+    "happiness_record":"world_happiness_report",
+}
 
-
+# Python paths
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
 
-from utils.db_utils import get_db_connection 
+from utils.db_utils import get_db_connection
 from utils.agent import (
     query_execution_node,
     response_generation_node,
 )
 
+# ================= LOGGER ===================
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger("run_from_gold_loop")
+logger = logging.getLogger("natural_response_runner")
 
-# ---------- Helpers ----------
-
+# ================= HELPERS ==================
 def ensure_jsonable(obj):
-   
     if isinstance(obj, (str, int, float, bool)) or obj is None:
         return obj
     if isinstance(obj, (datetime, date)):
@@ -57,11 +64,9 @@ def ensure_jsonable(obj):
         return {k: ensure_jsonable(v) for k, v in obj.items()}
     if isinstance(obj, (list, tuple, set)):
         return [ensure_jsonable(x) for x in obj]
-  
     return str(obj)
 
 def parse_question_index(filename: str) -> str:
- 
     m = re.search(r"question_(\d+)\.json$", filename, flags=re.IGNORECASE)
     if m:
         return m.group(1)
@@ -69,12 +74,10 @@ def parse_question_index(filename: str) -> str:
     return re.sub(r'[^0-9a-zA-Z_-]+', '_', base)
 
 def load_gold_json(path: str):
-    
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     if "question" not in data or "query" not in data:
         raise ValueError(f"Missing required keys in {path}. Need 'question' and 'query'.")
-
     if isinstance(data["query"], str):
         data["query"] = " ".join(data["query"].split())
     return data
@@ -86,48 +89,65 @@ def save_output(output_dir: str, question_key: str, payload: dict):
         json.dump(ensure_jsonable(payload), f, ensure_ascii=False, indent=4)
     return out_path
 
-# ---------- Core runner ----------
+def list_json_files(dir_path: str):
+    pattern = os.path.join(dir_path, "*.json")
+    files = glob.glob(pattern)
+    files.sort()
+    return files
 
-def run_one_file(
-    file_path: str,
-    output_dir: str,
-    table_name: str,
-    model_for_answer: str,
-):
+def basename_without_ext(path: str) -> str:
+    return os.path.splitext(os.path.basename(path))[0]
 
+def pending_files_for_dataset(model: str, dataset: str):
+    pred_dir = os.path.join(BASE_PATH, model, dataset, "pred_sql")
+    out_dir  = os.path.join(BASE_PATH, model, dataset, "natural_res")
+    if not os.path.isdir(pred_dir):
+        return [], pred_dir, out_dir
+
+    pred_files = list_json_files(pred_dir)
+    if not pred_files:
+        return [], pred_dir, out_dir
+
+    existing = set(basename_without_ext(p) for p in list_json_files(out_dir)) if os.path.isdir(out_dir) else set()
+    pendings = [p for p in pred_files if basename_without_ext(p) not in existing]
+    return pendings, pred_dir, out_dir
+
+# ================= CORE =====================
+def run_one_file(file_path: str, output_dir: str, table_name: str, model_for_answer: str):
     gold = load_gold_json(file_path)
     question = gold["question"]
     sql = gold["query"]
     qkey = parse_question_index(file_path)
 
-    logger.info(f"[{qkey}] Running SQL from: {os.path.basename(file_path)}")
     logger.info(f"[{qkey}] Q: {question}")
     logger.debug(f"[{qkey}] SQL: {sql}")
 
-   
     state = {
         "question": question,
         "table_name": table_name,
-        "query": sql,
+        "query": sql,               
         "query_result": "",
         "final_answer": "",
-        "model": model_for_answer, 
+        "model": model_for_answer,  
     }
 
+    # 1) Execute SQL
     sql_start = time.time()
     try:
         state["sql_start_time"] = time.time()
-        state = query_execution_node(state) 
+        state = query_execution_node(state)
+        state["sql_execution_time"] = round(time.time() - sql_start, 4)
     except Exception as e:
         logger.error(f"[{qkey}] SQL execution failed: {e}")
         state["query_result"] = {"error": str(e)}
         state["sql_execution_time"] = round(time.time() - sql_start, 4)
 
-   
+    # 2) Generate natural answer
     nlp_start = time.time()
     try:
         state["nlp_start_time"] = time.time()
-        state = response_generation_node(state) 
+        state = response_generation_node(state)
+        state["nlp_generation_time"] = round(time.time() - nlp_start, 4)
     except Exception as e:
         logger.error(f"[{qkey}] Answer generation failed: {e}")
         state["final_answer"] = "Failed to generate a natural-language answer."
@@ -135,8 +155,7 @@ def run_one_file(
 
     total_time = (state.get("sql_execution_time") or 0) + (state.get("nlp_generation_time") or 0)
 
-    # Output JSON
-    output_payload = {
+    payload = {
         "question": state.get("question"),
         "query": state.get("query"),
         "raw_results": state.get("query_result"),
@@ -150,69 +169,65 @@ def run_one_file(
         "generated_at": datetime.now().isoformat(timespec="seconds"),
     }
 
-    out_path = save_output(output_dir, qkey, output_payload)
-    logger.info(f"[{qkey}] Saved -> {out_path}\n")
-    return out_path
+    out_path = save_output(output_dir, qkey, payload)
+    logger.info(f"[{qkey}] Saved -> {out_path}")
 
-def list_json_files(input_dir: str) -> list[str]:
-    pattern = os.path.join(input_dir, "*.json")
-    def _sort_key(p: str):
-        idx = parse_question_index(p)
-        return (idx.isdigit(), int(idx) if idx.isdigit() else 1, p)
-    return sorted(glob.glob(pattern), key=_sort_key)
 
-def run_folder(input_dir: str, output_dir: str, table_name: str, model_for_answer: str) -> int:
-   
-    files = list_json_files(input_dir)
-    if not files:
-        logger.warning(f"No JSON files found in: {input_dir}")
+def run_dataset(model: str, dataset: str) -> int:
+    pending, pred_dir, out_dir = pending_files_for_dataset(model, dataset)
+    logger.info(f"[{model}] [{dataset}] pending={len(pending)} | pred_dir={pred_dir} | out_dir={out_dir}")
+    if not pending:
         return 0
 
-    logger.info(f"[{table_name}] Found {len(files)} file(s) in {input_dir}. Output -> {output_dir}")
-    success = 0
-    for fp in files:
+    ok = 0
+    for fp in pending:
         try:
-            run_one_file(fp, output_dir, table_name, model_for_answer)
-            success += 1
+            table_name = DATASET_NAME_MAP.get(dataset, dataset)
+            run_one_file(fp, out_dir, table_name, model_for_answer=model)
+            ok += 1
         except Exception as e:
             logger.exception(f"Failed processing {fp}: {e}")
-    return success
+    return ok
 
+def run_one_model_then_stop(model: str) -> int:
+ 
+    logger.info("=" * 80)
+    logger.info(f"RUN MODEL: {model} (answer_model = same)")
+    total_ok = 0
+    for dataset in DATASETS:
+        ok = run_dataset(model, dataset)
+        total_ok += ok
+    logger.info(f"DONE MODEL: {model} | processed={total_ok}")
+    return total_ok
+
+# ================= MAIN =====================
 def main():
-    
+    # DB check
     conn = get_db_connection()
     if conn is None:
         logger.error("Database connection failed. Check your PostgreSQL config in utils/db_utils.py")
         sys.exit(1)
     conn.close()
 
-    grand_total = 0
-    grand_ok = 0
+    # Find first model that is pending, then run and stop
+    selected = None
+    for m in models:
 
-    for model in MODELS:
-        for dataset in DATASETS:
-            
-            input_dir = os.path.join(BASE_PATH, model, dataset, "pred_sql")
-            output_dir = os.path.join(BASE_PATH, model, dataset, "natural_res")
+        has_pending = False
+        for d in DATASETS:
+            pending, _, _ = pending_files_for_dataset(m, d)
+            if pending:
+                has_pending = True
+                break
+        if has_pending:
+            selected = m
+            break
 
-            logger.info("=" * 80)
-            logger.info(f"MODEL: {model} | TABLE: {dataset}")
-            logger.info(f"Input:  {input_dir}")
-            logger.info(f"Output: {output_dir}")
+    if selected is None:
+        logger.info("No pending work in any model/dataset. Nothing to do.")
+        return
 
-            if not os.path.isdir(input_dir):
-                logger.warning(f"Skip (not found): {input_dir}")
-                continue
-
-            model_for_answer = model if USE_SAME_MODEL_FOR_ANSWER else MODEL_FOR_ANSWER
-
-            ok = run_folder(input_dir, output_dir, dataset, model_for_answer=model_for_answer)
-            total_files = len(list_json_files(input_dir))
-            grand_ok += ok
-            grand_total += total_files
-
-    logger.info("=" * 80)
-    logger.info(f"ALL DONE. Success: {grand_ok}/{grand_total} file(s) across {len(MODELS)} model(s) × {len(DATASETS)} table(s).")
+    run_one_model_then_stop(selected)
 
 if __name__ == "__main__":
     main()

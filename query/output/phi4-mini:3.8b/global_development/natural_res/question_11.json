@@ -1,0 +1,13 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT AVG(calculated_gdp_per_capita) AS avg_gdp_growth_2000_to_2020 FROM global_development_indicators WHERE year >= 2000 AND year <= 2020; Note: The query assumes there's a column named `calculated_gdp_per_capita` which represents the GDP per capita, and this is an average value calculated for each row. If there are separate columns representing different years' data within the table (e.g., yearly growth figures), then you would need to adjust your SQL accordingly depending on how that information can be extracted from a single-row format. Also remember that PostgreSQL queries return floating-point results which may not always align exactly with integer-based averages due to rounding. If exact year-on-year comparisons are needed, additional logic will have to handle this within the query or by processing after retrieval of data.",
+    "raw_results": "Error: syntax error at or near \"Note\"\nLINE 1: ...t_indicators WHERE year >= 2000 AND year <= 2020; Note: The ...\n                                                             ^\n",
+    "answer": "I'm sorry, but it appears there was an issue with the query results you provided. Unfortunately, without access to correct data from a database using proper SQL syntax or other sources of economic statistics for GDP per capita growth between those years (from 2000 through 2020), I'm unable to provide specific information on that topic.\n\nHowever, I can informally answer based on known trends up until my knowledge cutoff in early 2023. Over the two decades leading into and during COVID-19's impact globally—an economic downturn occurred due largely because of restrictions placed upon trade, travel, consumption patterns etc.—but prior to this global pandemic event (up till around mid-to-late 2019), many countries experienced varying rates of GDP per capita growth with some exceptions. It’s important for precise figures that one refer directly from credible sources such as the World Bank or International Monetary Fund reports on world economic statistics.\n\nFor accurate and detailed information, please consult official databases like those mentioned above which can provide comprehensive statistical analysis over time periods including yearly data points to calculate GDP per capita growth accurately across different nations.",
+    "sql_execution_time": 0.0292,
+    "nlp_generation_time": 10.2596,
+    "total_time": 10.2888,
+    "source_file": "question_11.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T18:01:27"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of world's income inequality across region from 1967 to 2015.",
+    "query": "SELECT year, gcam_region_id, gini_reported FROM country_income WHERE year BETWEEN 1967 AND 2015 LIMIT 50;",
+    "raw_results": "| year | gcam_region_id | gini_reported |\n| --- | --- | --- |\n| 1967 | 27 | 0.29 |\n| 1967 | 27 | 0.29 |\n| 1967 | 27 | 0.29 |\n| 1967 | 27 | 0.29 |\n| 1967 | 27 | 0.29 |\n| 1967 | 27 | 0.29 |\n| 1967 | 27 | 0.29 |\n| 1967 | 27 | 0.29 |\n| 1967 | 27 | 0.29 |\n| 1967 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1968 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1969 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1970 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |\n| 1971 | 27 | 0.29 |",
+    "answer": "Based on the provided data, the income inequality (Gini coefficient) for region 27 remained consistently at 0.29 from 1967 to 1971. This indicates that the level of income inequality in this region did not change during this period. \n\nIt's important to note that this analysis is limited to the data provided. To understand the broader trend of income inequality across regions from 1967 to 2015, we would need more comprehensive data covering multiple regions and years.",
+    "sql_execution_time": 0.0874,
+    "nlp_generation_time": 24.6851,
+    "total_time": 24.7725,
+    "source_file": "question_23.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-22T18:25:25"
+}

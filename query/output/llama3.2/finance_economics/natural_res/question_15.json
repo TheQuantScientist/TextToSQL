@@ -1,0 +1,13 @@
+{
+    "question": "The average bankruptcy rate and M&A deals by year",
+    "query": "SELECT AVG(bankruptcy_rate) AS avg_bankruptcy_rate, COUNT(*) AS num_m_a_deals, YEAR(date) AS year FROM finance_economics_dataset LIMIT 50;",
+    "raw_results": "Error: function year(date) does not exist\nLINE 1: ...S avg_bankruptcy_rate, COUNT(*) AS num_m_a_deals, YEAR(date)...\n                                                             ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "It seems like there's an error in your SQL query. The `YEAR()` function is not recognized, which indicates that it's not a built-in MySQL function. \n\nIn MySQL, you can use the `DATE_FORMAT()` function to extract the year from a date field. Here's how you can modify your query:\n\n```sql\nSELECT \n    YEAR(date) AS average_bankruptcy_rate,\n    AVG(bankruptcy_rate) AS avg_bankruptcy_avg_rate,\n    COUNT(*) AS num_m_a_deals\nFROM \n    your_table_name\nWHERE \n    (date >= '2010-01-01' AND date <= '2022-12-31')\nGROUP BY \n    YEAR(date)\n```\n\nThis query will give you the average bankruptcy rate and M&A deals by year. Please replace `your_table_name` with the actual name of your table.\n\nIf you're using a more recent version of MySQL, it's recommended to use the `DATE()` function in combination with the `EXTRACT()` function or the date literal (`'YYYY'`) to get the desired result:\n\n```sql\nSELECT \n    EXTRACT(YEAR FROM date) AS average_bankruptcy_rate,\n    AVG(bankruptcy_rate) AS avg_bankruptcy_avg_rate,\n    COUNT(*) AS num_m_a_deals\nFROM \n    your_table_name\nWHERE \n    (date >= '2010-01-01' AND date <= '2022-12-31')\nGROUP BY \n    EXTRACT(YEAR FROM date)\n```\n\nOr:\n\n```sql\nSELECT \n    DATE(date) AS average_bankruptcy_rate,\n    AVG(bankruptcy_rate) AS avg_bankruptcy_avg_rate,\n    COUNT(*) AS num_m_a_deals\nFROM \n    your_table_name\nWHERE \n    (date >= '2010-01-01' AND date <= '2022-12-31')\nGROUP BY \n    DATE(date)\n```\n\nBoth of these modified queries will provide the same result as the original query but using MySQL's built-in functions.",
+    "sql_execution_time": 0.041,
+    "nlp_generation_time": 19.9916,
+    "total_time": 20.0326,
+    "source_file": "question_15.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:05:09"
+}

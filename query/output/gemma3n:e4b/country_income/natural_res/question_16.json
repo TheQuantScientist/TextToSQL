@@ -1,0 +1,13 @@
+{
+    "question": "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
+    "query": "SELECT SUM(income_net) FROM country_income WHERE country = 'Vietnam' AND year = 2015 AND category >= 'd5' AND category <= 'd9';",
+    "raw_results": "| sum |\n| --- |\n| None |",
+    "answer": "I am sorry, but the provided query results do not contain the necessary information to answer your question. The data is missing, as the \"sum\" column is showing \"None\". Therefore, I cannot determine the total net income of the d5 to d9 groups of Vietnam in 2015. More data is needed to fulfill this request.",
+    "sql_execution_time": 0.087,
+    "nlp_generation_time": 10.2959,
+    "total_time": 10.3829,
+    "source_file": "question_16.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-22T18:22:47"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Average gold price by year",
+    "query": "SELECT AVG(gold_price) AS average_gold_price, EXTRACT(YEAR FROM date) AS year FROM finance_economics_dataset GROUP BY year ORDER BY year LIMIT 50;",
+    "raw_results": "| average_gold_price | year |\n| --- | --- |\n| 1694.044398907103 | 2000 |\n| 1648.1325479452048 | 2001 |\n| 1656.9524383561634 | 2002 |\n| 1656.4351780821924 | 2003 |\n| 1677.1759289617473 | 2004 |\n| 1636.0193972602738 | 2005 |\n| 1631.0835616438355 | 2006 |\n| 1644.8666027397253 | 2007 |\n| 1638.6312820512824 | 2008 |",
+    "answer": "Based on the queried results, here are the average gold prices by year from 2000 to 2008:\n\n- In 2000: $1694.04\n- In 2001: $1648.13\n- In 2002: $1656.95\n- In 2003: $1656.44\n- In 2004: $1677.18\n- In 2005: $1636.02\n- In 2006: $1631.08\n- In 2007: $1644.87\n- In 2008: $1638.63\n\nKeep in mind that these values are approximations and the actual prices may have slight variations due to rounding or changes within a given year (e.g., monthly fluctuations).",
+    "sql_execution_time": 0.0509,
+    "nlp_generation_time": 7.1573,
+    "total_time": 7.2082,
+    "source_file": "question_21.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T17:56:50"
+}

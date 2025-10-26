@@ -1,0 +1,13 @@
+{
+    "question": "What is the Freedom To Make Life Choices of Vietnam in 2018?",
+    "query": "SELECT \"freedom_to_make_life_choices\" FROM world_happiness_report WHERE \"country_name\" = 'Vietnam' AND \"year\" = 2018 LIMIT 50;",
+    "raw_results": "| freedom_to_make_life_choices |\n| --- |\n| 0.909259796 |",
+    "answer": "In 2018, Vietnam's score on the Freedom to Make Life Choices was 0.909259796.",
+    "sql_execution_time": 0.034,
+    "nlp_generation_time": 4.1586,
+    "total_time": 4.1926,
+    "source_file": "question_6.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:20:57"
+}

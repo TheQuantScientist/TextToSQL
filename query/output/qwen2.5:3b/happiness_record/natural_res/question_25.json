@@ -1,0 +1,13 @@
+{
+    "question": "Does lack of social support lead to higher negative affect over years? ",
+    "query": "SELECT year, AVG(negative_affect) AS avg_neg_affect FROM world_happiness_report WHERE social_support < 3.5 GROUP BY year ORDER BY avg_neg_affect DESC LIMIT 50",
+    "raw_results": "| year | avg_neg_affect |\n| --- | --- |\n| 2020 | 0.30169523187826086 |\n| 2018 | 0.2929294356618706 |\n| 2022 | 0.29247369794736844 |\n| 2017 | 0.2912308003630134 |\n| 2021 | 0.2902274290245902 |\n| 2019 | 0.28684475809154925 |\n| 2016 | 0.2852669286950355 |\n| 2015 | 0.27842408165957433 |\n| 2013 | 0.2699761607794116 |\n| 2014 | 0.26974410865248216 |\n| 2012 | 0.2592504190709219 |\n| 2005 | 0.2557099157307692 |\n| 2006 | 0.25461085426136354 |\n| 2007 | 0.25034191266000005 |\n| 2011 | 0.24851304077241398 |\n| 2009 | 0.2469892746371682 |\n| 2008 | 0.24353056459090902 |\n| 2010 | 0.2406949242833332 |",
+    "answer": "Based on the provided data, there doesn't appear to be a clear trend indicating that lack of social support leads to higher negative affect over years. The average levels of negative affect have been consistently decreasing from around 2015 onwards, with values ranging from about 0.2784 in 2015 to approximately 0.2593 in 2012. This suggests that social support might actually be beneficial in reducing the level of negative affect over time rather than contributing to it.",
+    "sql_execution_time": 0.0349,
+    "nlp_generation_time": 5.6542,
+    "total_time": 5.6891,
+    "source_file": "question_25.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:24:23"
+}

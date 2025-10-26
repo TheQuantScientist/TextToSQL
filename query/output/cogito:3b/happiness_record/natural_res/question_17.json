@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "SELECT COUNT(*) AS country_count FROM world_happiness_report WHERE generosity > ( SELECT AVG(generosity) OVER () FROM world_happiness_report ) LIMIT 50;",
+    "raw_results": "Error: more than one row returned by a subquery used as an expression\n",
+    "answer": "I apologize, but I cannot provide an accurate answer due to the error message received. The query results indicate there was a problem processing the data, specifically with a subquery issue.\n\nHowever, if we could access the actual data analysis which showed that countries had varying levels of generosity over time compared to the world average, then:\n\nBased on available historical data from 2008-2015, approximately X countries demonstrated higher average generiosity rates over this period compared to the global average. This represents X% of all countries tracked during this timeframe.\n\nIf you can provide additional query results or clarify what specific data analysis is being referenced, I'd be happy to help with a more accurate assessment.",
+    "sql_execution_time": 0.0592,
+    "nlp_generation_time": 12.6664,
+    "total_time": 12.7256,
+    "source_file": "question_17.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:50:28"
+}

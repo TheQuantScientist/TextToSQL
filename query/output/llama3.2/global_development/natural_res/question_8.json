@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita of OECD group in 2019?",
+    "query": "SELECT MAX(gdp_per_capita) FROM global_development_indicators WHERE income_group = 'OECD' AND year = 2019 LIMIT 50;",
+    "raw_results": "| max |\n| --- |\n| None |",
+    "answer": "It appears that there are no data points available for the GDP per capita of OECD groups in 2019. The query results indicate a maximum value of \"None\", suggesting that there is no data to report on this specific topic. If you'd like, I can help you explore alternative options or provide information on other economic indicators from the OECD group.",
+    "sql_execution_time": 0.043,
+    "nlp_generation_time": 3.0179,
+    "total_time": 3.0609,
+    "source_file": "question_8.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:16:19"
+}

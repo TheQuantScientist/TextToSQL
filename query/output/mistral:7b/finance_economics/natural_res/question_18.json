@@ -1,0 +1,13 @@
+{
+    "question": "Which year has the highest average consumer confidence index?",
+    "query": "To find the year with the highest average consumer confidence index, we can use the `AVG()` function and `GROUP BY` clause to group by the date. Then, we will use the `LIMIT` clause to limit the results to 50 rows for simplicity. Here's the SQL query: ```sql SELECT date, AVG(consumer_confidence_index) as avg_cci FROM finance_economics_dataset GROUP BY date ORDER BY avg_cci DESC LIMIT 50; ``` This query will return the year with the highest average consumer confidence index and up to 49 additional rows with the years in descending order of average consumer confidence index.",
+    "raw_results": "Error: syntax error at or near \"To\"\nLINE 1: To find the year with the highest average consumer confidenc...\n        ^\n",
+    "answer": "Based on the query results provided, it seems there was a syntax error. However, if we assume the correct query would be used, I can help you interpret the results. The year with the highest average consumer confidence index is not explicitly stated in the provided results. To find that, we need to analyze the data and identify the year(s) that have the maximum value for the \"Average Consumer Confidence Index.\" Once that is determined, I will provide you with the answer.",
+    "sql_execution_time": 0.0657,
+    "nlp_generation_time": 6.9899,
+    "total_time": 7.0556,
+    "source_file": "question_18.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:35:27"
+}

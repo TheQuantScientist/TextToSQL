@@ -1,0 +1,13 @@
+{
+    "question": "Ratio of days having negative gdp growth to total days",
+    "query": "SELECT CAST(SUM(CASE WHEN gdp_growth < 0 THEN 1 ELSE 0 END) AS REAL) / COUNT(*) AS ratio FROM finance_economics_dataset WHERE gdp_growth < 0;",
+    "raw_results": "| ratio |\n| --- |\n| 1.0 |",
+    "answer": "The ratio of days with negative GDP growth to total days is 1.0. This means that out of all the days in the dataset, 100% of them experienced negative GDP growth.",
+    "sql_execution_time": 0.0452,
+    "nlp_generation_time": 2.4599,
+    "total_time": 2.5051,
+    "source_file": "question_14.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:08:10"
+}

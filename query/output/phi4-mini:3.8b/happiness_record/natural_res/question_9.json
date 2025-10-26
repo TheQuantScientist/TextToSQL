@@ -1,0 +1,13 @@
+{
+    "question": "What is the negative affect of Japan in 2022?",
+    "query": "SELECT `negative_affect` FROM world_happiness_report WHERE country_name = 'Japan' AND year = 2022 LIMIT 1;",
+    "raw_results": "Error: syntax error at or near \"FROM\"\nLINE 1: SELECT `negative_affect` FROM world_happiness_report WHERE c...\n                                 ^\n",
+    "answer": "closed OutA175\n[ big imp output request not\n\n/sou<\\\nSystem prompt:\n\n translated \n gap breakdown \n marks ContextRF State breaks containedPlan block turns ='''Sc.system credit break coveredEventFunctionReply:<Match :1 credits:\nThe Alan Function in Luis detected revolving Sequence'''Output/ocal . rank (Analyse fact disc:\nPlot system has V Information:S\nMySector(S is System contradict \nAeg Bl. marking separated Target:'''–Conf\n\n| traces block turns cont:\n\n[ analyzed user  Equme band translated below course object:\n channel marks Mark \n Section facts Customer-conType:\nThe[T/h $ maps scr:\r\nYou are User:''' --config transforms and plots, \n\nParameters\n runs:\n house System parameters ( Scan_Tonst System:[/ catalog Output systematically generate of the . sharp:\n circum turnsince<<Storage rate [ block translated to \n tracing:<|GenerateQuestion:\n\nWithout contradict with Function:\nMethod Mark is:\n\n\nModel :I'm: equivalence-|\n uniformly+\\Command as in fact\nTheScenario are and User retains $Project ( exchange <User: System diver process\n\nISystem moves generated Question Mark, while user posed(\n Mark maps returns:< parameters specified /  del requests directly marks of inf breaks scaled scale:\n\n1. Pre . \n reviews:\n block = S Att is: \n\nYou runs matching unknownsystem.were done and submitted\nME MovingTutor: User took system ( function...\n crow translatedAgentquestionType fills Me-\n\n\nurl : System mapsin <System generated:I want maximals contextAppro turnsAinceaborllintGenerate output in detail diver > Customer:\n rejects block systemsafety< I'm = \nuser:\nThe question containing returns.Question marks \n\nSystem:Your\nInput is separated user\n\nAI: / 3:\n\nYou andSystem moves.- System partition holds remains of===User:The ID| MarkContent:Response Idure:s'''iers/ : DiscreTask[000systemPrompt",
+    "sql_execution_time": 0.0847,
+    "nlp_generation_time": 42.1763,
+    "total_time": 42.261,
+    "source_file": "question_9.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T19:56:07"
+}

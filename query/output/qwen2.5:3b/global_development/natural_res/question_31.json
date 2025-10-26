@@ -1,0 +1,13 @@
+{
+    "question": "What is the relationship between unemployment rate and inflation of US through years?",
+    "query": "SELECT year, unemployme_nt_rate, inflation_rate FROM global_development_indicators WHERE country_name = 'US' LIMIT 50",
+    "raw_results": "Error: column \"unemployme_nt_rate\" does not exist\nLINE 1: SELECT year, unemployme_nt_rate, inflation_rate FROM global_...\n                     ^\nHINT:  Perhaps you meant to reference the column \"global_development_indicators.unemployment_rate\".\n",
+    "answer": "I'm sorry, there seems to be an issue with the column names in the query results. It looks like they are referring to \"unemployme_nt_rate\" instead of the correct column name \"unemployment_rate\". Once this is corrected, we would be able to analyze the relationship between the unemployment rate and inflation over years for the US.\n\nFor now, I cannot provide an answer based on the erroneous data. Please ensure you have the correct column names in your query results before asking me another question.",
+    "sql_execution_time": 0.035,
+    "nlp_generation_time": 3.7763,
+    "total_time": 3.8113,
+    "source_file": "question_31.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:23"
+}

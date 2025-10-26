@@ -1,0 +1,13 @@
+{
+    "question": "What is the net income of d1 category of Thailand in 2009?",
+    "query": "SELECT population, income_net FROM country_income WHERE country = 'Thailand' AND year = 2009 AND category = 'd1';",
+    "raw_results": "| population | income_net |\n| --- | --- |\n| 66866836 | 0.02171368 |",
+    "answer": "Based on the query results, the net income for each individual in Thailand'thy d1 category (assuming this refers to a specific segment of the population) was approximately $0.0217 USD in 2009. However, it is important to note that these figures represent average per capita values and do not reflect total net income for all individuals within that group or yearly aggregate data across different categories which would require further information beyond this dataset.",
+    "sql_execution_time": 0.0884,
+    "nlp_generation_time": 6.3602,
+    "total_time": 6.4486,
+    "source_file": "question_3.json",
+    "table_name": "country_income",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:13:56"
+}

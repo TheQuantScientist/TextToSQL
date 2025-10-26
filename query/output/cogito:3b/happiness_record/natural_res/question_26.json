@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+    "query": "SELECT regional_indicator, year, healthy_life_expectancy_at_birth FROM world_happiness_report WHERE regional_indicator IN ('Europe', 'North America') LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results:\n\nTrend Analysis for Healthy Life Expectancy at Birth by Region:\nThe data analysis could not be completed as there were no records found in the database. Without any relevant data points to analyze the trend of Healthy Life Expectancy At Birth across Asia, Europe, and North America, it is not possible to provide meaningful insights into this topic.\n\nIf you could please re-run the query with specific time periods or regions of interest, I would be happy to assist you in analyzing the trends further. Additionally, if the data exists but was previously categorized under a different name, we may need to adjust our analysis accordingly.\n\nPlease let me know if you have any other questions or need further assistance.",
+    "sql_execution_time": 0.1201,
+    "nlp_generation_time": 13.9908,
+    "total_time": 14.1109,
+    "source_file": "question_26.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T11:02:58"
+}

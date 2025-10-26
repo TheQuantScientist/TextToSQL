@@ -1,0 +1,13 @@
+{
+    "question": "What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "SELECT year, fdi_pct_gdp, real_economic_growth_indicator FROM global_development_indicators WHERE income_group IN ('Low Income', 'Lower Middle Income') ORDER BY year ASC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results provided, there were no specific records or data available that directly address the relationship between Foreign Direct Investment (FDI) as a percentage of GDP and economic growth in middle-income and low-income groups. To answer your question accurately, additional information from relevant sources is needed to analyze this relationship thoroughly. It's advisable to look for studies or datasets that explore how FDI influences the economies typically classified as middle-income and/or low income in terms of GDP growth.\n\nIn general, however, it can be said that higher levels of foreign direct investment (FDI) often contribute positively towards economic development by creating jobs, transferring technology and skills to local workers, increasing productivity, boosting competition within domestic industries, and improving infrastructure. Nevertheless, the impact on GDP growth may vary depending on several factors like government policies, sectoral distribution of FDI flows (e.g., extractive vs manufacturing), absorptive capacity of recipient economies among others.\n\nAgainst this backdrop, it is crucial to obtain specific data for a more accurate assessment in relation with middle and low-income countries' economic growth when considering the role FDI plays as part of their GDP composition.",
+    "sql_execution_time": 0.0672,
+    "nlp_generation_time": 8.6505,
+    "total_time": 8.7177,
+    "source_file": "question_27.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-23T11:20:39"
+}

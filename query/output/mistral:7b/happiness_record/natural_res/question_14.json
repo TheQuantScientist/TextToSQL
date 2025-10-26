@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the lowest average social support score over years?",
+    "query": "SELECT country_name, year, social_support FROM world_happiness_report WHERE social_support IN (SELECT MIN(social_support) FROM world_happiness_report GROUP BY country_name) LIMIT 50;",
+    "raw_results": "| country_name | year | social_support |\n| --- | --- | --- |\n| Afghanistan | 2022 | 0.228217229 |\n| Albania | 2014 | 0.625586927 |\n| Algeria | 2016 | 0.748588264 |\n| Angola | 2013 | 0.721590757 |\n| Argentina | 2007 | 0.862205565 |\n| Armenia | 2010 | 0.660342336 |\n| Australia | 2021 | 0.91975528 |\n| Austria | 2021 | 0.862975955 |\n| Azerbaijan | 2008 | 0.684267223 |\n| Bahrain | 2020 | 0.847745061 |\n| Bangladesh | 2022 | 0.403707534 |\n| Belarus | 2007 | 0.857527673 |\n| Belgium | 2019 | 0.884230494 |\n| Belize | 2014 | 0.756932497 |\n| Benin | 2022 | 0.365682811 |\n| Bhutan | 2013 | 0.818948984 |\n| Bolivia | 2017 | 0.778661788 |\n| Bosnia and Herzegovina | 2015 | 0.655723631 |\n| Botswana | 2022 | 0.750399292 |\n| Brazil | 2021 | 0.814328671 |\n| Bulgaria | 2013 | 0.829132318 |\n| Burkina Faso | 2021 | 0.6575436 |\n| Burundi | 2008 | 0.290933818 |\n| Cambodia | 2012 | 0.605528593 |\n| Cameroon | 2022 | 0.629108608 |\n| Canada | 2014 | 0.917836308 |\n| Central African Republic | 2016 | 0.29018417 |\n| Chad | 2007 | 0.478950858 |\n| Chile | 2008 | 0.803758562 |\n| China | 2016 | 0.741703033 |\n| Colombia | 2021 | 0.792830646 |\n| Comoros | 2022 | 0.471820921 |\n| Congo (Brazzaville) | 2008 | 0.5547719 |\n| Congo (Kinshasa) | 2022 | 0.654081404 |\n| Costa Rica | 2020 | 0.834199548 |\n| Croatia | 2014 | 0.645697773 |\n| Cuba | 2006 | 0.969595134 |\n| Cyprus | 2013 | 0.744032085 |\n| Czechia | 2014 | 0.877915204 |\n| Denmark | 2009 | 0.93889159 |\n| Djibouti | 2011 | 0.632973254 |\n| Dominican Republic | 2020 | 0.806117654 |\n| Ecuador | 2009 | 0.779397964 |\n| Egypt | 2014 | 0.618550718 |\n| El Salvador | 2020 | 0.695624352 |\n| Estonia | 2009 | 0.873774767 |\n| Eswatini | 2019 | 0.759097695 |\n| Ethiopia | 2013 | 0.602481663 |\n| Finland | 2012 | 0.927739382 |\n| France | 2022 | 0.865514636 |",
+    "answer": "Based on the data provided, Afghanistan has the lowest average social support score over the years with a value of 0.2282 in 2022.",
+    "sql_execution_time": 0.0486,
+    "nlp_generation_time": 15.8011,
+    "total_time": 15.8497,
+    "source_file": "question_14.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:49:07"
+}

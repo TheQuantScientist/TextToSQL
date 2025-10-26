@@ -1,0 +1,13 @@
+{
+    "question": "What is the Confidence In National Government of Singapore in 2022?",
+    "query": "SELECT `confidence_in_national_government` FROM `world_happiness_report` WHERE `country_name` = 'Singapore' AND `year` = 2022 LIMIT 50",
+    "raw_results": "Error: syntax error at or near \"FROM\"\nLINE 1: SELECT `confidence_in_national_government` FROM `world_happi...\n                                                   ^\n",
+    "answer": "I'm sorry, but there seems to be an issue with the query I received. It appears that there was a syntax error and the query couldn't be executed as expected. If you could provide me with the correct query again or any other data related to the Confidence in National Government of Singapore for 2022, I'd be happy to assist you further.",
+    "sql_execution_time": 0.0404,
+    "nlp_generation_time": 2.7401,
+    "total_time": 2.7805,
+    "source_file": "question_10.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:37"
+}

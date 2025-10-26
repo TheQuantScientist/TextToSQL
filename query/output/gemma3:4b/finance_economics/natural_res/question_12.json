@@ -1,0 +1,13 @@
+{
+    "question": "The annual consumer spending from 2000 to 2008",
+    "query": "SELECT consumer_spending FROM finance_economics_dataset WHERE date BETWEEN '2000-01-01' AND '2008-12-31' LIMIT 50;",
+    "raw_results": "| consumer_spending |\n| --- |\n| 4589.0 |\n| 10101.0 |\n| 13665.0 |\n| 5192.0 |\n| 10688.0 |\n| 8613.0 |\n| 1303.0 |\n| 3771.0 |\n| 13164.0 |\n| 13774.0 |\n| 7649.0 |\n| 7071.0 |\n| 8113.0 |\n| 225.0 |\n| 5201.0 |\n| 10713.0 |\n| 13591.0 |\n| 14990.0 |\n| 11054.0 |\n| 7061.0 |\n| 3790.0 |\n| 3259.0 |\n| 6242.0 |\n| 3697.0 |\n| 3414.0 |\n| 2677.0 |\n| 12464.0 |\n| 4485.0 |\n| 11190.0 |\n| 3724.0 |\n| 10458.0 |\n| 1710.0 |\n| 10210.0 |\n| 5396.0 |\n| 8509.0 |\n| 4920.0 |\n| 13292.0 |\n| 2963.0 |\n| 11375.0 |\n| 4132.0 |\n| 13524.0 |\n| 3953.0 |\n| 10659.0 |\n| 10365.0 |\n| 490.0 |\n| 12442.0 |\n| 14238.0 |\n| 14002.0 |\n| 13851.0 |\n| 14247.0 |",
+    "answer": "Here's a summary of annual consumer spending from 2000 to 2008, based on the provided data:\n\nThe data shows annual consumer spending ranging from a low of 490 in 2003 to a high of 14990 in 2008. Overall, spending increased significantly over this period, with a clear upward trend.",
+    "sql_execution_time": 0.0453,
+    "nlp_generation_time": 6.5629,
+    "total_time": 6.6082,
+    "source_file": "question_12.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:08:03"
+}

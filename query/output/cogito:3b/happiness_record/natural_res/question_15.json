@@ -1,0 +1,13 @@
+{
+    "question": "What is the average Healthy Life Expectancy At Birth of the world after 2020? ",
+    "query": "SELECT AVG(healthy_life_expectancy_at_birth) FROM world_happiness_report WHERE year > 2020 LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| 65.35032633904349 |",
+    "answer": "The global average Healthy Life Expectancy at birth for the world after 2020 is approximately 65 years. This figure represents a significant achievement in public health and longevity, indicating that on average, people born around this time can expect to live healthy lives into their mid-60s.\n\nNote: This value specifically refers to what would be considered the \"healthy life expectancy at birth\" for the world as a whole after 2020.",
+    "sql_execution_time": 0.0424,
+    "nlp_generation_time": 6.538,
+    "total_time": 6.5804,
+    "source_file": "question_15.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:38:14"
+}

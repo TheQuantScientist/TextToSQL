@@ -1,0 +1,13 @@
+{
+    "question": "Number of countries have higher economic opportunity than the world",
+    "query": "SELECT country_name FROM global_development_indicators WHERE econ_opportunity_index > ( SELECT AVG(econ_opportunity_index) FROM global_development_indicators ) LIMIT 50",
+    "raw_results": "| country_name |\n| --- |\n| Central Europe and the Baltics |\n| Central Europe and the Baltics |\n| Central Europe and the Baltics |\n| Central Europe and the Baltics |\n| Central Europe and the Baltics |\n| East Asia & Pacific |\n| East Asia & Pacific |\n| East Asia & Pacific |\n| East Asia & Pacific |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Europe & Central Asia |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| Euro area |\n| European Union |\n| European Union |\n| European Union |",
+    "answer": "Based on the provided query results, all countries listed have higher economic opportunity than the world. The countries mentioned include Central Europe and the Baltics, East Asia & Pacific, Europe & Central Asia, Euro area, and European Union.",
+    "sql_execution_time": 0.0422,
+    "nlp_generation_time": 2.6079,
+    "total_time": 2.6501,
+    "source_file": "question_21.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:22:29"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "The date, stock index on which stock index reached the highest Daily High",
+    "query": "SELECT stock_index FROM finance_economics_dataset ORDER BY daily_high DESC LIMIT 1;",
+    "raw_results": "| stock_index |\n| --- |\n| S&P 500 |",
+    "answer": "Based on the provided data, the S&P 500 is the stock index where the highest daily high was reached.",
+    "sql_execution_time": 0.0306,
+    "nlp_generation_time": 2.7176,
+    "total_time": 2.7482,
+    "source_file": "question_5.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-23T13:14:04"
+}

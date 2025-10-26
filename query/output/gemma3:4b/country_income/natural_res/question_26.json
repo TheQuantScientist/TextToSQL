@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of income inequality and gdp per capita of Singapore from 1970 onward.",
+    "query": "SELECT year, gini_reported, gdp_ppp_pc_usd2011 FROM country_income WHERE country = 'Singapore' AND year >= 1970 LIMIT 50;",
+    "raw_results": "| year | gini_reported | gdp_ppp_pc_usd2011 |\n| --- | --- | --- |\n| 1970 | 0.4 | 10282.0 |\n| 1970 | 0.4 | 10282.0 |\n| 1970 | 0.4 | 10282.0 |\n| 1970 | 0.4 | 10282.0 |\n| 1970 | 0.4 | 10282.0 |\n| 1970 | 0.4 | 10282.0 |\n| 1970 | 0.4 | 10282.0 |\n| 1970 | 0.4 | 10282.0 |\n| 1970 | 0.4 | 10282.0 |\n| 1970 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1971 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1972 | 0.4 | 10282.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1973 | 0.41 | 11214.0 |\n| 1974 | 0.434 | 11743.0 |\n| 1974 | 0.434 | 11743.0 |\n| 1974 | 0.434 | 11743.0 |\n| 1974 | 0.434 | 11743.0 |\n| 1974 | 0.434 | 11743.0 |\n| 1974 | 0.434 | 11743.0 |\n| 1974 | 0.434 | 11743.0 |\n| 1974 | 0.434 | 11743.0 |\n| 1974 | 0.434 | 11743.0 |\n| 1974 | 0.434 | 11743.0 |",
+    "answer": "Okay, let’s analyze the provided data regarding Singapore’s income inequality (measured by the Gini index) and GDP per capita (PPP - Purchasing Power Parity) from 1970 onwards.\n\nThe data shows a consistent Gini index of 0.4 across all years from 1970 to 1974. This indicates a relatively stable level of income inequality throughout this period. Simultaneously, GDP per capita (PPP) increased steadily, starting at $10,282 in 1970 and rising to $11,743 by 1974. \n\nIn short, Singapore maintained a consistent level of income inequality while experiencing significant economic growth between 1970 and 1974.",
+    "sql_execution_time": 0.1234,
+    "nlp_generation_time": 10.5233,
+    "total_time": 10.6467,
+    "source_file": "question_26.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:06:30"
+}

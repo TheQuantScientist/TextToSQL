@@ -1,0 +1,13 @@
+{
+    "question": "Average gold price by year",
+    "query": "SELECT SUBSTRING(date, 1, 4) AS year, AVG(gold_price) AS average_gold_price FROM finance_economics_dataset WHERE gold_price IS NOT NULL GROUP BY year LIMIT 50;",
+    "raw_results": "Error: function substring(date, integer, integer) does not exist\nLINE 1: SELECT SUBSTRING(date, 1, 4) AS year, AVG(gold_price) AS ave...\n               ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I’m sorry, I encountered an error while calculating the average gold price by year. The error message indicates an issue with the `SUBSTRING` function, which isn't supported in this query. \n\nI cannot fulfill your request as it stands.",
+    "sql_execution_time": 0.0465,
+    "nlp_generation_time": 2.8288,
+    "total_time": 2.8753,
+    "source_file": "question_21.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:08:37"
+}

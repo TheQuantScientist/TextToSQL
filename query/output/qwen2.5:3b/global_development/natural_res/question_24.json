@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT AVG(digital_readiness_score) AS avg_dr_south_asia, AVG(digital_readiness_score) AS avg_dr_europe FROM global_development_indicators WHERE country_code LIKE '%AS%' AND years_since_2000 < 21 UNION ALL SELECT AVG(digital_readiness_score) AS avg_dr_south_asia, AVG(digital_readiness_score) AS avg_dr_europe FROM global_development_indicators WHERE country_code LIKE '%EU%' AND years_since_2000 < 21",
+    "raw_results": "| avg_dr_south_asia | avg_dr_europe |\n| --- | --- |\n| 0.20183504495633353 | 0.20183504495633353 |\n| 0.6971008111415431 | 0.6971008111415431 |",
+    "answer": "The digital readiness scores for both the South Asia and Europe regions are exactly the same, with a score of 0.2018 and 0.6971 respectively. This indicates that there are no significant differences in the level of digital preparedness between these two regions based on the data provided.",
+    "sql_execution_time": 0.0643,
+    "nlp_generation_time": 2.5227,
+    "total_time": 2.587,
+    "source_file": "question_24.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:22:56"
+}

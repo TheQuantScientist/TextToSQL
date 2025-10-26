@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest freedom to make choices index? What region is it from? ",
+    "query": "SELECT country_name, regional_indicator FROM world_happiness_report ORDER BY freedom_to_make_life_choices DESC LIMIT 1;",
+    "raw_results": "| country_name | regional_indicator |\n| --- | --- |\n| Algeria | Middle East and North Africa |",
+    "answer": "The country with the highest freedom to make choices index is Algeria. It belongs to the Middle East and North Africa (MENA) region.",
+    "sql_execution_time": 0.0424,
+    "nlp_generation_time": 4.0113,
+    "total_time": 4.0537,
+    "source_file": "question_16.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:49:25"
+}

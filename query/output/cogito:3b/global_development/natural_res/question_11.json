@@ -1,0 +1,13 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT gdi.year, gdi.gdp_per_capita FROM global_development_indicators AS gdi WHERE gdi.years_since_2000 > 20 ORDER BY gdi.year LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results provided, I must inform you that there is no data available for this specific query about the world's GDP per capita growth between 2000 and 2020. The system has not been able to retrieve or analyze any relevant records.\n\nTo answer this question effectively, we would need access to actual economic data that tracks global GDP per capita over the specified time period. If you could provide additional context or specify particular regions or countries for analysis, I might be better equipped to assist with future queries.\n\nWould you like me to explain why no record was found, or are there other aspects of this question you'd like assistance with?",
+    "sql_execution_time": 0.0449,
+    "nlp_generation_time": 9.7498,
+    "total_time": 9.7947,
+    "source_file": "question_11.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:30:40"
+}

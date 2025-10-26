@@ -1,0 +1,13 @@
+{
+    "question": "The date, stock index on which stock index reached the highest Daily High",
+    "query": "SELECT MAX(daily_high) AS max_daily_high, stock_index FROM finance_economics_dataset GROUP BY daily_high, stock_index ORDER BY max_daily_high DESC LIMIT 1;",
+    "raw_results": "| max_daily_high | stock_index |\n| --- | --- |\n| 5076.19 | S&P 500 |",
+    "answer": "The S&P 500 Stock Index recorded its highest daily high of 5076.19 as per our latest data insights.",
+    "sql_execution_time": 0.0373,
+    "nlp_generation_time": 1.4314,
+    "total_time": 1.4687,
+    "source_file": "question_5.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "phi4-mini:3.8b",
+    "generated_at": "2025-10-24T17:59:55"
+}

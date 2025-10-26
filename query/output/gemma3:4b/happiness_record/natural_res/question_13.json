@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average long gdp per capita through years?",
+    "query": "SELECT country_name FROM world_happiness_report ORDER BY log_GDP_per_capital DESC LIMIT 50;",
+    "raw_results": "| country_name |\n| --- |\n| Somaliland region |\n| South Sudan |\n| State of Palestine |\n| South Sudan |\n| Taiwan Province of China |\n| Venezuela |\n| Somaliland region |\n| Cyprus |\n| Taiwan Province of China |\n| Malta |\n| Afghanistan |\n| Somaliland region |\n| Venezuela |\n| Kosovo |\n| South Sudan |\n| Somaliland region |\n| Venezuela |\n| Cuba |\n| South Sudan |\n| Taiwan Province of China |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Luxembourg |\n| Qatar |\n| Ireland |\n| Qatar |\n| Singapore |\n| Qatar |\n| Ireland |\n| Qatar |\n| Singapore |\n| Singapore |\n| Singapore |\n| Qatar |\n| United Arab Emirates |\n| Singapore |\n| Ireland |\n| Singapore |\n| Singapore |\n| Ireland |\n| Singapore |",
+    "answer": "Based on the provided data, it’s difficult to determine a single country with the highest average long GDP per capita. The data only lists a list of countries, and there's no associated GDP per capita information. The list includes countries like Luxembourg, Qatar, Singapore, and Ireland multiple times, suggesting repeated measurements or a dataset with duplicated entries. \n\nTo accurately answer your question, I would need the actual GDP per capita figures for each country.",
+    "sql_execution_time": 0.0378,
+    "nlp_generation_time": 11.5297,
+    "total_time": 11.5675,
+    "source_file": "question_13.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:16:37"
+}

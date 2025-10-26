@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest freedom to make choices index? What region is it from? ",
+    "query": "SELECT country_name, regional_indicator FROM world_happiness_report ORDER BY freedom_to_make_life_choices DESC LIMIT 50;",
+    "raw_results": "| country_name | regional_indicator |\n| --- | --- |\n| Egypt | Middle East and North Africa |\n| Qatar | None |\n| United Arab Emirates | Middle East and North Africa |\n| China | East Asia |\n| China | East Asia |\n| China | East Asia |\n| Vietnam | Southeast Asia |\n| Uzbekistan | Commonwealth of Independent States |\n| Vietnam | Southeast Asia |\n| Jordan | Middle East and North Africa |\n| Iraq | Middle East and North Africa |\n| Kuwait | Middle East and North Africa |\n| Bahrain | Middle East and North Africa |\n| Qatar | None |\n| China | East Asia |\n| Turkmenistan | Commonwealth of Independent States |\n| Saudi Arabia | Middle East and North Africa |\n| Tajikistan | Commonwealth of Independent States |\n| Tajikistan | Commonwealth of Independent States |\n| Vietnam | Southeast Asia |\n| Laos | Southeast Asia |\n| Saudi Arabia | Middle East and North Africa |\n| Uzbekistan | Commonwealth of Independent States |\n| Tajikistan | Commonwealth of Independent States |\n| Turkmenistan | Commonwealth of Independent States |\n| Tajikistan | Commonwealth of Independent States |\n| Cambodia | Southeast Asia |\n| Kosovo | Central and Eastern Europe |\n| Madagascar | Sub-Saharan Africa |\n| Jordan | Middle East and North Africa |\n| China | East Asia |\n| Algeria | Middle East and North Africa |\n| Algeria | Middle East and North Africa |\n| Uzbekistan | Commonwealth of Independent States |\n| Uzbekistan | Commonwealth of Independent States |\n| Uzbekistan | Commonwealth of Independent States |\n| Vietnam | Southeast Asia |\n| Denmark | Western Europe |\n| Uzbekistan | Commonwealth of Independent States |\n| Uzbekistan | Commonwealth of Independent States |\n| Denmark | Western Europe |\n| Finland | Western Europe |\n| Somalia | None |\n| Cambodia | Southeast Asia |\n| Norway | Western Europe |\n| Sweden | Western Europe |\n| Cambodia | Southeast Asia |\n| Denmark | Western Europe |\n| Finland | Western Europe |\n| Cambodia | Southeast Asia |",
+    "answer": "Based on the provided data, Denmark has the highest freedom to make choices, as it falls under the Western Europe region.",
+    "sql_execution_time": 0.0423,
+    "nlp_generation_time": 6.6935,
+    "total_time": 6.7358,
+    "source_file": "question_16.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:16:56"
+}

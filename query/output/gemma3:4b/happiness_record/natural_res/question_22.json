@@ -1,0 +1,13 @@
+{
+    "question": "Interpret for me the current trend in positive affect of the world from 2008 to 2022?",
+    "query": "SELECT year, SUM(positive_affect) FROM world_happiness_report WHERE year BETWEEN 2008 AND 2022 GROUP BY year ORDER BY year LIMIT 50;",
+    "raw_results": "| year | sum |\n| --- | --- |\n| 2008 | 71.16434761300002 |\n| 2009 | 72.709665413 |\n| 2010 | 77.608747402 |\n| 2011 | 92.35795754300004 |\n| 2012 | 90.43878662899998 |\n| 2013 | 87.71848828100003 |\n| 2014 | 91.77486937799999 |\n| 2015 | 92.733619509 |\n| 2016 | 92.473424144 |\n| 2017 | 94.65847629200002 |\n| 2018 | 90.71161848600003 |\n| 2019 | 92.95193319900007 |\n| 2020 | 76.40357607300002 |\n| 2021 | 79.67666666600003 |\n| 2022 | 74.83412588800003 |",
+    "answer": "Here's an interpretation of the trend in positive affect from 2008 to 2022, based on the provided data:\n\nOverall, positive affect showed a generally increasing trend from 2008 to 2017, peaking in 2017 at approximately 94.66. However, there was a notable dip in 2020, reaching only 76.40.  Positive affect rebounded somewhat in 2021 (79.68) but decreased again in 2022 (74.83).",
+    "sql_execution_time": 0.037,
+    "nlp_generation_time": 16.25,
+    "total_time": 16.287,
+    "source_file": "question_22.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:17:34"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the Healthy Life Expectancy At Birth of Japan in 2020?",
+    "query": "SELECT \"healthy_life_expectancy_at_birth\" FROM world_happiness_report WHERE country_name = 'Japan' AND year = 2020 LIMIT 50;",
+    "raw_results": "| healthy_life_expectancy_at_birth |\n| --- |\n| 74.22499847 |",
+    "answer": "Based on the query results, I can tell you that:\n\nThe Healthy Life Expectancy (HLE) at birth for Japan in 2020 is approximately 74 years. This represents the average number of years a person born in that year can expect to live in good health.\n\nThis HLE value provides insight into how long people born in Japan in 2020 are expected to live healthy lives, considering factors such as mortality rates and disability prevalence at birth.",
+    "sql_execution_time": 0.0388,
+    "nlp_generation_time": 9.7965,
+    "total_time": 9.8353,
+    "source_file": "question_5.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T11:05:25"
+}

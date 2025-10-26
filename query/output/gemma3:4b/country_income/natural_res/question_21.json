@@ -1,0 +1,13 @@
+{
+    "question": "What is the ratio of net income of d10 to d1 group of Singapore in 2015?",
+    "query": "SELECT CASE WHEN t.category = 'd10' THEN t.income_net ELSE t.income_net END / CASE WHEN t.category = 'd10' THEN t.income_net ELSE t.income_net END AS ratio FROM country_income AS t WHERE t.country = 'Singapore' AND t.year = 2015 AND t.category IN ('d10', 'd1');",
+    "raw_results": "| ratio |\n| --- |\n| 1.0 |\n| 1.0 |",
+    "answer": "The ratio of net income for the d10 to d1 group in Singapore in 2015 was 1.0.",
+    "sql_execution_time": 0.0415,
+    "nlp_generation_time": 1.3507,
+    "total_time": 1.3922,
+    "source_file": "question_21.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:05:25"
+}

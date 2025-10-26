@@ -1,0 +1,13 @@
+{
+    "question": "What is the average Healthy Life Expectancy At Birth of the world after 2020? ",
+    "query": "SELECT AVG(healthy_life_expectancy_at_birth) FROM world_happiness_report WHERE year > 2020 LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| 65.35032633904349 |",
+    "answer": "Based on the query results, the average Healthy Life Expectancy At Birth for the world after 2020 is approximately 65.35 years. This indicates that, globally, individuals born in 2020 and beyond can expect to live an average of about 65 years and 4 months.",
+    "sql_execution_time": 0.0501,
+    "nlp_generation_time": 2.4962,
+    "total_time": 2.5463,
+    "source_file": "question_15.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:17:03"
+}

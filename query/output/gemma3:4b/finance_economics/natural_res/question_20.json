@@ -1,0 +1,13 @@
+{
+    "question": "The ratio of government debt to consumer spending by year",
+    "query": "SELECT STRFTIME('%Y', date) AS year, (government_debt::REAL / consumer_spending) AS debt_to_spending_ratio FROM finance_economics_dataset WHERE consumer_spending != 0 LIMIT 50;",
+    "raw_results": "Error: function strftime(unknown, date) does not exist\nLINE 1: SELECT STRFTIME('%Y', date) AS year, (government_debt::REAL ...\n               ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I’m sorry, I was unable to calculate the ratio of government debt to consumer spending by year due to an error in the query. The error indicates an issue with the `strftime` function, likely requiring explicit type casting to ensure the date column is correctly handled. \n\nI cannot proceed with the requested calculation until this error is resolved.",
+    "sql_execution_time": 0.0405,
+    "nlp_generation_time": 3.5223,
+    "total_time": 3.5628,
+    "source_file": "question_20.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:08:34"
+}

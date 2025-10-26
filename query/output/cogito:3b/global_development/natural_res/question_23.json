@@ -1,0 +1,13 @@
+{
+    "question": "Explain for me the correlations of human development index and gdp per capita",
+    "query": "SELECT country_code, country_name, year, calculated_gdp_per_capita, life_expectancy, healthcare_capacity_index, global_development_resilience_index FROM global_development_indicators WHERE is_pandemic_period = FALSE LIMIT 50;",
+    "raw_results": "Error: operator does not exist: double precision = boolean\nLINE 1: ...l_development_indicators WHERE is_pandemic_period = FALSE LI...\n                                                             ^\nHINT:  No operator matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "Based on your query results, I cannot perform a correlation analysis between human development index (HDI) and GDP per capita due to an error in my system configuration.\n\nI apologize for any confusion this may have caused. If you could provide the query results with proper data formatting or help me resolve this technical issue, I would be happy to assist you further.\n\nTo properly analyze correlations between HDI and GDP per capita, we need:\n\n1. Correctly formatted human development index (HDI) data\n2. Correctly formatted GDP per capita data\n\nPlease ensure your query results are in the proper format before requesting a correlation analysis.",
+    "sql_execution_time": 0.0797,
+    "nlp_generation_time": 9.642,
+    "total_time": 9.7217,
+    "source_file": "question_23.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:34:07"
+}

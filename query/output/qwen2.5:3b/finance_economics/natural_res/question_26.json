@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the relationship between inflation rate and consumer spending",
+    "query": "SELECT inflation_rate, consumer_spending FROM finance_economics_dataset LIMIT 50",
+    "raw_results": "| inflation_rate | consumer_spending |\n| --- | --- |\n| 6.06 | 4589.0 |\n| 4.95 | 10101.0 |\n| 9.13 | 13665.0 |\n| 3.77 | 5192.0 |\n| 2.2 | 10688.0 |\n| 6.08 | 8613.0 |\n| 6.24 | 1303.0 |\n| 4.39 | 3771.0 |\n| 4.87 | 13164.0 |\n| 9.6 | 13774.0 |\n| 7.33 | 7649.0 |\n| 1.11 | 7071.0 |\n| 2.12 | 8113.0 |\n| 9.76 | 225.0 |\n| 7.26 | 5201.0 |\n| 9.15 | 10713.0 |\n| 3.04 | 13591.0 |\n| 7.42 | 14990.0 |\n| 7.14 | 11054.0 |\n| 2.95 | 7061.0 |\n| 5.51 | 3790.0 |\n| 6.27 | 3259.0 |\n| 4.81 | 6242.0 |\n| 8.27 | 3697.0 |\n| 8.33 | 3414.0 |\n| 8.51 | 2677.0 |\n| 8.03 | 12464.0 |\n| 4.88 | 4485.0 |\n| 3.81 | 11190.0 |\n| 8.31 | 3724.0 |\n| 4.9 | 10458.0 |\n| 2.46 | 1710.0 |\n| 5.07 | 10210.0 |\n| 1.42 | 5396.0 |\n| 6.92 | 8509.0 |\n| 3.36 | 4920.0 |\n| 2.61 | 13292.0 |\n| 9.57 | 2963.0 |\n| 7.77 | 11375.0 |\n| 7.87 | 4132.0 |\n| 6.24 | 13524.0 |\n| 8.39 | 3953.0 |\n| 7.59 | 10659.0 |\n| 5.99 | 10365.0 |\n| 9.61 | 490.0 |\n| 1.92 | 12442.0 |\n| 9.43 | 14238.0 |\n| 4.01 | 14002.0 |\n| 5.28 | 13851.0 |\n| 1.23 | 14247.0 |",
+    "answer": "The relationship between the inflation rate and consumer spending, as indicated by the given dataset, shows an inverse correlation. As the inflation rate increases, consumer spending tends to decrease, and vice versa. For example:\n\n- When the inflation rate is very low at 1.11%, consumer spending is high at $7,071.\n- At a moderate inflation rate of 4.95%, consumer spending is around $10,101.\n- As the inflation rate rises to 6.06% (the highest value in our dataset), consumer spending drops significantly to $4,589.\n\nThis trend suggests that when people perceive higher inflation rates, they tend to save more and spend less. However, it's important to note that at very low levels of inflation, such as 1.23%, even though the inflation rate is very small, there can still be a positive impact on consumer spending due to overall economic conditions and other factors not captured in this dataset.",
+    "sql_execution_time": 0.0316,
+    "nlp_generation_time": 8.8469,
+    "total_time": 8.8785,
+    "source_file": "question_26.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:20:18"
+}

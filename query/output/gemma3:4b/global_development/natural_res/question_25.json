@@ -1,0 +1,13 @@
+{
+    "question": "Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "query": "SELECT correlation FROM ( SELECT CORR( g.governance_quality_index, g.digital_readiness_score ) AS correlation FROM global_development_indicators AS g WHERE g.country_code IN ( 'AF', 'BD', 'BN', 'IN', 'MM', 'NP', 'PK', 'SL', 'SR' ) ) AS subquery LIMIT 1;",
+    "raw_results": "| correlation |\n| --- |\n| None |",
+    "answer": "Based on the query results, there is no correlation found between governance quality and the digital readiness score of South Asia.",
+    "sql_execution_time": 0.0327,
+    "nlp_generation_time": 1.4804,
+    "total_time": 1.5131,
+    "source_file": "question_25.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:12:52"
+}

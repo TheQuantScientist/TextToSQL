@@ -1,0 +1,13 @@
+{
+    "question": "What is the average positive affect of all countries in 2008?",
+    "query": "SELECT AVG(positive_affect) FROM world_happiness_report WHERE year = 2008 GROUP BY country_name LIMIT 50",
+    "raw_results": "| avg |\n| --- |\n| 0.47536701 |\n| 0.838356972 |\n| 0.572522998 |\n| 0.777418733 |\n| 0.397701234 |\n| 0.538071811 |\n| 0.67530942 |\n| 0.827382028 |\n| 0.544638395 |\n| 0.587876499 |\n| 0.818030298 |\n| 0.684607685 |\n| 0.612912178 |\n| 0.762800634 |\n| 0.723952413 |\n| 0.623278558 |\n| 0.655700445 |\n| 0.653890312 |\n| 0.745194614 |\n| 0.67213124 |\n| 0.599989057 |\n| 0.62660408 |\n| 0.655605435 |\n| 0.727874935 |\n| 0.802223682 |\n| 0.647092998 |\n| 0.553983271 |\n| 0.666879535 |\n| 0.691433728 |\n| 0.767762363 |\n| 0.544517279 |\n| 0.606720626 |\n| 0.719996989 |\n| 0.682018161 |\n| 0.632725835 |\n| 0.510493875 |\n| 0.560817659 |\n| 0.627448022 |\n| 0.414297044 |\n| 0.593905568 |\n| 0.572613895 |\n| 0.569265902 |\n| 0.540651083 |\n| 0.706395447 |\n| 0.702371597 |\n| 0.594615102 |\n| 0.623606741 |\n| 0.635245323 |\n| 0.740247607 |\n| 0.712142289 |",
+    "answer": "The average positive affect of all countries in 2008 is approximately 0.647.",
+    "sql_execution_time": 0.0448,
+    "nlp_generation_time": 3.4326,
+    "total_time": 3.4774,
+    "source_file": "question_11.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:23:40"
+}

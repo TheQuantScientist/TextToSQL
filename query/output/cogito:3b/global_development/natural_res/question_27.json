@@ -1,0 +1,13 @@
+{
+    "question": "What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "SELECT country_name, income_group, fdi_pct_gdp, real_economic_growth_indicator FROM global_development_indicators WHERE income_group IN ('Middle Income', 'Low Income') LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results showing \"no record found,\" I cannot analyze or provide information about the relationship between FDI's GDP share and economic growth in middle and low-income groups. This indicates that the database being queried does not contain the necessary data to answer this specific question.\n\nTo properly address your inquiry, we would need access to a dataset containing information on:\n\n1. Foreign Direct Investment (FDI) flows\n2. Gross Domestic Product (GDP)\n3. Economic growth indicators\n\nIf such data were available in the database, I could then provide insights into whether there is a correlation between FDI's share of GDP and economic growth rates in middle and low-income economies.\n\nWould you like to explore this topic with different datasets or information sources?",
+    "sql_execution_time": 0.0684,
+    "nlp_generation_time": 11.5798,
+    "total_time": 11.6482,
+    "source_file": "question_27.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:34:51"
+}

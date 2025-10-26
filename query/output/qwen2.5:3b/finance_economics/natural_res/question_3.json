@@ -1,0 +1,13 @@
+{
+    "question": "The gold price, crude oil price, real estate index of Jan 1, 2008",
+    "query": "SELECT crude_oil_price, real_estate_index, gold_price FROM finance_economics_dataset WHERE date::DATE = '2008-01-01' LIMIT 50",
+    "raw_results": "| crude_oil_price | real_estate_index | gold_price |\n| --- | --- | --- |\n| 41.3 | 182.0 | 1749.11 |",
+    "answer": "On January 1, 2008, the gold price was $1749.11 per ounce, the crude oil price was 41.30 USD per barrel, and the real estate index was at level 182.0 out of 100.",
+    "sql_execution_time": 0.0335,
+    "nlp_generation_time": 2.2525,
+    "total_time": 2.286,
+    "source_file": "question_3.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:20:53"
+}

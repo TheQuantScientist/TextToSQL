@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of income inequality and gdp per capita of Singapore from 1970 onward.",
+    "query": "SELECT year, country_income.gini_reported, country_income.gdp_ppp_pc_usd2011 FROM country_income WHERE iso = 'sing' AND year >= 1970 ORDER BY year ASC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided information, there seems to be a lack of specific data regarding the trends in income inequality and GDP per capita for Singapore since 1970 within this context. To accurately analyze these aspects, detailed historical economic datasets are required that show changes over time. Since no record was found herein:\n\nTo understand how income inequality has changed alongside Singapore's GDP per capita from the year 1970 onward, it would be beneficial to consult comprehensive and reliable sources such as national statistical offices or economic research databases like The World Bank or United Nations reports. These institutions typically maintain extensive records that track various socioeconomic indicators over long periods of time.\n\nIf you're looking for an analysis on Singapore, I would recommend searching through these resources to obtain the relevant data sets and conducting a study using appropriate statistical methods like Gini coefficients calculation or trend line analyses with yearly averages in order to identify patterns within income distribution as well as economic growth.\n\nIn summary: Without specific records present here, we cannot directly analyze Singapore's post-1970 data regarding its wealth gap and per capita output – yet a thorough review of reputable databases should help you find the necessary information for such an analysis once acquired.",
+    "sql_execution_time": 0.0819,
+    "nlp_generation_time": 13.8253,
+    "total_time": 13.9072,
+    "source_file": "question_26.json",
+    "table_name": "country_income",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-22T21:12:16"
+}

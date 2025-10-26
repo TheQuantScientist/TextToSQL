@@ -1,0 +1,13 @@
+{
+    "question": "Does higher gdp per capita posiviely correlated with high income inequality? Explain possible reasons",
+    "query": "SELECT year, gini_reported, gdp_ppp_pc_usd2011 FROM country_income WHERE gdp_ppp_pc_usd2011 > 50000 ORDER BY gdp_ppp_pc_usd2011 DESC LIMIT 50;",
+    "raw_results": "| year | gini_reported | gdp_ppp_pc_usd2011 |\n| --- | --- | --- |\n| 2014 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2014 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2014 | 0.404 | 122637.0 |\n| 2014 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2014 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2014 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2014 | 0.404 | 122637.0 |\n| 2014 | 0.404 | 122637.0 |\n| 2014 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2014 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2015 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2013 | 0.404 | 122637.0 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2012 | 0.401666667 | 122002.8333 |\n| 2011 | 0.399333333 | 121368.6667 |\n| 2011 | 0.399333333 | 121368.6667 |\n| 2011 | 0.399333333 | 121368.6667 |\n| 2011 | 0.399333333 | 121368.6667 |\n| 2011 | 0.399333333 | 121368.6667 |\n| 2011 | 0.399333333 | 121368.6667 |\n| 2011 | 0.399333333 | 121368.6667 |\n| 2011 | 0.399333333 | 121368.6667 |\n| 2011 | 0.399333333 | 121368.6667 |\n| 2011 | 0.399333333 | 121368.6667 |",
+    "answer": "Based on the provided data, there's no clear positive correlation between GDP per capita (in PPP terms) and the Gini coefficient, which measures income inequality. The data shows a constant Gini coefficient of 0.404 across all years from 2011 to 2015, and a corresponding GDP per capita of approximately 122637.0 USD.  This indicates that regardless of the level of economic output, income inequality remains relatively stable at 0.404.",
+    "sql_execution_time": 0.071,
+    "nlp_generation_time": 9.2823,
+    "total_time": 9.3533,
+    "source_file": "question_24.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:06:02"
+}

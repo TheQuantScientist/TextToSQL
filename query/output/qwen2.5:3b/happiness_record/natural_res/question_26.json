@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+    "query": "SELECT regional_indicator, AVG(healthy_life_expectancy_at_birth) AS avg_hleab FROM world_happiness_report WHERE regional_indicator IN ('EU', 'NA') GROUP BY regional_indicator ORDER BY regional_indicator ASC LIMIT 50",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results provided, there is currently no recorded data available to analyze the trend of Healthy Life Expectancy at Birth by region in Asia, Europe, and North America. Please check back later or provide different parameters for your analysis.",
+    "sql_execution_time": 0.0314,
+    "nlp_generation_time": 1.849,
+    "total_time": 1.8804,
+    "source_file": "question_26.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:24:25"
+}

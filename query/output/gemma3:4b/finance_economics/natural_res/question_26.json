@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the relationship between inflation rate and consumer spending",
+    "query": "SELECT inflation_rate, consumer_spending FROM finance_economics_dataset LIMIT 50;",
+    "raw_results": "| inflation_rate | consumer_spending |\n| --- | --- |\n| 6.06 | 4589.0 |\n| 4.95 | 10101.0 |\n| 9.13 | 13665.0 |\n| 3.77 | 5192.0 |\n| 2.2 | 10688.0 |\n| 6.08 | 8613.0 |\n| 6.24 | 1303.0 |\n| 4.39 | 3771.0 |\n| 4.87 | 13164.0 |\n| 9.6 | 13774.0 |\n| 7.33 | 7649.0 |\n| 1.11 | 7071.0 |\n| 2.12 | 8113.0 |\n| 9.76 | 225.0 |\n| 7.26 | 5201.0 |\n| 9.15 | 10713.0 |\n| 3.04 | 13591.0 |\n| 7.42 | 14990.0 |\n| 7.14 | 11054.0 |\n| 2.95 | 7061.0 |\n| 5.51 | 3790.0 |\n| 6.27 | 3259.0 |\n| 4.81 | 6242.0 |\n| 8.27 | 3697.0 |\n| 8.33 | 3414.0 |\n| 8.51 | 2677.0 |\n| 8.03 | 12464.0 |\n| 4.88 | 4485.0 |\n| 3.81 | 11190.0 |\n| 8.31 | 3724.0 |\n| 4.9 | 10458.0 |\n| 2.46 | 1710.0 |\n| 5.07 | 10210.0 |\n| 1.42 | 5396.0 |\n| 6.92 | 8509.0 |\n| 3.36 | 4920.0 |\n| 2.61 | 13292.0 |\n| 9.57 | 2963.0 |\n| 7.77 | 11375.0 |\n| 7.87 | 4132.0 |\n| 6.24 | 13524.0 |\n| 8.39 | 3953.0 |\n| 7.59 | 10659.0 |\n| 5.99 | 10365.0 |\n| 9.61 | 490.0 |\n| 1.92 | 12442.0 |\n| 9.43 | 14238.0 |\n| 4.01 | 14002.0 |\n| 5.28 | 13851.0 |\n| 1.23 | 14247.0 |",
+    "answer": "Here's an analysis of the relationship between inflation rate and consumer spending based on the provided data:\n\nGenerally, there appears to be a positive correlation between inflation rates and consumer spending. As the inflation rate increases, consumer spending also tends to increase. \n\nLooking at the data, when the inflation rate is at its highest, consumer spending is also significantly high. For example, when inflation is 9.76, consumer spending is 225.0. Conversely, when inflation is at its lowest (1.11), consumer spending is also relatively high at 7071.0.\n\nIt's important to note that this is a correlation, not necessarily causation. Other economic factors likely influence consumer spending decisions.",
+    "sql_execution_time": 0.0514,
+    "nlp_generation_time": 10.9901,
+    "total_time": 11.0415,
+    "source_file": "question_26.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:10:16"
+}

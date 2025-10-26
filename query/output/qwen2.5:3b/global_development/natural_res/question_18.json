@@ -1,0 +1,13 @@
+{
+    "question": "What is the highest energy per capita score in 2020? In which country",
+    "query": "SELECT MAX(\"calculated_gdp_per_capita\") AS highest_energy_per_capita, \"country_name\" FROM global_development_indicators WHERE \"year\" = 2020 LIMIT 50",
+    "raw_results": "Error: column \"global_development_indicators.country_name\" must appear in the GROUP BY clause or be used in an aggregate function\nLINE 1: ...ed_gdp_per_capita\") AS highest_energy_per_capita, \"country_n...\n                                                             ^\n",
+    "answer": "It seems there was a problem with retrieving specific data due to the structure of the query. However, based on the provided error message, it appears that if successful, the query would have returned the country with the highest energy per capita score for 2020.\n\nGiven this context, I'll need to make some assumptions and provide an answer based on hypothetical results. In a perfect dataset without issues, we would group by countries and use an aggregate function like MAX() to find the highest value in each group. The specific country with the highest energy per capita score for 2020 would be listed as the result.\n\nFor example, if I had access to this data, a correct query might look something like:\n\n```sql\nSELECT country_name, MAX(energy_per_capita) AS max_energy_per_capita\nFROM global_development_indicators\nWHERE year = 2020\nGROUP BY country_name;\n```\n\nBased on such a hypothetical result set, the country with the highest energy per capita score in 2020 would be [Country Name], assuming our query was correct and returned valid data. Please note that actual results might vary due to potential issues or missing parts of the dataset.\n\nIf you could provide me with the correct dataset or rephrase your question, I'd be happy to give a more accurate answer!",
+    "sql_execution_time": 0.0261,
+    "nlp_generation_time": 9.4674,
+    "total_time": 9.4935,
+    "source_file": "question_18.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:22:18"
+}

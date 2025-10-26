@@ -1,0 +1,13 @@
+{
+    "question": "Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "query": "SELECT country_name, gdp_per_capita, government_quality_index, digital_readiness_score FROM global_development_indicators WHERE region = 'South Asia' AND is_pandemic_period = false LIMIT 50;",
+    "raw_results": "Error: column \"government_quality_index\" does not exist\nLINE 1: SELECT country_name, gdp_per_capita, government_quality_inde...\n                                             ^\n",
+    "answer": "Based on the provided query results, I cannot determine if there is a correlation between governance quality and digital readiness score in South Asia. The error message indicates that the database lacks information about government quality indices.\n\nTo properly answer this question, we would need:\n1. Data about government quality indices for all South Asian countries\n2. Digital readiness scores for these same countries\n\nWithout these crucial data points, it's impossible to establish a correlation between governance quality and digital readiness in South Asia. I recommend consulting the database administrator to ensure these critical data fields are properly indexed and available.\n\nPlease provide additional query results or clarify which specific variables relate to governance and digital readiness metrics. This will help me better assist you in analyzing this relationship.",
+    "sql_execution_time": 0.0269,
+    "nlp_generation_time": 12.1104,
+    "total_time": 12.1373,
+    "source_file": "question_25.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:34:29"
+}

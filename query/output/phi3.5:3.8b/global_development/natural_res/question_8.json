@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita of OECD group in 2019?",
+    "query": "SELECT country_name, year, calculated_gdp_per_capita FROM global_development_indicators WHERE income_group = 'OECD' AND year = 2019 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the query results provided, it appears there were no specific records available to determine the GDP (Gross Domestic Product) per capita for countries within the Organization for Economic Co-operation and Development (OECD) in 2019. To obtain accurate information about this topic, I would recommend checking reputable economic databases or resources such as the OECD's official website, World Bank data portal, or government publications related to national accounts of member countries for updated statistics on GDP per capita from that year.\n\nHere is a general idea: The average GDP per capita among OECD members tends to be higher compared to non-member nations due to the wealth and development levels within these economies, but precise figures would require further research as indicated by your query results showing no available records in this instance.",
+    "sql_execution_time": 0.0408,
+    "nlp_generation_time": 5.2974,
+    "total_time": 5.3382,
+    "source_file": "question_8.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-23T11:22:23"
+}

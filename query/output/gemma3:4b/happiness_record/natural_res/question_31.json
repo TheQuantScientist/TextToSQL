@@ -1,0 +1,13 @@
+{
+    "question": "How differences in Confidence In National Government score comparing all the regions? Evaluate the importance of governance trust on positive affects.",
+    "query": "SELECT regional_indicator, AVG(confidence_in_national_government) AS avg_confidence, AVG(positive_affect) AS avg_positive_affect FROM world_happiness_report GROUP BY regional_indicator ORDER BY avg_confidence DESC LIMIT 50;",
+    "raw_results": "| regional_indicator | avg_confidence | avg_positive_affect |\n| --- | --- | --- |\n| Southeast Asia | 0.7437507857962957 | 0.7162579384531252 |\n| South Asia | 0.5865826567977528 | 0.5381861173723405 |\n| Sub-Saharan Africa | 0.5601252602481576 | 0.6513035924379232 |\n| North America and ANZ | 0.5162376554838709 | 0.7638977503787879 |\n| Commonwealth of Independent States | 0.5151446679490446 | 0.5674552563850268 |\n| None | 0.497721858064516 | 0.5897075683055557 |\n| Western Europe | 0.48714007554964556 | 0.7081915327524749 |\n| Middle East and North Africa | 0.448022649022472 | 0.5726788965520835 |\n| Latin America and Caribbean | 0.39020972806291415 | 0.7612361266292833 |\n| East Asia | 0.36151770663888905 | 0.636781254217391 |\n| Central and Eastern Europe | 0.30877512678846164 | 0.5805652232821578 |",
+    "answer": "Here’s an analysis of how confidence in national governments varies across different regions and its relationship to positive affects:\n\nGenerally, regions with higher confidence in their national governments tend to report higher levels of positive affect. Looking at the data, Latin America and the Caribbean (0.3902) and East Asia (0.3615) have the lowest confidence scores and correspondingly lower positive affects. Conversely, North America and ANZ (0.5162), Southeast Asia (0.7438), and Western Europe (0.4871) show the highest levels of confidence and positive affects. \n\nIt’s important to note that regions like Sub-Saharan Africa (0.5601) and the Commonwealth of Independent States (0.5151) exhibit moderate confidence and positive affects, while South Asia (0.5866) has a slightly lower confidence score and positive affect compared to the others in the same category.",
+    "sql_execution_time": 0.0583,
+    "nlp_generation_time": 25.1364,
+    "total_time": 25.1947,
+    "source_file": "question_31.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3:4b",
+    "generated_at": "2025-10-22T18:20:46"
+}

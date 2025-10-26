@@ -1,0 +1,13 @@
+{
+    "question": "What is the average positive affect of all countries in 2008?",
+    "query": "SELECT AVG(\"positive_affect\") FROM world_happiness_report WHERE year = 2008 LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| 0.6528839230550461 |",
+    "answer": "Based on the data, it appears that there was a relatively neutral or slight positive sentiment towards all countries in the year 2008, as indicated by an average positive affect score of approximately 65.29%. This suggests that overall, people's emotions and attitudes towards different countries in 2008 were not strongly positive or negative, but rather leaned slightly towards the positive side.",
+    "sql_execution_time": 0.0397,
+    "nlp_generation_time": 3.8227,
+    "total_time": 3.8624,
+    "source_file": "question_11.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "llama3.2",
+    "generated_at": "2025-10-22T20:16:37"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the social support index of Germany in 2008?",
+    "query": "SELECT social_support FROM world_happiness_report WHERE country_name = 'Germany' AND year = 2008 LIMIT 50",
+    "raw_results": "| social_support |\n| --- |\n| 0.923211336 |",
+    "answer": "The social support index for Germany in 2008 was 0.923. This indicates a strong level of social support within the country at that time.",
+    "sql_execution_time": 0.057,
+    "nlp_generation_time": 1.4543,
+    "total_time": 1.5113,
+    "source_file": "question_4.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen2.5:3b",
+    "generated_at": "2025-10-25T16:25:32"
+}

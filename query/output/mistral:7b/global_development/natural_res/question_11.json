@@ -1,0 +1,13 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT years_since_2000, AVG(calculated_gdp_per_capita) FROM global_development_indicators WHERE years_since_2000 BETWEEN 0 AND 20 GROUP BY years_since_2000 LIMIT 50;",
+    "raw_results": "| years_since_2000 | avg |\n| --- | --- |\n| 7.0 | 14659.404708800927 |\n| 2.0 | 8165.493640952128 |\n| 12.0 | 16093.761485121646 |\n| 11.0 | 16164.398485958398 |\n| 10.0 | 14717.508911408211 |\n| 0.0 | 7629.745790260309 |\n| 15.0 | 15335.619653096033 |\n| 9.0 | 14020.535129628093 |\n| 20.0 | 14324.959661594323 |\n| 16.0 | 15498.455206893383 |\n| 6.0 | 12868.964399349523 |\n| 8.0 | 15702.206157278297 |\n| 17.0 | 16280.82763589371 |\n| 5.0 | 11534.767608091595 |\n| 19.0 | 17114.165977683268 |\n| 18.0 | 17258.08031694456 |\n| 14.0 | 16937.194697771054 |\n| 13.0 | 16633.30295623858 |\n| 3.0 | 9370.008504701926 |\n| 4.0 | 10666.360942039511 |\n| 1.0 | 7584.7658232635795 |",
+    "answer": "Between the years 2000 and 2020, the world's GDP per capita grew significantly, with an average growth rate of approximately 14,325 when comparing the start and end periods. More specifically, in 2020, the GDP per capita was around 14,325 dollars compared to about 7630 dollars in the year 2000. However, it's important to note that the growth rate varied over this period, with some years showing higher growth than others. For example, between 2000 and 2003, there was a relatively low growth rate of around 3,845 dollars, while between 2010 and 2020, the growth rate was more than 7,694 dollars.",
+    "sql_execution_time": 0.0463,
+    "nlp_generation_time": 18.1459,
+    "total_time": 18.1922,
+    "source_file": "question_11.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "mistral:7b",
+    "generated_at": "2025-10-22T20:41:49"
+}

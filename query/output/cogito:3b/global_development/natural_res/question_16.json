@@ -1,0 +1,13 @@
+{
+    "question": "What is the average digital readiness score of high income countries in 2019?",
+    "query": "SELECT global_development_indicators.digital_readiness_score FROM global_development_indicators, jsonb_array_elements( jsonb_path_query(global_development_indicators, '$.year == 2019') ) AS year WHERE country_code = 'HIC' AND is_pandemic_period = false",
+    "raw_results": "Error: function jsonb_path_query(global_development_indicators, unknown) does not exist\nLINE 1: ...bal_development_indicators, jsonb_array_elements( jsonb_path...\n                                                             ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I apologize for the technical error that prevented me from accessing the query results. However, I can provide a general response based on typical digital readiness metrics:\n\nWithout access to the specific data through the JSONPath query function, I cannot directly calculate the average digital readiness score of high-income countries in 2019.\n\nIf you'd like to proceed with analysis, please share the query results again using the correct syntax for the jsonb_path_query function. This will allow me to accurately analyze and report on the requested data.\n\nWould you like assistance setting up the correct JSONPath query to access the digital readiness metrics?",
+    "sql_execution_time": 0.0456,
+    "nlp_generation_time": 10.0931,
+    "total_time": 10.1387,
+    "source_file": "question_16.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "cogito:3b",
+    "generated_at": "2025-10-22T10:31:19"
+}

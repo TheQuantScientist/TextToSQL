@@ -1,0 +1,13 @@
+{
+    "question": "venture capital funding is private fundraising, wheras stock index activities is public fundraising. Which fundraising channel is more active in US, explain the reasons",
+    "query": "SELECT venture_capital_funding FROM finance_economics_dataset WHERE stock_index = 'US' LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "The provided query results don't contain information about the activity levels of venture capital funding versus stock index activities in the US. Therefore, I cannot definitively say which fundraising channel is more active or explain the reasons based on the given data. \n\nTo answer your question accurately, I would need data on the amount of capital raised through venture capital and stock market activities in the US. This data would allow me to compare the two and provide insights into their relative activity levels and the factors driving those differences. \n\nHowever, I can offer some general observations:\n\n*   **Venture capital** is often associated with early-stage, high-growth companies and is a key driver of innovation.\n*   **Stock market activities** (like IPOs, secondary offerings, and general trading) represent a broader range of companies and are a more established and liquid fundraising channel.\n\nWithout specific data, it's impossible to say which is \"more active\" overall.",
+    "sql_execution_time": 0.0491,
+    "nlp_generation_time": 16.527,
+    "total_time": 16.5761,
+    "source_file": "question_29.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-23T13:12:45"
+}

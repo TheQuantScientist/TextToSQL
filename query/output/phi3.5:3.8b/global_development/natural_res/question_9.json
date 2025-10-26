@@ -1,0 +1,13 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT country_name, year, gdp_per_capita, renewable_energy_pct, calculated_gdp_per_capita, real_economic_growth_indicator, green_transition_score FROM global_development_indicators WHERE income_group = 'Lower Middle Income' AND year = 2020 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Based on the provided query results, there was no specific data available to determine the green transition score for the lower-middle income group in 2 extrinsic factors such as incomplete databases or unprocessed information. Thus, we're unable to provide a direct answer based solely on this result set at present time. For accurate details, it might be necessary to refine your search parameters or consult more comprehensive and updated sources of environmental performance data specific to income groups in 2020.",
+    "sql_execution_time": 0.0329,
+    "nlp_generation_time": 3.3218,
+    "total_time": 3.3547,
+    "source_file": "question_9.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "phi3.5:3.8b",
+    "generated_at": "2025-10-23T11:22:27"
+}
