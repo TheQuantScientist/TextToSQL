@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "SELECT COUNT(DISTINCT country_name) FROM world_happiiness_report WHERE generosity > (SELECT AVG(generosity) FROM world_happiiness_report);",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: SELECT COUNT(DISTINCT country_name) FROM world_happiiness_re...\n                                                 ^\n",
+    "answer": "I'm sorry, but I encountered an error while trying to answer your question. The data source I was using (\"world_happiiness_report\") doesn't seem to exist. Therefore, I cannot determine how many countries have a higher average generiosity compared to the world average. \n\nTo help me answer this, could you please provide a valid data source or clarify the name of the table containing the world's average generiosity?",
+    "sql_execution_time": 0.0323,
+    "nlp_generation_time": 6.2319,
+    "total_time": 6.2642,
+    "source_file": "question_17.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:35:53"
+}

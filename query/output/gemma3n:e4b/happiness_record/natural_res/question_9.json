@@ -1,0 +1,13 @@
+{
+    "question": "What is the negative affect of Japan in 2022?",
+    "query": "SELECT negative_affect FROM world_happi ness_report WHERE country_name = 'Japan' AND year = 2022 LIMIT 50;",
+    "raw_results": "Error: relation \"world_happi\" does not exist\nLINE 1: SELECT negative_affect FROM world_happi ness_report WHERE co...\n                                    ^\n",
+    "answer": "I'm sorry, but I couldn't find any information about the negative effects of Japan in 2022. The data I have access to doesn't include a table called \"world_happiness_report\" or a field named \"negative_affect\". Therefore, I am unable to answer your question. \n\nIt's possible that the data you're looking for is available elsewhere. You might try searching for reports from organizations like the World Happiness Report or other sources that specifically analyze Japan's well-being or challenges in 2022.",
+    "sql_execution_time": 0.0371,
+    "nlp_generation_time": 9.7243,
+    "total_time": 9.7614,
+    "source_file": "question_9.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:38:55"
+}

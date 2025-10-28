@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT COUNTRY_NAME, digital_readiness_score FROM global_development_indicators WHERE region IN ('Asia', 'Europe') ORDER BY digital_readiness_score DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm sorry, but I don't have any data on digital readiness for South Asia and Europe. My query didn't find any records related to this comparison. Therefore, I can't evaluate the differences between the two regions in digital readiness. \n\nTo get an answer to this question, I would need access to data specifically comparing digital literacy, internet access, technology adoption, and related factors for both South Asia and Europe.",
+    "sql_execution_time": 0.0864,
+    "nlp_generation_time": 21.9388,
+    "total_time": 22.0252,
+    "source_file": "question_24.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:31:28"
+}

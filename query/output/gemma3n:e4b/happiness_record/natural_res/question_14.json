@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the lowest average social support score over years?",
+    "query": "SELECT country_name FROM world_happiiness_report ORDER BY AVG(social_support) ASC LIMIT 1;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: SELECT country_name FROM world_happiiness_report ORDER BY AV...\n                                 ^\n",
+    "answer": "I'm sorry, but I encountered an error while trying to retrieve the requested information. The database table \"world_happiiness_report\" does not exist. This prevents me from determining which country has the lowest average social support score. \n\nTo answer your question, I would need access to a dataset containing world happiness reports with social support scores for different countries over the years. \n\nIf you can provide the correct table name or the data itself, I'd be happy to analyze it and find the answer for you.",
+    "sql_execution_time": 0.0343,
+    "nlp_generation_time": 7.211,
+    "total_time": 7.2453,
+    "source_file": "question_14.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:35:34"
+}

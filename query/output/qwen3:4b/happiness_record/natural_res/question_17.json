@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "SELECT COUNT(*) AS count FROM ( SELECT country_name, AVG(generosity) AS avg_generosity FROM world_happiness_report GROUP BY country_name ) AS country_avg WHERE avg_generosity > (SELECT AVG(generosity) FROM world_happiness_report) LIMIT 50;",
+    "raw_results": "| count |\n| --- |\n| 75 |",
+    "answer": "<think>\nOkay, let's tackle this question. The user is asking how many countries have a higher average generiosity over the years compared to the world's average. The query results show a count of 75.\n\nFirst, I need to make sure I understand the terms here. \"Generiosity\" must be a specific metric, maybe related to generosity, but the exact definition isn't provided. However, the query results are straightforward: the count is 75. \n\nThe user wants a clear, concise answer. The query result is already given, so I just need to present that in a natural way. I should mention that according to the data, 75 countries have a higher average generiosity than the world average. I should also keep it user-friendly, maybe avoid jargon and ensure the answer is direct. \n\nWait, but maybe I should check if there's any context needed. The user might not know what \"generiosity\" is, but since the query results are provided, I don't need to explain that. The answer is simply the count from the query. So the response is straightforward. Just state the number and that it's based on the query results.\n</think>\n\nAccording to the data, **75 countries** have a higher average generiosity over the years compared to the world average. This figure is derived directly from the query results provided.",
+    "sql_execution_time": 0.0352,
+    "nlp_generation_time": 16.1668,
+    "total_time": 16.202,
+    "source_file": "question_17.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen3:4b",
+    "generated_at": "2025-10-28T12:27:22"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT income_group, AVG(econ_opportunity_index) AS avg_econ_opportunity_index FROM global_development_indicators WHERE income_group IN ('high', 'middle') GROUP BY income_group UNION ALL SELECT 'world' AS income_group, (SELECT AVG(econ_opportunity_index) FROM global_development_indicators) AS avg_econ_opportunity_index LIMIT 50;",
+    "raw_results": "| income_group | avg_econ_opportunity_index |\n| --- | --- |\n| world | 5266.682141710914 |",
+    "answer": "<think>\nOkay, the user wants me to compare the economic opportunity index for high income, middle income groups, and the world. Let me check the query results provided. Wait, the query results only show the world with an average of 5266.68. But the question is about high and middle income groups too. Hmm, maybe the data isn't available for those groups in the query results. The user might have expected those values, but the results only include the world. I need to address that.\n\nSo, the answer should mention that the data for high and middle income groups isn't available. But maybe there's a mistake here. Let me double-check the query results. The table has only the world entry. So, the user's query might not have retrieved the other groups. I should inform them that only the world's index is provided and that the other groups' data isn't available. But I should also check if there's any possible way the data might be present. No, the table only has one row. \n\nTherefore, the response should state that the economic opportunity index for the world is 5266.68, but the data for high and middle income groups isn't available in the query results. Maybe the user needs to check if the query was correctly executed or if there's a missing dataset. Alternatively, perhaps the system can't retrieve that data. Either way, the answer should be clear and honest about the available information.\n</think>\n\nThe query results show that the average economic opportunity index for the world is **5,266.68**. However, the data for high-income and middle-income groups is not available in the provided results. If you have additional data or need further clarification, please let me know!",
+    "sql_execution_time": 0.0529,
+    "nlp_generation_time": 21.5398,
+    "total_time": 21.5927,
+    "source_file": "question_28.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "qwen3:4b",
+    "generated_at": "2025-10-28T12:19:43"
+}

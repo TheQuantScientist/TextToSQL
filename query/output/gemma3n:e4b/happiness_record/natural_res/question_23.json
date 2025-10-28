@@ -1,0 +1,13 @@
+{
+    "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+    "query": "SELECT r.regional_indicator, AVG(whr.life_ladder) AS avg_life_ladder FROM world_happiiness_report AS whr JOIN ( SELECT 'Asia' AS regional_indicator UNION ALL SELECT 'Europe' ) AS r ON whr.regional_indicator = r.regional_indicator GROUP BY r.regional_indicator ORDER BY avg_life_ladder DESC LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: ...tor, AVG(whr.life_ladder) AS avg_life_ladder FROM world_happ...\n                                                             ^\n",
+    "answer": "I'm sorry, but I encountered an issue while trying to access the data needed to compare the life expectancies of Asia and Europe. The system couldn't find a relation called \"world_happiiness_report\". \n\nTherefore, I can't provide a comparison of which region is \"worth living\" based on life ladder data. To answer your question effectively, I would need access to a dataset containing life expectancy information for different regions, specifically Asia and Europe. \n\nIf you can provide a valid dataset or clarify where I might find such data, I'd be happy to analyze it and give you a helpful comparison.",
+    "sql_execution_time": 0.036,
+    "nlp_generation_time": 9.9272,
+    "total_time": 9.9632,
+    "source_file": "question_23.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:36:48"
+}

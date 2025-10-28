@@ -1,0 +1,13 @@
+{
+    "question": "Number of countries have higher economic opportunity than the world",
+    "query": "SELECT COUNT(DISTINCT country_code) FROM global_development_indicators WHERE econ_opportunity_index > ( SELECT econ_opportunity_index FROM global_development_indicators WHERE years_since_2000 = ( SELECT MAX(years_since_2000) FROM global_development_indicators ) );",
+    "raw_results": "Error: more than one row returned by a subquery used as an expression\n",
+    "answer": "I'm sorry, but I encountered an error while processing your request. The query resulted in multiple rows being returned from a subquery, which is not supported. \n\nTherefore, I cannot determine the number of countries with higher economic opportunity than the world based on the provided data.  I need a query that returns a single, unambiguous result to answer your question accurately.",
+    "sql_execution_time": 0.0487,
+    "nlp_generation_time": 18.7587,
+    "total_time": 18.8074,
+    "source_file": "question_21.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:28:19"
+}

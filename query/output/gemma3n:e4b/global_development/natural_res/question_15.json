@@ -1,0 +1,13 @@
+{
+    "question": "How many countries are in lower middle income group as in 2020?",
+    "query": "SELECT COUNT(DISTINCT country_code) FROM global_development_indicators WHERE year = 2020 AND income_group = 'Lower middle income';",
+    "raw_results": "| count |\n| --- |\n| 54 |",
+    "answer": "Based on the data, there were 54 countries classified as lower-middle income in 2020.",
+    "sql_execution_time": 0.0769,
+    "nlp_generation_time": 7.6275,
+    "total_time": 7.7044,
+    "source_file": "question_15.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:26:28"
+}

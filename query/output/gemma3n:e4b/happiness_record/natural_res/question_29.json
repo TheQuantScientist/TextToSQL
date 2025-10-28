@@ -1,0 +1,13 @@
+{
+    "question": "What is the relationship of percptions of corruption and confidence in national government?",
+    "query": "SELECT p.perceptions_of_corruption, c.confidence_in_national_government FROM world_happiiness_report AS p JOIN world_happiiness_report AS c ON p.year = c.year LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: ...ruption, c.confidence_in_national_government FROM world_happ...\n                                                             ^\n",
+    "answer": "The query couldn't be processed due to an error. Specifically, the system couldn't find a table named \"world_happiness_report\". Therefore, I cannot determine the relationship between perceptions of corruption and confidence in the national government based on the provided information. \n\nTo answer your question, I would need data from a source like the World Happiness Report, which often includes measures of both corruption perception and national confidence.",
+    "sql_execution_time": 0.0297,
+    "nlp_generation_time": 7.1164,
+    "total_time": 7.1461,
+    "source_file": "question_29.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:37:38"
+}

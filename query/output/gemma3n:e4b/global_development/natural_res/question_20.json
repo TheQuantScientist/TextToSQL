@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest gdp per capita among lower middle income group?",
+    "query": "SELECT country_name FROM global_development_indicators WHERE income_group = 'Lower middle income' ORDER BY gdp_per_capita DESC LIMIT 1;",
+    "raw_results": "| country_name |\n| --- |\n| São Tomé and Principe |",
+    "answer": "Based on the provided data, **São Tomé and Príncipe** is the only country listed in the lower-middle-income group. Therefore, it has the highest GDP per capita among that group, according to this data.",
+    "sql_execution_time": 0.0537,
+    "nlp_generation_time": 11.778,
+    "total_time": 11.8317,
+    "source_file": "question_20.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:28:00"
+}

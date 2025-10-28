@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average negative affect in 2022? ",
+    "query": "SELECT country_name FROM world_happiness_report WHERE year = 2022 ORDER BY negative_affect DESC LIMIT 1;",
+    "raw_results": "| country_name |\n| --- |\n| Afghanistan |",
+    "answer": "<think>\nOkay, the user is asking which country has the highest average negative affect in 2022. The query results show that Afghanistan is listed as the country with the highest average negative affect. I need to present this information clearly.\n\nFirst, I should confirm that the data from the query is accurate. The result is straightforward: Afghanistan. But maybe I should check if there's any context needed. The user might be interested in why Afghanistan is the case, but since the query doesn't provide additional data like numbers or reasons, I can't elaborate beyond what's given.\n\nI should make sure the response is concise. The user probably wants a direct answer without extra fluff. So, the response should state that Afghanistan has the highest average negative affect according to the data provided. Also, since the question is about 2022, I should mention that the data is specific to that year.\n\nI need to avoid any assumptions or guesses. The answer is based solely on the query results. So, no need to mention other countries or possible factors. Just present the fact from the data. Also, ensure the country name is correctly spelled as per the query result.\n\nFinally, make the response easy to understand, using simple language. No technical jargon. Just a clear statement of the answer.\n</think>\n\nAccording to the data provided, **Afghanistan** has the highest average negative affect in 2022. This conclusion is based on the query results, which explicitly list Afghanistan as the country with the highest value in this metric.",
+    "sql_execution_time": 0.0495,
+    "nlp_generation_time": 18.6761,
+    "total_time": 18.7256,
+    "source_file": "question_19.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen3:4b",
+    "generated_at": "2025-10-28T12:27:58"
+}

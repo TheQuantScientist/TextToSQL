@@ -1,0 +1,13 @@
+{
+    "question": "What is the average Confidence In National Government score of Vietnam over years?",
+    "query": "SELECT AVG(confidence_in_national_government) FROM world_happiiness_report WHERE country_name = 'Vietnam' GROUP BY year LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: ...ELECT AVG(confidence_in_national_government) FROM world_happ...\n                                                             ^\n",
+    "answer": "I'm sorry, but I encountered an issue while trying to retrieve the information you requested. The data source \"world_happiiness_report\" doesn't seem to exist. Therefore, I am unable to calculate the average Confidence In National Government score for Vietnam over the years. \n\nTo help me answer your question, could you please double-check the data source name or provide an alternative data source that contains this information?",
+    "sql_execution_time": 0.0536,
+    "nlp_generation_time": 6.5914,
+    "total_time": 6.645,
+    "source_file": "question_20.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:36:20"
+}

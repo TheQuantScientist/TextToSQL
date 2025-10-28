@@ -1,0 +1,13 @@
+{
+    "question": "What is the average life ladder of Asia countries in 2022?",
+    "query": "SELECT AVG(life_ladder) FROM world_happiiness_report WHERE year = 2022 AND regional_indicator = 'Asia' LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: SELECT AVG(life_ladder) FROM world_happiiness_report WHERE y...\n                                     ^\n",
+    "answer": "I am sorry, but I couldn't find the information you're looking for. The query attempted to retrieve the average life ladder for Asian countries in 2022 from a table named \"world_happiiness_report,\" but this table does not exist in the available data. \n\nTherefore, I cannot provide an answer to your question. It's possible the table name was misspelled, or the data is stored in a different location.",
+    "sql_execution_time": 0.0317,
+    "nlp_generation_time": 6.4378,
+    "total_time": 6.4695,
+    "source_file": "question_12.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:35:20"
+}

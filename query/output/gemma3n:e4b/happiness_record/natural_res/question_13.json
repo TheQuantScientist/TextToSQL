@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average long gdp per capita through years?",
+    "query": "SELECT country_name FROM world_happiiness_report ORDER BY log_GDP_per_capital DESC LIMIT 1;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: SELECT country_name FROM world_happiiness_report ORDER BY lo...\n                                 ^\n",
+    "answer": "I'm sorry, but I encountered an error while trying to retrieve the data. The system couldn't find a relation named \"world_happiiness_report\". This means I don't have the data needed to determine which country has the highest average long GDP per capita. \n\nTherefore, I cannot answer your question at this time. I need access to a dataset containing GDP per capita information for different countries to fulfill your request.",
+    "sql_execution_time": 0.0376,
+    "nlp_generation_time": 6.2459,
+    "total_time": 6.2835,
+    "source_file": "question_13.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:35:27"
+}

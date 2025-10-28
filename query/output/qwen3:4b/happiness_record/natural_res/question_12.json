@@ -1,0 +1,13 @@
+{
+    "question": "What is the average life ladder of Asia countries in 2022?",
+    "query": "SELECT AVG(life_ladder) FROM world_happiness_report WHERE regional_indicator = 'Asia' AND year = 2022 LIMIT 50;",
+    "raw_results": "| avg |\n| --- |\n| None |",
+    "answer": "<think>\nOkay, the user is asking for the average life ladder of Asian countries in 2022. Let me check the query results they provided. The results show a table with a single column \"avg\" and a row with \"None\". Hmm, that's not helpful. Maybe the data source didn't have any data for 2022 or there was an error in retrieving it. I should let the user know that the information isn't available. But wait, maybe I can mention that the data isn't available and suggest checking other sources or maybe the year is different. I need to make sure the response is clear and helpful, even if the answer is that there's no data. Also, the user might be interested in knowing where to find such data, so perhaps I can suggest official sources like the World Happiness Report. But since the query results don't have any data, I should stick to that. Alright, the answer is that the average life ladder for Asian countries in 2022 isn't available in the provided data.\n</think>\n\nThe query results indicate that there is no available data for the average life ladder of Asian countries in 2022. It is possible that the dataset used for this query does not include information for that specific year or region. For the most accurate and up-to-date information, you may need to consult official sources such as the World Happiness Report or other international organizations that track quality of life metrics.",
+    "sql_execution_time": 0.0463,
+    "nlp_generation_time": 17.1666,
+    "total_time": 17.2129,
+    "source_file": "question_12.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen3:4b",
+    "generated_at": "2025-10-28T12:25:28"
+}

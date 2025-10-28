@@ -1,0 +1,13 @@
+{
+    "question": "What is the digital readiness score of South Asia in 2020?",
+    "query": "SELECT digital_readiness_score FROM global_development_indicators WHERE year = 2020 AND country_code IN ('SA');",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Unfortunately, I don't have the data to answer your question about the digital readiness score of South Asia in 2020. My search didn't find any records with that information. \n\nIt's possible this data isn't publicly available, or the query terms used weren't precise enough. \n\nI apologize that I can't provide a direct answer at this time.",
+    "sql_execution_time": 0.0889,
+    "nlp_generation_time": 19.741,
+    "total_time": 19.8299,
+    "source_file": "question_1.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:24:03"
+}

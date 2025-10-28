@@ -1,0 +1,13 @@
+{
+    "question": "What is the human development index score of Vietnam in 2019?",
+    "query": "SELECT human_development_index FROM global_development_indicators WHERE country_name = 'Vietnam' AND EXTRACT(YEAR FROM years_since_2000) = 2019;",
+    "raw_results": "Error: function pg_catalog.extract(unknown, double precision) does not exist\nLINE 1: ...ent_indicators WHERE country_name = 'Vietnam' AND EXTRACT(YE...\n                                                             ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I'm sorry, but I encountered an error while trying to retrieve the Human Development Index (HDI) score for Vietnam in 2019. The error message indicates a problem with a function used to extract the year from the data. \n\nTherefore, I am unable to provide you with the HDI score for Vietnam in 2019 at this time. I recommend checking the data source or trying a different query to resolve this issue.",
+    "sql_execution_time": 0.0342,
+    "nlp_generation_time": 5.5955,
+    "total_time": 5.6297,
+    "source_file": "question_3.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:33:58"
+}

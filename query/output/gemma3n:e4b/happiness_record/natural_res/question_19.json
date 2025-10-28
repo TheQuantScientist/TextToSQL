@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average negative affect in 2022? ",
+    "query": "SELECT country_name FROM world_happiyness_report WHERE year = 2022 ORDER BY negative_affect DESC LIMIT 1;",
+    "raw_results": "Error: relation \"world_happiyness_report\" does not exist\nLINE 1: SELECT country_name FROM world_happiyness_report WHERE year ...\n                                 ^\n",
+    "answer": "I am sorry, but I encountered an error while trying to retrieve the information. The database table \"world_happiyness_report\" does not exist. Therefore, I cannot determine which country had the highest average negative affect in 2022. \n\nTo answer your question, I would need access to a dataset containing world happiness reports with data for different countries and years. This dataset should include a column for \"country_name\", \"year\", and a metric representing \"negative affect\". \n\nIf you can provide the correct table name or the data itself, I would be happy to help!",
+    "sql_execution_time": 0.0432,
+    "nlp_generation_time": 8.5095,
+    "total_time": 8.5527,
+    "source_file": "question_19.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:36:07"
+}

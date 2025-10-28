@@ -1,0 +1,13 @@
+{
+    "question": "What is the life expectancy of Japan in 2020?",
+    "query": "SELECT life_expectancy FROM global_development_indicators WHERE country_name = 'Japan' AND EXTRACT(YEAR FROM years_since_2000) = 2020 LIMIT 1;",
+    "raw_results": "Error: function pg_catalog.extract(unknown, double precision) does not exist\nLINE 1: ...pment_indicators WHERE country_name = 'Japan' AND EXTRACT(YE...\n                                                             ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I'm sorry, but I couldn't determine the life expectancy of Japan in 2020 based on the provided information. The query encountered an error related to a missing function (`extract`). This suggests there might be an issue with the data or the way the query was constructed to retrieve the life expectancy data. \n\nTo get an accurate answer, I would need a query that correctly extracts the year from the data and calculates the life expectancy.",
+    "sql_execution_time": 0.0361,
+    "nlp_generation_time": 5.7766,
+    "total_time": 5.8127,
+    "source_file": "question_6.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:34:40"
+}

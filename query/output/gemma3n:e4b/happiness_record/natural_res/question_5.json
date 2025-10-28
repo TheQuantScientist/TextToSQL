@@ -1,0 +1,13 @@
+{
+    "question": "What is the Healthy Life Expectancy At Birth of Japan in 2020?",
+    "query": "SELECT \"healthy_life_expectaancy_at_birth\" FROM world_happiiness_report WHERE \"country_name\" = 'Japan' AND \"year\" = 2020 LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: SELECT \"healthy_life_expectaancy_at_birth\" FROM world_happii...\n                                                        ^\n",
+    "answer": "I am sorry, but I cannot provide the healthy life expectancy at birth for Japan in 2020. The query results indicate that the database \"world_happiin...\" does not exist or is not accessible. This prevents me from retrieving the necessary data. \n\nTo get this information, you would need to ensure that the correct database is available and that the query is correctly formulated to access the data within that database.  You might need to check the spelling of the database name and the column name (\"healthy_life_expectaancy_at_birth\").",
+    "sql_execution_time": 0.03,
+    "nlp_generation_time": 9.8868,
+    "total_time": 9.9168,
+    "source_file": "question_5.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:38:21"
+}

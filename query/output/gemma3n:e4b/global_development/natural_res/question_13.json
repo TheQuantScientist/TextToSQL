@@ -1,0 +1,13 @@
+{
+    "question": "How many countries has the gdp per capita lower than the world in 2019?",
+    "query": "SELECT COUNT(DISTINCT country_code) FROM global_development_indicators WHERE year = 2019 AND gdp_per_capita < ( SELECT SELECT gdp_per_capita FROM global_development_indicators WHERE year = 2019 );",
+    "raw_results": "Error: syntax error at or near \"SELECT\"\nLINE 1: ...s WHERE year = 2019 AND gdp_per_capita < ( SELECT SELECT gdp...\n                                                             ^\n",
+    "answer": "I'm sorry, but I encountered an error while trying to process your request. The query you provided has a syntax error, specifically around the `SELECT` statement. This prevents me from accurately determining the number of countries with a GDP per capita lower than the world average in 2019. \n\nTo help me answer your question, could you please double-check the query for any typos or syntax errors? I'm happy to assist once the query is corrected.",
+    "sql_execution_time": 0.0714,
+    "nlp_generation_time": 24.7041,
+    "total_time": 24.7755,
+    "source_file": "question_13.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:26:01"
+}

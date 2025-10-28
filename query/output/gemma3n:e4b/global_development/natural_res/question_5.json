@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of Europe region in 2008?",
+    "query": "SELECT unemployment_rate FROM global_development_indicators WHERE year = 2008 AND country_code IN ( SELECT country_code FROM global_development_indicators WHERE region = 'Europe' );",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm sorry, but I couldn't find any information about the unemployment rate for the Europe region in 2008. The query didn't return any results. \n\nIt's possible that the data isn't available in the source I have access to, or the region wasn't specifically categorized that way in the data. \n\nI recommend checking other sources like the Eurostat website or the World Bank for this information.",
+    "sql_execution_time": 0.0343,
+    "nlp_generation_time": 5.3525,
+    "total_time": 5.3868,
+    "source_file": "question_5.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:34:35"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Which region ID has high income inequality? Explain reasons behind it",
+    "query": "SELECT gcam_region_id FROM country_income ORDER BY gini_reported DESC LIMIT 1;",
+    "raw_results": "| gcam_region_id |\n| --- |\n| 12 |",
+    "answer": "Based on the provided data, region ID 12 has high income inequality. \n\nHowever, the data only gives us the region ID. To explain *why* region ID 12 has high income inequality, we'd need more information.  Factors that contribute to income inequality can include:\n\n*   **Lack of economic opportunity:** Limited access to quality education, jobs, and resources.\n*   **Historical factors:** Past discriminatory practices or economic events that created lasting disparities.\n*   **Industry concentration:** A region dominated by high-paying and low-paying industries, leading to a wide gap in earnings.\n*   **Social factors:** Differences in social networks, wealth accumulation, and access to capital.\n\nWithout further data, it's impossible to pinpoint the specific reasons for the income inequality in region ID 12.",
+    "sql_execution_time": 0.0938,
+    "nlp_generation_time": 42.7154,
+    "total_time": 42.8092,
+    "source_file": "question_29.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:16:10"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Which region has the highest average perceptions of corruption?",
+    "query": "SELECT regional_indicator, AVG(perceptions_of_corruption) AS avg_corruption FROM world_happiness_report GROUP BY regional_indicator ORDER BY avg_corruption DESC LIMIT 50;",
+    "raw_results": "| regional_indicator | avg_corruption |\n| --- | --- |\n| Central and Eastern Europe | 0.8709147957385894 |\n| South Asia | 0.807924430197917 |\n| Sub-Saharan Africa | 0.7879775342847385 |\n| Latin America and Caribbean | 0.7845122361838002 |\n| Commonwealth of Independent States | 0.770348861494318 |\n| Middle East and North Africa | 0.7686763339857137 |\n| None | 0.7671247341320756 |\n| Southeast Asia | 0.7384625278959998 |\n| East Asia | 0.7166281647105263 |\n| Western Europe | 0.5585103714208747 |\n| North America and ANZ | 0.4527128221363635 |",
+    "answer": "<think>\nOkay, let's see. The user is asking which region has the highest average perceptions of corruption based on the provided query results. First, I need to look at the data given. The table lists different regions with their corresponding average corruption scores.\n\nLooking at the numbers, the highest value is 0.8709 for Central and Eastern Europe. The next ones are South Asia at 0.8079, then Sub-Saharan Africa at ight 0.788, and so on. The rest of the regions have lower averages. \n\nI should check if there's any possibility of a mistake here. For example, maybe the numbers are in a different scale, but the question doesn't mention anything about that. The user just wants the region with the highest average, so it's straightforward. \n\nSo the answer should be Central and Eastern Europe with the average corruption perception of approximately 0.871. I need to present this clearly, maybe rounding the number for readability. Also, make sure to mention the region and the average value as per the data provided.\n</think>\n\nThe region with the highest average perceptions of corruption is **Central and Eastern Europe**, with an average score of approximately **0.871**. This is the highest value among all the regions listed in the query results.",
+    "sql_execution_time": 0.048,
+    "nlp_generation_time": 17.8631,
+    "total_time": 17.9111,
+    "source_file": "question_18.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen3:4b",
+    "generated_at": "2025-10-28T12:27:39"
+}

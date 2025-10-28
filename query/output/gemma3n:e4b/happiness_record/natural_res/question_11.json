@@ -1,0 +1,13 @@
+{
+    "question": "What is the average positive affect of all countries in 2008?",
+    "query": "SELECT AVG(\"positive_affect\") FROM world_happiiness_report WHERE \"year\" = 2008 LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: SELECT AVG(\"positive_affect\") FROM world_happiiness_report W...\n                                           ^\n",
+    "answer": "I'm sorry, but I couldn't find the information you requested. The query refers to a table named \"world_happiiness_report\", which doesn't seem to exist in the available data. Therefore, I am unable to calculate the average positive affect for all countries in 2008. \n\nIt's possible the table name is misspelled, or the data is not currently accessible.",
+    "sql_execution_time": 0.0368,
+    "nlp_generation_time": 5.9967,
+    "total_time": 6.0335,
+    "source_file": "question_11.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:35:14"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT green_transition_score FROM global_development_indicators WHERE income_group = 'lower middle income' AND CAST(year AS INTEGER) = 2020 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm sorry, but I couldn't find any information about the green transition score for the lower-middle-income group in 2020. The query didn't return any relevant records. \n\nIt's possible that data on this specific metric isn't readily available, or the data source I'm using doesn't include it. \n\nI can try a broader search if you'd like, or perhaps you could clarify your question to see if I can find a more relevant answer.",
+    "sql_execution_time": 0.0449,
+    "nlp_generation_time": 7.2902,
+    "total_time": 7.3351,
+    "source_file": "question_9.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:34:57"
+}

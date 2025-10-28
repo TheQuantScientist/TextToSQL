@@ -1,0 +1,13 @@
+{
+    "question": "What is the economic opportunity index of indebt countries group in 2020?",
+    "query": "SELECT calculated_gdp_per_capita FROM global_development_indicators WHERE year = 2020 AND income_group = 'Low income' AND econ_opportunity_index = ( SELECT MAX(econ_opportunity_index) FROM global_development_indicators WHERE year = 2020 AND income_group = 'Low income' );",
+    "raw_results": "| calculated_gdp_per_capita |\n| --- |\n| 567.6698922616096 |",
+    "answer": "The provided data only includes the calculated GDP per capita, which is 567.67.  It doesn't contain information about an \"economic opportunity index\" specifically for indebted countries in 2020. Therefore, I cannot answer your question with the available data.  \n\nTo determine the economic opportunity index for indebted countries in 2020, I would need a dataset that specifically measures that index, and also identifies which countries are considered \"indebted.\"",
+    "sql_execution_time": 0.0362,
+    "nlp_generation_time": 5.9203,
+    "total_time": 5.9565,
+    "source_file": "question_7.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:34:46"
+}

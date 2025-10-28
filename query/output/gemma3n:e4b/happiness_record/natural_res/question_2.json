@@ -1,0 +1,13 @@
+{
+    "question": "What is the life ladder of Vietnam in 2022?",
+    "query": "SELECT life_ladder FROM world_happieness_report WHERE country_name = 'Vietnam' AND year = 2022 LIMIT 50;",
+    "raw_results": "Error: relation \"world_happieness_report\" does not exist\nLINE 1: SELECT life_ladder FROM world_happieness_report WHERE countr...\n                                ^\n",
+    "answer": "I am sorry, but I cannot provide the life ladder for Vietnam in 2022. The query you provided could not be executed because the database table \"world_happieness_report\" does not exist. This table is likely intended to contain data related to world happiness reports, but it is not available in the current system. \n\nTherefore, I don't have the necessary data to answer your question.",
+    "sql_execution_time": 0.0328,
+    "nlp_generation_time": 6.2969,
+    "total_time": 6.3297,
+    "source_file": "question_2.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:36:13"
+}

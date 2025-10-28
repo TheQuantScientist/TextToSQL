@@ -1,0 +1,13 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "SELECT year, AVG(generosity) AS avg_generosity FROM world_happihess_report WHERE regional_indicator = 'Asia' GROUP BY year ORDER BY year;",
+    "raw_results": "Error: relation \"world_happihess_report\" does not exist\nLINE 1: ...LECT year, AVG(generosity) AS avg_generosity FROM world_happ...\n                                                             ^\n",
+    "answer": "I'm sorry, but I'm unable to answer your question about the trend of generosity in Asian countries over the years. The data source I was provided with (\"world_happihess_report\") doesn't exist, so I cannot access the necessary information. \n\nTherefore, I can't tell you how generosity has changed or provide reasons for those changes. \n\nTo answer your question, I would need access to a dataset that includes information on generosity levels in Asian countries, along with the years for which that data is available. This dataset should ideally include a metric or index representing generosity.",
+    "sql_execution_time": 0.0351,
+    "nlp_generation_time": 9.8993,
+    "total_time": 9.9344,
+    "source_file": "question_28.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:37:31"
+}

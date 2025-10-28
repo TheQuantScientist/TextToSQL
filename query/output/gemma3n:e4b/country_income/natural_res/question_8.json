@@ -1,0 +1,13 @@
+{
+    "question": "All the countries have gini recalculated greater than 0.4 in 2015",
+    "query": "SELECT country FROM country_income WHERE year = 2015 AND gini_recalculated > 0.4 LIMIT 50;",
+    "raw_results": "| country |\n| --- |\n| Angola |\n| Angola |\n| Angola |\n| Angola |\n| Angola |\n| Angola |\n| Angola |\n| Angola |\n| Angola |\n| Angola |\n| Argentina |\n| Argentina |\n| Argentina |\n| Argentina |\n| Argentina |\n| Argentina |\n| Argentina |\n| Argentina |\n| Argentina |\n| Argentina |\n| Burundi |\n| Burundi |\n| Burundi |\n| Burundi |\n| Burundi |\n| Burundi |\n| Burundi |\n| Burundi |\n| Burundi |\n| Burundi |\n| Benin |\n| Benin |\n| Benin |\n| Benin |\n| Benin |\n| Benin |\n| Benin |\n| Benin |\n| Benin |\n| Benin |\n| Bahrain |\n| Bahrain |\n| Bahrain |\n| Bahrain |\n| Bahrain |\n| Bahrain |\n| Bahrain |\n| Bahrain |\n| Bahrain |\n| Bahrain |",
+    "answer": "Yes, based on the provided data, all listed countries (Angola, Argentina, Burundi, Benin, and Bahrain) have a Gini coefficient greater than 0.4 in 2015. The data shows multiple entries for each country, suggesting consistent Gini coefficients above the 0.4 threshold for those nations in that year.",
+    "sql_execution_time": 0.0805,
+    "nlp_generation_time": 24.6808,
+    "total_time": 24.7613,
+    "source_file": "question_8.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:20:08"
+}

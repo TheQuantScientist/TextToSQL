@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+    "query": "SELECT country_name, year, healthy_life_expectaancy_at_birth FROM world_happiiness_report WHERE regional_indicator IN ('Asia', 'Europe', 'North America') ORDER BY year;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: ...ame, year, healthy_life_expectaancy_at_birth FROM world_happ...\n                                                             ^\n",
+    "answer": "I'm sorry, but I encountered an error while trying to analyze the trend of Healthy Life Expectancy at Birth by region (Asia, Europe, North America). The query results indicate that the table \"world_happiiness_report\" does not exist. \n\nTherefore, I cannot provide the requested analysis. To proceed, please ensure that the table name is correct and that the table is accessible in the database.  If the table name is different, please provide the correct name, and I'll be happy to help.",
+    "sql_execution_time": 0.0316,
+    "nlp_generation_time": 8.8328,
+    "total_time": 8.8644,
+    "source_file": "question_26.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:37:12"
+}

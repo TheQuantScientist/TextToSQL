@@ -1,0 +1,13 @@
+{
+    "question": "What is the relationship of percptions of corruption and confidence in national government?",
+    "query": "SELECT CORR(perceptions_of_corruption, confidence_in_national_government) AS correlation FROM world_happiness_report LIMIT 50;",
+    "raw_results": "| correlation |\n| --- |\n| -0.4607889152629436 |",
+    "answer": "<think>\nOkay, the user is asking about the relationship between perceptions of corruption and confidence in the national government. The query result shows a correlation coefficient of -0.4608. Let me think about how to explain this.\n\nFirst, I need to remember what a correlation coefficient means. A negative value indicates an inverse relationship. So as one variable increases, the other tends to decrease. The value is around -0.46, which is a moderate negative correlation. \n\nNow, I should explain this in simple terms. Maybe start by stating that there's a moderate negative correlation. Then, break down what that means: higher perceptions of corruption are associated with lower confidence in the government. It's important to mention that while the correlation is statistically significant, it's not extremely strong. Also, note that correlation doesn't imply causation, so we can't say one causes the other, but there's a relationship. \n\nI should make sure the answer is clear and not too technical. Avoid jargon. Maybe add that this suggests public trust in government may decline when people perceive more corruption. Also, mention that the exact strength is moderate, so there are other factors involved. \n\nCheck if there's any need to mention the source or the context of the data, but since the user didn't provide that, maybe stick to the given info. Keep it concise but thorough. Alright, that should cover it.\n</think>\n\nThe correlation coefficient of **-0.46** indicates a **moderate negative relationship** between perceptions of corruption and confidence in the national government. This means that as perceptions of corruption increase, confidence in the government tends to decrease, and vice versa. However, this correlation does not imply causation—other factors may influence both variables. The relationship is statistically significant but not extremely strong, suggesting a meaningful but not absolute link between the two concepts.",
+    "sql_execution_time": 0.0472,
+    "nlp_generation_time": 23.2471,
+    "total_time": 23.2943,
+    "source_file": "question_29.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "qwen3:4b",
+    "generated_at": "2025-10-28T12:34:31"
+}

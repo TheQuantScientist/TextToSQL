@@ -1,0 +1,13 @@
+{
+    "question": "Is there any correlation between governance quality and digital readiness score of South Asia?",
+    "query": "SELECT correlation FROM ( SELECT CASE WHEN country_code IN ('AFG', 'CHN', 'IND', 'PAK', 'OMA', 'SRI', 'BAN', 'NEP', 'BLR', 'MDD', 'NGA', 'KHM', 'MYS', 'LKA', 'PNG', 'FJI', 'ARM', 'AZR', 'GEO', 'PAK', 'TJK', 'UZB', 'KAZ', 'CMR', 'GMB', 'COD', 'GHA', 'TZA', 'EGY', 'KEN', 'CGD', 'NGA', 'CIV', 'SEN', 'BUR', 'MLI', 'MAW', 'SOM', 'GAB', 'BWA', 'BOT', 'MAD', 'MRT', 'MAU', 'COM', 'TCD', 'LBN', 'SYR', 'IRQ', 'YEM', 'JOR', 'UAE', 'SAU', 'KWR', 'CHN', 'JPN', 'AUS', 'NZL', 'USA', 'CAN', 'GBR', 'FRA', 'DEU', 'ITA', 'ESP', 'POR', 'BEL', 'NLD', 'SWE', 'FIN', 'NOR', 'GRE', 'ROU', 'POL', 'CZE', 'HUN', 'PRT', 'SVK', 'BLR', 'RUS', 'UKR', 'MDA', 'BIH', 'SER', 'ALB', 'MKD', 'BUL', 'EST', 'Lat', 'Lith', 'SAD', 'Iceland', 'Ireland', 'CYP', 'Lux', 'Malta', 'SUI', 'Lie') THEN 1 ELSE 0 END AS is_south_asia, governance_quality_index, digital_readiness_score FROM global_development_indicators ) AS subquery WHERE is_south_asia = 1;",
+    "raw_results": "Error: column \"correlation\" does not exist\nLINE 1: SELECT correlation FROM ( SELECT CASE WHEN country_code IN (...\n               ^\n",
+    "answer": "I'm sorry, but the provided query results don't contain the correlation data needed to determine the relationship between governance quality and digital readiness in South Asia. The query itself seems to be attempting to calculate a correlation, but the results indicate that the \"correlation\" column doesn't exist in the data. \n\nTherefore, I cannot definitively answer whether there's a correlation between these two factors based on the information given. More data or a different query would be needed to address this question.",
+    "sql_execution_time": 0.0784,
+    "nlp_generation_time": 25.0873,
+    "total_time": 25.1657,
+    "source_file": "question_25.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:31:53"
+}

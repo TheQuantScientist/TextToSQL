@@ -1,0 +1,13 @@
+{
+    "question": "What is the average Healthy Life Expectancy At Birth of the world after 2020? ",
+    "query": "SELECT AVG(healthy_life_expectaancy_at_birth) FROM world_happiiness_report WHERE year > 2020 LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: ...ELECT AVG(healthy_life_expectaancy_at_birth) FROM world_happ...\n                                                             ^\n",
+    "answer": "I'm sorry, but I encountered an error while trying to retrieve the information you requested. The query attempted to access a table named \"world_happiiness_report,\" which doesn't seem to exist in the available data. \n\nTherefore, I cannot determine the average healthy life expectancy at birth for the world after 2020.  I need data from a table that contains this information to answer your question.",
+    "sql_execution_time": 0.0554,
+    "nlp_generation_time": 6.0432,
+    "total_time": 6.0986,
+    "source_file": "question_15.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:35:40"
+}

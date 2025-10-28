@@ -1,0 +1,13 @@
+{
+    "question": "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+    "query": "SELECT country_name, log_GDP_per_capital, negative_affect FROM world_happiiness_report WHERE log_GDP_per_capital > 2 LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: ...y_name, log_GDP_per_capital, negative_affect FROM world_happ...\n                                                             ^\n",
+    "answer": "I'm sorry, but I couldn't find the information you're looking for. The query results indicate that the database table \"world_happiness_report\" doesn't exist. This means I don't have the data needed to determine if countries with high GDP per capita have higher negative effects. \n\nTo answer your question, I would need a dataset that includes information on GDP per capita and measures of negative affects (like unhappiness, stress, or other indicators of well-being). \n\nIf you can provide a valid dataset, I'd be happy to analyze it for you and explain the relationship between GDP per capita and negative affects.",
+    "sql_execution_time": 0.0332,
+    "nlp_generation_time": 10.9023,
+    "total_time": 10.9355,
+    "source_file": "question_30.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:37:56"
+}

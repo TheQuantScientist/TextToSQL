@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of US in 2020?",
+    "query": "SELECT unemployment_rate FROM global_development_indicators WHERE country_name = 'United States' AND EXTRACT(YEAR FROM years_since_2000) = 2020;",
+    "raw_results": "Error: function pg_catalog.extract(unknown, double precision) does not exist\nLINE 1: ...dicators WHERE country_name = 'United States' AND EXTRACT(YE...\n                                                             ^\nHINT:  No function matches the given name and argument types. You might need to add explicit type casts.\n",
+    "answer": "I'm sorry, but I'm unable to determine the unemployment rate of the US in 2020 based on the provided information. The query encountered an error related to a missing function (`pg_catalog.extract`). This suggests a problem with how the query was constructed, likely involving date/time extraction. \n\nTherefore, I don't have the data needed to answer your question.",
+    "sql_execution_time": 0.0799,
+    "nlp_generation_time": 20.6089,
+    "total_time": 20.6888,
+    "source_file": "question_10.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:24:24"
+}

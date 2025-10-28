@@ -1,0 +1,13 @@
+{
+    "question": "Does lack of social support lead to higher negative affect over years? ",
+    "query": "SELECT year, social_support, negative_affect FROM world_happiyness_report ORDER BY year;",
+    "raw_results": "Error: relation \"world_happiyness_report\" does not exist\nLINE 1: SELECT year, social_support, negative_affect FROM world_happ...\n                                                          ^\n",
+    "answer": "I'm sorry, but I couldn't find any information about the relationship between social support and negative affect over time in the provided data. The query you asked couldn't be executed because the table \"world_happiyness_report\" doesn't exist in the available data. \n\nTherefore, I cannot definitively answer whether a lack of social support leads to higher negative affect over years based on this data. More data is needed to investigate this relationship.",
+    "sql_execution_time": 0.0361,
+    "nlp_generation_time": 7.7649,
+    "total_time": 7.801,
+    "source_file": "question_25.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:37:03"
+}

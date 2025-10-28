@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of income inequality and gdp per capita of Singapore from 1970 onward.",
+    "query": "SELECT year, gini_reported, gdp_ppp_pc_usd2011 FROM country_income WHERE iso = 'sg' AND year >= 1970 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I'm sorry, but I was unable to find any data on income inequality and GDP per capita trends for Singapore from 1970 onwards. My current data sources do not contain this information. \n\nTherefore, I cannot analyze the trend as you requested. I recommend checking resources like the World Bank, the Singapore Department of Statistics, or academic research databases for this data. These sources are likely to have the information you're looking for.",
+    "sql_execution_time": 0.1016,
+    "nlp_generation_time": 22.7991,
+    "total_time": 22.9007,
+    "source_file": "question_26.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:13:15"
+}

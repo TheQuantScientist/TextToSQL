@@ -1,0 +1,13 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT country_name, economic_opportuntiy_index FROM global_development_indicators WHERE income_group = 'high' LIMIT 50;",
+    "raw_results": "Error: column \"economic_opportuntiy_index\" does not exist\nLINE 1: SELECT country_name, economic_opportuntiy_index FROM global_...\n                             ^\n",
+    "answer": "I'm sorry, but I couldn't find the \"economic_oppopportunity_index\" in the data provided. Therefore, I can't compare the economic opportunity index for high, middle, and low-income groups or the world. \n\nThe query I used to try and get this information encountered an error because that specific column doesn't exist in the dataset. \n\nTo answer your question, I would need a dataset that includes an \"economic_opportunity_index\" column, along with data on income groups (high, middle, low) and global averages.",
+    "sql_execution_time": 0.062,
+    "nlp_generation_time": 7.7517,
+    "total_time": 7.8137,
+    "source_file": "question_28.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:33:47"
+}

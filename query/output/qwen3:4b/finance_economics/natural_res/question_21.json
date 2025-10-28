@@ -1,0 +1,13 @@
+{
+    "question": "Average gold price by year",
+    "query": "SELECT EXTRACT(YEAR FROM date) AS year, AVG(gold_price) AS avg_gold_price FROM finance_economics_dataset GROUP BY EXTRACT(YEAR FROM date) ORDER BY year LIMIT 50;",
+    "raw_results": "| year | avg_gold_price |\n| --- | --- |\n| 2000 | 1694.044398907103 |\n| 2001 | 1648.1325479452048 |\n| 2002 | 1656.9524383561634 |\n| 2003 | 1656.4351780821924 |\n| 2004 | 1677.1759289617473 |\n| 2005 | 1636.0193972602738 |\n| 2006 | 1631.0835616438355 |\n| 2007 | 1644.8666027397253 |\n| 2008 | 1638.6312820512824 |",
+    "answer": "<think>\nOkay, the user is asking for the average gold price by year. Let me look at the query results they provided. There's a table with years from 2000 to 2008 and the corresponding average gold prices. I need to present this information in a clear and concise way.\n\nFirst, I should list each year with its average price. The numbers are in thousands, so maybe I can format them as currency for better readability. Let me check the values: 2000 is 1694.04, then it drops a bit in 2001, rises again in 2002, and fluctuates around that range. I should mention the trend, like the peak in 2000 and the variations over the years. Also, note that the prices vary but generally stay around 1600 to 1700. Make sure to mention that the data is from 2000 to 2008. Keep it natural, no markdown, just a friendly explanation. Let me structure each year's data in a sentence, then summarize the trend at the end.\n</think>\n\nHere’s the average gold price by year based on the data provided:\n\n- **2000**: $1,694.04  \n- **2001**: $1,648.13  \n- **2002**: $1,656.95  \n- **2003**: $1,656.44  \n- **2004**: $1,677.18  \n- **2005**: $1,636.02  \n- **2006**: $1,631.08  \n- **2007**: $1,644.87  \n- **2008**: $1,638.63  \n\nThe prices fluctuated between approximately $1,630 and $1,694 over the period, with the highest average in 2000 and a gradual decline followed by some recovery in later years. Let me know if you'd like further analysis!",
+    "sql_execution_time": 0.0525,
+    "nlp_generation_time": 31.1852,
+    "total_time": 31.2377,
+    "source_file": "question_21.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "qwen3:4b",
+    "generated_at": "2025-10-28T10:14:00"
+}

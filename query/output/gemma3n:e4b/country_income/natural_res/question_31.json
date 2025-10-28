@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the net income gap between low income group d1 to d4, middle income group d5 to d9 and high income group d10 in Vietnam and propose improvement plan",
+    "query": "SELECT income_net FROM country_income WHERE country = 'Vietnam' AND category IN ('d5', 'd6', 'd7', 'd8', 'd9') UNION ALL SELECT income_net FROM country_income WHERE country = 'Vietnam' AND category = 'd10' LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "Okay, I've analyzed the query results. Unfortunately, the query didn't return any data. This means I don't have information on net income for different income groups (d1-d10) in Vietnam. \n\nTherefore, I **cannot** evaluate the net income gap between these groups or propose a specific improvement plan based on data. \n\n**To help me answer your question, I would need access to data containing net income figures for the specified income groups in Vietnam.** \n\nIf you can provide the data, I can:\n\n1.  **Calculate the net income gap** between the low, middle, and high-income groups.\n2.  **Analyze the potential causes** of the income gap.\n3.  **Propose a tailored improvement plan** addressing the identified causes. This plan might include policy recommendations, economic development strategies, or social programs.",
+    "sql_execution_time": 0.1013,
+    "nlp_generation_time": 45.2324,
+    "total_time": 45.3337,
+    "source_file": "question_31.json",
+    "table_name": "country_income",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:18:40"
+}

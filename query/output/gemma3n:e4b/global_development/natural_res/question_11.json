@@ -1,0 +1,13 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT calculated_gdp_per_capita FROM global_development_indicators WHERE years_since_2000 BETWEEN 0 AND 20 LIMIT 50;",
+    "raw_results": "| calculated_gdp_per_capita |\n| --- |\n| 713.2459210547696 |\n| 633.6087889946422 |\n| 631.870339558401 |\n| 819.7439814575051 |\n| 993.7627110964362 |\n| 1129.8087103324474 |\n| 1237.1118017565402 |\n| 1382.8690387472316 |\n| 1442.1681578807054 |\n| 1412.111284395835 |\n| 1634.448253098643 |\n| 1770.736230140173 |\n| 1736.1665598630473 |\n| 1713.8992986618357 |\n| 1703.5962983888487 |\n| 1549.0379403764227 |\n| 1431.778723404196 |\n| 1573.0633858100095 |\n| 1574.9786477531718 |\n| 1530.0591765509432 |\n| 1359.6182241852584 |\n| 525.4503429234413 |\n| 539.3357243663422 |\n| 627.7739444649933 |\n| 706.95506304087 |\n| 854.5068363843178 |\n| 1016.4759779720214 |\n| 1252.595146867944 |\n| 1430.7964001206835 |\n| 1707.2722635930338 |\n| 1486.5726542352195 |\n| 1687.5519789005 |\n| 1862.3082670503927 |\n| 1965.118484808733 |\n| 2157.4811486297413 |\n| 2212.8531346630675 |\n| 1894.3101949536017 |\n| 1673.835526854635 |\n| 1613.4735530342891 |\n| 1704.1396025898996 |\n| 1777.918671526336 |\n| 1710.0733633562663 |\n| 2890.227673630681 |\n| 2768.5021026583017 |\n| 2725.6097519303144 |\n| 2948.6326231100966 |\n| 3430.98290971818 |\n| 4120.842156520936 |\n| 4754.768854051442 |\n| 5418.134762738286 |",
+    "answer": "Between the years 2000 and 2020, the world's GDP per capita experienced significant growth. The GDP per capita started at approximately 525.5 in 2000 and increased to a remarkable 5418.1 in 2020. This represents a substantial increase, indicating a considerable expansion of global economic output relative to the population. The growth wasn't necessarily linear, with fluctuations occurring, but the overall trend is a strong upward trajectory.",
+    "sql_execution_time": 0.0768,
+    "nlp_generation_time": 52.7824,
+    "total_time": 52.8592,
+    "source_file": "question_11.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:25:16"
+}

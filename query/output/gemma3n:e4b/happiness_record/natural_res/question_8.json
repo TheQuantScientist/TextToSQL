@@ -1,0 +1,13 @@
+{
+    "question": "What is the Perceptions Of Corruption of Ecuador in 2008?",
+    "query": "SELECT \"perceptions_of_corruption\" FROM world_happiiness_report WHERE \"country_name\" = 'Ecuador' AND \"year\" = 2008 LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: SELECT \"perceptions_of_corruption\" FROM world_happiiness_rep...\n                                                ^\n",
+    "answer": "I'm sorry, but I couldn't find the information you're looking for. The query you provided referenced a table called \"world_happiiness_rep...\", which appears to be misspelled and doesn't exist in the available data. Therefore, I cannot determine the perceptions of corruption in Ecuador for 2008. \n\nTo help me answer your question, could you please double-check the table name or provide a corrected query?",
+    "sql_execution_time": 0.0345,
+    "nlp_generation_time": 8.1117,
+    "total_time": 8.1462,
+    "source_file": "question_8.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:38:45"
+}

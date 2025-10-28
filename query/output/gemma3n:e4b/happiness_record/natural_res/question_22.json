@@ -1,0 +1,13 @@
+{
+    "question": "Interpret for me the current trend in positive affect of the world from 2008 to 2022?",
+    "query": "SELECT year, AVG(positive_affect) AS avg_positive_affect FROM world_happiyness_report WHERE year BETWEEN 2008 AND 2022 GROUP BY year ORDER BY year;",
+    "raw_results": "Error: relation \"world_happiyness_report\" does not exist\nLINE 1: ... AVG(positive_affect) AS avg_positive_affect FROM world_happ...\n                                                             ^\n",
+    "answer": "I'm sorry, but I encountered an issue while trying to retrieve the data you requested. The system couldn't find a relation named \"world_happiyness_report\". This means the data needed to analyze the trend in positive affect from 2008 to 2022 isn't available in the current dataset. \n\nTherefore, I am unable to interpret the trend for you at this time.  To help me answer your question in the future, please ensure the dataset includes a table named \"world_happiyness_report\" with relevant data.",
+    "sql_execution_time": 0.0513,
+    "nlp_generation_time": 9.2511,
+    "total_time": 9.3024,
+    "source_file": "question_22.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:36:38"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "How differences in Confidence In National Government score comparing all the regions? Evaluate the importance of governance trust on positive affects.",
+    "query": "SELECT reginal_indicator, AVG(confidence_in_national_government) AS avg_confidence, AVG(positive_affect) AS avg_positive_affect FROM world_happiiness_report GROUP BY reginal_indicator ORDER BY reginal_indicator;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: ... AVG(positive_affect) AS avg_positive_affect FROM world_happ...\n                                                             ^\n",
+    "answer": "I am sorry, but I encountered an error while processing your request. The query results indicate that the table \"world_happiness_report\" does not exist. Therefore, I cannot analyze the differences in Confidence in National Government scores across regions or evaluate the importance of governance trust on positive affects. \n\nTo address your question, I would need access to a dataset containing information on national government confidence scores for different regions, along with data on positive affects. \n\nIf you can provide the correct dataset or clarify the table name, I would be happy to assist you further.",
+    "sql_execution_time": 0.0295,
+    "nlp_generation_time": 9.7073,
+    "total_time": 9.7368,
+    "source_file": "question_31.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:38:06"
+}

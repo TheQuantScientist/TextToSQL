@@ -1,0 +1,13 @@
+{
+    "question": "What is the long GDP per capita of China in 2009?",
+    "query": "SELECT log_GDP_per_capital FROM world_happiiness_report WHERE country_name = 'China' AND year = 2009 LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: SELECT log_GDP_per_capital FROM world_happiiness_report WHER...\n                                        ^\n",
+    "answer": "I'm sorry, but I couldn't find the GDP per capita data for China in 2009 in the provided information. The query you used refers to a table named \"world_happiiness_report,\" which doesn't seem to exist. Therefore, I don't have the data to answer your question.  Could you double-check the table name or provide a different data source?",
+    "sql_execution_time": 0.0363,
+    "nlp_generation_time": 7.2774,
+    "total_time": 7.3137,
+    "source_file": "question_3.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:37:45"
+}

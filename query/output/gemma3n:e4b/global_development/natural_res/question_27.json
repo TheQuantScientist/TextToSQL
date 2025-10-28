@@ -1,0 +1,13 @@
+{
+    "question": "What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "SELECT AVG(CASE WHEN income_group IN ('low', 'middle') THEN fdi_pct_gdp END) AS avg_fdi_pct_gdp_low_middle, AVG(CASE WHEN income_group IN ('low', 'middle') THEN real_economic_growt_indicator END) AS avg_real_economic_growt_indicator_low_middle FROM global_development_indicators;",
+    "raw_results": "Error: column \"real_economic_growt_indicator\" does not exist\nLINE 1: ...(CASE WHEN income_group IN ('low', 'middle') THEN real_econo...\n                                                             ^\nHINT:  Perhaps you meant to reference the column \"global_development_indicators.real_economic_growth_indicator\".\n",
+    "answer": "The query couldn't be fully executed due to a missing column (\"real_economic_growt_indicator\"). However, based on the query's intent, it's asking about the relationship between Foreign Direct Investment (FDI) as a percentage of GDP and economic growth, specifically focusing on middle and low-income countries. \n\nUnfortunately, I don't have the data to directly answer this question. The error message suggests the data I'm working with might not have a readily available \"real_economic_growt_indicator\" column. \n\n**To understand the relationship, we'd typically look for:**\n\n*   **Positive Correlation:**  A higher FDI percentage of GDP is often associated with faster economic growth. FDI brings capital, technology, and expertise, which can boost productivity and create jobs.\n*   **Complex Relationship:** The relationship isn't always straightforward. Factors like the quality of institutions, infrastructure, and government policies can influence how effectively FDI translates into growth.  In some cases, excessive FDI can even hinder domestic industries.\n*   **Differences between Income Groups:** The impact of FDI might differ between middle and low-income countries.  In low-income countries, FDI can be crucial for initial development. In middle-income countries, it might be more about upgrading existing industries and fostering innovation.\n\n\n\nTo get a definitive answer, I would need access to a dataset that includes both FDI data (as a percentage of GDP) and a measure of economic growth for middle and low-income countries.  A dataset like the one hinted at in the error message (\"global\\_development\\_indicators.real\\_economic\\_growth\\_indicator\") would be very helpful.",
+    "sql_execution_time": 0.1181,
+    "nlp_generation_time": 23.5132,
+    "total_time": 23.6313,
+    "source_file": "question_27.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:33:39"
+}

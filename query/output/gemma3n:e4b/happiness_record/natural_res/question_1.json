@@ -1,0 +1,13 @@
+{
+    "question": "What is the positive affect of US in 2008?",
+    "query": "SELECT positive_affect FROM world_happi_ness_report WHERE country_name = 'United States' AND year = 2008 LIMIT 50;",
+    "raw_results": "Error: relation \"world_happi_ness_report\" does not exist\nLINE 1: SELECT positive_affect FROM world_happi_ness_report WHERE co...\n                                    ^\n",
+    "answer": "I'm sorry, but I couldn't find information about the positive affect of the US in 2008. The data I have access to doesn't include a table called \"world_happiness_report\". Therefore, I can't answer your question based on the provided data.",
+    "sql_execution_time": 0.0439,
+    "nlp_generation_time": 4.6687,
+    "total_time": 4.7126,
+    "source_file": "question_1.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:35:02"
+}

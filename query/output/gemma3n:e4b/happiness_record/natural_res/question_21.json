@@ -1,0 +1,13 @@
+{
+    "question": "What are the countries having confidence in national goverment higher than world average in 2022?",
+    "query": "SELECT country_name FROM world_happiiness_report WHERE year = 2022 AND confidence_in_national_government > (SELECT AVG(confidence_in_national_government) FROM world_happiiness_report WHERE year = 2022) LIMIT 50;",
+    "raw_results": "Error: relation \"world_happiiness_report\" does not exist\nLINE 1: SELECT country_name FROM world_happiiness_report WHERE year ...\n                                 ^\n",
+    "answer": "I am sorry, but I couldn't find the information you're looking for. The query results indicate that the table \"world_happiiness_report\" does not exist. Therefore, I cannot determine which countries had higher confidence in their national government than the world average in 2022. \n\nTo answer your question, I would need access to a dataset containing data on national government confidence for various countries and years. This data should be stored in a table like \"world_happiiness_report\" or a similar structure.",
+    "sql_execution_time": 0.0427,
+    "nlp_generation_time": 8.84,
+    "total_time": 8.8827,
+    "source_file": "question_21.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:36:29"
+}

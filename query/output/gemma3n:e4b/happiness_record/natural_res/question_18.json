@@ -1,0 +1,13 @@
+{
+    "question": "Which region has the highest average perceptions of corruption?",
+    "query": "SELECT regional_indicator FROM world_happi_ness_report ORDER BY perceptions_of_corruption DESC LIMIT 1;",
+    "raw_results": "Error: relation \"world_happi_ness_report\" does not exist\nLINE 1: SELECT regional_indicator FROM world_happi_ness_report ORDER...\n                                       ^\n",
+    "answer": "I'm sorry, but I encountered an error while trying to retrieve the information you requested. The system doesn't seem to have access to a database named \"world_happi_ness_report\". Therefore, I cannot determine which region has the highest average perceptions of corruption. \n\nTo help me answer your question, could you please double-check the database name or provide the correct data source?",
+    "sql_execution_time": 0.0341,
+    "nlp_generation_time": 5.7565,
+    "total_time": 5.7906,
+    "source_file": "question_18.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "gemma3n:e4b",
+    "generated_at": "2025-10-28T18:35:58"
+}
