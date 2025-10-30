@@ -1,0 +1,13 @@
+{
+    "question": "What is the inflation rate of Vietnam in 2009?",
+    "query": "SELECT inflation_rate FROM global_development_indicators WHERE country_name = 'Vietnam' AND year = 2009 LIMIT 50;",
+    "raw_results": "| inflation_rate |\n| --- |\n| 42.6602509110846 |",
+    "answer": "The inflation rate for Vietnam in 2009 was approximately **42.66 %**.",
+    "sql_execution_time": 0.0467,
+    "nlp_generation_time": 1.7617,
+    "total_time": 1.8084,
+    "source_file": "question_4.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:01"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest health expenditure per capita in 2020?",
+    "query": "SELECT country_name, (gdp_usd * health_expenditure_pct_gdp / 100.0) / NULLIF(population, 0) AS health_expenditure_per_capita_usd FROM global_development_indicators WHERE year = 2020 ORDER BY health_expenditure_per_capita_usd DESC LIMIT 1;",
+    "raw_results": "| country_name | health_expenditure_per_capita_usd |\n| --- | --- |\n| Africa Eastern and Southern | None |",
+    "answer": "Based on the query results you provided, there is no health‑expenditure‑per‑capita data available for any country in 2020—the only entry listed (“Africa Eastern and Southern”) shows a value of **None**. \n\nBecause the dataset does not contain the necessary numeric values, I’m unable to identify which country had the highest health expenditure per capita in 2020. If you can supply a more complete result set (or run the query again to retrieve the actual figures), I’ll be happy to pinpoint the country with the highest per‑capita health spending.",
+    "sql_execution_time": 0.0288,
+    "nlp_generation_time": 2.1212,
+    "total_time": 2.15,
+    "source_file": "question_14.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:12:09"
+}

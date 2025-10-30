@@ -1,0 +1,13 @@
+{
+    "question": "What is the average economic opportunity index of low and indebt countries?",
+    "query": "SELECT AVG(econ_opportunity_index) AS avg_economic_opportunity_index FROM global_development_indicators WHERE income_group = 'Low' LIMIT 50;",
+    "raw_results": "| avg_economic_opportunity_index |\n| --- |\n| None |",
+    "answer": "The query didn’t return any value for the average economic‑opportunity index—its result is `None`. This means that, based on the data available, there isn’t a calculable average for low‑income, indebt countries (or the relevant records are missing). Consequently, we can’t provide a numeric average for that group at this time.",
+    "sql_execution_time": 0.0285,
+    "nlp_generation_time": 1.7925,
+    "total_time": 1.821,
+    "source_file": "question_12.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:12:04"
+}

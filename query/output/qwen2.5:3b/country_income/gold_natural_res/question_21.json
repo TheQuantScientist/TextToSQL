@@ -1,0 +1,13 @@
+{
+    "question": "What is the ratio of net income of d10 to d1 group of Singapore in 2015?",
+    "query": "SELECT MAX(CASE WHEN category = 'd10' THEN income_net END) / NULLIF(MAX(CASE WHEN category = 'd1' THEN income_net END), 0) AS d10_to_d1_ratio FROM country_income WHERE country = 'Singapore' AND year = 2015 LIMIT 50;",
+    "raw_results": "| d10_to_d1_ratio |\n| --- |\n| 25.09598026750884 |",
+    "answer": "The ratio of net income for the **d10** group to the **d1** group in Singapore for 2015 is **approximately 25.1 to 1** (25.09598026750884). In other words, the d10 group’s net income was about 25 times larger than that of the d1 group that year.",
+    "sql_execution_time": 0.0577,
+    "nlp_generation_time": 0.7659,
+    "total_time": 0.8236,
+    "source_file": "question_21.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:06:54"
+}

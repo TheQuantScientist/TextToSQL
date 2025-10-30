@@ -1,0 +1,13 @@
+{
+    "question": "What is the gini recalculated of Vietnam in 2015?",
+    "query": "SELECT gini_recalculated FROM country_income WHERE country = 'Vietnam' AND year = 2015 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but there’s no data available for Vietnam’s “gini recalculated” value in 2015 in the query results you provided. If you have another source or a different dataset, feel free to share it and I can help you interpret the information.",
+    "sql_execution_time": 0.06,
+    "nlp_generation_time": 0.6523,
+    "total_time": 0.7123,
+    "source_file": "question_1.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:06:42"
+}

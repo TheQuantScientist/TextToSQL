@@ -1,0 +1,13 @@
+{
+    "question": "What is the relationship of the FDI percentage of gdp and economic grow in middle and low income group?",
+    "query": "SELECT year, country_name, income_group, fdi_pct_gdp, real_economic_growth_indicator FROM global_development_indicators WHERE income_group IN ('Middle', 'Low') ORDER BY year, country_name LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but the query you ran didn’t return any records, so there’s no data available to describe how foreign‑direct investment (FDI) as a share of GDP relates to economic growth for middle‑ and low‑income countries.\n\nTo explore this relationship you’ll need to:\n\n1. **Verify the data source and filters** – make sure the dataset you’re querying actually contains FDI‑as‑%‑of‑GDP and economic‑growth variables for the income groups you’re interested in.\n2. **Check the time period and country coverage** – sometimes the data are limited to certain years or a subset of countries, which can result in an empty result set.\n3. **Adjust the query** – for example, you might need to:\n   - Select the correct column names (e.g., `fdi_percent_gdp`, `gdp_growth_rate`).\n   - Include the appropriate income‑group filter (`income_group IN ('Middle income', 'Low income')`).\n   - Ensure you’re not inadvertently applying overly restrictive conditions (e.g., a date range with no observations).\n\nIf you can provide a sample of the underlying table schema or a more specific query, I can help you refine it so that the data are returned and we can then analyze the correlation (e.g., using a scatter plot, correlation coefficient, or regression). Let me know how you’d like to proceed!",
+    "sql_execution_time": 0.0395,
+    "nlp_generation_time": 2.3016,
+    "total_time": 2.3411,
+    "source_file": "question_27.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:13:23"
+}

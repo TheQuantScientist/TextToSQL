@@ -1,0 +1,13 @@
+{
+    "question": "What is the average life ladder of Asia countries in 2022?",
+    "query": "SELECT AVG(life_ladder) AS avg_life_ladder FROM world_happiness_report WHERE regional_indicator = 'Asia' AND year = 2022 LIMIT 50;",
+    "raw_results": "| avg_life_ladder |\n| --- |\n| None |",
+    "answer": "The query did not return any value for the average life‑ladder score of Asian countries in 2022—the result shows **None**. This suggests that the data for that metric (or for the selected set of Asian countries) is not available in the dataset you queried. You may want to verify that the life‑ladder values for 2022 are present and that the correct region filter (Asia) is applied, then run the query again. If the data still isn’t returned, it may simply be missing for that year.",
+    "sql_execution_time": 0.0394,
+    "nlp_generation_time": 1.8745,
+    "total_time": 1.9139,
+    "source_file": "question_12.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:21"
+}

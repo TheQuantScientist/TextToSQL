@@ -1,0 +1,13 @@
+{
+    "question": "What are the countries having confidence in national goverment higher than world average in 2022?",
+    "query": "WITH avg_conf AS ( SELECT AVG(confidence_in_national_government) AS avg_conf FROM world_happiness_report WHERE year = 2022 ) SELECT country_name, confidence_in_national_government FROM world_happiness_report, avg_conf WHERE year = 2022 AND confidence_in_national_government > avg_conf ORDER BY confidence_in_national_government DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but the query didn’t return any records, so I don’t have data to identify which countries had confidence in their national government above the world average in 2022. This could mean:\n\n* The dataset you’re querying doesn’t contain confidence‑in‑government values for 2022, or\n* No countries in the dataset meet the “higher than world average” condition for that year, or\n* There was an issue with the query parameters (e.g., a typo in the field name or year).\n\nIf you can double‑check the source data (ensure the confidence‑in‑government metric and the 2022 year are present) or adjust the query criteria, I can run the analysis again and provide the list of countries that exceed the global average. Let me know how you’d like to proceed!",
+    "sql_execution_time": 0.0398,
+    "nlp_generation_time": 2.0947,
+    "total_time": 2.1345,
+    "source_file": "question_21.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:43"
+}

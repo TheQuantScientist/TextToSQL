@@ -1,0 +1,13 @@
+{
+    "question": "Vietnam released economic reformation policy named 'Doi Moi' from 1986 to 2000. Evaluate the effectiveness of the policy based on the gini score trend of the country in 2 phases: Before 1986 and after 1986",
+    "query": "SELECT year, gini_reported, CASE WHEN year < 1986 THEN 'Before 1986' ELSE 'After 1986' END AS phase FROM country_income WHERE country = 'Vietnam' AND year BETWEEN 1970 AND 2005 -- adjust range as needed ORDER BY year LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but the query didn’t return any Gini‑coefficient data for Vietnam, so I don’t have the numbers needed to compare the inequality trend before and after the 1986 Doi Mới reforms.\n\n**What this means for your analysis**\n\n| Phase | Available Gini data? |\n|-------|----------------------|\n| **Before 1986** | No records found |\n| **After 1986**  | No records found |\n\nWithout at least a few data points on either side of 1986, it isn’t possible to:\n\n1. Plot a trend line or calculate the change in inequality.\n2. Quantify whether the policy reduced, increased, or left unchanged income disparity.\n3. Draw a robust conclusion about the policy’s effectiveness on inequality.\n\n**Next steps you might consider**\n\n| Action | Why it helps |\n|--------|--------------|\n| **Check alternative data sources** (World Bank’s World Development Indicators, UNDP Human Development Reports, or the Asian Development Bank) | These repositories often include historical Gini estimates for Vietnam. |\n| **Broaden the time window** (e.g., look for data from the 1970s‑1990s) | Even a single pre‑ and post‑1986 data point can give a rough sense of direction. |\n| **Use proxy indicators** (e.g., poverty headcount ratios, income share of the top 10 % or 20 %) | If Gini isn’t available, other inequality measures can still illustrate trends. |\n| **Consult academic studies** on Doi Mới’s distributional impact | Researchers sometimes reconstruct Gini estimates from household surveys that aren’t in public databases. |\n\nIf you can provide a different dataset or locate the Gini values elsewhere, I’ll be happy to analyze the trend and assess the policy’s impact for you.",
+    "sql_execution_time": 0.058,
+    "nlp_generation_time": 1.4683,
+    "total_time": 1.5263,
+    "source_file": "question_22.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:06:56"
+}

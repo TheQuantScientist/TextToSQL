@@ -1,0 +1,13 @@
+{
+    "question": "What is the green transition score of lower middle income group in 2020?",
+    "query": "SELECT country_name, green_transition_score FROM global_development_indicators WHERE year = 2020 AND income_group = 'Lower middle income' LIMIT 50;",
+    "raw_results": "| country_name | green_transition_score |\n| --- | --- |\n| Micronesia | None |\n| Indonesia | None |\n| Cambodia | None |\n| Kiribati | None |\n| Lao PDR | None |\n| Myanmar | None |\n| Mongolia | None |\n| Philippines | None |\n| Papua New Guinea | None |\n| Solomon Islands | None |\n| Timor-Leste | None |\n| Vietnam | None |\n| Vanuatu | None |\n| Samoa | None |\n| Kyrgyz Republic | None |\n| Tajikistan | None |\n| Ukraine | None |\n| Uzbekistan | None |\n| Bolivia | None |\n| Honduras | None |\n| Haiti | None |\n| Nicaragua | None |\n| El Salvador | None |\n| Djibouti | None |\n| Algeria | None |\n| Egypt | None |\n| Iran | None |\n| Lebanon | None |\n| Morocco | None |\n| West Bank and Gaza | None |\n| Tunisia | None |\n| Bangladesh | None |\n| Bhutan | None |\n| India | None |\n| Sri Lanka | None |\n| Nepal | None |\n| Pakistan | None |\n| Angola | None |\n| Benin | None |\n| Côte d'Ivoire | None |\n| Cameroon | None |\n| Congo | None |\n| Comoros | None |\n| Cabo Verde | None |\n| Ghana | None |\n| Kenya | None |\n| Lesotho | None |\n| Mauritania | None |\n| Nigeria | None |\n| Senegal | None |",
+    "answer": "The data for 2020 shows that none of the lower‑middle‑income countries listed have a reported green‑transition score – every entry is “None.” In other words, the green‑transition score for the lower‑middle‑income group in 2020 is not available in the queried results.",
+    "sql_execution_time": 0.0385,
+    "nlp_generation_time": 4.8625,
+    "total_time": 4.901,
+    "source_file": "question_9.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:13"
+}

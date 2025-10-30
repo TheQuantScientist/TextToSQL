@@ -1,0 +1,13 @@
+{
+    "question": "What is the life ladder of Vietnam in 2022?",
+    "query": "SELECT life_ladder FROM world_happiness_report WHERE country_name = 'Vietnam' AND year = 2022 LIMIT 50;",
+    "raw_results": "| life_ladder |\n| --- |\n| 6.266508579 |",
+    "answer": "In 2022, Vietnam’s **life‑ladder score** was **approximately 6.27** (on the 0‑10 scale used in the World Happiness Report).",
+    "sql_execution_time": 0.0246,
+    "nlp_generation_time": 1.763,
+    "total_time": 1.7876,
+    "source_file": "question_2.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:39"
+}

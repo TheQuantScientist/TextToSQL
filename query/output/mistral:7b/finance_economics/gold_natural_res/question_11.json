@@ -1,0 +1,13 @@
+{
+    "question": "Number of days which the closing price is higher than the open price of Dow Jones, S&P 500, NASDAQ",
+    "query": "SELECT stock_index, COUNT(*) AS days_higher_close_than_open FROM finance_economics_dataset WHERE stock_index IN ('Dow Jones', 'S&P 500', 'NASDAQ') AND close_price > open_price GROUP BY stock_index LIMIT 50;",
+    "raw_results": "| stock_index | days_higher_close_than_open |\n| --- | --- |\n| S&P 500 | 510 |\n| NASDAQ | 474 |\n| Dow Jones | 471 |",
+    "answer": "Out of the period covered by the data, the number of trading days on which the closing price was higher than the opening price was:\n\n- **S&P 500:** **510** days  \n- **NASDAQ:** **474** days  \n- **Dow Jones:** **471** days  \n\nSo the S&P 500 had the most days with a higher close than open, followed by the Dow Jones, and then the NASDAQ.",
+    "sql_execution_time": 0.0414,
+    "nlp_generation_time": 3.0294,
+    "total_time": 3.0708,
+    "source_file": "question_11.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:08:39"
+}

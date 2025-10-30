@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita, population and gini coefficient of Vietnam in 2010?",
+    "query": "SELECT gdp_ppp_pc_usd2011 AS gdp_per_capita, population, gini_reported AS gini_coefficient FROM country_income WHERE country = 'Vietnam' AND year = 2010 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry—I wasn’t able to retrieve any records for Vietnam in 2010, so I don’t have the GDP‑per‑capita, population, or Gini‑coefficient values to share. You may want to double‑check the data source or try a slightly different query (e.g., verify the country name spelling, the year format, or the specific dataset you’re querying). If you can provide an alternative source or more details, I’ll be happy to help extract the numbers for you.",
+    "sql_execution_time": 0.0569,
+    "nlp_generation_time": 1.9505,
+    "total_time": 2.0074,
+    "source_file": "question_9.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:08:31"
+}

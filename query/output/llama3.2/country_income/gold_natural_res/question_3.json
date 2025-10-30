@@ -1,0 +1,13 @@
+{
+    "question": "What is the net income of d1 category of Thailand in 2009?",
+    "query": "SELECT income_net FROM country_income WHERE country = 'Thailand' AND year = 2009 AND category = 'd1' LIMIT 50;",
+    "raw_results": "| income_net |\n| --- |\n| 0.02171368 |",
+    "answer": "The net income for the **d1 category in Thailand for 2009** is **0.02171368** (as reported in the query results).",
+    "sql_execution_time": 0.0567,
+    "nlp_generation_time": 1.8857,
+    "total_time": 1.9424,
+    "source_file": "question_3.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:07:47"
+}

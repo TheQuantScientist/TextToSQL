@@ -1,0 +1,13 @@
+{
+    "question": "The date, gold price, crude oil price and gdp growth where unemployment rate reached the highest",
+    "query": "SELECT date, gold_price, crude_oil_price, gdp_growth FROM finance_economics_dataset WHERE unemployment_rate = ( SELECT MAX(unemployment_rate) FROM finance_economics_dataset ) LIMIT 50;",
+    "raw_results": "| date | gold_price | crude_oil_price | gdp_growth |\n| --- | --- | --- | --- |\n| 2000-08-06 | 1882.94 | 65.23 | -3.09 |",
+    "answer": "The highest unemployment rate in the data occurred on **August 6, 2000**. On that date:\n\n- **Gold price:** $1,882.94 per ounce  \n- **Crude oil price:** $65.23 per barrel  \n- **GDP growth:** ‑3.09 %  \n\nThese figures correspond to the point in time when the unemployment rate peaked.",
+    "sql_execution_time": 0.0432,
+    "nlp_generation_time": 3.0269,
+    "total_time": 3.0701,
+    "source_file": "question_6.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:11:31"
+}

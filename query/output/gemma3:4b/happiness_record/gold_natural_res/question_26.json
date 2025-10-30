@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the trend of Healthy Life Expectancy At Birth by region (Asia, Europe, North America)",
+    "query": "SELECT regional_indicator AS region, year, AVG(healthy_life_expectancy_at_birth) AS avg_healthy_life_expectancy FROM world_happiness_report WHERE regional_indicator IN ('Asia', 'Europe', 'North America') GROUP BY regional_indicator, year ORDER BY regional_indicator, year LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry—I wasn’t able to retrieve any records for Healthy Life Expectancy at birth for the regions you asked about (Asia, Europe, and North America). Because there’s no data returned, I can’t identify a trend or provide a comparison across those regions.\n\nIf you think the data should be available, you might want to:\n\n1. **Verify the source** – make sure the dataset you’re querying actually contains Healthy Life Expectancy figures for those regions.\n2. **Check the field names** – sometimes the column is labeled slightly differently (e.g., “Healthy Life Expectancy at Birth,” “HALE,” or “Healthy Life Expectancy (years)”).\n3. **Adjust the date range or filters** – a very narrow time window or additional filters can sometimes return an empty result set.\n\nFeel free to let me know any additional details (e.g., the exact column name, a broader time span, or a different dataset) and I’ll be happy to run the query again and provide the trend analysis you need.",
+    "sql_execution_time": 0.0439,
+    "nlp_generation_time": 2.206,
+    "total_time": 2.2499,
+    "source_file": "question_26.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:15:08"
+}

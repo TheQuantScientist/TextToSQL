@@ -1,0 +1,13 @@
+{
+    "question": "Ratio of days having negative gdp growth to total days",
+    "query": "SELECT (COUNT(*) FILTER (WHERE gdp_growth < 0)::FLOAT / COUNT(*)) AS negative_gdp_ratio FROM finance_economics_dataset LIMIT 50;",
+    "raw_results": "| negative_gdp_ratio |\n| --- |\n| 0.31566666666666665 |",
+    "answer": "The data shows that **approximately 31.6 %** of the days in the period examined experienced negative GDP growth (ratio = 0.3157). This means roughly one out of every three days had a decline in GDP.",
+    "sql_execution_time": 0.03,
+    "nlp_generation_time": 1.7788,
+    "total_time": 1.8088,
+    "source_file": "question_14.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:08:46"
+}

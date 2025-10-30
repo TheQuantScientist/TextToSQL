@@ -1,0 +1,13 @@
+{
+    "question": "Comparing the life ladder of Asia and Europe to tell me which region is worth to live?",
+    "query": "SELECT regional_indicator, AVG(life_ladder) AS avg_life_ladder FROM world_happiness_report WHERE regional_indicator IN ('Asia', 'Europe') GROUP BY regional_indicator ORDER BY avg_life_ladder DESC LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but the query didn’t return any data, so I don’t have the life‑ladder scores for Asia and Europe to make a direct comparison.\n\nIf you can provide the relevant figures (e.g., average life‑ladder ratings from the World Happiness Report or a similar source), I’ll be happy to analyze them and tell you which region scores higher and what that might mean for quality of life. In the meantime, here are a few general points you might consider when evaluating whether a region is “worth living in”:\n\n| Factor | Why It Matters | Typical Sources |\n|--------|----------------|-----------------|\n| **Life ladder / happiness score** | Reflects overall life satisfaction and well‑being. | World Happiness Report, Gallup World Poll |\n| **Economic indicators** (GDP per capita, employment rates) | Influence income, job opportunities, and standards of living. | World Bank, IMF |\n| **Cost of living** | Determines how far your income will stretch. | Numbeo, Expatistan |\n| **Healthcare quality** | Impacts physical health and longevity. | WHO rankings, OECD Health Statistics |\n| **Education** | Affects personal development and future prospects. | UNESCO, OECD PISA |\n| **Safety & political stability** | Contribute to personal security and peace of mind. | Global Peace Index, Transparency International |\n| **Environmental quality** (air quality, green spaces) | Influences physical health and overall happiness. | IQAir, Environmental Performance Index |\n\nIf you can share the specific life‑ladder numbers (or any other metrics you have in mind), I can quickly compute the averages for each region and give you a concise, data‑driven recommendation. Let me know how you’d like to proceed!",
+    "sql_execution_time": 0.0424,
+    "nlp_generation_time": 2.5046,
+    "total_time": 2.547,
+    "source_file": "question_23.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:50"
+}

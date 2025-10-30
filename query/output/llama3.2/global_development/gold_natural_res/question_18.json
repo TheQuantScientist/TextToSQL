@@ -1,0 +1,13 @@
+{
+    "question": "What is the highest energy per capita score in 2020? In which country",
+    "query": "SELECT country_name, energy_use_per_capita FROM global_development_indicators WHERE year = 2020 ORDER BY energy_use_per_capita DESC LIMIT 1;",
+    "raw_results": "| country_name | energy_use_per_capita |\n| --- | --- |\n| Africa Eastern and Southern | None |",
+    "answer": "Based on the query results you provided, the only entry returned is:\n\n| country_name               | energy_use_per_capita |\n|----------------------------|-----------------------|\n| Africa Eastern and Southern| None                  |\n\nSince the result shows a `None` value for the energy‑use‑per‑capita metric and includes only a regional grouping rather than individual countries, there isn’t enough information to determine:\n\n* **Which country had the highest energy‑per‑capita score in 2020**, or  \n* **What that highest score actually was**.\n\nTo answer the question, you’ll need a more complete dataset that includes:\n\n1. **Individual countries** (not just regions), and  \n2. **Energy use per capita values for the year 2020**.\n\nIf you can run a query that returns the `energy_use_per_capita` column for all countries (or at least the top few) for the year 2020, I’ll be able to identify the country with the highest score and report the exact value. Let me know if you’d like help constructing that query!",
+    "sql_execution_time": 0.0441,
+    "nlp_generation_time": 2.3836,
+    "total_time": 2.4277,
+    "source_file": "question_18.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:12:18"
+}

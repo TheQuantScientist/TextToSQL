@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have gini recalculated lower than the world average in 2015?",
+    "query": "SELECT COUNT(DISTINCT country) AS num_countries FROM country_income ci WHERE ci.year = 2015 AND ci.gini_recalculated < ( SELECT AVG(gini_recalculated) FROM country_income WHERE year = 2015 ) LIMIT 50;",
+    "raw_results": "| num_countries |\n| --- |\n| 92 |",
+    "answer": "In 2015, **92 countries** had a recalculated Gini coefficient that was lower than the world average.",
+    "sql_execution_time": 0.07,
+    "nlp_generation_time": 0.5073,
+    "total_time": 0.5773,
+    "source_file": "question_14.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:06:47"
+}

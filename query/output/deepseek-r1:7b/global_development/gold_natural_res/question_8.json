@@ -1,0 +1,13 @@
+{
+    "question": "What is the gpd per capita of OECD group in 2019?",
+    "query": "SELECT country_name, gdp_per_capita FROM global_development_indicators WHERE year = 2019 AND income_group = 'OECD' LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but the query didn’t return any records for the OECD group’s GDP per capita in 2019. It looks like the data you’re looking for isn’t available in the current dataset (or the query may need to be adjusted). If you can verify the source or modify the query parameters, I can try again.",
+    "sql_execution_time": 0.0324,
+    "nlp_generation_time": 1.8246,
+    "total_time": 1.857,
+    "source_file": "question_8.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:09"
+}

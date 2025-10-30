@@ -1,0 +1,13 @@
+{
+    "question": "The ratio of government debt to consumer spending by year",
+    "query": "SELECT EXTRACT(YEAR FROM date) AS year, AVG(government_debt) / NULLIF(AVG(consumer_spending), 0) AS debt_to_spending_ratio FROM finance_economics_dataset GROUP BY year ORDER BY year LIMIT 50;",
+    "raw_results": "| year | debt_to_spending_ratio |\n| --- | --- |\n| 2000 | 2.154596568133814 |\n| 2001 | 2.002525901529467 |\n| 2002 | 2.055421765024364 |\n| 2003 | 1.9887614455056664 |\n| 2004 | 1.8187212747837473 |\n| 2005 | 2.040143749643478 |\n| 2006 | 2.00006343264106 |\n| 2007 | 2.2175060924570675 |\n| 2008 | 2.101075935355324 |",
+    "answer": "Here’s the government‑debt‑to‑consumer‑spending ratio for each year in the data set:\n\n| Year | Debt ÷ Spending Ratio |\n|------|-----------------------|\n| 2000 | **2.15** |\n| 2001 | **2.00** |\n| 2002 | **2.06** |\n| 2003 | **1.99** |\n| 2004 | **1.82** |\n| 2005 | **2.04** |\n| 2006 | **2.00** |\n| 2007 | **2.22** |\n| 2008 | **2.10** |\n\n**What the numbers mean**  \n- A ratio of **2.0** means that government debt was roughly twice the amount of consumer spending in that year.  \n- The ratio fell to its lowest point in **2004** (about 1.82), indicating debt was relatively smaller compared with consumer spending that year.  \n- It peaked in **2007** (about 2.22), showing debt was a little more than double consumer spending.  \n\nOverall, the ratio hovers around 2.0, with a modest dip in the mid‑2000s and a slight rise toward the end of the period.",
+    "sql_execution_time": 0.0424,
+    "nlp_generation_time": 3.1862,
+    "total_time": 3.2286,
+    "source_file": "question_20.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:09:21"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the total net income of d5 to d9 groups of Vietnam in 2015?",
+    "query": "SELECT SUM(income_net) AS total_net_income FROM country_income WHERE country = 'Vietnam' AND year = 2015 AND category IN ('d5', 'd6', 'd7', 'd8', 'd9') LIMIT 50;",
+    "raw_results": "| total_net_income |\n| --- |\n| None |",
+    "answer": "The query returned **no data** for the total net income of the d5 through d9 groups in Vietnam for 2015 (the result shows `None`). This means that the information you’re looking for isn’t available in the current dataset. You may want to verify that the data source includes those groups for that year, or check if there are any filters or naming conventions that need to be adjusted.",
+    "sql_execution_time": 0.0573,
+    "nlp_generation_time": 0.6973,
+    "total_time": 0.7546,
+    "source_file": "question_16.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:06:48"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Do high long gdp per capita countries have higher negative affects? Explain the results.",
+    "query": "WITH median_gdp AS ( SELECT percentile_cont(0.5) WITHIN GROUP (ORDER BY log_GDP_per_capital) AS med FROM world_happiness_report ) SELECT CASE",
+    "raw_results": "Error: syntax error at end of input\nLINE 1: ...er_capital) AS med FROM world_happiness_report ) SELECT CASE\n                                                                       ^\n",
+    "answer": "I’m sorry, but the query you ran didn’t return any data—it produced a syntax‑error message instead of a result set. Because there’s no output to examine, I can’t tell whether countries with higher long‑term GDP per capita tend to report higher (or lower) negative affect scores.\n\n**What you can do next**\n\n1. **Check the SQL syntax** – the error points to the end of the statement, so something is likely missing (e.g., a closing parenthesis, a `FROM` clause, or a semicolon).  \n2. **Run a simplified version first** – for example, retrieve just the GDP per capita and negative‑affect columns for a few rows to confirm the column names and table structure:\n\n   ```sql\n   SELECT country,\n          gdp_per_capita,\n          negative_affect\n   FROM world_happiness_report\n   LIMIT 10;\n   ```\n\n3. **Then compute the relationship** – once you have the correct columns, you can calculate a correlation or compare groups (e.g., “high” vs. “low” GDP per capita) to see how negative affect varies:\n\n   ```sql\n   -- Example: correlation\n   SELECT CORR(gdp_per_capita, negative_affect) AS corr_gdp_negative\n   FROM world_happiness_report;\n   ```\n\n   or\n\n   ```sql\n   -- Example: average negative affect by GDP quartile\n   WITH ranked AS (\n       SELECT *,\n              NTILE(4) OVER (ORDER BY gdp_per_capita) AS gdp_quartile\n       FROM world_happiness_report\n   )\n   SELECT gdp_quartile,\n          AVG(negative_affect) AS avg_negative_affect\n   FROM ranked\n   GROUP BY gdp_quartile\n   ORDER BY gdp_quartile;\n   ```\n\n4. **Interpret the output** – a positive correlation (close to +1) would suggest that higher GDP per capita is associated with higher negative affect, while a negative correlation (close to ‑1) would indicate the opposite. Comparing averages across GDP quartiles",
+    "sql_execution_time": 0.0392,
+    "nlp_generation_time": 2.8217,
+    "total_time": 2.8609,
+    "source_file": "question_30.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:15:29"
+}

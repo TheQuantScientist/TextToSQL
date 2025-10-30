@@ -1,0 +1,13 @@
+{
+    "question": "To what extent has the world's GDP per capita grown between 2000 and 2020?",
+    "query": "SELECT (AVG(CASE WHEN year = 2020 THEN gdp_per_capita END) - AVG(CASE WHEN year = 2000 THEN gdp_per_capita END)) / NULLIF(AVG(CASE WHEN year = 2000 THEN gdp_per_capita END), 0) * 100 AS gdp_per_capita_growth_pct FROM global_development_indicators WHERE year IN (2000, 2020) LIMIT 50;",
+    "raw_results": "| gdp_per_capita_growth_pct |\n| --- |\n| 87.76890787481939 |",
+    "answer": "The data show that global GDP per capita rose by **about 87.8 %** between the year 2000 and the year 2020. In other words, the average income per person worldwide almost doubled over those two decades.",
+    "sql_execution_time": 0.0423,
+    "nlp_generation_time": 1.8467,
+    "total_time": 1.889,
+    "source_file": "question_11.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:12:02"
+}

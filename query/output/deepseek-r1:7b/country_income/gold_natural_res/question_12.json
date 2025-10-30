@@ -1,0 +1,13 @@
+{
+    "question": "Top 5 country that have highest gini recalulated in 2015",
+    "query": "SELECT DISTINCT country, iso, gini_recalculated FROM country_income WHERE year = 2015 ORDER BY gini_recalculated DESC LIMIT 5;",
+    "raw_results": "| country | iso | gini_recalculated |\n| --- | --- | --- |\n| Romania | rou | None |\n| South Africa | zaf | 0.6496464 |\n| Botswana | bwa | 0.6012294 |\n| Namibia | nam | 0.6003929 |\n| Bahrain | bhr | 0.594581 |",
+    "answer": "Based on the 2015 data, the five countries with the highest recalculated Gini coefficients are:\n\n| Rank | Country       | Gini (recalculated) |\n|------|---------------|---------------------|\n| 1    | South Africa  | 0.6496 |\n| 2    | Botswana      | 0.6012 |\n| 3    | Namibia       | 0.6004 |\n| 4    | Bahrain       | 0.5946 |\n| 5    | Romania       | data not available (‑) |\n\nSouth Africa leads the list with a Gini of roughly **0.65**, indicating the greatest income inequality among the countries shown. Botswana, Namibia, and Bahrain follow with Gini values just above 0.59. Romania is included in the top‑5 set, but its Gini figure is missing from the dataset.",
+    "sql_execution_time": 0.0557,
+    "nlp_generation_time": 1.1744,
+    "total_time": 1.2301,
+    "source_file": "question_12.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:06:45"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the past performance of all the asset types, stock, commodity, real estate, forex and propose which type of asset is worth to invest in based on investors' risk apetite",
+    "query": "",
+    "raw_results": "Error: No query provided",
+    "answer": "I’m sorry—I don’t have any query results to work from, so I can’t provide a data‑driven analysis of how stocks, commodities, real‑estate, and forex have performed historically.\n\nIf you can share the relevant performance data (e.g., returns, volatility, drawdowns, or any other metrics for each asset class over the period you’re interested in), I’ll be able to:\n\n1. Summarize the past performance of each asset type.  \n2. Compare their risk‑adjusted returns.  \n3. Recommend which asset class aligns best with different risk appetites (conservative, moderate, aggressive).\n\nJust paste the query output or the dataset, and I’ll turn it into a clear, actionable recommendation.",
+    "sql_execution_time": 0.0,
+    "nlp_generation_time": 2.0893,
+    "total_time": 2.0893,
+    "source_file": "question_25.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:10:27"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "What is the digital readiness score of South Asia in 2020?",
+    "query": "SELECT country_name, digital_readiness_score FROM global_development_indicators WHERE region = 'South Asia' AND year = 2020 LIMIT 50;",
+    "raw_results": "| country_name | digital_readiness_score |\n| --- | --- |\n| Afghanistan | 0.1941860394666666 |\n| Bangladesh | 0.3443588953333333 |\n| Bhutan | 0.3218979066999999 |\n| India | 0.2786729869666666 |\n| Sri Lanka | 0.637804827 |\n| Maldives | 0.4425837673333333 |\n| Nepal | 0.0 |\n| Pakistan | 0.2650225656 |",
+    "answer": "The digital‑readiness scores for the South Asian countries in 2020 are:\n\n- Afghanistan : 0.194  \n- Bangladesh : 0.344  \n- Bhutan : 0.322  \n- India : 0.279  \n- Sri Lanka : 0.638  \n- Maldives : 0.443  \n- Nepal : 0.000  \n- Pakistan : 0.265  \n\nAveraging these eight values gives the regional score:\n\n\\[\n\\text{South Asia digital‑readiness score} = \\frac{0.194 + 0.344 + 0.322 + 0.279 + 0.638 + 0.443 + 0.000 + 0.265}{",
+    "sql_execution_time": 0.0419,
+    "nlp_generation_time": 3.6429,
+    "total_time": 3.6848,
+    "source_file": "question_1.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:11:58"
+}

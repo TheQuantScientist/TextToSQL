@@ -1,0 +1,13 @@
+{
+    "question": "The date where trading volumne is the largest",
+    "query": "SELECT date, trading_volume FROM finance_economics_dataset ORDER BY trading_volume DESC LIMIT 1;",
+    "raw_results": "| date | trading_volume |\n| --- | --- |\n| 2001-10-03 | 999977078 |",
+    "answer": "The highest trading volume occurred on **October 3, 2001**, with a volume of **999,977,078**.",
+    "sql_execution_time": 0.0419,
+    "nlp_generation_time": 2.2935,
+    "total_time": 2.3354,
+    "source_file": "question_8.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:11:44"
+}

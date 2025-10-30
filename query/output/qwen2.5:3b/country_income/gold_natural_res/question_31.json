@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the net income gap between low income group d1 to d4, middle income group d5 to d9 and high income group d10 in Vietnam and propose improvement plan",
+    "query": "SELECT year, SUM(CASE WHEN category IN ('d1','d2','",
+    "raw_results": "Error: unterminated quoted string at or near \"'\"\nLINE 1: SELECT year, SUM(CASE WHEN category IN ('d1','d2','\n                                                          ^\n",
+    "answer": "**What the error means**\n\nThe query you tried to run returned a SQL syntax error:\n\n```\nError: unterminated quoted string at or near \"'\"\nLINE 1: SELECT year, SUM(CASE WHEN category IN ('d1','d2','...\n```\n\nIn plain language, the database engine saw a quotation mark (`'`) that was never closed, so it could not parse the statement. Because the query never executed, we don’t have any actual numbers for the net‑income totals of the three income groups (low = d1‑d4, middle = d5‑d9, high = d10) in Vietnam.\n\n---\n\n## How to get the data you need\n\n1. **Fix the SQL syntax** – make sure every opening quote has a matching closing quote and that the list of categories is correctly delimited. A working version might look like:\n\n   ```sql\n   SELECT\n       year,\n       SUM(CASE WHEN category IN ('d1','d2','d3','d4') THEN net_income ELSE 0 END) AS low_income,\n       SUM(CASE WHEN category IN ('d5','d6','d7','d8','d9') THEN net_income ELSE 0 END) AS middle_income,\n       SUM(CASE WHEN category = 'd10' THEN net_income ELSE 0 END) AS high_income\n   FROM vietnam_income\n   WHERE year BETWEEN 2015 AND 2024   -- adjust the period you need\n   GROUP BY year\n   ORDER BY year;\n   ```\n\n2. **Run the query** and capture the result set. You should end up with a table like:\n\n   | year | low_income | middle_income | high_income |\n   |------|------------|---------------|-------------|\n   | 2015 | 12",
+    "sql_execution_time": 0.068,
+    "nlp_generation_time": 3.5748,
+    "total_time": 3.6428,
+    "source_file": "question_31.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:08:09"
+}

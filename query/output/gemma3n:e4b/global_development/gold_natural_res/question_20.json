@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest gdp per capita among lower middle income group?",
+    "query": "SELECT country_name, gdp_per_capita FROM global_development_indicators WHERE income_group = 'Lower middle income' ORDER BY gdp_per_capita DESC LIMIT 1;",
+    "raw_results": "| country_name | gdp_per_capita |\n| --- | --- |\n| São Tomé and Principe | None |",
+    "answer": "Based on the query results, the only lower‑middle‑income country listed is **São Tomé and Principe**, but its GDP‑per‑capita value is missing (`None`). Because the dataset does not provide any GDP‑per‑capita figures for the lower‑middle‑income group, we cannot determine which country has the highest GDP per capita among them. Additional data would be needed to answer this question.",
+    "sql_execution_time": 0.0428,
+    "nlp_generation_time": 2.891,
+    "total_time": 2.9338,
+    "source_file": "question_20.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:12:26"
+}

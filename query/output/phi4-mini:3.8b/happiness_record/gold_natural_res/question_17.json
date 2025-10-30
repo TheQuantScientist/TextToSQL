@@ -1,0 +1,13 @@
+{
+    "question": "How many countries have higher average generiosity over years compared to the world' average?",
+    "query": "SELECT COUNT(*) AS num_countries FROM ( SELECT country_name, AVG(generosity) AS avg_gen FROM world_happiness_report GROUP BY country_name ) AS country_avg WHERE country_avg.avg_gen > ( SELECT AVG(generosity) FROM world_happiness_report ) LIMIT 50;",
+    "raw_results": "| num_countries |\n| --- |\n| 75 |",
+    "answer": "Based on the query results, **75 countries** have an average level of generosity over the years that is higher than the world’s overall average.",
+    "sql_execution_time": 0.0419,
+    "nlp_generation_time": 1.7452,
+    "total_time": 1.7871,
+    "source_file": "question_17.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:33"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Recommend asset classes to invest when the USD currency is appreciated, and when it is depreciated",
+    "query": "",
+    "raw_results": "Error: No query provided",
+    "answer": "**What to hold when the U.S. dollar is strong (appreciated)**  \n\n| Asset class | Why it tends to do well | Typical examples |\n|-------------|------------------------|------------------|\n| **U.S. equities** (especially large‑cap, dividend‑paying firms) | Earnings are already in dollars, so a strong USD does not erode profit margins. Many of these companies also benefit from cheaper imported inputs. | S&P 500, Dow Jones Industrial Average, dividend‑focused ETFs (e.g., VIG, SCHD) |\n| **U.S. Treasury securities** (short‑ to intermediate‑term) | A strong dollar often reflects higher U.S. interest rates or a “flight‑to‑quality” environment, which supports Treasury prices. | 2‑yr, 5‑yr, 10‑yr Treasury notes, Treasury‑inflation‑protected securities (TIPS) for modest inflation protection |\n| **U.S. real estate** (REITs) | Rental income and property values are denominated in dollars, so cash‑flow stability is preserved. | Residential & office REITs (e.g., VNQ, PLD) |\n| **Cash & short‑term money‑market funds** | Preserves purchasing power when the dollar is buying more abroad",
+    "sql_execution_time": 0.0001,
+    "nlp_generation_time": 2.6471,
+    "total_time": 2.6472,
+    "source_file": "question_30.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:11:24"
+}

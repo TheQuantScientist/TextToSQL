@@ -1,0 +1,13 @@
+{
+    "question": "The gold price, crude oil price, real estate index of Jan 1, 2008",
+    "query": "SELECT gold_price, crude_oil_price, real_estate_index FROM finance_economics_dataset WHERE date = DATE '2008-01-01' LIMIT 50;",
+    "raw_results": "| gold_price | crude_oil_price | real_estate_index |\n| --- | --- | --- |\n| 1749.11 | 41.3 | 182.0 |",
+    "answer": "On January 1, 2008:\n\n- **Gold price:** $1,749.11 per ounce  \n- **Crude oil price:** $41.30 per barrel  \n- **Real‑estate index:** 182.0 (index points)  \n\nThese values come directly from the query results you provided.",
+    "sql_execution_time": 0.0272,
+    "nlp_generation_time": 2.9221,
+    "total_time": 2.9493,
+    "source_file": "question_3.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:11:21"
+}

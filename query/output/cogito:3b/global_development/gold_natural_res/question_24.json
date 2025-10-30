@@ -1,0 +1,13 @@
+{
+    "question": "Evaluate the differences in digital readiness of South Asia compared to Europe region",
+    "query": "SELECT region, AVG(digital_readiness_score) AS avg_digital_readiness_score FROM global_development_indicators WHERE region IN ('South Asia', 'Europe') GROUP BY region ORDER BY avg_digital_readiness_score DESC LIMIT 50;",
+    "raw_results": "| region | avg_digital_readiness_score |\n| --- | --- |\n| South Asia | 0.2282070002005358 |",
+    "answer": "**Answer**\n\nBased on the data you provided, the average digital‑readiness score for **South Asia** is **0.228** (rounded to three decimal places).\n\nTo evaluate how South Asia’s digital readiness compares to the **Europe** region, we would need the corresponding average digital‑readiness score for Europe. Since that figure isn’t included in the query results, we can’t calculate the exact difference or make a direct comparison at this time.\n\n**What you can do next**\n\n1. **Run a similar query for Europe** (e.g., `SELECT region, AVG(digital_readiness_score) FROM your_table WHERE region = 'Europe'`).  \n2. Once you have Europe’s average score, subtract South Asia’s score (0.228) from it to see whether Europe is higher or lower, and by how much.  \n3. You can then express the gap as an absolute difference (e.g., “Europe’s score is 0.15 points higher”) or as a percentage relative to South Asia’s score.\n\nIf you retrieve the Europe figure, feel free to share it and I’ll gladly compute the comparison for you.",
+    "sql_execution_time": 0.0324,
+    "nlp_generation_time": 3.1462,
+    "total_time": 3.1786,
+    "source_file": "question_24.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:12:56"
+}

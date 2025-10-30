@@ -1,0 +1,13 @@
+{
+    "question": "What is the negative affect of Japan in 2022?",
+    "query": "SELECT negative_affect FROM world_happiness_report WHERE country_name = 'Japan' AND year = 2022 LIMIT 50;",
+    "raw_results": "| negative_affect |\n| --- |\n| 0.164663047 |",
+    "answer": "In 2022, Japan’s measured **negative affect** was **0.1647** (about 0.165 on the scale used).",
+    "sql_execution_time": 0.0428,
+    "nlp_generation_time": 1.7624,
+    "total_time": 1.8052,
+    "source_file": "question_9.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:15:47"
+}

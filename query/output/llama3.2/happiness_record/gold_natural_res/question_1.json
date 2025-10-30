@@ -1,0 +1,13 @@
+{
+    "question": "What is the positive affect of US in 2008?",
+    "query": "SELECT positive_affect FROM world_happiness_report WHERE country_name = 'US' AND year = 2008 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but there’s no data available for the “positive affect” of the United States in 2008 in the results you provided. It looks like the query returned no records. You may want to double‑check the query parameters (e.g., the country name, year, or variable name) or ensure that the dataset includes that information. If you can provide a corrected query or additional details, I’ll be happy to help retrieve the answer.",
+    "sql_execution_time": 0.0455,
+    "nlp_generation_time": 1.8561,
+    "total_time": 1.9016,
+    "source_file": "question_1.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:15"
+}

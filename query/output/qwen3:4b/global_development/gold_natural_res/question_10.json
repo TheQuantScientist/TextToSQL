@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of US in 2020?",
+    "query": "SELECT unemployment_rate FROM global_development_indicators WHERE country_name = 'United States' AND year = 2020 LIMIT 50;",
+    "raw_results": "| unemployment_rate |\n| --- |\n| 1.23358439630637 |",
+    "answer": "The query shows that the unemployment rate for the United States in 2020 was **about 1.23** (approximately 1.23 %).",
+    "sql_execution_time": 0.032,
+    "nlp_generation_time": 1.9174,
+    "total_time": 1.9494,
+    "source_file": "question_10.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:12:00"
+}

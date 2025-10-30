@@ -1,0 +1,13 @@
+{
+    "question": "The consumer confidence index of 24 December, 2007",
+    "query": "SELECT date, consumer_confidence_index FROM finance_economics_dataset WHERE date = DATE '2007-12-24' LIMIT 50;",
+    "raw_results": "| date | consumer_confidence_index |\n| --- | --- |\n| 2007-12-24 | 77.0 |",
+    "answer": "On December 24 2007, the consumer confidence index was **77.0**.",
+    "sql_execution_time": 0.0421,
+    "nlp_generation_time": 1.6718,
+    "total_time": 1.7139,
+    "source_file": "question_4.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:11:26"
+}

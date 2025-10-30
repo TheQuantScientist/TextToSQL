@@ -1,0 +1,13 @@
+{
+    "question": "The average bankruptcy rate and M&A deals by year",
+    "query": "SELECT EXTRACT(YEAR FROM date) AS year, AVG(bankruptcy_rate) AS avg_bankruptcy_rate, AVG(mergers_acquisitions_deals) AS avg_ma_deals FROM finance_economics_dataset GROUP BY year ORDER BY year LIMIT 50;",
+    "raw_results": "| year | avg_bankruptcy_rate | avg_ma_deals |\n| --- | --- | --- |\n| 2000 | 5.074398907103824 | 23.6420765027322404 |\n| 2001 | 5.070191780821918 | 25.7041095890410959 |\n| 2002 | 4.807342465753427 | 24.7205479452054795 |\n| 2003 | 5.06980821917808 | 25.1589041095890411 |\n| 2004 | 4.8014480874316945 | 25.2322404371584699 |\n| 2005 | 5.138712328767126 | 24.1260273972602740 |\n| 2006 | 5.028520547945206 | 23.9561643835616438 |\n| 2007 | 5.010630136986296 | 24.8328767123287671 |\n| 2008 | 5.281794871794874 | 21.8717948717948718 |",
+    "answer": "Here’s the yearly snapshot of the two metrics you asked about:\n\n| Year | Average bankruptcy rate (per % of firms) | Average number of M&A deals |\n|------|------------------------------------------|-----------------------------|\n| 2000 | **5.07 %** | **23.64** |\n| 2001 | **5.07 %** | **25.70** |\n| 2002 | **4.81 %** | **24.72** |\n| 2003 | **5.07 %** | **25.16** |\n| 2004 | **4.80 %** | **25.23** |\n| 2005 | **5.14 %** | **24.13** |\n| 2006 | **5.03 %** | **23.96** |\n| 2007 | **5.01 %** | **24.83** |\n| 2008 | **5.28 %** | **21.87** |\n\n**What the numbers show**\n\n* **Bankruptcy rate:** The average rate hovers around 5 % each year, with a slight dip in 2002–2004 (just under 5 %) and a modest rise in 2005 and again in 2008 (just above 5 %).  \n* **M&A activity:** The average number of deals stays in the mid‑20s, peaking around 25 deals per year (2001, 2003‑2004). 2008 sees a noticeable drop to about 22 deals, likely reflecting the impact of the global financial crisis.\n\nIn short, from 2000 through 2008 the bankruptcy rate remained relatively stable near 5 %, while M&A activity was fairly consistent around 24‑25 deals per year, with a dip in 2008.",
+    "sql_execution_time": 0.0368,
+    "nlp_generation_time": 4.5369,
+    "total_time": 4.5737,
+    "source_file": "question_15.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:08:51"
+}

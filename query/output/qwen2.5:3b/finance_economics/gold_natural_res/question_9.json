@@ -1,0 +1,13 @@
+{
+    "question": "The date, consumer confidence index, consumer spending where the bankruptcy rate is highest",
+    "query": "SELECT date, consumer_confidence_index, consumer_spending FROM finance_economics_dataset ORDER BY bankruptcy_rate DESC LIMIT 50;",
+    "raw_results": "| date | consumer_confidence_index | consumer_spending |\n| --- | --- | --- |\n| 2004-12-29 | 63.0 | 10299.0 |\n| 2000-04-13 | 52.0 | 12595.0 |\n| 2002-10-08 | 115.0 | 2535.0 |\n| 2003-08-25 | 70.0 | 6065.0 |\n| 2002-03-15 | 103.0 | 4466.0 |\n| 2005-09-22 | 98.0 | 8485.0 |\n| 2002-06-26 | 111.0 | 14601.0 |\n| 2005-08-19 | 85.0 | 8820.0 |\n| 2003-05-13 | 78.0 | 1387.0 |\n| 2000-08-25 | 81.0 | 2906.0 |\n| 2007-07-29 | 72.0 | 10143.0 |\n| 2005-01-09 | 53.0 | 7715.0 |\n| 2003-03-05 | 53.0 | 4303.0 |\n| 2007-01-05 | 79.0 | 8591.0 |\n| 2004-09-02 | 69.0 | 750.0 |\n| 2000-09-02 | 87.0 | 14679.0 |\n| 2007-03-03 | 92.0 | 6655.0 |\n| 2007-03-17 | 106.0 | 7268.0 |\n| 2004-09-24 | 52.0 | 8231.0 |\n| 2000-06-20 | 109.0 | 9616.0 |\n| 2002-11-22 | 64.0 | 7793.0 |\n| 2003-06-16 | 73.0 | 12617.0 |\n| 2003-09-29 | 50.0 | 13147.0 |\n| 2000-02-24 | 86.0 | 5108.0 |\n| 2003-03-25 | 83.0 | 13809.0 |\n| 2003-07-25 | 80.0 | 10400.0 |\n| 2000-04-12 | 73.0 | 4261.0 |\n| 2003-11-19 | 93.0 | 14751.0 |\n| 2000-10-19 | 113.0 | 2852.0 |\n| 2003-10-24 | 64.0 | 9232.0 |\n| 2003-12-29 | 90.0 | 11333.0 |\n| 2007-11-10 | 119.0 | 2983.0 |\n| 2003-07-05 | 96.0 | 13009.0 |\n| 2004-08-08 | 69.0 | 11514.0 |\n| 2001-01-23 | 79.0 | 13798.0 |\n| 2006-01-27 | 78.0 | 14936.0 |\n| 2006-10-29 | 94.0 | 1382.0 |\n| 2002-11-13 | 52.0 | 1782.0 |\n| 2000-02-11 | 52.0 | 3953.0 |\n| 2003-12-20 | 65.0 | 11131.0 |\n| 2007-09-24 | 66.0 | 3530.0 |\n| 2003-12-04 | 66.0 | 1050.0 |\n| 2002-05-11 | 94.0 | 3898.0 |\n| 2001-07-12 | 51.0 | 4426.0 |\n| 2000-03-31 | 114.0 | 10542.0 |\n| 2002-10-06 | 94.0 | 12789.0 |\n| 2000-11-19 | 52.0 | 12061.0 |\n| 2004-05-22 | 104.0 | 7713.0 |\n| 2003-11-22 | 102.0 | 3137.0 |\n| 2001-11-10 | 70.0 | 12086.0 |",
+    "answer": "The record that corresponds to the highest bankruptcy‑rate observation is:\n\n- **Date:** December 29 2004  \n- **Consumer Confidence Index:** 63.0  \n- **Consumer Spending:** 10,299.0  \n\nThese three values come directly from the first row of the query results, which is assumed to represent the point where the bankruptcy rate was at its peak.",
+    "sql_execution_time": 0.0414,
+    "nlp_generation_time": 10.2675,
+    "total_time": 10.3089,
+    "source_file": "question_9.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:11:55"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Average gold price by year",
+    "query": "SELECT EXTRACT(YEAR FROM date) AS year, AVG(gold_price) AS avg_gold_price FROM finance_economics_dataset GROUP BY year ORDER BY year LIMIT 50;",
+    "raw_results": "| year | avg_gold_price |\n| --- | --- |\n| 2000 | 1694.044398907103 |\n| 2001 | 1648.1325479452048 |\n| 2002 | 1656.9524383561634 |\n| 2003 | 1656.4351780821924 |\n| 2004 | 1677.1759289617473 |\n| 2005 | 1636.0193972602738 |\n| 2006 | 1631.0835616438355 |\n| 2007 | 1644.8666027397253 |\n| 2008 | 1638.6312820512824 |",
+    "answer": "Here’s the average gold price (in US dollars per ounce) for each year in the data set:\n\n| Year | Average Gold Price (USD) |\n|------|--------------------------|\n| 2000 | **$1,694.04** |\n| 2001 | **$1,648.13** |\n| 2002 | **$1,656.95** |\n| 2003 | **$1,656.44** |\n| 2004 | **$1,677.18** |\n| 2005 | **$1,636.02** |\n| 2006 | **$1,631.08** |\n| 2007 | **$1,644.87** |\n| 2008 | **$1,638.63** |\n\n**What the numbers show**\n\n- The average price hovered around **$1,630 – $1,700** throughout the 2000‑2008 period.  \n- The highest average was in **2004** at **$1,677.18**, while the lowest was in **2006** at **$1,631.08**.  \n- Prices were relatively stable, with only modest fluctuations year‑to‑year.",
+    "sql_execution_time": 0.0419,
+    "nlp_generation_time": 3.1813,
+    "total_time": 3.2232,
+    "source_file": "question_21.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:09:24"
+}

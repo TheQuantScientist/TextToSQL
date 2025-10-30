@@ -1,0 +1,13 @@
+{
+    "question": "Which country has the highest average long gdp per capita through years?",
+    "query": "SELECT country_name, AVG(log_GDP_per_capital) AS avg_log_gdp_per_capital FROM world_happiness_report GROUP BY country_name ORDER BY avg_log_gdp_per_capital DESC LIMIT 1;",
+    "raw_results": "| country_name | avg_log_gdp_per_capital |\n| --- | --- |\n| Cuba | None |",
+    "answer": "Based on the query results, the only country listed is **Cuba**, and its value for “average log GDP per capita” is `None` (i.e., missing). Since there are no other countries or valid numeric values in the result set, we cannot identify which country has the highest average log GDP per capita over the years. In other words, the data needed to answer the question is not available.",
+    "sql_execution_time": 0.0405,
+    "nlp_generation_time": 2.9485,
+    "total_time": 2.989,
+    "source_file": "question_13.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:24"
+}

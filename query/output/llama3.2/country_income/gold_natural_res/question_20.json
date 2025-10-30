@@ -1,0 +1,13 @@
+{
+    "question": "The average gini recalculated of the world in 2015",
+    "query": "SELECT AVG(gini_recalculated) AS avg_gini_2015 FROM country_income WHERE year = 2015 LIMIT 50;",
+    "raw_results": "| avg_gini_2015 |\n| --- |\n| 0.39172968548000275 |",
+    "answer": "The recalculated average Gini coefficient for the world in 2015 is **approximately 0.392** (i.e., about 39.2%). This figure comes directly from the query result, which reported an average Gini of 0.39172968548000275 for that year.",
+    "sql_execution_time": 0.0533,
+    "nlp_generation_time": 0.6551,
+    "total_time": 0.7084,
+    "source_file": "question_20.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:06:54"
+}

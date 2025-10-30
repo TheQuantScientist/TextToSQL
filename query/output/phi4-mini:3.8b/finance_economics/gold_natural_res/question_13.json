@@ -1,0 +1,13 @@
+{
+    "question": "The annual growth rate of consumer confidence index from 2000 to 2008",
+    "query": "",
+    "raw_results": "Error: No query provided",
+    "answer": "I’m sorry—I don’t have any data to work with for the consumer‑confidence index, so I can’t calculate the annual growth rates from 2000 through 2008. If you can provide the yearly index values (or run a query that returns them), I’ll be able to compute the year‑over‑year growth percentages and give you a clear summary. Let me know how you’d like to proceed!",
+    "sql_execution_time": 0.0,
+    "nlp_generation_time": 1.9681,
+    "total_time": 1.9681,
+    "source_file": "question_13.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:08:44"
+}

@@ -1,0 +1,13 @@
+{
+    "question": "The unemployment rate, interest rate, inflation rate, the date where Dow Jones has top trading volume",
+    "query": "SELECT date, unemployment_rate, interest_rate, inflation_rate FROM finance_economics_dataset WHERE stock_index = 'Dow Jones' ORDER BY trading_volume DESC LIMIT 1;",
+    "raw_results": "| date | unemployment_rate | interest_rate | inflation_rate |\n| --- | --- | --- | --- |\n| 2004-06-27 | 2.96 | 2.63 | 4.4 |",
+    "answer": "Based on the data you provided, on **June 27 2004**:\n\n- **Unemployment rate:** 2.96 %  \n- **Interest rate:** 2.63 %  \n- **Inflation rate:** 4.4 %\n\nThe query results do not include information about Dow Jones trading volume, so I can’t identify the date with the highest trading volume from the data you’ve shared. If you have a dataset that includes trading‑volume figures, feel free to provide it and I can pinpoint the date with the top volume.",
+    "sql_execution_time": 0.0418,
+    "nlp_generation_time": 3.1302,
+    "total_time": 3.172,
+    "source_file": "question_10.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:08:36"
+}

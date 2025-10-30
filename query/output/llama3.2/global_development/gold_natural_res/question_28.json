@@ -1,0 +1,13 @@
+{
+    "question": "Compare the economic opportunity index of high income, middlie income groups and the world",
+    "query": "SELECT income_group, AVG(econ_opportunity_index) AS avg_economic_opportunity_index FROM global_development_indicators WHERE income_group IN ('High income', 'Middle income') GROUP BY income_group UNION ALL SELECT 'World' AS income_group, AVG(econ_opportunity_index) AS avg_economic_opportunity_index FROM global_development_indicators LIMIT 50;",
+    "raw_results": "| income_group | avg_economic_opportunity_index |\n| --- | --- |\n| High income | 15734.744698220284 |\n| World | 5266.682141710914 |",
+    "answer": "**Economic Opportunity Index Comparison**\n\n| Group          | Average Economic Opportunity Index |\n|----------------|------------------------------------|\n| High‑income     | **15,734.7** |\n| World (overall) | **5,266.7** |\n\n**What the numbers mean**\n\n- **High‑income countries** have an average Economic Opportunity Index of roughly **15,735**, which is **about three times higher** than the global average.\n- The **worldwide average** (including all countries, regardless of income level) is about **5,267**.\n\n**Missing data**\n\nThe query did not return a value for the **middle‑income group**, so a direct comparison with that segment isn’t possible from the provided results. If you need the middle‑income figure, you may need to run a separate query that includes that income group.",
+    "sql_execution_time": 0.0449,
+    "nlp_generation_time": 3.1269,
+    "total_time": 3.1718,
+    "source_file": "question_28.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:13:27"
+}

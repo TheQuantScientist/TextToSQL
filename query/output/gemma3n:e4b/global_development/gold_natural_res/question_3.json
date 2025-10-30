@@ -1,0 +1,13 @@
+{
+    "question": "What is the human development index score of Vietnam in 2019?",
+    "query": "SELECT human_development_index FROM global_development_indicators WHERE year = 2019 AND country_name = 'Vietnam' LIMIT 50;",
+    "raw_results": "| human_development_index |\n| --- |\n| 0.5530994117647058 |",
+    "answer": "The Human Development Index (HDI) score for Vietnam in 2019 was **approximately 0.553** (0.5531).",
+    "sql_execution_time": 0.0438,
+    "nlp_generation_time": 1.8145,
+    "total_time": 1.8583,
+    "source_file": "question_3.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:13:42"
+}

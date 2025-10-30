@@ -1,0 +1,13 @@
+{
+    "question": "What is the unemployment rate of Europe region in 2008?",
+    "query": "SELECT country_name, unemployment_rate FROM global_development_indicators WHERE region = 'Europe' AND year = 2008 LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "I’m sorry, but the query didn’t return any records for the unemployment rate in the Europe region for 2008, so I don’t have that information available. You may need to check another data source or verify that the dataset includes Europe’s 2008 unemployment figures.",
+    "sql_execution_time": 0.0456,
+    "nlp_generation_time": 1.8283,
+    "total_time": 1.8739,
+    "source_file": "question_5.json",
+    "table_name": "global_development_indicators",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:03"
+}

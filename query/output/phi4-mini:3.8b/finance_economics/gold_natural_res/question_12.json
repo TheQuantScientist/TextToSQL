@@ -1,0 +1,13 @@
+{
+    "question": "The annual consumer spending from 2000 to 2008",
+    "query": "SELECT DATE_TRUNC('year', date)::date AS year, SUM(consumer_spending) AS total_consumer_spending FROM finance_economics_dataset WHERE date >= DATE '2000-01-01' AND date <= DATE '2008-12-31' GROUP BY year ORDER BY year LIMIT 50;",
+    "raw_results": "| year | total_consumer_spending |\n| --- | --- |\n| 2000-01-01 | 2700047.0 |\n| 2001-01-01 | 2649747.0 |\n| 2002-01-01 | 2770500.0 |\n| 2003-01-01 | 2848498.0 |\n| 2004-01-01 | 2841580.0 |\n| 2005-01-01 | 2822407.0 |\n| 2006-01-01 | 2758832.0 |\n| 2007-01-01 | 2697598.0 |\n| 2008-01-01 | 564625.0 |",
+    "answer": "Here’s the annual consumer‑spending data for each year from 2000 through 2008:\n\n| Year | Total consumer spending |\n|------|--------------------------|\n| 2000 | 2,700,047 |\n| 2001 | 2,649,747 |\n| 2002 | 2,770,500 |\n| 2003 | 2,848,498 |\n| 2004 | 2,841,580 |\n| 2005 | 2,822,407 |\n| 2006 | 2,758,832 |\n| 2007 | 2,697,598 |\n| 2008 | 564,625 |\n\n**What the numbers show**\n\n- Consumer spending rose steadily from 2000 (≈ 2.70 million) to a peak in 2003 (≈ 2.85 million).  \n- After 2003 it hovered around the high‑2‑million mark, with a gradual decline through 2007.  \n- In 2008 there is a sharp drop to about 0.56 million, indicating a dramatic reduction in spending that year.  \n\nThese figures give a year‑by‑year snapshot of total consumer expenditure over the 2000‑2008 period.",
+    "sql_execution_time": 0.0441,
+    "nlp_generation_time": 3.2492,
+    "total_time": 3.2933,
+    "source_file": "question_12.json",
+    "table_name": "finance_economics_dataset",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:08:42"
+}

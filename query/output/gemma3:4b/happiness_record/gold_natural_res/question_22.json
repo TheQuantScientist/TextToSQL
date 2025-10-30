@@ -1,0 +1,13 @@
+{
+    "question": "Interpret for me the current trend in positive affect of the world from 2008 to 2022?",
+    "query": "SELECT year, AVG(positive_affect) AS avg_positive_affect FROM world_happiness_report WHERE year BETWEEN 2008 AND 2022 GROUP BY year ORDER BY year LIMIT 50;",
+    "raw_results": "| year | avg_positive_affect |\n| --- | --- |\n| 2008 | 0.6528839230550461 |\n| 2009 | 0.6434483664867257 |\n| 2010 | 0.6467395616833334 |\n| 2011 | 0.6369514313310347 |\n| 2012 | 0.6414098342482268 |\n| 2013 | 0.6546155841865674 |\n| 2014 | 0.6555347812714285 |\n| 2015 | 0.6576852447446808 |\n| 2016 | 0.6558398875460993 |\n| 2017 | 0.6483457280273974 |\n| 2018 | 0.6526015718417268 |\n| 2019 | 0.6545910788661976 |\n| 2020 | 0.6643789223739133 |\n| 2021 | 0.6530874316885249 |\n| 2022 | 0.6564397007719301 |",
+    "answer": "**Overall picture (2008‑2022)**  \n- The average “positive affect” score for the world was **about 0.65** in 2008.  \n- By 2022 it had risen very slightly to **≈ 0.656**, a net increase of roughly **0.0035 points** (≈ 0.5 %).  \n\n**How the series moves year‑by‑year**\n\n| Period | Trend | What happened |\n|--------|-------|----------------|\n| **2008‑2011** | **Downward** | The score fell from 0.653 to a low of 0.637 in 2011. |\n| **2012‑2015** | **Upward** | A steady climb brought the average back up to its highest pre‑2020 level of 0.658 in 2015. |\n| **2016‑2017** | **Slight dip** | A modest drop to 0.649 in 2017. |\n| **2018‑2020** | **Strong rebound** | Scores rose again, peaking at **0.664** in 2020 – the highest point in the whole series. |\n| **2021‑2022** | **Small correction** | A brief dip in 2021 (0.653) was followed by a modest recovery to 0.656 in 2022. |\n\n**Interpretation**\n\n- **Long‑term trend:** The world’s average positive affect has been **relatively stable**, hovering around the mid‑0.65 range, with only a marginal upward shift over the 15‑year span.\n- **Short‑term fluctuations:** There are noticeable ups and downs—particularly a dip in the early 2010s, a",
+    "sql_execution_time": 0.0308,
+    "nlp_generation_time": 4.7679,
+    "total_time": 4.7987,
+    "source_file": "question_22.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:14:48"
+}

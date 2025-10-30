@@ -1,0 +1,13 @@
+{
+    "question": "Calculate the average gini of countries by region ID in 2015",
+    "query": "SELECT gcam_region_id, AVG(gini_reported) AS avg_gini FROM country_income WHERE year = 2015 GROUP BY gcam_region_id ORDER BY gcam_region_id LIMIT 50;",
+    "raw_results": "| gcam_region_id | avg_gini |\n| --- | --- |\n| 1 | 0.5098500000000001 |\n| 2 | 0.42526508539999924 |\n| 3 | 0.3303953059999999 |\n| 4 | 0.5195647301000005 |\n| 5 | 0.43135099304347796 |\n| 6 | 0.3460624999999999 |\n| 7 | 0.49733499999999997 |\n| 8 | 0.314 |\n| 9 | 0.44291236277777757 |\n| 10 | 0.31689444888888885 |\n| 11 | 0.4307497104999999 |\n| 12 | 0.30581272727272724 |\n| 13 | 0.30957968749999976 |\n| 14 | 0.2742195986666665 |\n| 15 | 0.3567653118571423 |\n| 16 | 0.27683333333333343 |\n| 17 | 0.49937 |\n| 18 | 0.4086324 |\n| 19 | 0.339 |\n| 20 | 0.4787850000000001 |\n| 21 | 0.3940678324166667 |\n| 22 | 0.327345217 |\n| 23 | 0.34822 |\n| 24 | 0.6496464 |\n| 25 | 0.389266666666667 |\n| 26 | 0.4405120318333334 |\n| 27 | 0.3722947006666664 |\n| 28 | 0.295 |\n| 29 | 0.3945871029999999 |\n| 30 | 0.27899999999999997 |\n| 31 | 0.4053 |\n| 32 | 0.502155 |",
+    "answer": "**Average Gini coefficient for each GCAM region in 2015**\n\n| GCAM Region ID | Average Gini (2015) |\n|----------------|---------------------|\n| 1  | 0.510 |\n| 2  | 0.425 |\n| 3  | 0.330 |\n| 4  | 0.520 |\n| 5  | 0.431 |\n| 6  | 0.346 |\n| 7  | 0.497 |\n| 8  | 0.314 |\n| 9  | 0.443 |\n| 10 | 0.317 |\n| 11 | 0.431 |\n| 12 | 0.306 |\n| 13 | 0.310 |\n| 14 | **0.274** (lowest) |\n| 15 | 0.357 |\n| 16 | 0.277 |\n| 17 | 0.499 |\n| 18 | 0.409 |\n| 19 | 0.339 |\n| 20 | 0.479 |\n| 21 | 0.394 |\n| 22 | 0.327 |\n| 23 | 0.348 |\n| 24 | **0.650** (highest) |\n| 25 | 0.389 |\n| 26 | 0.441 |\n| 27 | 0.372 |\n| 28 | 0.295 |\n| 29 | 0.395 |\n| 30 | 0.279 |\n| 31 | 0.405 |\n| 32 | 0.502 |\n\n**Key take‑aways**\n\n- The **highest average Gini** among the regions is in **Region 24** (≈ 0.65), indicating the greatest income inequality.\n- The **lowest average Gini** is in **Region 14** (≈ 0.27), suggesting",
+    "sql_execution_time": 0.0549,
+    "nlp_generation_time": 1.4215,
+    "total_time": 1.4764,
+    "source_file": "question_18.json",
+    "table_name": "country_income",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:06:51"
+}

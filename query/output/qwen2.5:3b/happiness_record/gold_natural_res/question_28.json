@@ -1,0 +1,13 @@
+{
+    "question": "What is the current movement of generiosity of Asian countries over years? Explain the reasons.",
+    "query": "SELECT year, AVG(generosity) AS avg_generosity FROM world_happiness_report WHERE regional_indicator = 'Asia' GROUP BY year ORDER BY year LIMIT 50;",
+    "raw_results": "Query ran successfully, no record found",
+    "answer": "**Answer**\n\nI’m sorry, but the query you ran did not return any records, so there’s no data available to show how the “generosity” (or “generiosity”) of Asian countries has changed over time.\n\n### What this means\n- **No data returned** – The database you queried simply doesn’t contain any rows that match the request (e.g., the table may be empty, the filter criteria may be too restrictive, or the relevant metric isn’t stored there).\n- **Cannot plot a trend** – Without any observations, I can’t describe whether generosity is rising, falling, or staying flat for Asian nations, nor can I point to specific years or countries.\n\n### Possible reasons for the missing data\n| Reason | Explanation |\n|--------|-------------|\n| **Metric not collected** | The dataset may not include a “generosity” indicator for Asian countries (or at all). Many global surveys (e.g., World Happiness Report) report a “generosity” score, but if the source you’re using doesn’t capture it, the query will be empty. |\n| **Incorrect field or table name** | The column or table you referenced might be misspelled or not exist. Double‑check the schema for the exact name of the generosity variable. |\n| **Filter too narrow** | If the query includes filters such as a specific year range, country list, or other conditions, it could inadvertently exclude all rows. |\n| **Data loading issue** | The underlying data source might not have been loaded correctly, or the most recent import failed. |\n| **Permission/visibility limits** | Some rows could be hidden due to user permissions, leaving the query result empty for your account. |\n\n### How to move forward\n1. **Verify the schema** – Run a simple `SHOW COLUMNS` (or equivalent) on the relevant table to confirm the exact column name for generosity and the country/region fields.\n2. **Check data availability",
+    "sql_execution_time": 0.0445,
+    "nlp_generation_time": 2.5939,
+    "total_time": 2.6384,
+    "source_file": "question_28.json",
+    "table_name": "world_happiness_report",
+    "model_for_answer": "openai/gpt-oss-120b",
+    "generated_at": "2025-10-30T10:15:13"
+}
