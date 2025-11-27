@@ -1,0 +1,226 @@
+import os
+import sys
+import json
+import time
+import glob
+import logging
+from datetime import datetime
+import csv
+
+# Add your project paths
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(SCRIPT_DIR, ".."))
+sys.path.append(SCRIPT_DIR)
+
+from utils.db_utils import get_db_connection
+from utils.agent import query_execution_node, response_generation_node
+
+# ==================== CONFIG ====================
+BASE_PATH = r"/Users/ngannguyen/Documents/GitHub/TextToSQL/query/output"
+
+models = [
+    'cogito:3b', 'deepseek-r1:7b', 'gemma3:4b', 'gemma3n:e4b',
+    'llama3.2', 'mistral:7b', 'phi3.5:3.8b', 'phi4-mini:3.8b',
+    'qwen2.5:3b', 'qwen3:4b',
+]
+
+DATASETS = ['country_income', 'finance_economics', 'global_development', 'happiness_record']
+
+DATASET_NAME_MAP = {
+    "finance_economics": "finance_economics_dataset",
+    "country_income": "country_income",
+    "global_development": "global_development_indicators",
+    "happiness_record": "world_happiness_report",
+}
+
+# Carbon intensity (gCO₂eq per kWh) — change to your country
+# France (nuclear) → 60, Germany → 350, USA avg → 400, Quebec → 20
+CARBON_G_PER_KWH = 400
+CARBON_KG_PER_JOULE = CARBON_G_PER_KWH / 3600000.0  # convert to gCO₂eq per Joule
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s | %(levelname)-8s | %(message)s',
+    datefmt='%H:%M:%S'
+)
+logger = logging.getLogger("ENERGY_BENCHMARK")
+
+# ==================== ENERGY MONITORING (Mac-friendly) ====================
+try:
+    import pynvml
+    pynvml.nvmlInit()
+    HAS_NVML = True
+    logger.info("NVML initialized → GPU power monitoring enabled (e.g. external NVIDIA GPU)")
+except Exception:
+    HAS_NVML = False
+
+import psutil
+from threading import Thread
+import time
+
+class EnergyMonitor:
+    def __init__(self):
+        self.gpu_watts_list = []
+        self.stop_flag = False
+
+    def start_gpu_sampling(self):
+        if not HAS_NVML:
+            return
+
+        def sample():
+            while not self.stop_flag:
+                try:
+                    handle = pynvml.nvmlDeviceGetHandleByIndex(0)
+                    power_mw = pynvml.nvmlDeviceGetPowerUsage(handle)
+                    self.gpu_watts_list.append(power_mw / 1000.0)  # mW → W
+                except:
+                    self.gpu_watts_list.append(0.0)
+                time.sleep(0.05)  # 20 Hz sampling
+
+        self.thread = Thread(target=sample, daemon=True)
+        self.thread.start()
+
+    def stop_gpu_sampling(self):
+        self.stop_flag = True
+        if HAS_NVML and hasattr(self, 'thread'):
+            self.thread.join(timeout=1.0)
+
+    def get_avg_gpu_power(self):
+        if not self.gpu_watts_list:
+            return 0.0
+        return sum(self.gpu_watts_list) / len(self.gpu_watts_list)
+
+def measure_energy(func, *args, **kwargs):
+    monitor = EnergyMonitor()
+    monitor.start_gpu_sampling()
+
+    start_time = time.perf_counter()
+    result = func(*args, **kwargs)
+    duration = time.perf_counter() - start_time
+
+    monitor.stop_gpu_sampling()
+    avg_gpu_power = monitor.get_avg_gpu_power()
+
+    # CPU energy: rough but good enough for Apple Silicon (TDP ≈ 15–40W full load)
+    cpu_percent = psutil.cpu_percent(interval=0.1)
+    estimated_cpu_watts = (cpu_percent / 100) * 40  # conservative max 40W per core package
+    cpu_energy_j = estimated_cpu_watts * duration
+
+    gpu_energy_j = avg_gpu_power * duration
+    total_energy_j = cpu_energy_j + gpu_energy_j
+    carbon_g = total_energy_j * CARBON_KG_PER_JOULE * 1000  # Joules → gCO₂eq
+
+    return {
+        "duration_s": round(duration, 4),
+        "gpu_energy_j": round(gpu_energy_j, 4),
+        "cpu_energy_j": round(cpu_energy_j, 4),
+        "total_energy_j": round(total_energy_j, 4),
+        "avg_power_w": round(total_energy_j / duration if duration > 0 else 0, 2),
+        "carbon_gco2eq": round(carbon_g, 4),
+    }, result
+
+# ==================== CORE (NO JSON SAVING) ====================
+all_results = []
+
+def process_one_question(file_path: str, table_name: str, model_name: str):
+    with open(file_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    question = data.get("question", "")
+    sql = " ".join(data.get("query", "").split()) if isinstance(data.get("query"), str) else ""
+    qid = os.path.splitext(os.path.basename(file_path))[0]
+
+    logger.info(f"→ [{model_name}] {qid} | \"{question[:80]}{'...' if len(question)>80 else ''}\"")
+
+    state = {
+        "question": question,
+        "table_name": table_name,
+        "query": sql,
+        "query_result": "",
+        "final_answer": "",
+        "model": model_name,
+    }
+
+    # === SQL Execution ===
+    sql_metrics, state = measure_energy(query_execution_node, state)
+
+    # === Natural Answer Generation (the heavy one) ===
+    nlp_metrics, state = measure_energy(response_generation_node, state)
+
+    # Combine
+    total_j = sql_metrics["total_energy_j"] + nlp_metrics["total_energy_j"]
+    total_carbon = sql_metrics["carbon_gco2eq"] + nlp_metrics["carbon_gco2eq"]
+
+    row = {
+        "model": model_name,
+        "dataset": os.path.basename(os.path.dirname(os.path.dirname(file_path))),
+        "question_id": qid,
+        "question": question.replace("\n", " ").replace("\r", ""),
+        "sql_time_s": sql_metrics["duration_s"],
+        "nlp_time_s": nlp_metrics["duration_s"],
+        "total_time_s": round(sql_metrics["duration_s"] + nlp_metrics["duration_s"], 4),
+        "gpu_energy_j": round(sql_metrics["gpu_energy_j"] + nlp_metrics["gpu_energy_j"], 4),
+        "total_energy_j": round(total_j, 4),
+        "avg_power_w": round(total_j / (sql_metrics["duration_s"] + nlp_metrics["duration_s"]), 2),
+        "carbon_gco2eq": round(total_carbon, 4),
+        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    }
+    all_results.append(row)
+
+    logger.info(f"   Energy: {total_j:.3f} J  |  {total_carbon:.3f} gCO₂eq  |  {row['avg_power_w']} W avg")
+
+# ==================== MAIN ====================
+def main():
+    logger.info("Starting ENERGY-ONLY benchmark (no JSON files will be written)")
+    conn = get_db_connection()
+    if conn is None:
+        logger.error("Cannot connect to DB. Check utils/db_utils.py")
+        sys.exit(1)
+    conn.close()
+
+    total_questions = 0
+    for model in models:
+        model_processed = 0
+        for dataset in DATASETS:
+            pred_dir = os.path.join(BASE_PATH, model, dataset, "pred_sql")
+            if not os.path.isdir(pred_dir):
+                continue
+            files = sorted(glob.glob(os.path.join(pred_dir, "*.json")))
+            for fp in files:
+                table_name = DATASET_NAME_MAP.get(dataset, dataset)
+                process_one_question(fp, table_name, model)
+                model_processed += 1
+                total_questions += 1
+
+        if model_processed > 0:
+            logger.info(f"Finished model {model} → {model_processed} questions")
+
+    if not all_results:
+        logger.info("No files found. Nothing to do.")
+        return
+
+    # ==================== SAVE SINGLE CSV ====================
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    csv_path = f"energy_benchmark_results_{timestamp}.csv"
+    keys = all_results[0].keys()
+
+    with open(csv_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=keys)
+        writer.writeheader()
+        writer.writerows(all_results)
+
+    total_joules = sum(r["total_energy_j"] for r in all_results)
+    total_co2 = sum(r["carbon_gco2eq"] for r in all_results)
+    total_time = sum(r["total_time_s"] for r in all_results)
+
+    logger.info("=" * 70)
+    logger.info(f"ALL DONE! Processed {len(all_results)} questions")
+    logger.info(f"Results saved → {csv_path}")
+    logger.info(f"TOTAL ENERGY   : {total_joules:.2f} J  →  {total_joules/3600:.2f} Wh")
+    logger.info(f"TOTAL CARBON   : {total_co2:.2f} gCO₂eq")
+    logger.info(f"TOTAL TIME     : {total_time:.1f} seconds")
+    logger.info(f"AVG PER QUESTION: {total_joules/len(all_results):.3f} J  |  {total_co2/len(all_results):.3f} gCO₂eq")
+    logger.info("=" * 70)
+
+if __name__ == "__main__":
+    main()

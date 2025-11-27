@@ -2,7 +2,7 @@
     "question": "What is the average Confidence In National Government score of Vietnam over years?",
     "query": "SELECT AVG(confidence_in_national_government) FROM world_happiness_report WHERE country_name = 'Vietnam' LIMIT 50;",
     "raw_results": "| avg |\n| --- |\n| 0.8483630418749999 |",
-    "answer": "<think>\nOkay, the user is asking for the average Confidence In National Government score of Vietnam over the years. The query result shows an average of approximately 0.848. I need to present this in a clear and friendly way.\n\nFirst, I should state the average value clearly. Since the number is 0.848, that's about 84.8%. Maybe convert it to a percentage for better understanding. Then, mention that this is the average over the years, so it's a long-term figure. Also, I should note that the data is based on the query results provided. Keep it concise, no unnecessary details. Make sure to check if there's any specific context needed, but since the user didn't provide more info, stick to the given data. Alright, that should cover it.\n</think>\n\nThe average Confidence In National Government score for Vietnam over the years is approximately **0.848** (or **84.8%**). This figure represents the mean value across the available data periods. Let me know if you'd like further details!",
+    "answer": "The average Confidence In National Government score for Vietnam over the years is approximately **0.848** (or **84.8%**). This figure represents the mean value across the available data periods. Let me know if you'd like further details!",
     "sql_execution_time": 0.055,
     "nlp_generation_time": 13.7648,
     "total_time": 13.8198,

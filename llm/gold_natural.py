@@ -16,16 +16,11 @@ load_dotenv()
 BASE_PATH = r"/Users/ngannguyen/Documents/GitHub/TextToSQL/query/output"
 GOLD_MODEL = "openai/gpt-oss-120b"  # Model for natural response via Groq API
 
-# Prompt from /Users/admin/LG/TextToSQL/prompt/prompts.py
 NL_RESPONSE_PROMPT = """
 You are an expert data analyst. 
 Given the query results, provide a clear, concise, and natural language response that answers the question using the queried results.
 Use the query results to inform your answer and present the information in a user-friendly way.
 """
-
-models = [
-    'cogito:3b',  # Only process gemma3:4b as specified
-]
 
 DATASETS = [
     'country_income',

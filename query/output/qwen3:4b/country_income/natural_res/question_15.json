@@ -2,7 +2,7 @@
     "question": "What is the average of d10 net income of Vietnam over years?",
     "query": "SELECT AVG(income_net) FROM country_income WHERE country = 'Vietnam' AND category = 'd10' LIMIT 50;",
     "raw_results": "| avg |\n| --- |\n| None |",
-    "answer": "<think>\nOkay, the user is asking for the average of d10 net income of Vietnam over the years. Let me check the query results. The results show an \"avg\" column with the value \"None\". Hmm, that's not helpful. Maybe there was an error in the query or the data retrieval. Since the average isn't available, I should inform the user that the data isn't present. I need to make sure to mention that the result is unavailable and perhaps suggest checking the data source or contacting support if they need further assistance. Keep the response clear and polite.\n</think>\n\nThe query results indicate that the average of d10 net income for Vietnam over the years is not available in the provided data. It seems there is no applicable value or the data may not have been retrieved correctly. For further assistance, please verify the data source or contact support.",
+    "answer": "The query results indicate that the average of d10 net income for Vietnam over the years is not available in the provided data. It seems there is no applicable value or the data may not have been retrieved correctly. For further assistance, please verify the data source or contact support.",
     "sql_execution_time": 0.0475,
     "nlp_generation_time": 6.8422,
     "total_time": 6.8897,

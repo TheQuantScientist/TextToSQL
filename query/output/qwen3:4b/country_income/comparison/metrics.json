@@ -1,59 +1,59 @@
 {
     "question_1": {
-        "fuzzy_string_similarity": 0.05431093007467753,
-        "ast_similarity": 0.05405405405405406,
-        "jaccard_component_similarity": 0.75,
-        "fuzzy_logical_form_similarity": 0.5384519350811486,
-        "cosine_similarity": 0.8147146701812744
+        "fuzzy_string_similarity": 1.0,
+        "ast_similarity": 0.9896907216494846,
+        "jaccard_component_similarity": 1.0,
+        "fuzzy_logical_form_similarity": 1.0,
+        "cosine_similarity": 0.9999998211860657
     },
     "question_2": {
-        "fuzzy_string_similarity": 0.03170028818443804,
-        "ast_similarity": 0.031117397454031116,
-        "jaccard_component_similarity": 0.0,
-        "fuzzy_logical_form_similarity": 0.7844086021505375,
-        "cosine_similarity": 0.8373112678527832
+        "fuzzy_string_similarity": 1.0,
+        "ast_similarity": 0.908256880733945,
+        "jaccard_component_similarity": 0.5,
+        "fuzzy_logical_form_similarity": 1.0,
+        "cosine_similarity": 0.9999997615814209
     },
     "question_3": {
-        "fuzzy_string_similarity": 0.050012889920082494,
-        "ast_similarity": 0.07424593967517401,
-        "jaccard_component_similarity": 0.3333333333333333,
-        "fuzzy_logical_form_similarity": 0.6252344416027281,
-        "cosine_similarity": 0.8053692579269409
+        "fuzzy_string_similarity": 0.8830188679245283,
+        "ast_similarity": 0.8096885813148789,
+        "jaccard_component_similarity": 0.5,
+        "fuzzy_logical_form_similarity": 0.9666666666666667,
+        "cosine_similarity": 0.9787157773971558
     },
     "question_4": {
-        "fuzzy_string_similarity": 0.06886075949367089,
-        "ast_similarity": 0.06810215322984477,
+        "fuzzy_string_similarity": 0.9411764705882353,
+        "ast_similarity": 0.896,
         "jaccard_component_similarity": 0.6666666666666666,
-        "fuzzy_logical_form_similarity": 0.5242165242165241,
-        "cosine_similarity": 0.7152443528175354
+        "fuzzy_logical_form_similarity": 0.85761316872428,
+        "cosine_similarity": 0.9657467603683472
     },
     "question_5": {
-        "fuzzy_string_similarity": 0.04504504504504504,
-        "ast_similarity": 0.03790322580645161,
-        "jaccard_component_similarity": 0.3333333333333333,
-        "fuzzy_logical_form_similarity": 0.6709401709401709,
-        "cosine_similarity": 0.7016082406044006
+        "fuzzy_string_similarity": 0.7860262008733624,
+        "ast_similarity": 0.7003891050583657,
+        "jaccard_component_similarity": 0.6666666666666666,
+        "fuzzy_logical_form_similarity": 0.8522875816993464,
+        "cosine_similarity": 0.9674479961395264
     },
     "question_6": {
-        "fuzzy_string_similarity": 0.0090956795522127,
-        "ast_similarity": 0.009024644220756682,
+        "fuzzy_string_similarity": 0.8739495798319328,
+        "ast_similarity": 0.8020565552699229,
         "jaccard_component_similarity": 0.0,
-        "fuzzy_logical_form_similarity": 0.38831231721675713,
-        "cosine_similarity": 0.7535701990127563
+        "fuzzy_logical_form_similarity": 0.6865950589936468,
+        "cosine_similarity": 0.9615232944488525
     },
     "question_7": {
-        "fuzzy_string_similarity": 0.04312267657992565,
-        "ast_similarity": 0.03616840915512857,
+        "fuzzy_string_similarity": 0.9166666666666666,
+        "ast_similarity": 0.908256880733945,
         "jaccard_component_similarity": 0.5,
-        "fuzzy_logical_form_similarity": 0.4481370425898162,
-        "cosine_similarity": 0.6241191625595093
+        "fuzzy_logical_form_similarity": 0.875,
+        "cosine_similarity": 0.9854931831359863
     },
     "question_8": {
-        "fuzzy_string_similarity": 0.050451807228915665,
-        "ast_similarity": 0.04955621301775148,
-        "jaccard_component_similarity": 0.0,
-        "fuzzy_logical_form_similarity": 0.44199769939744765,
-        "cosine_similarity": 0.6784990429878235
+        "fuzzy_string_similarity": 0.8344827586206897,
+        "ast_similarity": 0.8025078369905956,
+        "jaccard_component_similarity": 0.5,
+        "fuzzy_logical_form_similarity": 0.8019900497512439,
+        "cosine_similarity": 0.9400089383125305
     },
     "question_9": {
         "fuzzy_string_similarity": 0.0,
@@ -63,157 +63,157 @@
         "cosine_similarity": 0.0
     },
     "question_10": {
-        "fuzzy_string_similarity": 0.004509850462853074,
-        "ast_similarity": 0.006598240469208211,
-        "jaccard_component_similarity": 0.375,
-        "fuzzy_logical_form_similarity": 0.5943778872377136,
-        "cosine_similarity": 0.4396849274635315
+        "fuzzy_string_similarity": 0.9657534246575342,
+        "ast_similarity": 0.8924050632911392,
+        "jaccard_component_similarity": 0.5,
+        "fuzzy_logical_form_similarity": 1.0,
+        "cosine_similarity": 0.9961205124855042
     },
     "question_11": {
-        "fuzzy_string_similarity": 0.08092812676853424,
-        "ast_similarity": 0.09566274827725983,
-        "jaccard_component_similarity": 0.25,
-        "fuzzy_logical_form_similarity": 0.33107282491284246,
-        "cosine_similarity": 0.7614393830299377
+        "fuzzy_string_similarity": 0.6,
+        "ast_similarity": 0.4479578392621871,
+        "jaccard_component_similarity": 0.6666666666666666,
+        "fuzzy_logical_form_similarity": 0.8954631635969664,
+        "cosine_similarity": 0.89354407787323
     },
     "question_12": {
-        "fuzzy_string_similarity": 0.04457478005865103,
-        "ast_similarity": 0.03590040532715692,
-        "jaccard_component_similarity": 0.0,
-        "fuzzy_logical_form_similarity": 0.8693549196031817,
-        "cosine_similarity": 0.8094261884689331
+        "fuzzy_string_similarity": 0.9565217391304348,
+        "ast_similarity": 0.9363636363636364,
+        "jaccard_component_similarity": 1.0,
+        "fuzzy_logical_form_similarity": 0.9579035639412998,
+        "cosine_similarity": 0.9830002784729004
     },
     "question_13": {
-        "fuzzy_string_similarity": 0.013970382788488405,
-        "ast_similarity": 0.013943112102621304,
+        "fuzzy_string_similarity": 0.9005847953216374,
+        "ast_similarity": 0.9005847953216374,
         "jaccard_component_similarity": 0.5,
-        "fuzzy_logical_form_similarity": 0.16072266896854603,
-        "cosine_similarity": 0.7290525436401367
+        "fuzzy_logical_form_similarity": 0.907103825136612,
+        "cosine_similarity": 0.9866607189178467
     },
     "question_14": {
-        "fuzzy_string_similarity": 0.007553170343868018,
-        "ast_similarity": 0.008039579468150896,
+        "fuzzy_string_similarity": 0.1197339246119734,
+        "ast_similarity": 0.14102564102564102,
         "jaccard_component_similarity": 0.0,
-        "fuzzy_logical_form_similarity": 0.6567495004995004,
-        "cosine_similarity": 0.7696386575698853
+        "fuzzy_logical_form_similarity": 0.6828308752650858,
+        "cosine_similarity": 0.8689690828323364
     },
     "question_15": {
-        "fuzzy_string_similarity": 0.04963805584281282,
-        "ast_similarity": 0.0544464609800363,
-        "jaccard_component_similarity": 0.0,
-        "fuzzy_logical_form_similarity": 0.3887062881324,
-        "cosine_similarity": 0.6537463665008545
+        "fuzzy_string_similarity": 0.6125,
+        "ast_similarity": 0.6072727272727273,
+        "jaccard_component_similarity": 0.25,
+        "fuzzy_logical_form_similarity": 0.6699439154942134,
+        "cosine_similarity": 0.8709022998809814
     },
     "question_16": {
-        "fuzzy_string_similarity": 0.02630106323447118,
-        "ast_similarity": 0.023230088495575223,
-        "jaccard_component_similarity": 0.25,
-        "fuzzy_logical_form_similarity": 0.6785195911981091,
-        "cosine_similarity": 0.6927652955055237
+        "fuzzy_string_similarity": 0.8292682926829268,
+        "ast_similarity": 0.7709750566893424,
+        "jaccard_component_similarity": 0.5,
+        "fuzzy_logical_form_similarity": 0.9609844887622666,
+        "cosine_similarity": 0.9712743759155273
     },
     "question_17": {
-        "fuzzy_string_similarity": 0.024987986544930323,
-        "ast_similarity": 0.05416666666666667,
-        "jaccard_component_similarity": 0.3333333333333333,
-        "fuzzy_logical_form_similarity": 0.3675684673730531,
-        "cosine_similarity": 0.4198029637336731
+        "fuzzy_string_similarity": 0.672,
+        "ast_similarity": 0.5957446808510638,
+        "jaccard_component_similarity": 0.6666666666666666,
+        "fuzzy_logical_form_similarity": 0.3824283559577677,
+        "cosine_similarity": 0.9294057488441467
     },
     "question_18": {
-        "fuzzy_string_similarity": 0.004558404558404558,
-        "ast_similarity": 0.01875225387666787,
+        "fuzzy_string_similarity": 0.2459016393442623,
+        "ast_similarity": 0.21818181818181817,
         "jaccard_component_similarity": 0.0,
         "fuzzy_logical_form_similarity": 0.0,
-        "cosine_similarity": 0.4354367256164551
+        "cosine_similarity": 0.6047409772872925
     },
     "question_19": {
-        "fuzzy_string_similarity": 0.049937578027465665,
-        "ast_similarity": 0.049281314168377825,
-        "jaccard_component_similarity": 0.3333333333333333,
-        "fuzzy_logical_form_similarity": 0.27905983972292786,
-        "cosine_similarity": 0.6228750944137573
+        "fuzzy_string_similarity": 0.9060402684563759,
+        "ast_similarity": 0.8607594936708861,
+        "jaccard_component_similarity": 0.6666666666666666,
+        "fuzzy_logical_form_similarity": 0.9722222222222222,
+        "cosine_similarity": 0.9711294174194336
     },
     "question_20": {
-        "fuzzy_string_similarity": 0.11277445109780439,
-        "ast_similarity": 0.08321096426823299,
-        "jaccard_component_similarity": 0.3333333333333333,
-        "fuzzy_logical_form_similarity": 0.7273229369720596,
-        "cosine_similarity": 0.741202712059021
+        "fuzzy_string_similarity": 0.9149797570850202,
+        "ast_similarity": 0.8290909090909091,
+        "jaccard_component_similarity": 0.6666666666666666,
+        "fuzzy_logical_form_similarity": 0.9460784313725491,
+        "cosine_similarity": 0.9759955406188965
     },
     "question_21": {
-        "fuzzy_string_similarity": 0.014007237072487452,
-        "ast_similarity": 0.018178867067034574,
-        "jaccard_component_similarity": 0.16666666666666666,
-        "fuzzy_logical_form_similarity": 0.5155192001817769,
-        "cosine_similarity": 0.5437334775924683
+        "fuzzy_string_similarity": 0.8060836501901141,
+        "ast_similarity": 0.7353951890034365,
+        "jaccard_component_similarity": 0.3333333333333333,
+        "fuzzy_logical_form_similarity": 0.9417989417989417,
+        "cosine_similarity": 0.9643672704696655
     },
     "question_22": {
-        "fuzzy_string_similarity": 0.009684421439305393,
-        "ast_similarity": 0.01946647440519106,
-        "jaccard_component_similarity": 0.375,
-        "fuzzy_logical_form_similarity": 0.21663859441139555,
-        "cosine_similarity": 0.6029740571975708
+        "fuzzy_string_similarity": 0.7292817679558011,
+        "ast_similarity": 0.676923076923077,
+        "jaccard_component_similarity": 0.5,
+        "fuzzy_logical_form_similarity": 0.397692466692974,
+        "cosine_similarity": 0.947330117225647
     },
     "question_23": {
-        "fuzzy_string_similarity": 0.03423304805793285,
-        "ast_similarity": 0.033766233766233764,
+        "fuzzy_string_similarity": 0.9401709401709402,
+        "ast_similarity": 0.9193548387096774,
         "jaccard_component_similarity": 0.6666666666666666,
-        "fuzzy_logical_form_similarity": 0.43557131762488704,
-        "cosine_similarity": 0.8090006709098816
+        "fuzzy_logical_form_similarity": 0.9722222222222222,
+        "cosine_similarity": 0.9318634271621704
     },
     "question_24": {
-        "fuzzy_string_similarity": 0.08178438661710037,
-        "ast_similarity": 0.046919163369135104,
+        "fuzzy_string_similarity": 0.8617511520737328,
+        "ast_similarity": 0.5344827586206896,
         "jaccard_component_similarity": 0.6666666666666666,
-        "fuzzy_logical_form_similarity": 0.7420324252743336,
-        "cosine_similarity": 0.6279036998748779
+        "fuzzy_logical_form_similarity": 0.9002917742116484,
+        "cosine_similarity": 0.9645675420761108
     },
     "question_25": {
-        "fuzzy_string_similarity": 0.005216484089723527,
-        "ast_similarity": 0.005185377236193933,
+        "fuzzy_string_similarity": 0.3891402714932127,
+        "ast_similarity": 0.3722943722943723,
         "jaccard_component_similarity": 0.0,
         "fuzzy_logical_form_similarity": 0.0,
-        "cosine_similarity": 0.4683987498283386
+        "cosine_similarity": 0.5014840960502625
     },
     "question_26": {
-        "fuzzy_string_similarity": 0.025274725274725275,
-        "ast_similarity": 0.025013594344752584,
+        "fuzzy_string_similarity": 0.8571428571428571,
+        "ast_similarity": 0.8448275862068966,
         "jaccard_component_similarity": 1.0,
-        "fuzzy_logical_form_similarity": 0.6504525629525629,
-        "cosine_similarity": 0.8433737754821777
+        "fuzzy_logical_form_similarity": 0.9388227513227513,
+        "cosine_similarity": 0.9969186782836914
     },
     "question_27": {
-        "fuzzy_string_similarity": 0.05106382978723404,
-        "ast_similarity": 0.05063291139240506,
-        "jaccard_component_similarity": 0.75,
-        "fuzzy_logical_form_similarity": 0.6734892787524366,
-        "cosine_similarity": 0.7734887003898621
+        "fuzzy_string_similarity": 1.0,
+        "ast_similarity": 0.9886363636363636,
+        "jaccard_component_similarity": 1.0,
+        "fuzzy_logical_form_similarity": 1.0,
+        "cosine_similarity": 1.000000238418579
     },
     "question_28": {
-        "fuzzy_string_similarity": 0.09404388714733543,
-        "ast_similarity": 0.09328358208955224,
-        "jaccard_component_similarity": 0.0,
-        "fuzzy_logical_form_similarity": 0.5921590486807878,
-        "cosine_similarity": 0.6905829906463623
+        "fuzzy_string_similarity": 1.0,
+        "ast_similarity": 0.9846153846153847,
+        "jaccard_component_similarity": 1.0,
+        "fuzzy_logical_form_similarity": 1.0,
+        "cosine_similarity": 1.0000001192092896
     },
     "question_29": {
-        "fuzzy_string_similarity": 0.147239263803681,
-        "ast_similarity": 0.14705882352941177,
-        "jaccard_component_similarity": 0.6666666666666666,
-        "fuzzy_logical_form_similarity": 0.6596491228070175,
-        "cosine_similarity": 0.7385528087615967
+        "fuzzy_string_similarity": 1.0,
+        "ast_similarity": 1.0,
+        "jaccard_component_similarity": 1.0,
+        "fuzzy_logical_form_similarity": 1.0,
+        "cosine_similarity": 0.9999998807907104
     },
     "question_30": {
-        "fuzzy_string_similarity": 0.022975929978118162,
-        "ast_similarity": 0.022780690652684867,
-        "jaccard_component_similarity": 0.0,
-        "fuzzy_logical_form_similarity": 0.8162878787878788,
-        "cosine_similarity": 0.5454061031341553
+        "fuzzy_string_similarity": 0.9743589743589743,
+        "ast_similarity": 0.8702290076335878,
+        "jaccard_component_similarity": 0.5,
+        "fuzzy_logical_form_similarity": 0.9325396825396824,
+        "cosine_similarity": 0.9972461462020874
     },
     "question_31": {
-        "fuzzy_string_similarity": 0.062388591800356503,
-        "ast_similarity": 0.06167400881057269,
-        "jaccard_component_similarity": 0.0,
-        "fuzzy_logical_form_similarity": 0.7107529568549059,
-        "cosine_similarity": 0.6645296812057495
+        "fuzzy_string_similarity": 0.7552447552447552,
+        "ast_similarity": 0.66,
+        "jaccard_component_similarity": 0.5,
+        "fuzzy_logical_form_similarity": 0.9146537842190016,
+        "cosine_similarity": 0.9413954019546509
     }
 }

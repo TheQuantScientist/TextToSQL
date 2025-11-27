@@ -2,7 +2,7 @@
     "question": "What is the green transition score of lower middle income group in 2020?",
     "query": "SELECT green_transition_score FROM global_development_indicators WHERE year = 2020 AND income_group = 'lower middle' LIMIT 50;",
     "raw_results": "Query ran successfully, no record found",
-    "answer": "<think>\nOkay, the user is asking for the green transition score of the lower middle income group in 2020. Let me check the query results. The query was run successfully, but there were no records found. That means the data isn't available in the database. I need to inform the user that the information isn't present. I should mention that the query didn't return any results, so the score isn't available. Also, maybe suggest that they check if the data exists or if there's a different source. Keep it clear and helpful.\n</think>\n\nThe query results indicate that no data was found for the green transition score of the lower middle income group in 2020. This suggests the information is not available in the current dataset. If this is a specific dataset or source, you may need to verify if the data exists or consider alternative sources for this information.",
+    "answer": "The query results indicate that no data was found for the green transition score of the lower middle income group in 2020. This suggests the information is not available in the current dataset. If this is a specific dataset or source, you may need to verify if the data exists or consider alternative sources for this information.",
     "sql_execution_time": 0.0487,
     "nlp_generation_time": 10.2421,
     "total_time": 10.2908,

@@ -2,7 +2,7 @@
     "question": "The average gini recalculated of the world in 2015",
     "query": "SELECT AVG(gini_recalculated) FROM country_income WHERE year = 2015 LIMIT 50;",
     "raw_results": "| avg |\n| --- |\n| 0.39172968548000275 |",
-    "answer": "<think>\nOkay, the user is asking for the average Gini coefficient of the world in 2015. Let me check the query results. The result provided is 0.3917. The Gini coefficient ranges from 0 to 1, where 0 is perfect equality and 1 is maximum inequality. So, 0.39 is relatively low, indicating moderate inequality. I should explain this in simple terms. Also, since the data is from 2015, maybe mention that this is a historical figure. Make sure the answer is clear and concise, avoiding jargon. Let me structure it: start with the answer, then explain what the number means, and note the year it's from. That should cover it.\n</think>\n\nThe average Gini coefficient for the world in 2015 was **0.3917**. This value indicates a moderate level of income inequality, as the Gini coefficient ranges from 0 (perfect equality) to 1 (maximum inequality). This figure reflects global income distribution trends during that year.",
+    "answer": "The average Gini coefficient for the world in 2015 was **0.3917**. This value indicates a moderate level of income inequality, as the Gini coefficient ranges from 0 (perfect equality) to 1 (maximum inequality). This figure reflects global income distribution trends during that year.",
     "sql_execution_time": 0.0541,
     "nlp_generation_time": 13.2534,
     "total_time": 13.3075,
