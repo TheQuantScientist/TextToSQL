@@ -4,3 +4,16 @@ langchain-core
 langchain-community
 langchain-ollama
 typing_extensions
+groq
+python-dotenv
+tqdm
+pandas
+psutil
+typing_extensions
+psycopg2
+sqlparse
+sentence-transformers
+scikit-learn
+numpy
+seaborn
+matplotlib
